@@ -28,7 +28,7 @@
     - Burst
     selectedMode: Burst
     burstFireRate: 16
-    burstCooldown: 0.5
+    burstCooldown: 0.3
     fireRate: 3
     projectileSpeed: 50 # twenty inch barrel
     soundGunshot:
