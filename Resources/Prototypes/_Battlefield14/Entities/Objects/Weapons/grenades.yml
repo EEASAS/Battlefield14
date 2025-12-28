@@ -15,18 +15,18 @@
     sprite: _Battlefield14/Objects/Weapons/Grenades/m67.rsi
   - type: ExplodeOnTrigger
   - type: Explosive
-    explosionType: Fragmentation
+    explosionType: Default
     maxIntensity: 100
     intensitySlope: 4
     totalIntensity: 200
     canCreateVacuum: false
   - type: TimerTriggerVisuals
     primingSound:
-      path: "/Audio/_Crescent/Weapons/Grenades/trigger2.ogg"
+      path: "/Audio/_Battlefield14/Weapons/Grenades/trigger2.ogg"
   - type: EmitSoundOnPickup
-    sound: /Audio/_Crescent/Weapons/Grenades/grab1.ogg
+    sound: /Audio/_Battlefield14/Weapons/Grenades/grab1.ogg
   - type: EmitSoundOnDrop
-    sound: /Audio/_Crescent/Weapons/Grenades/drop1.ogg
+    sound: /Audio/_Battlefield14/Weapons/Grenades/drop1.ogg
   - type: EmitSoundOnLand
     sound:
       collection: FragGrenadeSFX
@@ -46,18 +46,18 @@
     sprite: _Battlefield14/Objects/Weapons/Grenades/MK21.rsi
   - type: ExplodeOnTrigger
   - type: Explosive
-    explosionType: Fragmentation
+    explosionType: Default
     maxIntensity: 100
     intensitySlope: 4
     totalIntensity: 200
     canCreateVacuum: false
   - type: TimerTriggerVisuals
     primingSound:
-      path: "/Audio/_Crescent/Weapons/Grenades/trigger2.ogg"
+      path: "/Audio/_Battlefield14/Weapons/Grenades/trigger2.ogg"
   - type: EmitSoundOnPickup
-    sound: /Audio/_Crescent/Weapons/Grenades/grab1.ogg
+    sound: /Audio/_Battlefield14/Weapons/Grenades/grab1.ogg
   - type: EmitSoundOnDrop
-    sound: /Audio/_Crescent/Weapons/Grenades/drop1.ogg
+    sound: /Audio/_Battlefield14/Weapons/Grenades/drop1.ogg
   - type: EmitSoundOnLand
     sound:
       collection: FragGrenadeSFX
@@ -96,18 +96,18 @@
     staminaCost: 65
   - type: ExplodeOnTrigger
   - type: Explosive
-    explosionType: Fragmentation
+    explosionType: Default
     maxIntensity: 500
     intensitySlope: 5
     totalIntensity: 1000
     canCreateVacuum: true
   - type: TimerTriggerVisuals
     primingSound:
-      path: "/Audio/_Crescent/Weapons/Grenades/trigger2.ogg"
+      path: "/Audio/_Battlefield14/Weapons/Grenades/trigger2.ogg"
   - type: EmitSoundOnPickup
-    sound: /Audio/_Crescent/Weapons/Grenades/grab1.ogg
+    sound: /Audio/_Battlefield14/Weapons/Grenades/grab1.ogg
   - type: EmitSoundOnDrop
-    sound: /Audio/_Crescent/Weapons/Grenades/drop1.ogg
+    sound: /Audio/_Battlefield14/Weapons/Grenades/drop1.ogg
   - type: EmitSoundOnLand
     sound:
       collection: FragGrenadeSFX
@@ -131,14 +131,14 @@
     spreadAmount: 18
   - type: TimerTriggerVisuals
     primingSound:
-      path: "/Audio/_Crescent/Weapons/Grenades/trigger1.ogg"
+      path: "/Audio/_Battlefield14/Weapons/Grenades/trigger1.ogg"
   - type: SoundOnTrigger
-    sound: /Audio/_Crescent/Weapons/Grenades/smoke10s.ogg
+    sound: /Audio/_Battlefield14/Weapons/Grenades/smoke10s.ogg
   - type: DeleteOnTrigger
   - type: EmitSoundOnPickup
-    sound: /Audio/_Crescent/Weapons/Grenades/grab1.ogg
+    sound: /Audio/_Battlefield14/Weapons/Grenades/grab1.ogg
   - type: EmitSoundOnDrop
-    sound: /Audio/_Crescent/Weapons/Grenades/drop1.ogg
+    sound: /Audio/_Battlefield14/Weapons/Grenades/drop1.ogg
   - type: EmitSoundOnLand
     sound:
       collection: SmokeGrenadeSFX
@@ -166,18 +166,18 @@
     sprite: _Battlefield14/Objects/Weapons/Grenades/rgd5.rsi
   - type: ExplodeOnTrigger
   - type: Explosive
-    explosionType: Fragmentation
+    explosionType: Default
     maxIntensity: 100
     intensitySlope: 4
     totalIntensity: 200
     canCreateVacuum: false
   - type: TimerTriggerVisuals
     primingSound:
-      path: "/Audio/_Crescent/Weapons/Grenades/trigger1.ogg"
+      path: "/Audio/_Battlefield14/Weapons/Grenades/trigger1.ogg"
   - type: EmitSoundOnPickup
-    sound: /Audio/_Crescent/Weapons/Grenades/grab1.ogg
+    sound: /Audio/_Battlefield14/Weapons/Grenades/grab1.ogg
   - type: EmitSoundOnDrop
-    sound: /Audio/_Crescent/Weapons/Grenades/drop1.ogg
+    sound: /Audio/_Battlefield14/Weapons/Grenades/drop1.ogg
   - type: EmitSoundOnLand
     sound:
       collection: FragGrenadeSFX
@@ -211,9 +211,9 @@
   - type: ItemToggle
     predictable: false
     soundActivate:
-      path: /Audio/_Crescent/Weapons/Grenades/trigger2.ogg
+      path: /Audio/_Battlefield14/Weapons/Grenades/trigger2.ogg
     soundDeactivate:
-      path: /Audio/_Crescent/Weapons/Grenades/disable1.ogg
+      path: /Audio/_Battlefield14/Weapons/Grenades/disable1.ogg
   - type: Damageable
     damageContainer: Inorganic
   - type: Destructible
@@ -233,15 +233,15 @@
           Blunt: 50
   - type: ExplodeOnTrigger
   - type: Explosive
-    explosionType: Fragmentation
+    explosionType: Default
     maxIntensity: 100
     intensitySlope: 4
     totalIntensity: 200
     canCreateVacuum: false
   - type: EmitSoundOnPickup
-    sound: /Audio/_Crescent/Weapons/Grenades/grab1.ogg
+    sound: /Audio/_Battlefield14/Weapons/Grenades/grab1.ogg
   - type: EmitSoundOnDrop
-    sound: /Audio/_Crescent/Weapons/Grenades/drop1.ogg
+    sound: /Audio/_Battlefield14/Weapons/Grenades/drop1.ogg
   - type: EmitSoundOnLand
     sound:
       collection: FragGrenadeSFX
@@ -264,14 +264,14 @@
     spreadAmount: 18
   - type: TimerTriggerVisuals
     primingSound:
-      path: "/Audio/_Crescent/Weapons/Grenades/trigger3.ogg"
+      path: "/Audio/_Battlefield14/Weapons/Grenades/trigger3.ogg"
   - type: SoundOnTrigger
-    sound: /Audio/_Crescent/Weapons/Grenades/smoke10s.ogg
+    sound: /Audio/_Battlefield14/Weapons/Grenades/smoke10s.ogg
   - type: DeleteOnTrigger
   - type: EmitSoundOnPickup
-    sound: /Audio/_Crescent/Weapons/Grenades/grab1.ogg
+    sound: /Audio/_Battlefield14/Weapons/Grenades/grab1.ogg
   - type: EmitSoundOnDrop
-    sound: /Audio/_Crescent/Weapons/Grenades/drop1.ogg
+    sound: /Audio/_Battlefield14/Weapons/Grenades/drop1.ogg
   - type: EmitSoundOnLand
     sound:
       collection: SmokeGrenadeSFX

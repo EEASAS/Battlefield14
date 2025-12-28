@@ -17,7 +17,7 @@
     availableModes:
     - SemiAuto
     soundGunshot:
-      path: /Audio/_Crescent/Weapons/Guns/pistol_1/pistol_gunshot_3.ogg
+      path: /Audio/_Mono/Weapons/Guns/SmallArms/Gunshots/viper_fire.ogg
     fireOnDropChance: 0.5
   - type: ItemSlots
     slots:
@@ -62,7 +62,7 @@
     availableModes:
     - SemiAuto
     soundGunshot:
-      path: /Audio/_Crescent/Weapons/Guns/pistol_1/pistol_gunshot_3.ogg
+      path: /Audio/_Mono/Weapons/Guns/SmallArms/Gunshots/viper_fire.ogg
     fireOnDropChance: 0.5
   - type: ItemSlots
     slots:
