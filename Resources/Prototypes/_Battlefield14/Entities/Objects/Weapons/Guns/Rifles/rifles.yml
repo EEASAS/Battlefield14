@@ -392,7 +392,7 @@
   description: A later revision of the AKM rifle, with even moderner design.
   components:
   - type: Sprite
-    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AKMS.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AKMS.rsi # resprite later, make it look like the cod mw2 AK
     layers:
       - state: base
         map: ["enum.GunVisualLayers.Base"]
