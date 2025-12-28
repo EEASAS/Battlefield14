@@ -35,16 +35,10 @@
   id: Cartridge25mmFrag
 
 - type: Tag
-  id: Cartridge25mmCluster
-
-- type: Tag
   id: Magazine25mmAPT
 
 - type: Tag
   id: Magazine25mmFrag
-
-- type: Tag
-  id: Magazine25mmCluster
 
 - type: Tag
   id: Cartridge25mmHEIT

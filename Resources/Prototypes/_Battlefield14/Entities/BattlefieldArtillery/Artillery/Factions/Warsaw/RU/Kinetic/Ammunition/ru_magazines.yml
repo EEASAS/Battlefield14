@@ -587,37 +587,7 @@
   - type: StaticPrice
     price: 1
 
-  components:
-  - type: Tag
-    tags:
-    - Magazine30mmCluster
-  - type: Item
-    size: Small
-  - type: BallisticAmmoProvider
-    infiniteUnspawned: false
-    proto: Cartridge30mmCluster
-    capacity: 40
-    mayTransfer: true
-    whitelist:
-      tags:
-      - Cartridge30mmCluster
-  - type: ContainerContainer
-    containers:
-      ballistic-ammo: !type:Container
-  - type: Sprite
-    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Boxes/generic_shipgun_box.rsi
-    layers:
-    - state: base
-      map: ["enum.GunVisualLayers.Base"]
-    - state: mag-0
-      map: ["enum.GunVisualLayers.Mag"]
-  - type: MagazineVisuals
-    magState: mag
-    steps: 4
-    zeroVisible: false
-  - type: Appearance
-  - type: StaticPrice
-    price: 1
+# V-830 "Vasilek-N" 83mm Mortar
 
 # S-570 "Burevestnik-N" 57mm Heavy Cannon
 - type: entity
@@ -717,6 +687,10 @@
     whitelist:
       tags:
       - Cartridge83mmMortar
+      - Cartridge83mmMortarIncendiary
+      - Cartridge83mmMortarSmoke
+      - Cartridge83mmMortarHEFrag
+      - Cartridge83mmMortarSteelCore
   - type: ContainerContainer
     containers:
       ballistic-ammo: !type:Container
@@ -770,6 +744,170 @@
     maxIntensity: 100
     intensitySlope: 3
     totalIntensity: 2.2
+  - type: ExplodeOnTrigger
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Metallic
+
+# V-830 "Vasilek-N" 83mm Mortar - Incendiary Cartridge
+- type: entity
+  id: Cartridge83mmMortarIncendiary
+  name: cartridge (83mm incendiary mortar)
+  parent: BaseCartridge
+  components:
+  - type: Tag
+    tags:
+    - Cartridge
+    - Cartridge83mmMortarIncendiary
+  - type: CartridgeAmmo
+    deleteOnSpawn: true
+    proto: Bullet83mmMortarIncendiary
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    layers:
+    - state: grenade
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+  - type: StaticPrice
+    price: 1
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 250
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:ExplodeBehavior
+  - type: Explosive
+    explosionType: Default
+    maxIntensity: 100
+    intensitySlope: 3
+    totalIntensity: 1.8
+  - type: ExplodeOnTrigger
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Metallic
+
+# V-830 "Vasilek-N" 83mm Mortar - Smoke Cartridge
+- type: entity
+  id: Cartridge83mmMortarSmoke
+  name: cartridge (83mm smoke mortar)
+  parent: BaseCartridge
+  components:
+  - type: Tag
+    tags:
+    - Cartridge
+    - Cartridge83mmMortarSmoke
+  - type: CartridgeAmmo
+    deleteOnSpawn: true
+    proto: Bullet83mmMortarSmoke
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    layers:
+    - state: grenade
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+  - type: StaticPrice
+    price: 1
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 250
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:ExplodeBehavior
+  - type: Explosive
+    explosionType: Default
+    maxIntensity: 100
+    intensitySlope: 3
+    totalIntensity: 0.5
+  - type: ExplodeOnTrigger
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Metallic
+
+# V-830 "Vasilek-N" 83mm Mortar - HE-Frag Cartridge
+- type: entity
+  id: Cartridge83mmMortarHEFrag
+  name: cartridge (83mm HE-Frag mortar)
+  parent: BaseCartridge
+  components:
+  - type: Tag
+    tags:
+    - Cartridge
+    - Cartridge83mmMortarHEFrag
+  - type: CartridgeAmmo
+    deleteOnSpawn: true
+    proto: Bullet83mmMortarHEFrag
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    layers:
+    - state: grenade
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+  - type: StaticPrice
+    price: 1
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 250
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:ExplodeBehavior
+  - type: Explosive
+    explosionType: Default
+    maxIntensity: 100
+    intensitySlope: 3
+    totalIntensity: 2.4
+  - type: ExplodeOnTrigger
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Metallic
+
+# V-830 "Vasilek-N" 83mm Mortar - Steel Core Cartridge
+- type: entity
+  id: Cartridge83mmMortarSteelCore
+  name: cartridge (83mm steel core mortar)
+  parent: BaseCartridge
+  components:
+  - type: Tag
+    tags:
+    - Cartridge
+    - Cartridge83mmMortarSteelCore
+  - type: CartridgeAmmo
+    deleteOnSpawn: true
+    proto: Bullet83mmMortarSteelCore
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    layers:
+    - state: grenade
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+  - type: StaticPrice
+    price: 1
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 250
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:ExplodeBehavior
+  - type: Explosive
+    explosionType: Default
+    maxIntensity: 100
+    intensitySlope: 3
+    totalIntensity: 0.3
   - type: ExplodeOnTrigger
   - type: Damageable
     damageContainer: Inorganic

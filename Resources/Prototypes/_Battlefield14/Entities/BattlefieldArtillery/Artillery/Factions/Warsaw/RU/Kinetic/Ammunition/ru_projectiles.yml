@@ -433,10 +433,10 @@
     shape: triangle
     radarColor: "#FF6600"
 
-# V-830 "Vasilek-N" 83mm Mortar
+# V-830 "Vasilek-N" 83mm Mortar - High Explosive (Standard)
 - type: entity
   id: Bullet83mmMortar
-  name: 83mm mortar projectile
+  name: 83mm mortar projectile (HE)
   parent: BaseBulletTrigger
   categories: [ HideSpawnMenu ]
   components:
@@ -470,6 +470,193 @@
     requireNoGrid: true
     shape: triangle
     radarColor: "#FF6600"
+
+# V-830 "Vasilek-N" 83mm Mortar - Incendiary
+- type: entity
+  id: Bullet83mmMortarIncendiary
+  name: 83mm incendiary mortar projectile
+  parent: BaseBulletTrigger
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Structural: 120
+        Blunt: 80
+        Heat: 100
+    deleteOnCollide: true
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: Default
+    totalIntensity: 150
+    intensitySlope: 4
+    maxIntensity: 20
+    maxTileBreak: 2
+  - type: IgniteOnTrigger
+    fireStacks: 3
+    ignoreResistances: false
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    layers:
+    - state: grenade
+  - type: ShipWeaponProjectile
+  - type: TimedDespawn
+    lifetime: 8
+  - type: PointLight
+    radius: 3
+    color: red
+    energy: 0.6
+  - type: RadarBlip
+    scale: 1.5
+    requireNoGrid: true
+    shape: triangle
+    radarColor: "#FF3300"
+
+# V-830 "Vasilek-N" 83mm Mortar - Smoke (Lexorin-based)
+- type: entity
+  id: Bullet83mmMortarSmoke
+  name: 83mm smoke mortar projectile
+  parent: BaseBulletTrigger
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Structural: 50
+        Blunt: 30
+    deleteOnCollide: true
+  - type: ExplodeOnTrigger
+  - type: SmokeOnTrigger
+    duration: 60
+    spreadAmount: 80
+    smokePrototype: Smoke
+    solution:
+      reagents:
+      - ReagentId: Lexorin
+        Quantity: 30
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    layers:
+    - state: grenade
+  - type: ShipWeaponProjectile
+  - type: TimedDespawn
+    lifetime: 8
+  - type: PointLight
+    radius: 2.5
+    color: gray
+    energy: 0.3
+  - type: RadarBlip
+    scale: 1.5
+    requireNoGrid: true
+    shape: triangle
+    radarColor: "#666666"
+
+# V-830 "Vasilek-N" 83mm Mortar - High Explosive Fragmentation
+- type: entity
+  id: Bullet83mmMortarHEFrag
+  name: 83mm HE-Frag mortar projectile
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Structural: 130
+        Blunt: 90
+        Heat: 40
+    penetrationThreshold: 200
+    deleteOnCollide: false
+  - type: Heat
+    explosionDelay: 0
+    fragmentationDelay: 0
+    fragmentationCount: 25
+    fragmentationPrototype: Bullet83mmMortarFragment
+    plasmaAmount: 0
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: Default
+    totalIntensity: 200
+    intensitySlope: 5
+    maxIntensity: 30
+    maxTileBreak: 2
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    layers:
+    - state: grenade
+  - type: ShipWeaponProjectile
+  - type: TimedDespawn
+    lifetime: 8
+  - type: PointLight
+    radius: 3
+    color: orange
+    energy: 0.5
+  - type: RadarBlip
+    scale: 1.5
+    requireNoGrid: true
+    shape: triangle
+    radarColor: "#FF5500"
+
+# V-830 "Vasilek-N" 83mm Mortar Fragment
+- type: entity
+  id: Bullet83mmMortarFragment
+  name: 83mm mortar fragment
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Structural: 18
+        Piercing: 12
+    deleteOnCollide: true
+  - type: Sprite
+    sprite: _Mono/Objects/SpaceArtillery/50_armorpiercing_machinegun_casing.rsi
+    layers:
+    - state: base-projectile
+    scale: 0.4, 0.4
+  - type: ShipWeaponProjectile
+  - type: TimedDespawn
+    lifetime: 2
+  - type: PointLight
+    radius: 1
+    color: orange
+    energy: 0.2
+  - type: RadarBlip
+    scale: 0.5
+    requireNoGrid: true
+    shape: triangle
+    radarColor: "#FF9900"
+
+# V-830 "Vasilek-N" 83mm Mortar - Steel Core (Armor Piercing)
+- type: entity
+  id: Bullet83mmMortarSteelCore
+  name: 83mm steel core mortar projectile
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Structural: 200
+        Piercing: 150
+    penetrationThreshold: 500
+    deleteOnCollide: true
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    layers:
+    - state: grenade
+  - type: ShipWeaponProjectile
+  - type: TimedDespawn
+    lifetime: 8
+  - type: PointLight
+    radius: 3
+    color: silver
+    energy: 0.5
+  - type: RadarBlip
+    scale: 1.5
+    requireNoGrid: true
+    shape: triangle
+    radarColor: "#CCCCCC"
 
 # K-1250 "Molot-N" 125mm APFSDS Penetrator
 - type: entity
