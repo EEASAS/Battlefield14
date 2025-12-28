@@ -1,5 +1,5 @@
 - type: entity
-  id: BulletRifle556
+  id: BulletRifleBF556x45
   name: bullet (5.56x45)
   parent: BaseBullet
   categories: [ HideSpawnMenu ]
@@ -7,13 +7,12 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 30
-#    stoppingPower: 4
+        Piercing: 25
   - type: StaminaDamageOnCollide
     damage: 7 # ~15 hits to stun
 
 - type: entity
-  id: BulletRifle545
+  id: BulletRifleBF545x39
   name: bullet (5.45x39)
   parent: BaseBullet
   categories: [ HideSpawnMenu ]
@@ -21,13 +20,12 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 30
-#    stoppingPower: 4
+        Piercing: 25
   - type: StaminaDamageOnCollide
     damage: 7 # ~15 hits to stun
 
 - type: entity
-  id: BulletRifle762
+  id: BulletRifleBF762x39
   name: bullet (7.62x39)
   parent: BaseBullet
   categories: [ HideSpawnMenu ]
@@ -35,13 +33,12 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 35
-#    stoppingPower: 5
+        Piercing: 27
   - type: StaminaDamageOnCollide
     damage: 8 # ~13 hits to stun
 
 - type: entity
-  id: BulletRifle762x51
+  id: BulletRifleBF762x51
   name: bullet (7.62x51)
   parent: BaseBullet
   categories: [ HideSpawnMenu ]
@@ -49,15 +46,13 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 40
-#    stoppingPower: 5
-
-    harmorPenetration: 10
+        Piercing: 30
+#    harmorPenetration: 10
   - type: StaminaDamageOnCollide
     damage: 8 # ~13 hits to stun
 
 - type: entity
-  id: BulletRifle939
+  id: BulletRifleBF9x39
   name: bullet (9x39)
   parent: BaseBullet
   categories: [ HideSpawnMenu ]
@@ -65,13 +60,12 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 35
-#    stoppingPower: 3
+        Piercing: 30
   - type: StaminaDamageOnCollide
     damage: 7 # ~15 hits to stun
 
 - type: entity
-  id: BulletRifle762x54r
+  id: BulletRifleBF762x54mmR
   name: bullet (7.62x54mmR)
   parent: BaseBullet
   categories: [ HideSpawnMenu ]
@@ -80,6 +74,6 @@
     damage:
       types:
         Piercing: 40
-    harmorPenetration: 25
+    armorPenetration: 0.8
   - type: StaminaDamageOnCollide
     damage: 10 # ~10 hits to stun

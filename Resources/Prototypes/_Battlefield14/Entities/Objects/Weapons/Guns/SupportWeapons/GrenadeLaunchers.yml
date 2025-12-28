@@ -25,7 +25,6 @@
         whitelist:
           tags:
             - Grenade # Cartridge40x46mmGrenade
-            - LessLethalGrenade
   - type: Gun
     fireRate: 1
     selectedMode: SemiAuto

@@ -8,7 +8,7 @@
   components:
   - type: BallisticAmmoProvider
     capacity: 200
-    proto: CartridgeRifle556
+    proto: BF_CartridgeRifle556x45
   - type: Sprite
     layers:
     - state: base
@@ -32,7 +32,7 @@
   components:
   - type: BallisticAmmoProvider
     capacity: 60
-    proto: CartridgeRifle556
+    proto: BF_CartridgeRifle556x45
   - type: Sprite
     layers:
     - state: base
@@ -54,7 +54,7 @@
   components:
   - type: BallisticAmmoProvider
     capacity: 200
-    proto: CartridgeRifle545
+    proto: BF_CartridgeRifle545x39
   - type: Sprite
     layers:
     - state: base
@@ -78,7 +78,7 @@
   components:
   - type: BallisticAmmoProvider
     capacity: 60
-    proto: CartridgeRifle545
+    proto: BF_CartridgeRifle545x39
   - type: Sprite
     layers:
     - state: base

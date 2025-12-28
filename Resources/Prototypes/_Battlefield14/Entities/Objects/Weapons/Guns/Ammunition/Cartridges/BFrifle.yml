@@ -1,14 +1,14 @@
 - type: entity
-  id: CartridgeRifle556
-  name: cartridge (5.56)
+  id: BF_CartridgeRifle556x45
+  name: cartridge (5.56x45mm)
   parent: BaseCartridge
   components:
   - type: Tag
     tags:
     - Cartridge
-    - CartridgeRifle556
+    - BF_CartridgeRifle556x45
   - type: CartridgeAmmo
-    proto: BulletRifle556
+    proto: BulletRifleBF556x45
   - type: Sprite
     sprite: Objects/Weapons/Guns/Ammunition/Casings/ammo_casing.rsi
     layers:
@@ -18,16 +18,16 @@
   - type: SpentAmmoVisuals
 
 - type: entity
-  id: CartridgeRifle545
-  name: cartridge (5.45)
+  id: BF_CartridgeRifle545x39
+  name: cartridge (5.45x39mm)
   parent: BaseCartridge
   components:
   - type: Tag
     tags:
     - Cartridge
-    - CartridgeRifle545
+    - BF_CartridgeRifle545x39
   - type: CartridgeAmmo
-    proto: BulletRifle545
+    proto: BulletRifleBF545x39
   - type: Sprite
     sprite: Objects/Weapons/Guns/Ammunition/Casings/ammo_casing.rsi
     layers:
@@ -37,16 +37,16 @@
   - type: SpentAmmoVisuals
 
 - type: entity
-  id: CartridgeRifle762
-  name: cartridge (7.62)
+  id: BF_CartridgeRifle762x39
+  name: cartridge (7.62x39mm)
   parent: BaseCartridge
   components:
   - type: Tag
     tags:
     - Cartridge
-    - CartridgeRifle762
+    - BF_CartridgeRifle762x39
   - type: CartridgeAmmo
-    proto: BulletRifle762
+    proto: BulletRifleBF762x39
   - type: Sprite
     sprite: Objects/Weapons/Guns/Ammunition/Casings/ammo_casing.rsi
     layers:
@@ -56,16 +56,16 @@
   - type: SpentAmmoVisuals
 
 - type: entity
-  id: CartridgeRifle939
-  name: cartridge (9x39)
+  id: BF_CartridgeRifle762x51
+  name: cartridge (7.62x51mm)
   parent: BaseCartridge
   components:
   - type: Tag
     tags:
     - Cartridge
-    - CartridgeRifle939
+    - BF_CartridgeRifle762x51
   - type: CartridgeAmmo
-    proto: BulletRifle939
+    proto: BulletRifleBF762x51
   - type: Sprite
     sprite: Objects/Weapons/Guns/Ammunition/Casings/ammo_casing.rsi
     layers:
@@ -75,16 +75,35 @@
   - type: SpentAmmoVisuals
 
 - type: entity
-  id: CartridgeRifle762x54r
+  id: BF_CartridgeRifle9x39
+  name: cartridge (9x39mm)
+  parent: BaseCartridge
+  components:
+  - type: Tag
+    tags:
+    - Cartridge
+    - BF_CartridgeRifle9x39
+  - type: CartridgeAmmo
+    proto: BulletRifleBF9x39
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Ammunition/Casings/ammo_casing.rsi
+    layers:
+    - state: base
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+
+- type: entity
+  id: BF_CartridgeRifle762x54r
   name: cartridge (7.62x54mmR)
   parent: BaseCartridge
   components:
   - type: Tag
     tags:
     - Cartridge
-    - CartridgeRifle762x54r
+    - BF_CartridgeRifle762x54r
   - type: CartridgeAmmo
-    proto: BulletRifle762x54r
+    proto: BulletRifleBF762x54mmR
   - type: Sprite
     sprite: Objects/Weapons/Guns/Ammunition/Casings/ammo_casing.rsi
     layers:

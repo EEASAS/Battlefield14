@@ -30,7 +30,7 @@
     burstFireRate: 16
     burstCooldown: 0.5
     fireRate: 3
-    projectileSpeed: 40 # twenty inch barrel
+    projectileSpeed: 50 # twenty inch barrel
     soundGunshot:
       collection: BF_M16_Gunshots
       params:
@@ -55,11 +55,11 @@
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
-        startingItem: CartridgeRifle556
+        startingItem: BF_CartridgeRifle556x45
         priority: 1
         whitelist:
           tags:
-            - CartridgeRifle556
+            - BF_CartridgeRifle556x45
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot
@@ -188,11 +188,11 @@
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
-        startingItem: CartridgeRifle556
+        startingItem: BF_CartridgeRifle556x45
         priority: 1
         whitelist:
           tags:
-            - CartridgeRifle556
+            - BF_CartridgeRifle556x45
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot
@@ -257,11 +257,11 @@
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
-        startingItem: CartridgeRifle545
+        startingItem: BF_CartridgeRifle545x39
         priority: 1
         whitelist:
           tags:
-            - CartridgeRifle545
+            - BF_CartridgeRifle545x39
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot
@@ -301,11 +301,11 @@
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
-        startingItem: CartridgeRifle545
+        startingItem: BF_CartridgeRifle545x39
         priority: 1
         whitelist:
           tags:
-            - CartridgeRifle545
+            - BF_CartridgeRifle545x39
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot
@@ -338,8 +338,8 @@
     maxAngle: -20
   - type: Gun
     minAngle: 21
-    maxAngle: 40
-    angleIncrease: 4
+    maxAngle: 30
+    angleIncrease: 1.5
     angleDecay: 16
     availableModes:
     - SemiAuto
@@ -370,11 +370,11 @@
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
-        startingItem: CartridgeRifle762
+        startingItem: BF_CartridgeRifle762x39
         priority: 1
         whitelist:
           tags:
-            - CartridgeRifle762
+            - BF_CartridgeRifle762x39
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot
@@ -392,7 +392,7 @@
   description: A later revision of the AKM rifle, with even moderner design.
   components:
   - type: Sprite
-    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AKMS.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AKMS.rsi # resprite later, make it look like the cod mw2 AK
     layers:
       - state: base
         map: ["enum.GunVisualLayers.Base"]
@@ -454,11 +454,11 @@
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
-        startingItem: CartridgeRifle939
+        startingItem: BF_CartridgeRifle9x39
         priority: 1
         whitelist:
           tags:
-            - CartridgeRifle939
+            - BF_CartridgeRifle9x39
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot

@@ -11,11 +11,11 @@
       - MagazineRifleSV98
       - Magazine
   - type: BallisticAmmoProvider
-    proto: CartridgeRifle762x54r
+    proto: BF_CartridgeRifle762x54r
     mayTransfer: true
     whitelist:
       tags:
-        - CartridgeRifle762x54r
+        - BF_CartridgeRifle762x54r
     capacity: 5
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Sniper/SV98.rsi

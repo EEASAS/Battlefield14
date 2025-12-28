@@ -36,8 +36,8 @@
         variation: 0.125
   - type: Appearance
   - type: ClothingSpeedModifier # this thing is heavier than the M16, plus otherwise it would be objectively better than the M16
-    walkModifier: 0.9
-    sprintModifier: 0.9
+    walkModifier: 0.95
+    sprintModifier: 0.95
   - type: HeldSpeedModifier
 
 - type: entity
@@ -92,11 +92,11 @@
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
-        startingItem: CartridgeRifle545
+        startingItem: BF_CartridgeRifle545x39
         priority: 1
         whitelist:
           tags:
-            - CartridgeRifle545
+            - BF_CartridgeRifle545x39
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot

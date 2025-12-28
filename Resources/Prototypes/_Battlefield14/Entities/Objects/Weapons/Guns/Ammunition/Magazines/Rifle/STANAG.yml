@@ -11,11 +11,11 @@
       - MagazineRifleSTANAG
       - Magazine
   - type: BallisticAmmoProvider
-    proto: CartridgeRifle556
+    proto: BF_CartridgeRifle556x45
     mayTransfer: true
     whitelist:
       tags:
-        - CartridgeRifle556
+        - BF_CartridgeRifle556x45
     capacity: 30
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Rifle/STANAG.rsi

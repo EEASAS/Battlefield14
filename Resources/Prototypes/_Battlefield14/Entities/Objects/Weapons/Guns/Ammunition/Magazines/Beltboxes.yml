@@ -14,11 +14,11 @@
     shape:
       - 0,0,2,1 # 3 wide, basically 3 magazines wide 
   - type: BallisticAmmoProvider
-    proto: CartridgeRifle556
+    proto: BF_CartridgeRifle556x45
     mayTransfer: true
     whitelist:
       tags:
-        - CartridgeRifle556
+        - BF_CartridgeRifle556x45
     capacity: 200
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/BeltBoxes/M249.rsi

@@ -2,25 +2,25 @@
   id: MagazineRifleSTANAG
 
 - type: Tag
-  id: CartridgeRifle556
+  id: BF_CartridgeRifle556x45
 
 - type: Tag
-  id: CartridgeRifle545
+  id: BF_CartridgeRifle545x39
 
 - type: Tag
-  id: CartridgeRifle762
+  id: BF_CartridgeRifle762x39
 
 - type: Tag
-  id: CartridgeRifle762x51
+  id: BF_CartridgeRifle762x51
 
 - type: Tag
-  id: CartridgeRifle762x54r
+  id: BF_CartridgeRifle762x54r
 
 - type: Tag
-  id: CartridgeRifle939
+  id: BF_CartridgeRifle9x39
 
 - type: Tag
-  id: CartridgePistol9mm
+  id: BF_CartridgePistol9x19
 
 - type: Tag
   id: MagazineRifleAK74

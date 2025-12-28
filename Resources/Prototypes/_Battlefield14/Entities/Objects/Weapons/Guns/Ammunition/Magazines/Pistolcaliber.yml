@@ -12,11 +12,11 @@
       - Magazine
       - PistolMagazine
   - type: BallisticAmmoProvider
-    proto: CartridgePistol9mm
+    proto: BF_CartridgePistol9x19
     mayTransfer: true
     whitelist:
       tags:
-        - CartridgePistol9mm
+        - BF_CartridgePistol9x19
     capacity: 30
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Pistolcaliber/MP5.rsi
@@ -40,11 +40,11 @@
       - Magazine
       - PistolMagazine
   - type: BallisticAmmoProvider
-    proto: CartridgePistol9mm
+    proto: BF_CartridgePistol9x19
     mayTransfer: true
     whitelist:
       tags:
-        - CartridgePistol9mm
+        - BF_CartridgePistol9x19
     capacity: 30
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Pistolcaliber/Vityaz.rsi
@@ -68,11 +68,11 @@
       - Magazine
       - PistolMagazine
   - type: BallisticAmmoProvider
-    proto: CartridgePistol9mm
+    proto: BF_CartridgePistol9x19
     mayTransfer: true
     whitelist:
       tags:
-        - CartridgePistol9mm
+        - BF_CartridgePistol9x19
     capacity: 15
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Pistolcaliber/M9.rsi
@@ -96,11 +96,11 @@
       - Magazine
       - PistolMagazine
   - type: BallisticAmmoProvider
-    proto: CartridgePistol9mm
+    proto: BF_CartridgePistol9x19
     mayTransfer: true
     whitelist:
       tags:
-        - CartridgePistol9mm
+        - BF_CartridgePistol9x19
     capacity: 18
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Pistolcaliber/MP443.rsi

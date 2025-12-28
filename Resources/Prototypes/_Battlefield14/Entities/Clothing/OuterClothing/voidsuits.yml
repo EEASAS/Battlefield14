@@ -32,7 +32,7 @@
     weightlessModifier: 1.2
 
 - type: entity
-  parent: [ ClothingOuterHardsuitBase , BaseIntegratedManeuveringThrusters ]
+  parent: [ ClothingOuterHardsuitBase , BaseIntegratedManeuveringThrusters , ClothingArmorPlateMedium ]
   id: ClothingOuterVoidsuitRussianCombat
   name: Russian 'Goida' Combat Voidsuit
   description: A combat voidsuit of Russian design, for their frontline soldiers in the final frontier.
@@ -49,21 +49,18 @@
   - type: Tag
     tags:
     - FitsInVoidsuitKit
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.5
+        Slash: 0.5
+        Piercing: 0.5
+        Heat: 0.5
+        Shock: 0.5
+        Caustic: 0.5
+        Radiation: 0.3
   - type: ExplosionResistance
     damageCoefficient: 0.6
-  # COMMENTED OUT: Unknown component 'DegradeableArmor'
-  # - type: DegradeableArmor
-  #   armorMaxHealth: 750
-  #   armorType: Metallic
-  #   armorRepair: PlasteelPlate
-  #   initialModifiers:
-  #     flatReductions:
-  #       Blunt: 15
-  #       Slash: 25
-  #       Piercing: 45
-  #       Heat: 25
-  #       Caustic: 20
-#        Shock: 25 shock damage crashes the client in testing for some reason, I wasnt on tools though
   - type: ClothingSpeedModifier
     walkModifier: 0.9
     sprintModifier: 0.9
@@ -88,7 +85,7 @@
 #      requireDetailRange: true
 
 - type: entity
-  parent: ClothingOuterHardsuitBase
+  parent: [ ClothingOuterHardsuitBase , ClothingArmorPlateMedium ]
   id: ClothingOuterVoidsuitRussianCombatJuggernaut
   name: Russian 'Slon' Juggernaut Voidsuit
   description: Slon, meaning elephant, is essentially what you become wearing this thing, a big bad angry elephant; recommended with a light machinegun.
@@ -100,21 +97,18 @@
   - type: PressureProtection
     highPressureMultiplier: 0.5
     lowPressureMultiplier: 1000
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.25
+        Slash: 0.25
+        Piercing: 0.25
+        Heat: 0.5
+        Shock: 0.5
+        Caustic: 0.5
+        Radiation: 0.2
   - type: ExplosionResistance
     damageCoefficient: 0.3
-  # COMMENTED OUT: Unknown component 'DegradeableArmor'
-  # - type: DegradeableArmor
-  #   armorMaxHealth: 2000
-  #   armorType: Ceramic
-  #   armorRepair: NTCeramic
-  #   initialModifiers:
-  #     flatReductions:
-  #       Blunt: 30
-  #       Slash: 30
-  #       Piercing: 90
-  #       Heat: 35
-  #       Caustic: 30
-#        Shock: 35
   - type: ClothingSpeedModifier
     walkModifier: 0.7
     sprintModifier: 0.7
@@ -133,7 +127,7 @@
       requireDetailRange: true
 
 - type: entity
-  parent: [ ClothingOuterHardsuitBase , BaseIntegratedManeuveringThrusters ]
+  parent: [ ClothingOuterHardsuitBase , BaseIntegratedManeuveringThrusters , ClothingArmorPlateMedium ]
   id: ClothingOuterVoidsuitAmericanCombatMarine
   name: Marine 'Devil Dog' Combat Voidsuit
   description: A combat voidsuit of American design, for their marine corps, with darker colours to blend into the backdrop of space.
@@ -150,21 +144,18 @@
   - type: Tag
     tags:
     - FitsInVoidsuitKit
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.5
+        Slash: 0.5
+        Piercing: 0.5
+        Heat: 0.5
+        Shock: 0.5
+        Caustic: 0.5
+        Radiation: 0.3
   - type: ExplosionResistance
     damageCoefficient: 0.6
-  # COMMENTED OUT: Unknown component 'DegradeableArmor'
-  # - type: DegradeableArmor
-  #   armorMaxHealth: 750
-  #   armorType: Metallic
-  #   armorRepair: PlasteelPlate
-  #   initialModifiers:
-  #     flatReductions:
-  #       Blunt: 15
-  #       Slash: 25
-  #       Piercing: 45
-  #       Heat: 25
-  #       Caustic: 20
-#        Shock: 25
   - type: ClothingSpeedModifier
     walkModifier: 0.9
     sprintModifier: 0.9

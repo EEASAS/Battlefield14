@@ -48,15 +48,15 @@
         whitelist:
           tags:
             - MagazineBeltBoxM249
-            - MagazineRifleSTANAG
+            - MagazineRifleSTANAG # It can do this in real life you know
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
-        startingItem: CartridgeRifle556
+        startingItem: BF_CartridgeRifle556x45
         priority: 1
         whitelist:
           tags:
-            - CartridgeRifle556
+            - BF_CartridgeRifle556x45
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot

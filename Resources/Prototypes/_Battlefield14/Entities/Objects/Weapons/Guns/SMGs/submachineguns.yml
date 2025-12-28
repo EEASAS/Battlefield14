@@ -53,11 +53,11 @@
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
-        startingItem: CartridgePistol9mm
+        startingItem: BF_CartridgePistol9x19
         priority: 1
         whitelist:
           tags:
-            - CartridgePistol9mm
+            - BF_CartridgePistol9x19
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot
@@ -116,11 +116,11 @@
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
-        startingItem: CartridgePistol9mm
+        startingItem: BF_CartridgePistol9x19
         priority: 1
         whitelist:
           tags:
-            - CartridgePistol9mm
+            - BF_CartridgePistol9x19
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot

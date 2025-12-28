@@ -1,5 +1,5 @@
 - type: entity
-  id: BulletPistol9mm
+  id: BulletPistolBF9x19
   name: bullet (9x19 Parabellum)
   parent: BaseBullet
   categories: [ HideSpawnMenu ]

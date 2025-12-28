@@ -3,7 +3,7 @@
   # parent: BaseMagazineRifle
   parent: BaseItem
   id: MagazineRifleAK74
-  name: "AK-74 magazine (5.45x39)"
+  name: "AK-74 magazine (5.45x39mm)"
   description: Classic rock-and-lock magazine in 5.45, for 74 pattern rifles.
   components:
   - type: Tag
@@ -11,11 +11,11 @@
       - MagazineRifleAK74
       - Magazine
   - type: BallisticAmmoProvider
-    proto: CartridgeRifle545
+    proto: BF_CartridgeRifle545x39
     mayTransfer: true
     whitelist:
       tags:
-        - CartridgeRifle545
+        - BF_CartridgeRifle545x39
     capacity: 30
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Rifle/AK74.rsi
@@ -28,7 +28,7 @@
 - type: entity
   parent: MagazineRifleAK74
   id: MagazineRifleAK12
-  name: "AK-12 magazine (5.45x39)"
+  name: "AK-12 magazine (5.45x39mm)"
   description: A modernised '74 pattern rifle magazine, with handy features like a 45 degree cutout for use as a monopod while prone, and windows to see your remaining ammo.
   components:
   - type: Sprite
@@ -58,11 +58,11 @@
   - type: Item
     size: Normal
   - type: BallisticAmmoProvider
-    proto: CartridgeRifle545
+    proto: BF_CartridgeRifle545x39
     mayTransfer: true
     whitelist:
       tags:
-        - CartridgeRifle545
+        - BF_CartridgeRifle545x39
     capacity: 75
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Rifle/AK74blackdrum.rsi
@@ -86,11 +86,11 @@
       - MagazineRifleAKM
       - Magazine
   - type: BallisticAmmoProvider
-    proto: CartridgeRifle762
+    proto: BF_CartridgeRifle762x39
     mayTransfer: true
     whitelist:
       tags:
-        - CartridgeRifle762
+        - BF_CartridgeRifle762x39
     capacity: 30
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Rifle/AKM.rsi
@@ -113,11 +113,11 @@
       - MagazineRifleASVAL
       - Magazine
   - type: BallisticAmmoProvider
-    proto: CartridgeRifle939
+    proto: BF_CartridgeRifle9x39
     mayTransfer: true
     whitelist:
       tags:
-        - CartridgeRifle939
+        - BF_CartridgeRifle9x39
     capacity: 30
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Rifle/ASVAL.rsi
@@ -133,9 +133,9 @@
   name: "AS-VAL magazine short (9x39)"
   components:
   - type: BallisticAmmoProvider
-    proto: CartridgeRifle939
+    proto: BF_CartridgeRifle9x39
     mayTransfer: true
     whitelist:
       tags:
-        - CartridgeRifle939
+        - BF_CartridgeRifle9x39
     capacity: 20
