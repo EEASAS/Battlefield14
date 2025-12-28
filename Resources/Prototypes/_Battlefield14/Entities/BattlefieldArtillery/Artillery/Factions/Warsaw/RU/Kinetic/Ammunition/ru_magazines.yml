@@ -238,7 +238,7 @@
 # Z-230 "Volna-N" 23mm AP-T Magazine
 - type: entity
   id: Magazine23mmAPT
-  name: "23mm AP-T magazine"
+  name: "23mm Volna-N magazine (AP-T)"
   description: "An ammunition loader for the Z-230 Volna-N autocannon, loaded with armor-piercing tracer rounds."
   parent: [BaseItem, RecyclableItemSteelTiny]
   components:
@@ -276,7 +276,7 @@
 # Z-230 "Volna-N" 23mm Frag Magazine
 - type: entity
   id: Magazine23mmFrag
-  name: "23mm fragmentation magazine"
+  name: "23mm Volna-N magazine (Fragmentation)"
   description: "An ammunition loader for the Z-230 Volna-N autocannon, loaded with fragmentation rounds."
   parent: [BaseItem, RecyclableItemSteelTiny]
   components:
@@ -513,7 +513,7 @@
 # A-300 "Grom-N" 30mm AP-T Magazine
 - type: entity
   id: Magazine30mmAPT
-  name: "30mm AP-T magazine"
+  name: "30mm Grom-N magazine (AP-T)"
   description: "An ammunition loader for the A-300 Grom-N autocannon, loaded with armor-piercing tracer rounds."
   parent: [BaseItem, RecyclableItemSteelTiny]
   components:
@@ -551,7 +551,7 @@
 # A-300 "Grom-N" 30mm Frag Magazine
 - type: entity
   id: Magazine30mmFrag
-  name: "30mm fragmentation magazine"
+  name: "30mm Grom-N magazine (Fragmentation)"
   description: "An ammunition loader for the A-300 Grom-N autocannon, loaded with fragmentation rounds."
   parent: [BaseItem, RecyclableItemSteelTiny]
   components:

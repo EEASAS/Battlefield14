@@ -11,14 +11,14 @@
         Structural: 800
         Piercing: 600
     penetrationThreshold: 2000
-    deleteOnCollide: true
+    deleteOnCollide: false
   - type: Sprite
     sprite: _Mono/Objects/SpaceArtillery/57_shell.rsi
     layers:
     - state: 57-shell
   - type: ShipWeaponProjectile
   - type: TimedDespawn
-    lifetime: 8
+    lifetime: 200
   - type: PointLight
     radius: 4
     color: blue
@@ -42,14 +42,14 @@
         Structural: 60
         Piercing: 80
     penetrationThreshold: 300
-    deleteOnCollide: true
+    deleteOnCollide: false
   - type: Sprite
     sprite: _Mono/Objects/SpaceArtillery/50_armorpiercing_machinegun_casing.rsi
     layers:
     - state: base-projectile
   - type: ShipWeaponProjectile
   - type: TimedDespawn
-    lifetime: 3
+    lifetime: 10
   - type: PointLight
     radius: 2.5
     color: orange
@@ -73,14 +73,14 @@
         Structural: 40
         Piercing: 50
     penetrationThreshold: 200
-    deleteOnCollide: true
+    deleteOnCollide: false
   - type: Sprite
     sprite: _Mono/Objects/SpaceArtillery/50_armorpiercing_machinegun_casing.rsi
     layers:
     - state: base-projectile
   - type: ShipWeaponProjectile
   - type: TimedDespawn
-    lifetime: 2.5
+    lifetime: 10
   - type: PointLight
     radius: 2.5
     color: orange
@@ -90,6 +90,39 @@
     requireNoGrid: true
     shape: triangle
     radarColor: "#FF6600"
+
+# 25mm M242 Bushmaster APDS Penetrator
+- type: entity
+  id: Bullet25mmPenetrator
+  name: 25mm APDS penetrator
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Structural: 1800
+        Piercing: 1400
+    penetrationThreshold: 3500
+    armorPenetration: 0.9
+    deleteOnCollide: false
+  - type: Sprite
+    sprite: _Mono/Objects/SpaceArtillery/57_shell.rsi
+    layers:
+    - state: 57-shell
+    scale: 0.9, 0.9
+  - type: ShipWeaponProjectile
+  - type: TimedDespawn
+    lifetime: 20
+  - type: PointLight
+    radius: 3.5
+    color: orange
+    energy: 0.6
+  - type: RadarBlip
+    scale: 1.5
+    requireNoGrid: true
+    shape: diamond
+    radarColor: "#00FFFF"
 
 # 25mm M242 Bushmaster APDS
 - type: entity
@@ -101,10 +134,17 @@
   - type: Projectile
     damage:
       types:
-        Structural: 150
-        Piercing: 200
-    penetrationThreshold: 800
-    deleteOnCollide: true
+        Structural: 120
+        Piercing: 100
+    penetrationThreshold: 2500
+    deleteOnCollide: false
+  - type: SubmunitionProjectile
+    submunitionPrototype: Bullet25mmPenetrator
+    distanceDelay: 50.0
+    submunitionDelay: 0
+    submunitionCount: 1
+    spreadAngle: 0
+    velocityMultiplier: 2.0
   - type: Sprite
     sprite: _Mono/Objects/SpaceArtillery/57_shell.rsi
     layers:
@@ -112,7 +152,7 @@
     scale: 0.9, 0.9
   - type: ShipWeaponProjectile
   - type: TimedDespawn
-    lifetime: 4
+    lifetime: 20
   - type: PointLight
     radius: 3
     color: orange
@@ -136,7 +176,7 @@
         Structural: 140
         Piercing: 180
     penetrationThreshold: 700
-    deleteOnCollide: true
+    deleteOnCollide: false
   - type: Sprite
     sprite: _Mono/Objects/SpaceArtillery/57_shell.rsi
     layers:
@@ -144,7 +184,7 @@
     scale: 0.9, 0.9
   - type: ShipWeaponProjectile
   - type: TimedDespawn
-    lifetime: 4
+    lifetime: 20
   - type: PointLight
     radius: 3
     color: orange
@@ -177,7 +217,7 @@
   - type: Heat
     explosionDelay: 0
     fragmentationDelay: 0
-    fragmentationCount: 2
+    fragmentationCount: 1
     fragmentationPrototype: Bullet25mmHEATFragment
     plasmaAmount: 0
   - type: ExplodeOnTrigger
@@ -194,7 +234,7 @@
     scale: 0.9, 0.9
   - type: ShipWeaponProjectile
   - type: TimedDespawn
-    lifetime: 4
+    lifetime: 20
   - type: PointLight
     radius: 3
     color: orange
@@ -251,7 +291,7 @@
     deleteOnCollide: true
   - type: HeFragProjectile
     fillPrototype: Bullet25mmFragFragment
-    capacity: 80
+    capacity: 40
     randomAngle: true
     minVelocity: 6
     maxVelocity: 12
@@ -318,8 +358,13 @@
         Structural: 100
         Piercing: 50
         Heat: 30
-    penetrationThreshold: 400  # Can penetrate walls
-    deleteOnCollide: true
+    penetrationThreshold: 400
+    deleteOnCollide: false
+  - type: Heat
+    explosionDelay: 0
+    fragmentationDelay: 0
+    fragmentationCount: 0
+    plasmaAmount: 0
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: Default
@@ -334,7 +379,7 @@
     scale: 0.9, 0.9
   - type: ShipWeaponProjectile
   - type: TimedDespawn
-    lifetime: 4
+    lifetime: 20
   - type: PointLight
     radius: 3
     color: orange
@@ -371,7 +416,7 @@
     - state: grenade
   - type: ShipWeaponProjectile
   - type: TimedDespawn
-    lifetime: 5
+    lifetime: 10
   - type: PointLight
     radius: 3
     color: orange
@@ -399,7 +444,7 @@
   - type: Heat
     explosionDelay: 0
     fragmentationDelay: 0
-    fragmentationCount: 150
+    fragmentationCount: 75
     fragmentationPrototype: Bullet40x46mmHEDPFragment
     plasmaAmount: 0
   - type: ExplodeOnTrigger
@@ -415,7 +460,7 @@
     - state: grenade
   - type: ShipWeaponProjectile
   - type: TimedDespawn
-    lifetime: 5
+    lifetime: 10
   - type: PointLight
     radius: 3
     color: orange
@@ -441,7 +486,7 @@
     deleteOnCollide: true
   - type: HeFragProjectile
     fillPrototype: Bullet40x46mmFragFragment
-    capacity: 200
+    capacity: 100
     randomAngle: true
     minVelocity: 8
     maxVelocity: 15
@@ -452,7 +497,7 @@
     - state: grenade
   - type: ShipWeaponProjectile
   - type: TimedDespawn
-    lifetime: 5
+    lifetime: 10
   - type: PointLight
     radius: 3
     color: orange
@@ -540,7 +585,7 @@
     deleteOnCollide: true
   - type: HeFragProjectile
     fillPrototype: Bullet40x46mmMPAPERSFragment
-    capacity: 300
+    capacity: 150
     randomAngle: true
     minVelocity: 10
     maxVelocity: 18
@@ -551,7 +596,7 @@
     - state: grenade
   - type: ShipWeaponProjectile
   - type: TimedDespawn
-    lifetime: 5
+    lifetime: 10
   - type: PointLight
     radius: 3
     color: orange
@@ -620,7 +665,7 @@
     scale: 1.2, 1.2
   - type: ShipWeaponProjectile
   - type: TimedDespawn
-    lifetime: 6
+    lifetime: 50
   - type: PointLight
     radius: 3.5
     color: orange
@@ -644,7 +689,8 @@
         Structural: 2000
         Piercing: 1500
     penetrationThreshold: 4000
-    deleteOnCollide: true
+    armorPenetration: 0.95
+    deleteOnCollide: false
   - type: Sprite
     sprite: _Mono/Objects/SpaceArtillery/57_shell.rsi
     layers:
@@ -652,7 +698,7 @@
     scale: 1.5, 1.5
   - type: ShipWeaponProjectile
   - type: TimedDespawn
-    lifetime: 6
+    lifetime: 100
   - type: PointLight
     radius: 4
     color: orange
@@ -660,8 +706,8 @@
   - type: RadarBlip
     scale: 3
     requireNoGrid: true
-    shape: triangle
-    radarColor: "#FF6600"
+    shape: diamond
+    radarColor: "#00FFFF"
 
 # 120mm M256 APFSDS Sabot
 - type: entity
@@ -675,14 +721,15 @@
       types:
         Structural: 100
         Piercing: 80
+    penetrationThreshold: 300
     deleteOnCollide: false
   - type: SubmunitionProjectile
     submunitionPrototype: Bullet120mmPenetrator
-    distanceDelay: 0  # Use time delay only
-    submunitionDelay: 0.1  # Release penetrator after 0.1 seconds
-    submunitionCount: 1  # Single penetrator only
+    distanceDelay: 0
+    submunitionDelay: 4.0
+    submunitionCount: 1
     spreadAngle: 0
-    velocityMultiplier: 2.0  # Penetrator is twice as fast
+    velocityMultiplier: 2.0
   - type: Sprite
     sprite: _Mono/Objects/SpaceArtillery/630_armorpiercing_shell_casing.rsi
     layers:
@@ -690,7 +737,7 @@
     scale: 1.8, 1.8
   - type: ShipWeaponProjectile
   - type: TimedDespawn
-    lifetime: 12
+    lifetime: 100
   - type: PointLight
     radius: 4
     color: orange
@@ -720,16 +767,16 @@
     explosionDelay: 0
     fragmentationDelay: 0
     fragmentationCount: 0
-    plasmaReleaseDelay: 0  # Instant release after penetration stops
-    plasmaAmount: 150  # Moles of plasma gas
-    plasmaTemperature: 1500  # Kelvin - very hot to rapidly heat environment
+    plasmaReleaseDelay: 0
+    plasmaAmount: 150
+    plasmaTemperature: 1500
   - type: Sprite
     sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
     layers:
     - state: grenade
   - type: ShipWeaponProjectile
   - type: TimedDespawn
-    lifetime: 6
+    lifetime: 10
   - type: PointLight
     radius: 3
     color: purple
@@ -754,13 +801,13 @@
     penetrationThreshold: 300
     deleteOnCollide: false
   - type: ChemicalSmoke
-    releaseDelay: 0  # Instant release after penetration stops
-    duration: 40  # How long smoke lasts
-    spreadAmount: 60  # How much smoke spreads
+    releaseDelay: 0
+    duration: 40
+    spreadAmount: 60
     smokePrototype: Smoke
     solution:
       reagents:
-      - ReagentId: TearGas  # Example
+      - ReagentId: TearGas
         Quantity: 50
   - type: Sprite
     sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
@@ -768,7 +815,7 @@
     - state: grenade
   - type: ShipWeaponProjectile
   - type: TimedDespawn
-    lifetime: 6
+    lifetime: 10
   - type: PointLight
     radius: 3
     color: gray

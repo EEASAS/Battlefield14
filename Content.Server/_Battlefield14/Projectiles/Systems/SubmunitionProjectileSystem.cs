@@ -73,69 +73,83 @@ public sealed class SubmunitionProjectileSystem : EntitySystem
         component.SubmunitionsSpawned = true;
         Dirty(uid, component);
         
-        // Log submunition deployment
         _adminLogger.Add(LogType.Action, LogImpact.Medium,
             $"Submunitions deployed from {ToPrettyString(uid):projectile} - spawned {component.SubmunitionCount} submunitions of type {component.SubmunitionPrototype}");
 
         var currentPosition = _transform.GetWorldPosition(xform);
         var currentVelocity = physics.LinearVelocity;
-        var baseDirection = currentVelocity.Normalized();
+        
+        // Get direction from velocity (actual travel direction)
+        var baseDirection = GetTravelDirection(currentVelocity, xform);
         var baseAngle = baseDirection.ToWorldAngle();
-        var mapCoords = new MapCoordinates(currentPosition, xform.MapID);
 
-        // Calculate spread angles
+        // Calculate spread for multiple submunitions
         var spreadPerSub = component.SpreadAngle / Math.Max(1, component.SubmunitionCount - 1);
         var startAngle = baseAngle - Angle.FromDegrees(component.SpreadAngle / 2f);
 
         for (int i = 0; i < component.SubmunitionCount; i++)
         {
-            // Calculate direction for this submunition
-            Angle subAngle;
-            if (component.SubmunitionCount == 1)
-            {
-                subAngle = baseAngle;
-            }
-            else
-            {
-                subAngle = startAngle + Angle.FromDegrees(spreadPerSub * i);
-            }
+            var (subAngle, subDirection) = GetSubmunitionDirection(
+                component.SubmunitionCount, i, baseAngle, baseDirection, startAngle, spreadPerSub);
 
-            var subDirection = subAngle.ToVec();
-            
-            // Spawn submunition slightly in front
-            var spawnOffset = subDirection * 0.3f;
-            var spawnPosition = currentPosition + spawnOffset;
-            var spawnMapCoords = new MapCoordinates(spawnPosition, xform.MapID);
+            var spawnPosition = currentPosition + (subDirection * 0.3f);
+            var subUid = Spawn(component.SubmunitionPrototype, new MapCoordinates(spawnPosition, xform.MapID));
 
-            var subUid = Spawn(component.SubmunitionPrototype, spawnMapCoords);
-
-            // Transfer shooter/weapon info
-            if (TryComp<ProjectileComponent>(subUid, out var subProjectile))
-            {
-                subProjectile.Shooter = projectile.Shooter;
-                subProjectile.Weapon = projectile.Weapon;
-                Dirty(subUid, subProjectile);
-            }
-
-            // Set velocity (apply multiplier if specified)
-            if (TryComp<PhysicsComponent>(subUid, out var subPhysics))
-            {
-                var baseSpeed = currentVelocity.Length();
-                var subSpeed = baseSpeed * component.VelocityMultiplier;
-                var subVelocity = subDirection * subSpeed;
-                _physics.SetLinearVelocity(subUid, subVelocity, body: subPhysics);
-                
-                // Set rotation to match velocity direction
-                if (TryComp<TransformComponent>(subUid, out var subXform))
-                {
-                    _transform.SetWorldRotation(subXform, subAngle);
-                }
-            }
+            SetupSubmunition(subUid, projectile, currentVelocity, subDirection, subAngle, component.VelocityMultiplier);
         }
 
-        // Delete the parent projectile
         QueueDel(uid);
     }
+
+    /// <summary>
+    /// Gets the travel direction from velocity, falling back to transform rotation if velocity is too small.
+    /// </summary>
+    private Vector2 GetTravelDirection(Vector2 velocity, TransformComponent xform)
+    {
+        if (velocity.LengthSquared() > 0.01f)
+            return velocity.Normalized();
+        
+        return _transform.GetWorldRotation(xform).ToVec();
+    }
+
+    /// <summary>
+    /// Calculates the direction and angle for a submunition based on spread settings.
+    /// </summary>
+    private (Angle angle, Vector2 direction) GetSubmunitionDirection(
+        int count, int index, Angle baseAngle, Vector2 baseDirection, Angle startAngle, float spreadPerSub)
+    {
+        if (count == 1)
+            return (baseAngle, baseDirection);
+        
+        var subAngle = startAngle + Angle.FromDegrees(spreadPerSub * index);
+        return (subAngle, subAngle.ToVec());
+    }
+
+    /// <summary>
+    /// Sets up a spawned submunition with proper velocity, rotation, and projectile metadata.
+    /// </summary>
+    private void SetupSubmunition(EntityUid subUid, ProjectileComponent parentProjectile, 
+        Vector2 parentVelocity, Vector2 direction, Angle angle, float velocityMultiplier)
+    {
+        // Transfer shooter/weapon info
+        if (TryComp<ProjectileComponent>(subUid, out var subProjectile))
+        {
+            subProjectile.Shooter = parentProjectile.Shooter;
+            subProjectile.Weapon = parentProjectile.Weapon;
+            Dirty(subUid, subProjectile);
+        }
+
+        // Set velocity and rotation
+        if (TryComp<PhysicsComponent>(subUid, out var subPhysics))
+        {
+            var baseSpeed = parentVelocity.Length();
+            var subSpeed = baseSpeed * velocityMultiplier;
+            _physics.SetLinearVelocity(subUid, direction * subSpeed, body: subPhysics);
+        }
+
+        if (TryComp<TransformComponent>(subUid, out var subXform))
+        {
+            _transform.SetWorldRotation(subXform, angle);
+        }
+    }
 }
-
-

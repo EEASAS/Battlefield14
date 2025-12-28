@@ -44,6 +44,9 @@
     radius: 4
     color: orange
     energy: 0.6
+  - type: PassiveThermalSignature
+    signature: 500000
+  - type: ThermalSignature
   - type: GatheringProjectile
   - type: MiningGatheringSoft
   - type: MiningGatheringHard

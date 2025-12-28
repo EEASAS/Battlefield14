@@ -16,7 +16,7 @@
   - type: Heat
     explosionDelay: 0
     fragmentationDelay: 0
-    fragmentationCount: 12
+    fragmentationCount: 24
     fragmentationPrototype: BulletKornetNFragment
     plasmaAmount: 100
     plasmaTemperature: 2500
@@ -46,15 +46,18 @@
     radius: 4
     color: orange
     energy: 0.6
+  - type: PassiveThermalSignature
+    signature: 500000
+  - type: ThermalSignature
   - type: GatheringProjectile
   - type: MiningGatheringSoft
   - type: MiningGatheringHard
   - type: TargetGuided
-    turnRate: 150
-    acceleration: 280
-    maxSpeed: 270
-    launchSpeed: 85
-    maxLifetime: 30
+    turnRate: 140
+    acceleration: 200
+    maxSpeed: 200
+    launchSpeed: 70
+    maxLifetime: 45
 
 # Kornet-N Fragment
 - type: entity

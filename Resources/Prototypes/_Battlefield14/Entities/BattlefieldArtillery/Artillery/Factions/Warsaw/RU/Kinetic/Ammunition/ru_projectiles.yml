@@ -11,14 +11,14 @@
         Structural: 60
         Piercing: 80
     penetrationThreshold: 300
-    deleteOnCollide: true
+    deleteOnCollide: false
   - type: Sprite
     sprite: _Mono/Objects/SpaceArtillery/50_armorpiercing_machinegun_casing.rsi
     layers:
     - state: base-projectile
   - type: ShipWeaponProjectile
   - type: TimedDespawn
-    lifetime: 3
+    lifetime: 10
   - type: PointLight
     radius: 2.5
     color: orange
@@ -62,7 +62,7 @@
     - state: base-projectile
   - type: ShipWeaponProjectile
   - type: TimedDespawn
-    lifetime: 3
+    lifetime: 10
   - type: PointLight
     radius: 2.5
     color: orange
@@ -86,14 +86,14 @@
         Structural: 70
         Piercing: 90
     penetrationThreshold: 250
-    deleteOnCollide: true
+    deleteOnCollide: false
   - type: Sprite
     sprite: _Mono/Objects/SpaceArtillery/50_armorpiercing_machinegun_casing.rsi
     layers:
     - state: base-projectile
   - type: ShipWeaponProjectile
   - type: TimedDespawn
-    lifetime: 3
+    lifetime: 10
   - type: PointLight
     radius: 2.5
     color: orange
@@ -123,7 +123,7 @@
     deleteOnCollide: true
   - type: HeFragProjectile
     fillPrototype: Bullet23mmFragFragment
-    capacity: 70
+    capacity: 60
     randomAngle: true
     minVelocity: 5
     maxVelocity: 10
@@ -189,7 +189,8 @@
         Structural: 180
         Piercing: 220
     penetrationThreshold: 900
-    deleteOnCollide: true
+    armorPenetration: 0.85
+    deleteOnCollide: false
   - type: Sprite
     sprite: _Mono/Objects/SpaceArtillery/57_shell.rsi
     layers:
@@ -197,7 +198,7 @@
     scale: 0.95, 0.95
   - type: ShipWeaponProjectile
   - type: TimedDespawn
-    lifetime: 4
+    lifetime: 20
   - type: PointLight
     radius: 3
     color: orange
@@ -221,7 +222,7 @@
         Structural: 170
         Piercing: 200
     penetrationThreshold: 800
-    deleteOnCollide: true
+    deleteOnCollide: false
   - type: Sprite
     sprite: _Mono/Objects/SpaceArtillery/57_shell.rsi
     layers:
@@ -229,7 +230,7 @@
     scale: 0.95, 0.95
   - type: ShipWeaponProjectile
   - type: TimedDespawn
-    lifetime: 4
+    lifetime: 20
   - type: PointLight
     radius: 3
     color: orange
@@ -259,7 +260,7 @@
     deleteOnCollide: true
   - type: HeFragProjectile
     fillPrototype: Bullet30mmFragFragment
-    capacity: 90
+    capacity: 75
     randomAngle: true
     minVelocity: 6
     maxVelocity: 12
@@ -348,7 +349,7 @@
     scale: 0.95, 0.95
   - type: ShipWeaponProjectile
   - type: TimedDespawn
-    lifetime: 4
+    lifetime: 20
   - type: PointLight
     radius: 3
     color: orange
@@ -404,7 +405,7 @@
         Blunt: 200
         Heat: 100
     penetrationThreshold: 600
-    deleteOnCollide: true
+    deleteOnCollide: false
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: Default
@@ -419,7 +420,7 @@
     scale: 1.1, 1.1
   - type: ShipWeaponProjectile
   - type: TimedDespawn
-    lifetime: 5
+    lifetime: 35
   - type: PointLight
     radius: 3.5
     color: orange
@@ -457,7 +458,7 @@
     - state: grenade
   - type: ShipWeaponProjectile
   - type: TimedDespawn
-    lifetime: 8
+    lifetime: 50
   - type: PointLight
     radius: 3
     color: orange
@@ -498,7 +499,7 @@
     - state: grenade
   - type: ShipWeaponProjectile
   - type: TimedDespawn
-    lifetime: 8
+    lifetime: 50
   - type: PointLight
     radius: 3
     color: red
@@ -537,7 +538,7 @@
     - state: grenade
   - type: ShipWeaponProjectile
   - type: TimedDespawn
-    lifetime: 8
+    lifetime: 50
   - type: PointLight
     radius: 2.5
     color: gray
@@ -582,7 +583,7 @@
     - state: grenade
   - type: ShipWeaponProjectile
   - type: TimedDespawn
-    lifetime: 8
+    lifetime: 50
   - type: PointLight
     radius: 3
     color: orange
@@ -637,14 +638,14 @@
         Structural: 200
         Piercing: 150
     penetrationThreshold: 500
-    deleteOnCollide: true
+    deleteOnCollide: false
   - type: Sprite
     sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
     layers:
     - state: grenade
   - type: ShipWeaponProjectile
   - type: TimedDespawn
-    lifetime: 8
+    lifetime: 50
   - type: PointLight
     radius: 3
     color: silver
@@ -689,7 +690,7 @@
     - state: grenade
   - type: ShipWeaponProjectile
   - type: TimedDespawn
-    lifetime: 8
+    lifetime: 50
   - type: PointLight
     radius: 2.5
     color: "#ffcc99"
@@ -734,7 +735,7 @@
     - state: grenade
   - type: ShipWeaponProjectile
   - type: TimedDespawn
-    lifetime: 8
+    lifetime: 50
   - type: PointLight
     radius: 2.5
     color: "#ff8239"
@@ -758,7 +759,8 @@
         Structural: 2200
         Piercing: 1600
     penetrationThreshold: 4500
-    deleteOnCollide: true
+    armorPenetration: 0.95
+    deleteOnCollide: false
   - type: Sprite
     sprite: _Mono/Objects/SpaceArtillery/57_shell.rsi
     layers:
@@ -766,7 +768,7 @@
     scale: 1.6, 1.6
   - type: ShipWeaponProjectile
   - type: TimedDespawn
-    lifetime: 6
+    lifetime: 100
   - type: PointLight
     radius: 4
     color: orange
@@ -774,8 +776,8 @@
   - type: RadarBlip
     scale: 3.2
     requireNoGrid: true
-    shape: triangle
-    radarColor: "#FF0000"
+    shape: diamond
+    radarColor: "#00FFFF"
 
 
 # K-1250 "Molot-N" 125mm APFSDS Sabot
@@ -790,22 +792,23 @@
       types:
         Structural: 120
         Piercing: 90
+    penetrationThreshold: 350
     deleteOnCollide: false
   - type: SubmunitionProjectile
     submunitionPrototype: Bullet125mmPenetrator
-    distanceDelay: 0  # Use time delay only
-    submunitionDelay: 0.1  # Release penetrator after 0.1 seconds
-    submunitionCount: 1  # Single penetrator only
+    distanceDelay: 0
+    submunitionDelay: 4.0
+    submunitionCount: 1
     spreadAngle: 0
-    velocityMultiplier: 2.1  # Penetrator is slightly faster than US version
+    velocityMultiplier: 2.1
   - type: Sprite
     sprite: _Mono/Objects/SpaceArtillery/630_armorpiercing_shell_casing.rsi
     layers:
     - state: base-projectile
-      scale: 1.9, 1.9
+    scale: 1.9, 1.9
   - type: ShipWeaponProjectile
   - type: TimedDespawn
-    lifetime: 12
+    lifetime: 100
   - type: PointLight
     radius: 4
     color: orange

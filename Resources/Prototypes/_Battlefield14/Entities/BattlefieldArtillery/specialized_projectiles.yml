@@ -1,7 +1,4 @@
 # Specialized Ship Projectile Types
-# These projectiles have unique behaviors: APFSDS, HEAT, Submunition, etc.
-
-# Base penetrator projectile (used by APFSDS)
 - type: entity
   id: ShipPenetratorProjectile
   name: armor-piercing penetrator
@@ -14,6 +11,7 @@
         Structural: 500
         Piercing: 300
     penetrationThreshold: 1000
+    armorPenetration: 0.9
     deleteOnCollide: true
   - type: Sprite
     sprite: _Mono/Objects/SpaceArtillery/57_shell.rsi
@@ -30,8 +28,8 @@
   - type: RadarBlip
     scale: 1.5
     requireNoGrid: true
-    shape: triangle
-    radarColor: "#FF6600"
+    shape: diamond
+    radarColor: "#00FFFF"
 
 # APFSDS (Armor-Piercing Fin-Stabilized Discarding Sabot)
 - type: entity
@@ -45,21 +43,22 @@
       types:
         Structural: 50
         Piercing: 30
-    deleteOnCollide: false  # Will be deleted when sabot discards
+    penetrationThreshold: 150
+    deleteOnCollide: false
   - type: SubmunitionProjectile
     submunitionPrototype: ShipPenetratorProjectile
-    distanceDelay: 50  # Discard sabot after 50 meters
-    submunitionDelay: 0  # Not used if distanceDelay > 0
-    submunitionCount: 1  # Single penetrator
-    spreadAngle: 0  # No spread for single projectile
-    velocityMultiplier: 1.8  # Penetrator is 80% faster
+    distanceDelay: 50
+    submunitionDelay: 0
+    submunitionCount: 1
+    spreadAngle: 0
+    velocityMultiplier: 1.8
   - type: Sprite
     sprite: _Mono/Objects/SpaceArtillery/57_shell.rsi
     layers:
     - state: 57-shell
   - type: ShipWeaponProjectile
   - type: TimedDespawn
-    lifetime: 10  # Safety despawn
+    lifetime: 10
   - type: PointLight
     radius: 2.5
     color: orange
@@ -83,9 +82,9 @@
         Structural: 100
         Piercing: 50
     penetrationThreshold: 400
-    deleteOnCollide: false  # Handled by HeatSystem
+    deleteOnCollide: false
   - type: Heat
-    explosionDelay: 0  # Instant explosion
+    explosionDelay: 0
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: Default
@@ -123,12 +122,12 @@
         Structural: 100
         Piercing: 50
     penetrationThreshold: 400
-    deleteOnCollide: false  # Handled by HeatSystem
+    deleteOnCollide: false
   - type: Heat
-    explosionDelay: 0  # Instant explosion
+    explosionDelay: 0
     fragmentationPrototype: ShipShrapnelFragment
-    fragmentationCount: 8  # Spawn 8 fragments
-    fragmentationDelay: 0.5  # Delay fragmentation by 0.5 seconds after penetration
+    fragmentationCount: 8
+    fragmentationDelay: 0.5
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: Default
@@ -166,9 +165,9 @@
         Structural: 100
         Piercing: 50
     penetrationThreshold: 400
-    deleteOnCollide: false  # Handled by HeatSystem
+    deleteOnCollide: false
   - type: Heat
-    explosionDelay: 0.2  # 200ms delay after penetration stops
+    explosionDelay: 0.2
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: Default
@@ -236,12 +235,12 @@
       types:
         Structural: 20
         Blunt: 20
-    deleteOnCollide: false  # Will be deleted when submunitions spawn
+    deleteOnCollide: false
   - type: SubmunitionProjectile
     submunitionPrototype: ShipSubmunitionBase
-    submunitionDelay: 1.5  # Spawn submunitions after 1.5 seconds
-    submunitionCount: 6  # Spawn 6 submunitions
-    spreadAngle: 30  # 30 degree spread
+    submunitionDelay: 1.5
+    submunitionCount: 6
+    spreadAngle: 30
   - type: Sprite
     sprite: _Mono/Objects/SpaceArtillery/mini_rocket.rsi
     layers:
@@ -259,9 +258,7 @@
     shape: hexagon
     radarColor: "#FF8800"
 
-# Additional projectile types
-
-# AP (Armor Piercing) -
+# AP (Armor Piercing)
 - type: entity
   id: ShipApProjectile
   name: AP projectile
@@ -274,6 +271,7 @@
         Structural: 200
         Piercing: 150
     penetrationThreshold: 600
+    armorPenetration: 0.6
     deleteOnCollide: true
   - type: Sprite
     sprite: _Mono/Objects/SpaceArtillery/57_shell.rsi
@@ -292,7 +290,7 @@
     shape: triangle
     radarColor: "#FF6600"
 
-# APHE (Armor Piercing High Explosive) - Penetrates then explodes
+# APHE (Armor Piercing High Explosive)
 - type: entity
   id: ShipApheProjectile
   name: APHE projectile
@@ -307,7 +305,7 @@
     penetrationThreshold: 500
     deleteOnCollide: false
   - type: Heat
-    explosionDelay: 0.1  # 100ms delay after penetration
+    explosionDelay: 0.1
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: Default
@@ -347,9 +345,9 @@
     penetrationThreshold: 500
     deleteOnCollide: false
   - type: Heat
-    explosionDelay: 0.1  # 100ms delay after penetration
+    explosionDelay: 0.1
     fragmentationPrototype: ShipShrapnelFragment
-    fragmentationCount: 6  # Spawn 6 fragments
+    fragmentationCount: 6
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: Default
@@ -411,7 +409,7 @@
     shape: triangle
     radarColor: "#FF2200"
 
-# Shrapnel round - Explodes and spawns multiple fragments
+# Shrapnel round
 - type: entity
   id: ShipShrapnelFragment
   name: shrapnel fragment
@@ -456,9 +454,9 @@
     deleteOnCollide: false
   - type: SubmunitionProjectile
     submunitionPrototype: ShipShrapnelFragment
-    submunitionDelay: 0.05  # Very short delay to spawn fragments quickly
-    submunitionCount: 12  # 12 fragments
-    spreadAngle: 60  # Wide spread
+    submunitionDelay: 0.05
+    submunitionCount: 12
+    spreadAngle: 60
   - type: Sprite
     sprite: _Mono/Objects/SpaceArtillery/630_armorpiercing_shell_casing.rsi
     layers:

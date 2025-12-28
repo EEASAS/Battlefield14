@@ -2,7 +2,7 @@
 # 17.76mm TRUMPCARD Railgun
 - type: entity
   id: Magazine1776mmRailgun
-  name: "17.76mm railgun magazine"
+  name: "17.76mm TRUMPCARD railgun magazine"
   description: "An ammunition loader for the TRUMPCARD railgun. Contains 17.76mm electromagnetic projectiles."
   parent: [BaseItem, RecyclableItemSteelSmall]
   components:
@@ -150,7 +150,7 @@
 # 20mm Phalanx CIWS
 - type: entity
   id: Magazine20mmPhalanx
-  name: "20mm Phalanx CIWS magazine"
+  name: "20mm Phalanx CIWS magazine (AP)"
   description: "An ammunition drum for the Phalanx close-in weapon system. Loaded with armor-piercing rounds."
   parent: [BaseItem, RecyclableItemSteelTiny]
   components:
@@ -426,7 +426,7 @@
 # 25mm M242 Bushmaster AP-T Magazine
 - type: entity
   id: Magazine25mmAPT
-  name: "25mm AP-T magazine"
+  name: "25mm M242 Bushmaster magazine (AP-T)"
   description: "An ammunition loader for the M242 Bushmaster autocannon, loaded with armor-piercing tracer rounds."
   parent: [BaseItem, RecyclableItemSteelTiny]
   components:
@@ -464,7 +464,7 @@
 # 25mm M242 Bushmaster Fragmentation Magazine
 - type: entity
   id: Magazine25mmFrag
-  name: "25mm fragmentation magazine"
+  name: "25mm M242 Bushmaster magazine (Fragmentation)"
   description: "An ammunition loader for the M242 Bushmaster autocannon, loaded with fragmentation rounds."
   parent: [BaseItem, RecyclableItemSteelTiny]
   components:
@@ -949,7 +949,7 @@
 # 40x46mm MK20 Plasma Gas Magazine
 - type: entity
   id: Magazine40x46mmPlasmaGas
-  name: "40x46mm plasma gas magazine"
+  name: "40x46mm MK20 plasma gas magazine"
   description: "An ammunition drum for the MK20 automatic grenade launcher, loaded with plasma gas rounds."
   parent: [BaseItem, RecyclableItemSteelTiny]
   components:
@@ -987,7 +987,7 @@
 # 40x46mm MK20 Chemical Smoke Magazine
 - type: entity
   id: Magazine40x46mmChemicalSmoke
-  name: "40x46mm chemical smoke magazine"
+  name: "40x46mm MK20 chemical smoke magazine"
   description: "An ammunition drum for the MK20 automatic grenade launcher, loaded with chemical smoke rounds."
   parent: [BaseItem, RecyclableItemSteelTiny]
   components:
