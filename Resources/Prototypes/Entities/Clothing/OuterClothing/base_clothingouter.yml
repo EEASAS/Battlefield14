@@ -128,7 +128,7 @@
 
 - type: entity
   abstract: true
-  parent: [RecyclableItemClothHardsuit, ClothingOuterBase, GeigerCounterClothing, AllowSuitStorageClothing, ClothingArmorPlateLight] # Frontier: added RecyclableItemClothHardsuit
+  parent: [RecyclableItemClothHardsuit, ClothingOuterBase, GeigerCounterClothing, AllowSuitStorageClothing] #ClothingArmorPlateLight] # BF14, commented out ClothingArmorPlateLight so our own fills will work, side effect is it doesnt allow mono suits to take plates # Frontier: added RecyclableItemClothHardsuit
   id: ClothingOuterHardsuitBase
   name: base hardsuit
   components:

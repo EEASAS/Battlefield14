@@ -1,0 +1,18 @@
+- type: entity
+  id: BF_CartridgePistol9x19
+  name: cartridge (9x19mm Parabellum)
+  parent: BaseCartridge
+  components:
+  - type: CartridgeAmmo
+    proto: BulletPistolBF9x19
+  - type: Tag
+    tags:
+    - Cartridge
+    - BF_CartridgePistol9x19
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Ammunition/Casings/ammo_casing.rsi
+    layers:
+    - state: base
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals

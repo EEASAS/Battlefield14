@@ -1,0 +1,64 @@
+- type: entity
+  parent: [ClothingOuterArmorBase, ClothingArmorPlateMedium]
+  id: ClothingOuterArmorPlateCarrierBlack
+  name: black plate carrier
+  description: A standard issue armor vest for cannon fodder.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Clothing/OuterClothing/Armor/blackcarrier.rsi
+  - type: Clothing
+    sprite: _Battlefield14/Clothing/OuterClothing/Armor/blackcarrier.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.85
+        Slash: 0.85
+        Piercing: 0.40
+        Heat: 0.85
+        Caustic: 0.9
+  - type: ExplosionResistance
+    damageCoefficient: 0.75
+#  - type: ExtendDescription
+#    descriptionList:
+#    - description: "Maximum health: 1000. Armour type: Metallic"
+#      fontSize: 12
+#      color: "#1c89b1"
+#      requireDetailRange: true
+
+- type: entity
+  parent: ClothingOuterArmorPlateCarrierBlack
+  id: ClothingOuterArmorPlateCarrierTan
+  name: tan plate carrier
+  description: A standard issue armor vest for cannon fodder.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Clothing/OuterClothing/Armor/tancarrier.rsi
+  - type: Clothing
+    sprite: _Battlefield14/Clothing/OuterClothing/Armor/tancarrier.rsi
+
+- type: entity
+  parent: [ClothingOuterArmorBasic, ClothingArmorPlateLight]
+  id: ClothingOuterArmorPlateCarrierBlackEgg
+  name: egg-carton plate carrier
+  description: A standard issue plate carrier with the plates removed and replaced with an egg carton, some foam, and a kevlar insert. Utter garbage against bullets but will absorb some blunt impact
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Clothing/OuterClothing/Armor/blackcarrier.rsi
+  - type: Clothing
+    sprite: _Battlefield14/Clothing/OuterClothing/Armor/blackcarrier.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.6
+        Slash: 0.6
+        Piercing: 0.9
+        Heat: 0.85
+        Caustic: 0.9
+  - type: ExplosionResistance
+    damageCoefficient: 0.9
+#  - type: ExtendDescription
+#    descriptionList:
+#    - description: "Maximum health: 400. Armour type: Ceramic"
+#      fontSize: 12
+#      color: "#2a740a"
+#      requireDetailRange: true
