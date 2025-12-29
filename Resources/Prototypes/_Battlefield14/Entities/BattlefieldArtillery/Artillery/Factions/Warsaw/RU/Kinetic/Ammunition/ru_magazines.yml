@@ -597,7 +597,7 @@
     tags:
     - Magazine57mmBurevestnikN
   - type: Item
-    size: Medium
+    size: Normal
   - type: BallisticAmmoProvider
     infiniteUnspawned: false
     proto: Cartridge57mmBurevestnikN
@@ -675,7 +675,7 @@
     tags:
     - Magazine83mmVasilekN
   - type: Item
-    size: Medium
+    size: Normal
   - type: BallisticAmmoProvider
     infiniteUnspawned: false
     proto: Cartridge83mmMortar
@@ -1005,7 +1005,7 @@
     tags:
     - Magazine125mmMolotN
   - type: Item
-    size: Medium
+    size: Normal
   - type: BallisticAmmoProvider
     infiniteUnspawned: false
     proto: Cartridge125mmAPFSDS
