@@ -27,7 +27,7 @@
     - FullAuto
     selectedMode: FullAuto
     fireRate: 8
-    projectileSpeed: 30 # 13 inch barrel
+    projectileSpeed: 40 # 13 inch barrel
     soundGunshot:
       collection: BF_M249_Gunshots
       params:

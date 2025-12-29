@@ -30,7 +30,7 @@
     burstFireRate: 16
     burstCooldown: 0.3
     fireRate: 3
-    projectileSpeed: 50 # twenty inch barrel
+    projectileSpeed: 55 # twenty inch barrel
     soundGunshot:
       collection: BF_M16_Gunshots
       params:
@@ -93,7 +93,7 @@
   - type: Gun
     minAngle: 16
     maxAngle: 32
-    projectileSpeed: 30 # Shorter barrel
+    projectileSpeed: 40 # Shorter barrel
     availableModes:
     - SemiAuto
     - FullAuto
@@ -129,7 +129,7 @@
   - type: Gun
     minAngle: 16
     maxAngle: 32
-    projectileSpeed: 30 # Shorter barrel
+    projectileSpeed: 40 # Shorter barrel
     availableModes:
     - SemiAuto
     - FullAuto
@@ -165,7 +165,7 @@
   - type: Gun
     minAngle: 16
     maxAngle: 32
-    projectileSpeed: 30 # Shorter barrel
+    projectileSpeed: 40 # Shorter barrel
     availableModes:
     - SemiAuto
     - FullAuto
@@ -233,7 +233,7 @@
     - FullAuto
     selectedMode: FullAuto
     fireRate: 6
-    projectileSpeed: 35
+    projectileSpeed: 45
     soundGunshot:
       collection: BF_AK_545_Gunshots
       params:
@@ -339,14 +339,14 @@
   - type: Gun
     minAngle: 21
     maxAngle: 30
-    angleIncrease: 1.5
+    angleIncrease: 1
     angleDecay: 16
     availableModes:
     - SemiAuto
     - FullAuto
     selectedMode: FullAuto
     fireRate: 5
-    projectileSpeed: 30 # slower boolet
+    projectileSpeed: 35 # slower boolet
     soundGunshot:
       collection: BF_AK_762_Gunshots
       params:
@@ -398,6 +398,14 @@
         map: ["enum.GunVisualLayers.Base"]
       - state: mag-0
         map: ["enum.GunVisualLayers.Mag"]
+  - type: GunWieldBonus
+    minAngle: -19
+    maxAngle: -25
+  - type: Gun
+    minAngle: 21
+    maxAngle: 30
+    angleIncrease: 0.4
+    angleDecay: 16
   - type: Clothing
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AKMS.rsi
   - type: Appearance
@@ -430,7 +438,7 @@
     - FullAuto
     selectedMode: FullAuto
     fireRate: 9
-    projectileSpeed: 30 # subsonic
+    projectileSpeed: 35 # subsonic
     soundGunshot:
       collection: BF_M16_Gunshots_SUPP # Looks weird, but these sound more pew pew than the galil (used by M4A1 SUPP) and this is an ASVAL
       params:

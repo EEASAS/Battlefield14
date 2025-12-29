@@ -1,3 +1,5 @@
+# US
+
 - type: entity
   parent: ClothingHeadHelmetBasic
   id: ClothingHeadHatHelmetUS
@@ -29,20 +31,12 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.9
-        Slash: 0.9
+        Blunt: 0.8
+        Slash: 0.8
         Piercing: 0.9
         Heat: 0.9
-  # COMMENTED OUT: Unknown component 'DegradeableArmor'
-  # - type: DegradeableArmor
-  #   armorMaxHealth: 500
-  #   armorType: Ceramic
-  #   armorRepair: NTCeramic
-  #   initialModifiers:
-  #     flatReductions:
-  #       Blunt: 20
-  #       Slash: 20
-  #       Piercing: 10
+
+# RU
 
 - type: entity
   parent: ClothingHeadHatHelmetUS
@@ -76,3 +70,27 @@
     sprite: _Battlefield14/Clothing/Head/Helmets/emrhelmetriot.rsi
   - type: Clothing
     sprite: _Battlefield14/Clothing/Head/Helmets/emrhelmetriot.rsi
+
+# MISC
+
+- type: entity
+  parent: ClothingHeadHatHelmetUS
+  id: ClothingHeadHatHelmetSecurityBF14
+  name: security helmet
+  description: This isnt for catching shrap or rounds, its made to keep your grey matter from grossing out your buddies.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Clothing/Head/Helmets/helmetsec.rsi
+  - type: Clothing
+    sprite: _Battlefield14/Clothing/Head/Helmets/helmetsec.rsi
+
+- type: entity
+  parent: ClothingHeadHatHelmetSecurityBF14
+  id: ClothingHeadHatHelmetCommand
+  name: command helmet
+  description: This isnt for catching shrap or rounds, its made to keep your grey matter from grossing out your buddies.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Clothing/Head/Helmets/helmetcom.rsi
+  - type: Clothing
+    sprite: _Battlefield14/Clothing/Head/Helmets/helmetcom.rsi

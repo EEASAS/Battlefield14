@@ -19,7 +19,7 @@
     - 0,0,5,2
   - type: Gun # TODO make this function like goobstation lever action
     fireRate: 0.5
-    projectileSpeed: 50 # it's a sniper
+    projectileSpeed: 55 # it's a sniper
 #    damageModifier: 1.5 doesn't work
     soundGunshot:
       path: /Audio/_Battlefield14/Weapons/Guns/misc/lever_fire.ogg

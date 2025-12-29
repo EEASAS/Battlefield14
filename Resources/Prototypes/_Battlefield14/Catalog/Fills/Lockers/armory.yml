@@ -26,7 +26,7 @@
   - type: StorageFill
     contents:
         - id: WeaponRifleUSM27IAR
-          amount: 6
+          amount: 10
         - id: BoxMagazineSTANAG
           amount: 2
   - type: AccessReader
@@ -65,5 +65,24 @@
           amount: 2
         - id: BoxMagazineSV98
           amount: 2
+  - type: AccessReader
+    access: [["PACTSoldier"]]
+
+- type: entity
+  id: LockerArmoryPACTFilledAK203
+  parent: LockerSyndicatePersonal
+  suffix: Filled, AK203
+  name: AK-203 locker
+  components:
+  - type: StorageFill
+    contents:
+        - id: WeaponRifleRUAK203
+          amount: 10
+        - id: BoxMagazineAKM
+          amount: 2
+        - id: ClothingUniformJumpsuitCombatSuitDigitalRed
+          amount: 5
+        - id: ClothingHelmetCoverRedDigital
+          amount: 5
   - type: AccessReader
     access: [["PACTSoldier"]]

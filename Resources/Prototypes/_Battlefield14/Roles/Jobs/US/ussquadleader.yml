@@ -11,6 +11,8 @@
     # COMMENTED OUT: FactionRequirement not supported (faction system not implemented)
     # - !type:FactionRequirement
     #   factionID: "NATO"
+#    - !type:SexRequirement # Not implemented
+#      sex: Male
     - !type:TraitsRequirement
       inverted: true
       traits:

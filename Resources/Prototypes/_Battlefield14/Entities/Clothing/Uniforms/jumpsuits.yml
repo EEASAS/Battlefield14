@@ -1,3 +1,5 @@
+# US
+
 - type: entity
   parent: ClothingUniformBase
   id: ClothingUniformJumpsuitCamoUS
@@ -8,6 +10,8 @@
     sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/uscamo.rsi
   - type: Clothing
     sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/uscamo.rsi
+
+# RU
 
 - type: entity
   parent: ClothingUniformBase
@@ -30,3 +34,31 @@
     sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/emrcamo.rsi
   - type: Clothing
     sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/emrcamo.rsi
+
+# MISC
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitUtilityCrewblack
+  name: black crew utility uniform
+  description: Used on spacecraft/stations with assigned missions.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/black_utility_crew.rsi
+  - type: Clothing
+    sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/black_utility_crew.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitUtilityCrewblackSec
+  name: black security utility uniform
+  description: Used on spacecraft/stations with assigned missions.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/black_utility_sec.rsi
+#    layers:
+#    - state: icon
+#    - state: icon-cuffs
+#      color: "#860000"
+  - type: Clothing
+    sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/black_utility_sec.rsi

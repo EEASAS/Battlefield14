@@ -292,7 +292,7 @@
 
 #Security Hardsuit
 - type: entity
-  parent: ClothingOuterHardsuitBase
+  parent: [ ClothingOuterHardsuitBase , ClothingArmorPlateLight ] # BF14
   id: ClothingOuterHardsuitSecurity
   name: security hardsuit
   description: A special suit that protects against hazardous, low pressure environments. Has an additional layer of armor.
@@ -309,9 +309,9 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.5
-        Slash: 0.6
-        Piercing: 0.5
+        Blunt: 0.7 # BF14
+        Slash: 0.5 # BF14
+        Piercing: 0.6 # BF14
         Caustic: 0.8
         Heat: 0.7 # Goobstation
   - type: ClothingSpeedModifier

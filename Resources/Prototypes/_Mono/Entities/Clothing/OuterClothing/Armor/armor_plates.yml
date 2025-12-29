@@ -16,7 +16,7 @@
     maxDurability: 100 # BF14
     walkSpeedModifier: 1 # BF14
     sprintSpeedModifier: 1 # BF14
-    staminaDamageMultiplier: 0.0 # BF14
+    staminaDamageMultiplier: 0.2 # BF14
   - type: Damageable
     damageContainer: Inorganic
   - type: Destructible
@@ -52,7 +52,7 @@
     maxDurability: 200 # BF14
     walkSpeedModifier: 1 # BF14
     sprintSpeedModifier: 1 # BF14
-    staminaDamageMultiplier: 0.0 # BF14
+    staminaDamageMultiplier: 0.2 # BF14
   - type: Damageable
     damageContainer: Inorganic
   - type: Destructible
@@ -88,7 +88,7 @@
     maxDurability: 300 # BF14
     walkSpeedModifier: 0.90
     sprintSpeedModifier: 0.90
-    staminaDamageMultiplier: 0.0 # BF14
+    staminaDamageMultiplier: 0.3 # BF14
   - type: Damageable
     damageContainer: Inorganic
   - type: Destructible
@@ -124,7 +124,7 @@
     maxDurability: 350 # BF14
     walkSpeedModifier: 1.0
     sprintSpeedModifier: 1.0
-    staminaDamageMultiplier: 0.0
+    staminaDamageMultiplier: 0.3 # BF14
   - type: Damageable
     damageContainer: Inorganic
   - type: Destructible
