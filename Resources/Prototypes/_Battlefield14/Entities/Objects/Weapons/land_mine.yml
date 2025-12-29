@@ -12,7 +12,7 @@
     state: icon
   - type: ExplodeOnTrigger
   - type: Explosive
-    explosionType: Fragmentation
+    explosionType: Default
     maxIntensity: 10
     intensitySlope: 3
     totalIntensity: 120 # about a 4-5 tile radius

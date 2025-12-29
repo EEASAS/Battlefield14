@@ -84,3 +84,8 @@
 
 - type: Tag
   id: Cartridge125mmAPFSDS
+
+# Kornet-N Guided Missile System Launcher
+
+- type: Tag
+  id: KornetNCartridge

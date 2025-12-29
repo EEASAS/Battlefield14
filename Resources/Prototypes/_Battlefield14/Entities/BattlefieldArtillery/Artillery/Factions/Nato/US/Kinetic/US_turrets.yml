@@ -258,7 +258,6 @@
           - Magazine25mmBushmaster
           - Magazine25mmAPT
           - Magazine25mmFrag
-          - Magazine25mmRIP
         whitelistFailPopup: gun-magazine-whitelist-fail
   - type: Destructible
     thresholds:
