@@ -86,10 +86,27 @@
       - id: MagazineRifleSV98
         amount: 8
 
-# Grenades
+### Grenades
 
-# US 
+## US
 
+# Handthrown
+
+- type: entity
+  name: box of MK21HE grenades
+  parent: BoxMagazine
+  id: BoxGrenadesMK21
+  description: A box full of high explosive 40x46mm grenades.
+  components:
+  - type: Storage
+    grid:
+    - 0,0,3,3
+  - type: StorageFill
+    contents:
+      - id: MK21Handgrenade
+        amount: 8
+
+# 40x46mm
 - type: entity
   name: box of 40x46 HE grenades
   parent: BoxMagazine
@@ -147,7 +164,7 @@
         amount: 8
 
 - type: entity
-  name: box of 40x46 frag grenades
+  name: box of 40x46 MP-APERS grenades
   parent: BoxMagazine
   id: BoxMagazine40x46mmMPAPERS
   description: A box full of 40x46mm multiple projectile shells.
