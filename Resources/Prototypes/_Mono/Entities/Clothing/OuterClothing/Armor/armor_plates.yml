@@ -39,7 +39,7 @@
   parent: BaseItem
   id: ArmorPlateMedium
   name: ceramic plate
-  description: Ceramic armour absorbs impacts by using ceramic tiles that the bullet breaks on impact instead of you, not the most durable but quite good protection, uncountable soldiers depend on this kind of plate to save their life. # BF14
+  description: Ceramic armour absorbs impacts by using ceramic tiles that the bullet breaks on impact instead of you, uncountable soldiers depend on this kind of plate to save their life. # BF14
   suffix: Medium
   components:
   - type: Sprite
