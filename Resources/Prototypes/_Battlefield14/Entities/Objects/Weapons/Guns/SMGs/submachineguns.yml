@@ -17,7 +17,7 @@
     minAngle: 0
     maxAngle: 2
     fireRate: 13
-    projectileSpeed: 25 # pistol caliber
+    projectileSpeed: 35 # pistol caliber
     availableModes:
     - SemiAuto
     - FullAuto
