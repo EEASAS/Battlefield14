@@ -1,9 +1,10 @@
 #NATO
 
 - type: entity
-  parent: AirlockCommand
-  id: AirlockCommandLockedNATOCommon
+  parent: AirlockNfsd
+  id: AirlockNfsdLockedNATOCommon
   suffix: NATO Common, Locked
+  name: NATO Common airlock
   components:
   - type: ContainerFill
     containers:
@@ -13,6 +14,7 @@
   parent: AirlockMaint
   id: AirlockMaintLockedNATOMaintenance
   suffix: NATO Maintenance, Locked
+  name: NATO Maintenance airlock
   components:
   - type: ContainerFill
     containers:
@@ -22,15 +24,17 @@
   parent: AirlockMedical
   id: AirlockMedicalLockedNATOMedical
   suffix: NATO Medical, Locked
+  name: NATO Medical airlock
   components:
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsNATOMedical ]
 
 - type: entity
-  parent: AirlockCommand
-  id: AirlockCommandLockedNATOSoldier
+  parent: AirlockNfsd
+  id: AirlockNfsdLockedNATOSoldier
   suffix: NATO Soldier, Locked
+  name: NATO Soldier airlock
   components:
   - type: ContainerFill
     containers:
@@ -39,108 +43,111 @@
 - type: entity
   parent: AirlockSyndicate
   id: AirlockSyndicateLockedNATOArmory
-  suffix: NATO Armory, Locked
+  suffix: NATO Armoury, Locked
+  name: NATO Armoury airlock
   components:
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsNATOArmory ]
 
 - type: entity
-  parent: AirlockCommand
-  id: AirlockCommandLockedNATOCommand
+  parent: AirlockNfsd
+  id: AirlockNfsdLockedNATOCommand
   suffix: NATO Command, Locked
+  name: NATO Command airlock
   components:
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsNATOCommand]
 
 - type: entity
-  parent: AirlockCommand
-  id: AirlockCommandLockedNATOFunds
+  parent: AirlockNfsd
+  id: AirlockNfsdLockedNATOFunds
   suffix: NATO Funds, Locked
+  name: NATO Funds airlock
   components:
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsNATOFunds ]
 
-#NATO horizontal
-
-- type: entity
-  # COMMENTED OUT: Missing parent 'AirlockCommandHorizontal' (horizontal doors not supported)
-  # parent: AirlockCommandHorizontal
-  parent: AirlockCommand
-  id: AirlockCommandLockedNATOCommonHorizontal
-  suffix: NATO Common, Horizontal
-  components:
-  - type: ContainerFill
-    containers:
-      board: [ DoorElectronicsNATOCommon ]
-
-- type: entity
-  # COMMENTED OUT: Missing parent 'AirlockMaintHorizontal' (horizontal doors not supported)
-  # parent: AirlockMaintHorizontal
-  parent: AirlockMaint
-  id: AirlockCommandLockedNATOMaintenanceHorizontal
-  suffix: NATO Maintenance, Horizontal
-  components:
-  - type: ContainerFill
-    containers:
-      board: [ DoorElectronicsNATOMaintenance ]
-
-- type: entity
-  # COMMENTED OUT: Missing parent 'AirlockMedicalHorizontal' (horizontal doors not supported)
-  # parent: AirlockMedicalHorizontal
-  parent: AirlockMedical
-  id: AirlockCommandLockedNATOMedicalHorizontal
-  suffix: NATO Medical, Horizontal
-  components:
-  - type: ContainerFill
-    containers:
-      board: [ DoorElectronicsNATOMedical ]
-
-- type: entity
-  # COMMENTED OUT: Missing parent 'AirlockCommandHorizontal' (horizontal doors not supported)
-  # parent: AirlockCommandHorizontal
-  parent: AirlockCommand
-  id: AirlockCommandLockedNATOSoldierHorizontal
-  suffix: NATO Soldier, Horizontal
-  components:
-  - type: ContainerFill
-    containers:
-      board: [ DoorElectronicsNATOSoldier ]
-
-- type: entity
-  # COMMENTED OUT: Missing parent 'AirlockSyndicateHorizontal' (horizontal doors not supported)
-  # parent: AirlockSyndicateHorizontal
-  parent: AirlockSyndicate
-  id: AirlockCommandLockedNATOArmoryHorizontal
-  suffix: NATO Armory, Horizontal
-  components:
-  - type: ContainerFill
-    containers:
-      board: [ DoorElectronicsNATOArmory ]
-
-- type: entity
-  # COMMENTED OUT: Missing parent 'AirlockCommandHorizontal' (horizontal doors not supported)
-  # parent: AirlockCommandHorizontal
-  parent: AirlockCommand
-  id: AirlockCommandLockedNATOCommandHorizontal
-  suffix: NATO Command, Horizontal
-  components:
-  - type: ContainerFill
-    containers:
-      board: [ DoorElectronicsNATOCommand ]
-
-- type: entity
-  # COMMENTED OUT: Missing parent 'AirlockCommandHorizontal' (horizontal doors not supported)
-  # parent: AirlockCommandHorizontal
-  parent: AirlockCommand
-  id: AirlockCommandLockedNATOFundsHorizontal
-  suffix: NATO Funds, Horizontal
-  components:
-  - type: ContainerFill
-    containers:
-      board: [ DoorElectronicsNATOFunds ]
+##NATO horizontal
+#
+#- type: entity
+#  # COMMENTED OUT: Missing parent 'AirlockNfsdHorizontal' (horizontal doors not supported)
+#  # parent: AirlockNfsdHorizontal
+#  parent: AirlockNfsd
+#  id: AirlockNfsdLockedNATOCommonHorizontal
+#  suffix: NATO Common, Horizontal
+#  components:
+#  - type: ContainerFill
+#    containers:
+#      board: [ DoorElectronicsNATOCommon ]
+#
+#- type: entity
+#  # COMMENTED OUT: Missing parent 'AirlockMaintHorizontal' (horizontal doors not supported)
+#  # parent: AirlockMaintHorizontal
+#  parent: AirlockMaint
+#  id: AirlockNfsdLockedNATOMaintenanceHorizontal
+#  suffix: NATO Maintenance, Horizontal
+#  components:
+#  - type: ContainerFill
+#    containers:
+#      board: [ DoorElectronicsNATOMaintenance ]
+#
+#- type: entity
+#  # COMMENTED OUT: Missing parent 'AirlockMedicalHorizontal' (horizontal doors not supported)
+#  # parent: AirlockMedicalHorizontal
+#  parent: AirlockMedical
+#  id: AirlockNfsdLockedNATOMedicalHorizontal
+#  suffix: NATO Medical, Horizontal
+#  components:
+#  - type: ContainerFill
+#    containers:
+#      board: [ DoorElectronicsNATOMedical ]
+#
+#- type: entity
+#  # COMMENTED OUT: Missing parent 'AirlockNfsdHorizontal' (horizontal doors not supported)
+#  # parent: AirlockNfsdHorizontal
+#  parent: AirlockNfsd
+#  id: AirlockNfsdLockedNATOSoldierHorizontal
+#  suffix: NATO Soldier, Horizontal
+#  components:
+#  - type: ContainerFill
+#    containers:
+#      board: [ DoorElectronicsNATOSoldier ]
+#
+#- type: entity
+#  # COMMENTED OUT: Missing parent 'AirlockSyndicateHorizontal' (horizontal doors not supported)
+#  # parent: AirlockSyndicateHorizontal
+#  parent: AirlockSyndicate
+#  id: AirlockNfsdLockedNATOArmoryHorizontal
+#  suffix: NATO Armory, Horizontal
+#  components:
+#  - type: ContainerFill
+#    containers:
+#      board: [ DoorElectronicsNATOArmory ]
+#
+#- type: entity
+#  # COMMENTED OUT: Missing parent 'AirlockNfsdHorizontal' (horizontal doors not supported)
+#  # parent: AirlockNfsdHorizontal
+#  parent: AirlockNfsd
+#  id: AirlockNfsdLockedNATOCommandHorizontal
+#  suffix: NATO Command, Horizontal
+#  components:
+#  - type: ContainerFill
+#    containers:
+#      board: [ DoorElectronicsNATOCommand ]
+#
+#- type: entity
+#  # COMMENTED OUT: Missing parent 'AirlockNfsdHorizontal' (horizontal doors not supported)
+#  # parent: AirlockNfsdHorizontal
+#  parent: AirlockNfsd
+#  id: AirlockNfsdLockedNATOFundsHorizontal
+#  suffix: NATO Funds, Horizontal
+#  components:
+#  - type: ContainerFill
+#    containers:
+#      board: [ DoorElectronicsNATOFunds ]
 
 # NATO windoors
 
@@ -148,6 +155,7 @@
   parent: WindoorSecure
   id: WindoorSecureNATOCommon
   suffix: NATO Common, Locked, Windoor
+  name: NATO Common windoor
   components:
   - type: ContainerFill
     containers:
@@ -155,8 +163,29 @@
 
 - type: entity
   parent: WindoorSecure
+  id: WindoorSecureNATOMaintenance
+  suffix: NATO Maintenance, Locked, Windoor
+  name: NATO Maintenance windoor
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsNATOMaintenance ]
+
+- type: entity
+  parent: WindoorSecure
+  id: WindoorSecureNATOMedical
+  suffix: NATO Medical, Locked, Windoor
+  name: NATO Medical windoor
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsNATOMedical ]
+
+- type: entity
+  parent: WindoorSecure
   id: WindoorSecureNATOArmory
   suffix: NATO Armory, Locked, Windoor
+  name: NATO Armoury windoor
   components:
   - type: ContainerFill
     containers:
@@ -166,6 +195,7 @@
   parent: WindoorSecure
   id: WindoorSecureNATOSoldier
   suffix: NATO Soldier, Locked, Windoor
+  name: NATO Soldier windoor
   components:
   - type: ContainerFill
     containers:
@@ -175,6 +205,7 @@
   parent: WindoorSecure
   id: WindoorSecureNATOCommand
   suffix: NATO Command, Locked, Windoor
+  name: NATO Command windoor
   components:
   - type: ContainerFill
     containers:
@@ -183,9 +214,10 @@
 #PACT
 
 - type: entity
-  parent: AirlockCommand
-  id: AirlockCommandLockedPACT
+  parent: AirlockNfsd
+  id: AirlockNfsdLockedPACT
   suffix: PACT, Locked
+  name: PACT Common airlock
   components:
   - type: ContainerFill
     containers:
@@ -193,8 +225,9 @@
 
 - type: entity
   parent: AirlockMaint
-  id: AirlockCommandLockedPACTMaintenance
+  id: AirlockNfsdLockedPACTMaintenance
   suffix: PACT Maintenance, Locked
+  name: PACT Maintenance airlock
   components:
   - type: ContainerFill
     containers:
@@ -204,15 +237,17 @@
   parent: AirlockMedical
   id: AirlockMedicalLockedPACTMedical
   suffix: PACT Medical, Locked
+  name: PACT Medical airlock
   components:
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsPACTMedical ]
 
 - type: entity
-  parent: AirlockCommand
-  id: AirlockCommandLockedPACTSoldier
+  parent: AirlockNfsd
+  id: AirlockNfsdLockedPACTSoldier
   suffix: PACT Soldier, Locked
+  name: PACT Soldier airlock
   components:
   - type: ContainerFill
     containers:
@@ -221,108 +256,111 @@
 - type: entity
   parent: AirlockSyndicate
   id: AirlockSyndicateLockedPACTArmory
-  suffix: PACT Armory, Locked
+  suffix: PACT Armoury, Locked
+  name: PACT Armoury airlock
   components:
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsPACTArmory ]
 
 - type: entity
-  parent: AirlockCommand
-  id: AirlockCommandLockedPACTCommand
+  parent: AirlockNfsd
+  id: AirlockNfsdLockedPACTCommand
   suffix: PACT Command, Locked
+  name: PACT Command airlock
   components:
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsPACTCommand]
 
 - type: entity
-  parent: AirlockCommand
-  id: AirlockCommandLockedPACTFunds
+  parent: AirlockNfsd
+  id: AirlockNfsdLockedPACTFunds
   suffix: PACT Funds, Locked
+  name: PACT Funds airlock
   components:
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsPACTFunds ]
 
-#PACT horizontals
-
-- type: entity
-  # COMMENTED OUT: Missing parent 'AirlockCommandHorizontal' (horizontal doors not supported)
-  # parent: AirlockCommandHorizontal
-  parent: AirlockCommand
-  id: AirlockCommandLockedPACTHorizontal
-  suffix: PACT, Horizontal
-  components:
-  - type: ContainerFill
-    containers:
-      board: [ DoorElectronicsPACTCommon ]
-
-- type: entity
-  # COMMENTED OUT: Missing parent 'AirlockMaintHorizontal' (horizontal doors not supported)
-  # parent: AirlockMaintHorizontal
-  parent: AirlockMaint
-  id: AirlockMaintLockedPACTMaintenanceHorizontal
-  suffix: PACT, Maintenance, Horizontal
-  components:
-  - type: ContainerFill
-    containers:
-      board: [ DoorElectronicsPACTMaintenance ]
-
-- type: entity
-  # COMMENTED OUT: Missing parent 'AirlockMedicalHorizontal' (horizontal doors not supported)
-  # parent: AirlockMedicalHorizontal
-  parent: AirlockMedical
-  id: AirlockCommandLockedPACTMedicalHorizontal
-  suffix: PACT Medical, Horizontal
-  components:
-  - type: ContainerFill
-    containers:
-      board: [ DoorElectronicsPACTMedical ]
-
-- type: entity
-  # COMMENTED OUT: Missing parent 'AirlockCommandHorizontal' (horizontal doors not supported)
-  # parent: AirlockCommandHorizontal
-  parent: AirlockCommand
-  id: AirlockCommandLockedPACTSoldierHorizontal
-  suffix: PACT Soldier, Horizontal
-  components:
-  - type: ContainerFill
-    containers:
-      board: [ DoorElectronicsPACTSoldier ]
-
-- type: entity
-  # COMMENTED OUT: Missing parent 'AirlockSyndicateHorizontal' (horizontal doors not supported)
-  # parent: AirlockSyndicateHorizontal
-  parent: AirlockSyndicate
-  id: AirlockCommandLockedPACTArmoryHorizontal
-  suffix: PACT Armory, Horizontal
-  components:
-  - type: ContainerFill
-    containers:
-      board: [ DoorElectronicsPACTArmory ]
-
-- type: entity
-  # COMMENTED OUT: Missing parent 'AirlockCommandHorizontal' (horizontal doors not supported)
-  # parent: AirlockCommandHorizontal
-  parent: AirlockCommand
-  id: AirlockCommandLockedPACTCommandHorizontal
-  suffix: PACT Command, Horizontal
-  components:
-  - type: ContainerFill
-    containers:
-      board: [ DoorElectronicsPACTCommand ]
-
-- type: entity
-  # COMMENTED OUT: Missing parent 'AirlockCommandHorizontal' (horizontal doors not supported)
-  # parent: AirlockCommandHorizontal
-  parent: AirlockCommand
-  id: AirlockCommandLockedPACTFundsHorizontal
-  suffix: PACT Funds, Horizontal
-  components:
-  - type: ContainerFill
-    containers:
-      board: [ DoorElectronicsPACTFunds ]
+##PACT horizontals
+#
+#- type: entity
+#  # COMMENTED OUT: Missing parent 'AirlockNfsdHorizontal' (horizontal doors not supported)
+#  # parent: AirlockNfsdHorizontal
+#  parent: AirlockNfsd
+#  id: AirlockNfsdLockedPACTHorizontal
+#  suffix: PACT, Horizontal
+#  components:
+#  - type: ContainerFill
+#    containers:
+#      board: [ DoorElectronicsPACTCommon ]
+#
+#- type: entity
+#  # COMMENTED OUT: Missing parent 'AirlockMaintHorizontal' (horizontal doors not supported)
+#  # parent: AirlockMaintHorizontal
+#  parent: AirlockMaint
+#  id: AirlockMaintLockedPACTMaintenanceHorizontal
+#  suffix: PACT, Maintenance, Horizontal
+#  components:
+#  - type: ContainerFill
+#    containers:
+#      board: [ DoorElectronicsPACTMaintenance ]
+#
+#- type: entity
+#  # COMMENTED OUT: Missing parent 'AirlockMedicalHorizontal' (horizontal doors not supported)
+#  # parent: AirlockMedicalHorizontal
+#  parent: AirlockMedical
+#  id: AirlockNfsdLockedPACTMedicalHorizontal
+#  suffix: PACT Medical, Horizontal
+#  components:
+#  - type: ContainerFill
+#    containers:
+#      board: [ DoorElectronicsPACTMedical ]
+#
+#- type: entity
+#  # COMMENTED OUT: Missing parent 'AirlockNfsdHorizontal' (horizontal doors not supported)
+#  # parent: AirlockNfsdHorizontal
+#  parent: AirlockNfsd
+#  id: AirlockNfsdLockedPACTSoldierHorizontal
+#  suffix: PACT Soldier, Horizontal
+#  components:
+#  - type: ContainerFill
+#    containers:
+#      board: [ DoorElectronicsPACTSoldier ]
+#
+#- type: entity
+#  # COMMENTED OUT: Missing parent 'AirlockSyndicateHorizontal' (horizontal doors not supported)
+#  # parent: AirlockSyndicateHorizontal
+#  parent: AirlockSyndicate
+#  id: AirlockNfsdLockedPACTArmoryHorizontal
+#  suffix: PACT Armory, Horizontal
+#  components:
+#  - type: ContainerFill
+#    containers:
+#      board: [ DoorElectronicsPACTArmory ]
+#
+#- type: entity
+#  # COMMENTED OUT: Missing parent 'AirlockNfsdHorizontal' (horizontal doors not supported)
+#  # parent: AirlockNfsdHorizontal
+#  parent: AirlockNfsd
+#  id: AirlockNfsdLockedPACTCommandHorizontal
+#  suffix: PACT Command, Horizontal
+#  components:
+#  - type: ContainerFill
+#    containers:
+#      board: [ DoorElectronicsPACTCommand ]
+#
+#- type: entity
+#  # COMMENTED OUT: Missing parent 'AirlockNfsdHorizontal' (horizontal doors not supported)
+#  # parent: AirlockNfsdHorizontal
+#  parent: AirlockNfsd
+#  id: AirlockNfsdLockedPACTFundsHorizontal
+#  suffix: PACT Funds, Horizontal
+#  components:
+#  - type: ContainerFill
+#    containers:
+#      board: [ DoorElectronicsPACTFunds ]
 
 # PACT windoors
 
@@ -330,6 +368,7 @@
   parent: WindoorSecure
   id: WindoorSecurePACTCommon
   suffix: PACT Common, Windoor
+  name: PACT Common windoor
   components:
   - type: ContainerFill
     containers:
@@ -337,8 +376,29 @@
 
 - type: entity
   parent: WindoorSecure
+  id: WindoorSecurePACTMaintenance
+  suffix: PACT Maintenance, Locked, Windoor
+  name: PACT Maintenance windoor
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsPACTMaintenance ]
+
+- type: entity
+  parent: WindoorSecure
+  id: WindoorSecurePACTMedical
+  suffix: PACT Medical, Locked, Windoor
+  name: PACT Medical windoor
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsPACTMedical ]
+
+- type: entity
+  parent: WindoorSecure
   id: WindoorSecurePACTArmory
-  suffix: PACT Armory, Locked, Windoor
+  suffix: PACT Armoury, Locked, Windoor
+  name: PACT Armoury windoor
   components:
   - type: ContainerFill
     containers:
@@ -348,6 +408,7 @@
   parent: WindoorSecure
   id: WindoorSecurePACTSoldier
   suffix: PACT Soldier, Locked, Windoor
+  name: PACT Soldier windoor
   components:
   - type: ContainerFill
     containers:
@@ -357,6 +418,7 @@
   parent: WindoorSecure
   id: WindoorSecurePACTCommand
   suffix: PACT Command, Windoor
+  name: PACT Command windoor
   components:
   - type: ContainerFill
     containers:
