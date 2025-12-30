@@ -150,6 +150,3 @@
   - type: ApcPowerReceiver
     powerLoad: 5
   - type: ExtensionCableReceiver
-  - type: HTN
-    rootTask:
-      task: EnergyTurretCompound

@@ -6,6 +6,8 @@ using Content.Server.NPC.Queries.Curves;
 using Content.Server.NPC.Queries.Queries;
 using Content.Server.Nutrition.Components;
 using Content.Server.Nutrition.EntitySystems;
+using Content.Server.Power.EntitySystems; // Mono
+using Content.Server.Shuttles.Components; // Mono
 using Content.Server.Storage.Components;
 using Content.Shared.Chemistry.EntitySystems;
 using Content.Shared.Damage;
@@ -19,9 +21,7 @@ using Content.Shared.Mobs.Systems;
 using Content.Shared.NPC.Systems;
 using Content.Shared.Nutrition.Components;
 using Content.Shared.Nutrition.EntitySystems;
-using Content.Shared.Stunnable;
 using Content.Shared.Tools.Systems;
-using Content.Shared.Turrets;
 using Content.Shared.Weapons.Melee;
 using Content.Shared.Weapons.Ranged.Components;
 using Content.Shared.Weapons.Ranged.Events;
@@ -31,6 +31,7 @@ using Robust.Server.Containers;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
 using System.Linq;
+using Content.Shared.StatusEffect; // Frontier
 
 namespace Content.Server.NPC.Systems;
 
@@ -55,7 +56,7 @@ public sealed class NPCUtilitySystem : EntitySystem
     [Dependency] private readonly ExamineSystemShared _examine = default!;
     [Dependency] private readonly EntityWhitelistSystem _whitelistSystem = default!;
     [Dependency] private readonly MobThresholdSystem _thresholdSystem = default!;
-    [Dependency] private readonly TurretTargetSettingsSystem _turretTargetSettings = default!;
+    [Dependency] private readonly StatusEffectsSystem _statusEffectsSystem = default!; // Frontier
 
     private EntityQuery<PuddleComponent> _puddleQuery;
     private EntityQuery<TransformComponent> _xformQuery;
@@ -284,6 +285,23 @@ public sealed class NPCUtilitySystem : EntitySystem
 
                 return Math.Clamp(distance / radius, 0f, 1f);
             }
+            // Mono
+            case TargetInverseDistanceCon:
+            {
+                if (!TryComp(targetUid, out TransformComponent? targetXform) ||
+                    !TryComp(owner, out TransformComponent? xform))
+                {
+                    return 0f;
+                }
+
+                if (!targetXform.Coordinates.TryDistance(EntityManager, _transform, xform.Coordinates,
+                        out var distance))
+                {
+                    return 0f;
+                }
+
+                return 1f / (distance + 1f);
+            }
             case TargetAmmoCon:
             {
                 if (!HasComp<GunComponent>(targetUid))
@@ -361,18 +379,16 @@ public sealed class NPCUtilitySystem : EntitySystem
                         return 1f;
                     return 0f;
                 }
+            // Frontier: stun conditions
+            case TargetIsNotStunnedCon:
+            {
+                return _statusEffectsSystem.HasStatusEffect(targetUid, "Stun") ? 0f : 1f;
+            }
             case TargetIsStunnedCon:
-                {
-                    return HasComp<StunnedComponent>(targetUid) ? 1f : 0f;
-                }
-            case TurretTargetingCon:
-                {
-                    if (!TryComp<TurretTargetSettingsComponent>(owner, out var turretTargetSettings) ||
-                        _turretTargetSettings.EntityIsTargetForTurret((owner, turretTargetSettings), targetUid))
-                        return 1f;
-
-                    return 0f;
-                }
+            {
+                return _statusEffectsSystem.HasStatusEffect(targetUid, "Stun") ? 1f : 0f;
+            }
+            // End Frontier
             default:
                 throw new NotImplementedException();
         }
@@ -473,6 +489,28 @@ public sealed class NPCUtilitySystem : EntitySystem
                 foreach (var ent in _npcFaction.GetNearbyHostiles(owner, vision))
                 {
                     entities.Add(ent);
+                }
+                break;
+            }
+            // Mono - TODO: consider factions
+            case NearbyHostileShuttlesQuery shuttlesQuery:
+            {
+                var xform = Transform(owner);
+                var ownGrid = xform.GridUid;
+                foreach (var (console, consoleComp) in _lookup.GetEntitiesInRange<ShuttleConsoleComponent>(_transform.GetMapCoordinates(xform), shuttlesQuery.Range))
+                {
+                    var consoleXform = Transform(console);
+                    var consGrid = consoleXform.GridUid;
+                    if (consGrid == null ||
+                        consGrid == ownGrid ||
+                        (_transform.GetWorldPosition(consGrid.Value) - _transform.GetWorldPosition(xform)).Length() > shuttlesQuery.Range ||
+                        !this.IsPowered(console, EntityManager) ||
+                        _whitelistSystem.IsBlacklistPass(shuttlesQuery.Blacklist, consGrid.Value))
+                    {
+                        continue;
+                    }
+
+                    entities.Add(consGrid.Value);
                 }
                 break;
             }

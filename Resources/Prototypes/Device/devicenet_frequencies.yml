@@ -127,27 +127,3 @@
   id: SurveillanceCameraUSSP
   name: device-frequency-prototype-name-surveillance-camera-USSP
   frequency: 3528
-
-# Turret controllers send data to their turrets on this frequency
-- type: deviceFrequency
-  id: TurretControl
-  name: device-frequency-prototype-name-turret-control
-  frequency: 2151
-
-# Turrets send data to their controllers on this frequency
-- type: deviceFrequency
-  id: Turret
-  name: device-frequency-prototype-name-turret
-  frequency: 2152
-
-# AI turret controllers send data to their turrets on this frequency
-- type: deviceFrequency
-  id: TurretControlAI
-  name: device-frequency-prototype-name-turret-control
-  frequency: 2153
-
-# AI turrets send data to their controllers on this frequency
-- type: deviceFrequency
-  id: TurretAI
-  name: device-frequency-prototype-name-turret
-  frequency: 2154

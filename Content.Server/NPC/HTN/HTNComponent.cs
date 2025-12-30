@@ -52,12 +52,6 @@ public sealed partial class HTNComponent : NPCComponent
     [ViewVariables] public bool Planning => PlanningJob != null;
 
     /// <summary>
-    /// Determines whether plans should be made / updated for this entity
-    /// </summary>
-    [DataField]
-    public bool Enabled = true;
-
-    /// <summary>
     /// Monolith - If not null, sleep us when no players are in this range, ignoring the similar CVar.
     /// </summary>
     [DataField]

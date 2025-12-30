@@ -9,8 +9,6 @@ device-frequency-prototype-name-fax = Fax
 device-frequency-prototype-name-basic-device = Basic Devices
 device-frequency-prototype-name-cyborg-control = Cyborg Control
 device-frequency-prototype-name-robotics-console = Robotics Console
-device-frequency-prototype-name-turret = Sentry Turret
-device-frequency-prototype-name-turret-control = Sentry Turret Control
 
 ## camera frequencies
 device-frequency-prototype-name-surveillance-camera-test = Subnet Test
@@ -44,7 +42,6 @@ device-address-prefix-fire-alarm = FIR-
 device-address-prefix-air-alarm = AIR-
 
 device-address-prefix-sensor-monitor = MON-
-device-address-prefix-turret = TRT-
 
 device-address-examine-message = The device's address is {$address}.
 

@@ -55,8 +55,6 @@ namespace Content.Server.Destructible
         /// </summary>
         public void Execute(EntityUid uid, DestructibleComponent component, DamageChangedEvent args)
         {
-            component.IsBroken = false;
-
             foreach (var threshold in component.Thresholds)
             {
                 if (threshold.Reached(args.Damageable, this))
@@ -88,12 +86,6 @@ namespace Content.Server.Destructible
                     }
 
                     threshold.Reached(uid, this, args.Origin, spaceOrigin);
-                }
-
-                if (threshold.OldTriggered)
-                {
-                    component.IsBroken |= threshold.Behaviors.Any(b => b is DoActsBehavior doActsBehavior &&
-                        (doActsBehavior.HasAct(ThresholdActs.Breakage) || doActsBehavior.HasAct(ThresholdActs.Destruction)));
                 }
 
                 // if destruction behavior (or some other deletion effect) occurred, don't run other triggers.

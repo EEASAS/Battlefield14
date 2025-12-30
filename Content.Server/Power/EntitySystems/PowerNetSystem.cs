@@ -31,7 +31,7 @@ namespace Content.Server.Power.EntitySystems
         private readonly HashSet<PowerNet> _powerNetReconnectQueue = new();
         private readonly HashSet<ApcNet> _apcNetReconnectQueue = new();
 
-        private EntityQuery<Content.Shared.Power.Components.ApcPowerReceiverBatteryComponent> _apcBatteryQuery;
+        private EntityQuery<ApcPowerReceiverBatteryComponent> _apcBatteryQuery;
         private EntityQuery<AppearanceComponent> _appearanceQuery;
         private EntityQuery<BatteryComponent> _batteryQuery;
 
@@ -45,7 +45,7 @@ namespace Content.Server.Power.EntitySystems
         {
             base.Initialize();
 
-            _apcBatteryQuery = GetEntityQuery<Content.Shared.Power.Components.ApcPowerReceiverBatteryComponent>();
+            _apcBatteryQuery = GetEntityQuery<ApcPowerReceiverBatteryComponent>();
             _appearanceQuery = GetEntityQuery<AppearanceComponent>();
             _batteryQuery = GetEntityQuery<BatteryComponent>();
 
@@ -370,7 +370,7 @@ namespace Content.Server.Power.EntitySystems
                         metadata = MetaData(uid);
                         Dirty(uid, apcBattery, metadata);
 
-                        var apcBatteryEv = new Content.Shared.Power.Components.ApcPowerReceiverBatteryChangedEvent(enableBattery);
+                        var apcBatteryEv = new ApcPowerReceiverBatteryChangedEvent(enableBattery);
                         RaiseLocalEvent(uid, ref apcBatteryEv);
 
                         _appearance.SetData(uid, PowerDeviceVisuals.BatteryPowered, enableBattery);
