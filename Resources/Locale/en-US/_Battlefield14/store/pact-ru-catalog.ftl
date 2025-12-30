@@ -55,6 +55,9 @@ uplink-PACTRU-medkit-combat-desc = One singular combat medkit.
 uplink-PACTRU-rgd5-box-name = RGD5 Grenade box
 uplink-PACTRU-rgd5-box-desc = Contains 8 RGD5 high explosive grenades.
 
+uplink-PACTRU-rgo-box-name = RGO Grenade box
+uplink-PACTRU-rgo-box-desc = Contains 8 RGO offensive high explosive impact grenades.
+
 ## Ship ammo
 
 uplink-PACTRU-gromn-frag-name = A-300 Grom-N 30mm fragmentation magazine

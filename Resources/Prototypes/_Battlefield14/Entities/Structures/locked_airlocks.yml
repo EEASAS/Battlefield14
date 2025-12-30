@@ -214,8 +214,8 @@
 #PACT
 
 - type: entity
-  parent: AirlockNfsd
-  id: AirlockNfsdLockedPACT
+  parent: AirlockSyndicate
+  id: AirlockSyndicateLockedPACT
   suffix: PACT, Locked
   name: PACT Common airlock
   components:
@@ -225,7 +225,7 @@
 
 - type: entity
   parent: AirlockMaint
-  id: AirlockNfsdLockedPACTMaintenance
+  id: AirlockSyndicateLockedPACTMaintenance
   suffix: PACT Maintenance, Locked
   name: PACT Maintenance airlock
   components:
@@ -244,8 +244,8 @@
       board: [ DoorElectronicsPACTMedical ]
 
 - type: entity
-  parent: AirlockNfsd
-  id: AirlockNfsdLockedPACTSoldier
+  parent: AirlockSyndicate
+  id: AirlockSyndicateLockedPACTSoldier
   suffix: PACT Soldier, Locked
   name: PACT Soldier airlock
   components:
@@ -264,8 +264,8 @@
       board: [ DoorElectronicsPACTArmory ]
 
 - type: entity
-  parent: AirlockNfsd
-  id: AirlockNfsdLockedPACTCommand
+  parent: AirlockSyndicate
+  id: AirlockSyndicateLockedPACTCommand
   suffix: PACT Command, Locked
   name: PACT Command airlock
   components:
@@ -274,8 +274,8 @@
       board: [ DoorElectronicsPACTCommand]
 
 - type: entity
-  parent: AirlockNfsd
-  id: AirlockNfsdLockedPACTFunds
+  parent: AirlockSyndicate
+  id: AirlockSyndicateLockedPACTFunds
   suffix: PACT Funds, Locked
   name: PACT Funds airlock
   components:

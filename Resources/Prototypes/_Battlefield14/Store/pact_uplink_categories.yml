@@ -172,6 +172,22 @@
         tags:
           - RussianUplink
 
+- type: listing
+  id: UplinkPACTRUBoxGrenadesRGO
+  name:  uplink-PACTRU-rgo-box-name
+  description: uplink-PACTRU-rgo-box-desc
+  productEntity: BoxGrenadesRGO
+  icon: { sprite: _Battlefield14/Objects/Weapons/Grenades/rgo.rsi, state: icon }
+  cost:
+    PACTRequisition: 30 # 5 minutes
+  categories:
+    - UplinkPACTRUExplosives
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - RussianUplink
+
 # Ship weapons
 
 - type: listing

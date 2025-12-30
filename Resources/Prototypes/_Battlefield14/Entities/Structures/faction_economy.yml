@@ -167,31 +167,6 @@
     - RussianUplink
 
 - type: entity
-  parent: [ BaseItem, StorePresetPACTRUUplink ]
-  id: BasePACTRUUplinkDebug
-  name: PACT requisitions uplink
-  description: NATO requisitions uplink, Russian edition
-  suffix: Empty
-  categories: [ HideSpawnMenu ]
-  components:
-  - type: Sprite
-    sprite: Objects/Devices/communication.rsi
-    layers:
-    - state: old-radio
-  - type: Item
-    sprite: Objects/Devices/communication.rsi
-    heldPrefix: old-radio
-  - type: UserInterface
-    interfaces:
-      enum.StoreUiKey.Key:
-        type: StoreBoundUserInterface
-  - type: ActivatableUI
-    key: enum.StoreUiKey.Key
-  - type: Tag
-    tags:
-    - RussianUplink
-
-- type: entity
   parent: BasePACTRUUplink
   id: BasePACTRUUplinkDebug
   suffix: PACT RU, DEBUG
