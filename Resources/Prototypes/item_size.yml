@@ -22,6 +22,14 @@
   defaultShape:
   - 0,0,1,1
 
+# Items that are larger than normal but smaller than large items.
+- type: itemSize
+  id: Medium
+  weight: 6
+  name: item-component-size-Medium
+  defaultShape:
+  - 0,0,2,1
+
 # Items that are too large to fit inside of standard bags, but can worn in exterior slots or placed in custom containers.
 - type: itemSize
   id: Large
