@@ -10,7 +10,7 @@
     tags:
     - Magazine1776mmRailgun
   - type: Item
-    size: Medium
+    size: Normal
   - type: BallisticAmmoProvider
     infiniteUnspawned: false
     proto: Cartridge1776mmRailgun
@@ -796,7 +796,7 @@
     tags:
     - Magazine40mmBofors
   - type: Item
-    size: Medium
+    size: Normal
   - type: BallisticAmmoProvider
     infiniteUnspawned: false
     proto: Cartridge40mmBofors
@@ -874,7 +874,7 @@
     tags:
     - Magazine120mmM256
   - type: Item
-    size: Medium
+    size: Normal
   - type: BallisticAmmoProvider
     infiniteUnspawned: false
     proto: Cartridge120mmAPFSDS

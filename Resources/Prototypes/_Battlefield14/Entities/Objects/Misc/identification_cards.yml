@@ -5,6 +5,11 @@
   id: USMCSquadLeaderIDCard
   name: Marine Corps ID card
   components:
+  - type: Sprite
+    layers:
+    - state: silver
+  - type: Item
+    heldPrefix: silver
   - type: PresetIdCard
     job: USMCSquadLeader
 
@@ -13,6 +18,11 @@
   id: USMCRiflemanIDCard
   name: Marine Corps ID card
   components:
+  - type: Sprite
+    layers:
+    - state: silver
+  - type: Item
+    heldPrefix: silver
   - type: PresetIdCard
     job: USMCRifleman
 
@@ -21,6 +31,11 @@
   id: USMCAutomaticRiflemanIDCard
   name: Marine Corps ID card
   components:
+  - type: Sprite
+    layers:
+    - state: silver
+  - type: Item
+    heldPrefix: silver
   - type: PresetIdCard
     job: USMCAutomaticRifleman
 
@@ -29,6 +44,11 @@
   id: USMCMedicIDCard
   name: Marine Corps ID card
   components:
+  - type: Sprite
+    layers:
+    - state: silver
+  - type: Item
+    heldPrefix: silver
   - type: PresetIdCard
     job: USMCMedic
 
@@ -37,6 +57,11 @@
   id: USMCReconIDCard
   name: Marine Corps ID card
   components:
+  - type: Sprite
+    layers:
+    - state: silver
+  - type: Item
+    heldPrefix: silver
   - type: PresetIdCard
     job: USMCRecon
 
