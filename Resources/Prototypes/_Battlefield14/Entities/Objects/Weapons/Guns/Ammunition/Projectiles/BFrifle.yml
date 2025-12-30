@@ -34,6 +34,7 @@
     damage:
       types:
         Piercing: 27
+    armorPenetration: 0.2
   - type: StaminaDamageOnCollide
     damage: 8 # ~13 hits to stun
 
@@ -47,7 +48,7 @@
     damage:
       types:
         Piercing: 30
-#    harmorPenetration: 10
+    armorPenetration: 0.3
   - type: StaminaDamageOnCollide
     damage: 8 # ~13 hits to stun
 

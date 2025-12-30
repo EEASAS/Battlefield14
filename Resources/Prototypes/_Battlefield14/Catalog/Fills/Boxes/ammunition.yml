@@ -86,10 +86,27 @@
       - id: MagazineRifleSV98
         amount: 8
 
-# Grenades
+### Grenades
 
-# US 
+## US
 
+# Handthrown
+
+- type: entity
+  name: box of MK21 HE grenades
+  parent: BoxMagazine
+  id: BoxGrenadesMK21
+  description: A box full of high explosive MK21 grenades.
+  components:
+  - type: Storage
+    grid:
+    - 0,0,3,3
+  - type: StorageFill
+    contents:
+      - id: MK21Handgrenade
+        amount: 8
+
+# 40x46mm
 - type: entity
   name: box of 40x46 HE grenades
   parent: BoxMagazine
@@ -143,11 +160,11 @@
     - 0,0,3,3
   - type: StorageFill
     contents:
-      - id: Cartridge40x46mmChemicalSmoke
+      - id: Cartridge40x46mmChemicalSmoke # TODO infantry version
         amount: 8
 
 - type: entity
-  name: box of 40x46 frag grenades
+  name: box of 40x46 MP-APERS grenades
   parent: BoxMagazine
   id: BoxMagazine40x46mmMPAPERS
   description: A box full of 40x46mm multiple projectile shells.
@@ -171,5 +188,38 @@
     - 0,0,3,3
   - type: StorageFill
     contents:
-      - id: Cartridge40x46mmPlasmaGas
+      - id: Cartridge40x46mmPlasmaGas # TODO infantry version
+        amount: 8
+
+
+## RU
+
+# Hand thrown
+
+- type: entity
+  name: box of RGD5 HE grenades
+  parent: BoxMagazine
+  id: BoxGrenadesRGD5
+  description: A box full of high explosive RGD5 grenades.
+  components:
+  - type: Storage
+    grid:
+    - 0,0,3,3
+  - type: StorageFill
+    contents:
+      - id: RURGD5Handgrenade
+        amount: 8
+
+- type: entity
+  name: box of RGO impact grenades
+  parent: BoxMagazine
+  id: BoxGrenadesRGO
+  description: A box full of high explosive RGO impact grenades.
+  components:
+  - type: Storage
+    grid:
+    - 0,0,3,3
+  - type: StorageFill
+    contents:
+      - id: RGOImpactHandgrenade
         amount: 8

@@ -29,6 +29,19 @@
     sprite: _Battlefield14/Objects/Misc/pouches.rsi
     layers:
       - state: small_firstaid
+  - type: Storage
+    whitelist:
+      tags:
+        - Brutepack
+        - Bloodpack
+        - Gauze
+        - Ointment
+        - PillCanister
+        - Tourniquet
+      components:
+        - Hypospray
+        - Injector
+        - Pill
 
 - type: entity
   id: PouchMags

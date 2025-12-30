@@ -59,7 +59,22 @@
   id: LightFighterEquipment
 
 - type: Tag
-  id: PistolMagazine # for all kinds of pistol magazines, this is used for pistol magazine pouches  FitsInVoidsuitKit
+  id: NATORequisition
+
+- type: Tag
+  id: PACTRequisition
+
+- type: Tag
+  id: RussianUplink
+
+- type: Tag
+  id: AmericanUplink
+
+- type: Tag
+  id: Tourniquet
+
+- type: Tag
+  id: PistolMagazine # for all kinds of pistol magazines, this is used for pistol magazine pouches
 
 - type: Tag
   id: Magazine # generic tag for all magazine types

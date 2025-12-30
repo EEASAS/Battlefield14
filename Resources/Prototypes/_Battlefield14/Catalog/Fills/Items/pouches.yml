@@ -5,9 +5,9 @@
   components:
   - type: StorageFill
     contents:
-    - id: Brutepack
-    - id: Ointment
     - id: Gauze
+    - id: Tourniquet
+    - id: Ointment
     - id: PillCanisterTricordrazine
 #    - id: PillCanisterTramadol
 

@@ -294,7 +294,7 @@
 - type: entity
   parent: [ ClothingOuterHardsuitBase , ClothingArmorPlateLight ] # BF14
   id: ClothingOuterHardsuitSecurity
-  name: security hardsuit
+  name: security voidsuit # BF14
   description: A special suit that protects against hazardous, low pressure environments. Has an additional layer of armor.
   components:
   - type: Sprite
