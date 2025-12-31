@@ -16,6 +16,36 @@
     access: [["NATOSoldier"]]
 
 - type: entity
+  id: CrateSecgearNATOFilledSMAW
+  suffix: Filled, SMAW Para
+  parent: CrateSecgear
+  name: SMAW crate
+  components:
+  - type: StorageFill
+    contents:
+        - id: WeaponLauncherUSSMAW
+          amount: 2
+        - id: CartridgeSMAWHEAA
+          amount: 4
+        - id: CartridgeSMAWNE
+          amount: 4
+  - type: AccessReader
+    access: [["NATOSoldier"]]
+
+- type: entity
+  id: CrateSecgearNATOFilledAT4
+  suffix: Filled, AT4 Para
+  parent: CrateSecgear
+  name: AT4 crate
+  components:
+  - type: StorageFill
+    contents:
+        - id: WeaponLauncherUSAT4
+          amount: 5
+  - type: AccessReader
+    access: [["NATOSoldier"]]
+
+- type: entity
   id: CrateSecgearNATOFilledM27IAR
   suffix: Filled, M27IAR
   parent: CrateSecgear

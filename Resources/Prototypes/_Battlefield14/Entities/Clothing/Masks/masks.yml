@@ -8,13 +8,14 @@
     sprite: _Battlefield14/Clothing/Mask/balaclava.rsi
   - type: Clothing
     sprite: _Battlefield14/Clothing/Mask/balaclava.rsi
-#    quickEquip: true
-#    slots:
-#    - BALACLAVA
+    clothingVisuals:
+      balaclava:
+      - state: equipped-BALACLAVA
   - type: Item
     size: Small
   - type: BreathMask
   - type: IdentityBlocker
   - type: HideLayerClothing
     slots:
-    - Snout
+    - Snout # Doesnt matter because lizards are disabled but whatever
+    - Hair

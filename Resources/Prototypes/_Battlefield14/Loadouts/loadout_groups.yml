@@ -43,3 +43,12 @@
   minLimit: 0
   loadouts:
   - LoadoutHeadBeretVDV
+
+- type: loadoutGroup
+  id: BF_GoggleCover
+  name: loadout-group-BF14-gogglecovers
+  minLimit: 0
+  loadouts:
+  - LoadoutHelmetAttachmentGogglesCoverBlack
+  - LoadoutHelmetAttachmentGogglesCoverOlive
+  - LoadoutHelmetAttachmentGogglesCoverTan

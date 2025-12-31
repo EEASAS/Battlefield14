@@ -6,6 +6,7 @@
   - BF_SoldierGloves
   - BF_CombatMasks
   - BF_NATOIFF
+  - BF_GoggleCover
 
 - type: roleLoadout
   id: JobUSMCRifleman
@@ -13,6 +14,7 @@
   - BF_SoldierGloves
   - BF_CombatMasks
   - BF_NATOIFF
+  - BF_GoggleCover
 
 - type: roleLoadout
   id: JobUSMCAutomaticRifleman
@@ -20,6 +22,7 @@
   - BF_SoldierGloves
   - BF_CombatMasks
   - BF_NATOIFF
+  - BF_GoggleCover
 
 - type: roleLoadout
   id: JobUSMCRecon
@@ -27,6 +30,7 @@
   - BF_SoldierGloves
   - BF_CombatMasks
   - BF_NATOIFF
+  - BF_GoggleCover
 
 - type: roleLoadout
   id: JobUSMCMedic
@@ -34,6 +38,7 @@
   - BF_SoldierGloves
   - BF_CombatMasks
   - BF_NATOIFF
+  - BF_GoggleCover
 
 # VDV
 
@@ -43,6 +48,7 @@
   - BF_SoldierGloves
   - BF_CombatMasks
   - BF_PACTIFF
+  - BF_GoggleCover
   - BF_VDVHead
 
 - type: roleLoadout
@@ -51,6 +57,7 @@
   - BF_SoldierGloves
   - BF_CombatMasks
   - BF_PACTIFF
+  - BF_GoggleCover
   - BF_VDVHead
 
 - type: roleLoadout
@@ -59,6 +66,7 @@
   - BF_SoldierGloves
   - BF_CombatMasks
   - BF_PACTIFF
+  - BF_GoggleCover
   - BF_VDVHead
 
 - type: roleLoadout
@@ -67,6 +75,7 @@
   - BF_SoldierGloves
   - BF_CombatMasks
   - BF_PACTIFF
+  - BF_GoggleCover
   - BF_VDVHead
 
 - type: roleLoadout
@@ -75,4 +84,5 @@
   - BF_SoldierGloves
   - BF_CombatMasks
   - BF_PACTIFF
+  - BF_GoggleCover
   - BF_VDVHead

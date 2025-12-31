@@ -23,6 +23,12 @@
   id: BF_CartridgePistol9x19
 
 - type: Tag
+  id: CartridgeSMAW
+
+- type: Tag
+  id: MagazineSMAW
+
+- type: Tag
   id: MagazineRifleAK74
 
 - type: Tag

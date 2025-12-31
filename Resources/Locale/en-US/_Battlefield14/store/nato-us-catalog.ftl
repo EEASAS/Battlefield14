@@ -21,7 +21,7 @@ uplink-natous-SMAWcrate-desc = Two Shoulder-Launched Multipurpose Assault Weapon
 uplink-natous-SMAW-Dcrate-name = SMAW-D x5
 uplink-natous-SMAW-Dcrate-desc = 5 disposable anti-infantry SMAW rounds.
 
-uplink-natous-AT4crate-name = AT-4 x5
+uplink-natous-AT4crate-name = AT4 x5
 uplink-natous-AT4crate-desc = 5 disposable 'eighty-four' milimeter launchers firing a HEAT rounds.
 
 uplink-natous-1776railgun-name = 17.76mm Liberator railgun

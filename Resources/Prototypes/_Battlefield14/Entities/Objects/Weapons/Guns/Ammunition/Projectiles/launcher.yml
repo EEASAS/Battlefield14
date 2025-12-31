@@ -1,0 +1,96 @@
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: BaseBulletTrigger
+  id: BulletRocket84mmHEAT
+  name: 84mm HEAT rocket
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    layers:
+    - state: frag
+  - type: Projectile
+    damage:
+      types:
+        Structural: 5000
+        Piercing: 250
+    penetrationThreshold: 1750
+    penetrationDamageTypeRequirement:
+    - Structural
+    deleteOnCollide: false
+  - type: Heat
+    explosionDelay: 1
+    fragmentationDelay: 0.1
+    fragmentationCount: 40
+    fragmentationPrototype: Bullet84mmHEATFragment
+  - type: StaminaDamageOnCollide
+    damage: 200 # It's a fucking rocket
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: Default
+    totalIntensity: 150
+    intensitySlope: 5
+    maxIntensity: 25
+    maxTileBreak: 2
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: BaseBulletTrigger
+  id: BulletRocket83mmNE
+  name: 83mm Novel Explosive rocket
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    layers:
+    - state: frag
+  - type: Projectile
+    damage:
+      types:
+        Structural: 150
+        Blunt: 150
+  - type: HeFragProjectile
+    fillPrototype: Bullet84mmHEATFragment
+    capacity: 40
+    randomAngle: true
+    minVelocity: 8
+    maxVelocity: 15
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: Default
+    totalIntensity: 300
+    intensitySlope: 5
+    maxIntensity: 25
+    maxTileBreak: 0
+  - type: StaminaDamageOnCollide
+    damage: 200 # It's a fucking rocket
+
+- type: entity
+  id: Bullet84mmHEATFragment
+  name: 84mm HEAT fragment
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Structural: 30
+        Piercing: 30
+  - type: StaminaDamageOnCollide
+    damage: 15 # ~7 hits to stun
+    deleteOnCollide: true
+  - type: Sprite
+    sprite: _Mono/Objects/SpaceArtillery/50_armorpiercing_machinegun_casing.rsi
+    layers:
+    - state: base-projectile
+    scale: 0.3, 0.3
+  - type: ShipWeaponProjectile
+  - type: TimedDespawn
+    lifetime: 1.5
+  - type: PointLight
+    radius: 0.8
+    color: orange
+    energy: 0.15
+  - type: RadarBlip
+    scale: 0.4
+    requireNoGrid: true
+    shape: triangle
+    radarColor: "#FF9900"

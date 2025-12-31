@@ -1,0 +1,75 @@
+# US
+- type: entity
+  name: SMAW
+  parent: [ BaseWeaponLauncher , BaseGunWieldable ]
+  id: WeaponLauncherUSSMAW
+  description: Shoulder-Launched Multipurpose Assault Weapon, developed for the United States Marine Corps.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Launchers/SMAW.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-1
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/Launchers/SMAWworn.rsi
+    slots:
+    - Back
+    - suitStorage
+    - Feet
+  - type: Gun
+    projectileSpeed: 30
+    fireRate: 0.5
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/rpgfire.ogg
+  - type: BallisticAmmoProvider
+    autoCycle: false
+    whitelist:
+      tags:
+        - CartridgeSMAW
+    proto: CartridgeSMAWHEAA
+    capacity: 1
+    soundInsert:
+      path: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
+  - type: GunRequiresWield
+  - type: AmmoCounter
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: false
+  - type: Appearance
+
+- type: entity
+  name: AT4
+  parent: [ BaseWeaponLauncher , BaseGunWieldable ]
+  id: WeaponLauncherUSAT4
+  description: A single shot 84mm disposable Light Anti-structure Weapon for precisely taking out structures with little collateral damage.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Launchers/AT4.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/Launchers/AT4.rsi
+    slots:
+    - Back
+    - suitStorage
+  - type: Item
+    size: Large
+#    storedSprite:
+#      sprite: _Goobstation/Objects/Weapons/Guns/Launchers/m172.rsi
+#      state: storage
+  - type: Appearance
+  - type: Gun
+    fireRate: 0.75
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/rpgfire.ogg
+  - type: GunRequiresWield
+  - type: AmmoCounter
+  - type: BasicEntityAmmoProvider
+    proto: BulletRocket84mmHEAT
+    capacity: 1
+  - type: UseDelay
+    delay: 1.5

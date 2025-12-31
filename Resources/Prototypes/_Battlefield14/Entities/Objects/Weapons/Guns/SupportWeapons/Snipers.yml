@@ -1,3 +1,4 @@
+# RU
 - type: entity
   name: SV-98
   parent: [BaseWeaponRifle, BaseGunWieldable]

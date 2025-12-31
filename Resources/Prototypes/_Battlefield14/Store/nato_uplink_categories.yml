@@ -8,7 +8,39 @@
   productEntity: CrateSecgearNATOFilledM249Para
   icon: { sprite: _Battlefield14/Objects/Weapons/Guns/MachineGuns/M249Para.rsi, state: icon }
   cost:
-    NATORequisition: 100
+    NATORequisition: 100 # 16 minutes 40 seconds approx
+  categories:
+    - UplinkNATOUSWeapons
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - AmericanUplink
+
+- type: listing
+  id: UplinkNATOUSSMAW
+  name:  uplink-natous-SMAWcrate-name
+  description: uplink-natous-SMAWcrate-desc
+  productEntity: CrateSecgearNATOFilledSMAW
+  icon: { sprite: _Battlefield14/Objects/Weapons/Guns/Launchers/SMAW.rsi, state: icon }
+  cost:
+    NATORequisition: 80 # 13 minutes 20 seconds approx
+  categories:
+    - UplinkNATOUSWeapons
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - AmericanUplink
+
+- type: listing
+  id: UplinkNATOUSAT4
+  name:  uplink-natous-AT4crate-name
+  description: uplink-natous-AT4crate-desc
+  productEntity: CrateSecgearNATOFilledAT4
+  icon: { sprite: _Battlefield14/Objects/Weapons/Guns/Launchers/AT4.rsi, state: icon }
+  cost:
+    NATORequisition: 30 # 5 minutes
   categories:
     - UplinkNATOUSWeapons
   conditions:

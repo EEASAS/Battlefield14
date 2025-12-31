@@ -1,0 +1,41 @@
+- type: entity
+  id: CartridgeSMAWHEAA
+  name: "SMAW cartridge (HEAA)"
+  parent: BaseCartridge
+  components:
+  - type: Item
+    size: Normal
+  - type: Tag
+    tags:
+    - Cartridge
+    - CartridgeSMAW
+  - type: CartridgeAmmo
+    proto: BulletRocket84mmHEAT
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Launcher/SMAW.rsi
+    layers:
+    - state: base
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+
+- type: entity
+  id: CartridgeSMAWNE
+  name: "SMAW cartridge (SNAW-NE)"
+  parent: BaseCartridge
+  components:
+  - type: Item
+    size: Normal
+  - type: Tag
+    tags:
+    - Cartridge
+    - CartridgeSMAW
+  - type: CartridgeAmmo
+    proto: BulletRocket83mmNE
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Launcher/SMAW.rsi
+    layers:
+    - state: base
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
