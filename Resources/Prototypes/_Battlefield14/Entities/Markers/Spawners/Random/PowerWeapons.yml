@@ -10,8 +10,7 @@
         state: icon
   - type: RandomSpawner
     offset: 0
-    prototypes: # Placeholder until I actually make these
-      - WeaponRifleUSM27IAR
-      - WeaponRifleRUAKMS
-      - WeaponRifleRUASVAL
+    prototypes: # Placeholder until I actually make unique ones
+      - CrateSecgearPowerWeaponFilledM249Para
+      - CrateSecgearPowerWeaponFilledSMAW
     chance: 1
