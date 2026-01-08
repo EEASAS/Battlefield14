@@ -74,3 +74,5 @@
     back:
     - SupplyBoxMedicalFilled
     - DefibrillatorCompactBF
+    - Tourniquet
+    - Zipties

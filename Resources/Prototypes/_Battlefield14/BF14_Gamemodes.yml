@@ -1,0 +1,25 @@
+- type: gamePreset
+  id: Battlefield14
+  alias:
+  - battlefield14
+  - BF14
+  name: Battlefield
+  showInVote: true
+  description: Larp and frag.
+  rules:
+  - NFAdventure
+
+- type: pointOfInterest
+  id: INDBox
+  parent: BasePOI
+  name: 'Independant Box Station'
+  minimumDistance: 0
+  maximumDistance: 0
+  spawnGamePreset: [ Battlefield14 ]
+  spawnGroup: Required
+  gridPath: /Maps/_Battlefield14/Stations/IND/box.yml
+  addComponents:
+  - type: IFF
+    color: "#047abd"
+    flags: [HideLabel]
+    readOnly: true
