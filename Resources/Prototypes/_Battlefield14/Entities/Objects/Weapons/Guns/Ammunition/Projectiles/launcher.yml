@@ -13,24 +13,24 @@
       types:
         Structural: 5000
         Piercing: 250
-    penetrationThreshold: 1750
+#    penetrationThreshold: 1750
     penetrationDamageTypeRequirement:
     - Structural
     deleteOnCollide: false
   - type: Heat
-    explosionDelay: 1
+    explosionDelay: 0.1
     fragmentationDelay: 0.1
     fragmentationCount: 40
     fragmentationPrototype: Bullet84mmHEATFragment
   - type: StaminaDamageOnCollide
     damage: 200 # It's a fucking rocket
-  - type: ExplodeOnTrigger
-  - type: Explosive
-    explosionType: Default
-    totalIntensity: 150
-    intensitySlope: 5
-    maxIntensity: 25
-    maxTileBreak: 2
+#  - type: ExplodeOnTrigger
+#  - type: Explosive
+#    explosionType: Default
+#    totalIntensity: 300
+#    intensitySlope: 5
+#    maxIntensity: 50
+#    maxTileBreak: 2
 
 - type: entity
   categories: [ HideSpawnMenu ]
@@ -73,7 +73,8 @@
     damage:
       types:
         Structural: 30
-        Piercing: 30
+        Slash: 15
+        Piercing: 15
   - type: StaminaDamageOnCollide
     damage: 15 # ~7 hits to stun
     deleteOnCollide: true

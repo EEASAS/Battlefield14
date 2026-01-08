@@ -22,10 +22,10 @@ uplink-natous-SMAW-Dcrate-name = SMAW-D x5
 uplink-natous-SMAW-Dcrate-desc = 5 disposable anti-infantry SMAW rounds.
 
 uplink-natous-AT4crate-name = AT4 x5
-uplink-natous-AT4crate-desc = 5 disposable 'eighty-four' milimeter launchers firing a HEAT rounds.
+uplink-natous-AT4crate-desc = 5 disposable 'eighty-four' milimeter launchers firing HEAT warheads.
 
 uplink-natous-1776railgun-name = 17.76mm Liberator railgun
-uplink-natous-1776railgun-desc = A singlular unit of the Liberator railgun, fires shortened 17.76mm uranium rods.
+uplink-natous-1776railgun-desc = A singlular unit of the Liberator railgun, fires shortened 17.76mm depleted-uranium penetrators.
 
 ## Ammo
 
@@ -40,21 +40,12 @@ uplink-natous-83mm-SMAWNE-desc = Four 83mm Novel Explosive rounds for the SMAW, 
 
 ## Armour
 
-uplink-natous-armor-plate-light-name = Kevlar insert
-uplink-natous-armor-plate-light-desc = One singular kevlar insert.
-
-uplink-natous-armor-plate-medium-name = Ceramic armour plate
-uplink-natous-armor-plate-medium-desc = One singular ceramic armour plate.
-
 ## Utility
 
-uplink-natous-machete-belt-name = Machete belt
-uplink-natous-machete-belt-desc = A belt that has a special holster for a machete, includes one machete along with the belt.
+uplink-natous-FUBAR-name = FUBAR
+uplink-natous-FUBAR-desc = A big heavy piece of shit for ripping open airlocks and crushing hardsuit helmets.
 
 ## Medical
-
-uplink-natous-medkit-combat-name = Combat medkit
-uplink-natous-medkit-combat-desc = One singular combat medkit.
 
 ## Explosives
 

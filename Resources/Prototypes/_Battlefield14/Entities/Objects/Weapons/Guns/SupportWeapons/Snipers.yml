@@ -53,6 +53,13 @@
     magState: mag
     steps: 1
     zeroVisible: true
+  - type: CursorOffsetRequiresWield
+  - type: EyeCursorOffset
+    maxOffset: 10
+    pvsIncrease: 0.8
+  - type: SpeedModifiedOnWield
+    walkModifier: 0.90
+    sprintModifier: 0.90
   - type: Appearance
   - type: StaticPrice
     price: 3000

@@ -136,7 +136,7 @@
   components:
   - type: StorageFill
     contents:
-      - id: UndeterminedVoidsuitParamedic # Goob
+#BF14      - id: UndeterminedVoidsuitParamedic # Goob
     #      - id: ClothingHeadHatParamedicsoft # Frontier
 #      - id: ClothingUniformJumpsuitParamedic # Frontier
 #      - id: ClothingUniformJumpskirtParamedic # Frontier

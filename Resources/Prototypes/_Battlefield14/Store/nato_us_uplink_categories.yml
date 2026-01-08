@@ -31,7 +31,7 @@
     - !type:StoreWhitelistCondition
       whitelist:
         tags:
-          - AmericanUplink
+          - AmericanUplink # USMC, give the regular army and airborne M3 MAAWS
 
 - type: listing
   id: UplinkNATOUSAT4
@@ -133,48 +133,48 @@
 
 # Armour
 
-- type: listing
-  id: UplinkNATOUSArmorPlateLight
-  name:  uplink-natous-armor-plate-light-name
-  description: uplink-natous-armor-plate-light-name
-  productEntity: ArmorPlateLight
-  icon: { sprite: _Mono/Clothing/ArmorPlate/armor_light.rsi, state: icon }
-  cost:
-    NATORequisition: 3 # 30 seconds
-  categories:
-    - UplinkNATOUSArmour
-  conditions:
-    - !type:StoreWhitelistCondition
-      whitelist:
-        tags:
-          - AmericanUplink
-
-- type: listing
-  id: UplinkNATOUSArmorPlateMedium
-  name:  uplink-natous-armor-plate-medium-name
-  description: uplink-natous-armor-plate-medium-name
-  productEntity: ArmorPlateMedium
-  icon: { sprite: _Mono/Clothing/ArmorPlate/armor_medium.rsi, state: icon }
-  cost:
-    NATORequisition: 6 # 1 minute
-  categories:
-    - UplinkNATOUSArmour
-  conditions:
-    - !type:StoreWhitelistCondition
-      whitelist:
-        tags:
-          - AmericanUplink
-
+#- type: listing
+#  id: UplinkNATOUSArmorPlateLight
+#  name:  uplink-natous-armor-plate-light-name
+#  description: uplink-natous-armor-plate-light-name
+#  productEntity: ArmorPlateLight
+#  icon: { sprite: _Mono/Clothing/ArmorPlate/armor_light.rsi, state: icon }
+#  cost:
+#    NATORequisition: 3 # 30 seconds
+#  categories:
+#    - UplinkNATOUSArmour
+#  conditions:
+#    - !type:StoreWhitelistCondition
+#      whitelist:
+#        tags:
+#          - AmericanUplink
+#
+#- type: listing
+#  id: UplinkNATOUSArmorPlateMedium
+#  name:  uplink-natous-armor-plate-medium-name
+#  description: uplink-natous-armor-plate-medium-name
+#  productEntity: ArmorPlateMedium
+#  icon: { sprite: _Mono/Clothing/ArmorPlate/armor_medium.rsi, state: icon }
+#  cost:
+#    NATORequisition: 6 # 1 minute
+#  categories:
+#    - UplinkNATOUSArmour
+#  conditions:
+#    - !type:StoreWhitelistCondition
+#      whitelist:
+#        tags:
+#          - AmericanUplink
+#
 # Utility
 
 - type: listing
-  id: UplinkNATOUSMacheteBelt
-  name:  uplink-natous-machete-belt-name
-  description: uplink-natous-machete-belt-desc
-  productEntity: ClothingBeltMacheteFilled
-  icon: { sprite: _Battlefield14/Clothing/Belt/machetebelt.rsi, state: icon }
+  id: UplinkNATOUSFUBAR
+  name:  uplink-natous-FUBAR-name
+  description: uplink-natous-FUBAR-desc
+  productEntity: FUBAR
+  icon: { sprite: _NF/Objects/Tools/maintenance-jack.rsi, state: icon }
   cost:
-    NATORequisition: 15 # 2 minutes 30 seconds
+    NATORequisition: 30 # 5 minutes
   categories:
     - UplinkNATOUSUtility
   conditions:
@@ -183,23 +183,23 @@
         tags:
           - AmericanUplink
 
-# Medical
-
-- type: listing
-  id: UplinkNATOUSCombatMedkit
-  name:  uplink-natous-medkit-combat-name
-  description: uplink-natous-medkit-combat-desc
-  productEntity: MedkitCombatFilled
-  icon: { sprite: _NF/Objects/Specific/Medical/firstaidkits.rsi, state: blackkit }
-  cost:
-    NATORequisition: 15 # 2 minutes 30 seconds
-  categories:
-    - UplinkNATOUSMedical
-  conditions:
-    - !type:StoreWhitelistCondition
-      whitelist:
-        tags:
-          - AmericanUplink
+## Medical
+#
+#- type: listing
+#  id: UplinkNATOUSCombatMedkit
+#  name:  uplink-natous-medkit-combat-name
+#  description: uplink-natous-medkit-combat-desc
+#  productEntity: MedkitCombatFilled
+#  icon: { sprite: _NF/Objects/Specific/Medical/firstaidkits.rsi, state: blackkit }
+#  cost:
+#    NATORequisition: 15 # 2 minutes 30 seconds
+#  categories:
+#    - UplinkNATOUSMedical
+#  conditions:
+#    - !type:StoreWhitelistCondition
+#      whitelist:
+#        tags:
+#          - AmericanUplink
 
 # Explosives
 

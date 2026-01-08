@@ -1,0 +1,69 @@
+# Armour
+
+- type: listing
+  id: UplinkNATOArmorPlateLight
+  name:  uplink-nato-armor-plate-light-name
+  description: uplink-nato-armor-plate-light-name
+  productEntity: ArmorPlateLight
+  icon: { sprite: _Mono/Clothing/ArmorPlate/armor_light.rsi, state: icon }
+  cost:
+    NATORequisition: 3 # 30 seconds
+  categories:
+    - UplinkNATOUSArmour
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - AmericanUplink
+
+- type: listing
+  id: UplinkNATOArmorPlateMedium
+  name:  uplink-nato-armor-plate-medium-name
+  description: uplink-nato-armor-plate-medium-name
+  productEntity: ArmorPlateMedium
+  icon: { sprite: _Mono/Clothing/ArmorPlate/armor_medium.rsi, state: icon }
+  cost:
+    NATORequisition: 6 # 1 minute
+  categories:
+    - UplinkNATOUSArmour
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - AmericanUplink
+
+# Utility
+
+- type: listing
+  id: UplinkNATOMacheteBelt
+  name:  uplink-nato-machete-belt-name
+  description: uplink-nato-machete-belt-desc
+  productEntity: ClothingBeltMacheteFilled
+  icon: { sprite: _Battlefield14/Clothing/Belt/machetebelt.rsi, state: icon }
+  cost:
+    NATORequisition: 15 # 2 minutes 30 seconds
+  categories:
+    - UplinkNATOUSUtility
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - AmericanUplink
+
+# Medical
+
+- type: listing
+  id: UplinkNATOCombatMedkit
+  name:  uplink-nato-medkit-combat-name
+  description: uplink-nato-medkit-combat-desc
+  productEntity: MedkitCombatFilled
+  icon: { sprite: _NF/Objects/Specific/Medical/firstaidkits.rsi, state: blackkit }
+  cost:
+    NATORequisition: 15 # 2 minutes 30 seconds
+  categories:
+    - UplinkNATOUSMedical
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - AmericanUplink

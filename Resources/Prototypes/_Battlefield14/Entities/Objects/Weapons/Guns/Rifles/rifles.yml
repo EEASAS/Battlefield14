@@ -69,10 +69,14 @@
     steps: 1
     zeroVisible: true
   - type: Appearance
+  - type: CursorOffsetRequiresWield
+  - type: EyeCursorOffset
+    maxOffset: 5
+    pvsIncrease: 0.25
 
 - type: entity
   name: M4A1 Carbine
-  parent: WeaponRifleUSM16A4
+  parent: BaseWeaponRifle
   id: WeaponRifleUSM4A1
   description: The classic American slugthrower.
   components:
@@ -104,6 +108,25 @@
         volume: -5
         variation: 0.125
     fireRate: 7
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazineRifleSTANAG
+        insertSound: /Audio/_Battlefield14/Weapons/Guns/M16/uc_m16_magin.ogg
+        ejectSound: /Audio/_Battlefield14/Weapons/Guns/M16/uc_m16_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MagazineRifleSTANAG
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: BF_CartridgeRifle556x45
+        priority: 1
+        whitelist:
+          tags:
+            - BF_CartridgeRifle556x45
   - type: Appearance
 
 - type: entity
@@ -386,7 +409,7 @@
   - type: Appearance
 
 - type: entity
-  name: AK-203
+  name: AK-103
   parent: WeaponRifleRUAKMS
   id: WeaponRifleRUAK203
   description: A later revision of the AKM rifle, with even moderner design.

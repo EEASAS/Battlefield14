@@ -1,0 +1,52 @@
+- type: entity
+  id: LockerSecurityFilledBF
+  suffix: Filled, BF14
+  parent: LockerSecurity
+  components:
+  - type: StorageFill
+    contents:
+      - id: FlashlightSeclite
+#      - id: M9 rubber bullet magazine
+      - id: ClothingUniformJumpsuitUtilityCrewblackSec
+        prob: 0.3
+      - id: ClothingHeadHatHelmetSecurityBF14
+      - id: ClothingOuterArmorWebVestSec
+      - id: ClothingBeltStationSecurityFilled
+      - id: Flash
+      - id: ClothingEyesGlassesSecurity
+      - id: ClothingHeadsetSecurity
+      - id: ClothingHandsGlovesColorBlack
+      - id: ClothingShoesBootsJack
+      - id: ClothingBackpackSecurity
+      - id: ClothingBackpackSatchelSecurity
+        prob: 0.3
+
+- type: entity
+  id: LockerWardenFilledBF
+  suffix: Filled, BF14
+  parent: LockerWarden
+  components:
+  - type: StorageFill
+    contents:
+      - id: FlashlightSeclite
+        prob: 0.8
+#      - id: M9 rubber bullet magazine
+      - id: ClothingUniformJumpsuitUtilityCrewblackSec
+        prob: 0.3
+      - id: ClothingHeadHatHelmetSecurityBF14
+      - id: ClothingOuterCoatWarden
+      - id: ClothingBeltStationSecurityFilled
+      - id: Flash
+      - id: ClothingEyesGlassesSecurity
+      - id: ClothingHeadsetSecurity
+      - id: ClothingHandsGlovesCombat
+      - id: ClothingShoesBootsJack
+      - id: RubberStampWarden
+      - id: DoorRemoteArmory
+      - id: ClothingBackpackElectropack
+        amount: 2
+      - id: RemoteSignaller
+        amount: 2
+      - id: ClothingBackpackSecurity
+      - id: ClothingBackpackSatchelSecurity
+        prob: 0.3

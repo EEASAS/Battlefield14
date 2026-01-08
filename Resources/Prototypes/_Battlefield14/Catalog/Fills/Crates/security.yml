@@ -17,7 +17,7 @@
 
 - type: entity
   id: CrateSecgearNATOFilledSMAW
-  suffix: Filled, SMAW Para
+  suffix: Filled, SMAW
   parent: CrateSecgear
   name: SMAW crate
   components:
@@ -156,3 +156,37 @@
           amount: 2
   - type: AccessReader
     access: [["PACTSoldier"]]
+
+## Misc, power weapons
+
+- type: entity
+  id: CrateSecgearPowerWeaponFilledM249Para
+  suffix: Filled, power weapon, M249 Para
+  parent: CrateSecgear
+  name: power weapon crate
+  components:
+  - type: StorageFill
+    contents:
+        - id: WeaponMachineGunUSM249Para
+          amount: 1
+        - id: MagazineBeltBoxM249
+          amount: 2
+  - type: AccessReader
+    access: [["NATOCommand" , "PACTCommand"]]
+
+- type: entity
+  id: CrateSecgearPowerWeaponFilledSMAW
+  suffix: Filled, power weapon, SMAW
+  parent: CrateSecgear
+  name: power weapon crate
+  components:
+  - type: StorageFill
+    contents:
+        - id: WeaponLauncherUSSMAW
+          amount: 1
+        - id: CartridgeSMAWHEAA
+          amount: 4
+        - id: CartridgeSMAWNE
+          amount: 4
+  - type: AccessReader
+    access: [["NATOCommand" , "PACTCommand"]]
