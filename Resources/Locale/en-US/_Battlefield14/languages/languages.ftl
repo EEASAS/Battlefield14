@@ -11,9 +11,11 @@ chat-language-Russian-name = Russian
 
 language-German-name = German
 language-German-description = Also known as Deutche, native speakers have been through a lot, including the devastation of losing two world wars. Third time's the charm.
+chat-language-German-name = German
 
 language-Mexican-name = Mexican
 language-Mexican-description = A modern gutterlanguage, a bastardisation of the Spanish language that has earned its reputation.
+chat-language-Mexican-name = Mexican
 
 language-Esperanto-name = Esperanto
 language-Esperanto-description = A conlang that was designed to be easily learned to make foreign policy a smoother process.

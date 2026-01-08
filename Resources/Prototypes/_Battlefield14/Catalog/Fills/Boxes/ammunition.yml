@@ -42,14 +42,25 @@
         amount: 8
 
 - type: entity
-  name: box of 5.45x39mm AKM magazines
+  name: box of 7.62x39mm AKM magazines
   parent: BoxMagazine
   id: BoxMagazineAKM
-  description: A box full of 5.45x39mm '74 pattern magazines.
+  description: A box full of 7.62x39mm '47 pattern magazines.
   components:
   - type: StorageFill
     contents:
       - id: MagazineRifleAKM
+        amount: 8
+
+- type: entity
+  name: box of 7.62x39mm AK-203 magazines
+  parent: BoxMagazine
+  id: BoxMagazineAK203
+  description: A box full of 7.62x39mm '47 pattern magazines.
+  components:
+  - type: StorageFill
+    contents:
+      - id: MagazineRifleAK203
         amount: 8
 
 - type: entity
@@ -222,4 +233,21 @@
   - type: StorageFill
     contents:
       - id: RGOImpactHandgrenade
+        amount: 8
+
+
+## UNSC
+
+- type: entity
+  name: box of MA5B magazines
+  parent: BoxMagazine
+  id: BoxMagazineMA5B
+  description: A box full of 7.62x51mm MA5B magazines.
+  components:
+  - type: Storage
+    grid:
+    - 0,0,3,3
+  - type: StorageFill
+    contents:
+      - id: MagazineRifleMA5B
         amount: 8

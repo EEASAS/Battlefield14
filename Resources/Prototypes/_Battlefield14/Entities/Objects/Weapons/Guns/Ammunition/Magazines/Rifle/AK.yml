@@ -116,6 +116,36 @@
   - type: Appearance
 
 - type: entity
+  parent: BaseItem
+  id: MagazineRifleAK203
+  name: "AK-203 magazine (7.62x39)"
+  description: Classic banana mag.
+  components:
+  - type: Tag
+    tags:
+      - MagazineRifleAKM
+      - Magazine
+  - type: BallisticAmmoProvider
+    proto: BF_CartridgeRifle762x39
+    mayTransfer: true
+    whitelist:
+      tags:
+        - BF_CartridgeRifle762x39
+    capacity: 30
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Rifle/AK203.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 3
+    zeroVisible: false
+  - type: Appearance
+
+- type: entity
   # COMMENTED OUT: Missing parent 'BaseMagazineRifle'
   # parent: BaseMagazineRifle
   parent: BaseItem

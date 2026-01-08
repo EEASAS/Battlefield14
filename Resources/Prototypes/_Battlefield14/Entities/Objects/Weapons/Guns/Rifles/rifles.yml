@@ -409,13 +409,13 @@
   - type: Appearance
 
 - type: entity
-  name: AK-103
+  name: AK-203
   parent: WeaponRifleRUAKMS
   id: WeaponRifleRUAK203
   description: A later revision of the AKM rifle, with even moderner design.
   components:
   - type: Sprite
-    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AKMS.rsi # resprite later, make it look like the cod mw2 AK
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AK203.rsi
     layers:
       - state: base
         map: ["enum.GunVisualLayers.Base"]
@@ -424,13 +424,32 @@
   - type: GunWieldBonus
     minAngle: -19
     maxAngle: -25
-  - type: Gun
+  - type: Gun # Improved recoil over the AKM
     minAngle: 21
     maxAngle: 30
     angleIncrease: 0.4
     angleDecay: 16
   - type: Clothing
-    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AKMS.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AK203.rsi
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazineRifleAK203
+        insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MagazineRifleAKM
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: BF_CartridgeRifle762x39
+        priority: 1
+        whitelist:
+          tags:
+            - BF_CartridgeRifle762x39
   - type: Appearance
 
 - type: entity

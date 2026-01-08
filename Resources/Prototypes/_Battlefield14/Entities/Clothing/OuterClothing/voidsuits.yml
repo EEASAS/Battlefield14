@@ -61,6 +61,8 @@
         Radiation: 0.3
   - type: ExplosionResistance
     damageCoefficient: 0.6
+  - type: StaminaDamageResistance
+    coefficient: 0.7
   - type: ClothingSpeedModifier
     walkModifier: 0.9
     sprintModifier: 0.9
@@ -144,6 +146,8 @@
         Radiation: 0.3
   - type: ExplosionResistance
     damageCoefficient: 0.6
+  - type: StaminaDamageResistance
+    coefficient: 0.7
   - type: ClothingSpeedModifier
     walkModifier: 0.9
     sprintModifier: 0.9

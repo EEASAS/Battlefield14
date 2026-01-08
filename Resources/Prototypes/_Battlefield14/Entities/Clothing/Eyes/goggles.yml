@@ -19,7 +19,15 @@
   - type: Sprite
     sprite: _Battlefield14/Clothing/Eyes/Goggles/ballisticgogglestan.rsi
   - type: Clothing
+    slots:
+    - EYES
+    - HELMETATTACHMENT
     sprite: _Battlefield14/Clothing/Eyes/Goggles/ballisticgogglestan.rsi
+    clothingVisuals:
+      helmetattachment:
+      - state: equipped-HELMETATTACHMENT
+      eyes:
+      - state: equipped-EYES
   - type: EyeProtection # welding protection, not flash protection
   - type: IdentityBlocker
     coverage: EYES

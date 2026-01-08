@@ -18,6 +18,8 @@
         Caustic: 0.9
   - type: ExplosionResistance
     damageCoefficient: 0.75
+  - type: StaminaDamageResistance
+    coefficient: 0.6
 - type: entity
   parent: ClothingOuterArmorPlateCarrierBlack
   id: ClothingOuterArmorPlateCarrierTan

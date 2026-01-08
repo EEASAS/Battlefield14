@@ -34,7 +34,7 @@
 
 - type: entity
   id: CrateSecgearNATOFilledAT4
-  suffix: Filled, AT4 Para
+  suffix: Filled, AT4
   parent: CrateSecgear
   name: AT4 crate
   components:
@@ -133,7 +133,7 @@
     contents:
         - id: WeaponRifleRUAK203
           amount: 10
-        - id: BoxMagazineAKM
+        - id: BoxMagazineAK203
           amount: 2
         - id: ClothingUniformJumpsuitCombatSuitDigitalRed
           amount: 5
