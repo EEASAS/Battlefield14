@@ -1,0 +1,33 @@
+- type: entity
+  parent: [BaseAmmoProvider, RecyclableItemCardboard]
+  id: BaseShellBoxBF12Gauge
+  abstract: true
+  components:
+    - type: Sprite
+      sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Boxes/12gbox.rsi
+    - type: BallisticAmmoProvider
+      mayTransfer: true
+      whitelist:
+        tags:
+        - BF_CartridgeShotgun12Gauge
+      capacity: 20
+    - type: MagazineVisuals
+      magState: mag
+      steps: 5
+      zeroVisible: false
+    - type: Appearance
+
+- type: entity
+  name: shotgun shell box (12 gauge buckshot)
+  parent: BaseShellBoxBF12Gauge
+  id: ShellBoxBF12GaugeBuckshot
+  components:
+    - type: BallisticAmmoProvider
+      proto: BF_CartridgeShotgun12GaugeBuckshot
+    - type: Sprite
+      layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-1
+        map: ["enum.GunVisualLayers.Mag"]
+      - state: lethal

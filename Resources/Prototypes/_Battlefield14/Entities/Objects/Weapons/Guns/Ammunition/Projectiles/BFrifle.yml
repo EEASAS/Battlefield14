@@ -34,6 +34,7 @@
     damage:
       types:
         Piercing: 27
+        Structural: 3
     armorPenetration: 0.2
   - type: StaminaDamageOnCollide
     damage: 8 # ~13 hits to stun
@@ -48,6 +49,7 @@
     damage:
       types:
         Piercing: 30
+        Structural: 10
     armorPenetration: 0.3
   - type: StaminaDamageOnCollide
     damage: 8 # ~13 hits to stun
@@ -75,6 +77,22 @@
     damage:
       types:
         Piercing: 40
-    armorPenetration: 0.8
+        Structural: 30
+    armorPenetration: 0.3
   - type: StaminaDamageOnCollide
     damage: 10 # ~10 hits to stun
+
+- type: entity
+  id: BulletRifleBF762x54mmRAP
+  name: bullet (7.62x54mmR AP)
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 40
+        Structural: 80
+    armorPenetration: 0.8
+  - type: StaminaDamageOnCollide
+    damage: 7 # ~15 hits to stun

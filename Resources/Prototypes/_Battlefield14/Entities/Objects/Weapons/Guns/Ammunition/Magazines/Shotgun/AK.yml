@@ -1,22 +1,22 @@
 - type: entity
   parent: BaseItem
-  id: MagazineRifleSV98
-  name: "SV-98 magazine (7.62x54mmR)"
-  description: A small, 5 round magazine for the SV-98, but dont let its small size fool you, these rounds pack a punch.
+  id: MagazineShotgunKSK
+  name: "KS-K magazine (12 Gauge buckshot)"
+  description: 8 round 12 gauge magazine for the KSK automatic shotgun.
   components:
   - type: Tag
     tags:
-      - MagazineRifleSV98
       - Magazine
+      - MagazineShotgunKSK
   - type: BallisticAmmoProvider
-    proto: BF_CartridgeRifle762x54r
+    proto: BF_CartridgeShotgun12GaugeBuckshot
     mayTransfer: true
     whitelist:
       tags:
-        - BF_CartridgeRifle762x54r
-    capacity: 5
+        - BF_CartridgeShotgun12Gauge
+    capacity: 8
   - type: Sprite
-    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Sniper/SV98.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Shotgun/KSK.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -30,23 +30,23 @@
 
 - type: entity
   parent: BaseItem
-  id: MagazineRifleSV98AP
-  name: "SV-98 magazine (7.62x54mmR AP)"
-  description: A small, 5 round magazine for the SV-98, but dont let its small size fool you, these rounds pack a punch.
+  id: MagazineShotgunKSKSlug
+  name: "KS-K magazine (12 Gauge slug)"
+  description: 8 round 12 gauge magazine for the KSK automatic shotgun.
   components:
   - type: Tag
     tags:
-      - MagazineRifleSV98
       - Magazine
+      - MagazineShotgunKSK
   - type: BallisticAmmoProvider
-    proto: BF_CartridgeRifle762x54rAP
+    proto: BF_CartridgeShotgun12GaugeSlug
     mayTransfer: true
     whitelist:
       tags:
-        - BF_CartridgeRifle762x54r
-    capacity: 5
+        - BF_CartridgeShotgun12Gauge
+    capacity: 8
   - type: Sprite
-    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Sniper/SV98.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Shotgun/KSK.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]

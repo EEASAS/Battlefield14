@@ -23,6 +23,12 @@
   id: BF_CartridgePistol9x19
 
 - type: Tag
+  id: BF_CartridgeShotgun12Gauge
+
+- type: Tag
+  id: BF_CartridgeShotgun12GaugeBuckshot
+
+- type: Tag
   id: CartridgeSMAW
 
 - type: Tag
@@ -54,6 +60,9 @@
 
 - type: Tag
   id: MagazinePistolVityaz
+
+- type: Tag
+  id: MagazineShotgunKSK
 
 - type: Tag
   id: AmmunitionBox

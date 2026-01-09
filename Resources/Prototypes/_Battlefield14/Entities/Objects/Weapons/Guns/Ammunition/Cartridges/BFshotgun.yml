@@ -1,0 +1,65 @@
+- type: entity
+  id: BaseShellShotgunBF12Gauge
+  name: shotgun shell (12 gauge)
+  parent: BaseCartridge
+  description: Standard shotgun round practically everywhere.
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+    - Cartridge
+    - BF_CartridgeShotgun12Gauge
+  - type: CartridgeAmmo
+    soundEject:
+      collection: ShellEject
+      params:
+        variation: 0.06
+  - type: EmitSoundOnLand
+    sound:
+      collection: ShellEject
+      params:
+        variation: 0.06
+  - type: Sprite
+    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Casings/12_gauge_shell.rsi
+    layers:
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+    scale: 0.6, 0.6
+  - type: Appearance
+  - type: SpentAmmoVisuals
+  - type: StaticPrice
+    price: 1
+
+- type: entity
+  id: BF_CartridgeShotgun12GaugeBuckshot
+  name: shotgun shell (12 gauge buckshot)
+  parent: BaseShellShotgunBF12Gauge
+  components:
+  - type: Sprite
+    layers:
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+  - type: CartridgeAmmo
+    proto: PelletShotgunBF12Gauge_Spread
+
+- type: entity
+  id: PelletShotgunBF12Gauge_Spread
+  categories: [ HideSpawnMenu ]
+  parent: PelletShotgunBF12Gauge
+  components:
+  - type: ProjectileSpread
+    proto: PelletShotgunBF12Gauge
+    count: 15
+    spread: 15
+
+- type: entity
+  id: BF_CartridgeShotgun12GaugeSlug
+  name: shotgun shell (12 gauge slug)
+  parent: BaseShellShotgunBF12Gauge
+  components:
+  - type: Sprite
+    layers:
+      - state: slug
+        map: [ "enum.AmmoVisualLayers.Base" ]
+  - type: CartridgeAmmo
+    proto: SlugShotgunBF12Gauge

@@ -11,3 +11,17 @@
   - type: Tag
     tags:
     - ClothMade
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatBeretSecBF14
+  name: security beret
+  description: A black and red beret for conveying authority.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Clothing/Head/Hats/beretSec.rsi
+  - type: Clothing
+    sprite: _Battlefield14/Clothing/Head/Hats/beretSec.rsi
+  - type: Tag
+    tags:
+    - ClothMade

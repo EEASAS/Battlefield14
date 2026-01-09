@@ -16,9 +16,9 @@
     maxDurability: 100 # BF14
     walkSpeedModifier: 1 # BF14
     sprintSpeedModifier: 1 # BF14
-    staminaDamageMultiplier: 0.3 # BF14
+    staminaDamageMultiplier: 0.2 # BF14
   - type: Damageable
-    damageContainer: Inorganic
+    damageContainer: StructuralInorganic # BF14 currently does not work in armour but makes plates take structural damage
   - type: Destructible
     thresholds:
     - trigger:
@@ -54,7 +54,7 @@
     sprintSpeedModifier: 1 # BF14
     staminaDamageMultiplier: 0.0 # BF14
   - type: Damageable
-    damageContainer: Inorganic
+    damageContainer: StructuralInorganic # BF14
   - type: Destructible
     thresholds:
     - trigger:
@@ -86,11 +86,11 @@
     size: Normal
   - type: ArmorPlateItem
     maxDurability: 300 # BF14
-    walkSpeedModifier: 0.90
-    sprintSpeedModifier: 0.90
+    walkSpeedModifier: 0.92
+    sprintSpeedModifier: 0.92
     staminaDamageMultiplier: 0.3 # BF14
   - type: Damageable
-    damageContainer: Inorganic
+    damageContainer: StructuralInorganic # BF14
   - type: Destructible
     thresholds:
     - trigger:
@@ -126,7 +126,7 @@
     sprintSpeedModifier: 1.0
     staminaDamageMultiplier: 0.3 # BF14
   - type: Damageable
-    damageContainer: Inorganic
+    damageContainer: StructuralInorganic # BF14
   - type: Destructible
     thresholds:
     - trigger:
