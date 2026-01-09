@@ -12,6 +12,9 @@ uplink-PACTRU-ak203crate-desc = A crate of five AK-203 7.62x39 rifles and two bo
 uplink-PACTRU-sv98crate-name = SV-98 x2
 uplink-PACTRU-sv98crate-desc = A crate of two SV-98 7.62x54mmR sniper rifles and two boxes of spare ammunition.
 
+uplink-PACTRU-KSKcrate-name = KS-K x2
+uplink-PACTRU-KSKcrate-desc = Two KS-K semi-automatic 12 gauge magfed shotguns and two boxes of buckshot and one box of slug ammunition.
+
 uplink-PACTRU-RPG7crate-name = RPG-7 x2
 uplink-PACTRU-RPG7crate-desc = Two RPG-7 rocket launchers, comes with 4 frag and 4 HEAT rounds.
 
@@ -35,23 +38,23 @@ uplink-PACTRU-RPG-frag-desc = Four Fragmentation rounds for the RPG-7, more effe
 uplink-PACTRU-ammo-AK203-name = AK-203 magazine box
 uplink-PACTRU-ammo-AK203-desc = Contains 8 7.62x39 magazines for the AK-203.
 
+uplink-PACTRU-ammo-KSKBuckshot-name = KSK magazine box (buckshot)
+uplink-PACTRU-ammo-KSKBuckshot-desc = 8 mags of 8 rounds of 12 gauge buckshot in magazines that fit in the KSK.
+
+uplink-PACTRU-ammo-KSKSlug-name = KSK magazine box (slug)
+uplink-PACTRU-ammo-KSKSlug-desc = 8 mags of 8 rounds of 12 gauge slugs in magazines that fit in the KSK.
+
 ## Armour
 
-uplink-PACTRU-armor-plate-light-name = Kevlar insert
-uplink-PACTRU-armor-plate-light-desc = One singular kevlar insert.
 
-uplink-PACTRU-armor-plate-medium-name = Ceramic armour plate
-uplink-PACTRU-armor-plate-medium-desc = One singular ceramic armour plate.
 
 ## Utility
 
-uplink-PACTRU-machete-belt-name = Machete belt
-uplink-PACTRU-machete-belt-desc = A belt that has a special holster for a machete, includes one machete along with the belt.
+
 
 ## Medical
 
-uplink-PACTRU-medkit-combat-name = Combat medkit
-uplink-PACTRU-medkit-combat-desc = One singular combat medkit.
+
 
 ## Explosives
 

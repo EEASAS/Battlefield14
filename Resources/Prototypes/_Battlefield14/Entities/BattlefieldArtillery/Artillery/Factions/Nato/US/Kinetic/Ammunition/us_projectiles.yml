@@ -617,8 +617,8 @@
   - type: Projectile
     damage:
       types:
-        Structural: 10
-        Piercing: 10
+        Structural: 12
+        Piercing: 18
   - type: StaminaDamageOnCollide
     damage: 4 # ~25 hits to stun
     deleteOnCollide: true

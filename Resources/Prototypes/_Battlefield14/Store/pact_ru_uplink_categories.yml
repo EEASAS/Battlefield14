@@ -1,5 +1,5 @@
-## NATO
-# US
+## PACT
+# RU
 # Weapons
 
 - type: listing
@@ -57,7 +57,23 @@
   productEntity: CrateSecgearPACTFilledSV98
   icon: { sprite: _Battlefield14/Objects/Weapons/Guns/Snipers/SV98.rsi, state: icon }
   cost:
-    PACTRequisition: 8 # 1 minute 30 seconds
+    PACTRequisition: 9 # 2 minutes
+  categories:
+    - UplinkPACTRUWeapons
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - RussianUplink
+
+- type: listing
+  id: UplinkPACTRUKSKCrate
+  name:  uplink-PACTRU-KSKcrate-name
+  description: uplink-PACTRU-KSKcrate-desc
+  productEntity: CrateSecgearPACTFilledKSK
+  icon: { sprite: _Battlefield14/Objects/Weapons/Guns/Shotguns/KSK.rsi, state: icon }
+  cost:
+    PACTRequisition: 30 # 5 minutes
   categories:
     - UplinkPACTRUWeapons
   conditions:
@@ -100,18 +116,16 @@
         tags:
           - RussianUplink
 
-# Armour
-
 - type: listing
-  id: UplinkPACTRUArmorPlateLight
-  name:  uplink-PACTRU-armor-plate-light-name
-  description: uplink-PACTRU-armor-plate-light-name
-  productEntity: ArmorPlateLight
-  icon: { sprite: _Mono/Clothing/ArmorPlate/armor_light.rsi, state: icon }
+  id: UplinkPACTRUAmmoKSKBuckshot
+  name:  uplink-PACTRU-ammo-KSKBuckshot-name
+  description: uplink-PACTRU-ammo-KSKBuckshot-desc
+  productEntity: BoxMagazineKSKBuckshot
+  icon: { sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Shotgun/KSK.rsi, state: icon }
   cost:
-    PACTRequisition: 3 # 30 seconds
+    PACTRequisition: 9 # 1 minute 30 seconds
   categories:
-    - UplinkPACTRUArmour
+    - UplinkPACTRUAmmo
   conditions:
     - !type:StoreWhitelistCondition
       whitelist:
@@ -119,56 +133,90 @@
           - RussianUplink
 
 - type: listing
-  id: UplinkPACTRUArmorPlateMedium
-  name:  uplink-PACTRU-armor-plate-medium-name
-  description: uplink-PACTRU-armor-plate-medium-name
-  productEntity: ArmorPlateMedium
-  icon: { sprite: _Mono/Clothing/ArmorPlate/armor_medium.rsi, state: icon }
+  id: UplinkPACTRUAmmoKSKSlug
+  name:  uplink-PACTRU-ammo-KSKSlug-name
+  description: uplink-PACTRU-ammo-KSKSlug-desc
+  productEntity: BoxMagazineKSKSlug
+  icon: { sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Shotgun/KSK.rsi, state: icon }
   cost:
     PACTRequisition: 6 # 1 minute
   categories:
-    - UplinkPACTRUArmour
+    - UplinkPACTRUAmmo
   conditions:
     - !type:StoreWhitelistCondition
       whitelist:
         tags:
           - RussianUplink
 
-# Utility
-
-- type: listing
-  id: UplinkPACTRUMacheteBelt
-  name:  uplink-PACTRU-machete-belt-name
-  description: uplink-PACTRU-machete-belt-desc
-  productEntity: ClothingBeltMacheteFilled
-  icon: { sprite: _Battlefield14/Clothing/Belt/machetebelt.rsi, state: icon }
-  cost:
-    PACTRequisition: 15 # 2 minutes 30 seconds
-  categories:
-    - UplinkPACTRUUtility
-  conditions:
-    - !type:StoreWhitelistCondition
-      whitelist:
-        tags:
-          - RussianUplink
-
-# Medical
-
-- type: listing
-  id: UplinkPACTRUCombatMedkit
-  name:  uplink-PACTRU-medkit-combat-name
-  description: uplink-PACTRU-medkit-combat-desc
-  productEntity: MedkitCombatFilled
-  icon: { sprite: _NF/Objects/Specific/Medical/firstaidkits.rsi, state: blackkit }
-  cost:
-    PACTRequisition: 15 # 2 minutes 30 seconds
-  categories:
-    - UplinkPACTRUMedical
-  conditions:
-    - !type:StoreWhitelistCondition
-      whitelist:
-        tags:
-          - RussianUplink
+## Armour
+#
+#- type: listing
+#  id: UplinkPACTRUArmorPlateLight
+#  name:  uplink-PACTRU-armor-plate-light-name
+#  description: uplink-PACTRU-armor-plate-light-name
+#  productEntity: ArmorPlateLight
+#  icon: { sprite: _Mono/Clothing/ArmorPlate/armor_light.rsi, state: icon }
+#  cost:
+#    PACTRequisition: 3 # 30 seconds
+#  categories:
+#    - UplinkPACTRUArmour
+#  conditions:
+#    - !type:StoreWhitelistCondition
+#      whitelist:
+#        tags:
+#          - RussianUplink
+#
+#- type: listing
+#  id: UplinkPACTRUArmorPlateMedium
+#  name:  uplink-PACTRU-armor-plate-medium-name
+#  description: uplink-PACTRU-armor-plate-medium-name
+#  productEntity: ArmorPlateMedium
+#  icon: { sprite: _Mono/Clothing/ArmorPlate/armor_medium.rsi, state: icon }
+#  cost:
+#    PACTRequisition: 6 # 1 minute
+#  categories:
+#    - UplinkPACTRUArmour
+#  conditions:
+#    - !type:StoreWhitelistCondition
+#      whitelist:
+#        tags:
+#          - RussianUplink
+#
+## Utility
+#
+#- type: listing
+#  id: UplinkPACTRUMacheteBelt
+#  name:  uplink-PACTRU-machete-belt-name
+#  description: uplink-PACTRU-machete-belt-desc
+#  productEntity: ClothingBeltMacheteFilled
+#  icon: { sprite: _Battlefield14/Clothing/Belt/machetebelt.rsi, state: icon }
+#  cost:
+#    PACTRequisition: 15 # 2 minutes 30 seconds
+#  categories:
+#    - UplinkPACTRUUtility
+#  conditions:
+#    - !type:StoreWhitelistCondition
+#      whitelist:
+#        tags:
+#          - RussianUplink
+#
+## Medical
+#
+#- type: listing
+#  id: UplinkPACTRUCombatMedkit
+#  name:  uplink-PACTRU-medkit-combat-name
+#  description: uplink-PACTRU-medkit-combat-desc
+#  productEntity: MedkitCombatFilled
+#  icon: { sprite: _NF/Objects/Specific/Medical/firstaidkits.rsi, state: blackkit }
+#  cost:
+#    PACTRequisition: 15 # 2 minutes 30 seconds
+#  categories:
+#    - UplinkPACTRUMedical
+#  conditions:
+#    - !type:StoreWhitelistCondition
+#      whitelist:
+#        tags:
+#          - RussianUplink
 
 # Explosives
 

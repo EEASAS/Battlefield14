@@ -86,3 +86,19 @@
           amount: 5
   - type: AccessReader
     access: [["PACTSoldier"]]
+
+- type: entity
+  id: LockerArmoryPACTFilledKSK
+  parent: LockerSyndicatePersonal
+  suffix: Filled, KSK
+  name: KSK locker
+  components:
+  - type: StorageFill
+    contents:
+        - id: WeaponShotgunRUKSK
+          amount: 2
+        - id: BoxMagazineKSKBuckshot
+          amount: 2
+        - id: BoxMagazineKSKSlug
+  - type: AccessReader
+    access: [["PACTSoldier"]]

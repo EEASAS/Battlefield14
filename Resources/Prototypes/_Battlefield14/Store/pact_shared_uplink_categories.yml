@@ -1,0 +1,69 @@
+# Armour
+
+- type: listing
+  id: UplinkPACTArmorPlateLight
+  name:  uplink-PACT-armor-plate-light-name
+  description: uplink-PACT-armor-plate-light-name
+  productEntity: ArmorPlateLight
+  icon: { sprite: _Mono/Clothing/ArmorPlate/armor_light.rsi, state: icon }
+  cost:
+    PACTRequisition: 3 # 30 seconds
+  categories:
+    - UplinkPACTRUArmour
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - RussianUplink
+
+- type: listing
+  id: UplinkPACTArmorPlateMedium
+  name:  uplink-PACT-armor-plate-medium-name
+  description: uplink-PACT-armor-plate-medium-name
+  productEntity: ArmorPlateMedium
+  icon: { sprite: _Mono/Clothing/ArmorPlate/armor_medium.rsi, state: icon }
+  cost:
+    PACTRequisition: 6 # 1 minute
+  categories:
+    - UplinkPACTRUArmour
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - RussianUplink
+
+# Utility
+
+- type: listing
+  id: UplinkPACTMacheteBelt
+  name:  uplink-PACT-machete-belt-name
+  description: uplink-PACT-machete-belt-desc
+  productEntity: ClothingBeltMacheteFilled
+  icon: { sprite: _Battlefield14/Clothing/Belt/machetebelt.rsi, state: icon }
+  cost:
+    PACTRequisition: 15 # 2 minutes 30 seconds
+  categories:
+    - UplinkPACTRUUtility
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - RussianUplink
+
+# Medical
+
+- type: listing
+  id: UplinkPACTCombatMedkit
+  name:  uplink-PACT-medkit-combat-name
+  description: uplink-PACT-medkit-combat-desc
+  productEntity: MedkitCombatFilled
+  icon: { sprite: _NF/Objects/Specific/Medical/firstaidkits.rsi, state: blackkit }
+  cost:
+    PACTRequisition: 15 # 2 minutes 30 seconds
+  categories:
+    - UplinkPACTRUMedical
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - RussianUplink

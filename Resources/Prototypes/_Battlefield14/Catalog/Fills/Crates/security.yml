@@ -157,6 +157,22 @@
   - type: AccessReader
     access: [["PACTSoldier"]]
 
+- type: entity
+  id: CrateSecgearPACTFilledKSK
+  suffix: Filled, KSK
+  parent: CrateSecgear
+  name: KSK crate
+  components:
+  - type: StorageFill
+    contents:
+        - id: WeaponShotgunRUKSK
+          amount: 2
+        - id: BoxMagazineKSKBuckshot
+          amount: 2
+        - id: BoxMagazineKSKSlug
+  - type: AccessReader
+    access: [["PACTSoldier"]]
+
 ## Misc, power weapons
 
 - type: entity
