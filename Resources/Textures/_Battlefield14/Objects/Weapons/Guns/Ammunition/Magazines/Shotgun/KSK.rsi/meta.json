@@ -4,9 +4,12 @@
         "x": 32,
         "y": 32
     },
-    "license": "CC-BY-SA-3.0",
-    "copyright": "Taken from civ13 at https://github.com/Civ13/Civ13/blob/c1d4512d573f18d9e9fee5c227b8aaff93806ac3/icons/obj/gun.dmi and modified by JoeHammad",
+    "license": "CC-BY-SA-4.0",
+    "copyright": "Sprites by JoeHammad for the Battlefield14 project",
     "states": [
+        {
+            "name": "icon"
+        },
         {
             "name": "base"
         },
