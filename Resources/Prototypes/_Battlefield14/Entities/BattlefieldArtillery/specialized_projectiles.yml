@@ -81,8 +81,9 @@
       types:
         Structural: 100
         Piercing: 50
-    penetrationThreshold: 400
     deleteOnCollide: false
+  - type: ArmorPiercing
+    piercingThickness: 40
   - type: Heat
     explosionDelay: 0
   - type: ExplodeOnTrigger
@@ -121,8 +122,9 @@
       types:
         Structural: 100
         Piercing: 50
-    penetrationThreshold: 400
     deleteOnCollide: false
+  - type: ArmorPiercing
+    piercingThickness: 40
   - type: Heat
     explosionDelay: 0
     fragmentationPrototype: ShipShrapnelFragment
@@ -164,8 +166,9 @@
       types:
         Structural: 100
         Piercing: 50
-    penetrationThreshold: 400
     deleteOnCollide: false
+  - type: ArmorPiercing
+    piercingThickness: 40
   - type: Heat
     explosionDelay: 0.2
   - type: ExplodeOnTrigger
@@ -302,8 +305,9 @@
       types:
         Structural: 150
         Piercing: 100
-    penetrationThreshold: 500
     deleteOnCollide: false
+  - type: ArmorPiercing
+    piercingThickness: 50
   - type: Heat
     explosionDelay: 0.1
   - type: ExplodeOnTrigger
@@ -342,8 +346,9 @@
       types:
         Structural: 150
         Piercing: 100
-    penetrationThreshold: 500
     deleteOnCollide: false
+  - type: ArmorPiercing
+    piercingThickness: 50
   - type: Heat
     explosionDelay: 0.1
     fragmentationPrototype: ShipShrapnelFragment

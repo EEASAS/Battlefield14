@@ -5,14 +5,16 @@ namespace Content.Shared.Projectiles.Components;
 
 /// <summary>
 /// Component for HEAT (High Explosive Anti-Tank) projectiles and similar penetration-based projectiles.
-/// Causes the projectile to explode after penetration threshold is reached, with optional delay.
-/// Can also fragment into additional projectiles and/or release plasma gas after penetration.
+/// Causes the projectile to explode after it can no longer penetrate armor thickness (when used with ArmorPiercingComponent).
+/// Can also fragment into additional projectiles and/or release plasma gas after penetration stops.
+/// Note: This system now uses ArmorPiercingComponent and ArmorThicknessComponent instead of penetration threshold.
 /// </summary>
 [RegisterComponent, NetworkedComponent]
 public sealed partial class HeatComponent : Component
 {
     /// <summary>
-    /// Delay in seconds before explosion after penetration stops. If 0, explodes instantly.
+    /// Delay in seconds before explosion after penetration stops (when projectile can no longer penetrate armor thickness).
+    /// If 0, explodes instantly.
     /// </summary>
     [DataField]
     public float ExplosionDelay = 0f;

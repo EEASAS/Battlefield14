@@ -42,8 +42,9 @@
         Structural: 80
         Blunt: 50
         Heat: 30
-    penetrationThreshold: 200
     deleteOnCollide: false
+  - type: ArmorPiercing
+    piercingThickness: 20
   - type: Heat
     explosionDelay: 0
     fragmentationDelay: 0
@@ -327,8 +328,9 @@
         Structural: 120
         Piercing: 60
         Heat: 40
-    penetrationThreshold: 450
     deleteOnCollide: false
+  - type: ArmorPiercing
+    piercingThickness: 45
   - type: Heat
     explosionDelay: 0
     fragmentationDelay: 0
@@ -562,8 +564,9 @@
         Structural: 130
         Blunt: 90
         Heat: 40
-    penetrationThreshold: 200
     deleteOnCollide: false
+  - type: ArmorPiercing
+    piercingThickness: 20
   - type: Heat
     explosionDelay: 0
     fragmentationDelay: 0

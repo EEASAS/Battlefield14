@@ -4,10 +4,13 @@ using Content.Server.Weapons.Ranged.Systems;
 using Content.Shared.Atmos;
 using Content.Shared.Explosion.Components;
 using Content.Shared.Explosion.Components.OnTrigger;
+using Content.Shared.Physics;
 using Content.Shared.Projectiles;
 using Content.Shared.Projectiles.Components;
+using Content.Shared._Mono.ArmorPiercing;
 using Robust.Server.GameObjects;
 using Robust.Shared.Map;
+using Robust.Shared.Physics.Events;
 using Robust.Shared.Random;
 
 namespace Content.Server._Battlefield14.Projectiles;
@@ -29,6 +32,7 @@ public sealed class HeatSystem : EntitySystem
     {
         base.Initialize();
         SubscribeLocalEvent<HeatComponent, TriggerEvent>(OnHeatTriggered);
+        SubscribeLocalEvent<HeatComponent, StartCollideEvent>(OnHeatStartCollide);
     }
 
     private void OnHeatTriggered(EntityUid uid, HeatComponent component, TriggerEvent args)
@@ -48,6 +52,37 @@ public sealed class HeatSystem : EntitySystem
             component.PlasmaReleaseTriggered = false;
             Dirty(uid, component);
         }
+    }
+
+    private void OnHeatStartCollide(Entity<HeatComponent> ent, ref StartCollideEvent args)
+    {
+        // Only handle collisions for projectiles with both HeatComponent and ArmorPiercingComponent
+        if (!HasComp<ArmorPiercingComponent>(ent) || !TryComp<ProjectileComponent>(ent, out var projectile))
+            return;
+
+        // Only check walls (Impassable collision layer)
+        var isWall = (args.OtherFixture.CollisionLayer & (int)CollisionGroup.Impassable) != 0;
+        if (!isWall)
+            return;
+
+        // Check if target has armor thickness
+        if (!TryComp<ArmorThicknessComponent>(args.OtherEntity, out var armorThickness))
+            return;
+
+        if (!armorThickness.CanBePierced)
+            return;
+
+        // Check if projectile can penetrate
+        var armorPiercing = Comp<ArmorPiercingComponent>(ent);
+        if (armorPiercing.PiercingThickness >= armorThickness.Thickness)
+        {
+            // Can penetrate - let ArmorPiercingSystem handle it
+            return;
+        }
+
+        // Can't penetrate - mark as spent and trigger explosion
+        projectile.ProjectileSpent = true;
+        Dirty(ent, projectile);
     }
 
     public override void Update(float frameTime)

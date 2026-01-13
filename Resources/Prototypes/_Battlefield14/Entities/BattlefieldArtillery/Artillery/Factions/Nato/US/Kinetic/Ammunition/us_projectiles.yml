@@ -212,8 +212,9 @@
         Structural: 80
         Piercing: 100
         Heat: 30
-    penetrationThreshold: 500
     deleteOnCollide: false
+  - type: ArmorPiercing
+    piercingThickness: 50
   - type: Heat
     explosionDelay: 0
     fragmentationDelay: 0
@@ -358,8 +359,9 @@
         Structural: 100
         Piercing: 50
         Heat: 30
-    penetrationThreshold: 400
     deleteOnCollide: false
+  - type: ArmorPiercing
+    piercingThickness: 40
   - type: Heat
     explosionDelay: 0
     fragmentationDelay: 0
@@ -439,8 +441,9 @@
       types:
         Structural: 80
         Piercing: 40
-    penetrationThreshold: 200
     deleteOnCollide: false
+  - type: ArmorPiercing
+    piercingThickness: 20
   - type: Heat
     explosionDelay: 0
     fragmentationDelay: 0
@@ -764,7 +767,7 @@
 - type: entity
   id: Bullet40x46mmPlasmaGas
   name: 40x46mm plasma gas shell
-  parent: BaseBullet
+  parent: BaseBulletTrigger
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
@@ -773,13 +776,15 @@
         Structural: 150
         Blunt: 100
         Heat: 50
-    penetrationThreshold: 400
-    deleteOnCollide: false
-  - type: Heat
-    explosionDelay: 0
-    fragmentationDelay: 0
-    fragmentationCount: 0
-    plasmaReleaseDelay: 0
+    deleteOnCollide: true
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: Default
+    totalIntensity: 150
+    intensitySlope: 5
+    maxIntensity: 25
+    maxTileBreak: 2
+  - type: ReleasePlasmaOnTrigger
     plasmaAmount: 150
     plasmaTemperature: 1500
   - type: Sprite

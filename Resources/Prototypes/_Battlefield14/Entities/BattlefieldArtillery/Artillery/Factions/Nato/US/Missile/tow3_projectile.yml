@@ -11,8 +11,9 @@
         Structural: 450
         Piercing: 400
         Heat: 50
-    penetrationThreshold: 1200
     deleteOnCollide: false
+  - type: ArmorPiercing
+    piercingThickness: 120
   - type: Heat
     explosionDelay: 0
     fragmentationDelay: 0
