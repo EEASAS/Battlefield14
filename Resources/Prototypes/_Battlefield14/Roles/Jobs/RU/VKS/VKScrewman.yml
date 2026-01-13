@@ -1,0 +1,74 @@
+- type: job
+  id: VKSCrewman
+  name: job-name-vks-crewman
+  description: job-description-vks-crewman
+  playTimeTracker: JobVKSCrewman
+  requirements:
+    # COMMENTED OUT: CharacterSpeciesRequirement not supported (species requirement system not implemented)
+    # - !type:CharacterSpeciesRequirement
+    #   species:
+    #     - Human
+    # COMMENTED OUT: FactionRequirement not supported (faction system not implemented)
+    # - !type:FactionRequirement
+    #   factionID: "PACT"
+    - !type:TraitsRequirement
+      inverted: true
+      traits:
+        - Muted
+        - Blindness
+        - Pacifist
+        - WheelchairBound
+  weight: 77
+  startingGear: VKSCrewmanGear
+  alwaysUseSpawner: true
+  icon: "JobIconPACTEngineer"
+  requireAdminNotify: false
+  supervisors: job-supervisors-rugov
+  canBeAntag: false
+  special:
+  - !type:AddLanguageSpecial
+    languagesSpoken:
+    - Russian
+    languagesUnderstood:
+    - Russian
+  # - !type:AddComponentSpecial
+  #   components:
+  #     # COMMENTED OUT: ChatRank and HullrotFaction not supported
+  #     # - type: ChatRank
+  #     #   rank: BF-rank-private
+  #     # - type: HullrotFaction
+  #     #   faction: VDV
+  #     # - type: LanguageAdder
+  #     #   addSpoken:
+  #     #     - Russian
+  #     #   addUnderstood:
+  #     #     - Russian
+  access:
+  - Maintenance
+  - Service
+  - External
+  - Mercenary # Frontier
+  - Captain # Frontier
+  - PACTCommon
+  - PACTCommand
+  - PACTMaintenance
+  - PACTArmory
+
+- type: startingGear
+  id: VKSCrewmanGear
+  equipment:
+    id: VKSCrewmanPDA
+    ears: ClothingHeadsetAltRU
+    jumpsuit: ClothingUniformJumpsuitVKSCrewman
+    shoes: ClothingShoesBootsJackFilled
+    back: ClothingBackpackSecurity
+    belt: ClothingBeltAssaultFilledTools
+    gloves: ClothingHandsGlovesCombat
+    pocket1: WeaponPistolMP443
+    pocket2: PouchFirstAidFilled
+  storage:
+    back:
+    - Tourniquet
+    - Zipties
+    - MagazinePistolMP443
+    - MagazinePistolMP443

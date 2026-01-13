@@ -8,6 +8,9 @@
     },
     "states": [
     {
+      "name": "natocaptain"
+    },
+    {
       "name": "natosquadleader"
     },
     {
@@ -23,7 +26,13 @@
       "name": "natomedic"
     },
     {
+      "name": "natoengineer"
+    },
+    {
       "name": "natospecialforces"
+    },
+    {
+      "name": "pactcaptain"
     },
     {
       "name": "pactsquadleader"
@@ -39,6 +48,9 @@
     },
     {
       "name": "pactmedic"
+    },
+    {
+      "name": "pactengineer"
     },
     {
       "name": "pactspecialforces"

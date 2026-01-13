@@ -1,0 +1,74 @@
+- type: job
+  id: USSFCrewman
+  name: job-name-ussf-crewman
+  description: job-description-ussf-crewman
+  playTimeTracker: JobUSSFCrewman
+  requirements:
+    # COMMENTED OUT: CharacterSpeciesRequirement not supported (species requirement system not implemented)
+    # - !type:CharacterSpeciesRequirement
+    #   species:
+    #     - Human
+    # COMMENTED OUT: FactionRequirement not supported (faction system not implemented)
+    # - !type:FactionRequirement
+    #   factionID: "NATO"
+    - !type:TraitsRequirement
+      inverted: true
+      traits:
+        - Muted
+        - Blindness
+        - Pacifist
+        - WheelchairBound
+  weight: 77
+  startingGear: USSFCrewmanGear
+  alwaysUseSpawner: true
+  icon: "JobIconNATOEngineer"
+  requireAdminNotify: false
+  supervisors: job-supervisors-usgov
+  canBeAntag: false
+  special:
+  - !type:AddLanguageSpecial
+    languagesSpoken:
+    - English
+    languagesUnderstood:
+    - English
+  # - !type:AddComponentSpecial
+  #   components:
+  #     # COMMENTED OUT: ChatRank and HullrotFaction not supported
+  #     # - type: ChatRank
+  #     #   rank: BF-rank-private
+  #     # - type: HullrotFaction
+  #     #   faction: USMC
+  #     # - type: LanguageAdder
+  #     #   addSpoken:
+  #     #     - English
+  #     #   addUnderstood:
+  #     #     - English
+  access:
+  - Maintenance
+  - Service
+  - External
+  - Mercenary # Frontier
+  - Captain # Frontier
+  - NATOCommon
+  - NATOCommand
+  - NATOMaintenance
+  - NATOArmory
+
+- type: startingGear
+  id: USSFCrewmanGear
+  equipment:
+    id: USSFCrewmanPDA
+    ears: ClothingHeadsetAltUS
+    jumpsuit: ClothingUniformJumpsuitSpaceForceCrewman
+    shoes: ClothingShoesBootsJackFilled
+    back: ClothingBackpackSecurity
+    belt: ClothingBeltAssaultFilledTools
+    gloves: ClothingHandsGlovesCombat
+    pocket1: WeaponPistolM9
+    pocket2: PouchFirstAidFilled
+  storage:
+    back:
+    - Tourniquet
+    - Zipties
+    - MagazinePistolM9
+    - MagazinePistolM9

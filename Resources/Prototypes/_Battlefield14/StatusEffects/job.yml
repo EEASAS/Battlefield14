@@ -1,4 +1,5 @@
 # Basic factions
+
 - type: jobIcon
   parent: JobIcon
   id: JobIconUS
@@ -14,6 +15,7 @@
     state: RU
 
 # Nato classes
+
 - type: jobIcon
   parent: JobIcon
   id: JobIconNATOSquadleader
@@ -44,12 +46,27 @@
 
 - type: jobIcon
   parent: JobIcon
+  id: JobIconNATOEngineer
+  icon:
+    sprite: /Textures/_Battlefield14/Interface/Misc/class_icons.rsi
+    state: natoengineer
+
+- type: jobIcon
+  parent: JobIcon
   id: JobIconNATORecon
   icon:
     sprite: /Textures/_Battlefield14/Interface/Misc/class_icons.rsi
     state: natorecon
 
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconNATOSpecialForces
+  icon:
+    sprite: /Textures/_Battlefield14/Interface/Misc/class_icons.rsi
+    state: natospecialforces
+
  # Pact classes
+
 - type: jobIcon
   parent: JobIcon
   id: JobIconPACTSquadleader
@@ -84,3 +101,17 @@
   icon:
     sprite: /Textures/_Battlefield14/Interface/Misc/class_icons.rsi
     state: pactrecon
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconPACTEngineer
+  icon:
+    sprite: /Textures/_Battlefield14/Interface/Misc/class_icons.rsi
+    state: pactengineer
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconPACTSpecialForces
+  icon:
+    sprite: /Textures/_Battlefield14/Interface/Misc/class_icons.rsi
+    state: pactspecialforces

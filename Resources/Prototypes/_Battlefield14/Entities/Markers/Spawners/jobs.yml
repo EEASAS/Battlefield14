@@ -59,6 +59,20 @@
       - state: green
       - state: passenger
 
+# USSF
+
+- type: entity
+  id: SpawnPointUSSFCrewman
+  parent: SpawnPointJobBase
+  name: USSFCrewman
+  components:
+  - type: SpawnPoint
+    job_id: USSFCrewman
+  - type: Sprite
+    layers:
+      - state: green
+      - state: passenger
+
 # PACT
 
 - type: entity
@@ -116,6 +130,20 @@
   components:
   - type: SpawnPoint
     job_id: VDVRecon
+  - type: Sprite
+    layers:
+      - state: green
+      - state: passenger
+
+# VKS
+
+- type: entity
+  id: SpawnPointVKSCrewman
+  parent: SpawnPointJobBase
+  name: VKSCrewman
+  components:
+  - type: SpawnPoint
+    job_id: VKSCrewman
   - type: Sprite
     layers:
       - state: green

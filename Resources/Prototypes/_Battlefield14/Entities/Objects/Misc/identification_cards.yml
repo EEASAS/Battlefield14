@@ -65,6 +65,21 @@
   - type: PresetIdCard
     job: USMCRecon
 
+# USSF
+
+- type: entity
+  parent: IDCardStandard
+  id: USSFCrewmanIDCard
+  name: Space Force ID card
+  components:
+  - type: Sprite
+    layers:
+    - state: silver
+  - type: Item
+    heldPrefix: silver
+  - type: PresetIdCard
+    job: USSFCrewman
+
 # VDV
 
 - type: entity
@@ -131,3 +146,18 @@
     heldPrefix: silver
   - type: PresetIdCard
     job: VDVRecon
+
+# VKS
+
+- type: entity
+  parent: IDCardStandard
+  id: VKSCrewmanIDCard
+  name: VKS ID card
+  components:
+  - type: Sprite
+    layers:
+    - state: silver
+  - type: Item
+    heldPrefix: silver
+  - type: PresetIdCard
+    job: VKSCrewman

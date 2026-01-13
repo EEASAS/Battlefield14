@@ -1,7 +1,7 @@
 - type: entity
   categories: [ HideSpawnMenu ]
   parent: BaseBulletTrigger
-  id: BulletRocket84mmHEAT
+  id: BulletRocket84mmHEAT # High explosive anti tank, pierces and does damage on the inside
   name: 84mm HEAT rocket
   components:
   - type: Sprite
@@ -11,12 +11,11 @@
   - type: Projectile
     damage:
       types:
-        Structural: 5000
+        Structural: 2000
         Piercing: 250
-#    penetrationThreshold: 1750
-    penetrationDamageTypeRequirement:
-    - Structural
     deleteOnCollide: false
+  - type: ArmorPiercing
+    piercingThickness: 7
   - type: Heat
     explosionDelay: 0.1
     fragmentationDelay: 0.1
@@ -36,7 +35,7 @@
   categories: [ HideSpawnMenu ]
   parent: BaseBulletTrigger
   id: BulletRocket83mmNE
-  name: 83mm Novel Explosive rocket
+  name: 83mm Novel Explosive rocket # anti infantry, explodes on contact and sends fragments everywhere with a wide explosive for killing infantry
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
@@ -60,6 +59,31 @@
     intensitySlope: 5
     maxIntensity: 25
     maxTileBreak: 0
+  - type: StaminaDamageOnCollide
+    damage: 200 # It's a fucking rocket
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: BaseBulletTrigger
+  id: BulletRocket83mmHEDM
+  name: 83mm HEDM rocket # High explosive dual mode, explodes on contact in a small area to blast open walls and such
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    layers:
+    - state: frag
+  - type: Projectile
+    damage:
+      types:
+        Structural: 400
+        Blunt: 150
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: Default
+    totalIntensity: 300
+    intensitySlope: 25
+    maxIntensity: 100
+    maxTileBreak: 2
   - type: StaminaDamageOnCollide
     damage: 200 # It's a fucking rocket
 

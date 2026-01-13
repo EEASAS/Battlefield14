@@ -153,3 +153,17 @@
     containers:
       item:
       - Machete
+
+- type: entity
+  id: ClothingBeltAssaultFilledTools
+  parent: ClothingBeltAssault
+  suffix: Filled, tools
+  components:
+  - type: StorageFill
+    contents:
+      - id: Crowbar
+      - id: Wrench
+      - id: Screwdriver
+      - id: Wirecutter
+      - id: WelderIndustrial
+      - id: Multitool
