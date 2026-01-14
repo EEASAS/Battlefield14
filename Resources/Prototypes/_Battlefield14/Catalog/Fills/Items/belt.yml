@@ -167,3 +167,18 @@
       - id: Wirecutter
       - id: WelderIndustrial
       - id: Multitool
+
+- type: entity
+  id: ClothingBeltAssaultFilledToolsRCD
+  parent: ClothingBeltAssault
+  suffix: Filled, tools, RCD
+  components:
+  - type: StorageFill
+    contents:
+      - id: Crowbar
+      - id: Wrench
+      - id: Screwdriver
+      - id: Wirecutter
+      - id: WelderIndustrial
+      - id: Multitool
+      - id: RCD

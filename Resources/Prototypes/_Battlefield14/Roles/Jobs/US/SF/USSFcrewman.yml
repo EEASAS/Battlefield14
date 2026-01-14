@@ -62,7 +62,7 @@
     jumpsuit: ClothingUniformJumpsuitSpaceForceCrewman
     shoes: ClothingShoesBootsJackFilled
     back: ClothingBackpackSecurity
-    belt: ClothingBeltAssaultFilledTools
+    belt: ClothingBeltAssaultFilledToolsRCD
     gloves: ClothingHandsGlovesCombat
     pocket1: WeaponPistolM9
     pocket2: PouchFirstAidFilled
