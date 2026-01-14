@@ -1,0 +1,226 @@
+# Base
+- type: entity
+  id: LightFighterEquipment
+  abstract: true
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Tag
+    tags:
+    - LightFighterEquipment
+  - type: StaticPrice
+    price: 500
+
+# NATO
+
+- type: entity
+  id: LightFighterM61A2
+  name: M61A2 20mm gatling gun
+  description: From high-tech aircraft, to naval CIWS mounts, to 1980's era M113's, this weapon is hungry for aircraft (and infantry) everywhere.
+  suffix: Fighter weapon, Light, Gun
+  parent: [ BaseMechWeaponRange, LightFighterEquipment ]
+  components:
+  - type: Sprite
+    sprite: _Mono/Objects/Specific/Mech/tgmc_mecha_weapons.rsi
+    state: heavycannon64x32
+  - type: Gun
+    projectileSpeed: 110
+    fireRate: 8
+    minAngle: 0
+    maxAngle: 10
+    angleIncrease: 0.1
+    angleDecay: 20
+    selectedMode: FullAuto
+    availableModes:
+      - FullAuto
+    soundGunshot:
+      path: /Audio/_Mono/Weapons/Guns/Gunshots/slammer.ogg
+  - type: Battery
+    maxCharge: 180
+  - type: ProjectileBatteryAmmoProvider
+    proto: Bullet20mmPhalanx
+    fireCost: 20
+  - type: Appearance
+  - type: AmmoCounter
+
+- type: entity
+  id: LightFighterAIM9
+  name: AIM-9XS missile gantry
+  description: The latest iteration of the AIM-9, fins removed and replaced with shifting titanium cubes to steer and thruster redesigned to work in space.
+  suffix: Fighter weapon, Light, Missile
+  parent: [ BaseMechWeaponRange, LightFighterEquipment ]
+  components:
+  - type: MechEquipment
+    preventFireOnGrid: true
+  - type: Sprite
+    sprite: _Mono/Objects/Specific/Mech/tgmc_mecha_weapons.rsi
+    state: tow64x32
+  - type: Gun
+    projectileSpeed: 50
+    fireRate: 0.2
+    selectedMode: SemiAuto
+    availableModes:
+      - SemiAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/lmg.ogg
+  - type: Battery
+    maxCharge: 500
+  - type: ProjectileBatteryAmmoProvider
+    proto: FighterMissileAim9xs
+    fireCost: 500
+  - type: Appearance
+  - type: AmmoCounter
+
+- type: entity
+  id: FighterMissileAim9xs
+  name: AIM-9XS Missile # currently does not work sadly, fighters don't emit a heat signature this missile can track
+  parent: BaseBulletTrigger
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Structural: 100
+        Blunt: 70
+        Heat: 30
+  - type: Sprite
+    sprite: _Mono/Objects/SpaceArtillery/mini_rocket.rsi
+    layers:
+    - state: mini-rocket
+  - type: Ammo
+    muzzleFlash: MuzzleFlashEffectSmall
+  - type: ShipWeaponProjectile
+  - type: RadarBlip
+    radarColor: "#FCBA03"
+    scale: 1
+    requireNoGrid: true
+    shape: triangle
+  - type: TimedDespawn
+    lifetime: 3 # approx 500 meter range
+  - type: PointLight
+    radius: 3.5
+    color: orange
+    energy: 0.5
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: Default
+    totalIntensity: 15
+    intensitySlope: 8
+    maxIntensity: 8
+  - type: GatheringProjectile
+  - type: MiningGatheringSoft
+  - type: MiningGatheringHard
+  - type: TargetSeeking
+    acceleration: 300
+    detectionRange: 256
+    scanArc: 40
+    launchSpeed: 150
+    maxSpeed: 180
+    trackDelay: 0.1
+
+- type: entity
+  id: MediumFighterMaverick
+  name: AGM-67 Maverick missile gantry
+  description: An american classic, fins removed and replaced with shifting titanium cubes to steer and thruster redesigned to work in space.
+  suffix: Fighter weapon, Light, Missile
+  parent: [ BaseMechWeaponRange, LightFighterEquipment ]
+  components:
+  - type: MechEquipment
+    preventFireOnGrid: true
+  - type: Sprite
+    sprite: _Mono/Objects/Specific/Mech/tgmc_mecha_weapons.rsi
+    state: tow64x32
+  - type: Gun
+    projectileSpeed: 50
+    fireRate: 0.2
+    selectedMode: SemiAuto
+    availableModes:
+      - SemiAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/lmg.ogg
+  - type: Battery
+    maxCharge: 500
+  - type: ProjectileBatteryAmmoProvider
+    proto: FighterMissileMaverick
+    fireCost: 500
+  - type: Appearance
+  - type: AmmoCounter
+
+- type: entity
+  id: FighterMissileMaverick
+  name: AGM-67 Maverick
+  parent: BaseBulletTrigger
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Structural: 350
+        Blunt: 100
+        Heat: 40
+  - type: Sprite
+    sprite: _Mono/Objects/SpaceArtillery/hybrid_rocket.rsi
+    layers:
+    - state: hybrid-rocket
+  - type: Ammo
+    muzzleFlash: MuzzleFlashEffectSmall
+  - type: ShipWeaponProjectile
+  - type: RadarBlip
+    radarColor: "#FCBA03"
+    scale: 1
+    requireNoGrid: true
+    shape: triangle
+  - type: TimedDespawn
+    lifetime: 6 # approx 750 meter range
+  - type: PointLight
+    radius: 3.5
+    color: orange
+    energy: 0.5
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: Default
+    totalIntensity: 700
+    intensitySlope: 25
+    maxIntensity: 100
+    maxTileBreak: 2
+  - type: GatheringProjectile
+  - type: MiningGatheringSoft
+  - type: MiningGatheringHard
+  - type: TargetSeeking
+    acceleration: 150
+    detectionRange: 512
+    scanArc: 35
+    launchSpeed: 150
+    maxSpeed: 130
+    trackDelay: 0.2
+
+# PACT
+
+- type: entity
+  id: LightFighterGSH301
+  name: GSh-30-1 30mm autocannon
+  description: It may be from the 80's but the 30mm frag coming out doesn't care.
+  suffix: Fighter weapon, Light, Gun
+  parent: [ BaseMechWeaponRange, LightFighterEquipment ]
+  components:
+  - type: Sprite
+    sprite: _Mono/Objects/Specific/Mech/tgmc_mecha_weapons.rsi
+    state: sniper64x32
+  - type: Gun
+    projectileSpeed: 90
+    fireRate: 5
+    minAngle: 0
+    maxAngle: 20
+    angleIncrease: 1
+    angleDecay: 20
+    selectedMode: FullAuto
+    availableModes:
+      - FullAuto
+    soundGunshot:
+      path: /Audio/_Mono/Weapons/Guns/Gunshots/slammer.ogg
+  - type: Battery
+    maxCharge: 180
+  - type: ProjectileBatteryAmmoProvider
+    proto: Bullet30mmFrag
+    fireCost: 30
+  - type: Appearance
+  - type: AmmoCounter
