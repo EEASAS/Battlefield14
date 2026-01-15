@@ -220,7 +220,7 @@
   - type: Battery
     maxCharge: 180
   - type: ProjectileBatteryAmmoProvider
-    proto: Bullet30mmFrag
+    proto: Bullet23mmFrag
     fireCost: 30
   - type: Appearance
   - type: AmmoCounter
