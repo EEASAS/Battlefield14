@@ -1,3 +1,53 @@
+# Ammo
+
+- type: listing
+  id: UplinkPACTAmmoBox545Big
+  name:  uplink-PACT-ammo-box-545-big-name
+  description: uplink-PACT-ammo-box-545-big-desc
+  productEntity: MagazineBox545x39Big
+  icon: { sprite: _Mono/Objects/Weapons/Guns/Ammunition/Boxes/5.56x45mm.rsi, state: base-b }
+  cost:
+    PACTRequisition: 6 # 1 minutes
+  categories:
+    - UplinkPACTRUAmmo
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - RussianUplink
+
+- type: listing
+  id: UplinkPACTAmmoBox545
+  name:  uplink-PACT-ammo-box-545-name
+  description: uplink-PACT-ammo-box-545-desc
+  productEntity: MagazineBox545x39
+  icon: { sprite: _Mono/Objects/Weapons/Guns/Ammunition/Boxes/5.56x45mm.rsi, state: base }
+  cost:
+    PACTRequisition: 2 # 20 seconds
+  categories:
+    - UplinkPACTRUAmmo
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - RussianUplink
+
+- type: listing
+  id: UplinkPACTAmmoBox9mmBig
+  name:  uplink-PACT-ammo-box-9mm-big-name
+  description: uplink-NATO-ammo-box-9mm-big-desc
+  productEntity: MagazineBox9x19mmBig
+  icon: { sprite: _Mono/Objects/Weapons/Guns/Ammunition/Boxes/9x19mm.rsi, state: base-b }
+  cost:
+    PACTRequisition: 4 # 40 seconds
+  categories:
+    - UplinkPACTRUAmmo
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - RussianUplink
+
 # Armour
 
 - type: listing

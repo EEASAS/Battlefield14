@@ -1,3 +1,17 @@
+## Ammo
+
+uplink-NATO-ammo-box-556-name = Ammo pack (5.56x45mm)
+uplink-NATO-ammo-box-556-desc = Contains 60 loose 5.56x45mm rounds.
+
+uplink-NATO-ammo-box-556-big-name = Bulk ammo box (5.56x45mm)
+uplink-NATO-ammo-box-556-big-desc = Contains 200 loose 5.56x45mm rounds.
+
+uplink-NATO-ammo-box-9mm-big-name = Bulk ammo box (9x19mm)
+uplink-NATO-ammo-box-9mm-big-desc = Contains 300 loose 9x19mm rounds.
+
+uplink-NATO-magazine-box-STANAG-name = STANAG magazine box (5.56x45mm)
+uplink-NATO-magazine-box-STANAG-desc = Contains 8 30 round STANAG magazines.
+
 ## Armour
 
 uplink-nato-armor-plate-light-name = Kevlar insert

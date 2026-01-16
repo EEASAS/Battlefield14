@@ -122,7 +122,7 @@
   productEntity: SupplyBoxAmmoUSFilled
   icon: { sprite: _Battlefield14/Objects/Misc/ammoboxus.rsi, state: icon }
   cost:
-    NATORequisition: 30 # 5 minutes
+    NATORequisition: 16 # 2 minutes 40 seconds
   categories:
     - UplinkNATOUSAmmo
   conditions:

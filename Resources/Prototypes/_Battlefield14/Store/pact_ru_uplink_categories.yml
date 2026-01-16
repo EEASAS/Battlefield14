@@ -101,13 +101,29 @@
           - RussianUplink
 
 - type: listing
+  id: UplinkPACTRUAmmoAK12
+  name:  uplink-PACTRU-magazine-box-AK12-name
+  description: uplink-PACTRU-magazine-box-AK12-desc
+  productEntity: BoxMagazineAK12
+  icon: { sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Rifle/AK12.rsi, state: mag-12 }
+  cost:
+    PACTRequisition: 4 # 40 seconds
+  categories:
+    - UplinkPACTRUAmmo
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - RussianUplink
+
+- type: listing
   id: UplinkPACTRUAmmoAK203
-  name:  uplink-PACTRU-ammo-AK203-name
-  description: uplink-PACTRU-ammo-AK203-desc
+  name:  uplink-PACTRU-magazine-box-AK203-name
+  description: uplink-PACTRU-magazine-box-AK203-desc
   productEntity: BoxMagazineAK203
   icon: { sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Rifle/AK203.rsi, state: base }
   cost:
-    PACTRequisition: 6 # 1 minute
+    PACTRequisition: 4 # 40 seconds
   categories:
     - UplinkPACTRUAmmo
   conditions:
@@ -118,8 +134,8 @@
 
 - type: listing
   id: UplinkPACTRUAmmoKSKBuckshot
-  name:  uplink-PACTRU-ammo-KSKBuckshot-name
-  description: uplink-PACTRU-ammo-KSKBuckshot-desc
+  name:  uplink-PACTRU-magazine-box-KSKBuckshot-name
+  description: uplink-PACTRU-magazine-box-KSKBuckshot-desc
   productEntity: BoxMagazineKSKBuckshot
   icon: { sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Shotgun/KSK.rsi, state: icon }
   cost:
@@ -134,8 +150,8 @@
 
 - type: listing
   id: UplinkPACTRUAmmoKSKSlug
-  name:  uplink-PACTRU-ammo-KSKSlug-name
-  description: uplink-PACTRU-ammo-KSKSlug-desc
+  name:  uplink-PACTRU-magazine-box-KSKSlug-name
+  description: uplink-PACTRU-magazine-box-KSKSlug-desc
   productEntity: BoxMagazineKSKSlug
   icon: { sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Shotgun/KSK.rsi, state: icon }
   cost:

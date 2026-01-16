@@ -6,13 +6,13 @@
     MagazineRifleSTANAG: 100
     WeaponSubmachinegunUSMP5: 5
     MagazineSubmachinegunMP5: 20
-#    BoxLethalshot: 10
+    ShellBoxBF12GaugeBuckshot: 10
     WeaponPistolM9: 20
-    MagazinePistolM9: 150
+    MagazinePistolM9: 100
     TelescopicShield: 2
     RiotShield: 2
     CombatKnife: 100
-    BoxMagazineSTANAG: 20
+    BoxMagazineSTANAG: 5
 #    ClothingBeltMedicalAdvancedFilled: 4
     ClothingBeltMilitaryWebbingUS: 50
     ClothingBeltAssault: 50
@@ -35,17 +35,17 @@
   id: NATOUSMCAmmoInventory
   startingInventory:
     MagazineRifleSTANAG: 100
-    BoxMagazineSTANAG: 30
-    MagazineBox556x45Big: 10
-    MagazineBox556x45: 25
+    BoxMagazineSTANAG: 10
+    MagazineBox556x45Big: 5
+    MagazineBox556x45: 5
     MagazineSubmachinegunMP5: 100
-    MagazineBox9x19mmBig: 25
+    MagazineBox9x19mmBig: 10
 
 - type: vendingMachineInventory
   id: NATOUSMCGearInventory
   startingInventory:
-    C4: 100
-    JetpackBlackFilled: 10
+    C4: 100 # replace with breaching charges and put C4 in req
+    JetpackBlackFilled: 20
     GrenadeFlashBang: 30
     MK21Handgrenade: 30
     USM18SmokeHandgrenade: 50
@@ -59,7 +59,7 @@
 - type: vendingMachineInventory
   id: NATOUSMCShipInventory
   startingInventory:
-    WeaponRifleUSM4A1: 1
+    WeaponRifleUSM4A1: 1 # replace with an actual ship later
 #    ShipVoucherUnionfallRaider: 2
 #    ShipVoucherUnionfallIbis: 2
 
@@ -71,13 +71,13 @@
     MagazineRifleAK74: 50
     WeaponSubmachinegunRUVityaz: 5
     MagazineSubmachinegunVityaz: 20
-#    BoxLethalshot: 10
+    ShellBoxBF12GaugeBuckshot: 10
     WeaponPistolMP443: 20
-    MagazinePistolMP443: 150
+    MagazinePistolMP443: 100
     TelescopicShield: 2
     RiotShield: 2
     CombatKnife: 100
-    BoxMagazineAK74: 20
+    BoxMagazineAK74: 5
 #    ClothingBeltMedicalAdvancedFilled: 4
     ClothingBeltMilitaryWebbingRU: 50
     ClothingBeltAssault: 50
@@ -99,21 +99,21 @@
 - type: vendingMachineInventory
   id: PACTVDVAmmoInventory
   startingInventory:
-    MagazineRifleAK12: 30
-    MagazineRifleAK74: 70
-    BoxMagazineAK12: 10
-    BoxMagazineAK74: 20
-    MagazineBox545x39Big: 10
-    MagazineBox545x39: 25
+    MagazineRifleAK12: 40
+    MagazineRifleAK74: 60
+    BoxMagazineAK12: 5
+    BoxMagazineAK74: 5
+    MagazineBox545x39Big: 5
+    MagazineBox545x39: 20
     MagazineSubmachinegunVityaz: 100
-    MagazineBox9x19mmBig: 25
+    MagazineBox9x19mmBig: 5
     BoxMagazineASVALShort: 5
-    BoxMagazineAKM: 5
+    BoxMagazineAKM: 2
 
 - type: vendingMachineInventory
   id: PACTVDVGearInventory
   startingInventory:
-    C4: 100
+    C4: 100 # replace with breaching charges and put C4 in req
     JetpackBlackFilled: 10
     GrenadeFlashBang: 30
     RURGD5Handgrenade: 30
@@ -130,6 +130,6 @@
 - type: vendingMachineInventory
   id: PACTVDVShipInventory
   startingInventory:
-    MagazineRifleAK74: 1
+    MagazineRifleAK74: 1 # replace with an actual ship later
 #    ShipVoucherUnionfallRaider: 2
 #    ShipVoucherUnionfallIbis: 2

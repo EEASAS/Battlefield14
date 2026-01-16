@@ -1,3 +1,69 @@
+# Ammo
+
+- type: listing
+  id: UplinkNATOAmmoBox556Big
+  name:  uplink-NATO-ammo-box-556-big-name
+  description: uplink-NATO-ammo-box-556-big-desc
+  productEntity: MagazineBox556x45Big
+  icon: { sprite: _Mono/Objects/Weapons/Guns/Ammunition/Boxes/5.56x45mm.rsi, state: base-b }
+  cost:
+    NATORequisition: 6 # 1 minute
+  categories:
+    - UplinkNATOUSAmmo
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - AmericanUplink
+
+- type: listing
+  id: UplinkNATOAmmoBox556
+  name:  uplink-NATO-ammo-box-556-name
+  description: uplink-NATO-ammo-box-556-desc
+  productEntity: MagazineBox556x45
+  icon: { sprite: _Mono/Objects/Weapons/Guns/Ammunition/Boxes/5.56x45mm.rsi, state: base }
+  cost:
+    NATORequisition: 2 # 20 seconds
+  categories:
+    - UplinkNATOUSAmmo
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - AmericanUplink
+
+- type: listing
+  id: UplinkNATOAmmoBox9mmBig
+  name:  uplink-NATO-ammo-box-9mm-big-name
+  description: uplink-NATO-ammo-box-9mm-big-desc
+  productEntity: MagazineBox9x19mmBig
+  icon: { sprite: _Mono/Objects/Weapons/Guns/Ammunition/Boxes/9x19mm.rsi, state: base-b }
+  cost:
+    NATORequisition: 4 # 40 seconds
+  categories:
+    - UplinkNATOUSAmmo
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - AmericanUplink
+
+- type: listing
+  id: UplinkNATOMagazineBoxSTANAG
+  name:  uplink-NATO-magazine-box-STANAG-name
+  description: uplink-NATO-magazine-box-STANAG-desc
+  productEntity: BoxMagazineSTANAG
+  icon: { sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Rifle/STANAG.rsi, state: base }
+  cost:
+    NATORequisition: 4 # 40 seconds
+  categories:
+    - UplinkNATOUSAmmo
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - AmericanUplink
+
 # Armour
 
 - type: listing

@@ -27,7 +27,7 @@ uplink-PACTRU-RPOAShmelcrate-desc = 5 disposable RPO-A thermobaric launchers.
 ## Ammo
 
 uplink-PACTRU-ammo-bag-name = Ammo bag
-uplink-PACTRU-ammo-bag-desc = Contains 200 loose 5x45x39mm rounds, 8 AK-74 pattern magazines, 8 AS-VAL magazines, and 300 loose rounds of 9x19mm.
+uplink-PACTRU-ammo-bag-desc = Contains 200 loose 5.45x39mm rounds, 8 AK-74 pattern magazines, 8 AS-VAL magazines, and 300 loose rounds of 9x19mm.
 
 uplink-PACTRU-RPG-HEAT-name = RPG-7 HEAT round x4
 uplink-PACTRU-RPG-HEAT-desc = Four High Explosive Anti Tank rounds for the RPG-7.
@@ -35,14 +35,17 @@ uplink-PACTRU-RPG-HEAT-desc = Four High Explosive Anti Tank rounds for the RPG-7
 uplink-PACTRU-RPG-frag-name = RPG-7 frag round x4
 uplink-PACTRU-RPG-frag-desc = Four Fragmentation rounds for the RPG-7, more effective against infantry than armour.
 
-uplink-PACTRU-ammo-AK203-name = AK-203 magazine box
-uplink-PACTRU-ammo-AK203-desc = Contains 8 7.62x39 magazines for the AK-203.
+uplink-PACTRU-magazine-box-AK12-name = AK-12 magazine box
+uplink-PACTRU-magazine-box-AK12-desc = Contains 8 5.45x39 magazines for the AK-12.
 
-uplink-PACTRU-ammo-KSKBuckshot-name = KSK magazine box (buckshot)
-uplink-PACTRU-ammo-KSKBuckshot-desc = 8 mags of 8 rounds of 12 gauge buckshot in magazines that fit in the KSK.
+uplink-PACTRU-magazine-box-AK203-name = AK-203 magazine box
+uplink-PACTRU-magazine-box-AK203-desc = Contains 8 7.62x39 magazines for the AK-203.
 
-uplink-PACTRU-ammo-KSKSlug-name = KSK magazine box (slug)
-uplink-PACTRU-ammo-KSKSlug-desc = 8 mags of 8 rounds of 12 gauge slugs in magazines that fit in the KSK.
+uplink-PACTRU-magazine-box-KSKBuckshot-name = KSK magazine box (buckshot)
+uplink-PACTRU-magazine-box-KSKBuckshot-desc = 8 mags of 8 rounds of 12 gauge buckshot in magazines that fit in the KSK.
+
+uplink-PACTRU-magazine-box-KSKSlug-name = KSK magazine box (slug)
+uplink-PACTRU-magazine-box-KSKSlug-desc = 8 mags of 8 rounds of 12 gauge slugs in magazines that fit in the KSK.
 
 ## Armour
 
