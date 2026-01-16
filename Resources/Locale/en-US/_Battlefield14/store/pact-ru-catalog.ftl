@@ -41,11 +41,11 @@ uplink-PACTRU-magazine-box-AK12-desc = Contains 8 5.45x39 magazines for the AK-1
 uplink-PACTRU-magazine-box-AK203-name = AK-203 magazine box
 uplink-PACTRU-magazine-box-AK203-desc = Contains 8 7.62x39 magazines for the AK-203.
 
-uplink-PACTRU-magazine-box-KSKBuckshot-name = KSK magazine box (buckshot)
-uplink-PACTRU-magazine-box-KSKBuckshot-desc = 8 mags of 8 rounds of 12 gauge buckshot in magazines that fit in the KSK.
+uplink-PACTRU-magazine-box-KSKBuckshot-name = KS-K magazine box (buckshot)
+uplink-PACTRU-magazine-box-KSKBuckshot-desc = 8 mags of 8 rounds of 12 gauge buckshot in magazines that fit in the KS-K.
 
-uplink-PACTRU-magazine-box-KSKSlug-name = KSK magazine box (slug)
-uplink-PACTRU-magazine-box-KSKSlug-desc = 8 mags of 8 rounds of 12 gauge slugs in magazines that fit in the KSK.
+uplink-PACTRU-magazine-box-KSKSlug-name = KS-K magazine box (slug)
+uplink-PACTRU-magazine-box-KSKSlug-desc = 8 mags of 8 rounds of 12 gauge slugs in magazines that fit in the KS-K.
 
 ## Armour
 
