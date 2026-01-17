@@ -11,8 +11,8 @@
       volume: 3.75
       temperature: 293.15
       moles:
-      - 0.769267145 # oxygen
-      - 0.769267145 # nitrogen
+      - 1.53853429 # oxygen
+#      - 0.769267145 # nitrogen
 #doesntwork    isInternals: false # So you don't suck on your integrated thrusters
   - type: ActivatableUI
     key: enum.SharedGasTankUiKey.Key
@@ -29,7 +29,7 @@
   - type: MovementSpeedModifier
     weightlessAcceleration: 1
     weightlessFriction: 0.3
-    weightlessModifier: 1.2
+    weightlessModifier: 2
 
 - type: entity
   parent: [ ClothingOuterHardsuitBase , BaseIntegratedManeuveringThrusters , ClothingArmorPlateMedium ]

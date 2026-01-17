@@ -1,8 +1,8 @@
 - type: job
-  id: USSFCrewman
-  name: job-name-ussf-crewman
-  description: job-description-ussf-crewman
-  playTimeTracker: JobUSSFCrewman
+  id: USSFCaptain
+  name: job-name-ussf-captain
+  description: job-description-ussf-captain
+  playTimeTracker: JobUSSFCaptain
   requirements:
     # COMMENTED OUT: CharacterSpeciesRequirement not supported (species requirement system not implemented)
     # - !type:CharacterSpeciesRequirement
@@ -18,10 +18,10 @@
         - Blindness
         - Pacifist
         - WheelchairBound
-  weight: 77
-  startingGear: USSFCrewmanGear
+  weight: 78
+  startingGear: USSFCaptainGear
   alwaysUseSpawner: true
-  icon: "JobIconNATOEngineer"
+  icon: "JobIconNATOCaptain"
   requireAdminNotify: false
   supervisors: job-supervisors-usgov
   canBeAntag: false
@@ -29,8 +29,10 @@
   - !type:AddLanguageSpecial
     languagesSpoken:
     - English
+    - Esperanto
     languagesUnderstood:
     - English
+    - Esperanto
   # - !type:AddComponentSpecial
   #   components:
   #     # COMMENTED OUT: ChatRank and HullrotFaction not supported
@@ -52,23 +54,22 @@
   - NATOCommon
   - NATOCommand
   - NATOMaintenance
+  - NATOSoldier
   - NATOArmory
+  - NATOFunds
 
 - type: startingGear
-  id: USSFCrewmanGear
+  id: USSFCaptainGear
   equipment:
-    id: USSFCrewmanPDA
+    id: USSFCaptainPDA
     ears: ClothingHeadsetAltUS
-    jumpsuit: ClothingUniformJumpsuitSpaceForceCrewman
+    jumpsuit: ClothingUniformJumpsuitSpaceForceCaptain
     shoes: ClothingShoesBootsJackFilled
-    back: ClothingBackpackSecurity
-    belt: ClothingBeltAssaultFilledToolsRCD
+    back: ClothingBackpackSatchelSecurity
+    belt: ClothingBeltCommandFilledUS
     gloves: ClothingHandsGlovesCombat
-    pocket1: WeaponPistolM9
-    pocket2: PouchFirstAidFilled
+    pocket1: PouchFirstAidFilled
   storage:
     back:
     - Tourniquet
     - Zipties
-    - MagazinePistolM9
-    - MagazinePistolM9

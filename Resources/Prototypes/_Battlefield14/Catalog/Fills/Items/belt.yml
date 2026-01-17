@@ -136,7 +136,7 @@
   - type: ContainerFill
     containers:
       item:
-      - WeaponPistolMP443
+      - WeaponPistolMP443 # TODO MP412 REX
   - type: StorageFill
     contents:
       - id: Handcuffs

@@ -18,6 +18,13 @@
 
 - type: jobIcon
   parent: JobIcon
+  id: JobIconNATOCaptain
+  icon:
+    sprite: /Textures/_Battlefield14/Interface/Misc/class_icons.rsi
+    state: natocaptain
+
+- type: jobIcon
+  parent: JobIcon
   id: JobIconNATOSquadleader
   icon:
     sprite: /Textures/_Battlefield14/Interface/Misc/class_icons.rsi
@@ -66,6 +73,13 @@
     state: natospecialforces
 
  # Pact classes
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconPACTCaptain
+  icon:
+    sprite: /Textures/_Battlefield14/Interface/Misc/class_icons.rsi
+    state: pactcaptain
 
 - type: jobIcon
   parent: JobIcon

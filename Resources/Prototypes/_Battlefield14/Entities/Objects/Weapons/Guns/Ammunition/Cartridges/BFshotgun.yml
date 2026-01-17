@@ -49,7 +49,7 @@
   components:
   - type: ProjectileSpread
     proto: PelletShotgunBF12Gauge
-    count: 15
+    count: 10
     spread: 15
 
 - type: entity

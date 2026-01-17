@@ -62,6 +62,18 @@
 # USSF
 
 - type: entity
+  id: SpawnPointUSSFCaptain
+  parent: SpawnPointJobBase
+  name: USSFCaptain
+  components:
+  - type: SpawnPoint
+    job_id: USSFCaptain
+  - type: Sprite
+    layers:
+      - state: green
+      - state: passenger
+
+- type: entity
   id: SpawnPointUSSFCrewman
   parent: SpawnPointJobBase
   name: USSFCrewman
@@ -136,6 +148,18 @@
       - state: passenger
 
 # VKS
+
+- type: entity
+  id: SpawnPointVKSCaptain
+  parent: SpawnPointJobBase
+  name: VKSCaptain
+  components:
+  - type: SpawnPoint
+    job_id: VKSCaptain
+  - type: Sprite
+    layers:
+      - state: green
+      - state: passenger
 
 - type: entity
   id: SpawnPointVKSCrewman

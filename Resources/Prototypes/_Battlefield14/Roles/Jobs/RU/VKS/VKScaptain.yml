@@ -1,8 +1,8 @@
 - type: job
-  id: USSFCrewman
-  name: job-name-ussf-crewman
-  description: job-description-ussf-crewman
-  playTimeTracker: JobUSSFCrewman
+  id: VKSCaptain
+  name: job-name-vks-captain
+  description: job-description-vks-captain
+  playTimeTracker: JobVKSCaptain
   requirements:
     # COMMENTED OUT: CharacterSpeciesRequirement not supported (species requirement system not implemented)
     # - !type:CharacterSpeciesRequirement
@@ -10,7 +10,7 @@
     #     - Human
     # COMMENTED OUT: FactionRequirement not supported (faction system not implemented)
     # - !type:FactionRequirement
-    #   factionID: "NATO"
+    #   factionID: "PACT"
     - !type:TraitsRequirement
       inverted: true
       traits:
@@ -18,57 +18,54 @@
         - Blindness
         - Pacifist
         - WheelchairBound
-  weight: 77
-  startingGear: USSFCrewmanGear
+  weight: 78
+  startingGear: VKSCaptainGear
   alwaysUseSpawner: true
-  icon: "JobIconNATOEngineer"
+  icon: "JobIconPACTCaptain"
   requireAdminNotify: false
-  supervisors: job-supervisors-usgov
+  supervisors: job-supervisors-rugov
   canBeAntag: false
   special:
   - !type:AddLanguageSpecial
     languagesSpoken:
-    - English
+    - Russian
     languagesUnderstood:
-    - English
+    - Russian
   # - !type:AddComponentSpecial
   #   components:
   #     # COMMENTED OUT: ChatRank and HullrotFaction not supported
   #     # - type: ChatRank
   #     #   rank: BF-rank-private
   #     # - type: HullrotFaction
-  #     #   faction: USSF
+  #     #   faction: VDV
   #     # - type: LanguageAdder
   #     #   addSpoken:
-  #     #     - English
+  #     #     - Russian
   #     #   addUnderstood:
-  #     #     - English
+  #     #     - Russian
   access:
   - Maintenance
   - Service
   - External
   - Mercenary # Frontier
   - Captain # Frontier
-  - NATOCommon
-  - NATOCommand
-  - NATOMaintenance
-  - NATOArmory
+  - PACTCommon
+  - PACTCommand
+  - PACTMaintenance
+  - PACTArmory
 
 - type: startingGear
-  id: USSFCrewmanGear
+  id: VKSCaptainGear
   equipment:
-    id: USSFCrewmanPDA
-    ears: ClothingHeadsetAltUS
-    jumpsuit: ClothingUniformJumpsuitSpaceForceCrewman
+    id: VKSCaptainPDA
+    ears: ClothingHeadsetAltRU
+    jumpsuit: ClothingUniformJumpsuitVKSCaptain
     shoes: ClothingShoesBootsJackFilled
-    back: ClothingBackpackSecurity
-    belt: ClothingBeltAssaultFilledToolsRCD
+    back: ClothingBackpackSatchelSecurity
+    belt: ClothingBeltCommandFilledRU
     gloves: ClothingHandsGlovesCombat
-    pocket1: WeaponPistolM9
-    pocket2: PouchFirstAidFilled
+    pocket1: PouchFirstAidFilled
   storage:
     back:
     - Tourniquet
     - Zipties
-    - MagazinePistolM9
-    - MagazinePistolM9
