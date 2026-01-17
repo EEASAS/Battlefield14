@@ -13,7 +13,7 @@
     sprite: _Mono/Clothing/ArmorPlate/armor_light.rsi
     size: Normal
   - type: ArmorPlateItem
-    maxDurability: 100 # BF14
+    maxDurability: 60 # BF14
     walkSpeedModifier: 1 # BF14
     sprintSpeedModifier: 1 # BF14
     staminaDamageMultiplier: 0.2 # BF14
@@ -23,7 +23,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 100 #BF14
+        damage: 60 #BF14
       behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
@@ -49,7 +49,7 @@
     sprite: _Mono/Clothing/ArmorPlate/armor_medium.rsi
     size: Normal
   - type: ArmorPlateItem
-    maxDurability: 200 # BF14
+    maxDurability: 120 # BF14
     walkSpeedModifier: 1 # BF14
     sprintSpeedModifier: 1 # BF14
     staminaDamageMultiplier: 0.0 # BF14
@@ -59,7 +59,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 200 #BF14
+        damage: 120 #BF14
       behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]

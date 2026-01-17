@@ -17,6 +17,9 @@
 # USSF
 
 - type: playTimeTracker
+  id: JobUSSFCaptain
+
+- type: playTimeTracker
   id: JobUSSFCrewman
 
 # VDV
@@ -37,6 +40,9 @@
   id: JobVDVRecon
 
 # VKS
+
+- type: playTimeTracker
+  id: JobVKSCaptain
 
 - type: playTimeTracker
   id: JobVKSCrewman

@@ -126,7 +126,7 @@
     fillPrototype: Bullet23mmFragFragment
     capacity: 35
     randomAngle: true
-    minVelocity: 5
+    minVelocity: 7
     maxVelocity: 10
   - type: ExplodeOnTrigger
   - type: Sprite
@@ -157,8 +157,8 @@
     damage:
       types:
         Structural: 10
-        Slash: 8
-        Piercing: 8
+        Slash: 5
+        Piercing: 5
     deleteOnCollide: true
   - type: Sprite
     sprite: _Mono/Objects/SpaceArtillery/50_armorpiercing_machinegun_casing.rsi
@@ -167,7 +167,7 @@
     scale: 0.3, 0.3
   - type: ShipWeaponProjectile
   - type: TimedDespawn
-    lifetime: 1.5
+    lifetime: 1
   - type: PointLight
     radius: 0.7
     color: orange
@@ -264,7 +264,7 @@
     fillPrototype: Bullet30mmFragFragment
     capacity: 50
     randomAngle: true
-    minVelocity: 6
+    minVelocity: 8
     maxVelocity: 12
   - type: ExplodeOnTrigger
   - type: Sprite
@@ -374,9 +374,9 @@
   - type: Projectile
     damage:
       types:
-        Structural: 15
-        Slash: 15
-        Piercing: 10
+        Structural: 10
+        Slash: 20
+        Piercing: 20
     deleteOnCollide: true
   - type: Sprite
     sprite: _Mono/Objects/SpaceArtillery/50_armorpiercing_machinegun_casing.rsi
@@ -611,7 +611,8 @@
     damage:
       types:
         Structural: 18
-        Piercing: 12
+        Slash: 10
+        Piercing: 8
     deleteOnCollide: true
   - type: Sprite
     sprite: _Mono/Objects/SpaceArtillery/50_armorpiercing_machinegun_casing.rsi

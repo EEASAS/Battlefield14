@@ -6,6 +6,7 @@ job-name-usmc-automatic-rifleman = Automatic Rifleman
 job-name-usmc-medic = Navy Corpsman
 job-name-usmc-recon = Force Recon
 
+job-name-ussf-captain = USSF Colonel
 job-name-ussf-crewman = USSF Crewman
 
 #Russian Federation#
@@ -16,4 +17,5 @@ job-name-vdv-automatic-rifleman = Automatic Rifleman
 job-name-vdv-medic = Combat Medic
 job-name-vdv-recon = Recon Scout
 
+job-name-vks-captain = VKS General Major
 job-name-vks-crewman = VKS Crewman

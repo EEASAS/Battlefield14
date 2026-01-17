@@ -17,6 +17,12 @@
   name: USSF crewman uniform
   description: A full uniform for crew aboard United States Space Force vessels.
 
+- type: entity
+  parent: ClothingUniformJumpsuitMilitaryCaptain # TODO better/unique sprites
+  id: ClothingUniformJumpsuitSpaceForceCaptain
+  name: USSF captain uniform
+  description: A full uniform for captains aboard United States Space Force vessels.
+
 # RU
 
 - type: entity
@@ -46,6 +52,12 @@
   id: ClothingUniformJumpsuitVKSCrewman
   name: VKS crewman uniform
   description: A full uniform for crew aboard Russian Aerospace Forces vessels.
+
+- type: entity
+  parent: ClothingUniformJumpsuitMilitaryCaptain # TODO better/unique sprites
+  id: ClothingUniformJumpsuitVKSCaptain
+  name: VKS captain uniform
+  description: A full uniform for captains aboard Russian Aerospace Forces vessels.
 
 # MISC
 

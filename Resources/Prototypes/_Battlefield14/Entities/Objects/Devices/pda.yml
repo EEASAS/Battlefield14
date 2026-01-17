@@ -79,6 +79,21 @@
 
 - type: entity
   parent: BasePDA
+  id: USSFCaptainPDA
+  name: USSF PDA
+  description: Filled with autistic space game footage.
+  components:
+  - type: Icon
+    sprite: _Battlefield14/Objects/Devices/pda.rsi
+    state: pda-us
+  - type: Pda
+    id: USSFCaptainIDCard
+    state: pda-us
+  - type: PdaBorderColor
+    borderColor: "#203564"
+
+- type: entity
+  parent: BasePDA
   id: USSFCrewmanPDA
   name: USSF PDA
   description: Filled with autistic space game footage.
@@ -165,6 +180,16 @@
     state: pda-ru
 
 # VKS
+
+- type: entity
+  parent: VDVRiflemanPDA
+  id: VKSCaptainPDA
+  name: VKS PDA
+  description: Filled with drone footage.
+  components:
+  - type: Pda
+    id: VKSCaptainIDCard
+    state: pda-ru
 
 - type: entity
   parent: VDVRiflemanPDA
