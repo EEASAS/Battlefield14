@@ -50,6 +50,9 @@
   id: MagazineBeltBoxM249
 
 - type: Tag
+  id: MagazineBeltBoxMK48
+
+- type: Tag
   id: MagazinePistolM9
 
 - type: Tag
