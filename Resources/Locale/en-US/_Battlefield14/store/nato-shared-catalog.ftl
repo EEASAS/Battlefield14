@@ -25,6 +25,15 @@ uplink-nato-armor-plate-medium-desc = One singular ceramic armour plate.
 uplink-nato-machete-belt-name = Machete belt
 uplink-nato-machete-belt-desc = A belt that has a special holster for a machete, includes one machete along with the belt.
 
+uplink-NATO-thigh-holster-name = Thigh holster
+uplink-NATO-thigh-holster-desc = A drop leg holster made of a durable synthetic fiber. Fits on the armband slot, comes with an M9 pistol.
+
+uplink-NATO-knife-sheath-name = Knife sheath
+uplink-NATO-knife-sheath-desc = A rigid polymer sheath which you can strap on your leg. Fits on the armband slot, comes with a combat knife.
+
+uplink-NATO-wrist-scanner-name = Wrist mounted mass scanner
+uplink-NATO-wrist-scanner-desc = A portable radar mounted on the wrist for easy access at any time.
+
 ## Medical
 
 uplink-nato-medkit-combat-name = Combat medkit

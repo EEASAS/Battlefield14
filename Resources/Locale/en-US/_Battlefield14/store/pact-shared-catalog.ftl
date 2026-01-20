@@ -23,6 +23,15 @@ uplink-PACT-armor-plate-medium-desc = One singular ceramic armour plate.
 uplink-PACT-machete-belt-name = Machete belt
 uplink-PACT-machete-belt-desc = A belt that has a special holster for a machete, includes one machete along with the belt.
 
+uplink-PACT-thigh-holster-name = Thigh holster
+uplink-PACT-thigh-holster-desc = A drop leg holster made of a durable synthetic fiber. Fits on the armband slot, comes with an MP443 pistol.
+
+uplink-PACT-knife-sheath-name = Knife sheath
+uplink-PACT-knife-sheath-desc = A rigid polymer sheath which you can strap on your leg. Fits on the armband slot, comes with a combat knife.
+
+uplink-PACT-wrist-scanner-name = Wrist mounted mass scanner
+uplink-PACT-wrist-scanner-desc = A portable radar mounted on the wrist for easy access at any time.
+
 ## Medical
 
 uplink-PACT-medkit-combat-name = Combat medkit

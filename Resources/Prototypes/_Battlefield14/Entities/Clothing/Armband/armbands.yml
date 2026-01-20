@@ -1,0 +1,74 @@
+- type: entity
+  parent: ClothingArmbandBase
+  id: ClothingArmbandSheathKnifePolymer
+  name: polymer knife sheath
+  description: A rigid polymer sheath which you can strap on your leg.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Clothing/Accessories/knifesheathpolymer.rsi
+  - type: Clothing
+    sprite: _Battlefield14/Clothing/Accessories/knifesheathpolymer.rsi
+    clothingVisuals:
+      leftarmband:
+      - state: equipped-ARMBANDLEFT
+      rightarmband:
+      - state: equipped-ARMBANDRIGHT
+  - type: ItemSlots
+    slots:
+      item:
+        name: Knife
+        whitelist:
+          tags:
+          - Knife
+
+- type: entity
+  parent: ClothingArmbandBase
+  id: ClothingArmbandThighHolster
+  name: thigh holster
+  description: A drop leg holster made of a durable synthetic fiber.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Clothing/Accessories/thighholster.rsi
+  - type: Clothing
+    sprite: _Battlefield14/Clothing/Accessories/thighholster.rsi
+    clothingVisuals:
+      leftarmband:
+      - state: equipped-ARMBANDLEFT
+      rightarmband:
+      - state: equipped-ARMBANDRIGHT
+  - type: ItemSlots
+    slots:
+      item:
+        name: Handgun
+        whitelist:
+          tags:
+          - Sidearm
+
+- type: entity
+  parent: ClothingArmbandBase
+  id: ClothingArmbandMassScanner
+  name: wrist-mounted mass scanner
+  description: A portable radar mounted on the wrist for easy access at any time.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Clothing/Accessories/wristscanner.rsi
+  - type: Clothing
+    sprite: _Battlefield14/Clothing/Accessories/wristscanner.rsi
+    clothingVisuals:
+      leftarmband:
+      - state: equipped-ARMBANDLEFT
+      rightarmband:
+      - state: equipped-ARMBANDRIGHT
+  - type: RadarConsole
+    maxRange: 512
+    followEntity: true
+  - type: DetectionRangeMultiplier
+    infraredMultiplier: 0.5 # from 1
+    visualMultiplier: 3 # from 4
+  - type: ActivatableUI
+    key: enum.RadarConsoleUiKey.Key
+    singleUser: true
+  - type: UserInterface
+    interfaces:
+      enum.RadarConsoleUiKey.Key:
+        type: RadarConsoleBoundUserInterface

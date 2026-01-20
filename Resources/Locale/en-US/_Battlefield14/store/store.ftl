@@ -1,5 +1,5 @@
 store-preset-name-nato-uplink = NATO Requisitions Uplink
-store-preset-name-pact-uplink = NATO Requisitions Uplink
+store-preset-name-pact-uplink = PACT Requisitions Uplink
 
 store-currency-display-nato-requisition = Req
 store-currency-display-pact-requisition = Req

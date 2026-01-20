@@ -116,6 +116,54 @@
         tags:
           - AmericanUplink
 
+- type: listing
+  id: UplinkNATOThighHolster
+  name:  uplink-NATO-thigh-holster-name
+  description: uplink-NATO-thigh-holster-desc
+  productEntity: ClothingArmbandThighHolsterFilledUS
+  icon: { sprite: _Battlefield14/Clothing/Accessories/thighholster.rsi, state: icon } # TODO fix this weird shit where it has to be 64x64 or it doesn't work
+  cost:
+    NATORequisition: 6 # 1 minute
+  categories:
+    - UplinkNATOUSUtility
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - AmericanUplink
+
+- type: listing
+  id: UplinkNATOKnifeSheath
+  name:  uplink-NATO-knife-sheath-name
+  description: uplink-NATO-knife-sheath-desc
+  productEntity: ClothingArmbandSheathKnifePolymerFilled
+  icon: { sprite: _Battlefield14/Clothing/Accessories/knifesheathpolymer.rsi, state: icon } # TODO fix this weird shit where it has to be 64x64 or it doesn't work
+  cost:
+    NATORequisition: 1 # 10 seconds
+  categories:
+    - UplinkNATOUSUtility
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - AmericanUplink
+
+- type: listing
+  id: UplinkNATOWristScanner
+  name:  uplink-NATO-wrist-scanner-name
+  description: uplink-NATO-wrist-scanner-desc
+  productEntity: ClothingArmbandMassScanner
+  icon: { sprite: _Battlefield14/Clothing/Accessories/wristscanner.rsi, state: icon } # TODO fix this weird shit where it has to be 64x64 or it doesn't work
+  cost:
+    NATORequisition: 18 # 3 minutes
+  categories:
+    - UplinkNATOUSUtility
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - AmericanUplink
+
 # Medical
 
 - type: listing
