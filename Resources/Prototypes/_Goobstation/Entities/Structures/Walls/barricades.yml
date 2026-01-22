@@ -82,10 +82,6 @@
       path: /Audio/Items/ratchet.ogg
     closeSound:
       path: /Audio/Items/ratchet.ogg
-  - type: InteractedBlacklist
-    blacklist:
-      components:
-      - Xenomorph
   - type: AnimationPlayer
   - type: Construction
     node: folding
@@ -97,7 +93,7 @@
   id: BaseBarricadeSteel
   components:
   - type: Sprite
-    sprite: _Goobstation/Structures/Walls/Barricades/steel.rsi
+    sprite: /Textures/_Goobstation/Structures/Walls/Barricades/steel.rsi
   - type: Damageable
     damageModifierSet: BarricadeSteel
   - type: Construction
@@ -125,7 +121,7 @@
   id: BaseBarricadePlasteel
   components:
   - type: Sprite
-    sprite: _Goobstation/Structures/Walls/Barricades/plasteel.rsi
+    sprite: /Textures/_Goobstation/Structures/Walls/Barricades/plasteel.rsi
   - type: Damageable
     damageModifierSet: BarricadePlasteel
   - type: Construction
