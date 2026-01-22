@@ -282,12 +282,13 @@
       - ARMBANDRIGHT
     - type: Item
       heldPrefix: tourniquet
+      size: Tiny # BF14
     - type: Healing
       damageContainers:
         - Biological
       damage:
-        groups: # BF14 removed blunt damage because this would just make you keep bleeding
-          Brute: -5 # Tourniquets HURT!
+        groups:
+          Brute: -5 # BF14 removed blunt damage because this would just make you keep bleeding
         types:
           Asphyxiation: 5 # Essentially Stopping all blood reaching a part of your body
       bloodlossModifier: -10 # Tourniquets stop bleeding

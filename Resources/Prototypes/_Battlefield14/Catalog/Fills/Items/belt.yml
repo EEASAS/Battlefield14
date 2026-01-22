@@ -182,3 +182,22 @@
       - id: WelderIndustrial
       - id: Multitool
       - id: RCD
+
+- type: entity
+  id: ClothingBeltMedicalEMTFilledBF14
+  parent: ClothingBeltMedicalEMT
+  suffix: Filled, BF14
+  components:
+  - type: StorageFill
+    contents:
+      - id: MedicatedSuture
+      - id: RegenerativeMesh
+      - id: BF14HyposprayFilledTricordrazine
+      - id: BF14HyposprayFilledSaline
+      - id: PillCanisterBicaridine
+      - id: PillCanisterKelotane
+      - id: PillCanisterTricordrazine
+#      - id: PillCanisterTramadol
+      - id: PillCanisterDylovene
+      - id: PillCanisterDexalin
+      - id: HandheldHealthAnalyzerUnpowered
