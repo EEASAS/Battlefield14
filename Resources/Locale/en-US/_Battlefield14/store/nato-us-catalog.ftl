@@ -46,7 +46,7 @@ uplink-natous-evakit-combat-desc = Contains a 'Devil Dog' combat voidsuit, tacti
 ## Utility
 
 uplink-natous-FUBAR-name = FUBAR
-uplink-natous-FUBAR-desc = A big heavy piece of shit for ripping open airlocks and crushing hardsuit helmets.
+uplink-natous-FUBAR-desc = A big heavy piece of shit for ripping open airlocks and crushing voidsuit helmets.
 
 ## Medical
 

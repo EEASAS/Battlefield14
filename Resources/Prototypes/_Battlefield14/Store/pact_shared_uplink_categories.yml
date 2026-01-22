@@ -139,7 +139,7 @@
   productEntity: ClothingArmbandMassScanner
   icon: { sprite: _Battlefield14/Clothing/Accessories/wristscanner.rsi, state: icon } # TODO fix this weird shit where it has to be 64x64 or it doesn't work
   cost:
-    PACTRequisition: 18 # 3 minutes
+    PACTRequisition: 12 # 2 minutes
   categories:
     - UplinkPACTRUUtility
   conditions:

@@ -60,7 +60,7 @@
   equipment:
     id: USMCMedicPDA
     ears: ClothingHeadsetAltUS
-    belt: ClothingBeltMedicalEMTFilled # ClothingBeltMilitaryWebbingUSFilledMP5
+    belt: ClothingBeltMedicalEMTFilledBF14 # ClothingBeltMilitaryWebbingUSFilledMP5
     jumpsuit: ClothingUniformJumpsuitCamoUS
     head: ClothingHeadHatHelmetUS
     eyes: ClothingEyesHudMedicalBF
