@@ -136,12 +136,12 @@
   - type: ContainerFill
     containers:
       item:
-      - WeaponPistolMP443 # TODO MP412 REX
+      - WeaponPistolRevolverRUMP412
   - type: StorageFill
     contents:
       - id: Handcuffs
       - id: Flash
-      - id: MagazinePistolMP443
+      - id: SpeedLoader357magnum
         amount: 3
 
 - type: entity

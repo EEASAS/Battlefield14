@@ -339,3 +339,37 @@
         reagents:
         - ReagentId: Saline
           Quantity: 120
+
+# Medipens/Autoinjectors
+
+- type: entity
+  name: inaprovaline medipen
+  parent: ChemicalMedipen
+  id: InaprovalineMedipen
+  description: A rapid and safe way to stabilize patients in critical condition for one minute without advanced medical knowledge. Bleeding will reduce effectiveness due to loss of reagents.
+  components:
+  - type: Sprite
+    sprite: Objects/Specific/Medical/medipen.rsi
+    layers:
+    - state: salpen
+      map: ["enum.SolutionContainerLayers.Fill"]
+  - type: SolutionContainerVisuals
+    maxFillLevels: 1
+    changeColor: false
+    emptySpriteName: salpen_empty
+  - type: Hypospray
+    solutionName: pen
+    transferAmount: 10
+    onlyAffectsMobs: false
+    injectOnly: true
+  - type: SolutionContainerManager
+    solutions:
+      pen:
+        maxVol: 10
+        reagents:
+        - ReagentId: Inaprovaline
+          Quantity: 6 # about 1 minute of crit stabilisation without bleeding
+        - ReagentId: Iron
+          Quantity: 4
+  - type: Tag # Mono
+    tags: [SurvivalBox]
