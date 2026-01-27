@@ -9,10 +9,6 @@
       - MedkitCombatFilled
       medkit2:
       - MedkitOxygenFilled
-      bloodpack:
-      - Bloodpack
-      bloodpack2:
-      - Bloodpack
       gauze:
       - Gauze
       gauze2:

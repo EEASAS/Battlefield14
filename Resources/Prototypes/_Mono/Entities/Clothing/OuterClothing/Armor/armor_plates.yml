@@ -85,7 +85,7 @@
     sprite: _Mono/Clothing/ArmorPlate/armor_tactical.rsi
     size: Normal
   - type: ArmorPlateItem
-    maxDurability: 300 # BF14
+    maxDurability: 200 # BF14
     walkSpeedModifier: 9.8 # BF14
     sprintSpeedModifier: 9.8 # BF14
     staminaDamageMultiplier: 0.0 # BF14

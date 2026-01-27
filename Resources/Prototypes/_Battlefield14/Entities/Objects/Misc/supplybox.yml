@@ -29,16 +29,6 @@
         whitelist:
           tags:
           - Medkit
-      bloodpack:
-        name: bloodpack
-        whitelist:
-          tags:
-          - Bloodpack
-      bloodpack2:
-        name: bloodpack 2
-        whitelist:
-          tags:
-          - Bloodpack
       gauze:
         name: gauze
         whitelist:

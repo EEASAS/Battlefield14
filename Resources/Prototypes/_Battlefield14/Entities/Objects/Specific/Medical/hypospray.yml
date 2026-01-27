@@ -135,6 +135,21 @@
 #        - ReagentId: Tramadol
 #          Quantity: 60
 
+- type: entity
+  parent: BF14Hypospray
+  id: BF14HyposprayFilledDylovene
+  suffix: Dylovene
+  name: dylovene hypospray
+  description: Filled with 60u dylovene.
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      hypospray:
+        maxVol: 60
+        reagents:
+        - ReagentId: Dylovene
+          Quantity: 60
+
 #- type: entity
 #  parent: BF14Hypospray
 #  id: BF14HyposprayFilledOxycodone
@@ -162,7 +177,7 @@
       hypospray:
         maxVol: 60
         reagents:
-        - ReagentId: Bicaridine # Meralyne
+        - ReagentId: Meralyne
           Quantity: 60
 
 - type: entity
@@ -192,7 +207,7 @@
       hypospray:
         maxVol: 60
         reagents:
-        - ReagentId: Bicaridine # Meralyne
+        - ReagentId: Meralyne
           Quantity: 30
         - ReagentId: Dermaline
           Quantity: 30
@@ -210,6 +225,21 @@
         maxVol: 60
         reagents:
         - ReagentId: Saline
+          Quantity: 60
+
+- type: entity
+  parent: BF14Hypospray
+  id: BF14HyposprayFilledNanoblood
+  suffix: Nanoblood
+  name: nanoblood hypospray
+  description: Filled with 60u nanoblood. Heals approx 33% blood volume per injection. DO NOT APPLY MORE THAN ONCE.
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      hypospray:
+        maxVol: 60
+        reagents:
+        - ReagentId: Nanoblood
           Quantity: 60
 
 # 120u hypo fills
@@ -279,7 +309,7 @@
 #  id: BF14HyposprayFilledBigCombat
 #  suffix: BKTT
 #  name: combat hypospray
-#  description: Filled with equal parts bicaridine, kelotane, tricordrazine, and tramadol. or BKTT.
+#  description: Filled with equal parts bicaridine, kelotane, tricordrazine, and tramadol; or BKTT.
 #  components:
 #  - type: SolutionContainerManager
 #    solutions:

@@ -46,7 +46,7 @@
     borderColor: "#203564"
 
 - type: entity
-  parent: BaseMedicalPDA
+  parent: USMCRiflemanPDA
   id: USMCMedicPDA
   name: USMC PDA
   description: Filled with industrial accident and war casualty videos, im sure it's for training.
@@ -155,7 +155,7 @@
     borderColor: "#a02829"
 
 - type: entity
-  parent: BaseMedicalPDA
+  parent: BasePDA
   id: VDVMedicPDA
   name: VDV PDA
   description: What's that guy with the sledgehammer doing?.
@@ -185,7 +185,7 @@
   parent: VDVRiflemanPDA
   id: VKSCaptainPDA
   name: VKS PDA
-  description: Filled with drone footage.
+  description: Filled with autistic space game footage.
   components:
   - type: Pda
     id: VKSCaptainIDCard
@@ -195,7 +195,7 @@
   parent: VDVRiflemanPDA
   id: VKSCrewmanPDA
   name: VKS PDA
-  description: Filled with drone footage.
+  description: Filled with autistic space game footage.
   components:
   - type: Pda
     id: VKSCrewmanIDCard
