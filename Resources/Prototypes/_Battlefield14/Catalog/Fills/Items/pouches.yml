@@ -6,9 +6,10 @@
   - type: StorageFill
     contents:
     - id: Gauze
-    - id: Tourniquet
     - id: Ointment
     - id: PillCanisterTricordrazine
+    - id: Tourniquet
+    - id: InaprovalineMedipen
 #    - id: PillCanisterTramadol
 
 - type: entity

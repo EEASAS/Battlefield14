@@ -10,3 +10,18 @@
         Piercing: 21
   - type: StaminaDamageOnCollide
     damage: 5 # 20 hits to stun lol
+
+- type: entity
+  id: BulletPistolBF357
+  name: bullet (.357 Magnum)
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 35
+        Structural: 35
+    armorPenetration: 0.5
+  - type: StaminaDamageOnCollide
+    damage: 10 # 10 hits to stun lol

@@ -194,7 +194,7 @@
     damage:
       groups:
         Brute: -60 # was 10 for each, now 20 for each type in the group, Buffed due to surgery changes (Goobstation)
-    bloodlossModifier: -10 # a suture should stop ongoing bleeding
+    bloodlossModifier: -3.5 #BF14 -10 > -3.5 # a suture should stop ongoing bleeding
     healingBeginSound:
       path: "/Audio/Items/Medical/brutepack_begin.ogg"
       params:

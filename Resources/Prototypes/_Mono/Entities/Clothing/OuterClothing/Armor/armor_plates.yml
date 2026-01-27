@@ -18,7 +18,7 @@
     sprintSpeedModifier: 1 # BF14
     staminaDamageMultiplier: 0.2 # BF14
   - type: Damageable
-    damageContainer: StructuralInorganic # BF14 currently does not work in armour but makes plates take structural damage
+    damageContainer: StructuralInorganic # BF14
   - type: Destructible
     thresholds:
     - trigger:
@@ -86,16 +86,16 @@
     size: Normal
   - type: ArmorPlateItem
     maxDurability: 300 # BF14
-    walkSpeedModifier: 0.92
-    sprintSpeedModifier: 0.92
-    staminaDamageMultiplier: 0.3 # BF14
+    walkSpeedModifier: 9.8 # BF14
+    sprintSpeedModifier: 9.8 # BF14
+    staminaDamageMultiplier: 0.0 # BF14
   - type: Damageable
     damageContainer: StructuralInorganic # BF14
   - type: Destructible
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 300 # BF14
+        damage: 200 # BF14
       behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
@@ -121,10 +121,10 @@
     sprite: _Mono/Clothing/ArmorPlate/armor_plastitanium.rsi
     size: Normal
   - type: ArmorPlateItem
-    maxDurability: 350 # BF14
-    walkSpeedModifier: 1.0
-    sprintSpeedModifier: 1.0
-    staminaDamageMultiplier: 0.3 # BF14
+    maxDurability: 300 # BF14
+    walkSpeedModifier: 0.95 # BF14
+    sprintSpeedModifier: 0.95 # BF14
+    staminaDamageMultiplier: 0.0 # BF14
   - type: Damageable
     damageContainer: StructuralInorganic # BF14
   - type: Destructible
