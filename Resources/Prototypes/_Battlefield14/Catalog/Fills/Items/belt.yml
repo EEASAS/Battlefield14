@@ -184,6 +184,21 @@
       - id: RCD
 
 - type: entity
+  id: ClothingBeltAssaultFilledToolsSRD
+  parent: ClothingBeltAssault
+  suffix: Filled, tools, SRD
+  components:
+  - type: StorageFill
+    contents:
+      - id: Crowbar
+      - id: Wrench
+      - id: Screwdriver
+      - id: Wirecutter
+      - id: WelderIndustrial
+      - id: Multitool
+      - id: ShipRepairDevice
+
+- type: entity
   id: ClothingBeltMedicalEMTFilledBF14
   parent: ClothingBeltMedicalEMT
   suffix: Filled, BF14,

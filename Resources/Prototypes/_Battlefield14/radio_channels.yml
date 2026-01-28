@@ -9,7 +9,7 @@
 - type: radioChannel
   id: RURadio
   name: chat-radio-ru
-  keycode: 'r'
+  keycode: 'z'
   frequency: 1220
   color: "#d30000"
   longRange: true
