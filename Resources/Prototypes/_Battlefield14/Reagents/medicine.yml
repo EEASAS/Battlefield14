@@ -14,22 +14,22 @@
       - !type:HealthChange
         conditions:
         - !type:ReagentThreshold
-          max: 5 # BF14
+          max: 5.5 # BF14
         damage:
           types:
             Poison: 1
       - !type:HealthChange
         conditions:
         - !type:ReagentThreshold
-          min: 6
-          max: 10.5 # BF14
+          min: 5.5
+          max: 10 # BF14
         damage:
           types:
             Poison: 3.5 # TGMC parity lol
       - !type:HealthChange
         conditions:
         - !type:ReagentThreshold
-          min: 10.5
+          min: 10
         damage:
           types:
             Poison: 7.5 # TGMC parity lol
