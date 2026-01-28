@@ -22,8 +22,13 @@
 - type: latheRecipePack
   id: MonoRogueVouchersDynamic
   recipes:
-  - ProwlerVoucherRogue
   - SaintieVoucherRogue
+  - MotleyAnneVoucherRogue
+  - SaturnVoucherRogue
+  - MotleyAnneVoucherRogue
+  - SnakeletVoucherRogue
+  - InertiaVoucherRogue
+  - MockVoucherRogue
 
 - type: latheRecipePack
   id: MonoRogueMiscDynamic
@@ -33,3 +38,5 @@
   - AccessBreakerRogue
   - EmagRogue
   - NaniteApplicatorSyndicate
+  - BasicBorgCombatModulePDV
+  - AdvancedBorgCombatModulePDV

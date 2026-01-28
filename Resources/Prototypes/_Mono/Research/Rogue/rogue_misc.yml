@@ -1,16 +1,17 @@
+
 - type: technology
-  id: RogueProwler
-  name: research-technology-rogue-prowler-voucher
-  entityIcon: ShipVoucherProwler
+  id: RogueSaturn
+  name: research-technology-rogue-saturn-voucher
+  entityIcon: ShipVoucherSaturn
   discipline: RogueShipyard
-  tier: 1
+  tier: 3
   cost: 100000
   recipeUnlocks:
-  - ProwlerVoucherRogue
+  - SaturnVoucherRogue
   technologyPrerequisites:
-  - RogueStealthsuit
+  - RogueGoliath
   - UniversalMaterialResearchT3
-  position: 22, 11
+  position: 22, 12
 
 - type: technology
   id: RogueGoliath
@@ -23,7 +24,36 @@
   - SaintieVoucherRogue
   technologyPrerequisites:
   - UniversalMaterialResearchT2
-  position: 22, 5
+  position: 22, 4
+
+- type: technology
+  id: RogueDockyard
+  name: research-technology-rogue-motley-anne-voucher
+  entityIcon: ShipVoucherMotleyAnne
+  discipline: RogueShipyard
+  tier: 1
+  cost: 40500
+  recipeUnlocks:
+  - MotleyAnneVoucherRogue
+  technologyPrerequisites:
+  - UniversalMaterialResearchT2
+  position: 22, 6
+
+- type: technology
+  id: RogueMotleyAnneFighters
+  name: research-technology-rogue-motley-anne-fighters
+  entityIcon: ShipVoucherMotleyAnne
+  discipline: RogueShipyard
+  tier: 1
+  cost: 12500
+  recipeUnlocks:
+  - InertiaVoucherRogue
+  - MockVoucherRogue
+  - SnakeletVoucherRogue
+  technologyPrerequisites:
+  - UniversalMaterialResearchT2
+  - RogueDockyard
+  position: 22, 7
 
 - type: technology
   id: RogueJaws
@@ -90,3 +120,30 @@
   technologyPrerequisites:
   - UniversalMaterialResearchT1
   position: 20, -3
+
+- type: technology
+  id: PDVBasicBorgModule
+  name: research-technology-pdv-basic-module
+  entityIcon: BorgModulePDVStandardWeapon
+  discipline: RogueGear
+  tier: 1
+  cost: 10000
+  recipeUnlocks:
+  - BasicBorgCombatModulePDV
+  technologyPrerequisites:
+  - UniversalMaterialResearchT1
+  position: 20, -4
+
+- type: technology
+  id: PDVAdvancedBorgModule
+  name: research-technology-pdv-advanced-module
+  entityIcon: BorgModulePDVAdvancedWeapon
+  discipline: RogueGear
+  tier: 3
+  cost: 65000
+  recipeUnlocks:
+  - AdvancedBorgCombatModulePDV
+  technologyPrerequisites:
+  - UniversalMaterialResearchT3
+  - PDVBasicBorgModule
+  position: 23, 11

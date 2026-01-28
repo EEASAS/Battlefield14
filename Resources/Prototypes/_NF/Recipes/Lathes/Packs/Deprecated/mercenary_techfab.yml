@@ -82,7 +82,7 @@
   - WeaponRevolverArgenti
   - WeaponPistolMk58NF
   - WeaponShotgunDoubleBarreled
-  - WeaponShotgunHelopolis
+  - WeaponShotgunHelepolis
   - WeaponRifleNovaliteC1
   - WeaponRifleGestio
   - WeaponSubMachineGunKnallstock # Mono
@@ -185,6 +185,8 @@
   - WeaponRifleNtsfLtr
   - WeaponSubMachineGunVectorNtsfHclm
   - WeaponRadAx
+  - WeaponShockMaul
+  - HardlightShield
   - WeaponRifleAk
   - UllmanHardsuitPilot
   - UllmanHardsuitEngineer
