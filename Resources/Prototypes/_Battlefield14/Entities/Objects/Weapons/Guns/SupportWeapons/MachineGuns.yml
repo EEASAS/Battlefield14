@@ -15,6 +15,7 @@
     sprite: _Battlefield14/Objects/Weapons/Guns/MachineGuns/M249Paraworn.rsi
   - type: Wieldable
     unwieldOnUse: false
+  - type: GunRequiresWield
   - type: GunWieldBonus
     minAngle: -19
     maxAngle: -35
@@ -88,6 +89,7 @@
     sprite: _Battlefield14/Objects/Weapons/Guns/MachineGuns/MK48worn.rsi
   - type: Wieldable
     unwieldOnUse: false
+  - type: GunRequiresWield
   - type: GunWieldBonus
     minAngle: -19
     maxAngle: -35

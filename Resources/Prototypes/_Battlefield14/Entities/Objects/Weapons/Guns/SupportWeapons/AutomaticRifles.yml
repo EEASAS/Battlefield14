@@ -64,6 +64,7 @@
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/RPK2016worn.rsi
   - type: Wieldable
     unwieldOnUse: false
+  - type: GunRequiresWield
   - type: GunWieldBonus
     minAngle: -19
     maxAngle: -35

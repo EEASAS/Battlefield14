@@ -33,11 +33,27 @@
           types:
             Poison: -1
       - !type:GenericStatusEffect # BF14
-        key: TemporaryBlindness
-        component: TemporaryBlindness
+        key: Drowsiness
+        component: Drowsiness
+        time: 4
+        type: Add
+        refresh: false
         conditions:
         - !type:ReagentThreshold
           min: 30
+      - !type:ChemVomit
+        conditions:
+        - !type:ReagentThreshold
+          min: 30
+        probability: 0.02
+      - !type:HealthChange
+        conditions:
+        - !type:ReagentThreshold # BF14
+          min: 30
+          max: 50
+        damage:
+          types:
+            Blunt: 1
       - !type:HealthChange
         conditions:
         - !type:ReagentThreshold # BF14
@@ -870,9 +886,7 @@
             Heat: -0.8
             Shock: -0.8
             Cold: -0.8
-            Poison: -0.4
-            Asphyxiation: -0.25
-            Bloodloss: -0.25
+            Poison: -0.2
       - !type:HealthChange
         conditions:
         - !type:ReagentThreshold

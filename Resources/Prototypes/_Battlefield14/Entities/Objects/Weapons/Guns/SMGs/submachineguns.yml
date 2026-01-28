@@ -1,6 +1,6 @@
 - type: entity
   name: MP5
-  parent: [BaseWeaponSubMachineGun]
+  parent: BaseWeaponSubMachineGun
   id: WeaponSubmachinegunUSMP5
   description: Feather-light recoil, swag, and a high rate of fire; everything you need in a submachine gun, except for a massive flashlight mounted on top.
   components:
@@ -15,8 +15,10 @@
     sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/MP5.rsi
   - type: Gun
     minAngle: 0
-    maxAngle: 2
-    fireRate: 13
+    maxAngle: 10
+    fireRate: 10
+    angleIncrease: 0.75
+    angleDecay: 15
     projectileSpeed: 35 # pistol caliber
     availableModes:
     - SemiAuto
@@ -70,9 +72,9 @@
 
 - type: entity
   name: PP-19 Vityaz-SN
-  parent: [BaseWeaponSubMachineGun]
+  parent: BaseWeaponSubMachineGun
   id: WeaponSubmachinegunRUVityaz
-  description: Just as reliable as your AK, with an itty bitty round that doesnt bruise your shoulder too much.
+  description: Just as reliable as your AK, with an itty bitty round that doesn't bruise your shoulder too much.
   components:
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/Vityaz.rsi
@@ -85,8 +87,10 @@
     sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/Vityazworn.rsi
   - type: Gun
     minAngle: 0
-    maxAngle: 2
-    fireRate: 13
+    maxAngle: 10
+    fireRate: 10
+    angleIncrease: 0.75
+    angleDecay: 15
     projectileSpeed: 35 # pistol caliber
     availableModes:
     - SemiAuto
