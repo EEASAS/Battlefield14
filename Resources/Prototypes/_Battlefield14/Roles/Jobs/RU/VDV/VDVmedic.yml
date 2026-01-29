@@ -31,16 +31,16 @@
     - Russian
     languagesUnderstood:
     - Russian
+  - !type:AddComponentSpecial
+    components:
+    - type: NpcFactionMember
+      factions:
+      - VDV
+    - type: SurgerySpeedModifier
+      SpeedModifier: 1.65
   #     # COMMENTED OUT: ChatRank and HullrotFaction not supported
   #     # - type: ChatRank
   #     #   rank: BF-rank-corporal
-  #     # - type: HullrotFaction
-  #     #   faction: VDV
-  #     # - type: LanguageAdder
-  #     #   addSpoken:
-  #     #     - LowImperial
-  #     #   addUnderstood:
-  #     #     - LowImperial
   access:
   - Maintenance
   - Service

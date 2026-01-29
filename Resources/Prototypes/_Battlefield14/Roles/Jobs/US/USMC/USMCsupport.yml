@@ -31,14 +31,17 @@
     - English
     languagesUnderstood:
     - English
+  - !type:AddComponentSpecial
+    components:
+    - type: NpcFactionMember
+      factions:
+      - USMC
   # COMMENTED OUT: AddComponentSpecial requires at least one component, but all components are commented out
   # - !type:AddComponentSpecial
   #   components:
   #     # COMMENTED OUT: ChatRank and HullrotFaction not supported
   #     # - type: ChatRank
   #     #   rank: BF-rank-corporal
-  #     # - type: HullrotFaction
-  #     #   faction: USMC
   access:
   - Maintenance
   - Service

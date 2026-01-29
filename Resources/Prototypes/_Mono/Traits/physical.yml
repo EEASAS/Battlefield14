@@ -59,7 +59,7 @@
   cost: 1
   mutuallyExclusiveTraits:
   - GlassJaw
-  - OsteogenesisImperfecta
+#  - OsteogenesisImperfecta
   speciesBlacklist:
   - IPC
   components:

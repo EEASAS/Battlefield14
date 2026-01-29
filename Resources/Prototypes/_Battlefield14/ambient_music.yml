@@ -1,3 +1,6 @@
+# Make sure you go to Content.Client/Audio/ContentAudioSystem.AmbientMusic.cs to add your faction there (~ line 50 and 300) so this works
+# Also make sure the ID is CombatMode<FACTION>
+
 # USMC | Techno/Synth tracks
 - type: ambientMusic
   id: CombatModeUSMC

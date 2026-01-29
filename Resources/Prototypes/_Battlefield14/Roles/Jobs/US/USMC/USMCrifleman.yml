@@ -41,13 +41,6 @@
   #     # COMMENTED OUT: ChatRank and HullrotFaction not supported
   #     # - type: ChatRank
   #     #   rank: BF-rank-private
-  #     # - type: HullrotFaction
-  #     #   faction: USMC
-  #     # - type: LanguageAdder
-  #     #   addSpoken:
-  #     #     - English
-  #     #   addUnderstood:
-  #     #     - English
   access:
   - Maintenance
   - Service

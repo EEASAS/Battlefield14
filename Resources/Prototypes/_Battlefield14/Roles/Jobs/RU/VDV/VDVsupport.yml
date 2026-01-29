@@ -31,16 +31,14 @@
     - Russian
     languagesUnderstood:
     - Russian
+  - !type:AddComponentSpecial
+    components:
+    - type: NpcFactionMember
+      factions:
+      - VDV
   #     # COMMENTED OUT: ChatRank and HullrotFaction not supported
   #     # - type: ChatRank
   #     #   rank: BF-rank-corporal
-  #     # - type: HullrotFaction
-  #     #   faction: VDV
-  #     # - type: LanguageAdder
-  #     #   addSpoken:
-  #     #     - Russian
-  #     #   addUnderstood:
-  #     #     - Russian
   access:
   - Maintenance
   - Service

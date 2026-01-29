@@ -33,18 +33,16 @@
     languagesUnderstood:
     - Russian
     - Esperanto
+  - !type:AddComponentSpecial
+    components:
+    - type: NpcFactionMember
+      factions:
+      - VDV
   # - !type:AddComponentSpecial
   #   components:
   #     # COMMENTED OUT: ChatRank and HullrotFaction not supported
   #     # - type: ChatRank
   #     #   rank: BF-rank-private
-  #     # - type: HullrotFaction
-  #     #   faction: VDV
-  #     # - type: LanguageAdder
-  #     #   addSpoken:
-  #     #     - Russian
-  #     #   addUnderstood:
-  #     #     - Russian
   access:
   - Maintenance
   - Service
