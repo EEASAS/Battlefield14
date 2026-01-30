@@ -201,7 +201,7 @@
 - type: entity
   id: ClothingBeltMedicalEMTFilledBF14
   parent: ClothingBeltMedicalEMT
-  suffix: Filled, BF14,
+  suffix: Filled, BF14
   components:
   - type: StorageFill
     contents:
@@ -209,6 +209,8 @@
       - id: RegenerativeMesh
       - id: BF14HyposprayFilledTricordrazine
       - id: BF14HyposprayFilledSaline
+      - id: BF14HyposprayFilledNanoblood
+      - id: BF14HyposprayFilledHypervene
       - id: PillCanisterBicaridine
       - id: PillCanisterKelotane
       - id: PillCanisterTricordrazine
@@ -226,13 +228,13 @@
     contents:
       - id: MedicatedSuture
       - id: RegenerativeMesh
+      - id: HandheldHealthAnalyzerUnpowered
       - id: PillCanisterBicaridine
       - id: PillCanisterKelotane
       - id: PillCanisterTricordrazine
 #      - id: PillCanisterTramadol
       - id: PillCanisterDylovene
       - id: PillCanisterDexalin
-      - id: HandheldHealthAnalyzerUnpowered
 
 - type: entity
   id: ClothingBeltMedicalEMTFilledBF14Hyposprays
@@ -243,9 +245,12 @@
     contents:
       - id: MedicatedSuture
       - id: RegenerativeMesh
+      - id: HandheldHealthAnalyzerUnpowered
       - id: BF14HyposprayFilledBigBicaridine
       - id: BF14HyposprayFilledBigKelotane
 #      - id: BF14HyposprayFilledBigTramadol
       - id: BF14HyposprayFilledBigTricordrazine
       - id: BF14HyposprayFilledBigDylovene
       - id: BF14HyposprayFilledBigSaline
+      - id: BF14HyposprayFilledNanoblood
+      - id: BF14HyposprayFilledHypervene

@@ -88,3 +88,18 @@
         - !type:ReagentThreshold
           min: 30
         probability: 0.02
+
+- type: reagent
+  id: Hypervene
+  name: reagent-name-hypervene
+  desc: reagent-desc-hypervene
+  physicalDesc: reagent-physical-desc-thick
+  color: "#AC6D32"
+  boilingPoint: 4200.0
+  meltingPoint: 3550.0
+  metabolisms:
+    Medicine:
+      metabolismRate: 1
+      effects:
+      - !type:ChemCleanBloodstream
+        cleanseRate: 5

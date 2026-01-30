@@ -30,6 +30,24 @@
       types:
         Piercing: 67
         Structural: 50
+    armorPenetration: 0.2
+  - type: StaminaDamageOnCollide
+    damage: 15 # ~6 hits to stun
+
+- type: entity
+  id: PelletShotgunBF12GaugeBreaching
+  name: 12 gauge breaching pellet
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    state: slug
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 10
+        Structural: 100
     armorPenetration: 0.15
   - type: StaminaDamageOnCollide
     damage: 15 # ~6 hits to stun

@@ -13,11 +13,12 @@
     RiotShield: 2
     CombatKnife: 100
     BoxMagazineSTANAG: 5
-#    ClothingBeltMedicalAdvancedFilled: 4
+#    ClothingBeltMedicalFilled: 4
     ClothingBeltMilitaryWebbingUS: 50
     ClothingBeltAssault: 50
     ClothingBackpackRucksackTan: 50
     ClothingBackpackRucksackBlack: 50
+    ClothingBackpackSecurity: 50
     EVAKitCombatUSMC: 50
     JetpackBlackFilled: 50
     FoodSnackNutribrick: 100
@@ -27,7 +28,7 @@
     OxygenTankFilled: 150
     ClothingEyesGogglesTan: 100
     ClothingHeadHatHelmetUS: 100
-    ClothingOuterArmorPlateCarrierTan: 100
+    ClothingOuterArmorPlateCarrierTan: 5 # FREE PLATES
     ClothingHeadHelmetSoftsuitNasa: 50
     ClothingOuterSoftsuitNASA: 50
 
@@ -44,7 +45,7 @@
 - type: vendingMachineInventory
   id: NATOUSMCGearInventory
   startingInventory:
-    C4: 100 # replace with breaching charges and put C4 in req
+    BreachingCharge: 10 # replace with breaching charges and put C4 in req
     JetpackBlackFilled: 20
     GrenadeFlashBang: 30
     MK21Handgrenade: 30
@@ -52,7 +53,7 @@
     SecBreachingHammer: 1
     DoubleEmergencyOxygenTankFilled: 100
     ClothingHeadHatHelmetUS: 100
-    ClothingOuterArmorPlateCarrierTan: 100
+    ClothingOuterArmorPlateCarrierTan: 5 # FREE PLATES
     ClothingHeadHelmetSoftsuitNasa: 50
     ClothingOuterSoftsuitNASA: 50
 
@@ -78,11 +79,12 @@
     RiotShield: 2
     CombatKnife: 100
     BoxMagazineAK74: 5
-#    ClothingBeltMedicalAdvancedFilled: 4
+#    ClothingBeltMedicalFilled: 4
     ClothingBeltMilitaryWebbingRU: 50
     ClothingBeltAssault: 50
     ClothingBackpackRucksackTan: 50
     ClothingBackpackRucksackBlack: 50
+    ClothingBackpackSecurity: 50
     EVAKitCombatRU: 50
     JetpackBlackFilled: 50
     FoodSnackNutribrick: 100
@@ -92,7 +94,7 @@
     OxygenTankFilled: 150
     ClothingEyesGogglesGreen: 100
     ClothingHeadHatHelmetRUEMR: 100
-    ClothingOuterArmorPlateCarrierBlack: 100
+    ClothingOuterArmorPlateCarrierBlack: 5 # FREE PLATES
     ClothingHeadHelmetSoftsuitVKS: 50
     ClothingOuterSoftsuitVKS: 50
 
@@ -113,7 +115,7 @@
 - type: vendingMachineInventory
   id: PACTVDVGearInventory
   startingInventory:
-    C4: 100 # replace with breaching charges and put C4 in req
+    BreachingCharge: 10 # replace with breaching charges and put C4 in req
     JetpackBlackFilled: 10
     GrenadeFlashBang: 30
     RURGD5Handgrenade: 30
@@ -123,7 +125,7 @@
     SecBreachingHammer: 1
     DoubleEmergencyOxygenTankFilled: 100
     ClothingHeadHatHelmetRUEMR: 100
-    ClothingOuterArmorPlateCarrierBlack: 100
+    ClothingOuterArmorPlateCarrierBlack: 5 # FREE PLATES
     ClothingHeadHelmetSoftsuitVKS: 50
     ClothingOuterSoftsuitVKS: 50
 

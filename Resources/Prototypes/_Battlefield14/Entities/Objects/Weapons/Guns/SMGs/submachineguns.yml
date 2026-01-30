@@ -17,7 +17,7 @@
     minAngle: 0
     maxAngle: 10
     fireRate: 10
-    angleIncrease: 0.75
+    angleIncrease: 1.5
     angleDecay: 15
     projectileSpeed: 35 # pistol caliber
     availableModes:
@@ -89,7 +89,7 @@
     minAngle: 0
     maxAngle: 10
     fireRate: 10
-    angleIncrease: 0.75
+    angleIncrease: 1.5
     angleDecay: 15
     projectileSpeed: 35 # pistol caliber
     availableModes:

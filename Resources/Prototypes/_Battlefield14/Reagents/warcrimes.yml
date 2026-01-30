@@ -30,7 +30,7 @@
         paralyzeTime: 4
         conditions:
         - !type:ReagentThreshold
-          min: 5
+          min: 1.5
       - !type:PopupMessage
         type: Local
         probability: 0.05
@@ -54,7 +54,7 @@
         probability: 0.3
         conditions:
         - !type:ReagentThreshold
-          min: 3
+          min: 1.75
       - !type:Emote
         emote: Scream
         probability: 0.05
@@ -143,7 +143,7 @@
         probability: 0.4
         conditions:
         - !type:ReagentThreshold
-          min: 2
+          min: 0.5
       - !type:Emote
         emote: Cough
         showInChat: true
@@ -160,7 +160,7 @@
         paralyzeTime: 2
         conditions:
         - !type:ReagentThreshold
-          min: 5
+          min: 2
 #  reactiveEffects:
 #    Acidic:
 #      methods: [ Touch ]

@@ -9,6 +9,7 @@
     state: firstaid
   - type: Storage
     maxItemSize: Small
+    defaultStorageOrientation: Vertical # BF14
     grid:
     - 0,0,3,2 # BF14
   - type: Item

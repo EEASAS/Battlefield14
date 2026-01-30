@@ -63,3 +63,29 @@
         map: [ "enum.AmmoVisualLayers.Base" ]
   - type: CartridgeAmmo
     proto: SlugShotgunBF12Gauge
+  - type: SpentAmmoVisuals
+    state: "slug"
+
+- type: entity
+  id: BF_CartridgeShotgun12GaugeBreaching
+  name: shotgun shell (12 gauge breaching)
+  parent: BaseShellShotgunBF12Gauge
+  components:
+  - type: Sprite
+    layers:
+      - state: slug
+        map: [ "enum.AmmoVisualLayers.Base" ]
+  - type: CartridgeAmmo
+    proto: PelletShotgunBF12GaugeBreaching_Spread
+  - type: SpentAmmoVisuals
+    state: "slug"
+
+- type: entity
+  id: PelletShotgunBF12GaugeBreaching_Spread
+  categories: [ HideSpawnMenu ]
+  parent: PelletShotgunBF12GaugeBreaching
+  components:
+  - type: ProjectileSpread
+    proto: PelletShotgunBF12GaugeBreaching
+    count: 3
+    spread: 5

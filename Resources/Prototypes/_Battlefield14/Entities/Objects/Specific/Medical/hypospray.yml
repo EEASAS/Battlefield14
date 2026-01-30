@@ -242,6 +242,23 @@
         - ReagentId: Nanoblood
           Quantity: 60
 
+- type: entity
+  parent: BF14Hypospray
+  id: BF14HyposprayFilledHypervene
+  suffix: Hypervene
+  name: hypervene hypospray
+  description: Filled with 60u Hypervene. Rapidly purges all chems from the bloodstream; Approx 15u per 3u injection.
+  components:
+  - type: Hypospray
+    transferAmount: 3
+  - type: SolutionContainerManager
+    solutions:
+      hypospray:
+        maxVol: 60
+        reagents:
+        - ReagentId: Hypervene
+          Quantity: 60
+
 # 120u hypo fills
 
 - type: entity

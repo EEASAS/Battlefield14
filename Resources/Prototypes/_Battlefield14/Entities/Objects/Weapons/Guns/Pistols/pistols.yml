@@ -12,6 +12,10 @@
     - state: mag-0
       map: ["enum.GunVisualLayers.Mag"]
   - type: Gun
+    minAngle: 0
+    maxAngle: 15
+    angleIncrease: 2
+    angleDecay: 10
     fireRate: 5
     projectileSpeed: 30
     availableModes:
@@ -56,6 +60,10 @@
     - state: mag-0
       map: ["enum.GunVisualLayers.Mag"]
   - type: Gun
+    minAngle: 0
+    maxAngle: 15
+    angleIncrease: 2
+    angleDecay: 10
     fireRate: 5
     projectileSpeed: 30
     availableModes:
