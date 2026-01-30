@@ -15,17 +15,23 @@ uplink-natous-m4a1crate-desc = A crate with five M4A1 rifles and two boxes of sp
 uplink-natous-m27iarcrate-name = M27-IAR x5
 uplink-natous-m27iarcrate-desc = A crate with five M27-IAR automatic rifles and two boxes of spare ammunition.
 
+uplink-NATOUS-m870crate-name = M870 x5
+uplink-NATOUS-m870crate-desc = A crate with five M870 combat shotguns and two boxes of spare ammunition.
+
+uplink-NATOUS-m590crate-name = M590 x5
+uplink-NATOUS-m590crate-desc = A crate with five M590 breaching shotguns and two boxes of spare ammunition.
+
 uplink-natous-SMAWcrate-name = SMAW x2
 uplink-natous-SMAWcrate-desc = Two Shoulder-Launched Multipurpose Assault Weapons, firing 83mm projectiles, comes with 4 frag and 4 HEAT rounds.
 
-uplink-natous-SMAW-Dcrate-name = SMAW-D x5
-uplink-natous-SMAW-Dcrate-desc = 5 disposable anti-infantry SMAW rounds.
+uplink-natous-SMAWDcrate-name = SMAW-D x5
+uplink-natous-SMAWDcrate-desc = 5 disposable anti-infantry SMAW rounds.
 
 uplink-natous-AT4crate-name = AT4 x5
 uplink-natous-AT4crate-desc = 5 disposable 'eighty-four' milimeter launchers firing HEAT warheads.
 
 uplink-natous-1776railgun-name = 17.76mm Liberator railgun
-uplink-natous-1776railgun-desc = A singlular unit of the Liberator railgun, fires shortened 17.76mm depleted-uranium penetrators.
+uplink-natous-1776railgun-desc = A singlular unit of the experimental Liberator railgun, fires shortened 17.76mm depleted-uranium penetrators.
 
 ## Ammo
 

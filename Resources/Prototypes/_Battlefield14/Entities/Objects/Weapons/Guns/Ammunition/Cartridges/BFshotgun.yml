@@ -73,12 +73,12 @@
   components:
   - type: Sprite
     layers:
-      - state: slug
+      - state: practice
         map: [ "enum.AmmoVisualLayers.Base" ]
   - type: CartridgeAmmo
     proto: PelletShotgunBF12GaugeBreaching_Spread
   - type: SpentAmmoVisuals
-    state: "slug"
+    state: "practice"
 
 - type: entity
   id: PelletShotgunBF12GaugeBreaching_Spread

@@ -50,4 +50,4 @@
         Structural: 100
     armorPenetration: 0.15
   - type: StaminaDamageOnCollide
-    damage: 15 # ~6 hits to stun
+    damage: 20 # ~5 hits to stun

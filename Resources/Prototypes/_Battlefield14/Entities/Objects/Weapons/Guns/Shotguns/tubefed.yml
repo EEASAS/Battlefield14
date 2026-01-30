@@ -1,0 +1,70 @@
+- type: entity
+  name: M870
+  parent: [BaseWeaponShotgun, BaseGunWieldable]
+  id: WeaponShotgunUSM870
+  description: A popular civilian hunting shotgun, adapted for military use with a heatshield, pistol grip stock, and handy sling.
+  components:
+  - type: Item
+    size: Normal
+    shape:
+    - 0,0,3,1
+    sprite: _Battlefield14/Objects/Weapons/Guns/Shotguns/M870.rsi
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Shotguns/M870.rsi
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/Shotguns/M870.rsi
+  - type: GunRequiresWield
+  - type: Gun
+    fireRate: 2
+    projectileSpeed: 35
+  - type: GunSpreadModifier
+    spread: 0.6
+  - type: Tag
+    tags:
+    - WeaponShotgunKammerer
+  - type: BallisticAmmoProvider
+    autoCycle: false
+    whitelist:
+      tags:
+      - BF_CartridgeShotgun12Gauge
+    capacity: 7
+    proto: BF_CartridgeShotgun12GaugeBuckshot
+
+- type: entity
+  name: M590
+  parent: BaseWeaponShotgun
+  id: WeaponShotgunUSM590
+  description: A popular civilian hunting shotgun, chopped down to breach doors more handily. Direct combat use ill-advised.
+  components:
+  - type: Item
+    size: Normal
+    sprite: _Mono/Objects/Weapons/Guns/Shotguns/Helepolis.rsi
+  - type: Sprite
+    sprite: _Mono/Objects/Weapons/Guns/Shotguns/Helepolis.rsi
+  - type: Clothing
+    sprite: _Mono/Objects/Weapons/Guns/Shotguns/Helepolis.rsi
+  - type: Gun
+    fireRate: 2
+    projectileSpeed: 20 # short barrel
+  - type: GunSpreadModifier
+    spread: 1.5 # short barrel
+  - type: Tag
+    tags:
+    - WeaponShotgunKammerer
+  - type: BallisticAmmoProvider
+    autoCycle: false
+    whitelist:
+      tags:
+      - BF_CartridgeShotgun12Gauge
+    capacity: 4
+    proto: BF_CartridgeShotgun12GaugeBreaching
+  - type: AltFireMelee
+    attackType: Heavy
+  - type: MeleeWeapon
+    damage:
+      types:
+       Blunt: 6.7 # idiot
+    angle: 0
+    wideAnimationRotation: 90 # -90 if it takes bayonets (hits with muzzle) 90 if not (hits with butt)
+    soundHit:
+      collection: MetalThud

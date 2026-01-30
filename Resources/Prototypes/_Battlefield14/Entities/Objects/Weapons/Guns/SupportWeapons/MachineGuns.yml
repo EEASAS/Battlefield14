@@ -156,7 +156,7 @@
   name: PKM
   parent: BaseWeaponLightMachineGun
   id: WeaponMachineGunRUPKM
-  description: A specialised version of the M249 for use by paratroopers, with a shorter barrel and collapsing stock meaning it's easier to haul around but has a lower muzzle velocity compared to other machine guns. Particularly useful for room clearing.
+  description: A soviet era general purpose machinegun, putting down high caliber rounds from 100 round belt boxes.
   components:
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Guns/MachineGuns/PKM.rsi
