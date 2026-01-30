@@ -113,6 +113,38 @@
         tags:
           - AmericanUplink
 
+- type: listing
+  id: UplinkNATOUSM870Crate
+  name:  uplink-NATOUS-m870crate-name
+  description: uplink-NATOUS-m870crate-desc
+  productEntity: CrateSecgearNATOFilledM870
+  icon: { sprite: _Battlefield14/Objects/Weapons/Guns/Shotguns/M870.rsi, state: icon }
+  cost:
+    NATORequisition: 18 # 3 minutes
+  categories:
+    - UplinkNATOUSWeapons
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - AmericanUplink
+
+- type: listing
+  id: UplinkNATOUSM590Crate
+  name:  uplink-NATOUS-m590crate-name
+  description: uplink-NATOUS-m590crate-desc
+  productEntity: CrateSecgearNATOFilledM590
+  icon: { sprite: _Mono/Objects/Weapons/Guns/Shotguns/Helepolis.rsi, state: icon }
+  cost:
+    NATORequisition: 18 # 3 minutes
+  categories:
+    - UplinkNATOUSWeapons
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - AmericanUplink
+
 # Ammo
 
 - type: listing

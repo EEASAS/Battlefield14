@@ -1,5 +1,8 @@
 ## Weapons
 
+uplink-PACTRU-PKMcrate-name = PKM x2
+uplink-PACTRU-PKMcrate-desc = A crate of two PKM machineguns and four belt boxes.
+
 uplink-PACTRU-ak74crate-name = AK-74 x10
 uplink-PACTRU-ak74crate-desc = A crate of ten AK-74 rifles and two boxes of spare ammunition.
 

@@ -23,7 +23,7 @@
   productEntity: MagazineBox556x45
   icon: { sprite: _Mono/Objects/Weapons/Guns/Ammunition/Boxes/5.56x45mm.rsi, state: base }
   cost:
-    NATORequisition: 2 # 20 seconds
+    NATORequisition: 1 # 10 seconds
   categories:
     - UplinkNATOUSAmmo
   conditions:
@@ -155,7 +155,7 @@
   productEntity: ClothingArmbandMassScanner
   icon: { sprite: _Battlefield14/Clothing/Accessories/wristscanner.rsi, state: icon } # TODO fix this weird shit where it has to be 64x64 or it doesn't work
   cost:
-    NATORequisition: 12 # 2 minutes
+    NATORequisition: 6 # 1 minutes
   categories:
     - UplinkNATOUSUtility
   conditions:

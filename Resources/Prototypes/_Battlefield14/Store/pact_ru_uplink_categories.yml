@@ -82,6 +82,22 @@
         tags:
           - RussianUplink
 
+- type: listing
+  id: UplinkPACTRUPKMCrate
+  name:  uplink-PACTRU-PKMcrate-name
+  description: uplink-PACTRU-PKMcrate-desc
+  productEntity: CrateSecgearPACTFilledPKM
+  icon: { sprite: _Battlefield14/Objects/Weapons/Guns/MachineGuns/PKM.rsi, state: icon }
+  cost:
+    PACTRequisition: 100 # 16 minutes 40 seconds approx
+  categories:
+    - UplinkPACTRUWeapons
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - RussianUplink
+
 # Ammo
 
 - type: listing
