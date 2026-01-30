@@ -48,6 +48,38 @@
         tags:
           - RussianUplink
 
+- type: listing
+  id: UplinkPACTAmmoBox12gBuckshot
+  name:  uplink-PACT-ammo-box-12g-buckshot-name
+  description: uplink-PACT-ammo-box-12g-buckshot-desc
+  productEntity: ShellBoxBF12GaugeBuckshot
+  icon: { sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Boxes/12gbox.rsi, state: icon-lethal }
+  cost:
+    PACTRequisition: 1 # 10 seconds
+  categories:
+    - UplinkPACTRUAmmo
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - RussianUplink
+
+- type: listing
+  id: UplinkPACTAmmoBox12gSlug
+  name:  uplink-PACT-ammo-box-12g-slug-name
+  description: uplink-PACT-ammo-box-12g-slug-desc
+  productEntity: ShellBoxBF12GaugeSlug
+  icon: { sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Boxes/12gbox.rsi, state: icon-slug }
+  cost:
+    PACTRequisition: 1 # 10 seconds
+  categories:
+    - UplinkPACTRUAmmo
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - RussianUplink
+
 # Armour
 
 - type: listing

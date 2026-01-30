@@ -10,6 +10,12 @@ uplink-PACT-ammo-box-545-big-desc = Contains 200 loose 5.45x39mm rounds.
 uplink-PACT-ammo-box-9mm-big-name = Bulk ammo box (9x19mm)
 uplink-PACT-ammo-box-9mm-big-desc = Contains 300 loose 9x19mm rounds.
 
+uplink-PACT-ammo-box-12g-buckshot-name = Ammo pack (12 gauge buckshot)
+uplink-PACT-ammo-box-12g-buckshot-desc = Contains 30 loose 12 gauge buckshot shells.
+
+uplink-PACT-ammo-box-12g-slug-name = Ammo pack (12 gauge slug)
+uplink-PACT-ammo-box-12g-slug-desc = Contains 30 loose 12 gauge slug shells.
+
 ## Armour
 
 uplink-PACT-armor-plate-light-name = Kevlar insert

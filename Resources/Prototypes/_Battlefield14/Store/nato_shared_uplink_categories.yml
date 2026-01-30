@@ -64,6 +64,54 @@
         tags:
           - AmericanUplink
 
+- type: listing
+  id: UplinkNATOAmmoBox12gBuckshot
+  name:  uplink-NATO-ammo-box-12g-buckshot-name
+  description: uplink-NATO-ammo-box-12g-buckshot-desc
+  productEntity: ShellBoxBF12GaugeBuckshot
+  icon: { sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Boxes/12gbox.rsi, state: icon-lethal }
+  cost:
+    NATORequisition: 1 # 10 seconds
+  categories:
+    - UplinkNATOUSAmmo
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - AmericanUplink
+
+- type: listing
+  id: UplinkNATOAmmoBox12gSlug
+  name:  uplink-NATO-ammo-box-12g-slug-name
+  description: uplink-NATO-ammo-box-12g-slug-desc
+  productEntity: ShellBoxBF12GaugeSlug
+  icon: { sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Boxes/12gbox.rsi, state: icon-slug }
+  cost:
+    NATORequisition: 1 # 10 seconds
+  categories:
+    - UplinkNATOUSAmmo
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - AmericanUplink
+
+- type: listing
+  id: UplinkNATOAmmoBox12gBreaching
+  name:  uplink-NATO-ammo-box-12g-breaching-name
+  description: uplink-NATO-ammo-box-12g-breaching-desc
+  productEntity: ShellBoxBF12GaugeBreaching
+  icon: { sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Boxes/12gbox.rsi, state: icon-practice }
+  cost:
+    NATORequisition: 1 # 10 seconds
+  categories:
+    - UplinkNATOUSAmmo
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - AmericanUplink
+
 # Armour
 
 - type: listing
