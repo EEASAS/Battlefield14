@@ -49,9 +49,9 @@
     piercingThickness: 1
     deleteOnCollide: false
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Ammunition/Casings/large_casing.rsi
+    sprite: _Mono/Objects/SpaceArtillery/50_armorpiercing_machinegun_casing.rsi
     layers:
-    - state: base
+    - state: base-projectile
   - type: ShipWeaponProjectile
   - type: TimedDespawn
     lifetime: 10
