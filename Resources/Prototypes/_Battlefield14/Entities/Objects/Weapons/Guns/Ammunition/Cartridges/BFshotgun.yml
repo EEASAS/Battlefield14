@@ -139,7 +139,7 @@
 - type: entity
   id: PelletShotgunBF4GaugeShrap10_Spread
   categories: [ HideSpawnMenu ]
-  parent: BaseShellShotgunBF4Gauge
+  parent: PelletShotgunBF4Gauge
   components:
   - type: ProjectileSpread
     proto: PelletShotgunBF4Gauge
@@ -166,7 +166,7 @@
   - type: ProjectileSpread
     proto: PelletShotgunBF4Gauge
     count: 8
-    spread: 10
+    spread: 8
 
 - type: entity
   id: BF_CartridgeShotgun4GaugeBarricade
@@ -179,6 +179,8 @@
         map: [ "enum.AmmoVisualLayers.Base" ]
   - type: CartridgeAmmo
     proto: SlugShotgunBF4Gauge
+  - type: SpentAmmoVisuals
+    state: "slug"
 
 - type: entity
   id: BF_CartridgeShotgun4GaugeFlashbang
@@ -191,6 +193,7 @@
         map: [ "enum.AmmoVisualLayers.Base" ]
   - type: CartridgeAmmo
     proto: Bullet40mmGrenadeFlash # lol
+    state: "flare"
 
 - type: entity
   id: BF_CartridgeShotgun4GaugeFuck23

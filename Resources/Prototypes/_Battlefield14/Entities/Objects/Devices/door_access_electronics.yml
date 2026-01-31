@@ -56,6 +56,14 @@
   - type: AccessReader
     access: [["NATOFunds"]]
 
+- type: entity
+  parent: DoorElectronics
+  id: DoorElectronicsNATOCrew
+  suffix: NATO Crew, Locked
+  components:
+  - type: AccessReader
+    access: [["NATOCrew"]]
+
 # PACT #
 
 - type: entity
@@ -113,3 +121,11 @@
   components:
   - type: AccessReader
     access: [["PACTFunds"]]
+
+- type: entity
+  parent: DoorElectronics
+  id: DoorElectronicsPACTCrew
+  suffix: PACT Crew, Locked
+  components:
+  - type: AccessReader
+    access: [["PACTCrew"]]

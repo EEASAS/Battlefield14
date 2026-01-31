@@ -53,6 +53,7 @@
   - NATOCommand
   - NATOMaintenance
   - NATOArmory
+  - NATOCrew
 
 - type: startingGear
   id: USSFCrewmanGear

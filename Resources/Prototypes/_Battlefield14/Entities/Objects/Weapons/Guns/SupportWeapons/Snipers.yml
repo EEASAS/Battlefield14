@@ -1,3 +1,78 @@
+# US
+- type: entity
+  name: M107
+  parent: [BaseWeaponRifle, BaseGunWieldable]
+  id: WeaponSniperUSM107
+  description: A big, beefy, fitty cal anti-materiel rifle.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Snipers/M107.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/Snipers/M107.rsi
+  - type: GunRequiresWield
+  - type: Item
+    shape:
+    - 0,0,5,2
+  - type: GunWieldBonus # needed so min angle doesn't go negative
+    minAngle: 0
+    maxAngle: 0
+  - type: Gun
+    fireRate: 3 # holy shit
+    minAngle: 0
+    maxAngle: 180
+    angleIncrease: 25
+    angleDecay: 30
+    projectileSpeed: 67 # it's a sniper
+    soundGunshot:
+      path: /Audio/_Harmony/Weapons/Guns/Gunshots/hristov_fire_alt.ogg
+    selectedMode: SemiAuto
+    availableModes:
+      - SemiAuto
+  - type: ChamberMagazineAmmoProvider
+    boltClosed: null
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazineSniperM107
+        insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MagazineSniperM107
+      gun_chamber:
+        name: Chamber
+        startingItem: Cartridge127mmAP
+        priority: 1
+        whitelist:
+          tags:
+            - Cartridge127mmAP
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: CursorOffsetRequiresWield
+  - type: EyeCursorOffset
+    maxOffset: 10
+    pvsIncrease: 0.8
+  - type: SpeedModifiedOnWield
+    walkModifier: 0.80
+    sprintModifier: 0.80
+  - type: Appearance
+  - type: StaticPrice
+    price: 3000
+
+
 # RU
 - type: entity
   name: SV-98

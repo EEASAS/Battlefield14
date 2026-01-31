@@ -90,8 +90,8 @@
     projectileSpeed: 45 # why not lol
     soundGunshot:
       path: /Audio/_Mono/Weapons/Guns/SmallArms/Gunshots/bigshotgun_fire.ogg
-  - type: GunSpreadModifier
-    spread: 0.7
+#  - type: GunSpreadModifier
+#    spread: 0.7
   - type: Tag
     tags:
     - WeaponShotgunKammerer

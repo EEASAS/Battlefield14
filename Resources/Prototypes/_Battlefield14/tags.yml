@@ -68,6 +68,9 @@
   id: MagazineBeltBoxPKM
 
 - type: Tag
+  id: MagazineSniperM107
+
+- type: Tag
   id: MagazinePistolM9
 
 - type: Tag

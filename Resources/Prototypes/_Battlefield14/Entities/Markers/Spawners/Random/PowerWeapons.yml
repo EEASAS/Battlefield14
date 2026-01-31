@@ -10,7 +10,8 @@
         state: icon
   - type: RandomSpawner
     offset: 0
-    prototypes: # Placeholder until I actually make unique ones
-      - CrateSecgearPowerWeaponFilledM249Para
-      - CrateSecgearPowerWeaponFilledSMAW
+    prototypes:
+      - CratePowerWeaponFilledM107
+      - CratePowerWeaponFilledM249Para # USAS-12
+      - CratePowerWeaponFilledSMAW # AEK-971
     chance: 1

@@ -221,9 +221,36 @@
 ## Misc, power weapons
 
 - type: entity
-  id: CrateSecgearPowerWeaponFilledM249Para
+  parent: CrateBaseSecure
+  id: CratePowerWeapon
+  abstract: true
+  suffix: power weapon
+  components:
+  - type: Icon
+    sprite: Structures/Storage/Crates/sec_gear.rsi
+  - type: Sprite
+    sprite: Structures/Storage/Crates/sec_gear.rsi
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: StructuralMetallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 750000 # so you cant just magdump it lol you need to unlock it
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+  - type: AccessReader
+    access: [["NATOCommand" , "PACTCommand"]]
+
+- type: entity
+  id: CratePowerWeaponFilledM249Para
   suffix: Filled, power weapon, M249 Para
-  parent: CrateSecgear
+  parent: CratePowerWeapon
   name: power weapon crate
   components:
   - type: StorageFill
@@ -232,13 +259,11 @@
           amount: 1
         - id: MagazineBeltBoxM249
           amount: 2
-  - type: AccessReader
-    access: [["NATOCommand" , "PACTCommand"]]
 
 - type: entity
-  id: CrateSecgearPowerWeaponFilledSMAW
+  id: CratePowerWeaponFilledSMAW
   suffix: Filled, power weapon, SMAW
-  parent: CrateSecgear
+  parent: CratePowerWeapon
   name: power weapon crate
   components:
   - type: StorageFill
@@ -249,5 +274,15 @@
           amount: 4
         - id: CartridgeSMAWNE
           amount: 4
-  - type: AccessReader
-    access: [["NATOCommand" , "PACTCommand"]]
+
+- type: entity
+  id: CratePowerWeaponFilledM107
+  suffix: Filled, power weapon, M107
+  parent: CratePowerWeapon
+  name: power weapon crate
+  components:
+  - type: StorageFill
+    contents:
+        - id: WeaponSniperUSM107
+          amount: 1
+        - id: BoxMagazineM107

@@ -53,6 +53,7 @@
   - PACTCommand
   - PACTMaintenance
   - PACTArmory
+  - PACTCrew
 
 - type: startingGear
   id: VKSCaptainGear
