@@ -32,6 +32,15 @@
   id: BF_CartridgeShotgun12GaugeBuckshot
 
 - type: Tag
+  id: BF_CartridgeShotgun12GaugeSlug
+
+- type: Tag
+  id: BF_CartridgeShotgun12GaugeBreaching
+
+- type: Tag
+  id: BF_CartridgeShotgun4Gauge
+
+- type: Tag
   id: CartridgeSMAW
 
 - type: Tag

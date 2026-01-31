@@ -68,3 +68,37 @@
     wideAnimationRotation: 90 # -90 if it takes bayonets (hits with muzzle) 90 if not (hits with butt)
     soundHit:
       collection: MetalThud
+
+- type: entity
+  name: KS-23M
+  parent: [BaseWeaponShotgun, BaseGunWieldable]
+  id: WeaponShotgunRUKS23M
+  description: After a batch of shoddy 23mm anti aircraft barrels, Ivan thought to himself to recycle the barrels into 4 gauge shotguns. Used for riot control and obliteration by internal/special police units with specialised ammunition.
+  components:
+  - type: Item
+    size: Normal
+    shape:
+    - 0,0,3,1
+    sprite: _Battlefield14/Objects/Weapons/Guns/Shotguns/KS23M.rsi
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Shotguns/KS23M.rsi
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/Shotguns/KS23M.rsi
+  - type: GunRequiresWield
+  - type: Gun
+    fireRate: 1
+    projectileSpeed: 45 # why not lol
+    soundGunshot:
+      path: /Audio/_Mono/Weapons/Guns/SmallArms/Gunshots/bigshotgun_fire.ogg
+  - type: GunSpreadModifier
+    spread: 0.7
+  - type: Tag
+    tags:
+    - WeaponShotgunKammerer
+  - type: BallisticAmmoProvider
+    autoCycle: false
+    whitelist:
+      tags:
+      - BF_CartridgeShotgun4Gauge
+    capacity: 4
+    proto: BF_CartridgeShotgun4GaugeShrap10

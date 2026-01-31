@@ -25,9 +25,12 @@
     angleDecay: 12
     availableModes:
     - FullAuto
+    - Burst
     selectedMode: FullAuto
     fireRate: 8
     projectileSpeed: 40 # 13 inch barrel
+    shotsPerBurst: 8 # Fictional, to help with conserving ammo
+    burstCooldown: 0.5
     soundGunshot:
       collection: BF_M249_Gunshots
       params:
@@ -111,9 +114,12 @@
     angleDecay: 12
     availableModes:
     - FullAuto
+    - Burst
     selectedMode: FullAuto
     fireRate: 8
     projectileSpeed: 40 # 13 inch barrel
+    shotsPerBurst: 8 # Fictional, to help with conserving ammo
+    burstCooldown: 0.5
     soundGunshot:
       collection: BF_M249_Gunshots
       params:
@@ -182,13 +188,16 @@
     angleDecay: 15
     availableModes:
     - FullAuto
+    - Burst
     selectedMode: FullAuto
     fireRate: 8
     projectileSpeed: 50 # full length barrel
+    shotsPerBurst: 8 # Fictional, to help with conserving ammo
+    burstCooldown: 0.5
     soundGunshot:
-      collection: BF_M249_Gunshots # TODO unique sounds
+      path: /Audio/_Mono/Weapons/Guns/SmallArms/Gunshots/l6_fire.ogg # TODO unique sounds
       params:
-        volume: -5
+        volume: -3
         variation: 0.125
   - type: ChamberMagazineAmmoProvider
     boltClosed: null

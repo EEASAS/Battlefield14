@@ -94,14 +94,10 @@
   components:
   - type: StorageFill # BF14
     contents:
-      - id: BF14HyposprayFilledBicaridine
-      - id: BF14HyposprayFilledKelotane
-      - id: RegenerativeMesh
+      - id: BF14HyposprayFilledAdvanced
+#      - id: BF14HyposprayFilledOxycodone
       - id: MedicatedSuture
-#      - id: BruteAutoInjector
-#        amount: 2
-#      - id: BurnAutoInjector
-#        amount: 2
+      - id: RegenerativeMesh
       - id: InaprovalineMedipen # BF14
       - id: BF14HyposprayFilledNanoblood # BF14
       - id: PillCanisterTricordrazine

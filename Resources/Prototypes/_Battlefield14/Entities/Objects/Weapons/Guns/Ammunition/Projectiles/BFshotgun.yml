@@ -51,3 +51,42 @@
     armorPenetration: 0.15
   - type: StaminaDamageOnCollide
     damage: 20 # ~5 hits to stun
+
+# 4 gauge
+
+- type: entity
+  id: PelletShotgunBF4Gauge
+  name: 4 gauge shotgun pellet
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    state: buckshot
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 27
+        Structural: 3
+    armorPenetration: -0.3
+  - type: StaminaDamageOnCollide
+    damage: 8 # ~13 hits to stun
+
+- type: entity
+  id: SlugShotgunBF4Gauge
+  name: 4 gauge barricade slug
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    state: slug
+  - type: Projectile
+    damage:
+      types:
+        Blunt: 15
+        Piercing: 75
+        Structural: 500 # this is made to take out engine blocks at 100 meters
+    armorPenetration: -0.3
+  - type: StaminaDamageOnCollide
+    damage: 40 # ~3 hits to stun

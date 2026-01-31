@@ -22,7 +22,7 @@
     fireRate: 2
     projectileSpeed: 35
     soundGunshot:
-      collection: BF_AK_545_Gunshots
+      path: /Audio/_Mono/Weapons/Guns/SmallArms/Gunshots/bigshotgun_fire.ogg
       params:
         volume: -5
         variation: 0.125
