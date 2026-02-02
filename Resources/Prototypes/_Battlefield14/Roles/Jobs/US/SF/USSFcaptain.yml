@@ -58,6 +58,7 @@
   - NATOArmory
   - NATOFunds
   - NATOCrew
+  - NATOCaptain
 
 - type: startingGear
   id: USSFCaptainGear

@@ -1,3 +1,18 @@
+- type: pointOfInterest
+  id: INDBox
+  parent: BasePOI
+  name: 'Independant Box Station'
+  minimumDistance: 0
+  maximumDistance: 0
+  spawnGamePreset: [ Battlefield14 , NFAdventure ]
+  spawnGroup: Required
+  gridPath: /Maps/_Battlefield14/Stations/IND/box.yml
+  addComponents:
+  - type: IFF
+    color: "#047abd"
+    flags: [HideLabel]
+    readOnly: true
+
 - type: gameMap
   id: BF14Box
   mapName: 'Box Station'
@@ -20,7 +35,7 @@
         - type: StationJobs
           availableJobs:
 #            Contractor: [ -1, -1 ]
-            USMCSquadLeader: [ 1, 1 ]
+            USMCSquadLeader: [ 1, 1 ]  # debug remove all these jobs when gamemode is fully working
             USMCRifleman: [ 4, 4 ]
             USMCAutomaticRifleman: [ 4, 4 ]
             USMCMedic: [ 4, 4 ]
@@ -30,6 +45,6 @@
             VDVAutomaticRifleman: [ 4, 4 ]
             VDVMedic: [ 4, 4 ]
             VDVRecon: [ 4, 4 ]
-          tags:
-          - HeadOfPersonnel
-          - HeadOfSecurity
+#          tags:
+#          - HeadOfPersonnel
+#          - HeadOfSecurity

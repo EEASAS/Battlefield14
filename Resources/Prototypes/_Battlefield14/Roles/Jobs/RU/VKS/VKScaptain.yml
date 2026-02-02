@@ -29,8 +29,10 @@
   - !type:AddLanguageSpecial
     languagesSpoken:
     - Russian
+    - Esperanto
     languagesUnderstood:
     - Russian
+    - Esperanto
   # - !type:AddComponentSpecial
   #   components:
   #     # COMMENTED OUT: ChatRank and HullrotFaction not supported
@@ -53,7 +55,9 @@
   - PACTCommand
   - PACTMaintenance
   - PACTArmory
+  - PACTFunds
   - PACTCrew
+  - PACTCaptain
 
 - type: startingGear
   id: VKSCaptainGear
