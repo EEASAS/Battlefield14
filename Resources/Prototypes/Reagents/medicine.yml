@@ -523,6 +523,15 @@
         damage:
           types:
             Asphyxiation: -5
+      - !type:HealthChange # BF14
+        conditions:
+        - !type:TotalDamage
+          min: 90
+          max: 110
+        damage:
+          groups:
+            Brute: -1
+            Burn: -1
       - !type:ModifyBleedAmount
         amount: -0.25
 

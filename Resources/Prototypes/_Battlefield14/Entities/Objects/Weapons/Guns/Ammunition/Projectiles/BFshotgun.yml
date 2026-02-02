@@ -30,7 +30,7 @@
       types:
         Piercing: 67
         Structural: 50
-    armorPenetration: 0.2
+    armorPenetration: -0.2
   - type: StaminaDamageOnCollide
     damage: 15 # ~6 hits to stun
 
@@ -50,7 +50,33 @@
         Structural: 100
     armorPenetration: 0.15
   - type: StaminaDamageOnCollide
-    damage: 20 # ~5 hits to stun
+    damage: 15 # ~7 hits to stun
+
+- type: entity
+  id: PelletShotgunBF12GaugeFrag
+  name: 12 gauge frag pellet
+  parent: BaseBulletTrigger
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    state: slug
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 15
+        Heat: 15
+        Structural: 15
+    armorPenetration: -0.15
+  - type: StaminaDamageOnCollide
+    damage: 15 # ~7 hits to stun
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: Default
+    totalIntensity: 0.5
+    intensitySlope: 0.5
+    maxIntensity: 0.5
+    maxTileBreak: 0
 
 # 4 gauge
 
@@ -70,7 +96,7 @@
         Structural: 3
     armorPenetration: -0.3
   - type: StaminaDamageOnCollide
-    damage: 8 # ~13 hits to stun
+    damage: 9 # ~11-12 hits to stun
 
 - type: entity
   id: SlugShotgunBF4Gauge
@@ -87,6 +113,6 @@
         Blunt: 15
         Piercing: 75
         Structural: 500 # this is made to take out engine blocks at 100 meters
-    armorPenetration: -0.3
+    armorPenetration: -0.2
   - type: StaminaDamageOnCollide
-    damage: 40 # ~3 hits to stun
+    damage: 70 # ~2 hits to stun

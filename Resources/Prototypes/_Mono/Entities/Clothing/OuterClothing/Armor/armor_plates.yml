@@ -50,9 +50,9 @@
     size: Normal
   - type: ArmorPlateItem
     maxDurability: 120 # BF14
-    walkSpeedModifier: 1 # BF14
-    sprintSpeedModifier: 1 # BF14
-    staminaDamageMultiplier: 0.0 # BF14
+    walkSpeedModifier: 0.98 # BF14
+    sprintSpeedModifier: 0.98 # BF14
+    staminaDamageMultiplier: 0.05 # BF14
   - type: Damageable
     damageContainer: StructuralInorganic # BF14
   - type: Destructible
@@ -86,9 +86,9 @@
     size: Normal
   - type: ArmorPlateItem
     maxDurability: 200 # BF14
-    walkSpeedModifier: 9.8 # BF14
-    sprintSpeedModifier: 9.8 # BF14
-    staminaDamageMultiplier: 0.0 # BF14
+    walkSpeedModifier: 9.6 # BF14
+    sprintSpeedModifier: 9.6 # BF14
+    staminaDamageMultiplier: 0.1 # BF14
   - type: Damageable
     damageContainer: StructuralInorganic # BF14
   - type: Destructible
@@ -122,8 +122,8 @@
     size: Normal
   - type: ArmorPlateItem
     maxDurability: 300 # BF14
-    walkSpeedModifier: 0.95 # BF14
-    sprintSpeedModifier: 0.95 # BF14
+    walkSpeedModifier: 0.94 # BF14
+    sprintSpeedModifier: 0.94 # BF14
     staminaDamageMultiplier: 0.0 # BF14
   - type: Damageable
     damageContainer: StructuralInorganic # BF14

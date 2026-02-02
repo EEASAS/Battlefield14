@@ -86,6 +86,12 @@
   id: MagazineShotgunKSK
 
 - type: Tag
+  id: MagazineShotgunUSAS
+
+- type: Tag
+  id: MagazineShotgunUSASDrum
+
+- type: Tag
   id: SpeedLoader357magnum
 
 - type: Tag

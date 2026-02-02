@@ -10,6 +10,9 @@
       types:
         Structural: 800
         Piercing: 600
+  - type: StaminaDamageOnCollide
+    damage: 200 # just incase you somehow some way survive
+    armorPenetration: 1
     penetrationThreshold: 2000
     deleteOnCollide: false
   - type: Sprite
@@ -77,6 +80,9 @@
       types:
         Structural: 70
         Piercing: 70
+  - type: StaminaDamageOnCollide
+    damage: 60 # ~2 hits to stun
+    armorPenetration: 1
     penetrationThreshold: 200
   - type: ArmorPiercing
     piercingThickness: 1

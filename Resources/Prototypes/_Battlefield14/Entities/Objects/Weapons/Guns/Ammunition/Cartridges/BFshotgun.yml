@@ -90,6 +90,30 @@
     count: 3
     spread: 5
 
+- type: entity
+  id: BF_CartridgeShotgun12GaugeFrag
+  name: shotgun shell (12 gauge frag)
+  parent: BaseShellShotgunBF12Gauge
+  components:
+  - type: Sprite
+    layers:
+      - state: flare
+        map: [ "enum.AmmoVisualLayers.Base" ]
+  - type: CartridgeAmmo
+    proto: PelletShotgunBF12GaugeFrag_Spread
+  - type: SpentAmmoVisuals
+    state: "flare"
+
+- type: entity
+  id: PelletShotgunBF12GaugeFrag_Spread
+  categories: [ HideSpawnMenu ]
+  parent: PelletShotgunBF12GaugeFrag
+  components:
+  - type: ProjectileSpread
+    proto: PelletShotgunBF12GaugeFrag
+    count: 10
+    spread: 15
+
 # 4 gauge
 
 - type: entity
@@ -157,6 +181,8 @@
         map: [ "enum.AmmoVisualLayers.Base" ]
   - type: CartridgeAmmo
     proto: PelletShotgunBF4GaugeShrap25_Spread
+  - type: SpentAmmoVisuals
+    state: "flechette"
 
 - type: entity
   id: PelletShotgunBF4GaugeShrap25_Spread
@@ -193,6 +219,7 @@
         map: [ "enum.AmmoVisualLayers.Base" ]
   - type: CartridgeAmmo
     proto: Bullet40mmGrenadeFlash # lol
+  - type: SpentAmmoVisuals
     state: "flare"
 
 - type: entity
@@ -207,3 +234,5 @@
         map: [ "enum.AmmoVisualLayers.Base" ]
   - type: CartridgeAmmo
     proto: Bullet23mmFrag # lol
+  - type: SpentAmmoVisuals
+    state: "RIP"
