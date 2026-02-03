@@ -1,0 +1,120 @@
+- type: job
+  id: MARSOCRifleman
+  name: job-name-marsoc-rifleman
+  description: job-description-marsoc-rifleman
+  playTimeTracker: JobMARSOCRifleman
+  requirements:
+    # COMMENTED OUT: CharacterSpeciesRequirement not supported (species requirement system not implemented)
+    # - !type:CharacterSpeciesRequirement
+    #   species:
+    #     - Human
+    # COMMENTED OUT: FactionRequirement not supported (faction system not implemented)
+    # - !type:FactionRequirement
+    #   factionID: "NATO"
+    - !type:TraitsRequirement
+      inverted: true
+      traits:
+        - Muted
+        - Blindness
+        - Pacifist
+        - WheelchairBound
+  weight: 77
+  startingGear: MARSOCRiflemanGear
+  alwaysUseSpawner: true
+  icon: "JobIconNATOSpecialForces"
+  requireAdminNotify: false
+  supervisors: job-supervisors-usgov
+  canBeAntag: false
+  special:
+  - !type:AddLanguageSpecial
+    languagesSpoken:
+    - English
+    - Esperanto
+    languagesUnderstood:
+    - English
+    - Esperanto
+  - !type:AddComponentSpecial
+    components:
+    - type: NpcFactionMember
+      factions:
+      - USMC
+  # - !type:AddComponentSpecial
+  #   components:
+  #     # COMMENTED OUT: ChatRank and HullrotFaction not supported
+  #     # - type: ChatRank
+  #     #   rank: BF-rank-private
+  access:
+  - Maintenance
+  - Service
+  - External
+  - Mercenary # Frontier
+  - Captain # Frontier
+  - NATOCommon
+  - NATOCommand
+  - NATOMaintenance
+  - NATOMedical
+  - NATOSoldier
+  - NATOArmory
+  - NATOFunds
+  - NATOCrew
+  - NATOCaptain
+
+- type: startingGear
+  id: MARSOCRiflemanGear
+  equipment:
+    id: MARSOCRiflemanPDA
+    ears: ClothingHeadsetAltUS
+    belt: ClothingBeltWebbingsNormalTanFilled68x52
+    jumpsuit: ClothingUniformJumpsuitCamoUS
+    head: ClothingHeadHatHelmetUS
+    eyes: ClothingEyesGogglesTan
+    balaclava: ClothingBalaclavaMilitary
+    outerClothing: ClothingOuterArmorPlateCarrierTan
+    shoes: ClothingShoesBootsJackFilled
+    gloves: ClothingHandsGlovesCombat
+    back: ClothingBackpackRucksackTan
+    suitstorage: WeaponRifleUSM30MRC
+    pocket1: PouchMedkitFilledMarsoc
+    pocket2: PouchGrenadesFilledUSMCRifleman
+    leftarmband: Tourniquet
+    rightarmband: ClothingArmbandThighHolsterFilledUS
+    wallet: ClothingWalletLeatherBlack
+  storage:
+    back:
+    - BoxMagazine40x46Mixed
+    - Tourniquet
+    - Zipties
+    - ArmorPlateMedium
+    - WeaponGrenadeLauncherUSM320
+    - MagazinePistolM9
+    - MagazinePistolM9
+
+- type: startingGear
+  id: MARSOCRiflemanGearEVA
+  equipment:
+    id: MARSOCRiflemanPDA
+    ears: ClothingHeadsetAltUS
+    belt: ClothingBeltWebbingsNormalBlackFilled68x52
+    jumpsuit: ClothingUniformJumpsuitCamoUS
+    eyes: ClothingEyesGogglesTan
+    balaclava: ClothingBalaclavaMilitary
+    outerClothing: ClothingOuterVoidsuitAmericanCombatMarine
+    shoes: ClothingShoesBootsMagAshenFilled
+    gloves: ClothingHandsGlovesCombat
+    back: ClothingBackpackRucksackBlack
+    suitstorage: WeaponRifleUSM30MRC
+    pocket1: PouchMedkitFilledMarsoc
+    pocket2: PouchGrenadesFilledUSMCRifleman
+    leftarmband: ClothingArmbandMassScanner
+    rightarmband: ClothingArmbandThighHolsterFilledUS
+    wallet: ClothingWalletLeatherBlack
+  storage:
+    back:
+    - BoxMagazine40x46Mixed
+    - Tourniquet
+    - Zipties
+    - ArmorPlateMedium
+    - WeaponGrenadeLauncherUSM320
+    - MagazinePistolM9
+    - MagazinePistolM9
+    - DoubleEmergencyOxygenTankFilled

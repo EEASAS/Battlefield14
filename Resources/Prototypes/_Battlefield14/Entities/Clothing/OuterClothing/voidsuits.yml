@@ -5,15 +5,13 @@
   abstract: true
   components:
   - type: GasTank
-    outputPressure: 42.6
+    outputPressure: 18.5
     air:
       # 10 minutes of thrust
       volume: 3.75
       temperature: 293.15
       moles:
       - 1.53853429 # oxygen
-#      - 0.769267145 # nitrogen
-#doesntwork    isInternals: false # So you don't suck on your integrated thrusters
   - type: ActivatableUI
     key: enum.SharedGasTankUiKey.Key
     verbOnly: true
@@ -109,7 +107,13 @@
     walkModifier: 0.7
     sprintModifier: 0.7
   - type: ToggleableClothing
-    clothingPrototype: ClothingHeadHelmetVoidsuitRussianCombat # change later
+    requiredSlot: outerclothing
+    blockUnequipWhenAttached: false
+    replaceCurrentClothing: true
+    clothingPrototypes:
+      head: ClothingHeadHelmetVoidsuitRussianCombat # change later
+      helmetcover: ClothingHeadHelmetCoverBlock
+      helmetattachment: ClothingHeadHelmetAttachmentBlock
   - type: StaticPrice
     price: 8000
   # COMMENTED OUT: ClothingAddFaction not supported (faction system not implemented)

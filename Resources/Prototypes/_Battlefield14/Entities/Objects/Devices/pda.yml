@@ -5,6 +5,7 @@
   id: USMCSquadLeaderPDA
   name: USMC PDA
   description: Filled with my little dark age edits.
+  suffix: squad leader
   components:
   - type: Icon
     sprite: _Battlefield14/Objects/Devices/pda.rsi
@@ -20,6 +21,7 @@
   id: USMCRiflemanPDA
   name: USMC PDA
   description: Filled with my little dark age edits.
+  suffix: rifleman
   components:
   - type: Icon
     sprite: _Battlefield14/Objects/Devices/pda.rsi
@@ -35,6 +37,7 @@
   id: USMCAutomaticRiflemanPDA
   name: USMC PDA
   description: Filled with my little dark age edits.
+  suffix: automatic rifleman
   components:
   - type: Icon
     sprite: _Battlefield14/Objects/Devices/pda.rsi
@@ -50,6 +53,7 @@
   id: USMCMedicPDA
   name: USMC PDA
   description: Filled with industrial accident and war casualty videos, im sure it's for training.
+  suffix: navy corpsman
   components:
   - type: Icon
     sprite: _Battlefield14/Objects/Devices/pda.rsi
@@ -65,12 +69,79 @@
   id: USMCReconPDA
   name: USMC PDA
   description: Filled with my little dark age edits.
+  suffix: force recon
   components:
   - type: Icon
     sprite: _Battlefield14/Objects/Devices/pda.rsi
     state: pda-us
   - type: Pda
     id: USMCReconIDCard
+    state: pda-us
+  - type: PdaBorderColor
+    borderColor: "#203564"
+
+# MARSOC
+
+- type: entity
+  parent: BasePDA
+  id: MARSOCSquadLeaderPDA
+  name: MARSOC PDA
+  description: Filled with my little dark age edits.
+  suffix: squad leader
+  components:
+  - type: Icon
+    sprite: _Battlefield14/Objects/Devices/pda.rsi
+    state: pda-us
+  - type: Pda
+    id: MARSOCSquadLeaderIDCard
+    state: pda-us
+  - type: PdaBorderColor
+    borderColor: "#203564"
+
+- type: entity
+  parent: BasePDA
+  id: MARSOCRiflemanPDA
+  name: MARSOC PDA
+  description: Filled with my little dark age edits.
+  suffix: rifleman
+  components:
+  - type: Icon
+    sprite: _Battlefield14/Objects/Devices/pda.rsi
+    state: pda-us
+  - type: Pda
+    id: MARSOCRiflemanIDCard
+    state: pda-us
+  - type: PdaBorderColor
+    borderColor: "#203564"
+
+- type: entity
+  parent: MARSOCRiflemanPDA
+  id: MARSOCAutomaticRiflemanPDA
+  name: MARSOC PDA
+  description: Filled with my little dark age edits.
+  suffix: automatic rifleman
+  components:
+  - type: Icon
+    sprite: _Battlefield14/Objects/Devices/pda.rsi
+    state: pda-us
+  - type: Pda
+    id: MARSOCAutomaticRiflemanIDCard
+    state: pda-us
+  - type: PdaBorderColor
+    borderColor: "#203564"
+
+- type: entity
+  parent: MARSOCRiflemanPDA
+  id: MARSOCMedicPDA
+  name: MARSOC PDA
+  description: Filled with industrial accident and war casualty videos, im sure it's for training.
+  suffix: navy corpsman
+  components:
+  - type: Icon
+    sprite: _Battlefield14/Objects/Devices/pda.rsi
+    state: pda-us
+  - type: Pda
+    id: MARSOCMedicIDCard
     state: pda-us
   - type: PdaBorderColor
     borderColor: "#203564"
@@ -82,6 +153,7 @@
   id: USSFCaptainPDA
   name: USSF PDA
   description: Filled with autistic space game footage.
+  suffix: captain
   components:
   - type: Icon
     sprite: _Battlefield14/Objects/Devices/pda.rsi
@@ -97,6 +169,7 @@
   id: USSFCrewmanPDA
   name: USSF PDA
   description: Filled with autistic space game footage.
+  suffix: crewman
   components:
   - type: Icon
     sprite: _Battlefield14/Objects/Devices/pda.rsi
@@ -114,6 +187,7 @@
   id: VDVSquadLeaderPDA
   name: VDV PDA
   description: Filled with drone footage.
+  suffix: senior rifleman
   components:
   - type: Icon
     sprite: _Battlefield14/Objects/Devices/pda.rsi
@@ -129,6 +203,7 @@
   id: VDVRiflemanPDA
   name: VDV PDA
   description: Filled with drone footage.
+  suffix: rifleman
   components:
   - type: Icon
     sprite: _Battlefield14/Objects/Devices/pda.rsi
@@ -144,6 +219,7 @@
   id: VDVAutomaticRiflemanPDA
   name: VDV PDA
   description: Filled with drone footage.
+  suffix: automatic rifleman
   components:
   - type: Icon
     sprite: _Battlefield14/Objects/Devices/pda.rsi
@@ -159,6 +235,7 @@
   id: VDVMedicPDA
   name: VDV PDA
   description: What's that guy with the sledgehammer doing?.
+  suffix: combat medic
   components:
   - type: Icon
     sprite: _Battlefield14/Objects/Devices/pda.rsi
@@ -174,6 +251,7 @@
   id: VDVReconPDA
   name: VDV PDA
   description: Filled with drone footage.
+  suffix: recon scout
   components:
   - type: Pda
     id: VDVReconIDCard
@@ -186,6 +264,7 @@
   id: VKSCaptainPDA
   name: VKS PDA
   description: Filled with autistic space game footage.
+  suffix: captain
   components:
   - type: Pda
     id: VKSCaptainIDCard
@@ -196,6 +275,7 @@
   id: VKSCrewmanPDA
   name: VKS PDA
   description: Filled with autistic space game footage.
+  suffix: crewman
   components:
   - type: Pda
     id: VKSCrewmanIDCard

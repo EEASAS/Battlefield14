@@ -31,6 +31,22 @@
       - id: MagazineSniperM107
         amount: 8
 
+# DE
+
+- type: entity
+  name: box of MP7 magazines
+  parent: BoxMagazine
+  id: BoxMagazineMP7
+  description: A box full of 4.6x30mm MP7 magazines.
+  components:
+  - type: Storage
+    grid:
+    - 0,0,3,3
+  - type: StorageFill
+    contents:
+      - id: MagazineSubmachinegunMP7
+        amount: 8
+
 # RU
 - type: entity
   name: box of 5.45x39mm AK-74 magazines
@@ -205,6 +221,22 @@
     contents:
       - id: Cartridge40x46mmFrag
         amount: 8
+
+- type: entity
+  name: box of mixed 40x46 grenades
+  parent: BoxMagazine
+  id: BoxMagazine40x46Mixed
+  description: A box full of fragmenting and high explosive 40x46mm grenades.
+  components:
+  - type: Storage
+    grid:
+    - 0,0,3,3
+  - type: StorageFill
+    contents:
+      - id: Cartridge40x46mmHE
+        amount: 4
+      - id: Cartridge40x46mmFrag
+        amount: 4
 
 - type: entity
   name: box of 40x46 CS smoke grenades

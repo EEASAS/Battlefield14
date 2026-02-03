@@ -19,6 +19,54 @@
       - id: MagazineSubmachinegunMP5
         amount: 8
 
+# MARSOC
+
+- type: entity
+  id: ClothingBeltWebbingsNormalTanFilled68x52
+  parent: ClothingBeltWebbingsNormalTan
+  suffix: Filled, MARSOC rifleman, 6.8x52mm
+  components:
+  - type: StorageFill
+    contents:
+      - id: AmmoBox68x52mmCaseless
+      - id: Magazine68x52mmCaseless
+        amount: 7
+
+- type: entity
+  id: ClothingBeltWebbingsNormalBlackFilled68x52
+  parent: ClothingBeltWebbingsNormalBlack
+  suffix: Filled, MARSOC rifleman, 6.8x52mm
+  components:
+  - type: StorageFill
+    contents:
+      - id: AmmoBox68x52mmCaseless
+      - id: Magazine68x52mmCaseless
+        amount: 7
+
+- type: entity
+  id: ClothingBeltWebbingsNormalTanFilledMK48
+  parent: ClothingBeltWebbingsNormalTan
+  suffix: Filled, MARSOC autorifleman, MK48
+  components:
+  - type: StorageFill
+    contents:
+      - id: MagazineBeltBoxMK48
+        amount: 2
+      - id: MagazinePistolM9
+        amount: 2
+
+- type: entity
+  id: ClothingBeltWebbingsNormalBlackFilledMK48
+  parent: ClothingBeltWebbingsNormalBlack
+  suffix: Filled, MARSOC autorifleman, MK48
+  components:
+  - type: StorageFill
+    contents:
+      - id: MagazineBeltBoxMK48
+        amount: 2
+      - id: MagazinePistolM9
+        amount: 2
+
 # RU
 
 - type: entity

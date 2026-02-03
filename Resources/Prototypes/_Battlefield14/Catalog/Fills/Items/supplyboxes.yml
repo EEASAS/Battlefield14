@@ -43,6 +43,22 @@
       - MagazineBox9x19mmBig
 
 - type: entity
+  id: SupplyBoxAmmoUSFilledMarsoc
+  parent: SupplyBoxAmmoUS
+  suffix: MARSOC, Filled
+  components:
+  - type: ContainerFill
+    containers:
+      magazinebox:
+      - BoxMagazine68x52mmFMJ
+      magazinebox2:
+      - BoxMagazineMP7
+      ammobox:
+      - AmmoBox68x52mmCaselessBig
+      ammobox2:
+      - MagazineBox762x51Big
+
+- type: entity
   id: SupplyBoxAmmoRUFilled
   parent: SupplyBoxAmmoRU
   suffix: Russian, Filled

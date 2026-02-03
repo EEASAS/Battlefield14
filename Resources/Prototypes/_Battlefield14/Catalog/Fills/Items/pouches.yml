@@ -13,6 +13,37 @@
 #    - id: PillCanisterTramadol
 
 - type: entity
+  parent: PouchMedkit
+  id: PouchMedkitFilled
+  suffix: Filled
+  components:
+  - type: StorageFill
+    contents:
+      - id: HandheldHealthAnalyzerUnpowered
+      - id: MedicatedSuture
+      - id: RegenerativeMesh
+      - id: PillCanisterBicaridine
+      - id: PillCanisterKelotane
+      - id: PillCanisterTricordrazine
+#      - id: PillCanisterTramadol
+      - id: InaprovalineMedipen
+
+- type: entity
+  parent: PouchMedkit
+  id: PouchMedkitFilledMarsoc
+  suffix: Filled, Marsoc
+  components:
+  - type: StorageFill
+    contents:
+      - id: HandheldHealthAnalyzerUnpowered
+      - id: MedicatedSuture
+      - id: RegenerativeMesh
+      - id: BF14HyposprayFilledAdvanced
+#      - id: BF14HyposprayFilledOxycodone
+      - id: InaprovalineMedipen # BF14
+      - id: PillCanisterTricordrazine
+
+- type: entity
   parent: PouchMagsPistolLarge
   id: PouchMagsPistolLargeFilledMP5
   suffix: Filled, MP5
@@ -20,6 +51,16 @@
   - type: StorageFill
     contents:
     - id: MagazineSubmachinegunMP5
+      amount: 6
+
+- type: entity
+  parent: PouchMagsPistolLarge
+  id: PouchMagsPistolLargeFilledMP7
+  suffix: Filled, MP7
+  components:
+  - type: StorageFill
+    contents:
+    - id: MagazineSubmachinegunMP7
       amount: 6
 
 - type: entity

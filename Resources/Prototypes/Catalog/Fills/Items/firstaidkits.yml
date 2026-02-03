@@ -94,13 +94,13 @@
   components:
   - type: StorageFill # BF14
     contents:
+      - id: HandheldHealthAnalyzerUnpowered
       - id: BF14HyposprayFilledAdvanced
-#      - id: BF14HyposprayFilledOxycodone
       - id: MedicatedSuture
       - id: RegenerativeMesh
       - id: InaprovalineMedipen # BF14
       - id: BF14HyposprayFilledNanoblood # BF14
-      - id: PillCanisterTricordrazine
+#      - id: PillCanisterTramadol
 
 - type: entity
   id: MedkitCombatFilled

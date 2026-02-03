@@ -14,6 +14,20 @@
 - type: playTimeTracker
   id: JobUSMCRecon
 
+# USMC - MARSOC
+
+- type: playTimeTracker
+  id: JobMARSOCSquadLeader
+
+- type: playTimeTracker
+  id: JobMARSOCRifleman
+
+- type: playTimeTracker
+  id: JobMARSOCAutomaticRifleman
+
+- type: playTimeTracker
+  id: JobMARSOCMedic
+
 # USSF
 
 - type: playTimeTracker
