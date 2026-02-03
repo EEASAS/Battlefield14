@@ -239,8 +239,10 @@
   id: WeaponRifleRUAK74
   description: The communist response to the success of the M16.
   components:
-  - type: Sprite
+  - type: Item
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AK74.rsi
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AK74new.rsi
     layers:
       - state: base
         map: ["enum.GunVisualLayers.Base"]
@@ -454,8 +456,10 @@
   id: WeaponRifleRUAKMS
   description: The right arm of the enslaved world.
   components:
-  - type: Sprite
+  - type: Item
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AKMS.rsi
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AKMSnew.rsi
     layers:
       - state: base
         map: ["enum.GunVisualLayers.Base"]
