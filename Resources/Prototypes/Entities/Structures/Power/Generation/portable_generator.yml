@@ -33,11 +33,11 @@
             - MachineMask
           layer:
             - MachineLayer
-    - type: RadarBlip
-      visibleFromOtherGrids: true
-      radarColor: "#fcba03"
-      scale: 1
-      shape: square
+#    - type: RadarBlip BF14
+#      visibleFromOtherGrids: true
+#      radarColor: "#fcba03"
+#      scale: 1
+#      shape: square
 
     # Visuals
     - type: Appearance

@@ -265,6 +265,7 @@
         enum.WiresUiKey.Key:
           type: WiresBoundUserInterface
   - type: RadarConsole
+    maxRange: 1024 # BF14
     relativePanning: true
   - type: WorldLoader
     radius: 384 # Mono
@@ -303,11 +304,11 @@
   - type: ShipRepairable
     repairTime: 7
     repairCost: 25
-  - type: RadarBlip
-    visibleFromOtherGrids: true
-    radarColor: "#fc9403"
-    scale: 1.5
-    shape: diamond
+#  - type: RadarBlip BF14
+#    visibleFromOtherGrids: true
+#    radarColor: "#fc9403"
+#    scale: 1.5
+#    shape: diamond
 
 - type: entity
   parent: [BaseStructureComputerTabletop, ComputerGunneryConsole]

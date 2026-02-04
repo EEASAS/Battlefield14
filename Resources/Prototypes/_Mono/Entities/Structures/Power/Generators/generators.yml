@@ -213,11 +213,11 @@
   - type: ShipRepairable
     repairTime: 30
     repairCost: 100 # expensive
-  - type: RadarBlip
-    visibleFromOtherGrids: true
-    radarColor: "#fcba03"
-    scale: 2
-    shape: square
+#  - type: RadarBlip BF14
+#    visibleFromOtherGrids: true
+#    radarColor: "#fcba03"
+#    scale: 2
+#    shape: square
 
 - type: entity
   parent:
