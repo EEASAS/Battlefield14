@@ -33,3 +33,45 @@
       - SemiAuto
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/grenade_launcher.ogg
+
+- type: entity
+  name: M79 (Embiggened)
+  parent: WeaponFlareGun
+  id: WeaponGrenadeLauncherUSM79Big
+  description: An M79 grenade launcher big enough to fire 120mm cartridges. It's reccomended to prop it up on a rock or something before firing.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/GrenadeLaunchers/M79big.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+    scale: 1.5, 1.5
+  - type: Item
+    size: Huge
+    sprite: _Battlefield14/Objects/Weapons/Guns/GrenadeLaunchers/M79big.rsi
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/GrenadeLaunchers/M79big.rsi
+  - type: ChamberMagazineAmmoProvider
+    autoCycle: false
+    boltClosed: false
+    canRack: false
+    soundBoltClosed: /Audio/Weapons/Guns/Cock/revolver_cock.ogg
+    soundBoltOpened: /Audio/Weapons/Guns/Cock/revolver_cock.ogg
+  - type: ItemSlots
+    slots:
+      gun_chamber:
+        name: Chamber
+        priority: 1
+        whitelist:
+          tags:
+            - Cartridge120mm
+  - type: Wieldable
+    unwieldOnUse: false
+  - type: Gun
+    fireRate: 1
+    projectileSpeed: 40
+    selectedMode: SemiAuto
+    availableModes:
+      - SemiAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/grenade_launcher.ogg

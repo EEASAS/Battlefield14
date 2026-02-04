@@ -81,7 +81,7 @@
     maxIntensity: 200
     intensitySlope: 8
     totalIntensity: 400
-    canCreateVacuum: false
+    canCreateVacuum: true
   - type: TimerTriggerVisuals
     primingSound:
       path: "/Audio/_Battlefield14/Weapons/Grenades/trigger2.ogg"
