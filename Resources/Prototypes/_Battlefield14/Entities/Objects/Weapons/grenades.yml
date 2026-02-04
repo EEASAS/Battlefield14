@@ -74,7 +74,7 @@
     tags:
       - Grenade
   - type: Sprite
-    sprite: _Battlefield14/Objects/Weapons/Grenades/MK21.rsi
+    sprite: _Battlefield14/Objects/Weapons/Grenades/MK21StackTwo.rsi
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: Default
