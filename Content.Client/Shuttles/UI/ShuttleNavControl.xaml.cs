@@ -26,6 +26,7 @@ using Robust.Shared.Timing;
 // BF14
 using Content.Client.Stylesheets;
 using Content.Shared.Physics;
+using Robust.Client.Audio;
 using Robust.Client.UserInterface.Controls;
 using Robust.Shared.Physics.Collision.Shapes;
 using Robust.Shared.Physics.Systems;
@@ -42,6 +43,7 @@ public partial class ShuttleNavControl : BaseShuttleControl // Mono
     [Dependency] private readonly IUserInterfaceManager _uiManager = default!;
     private readonly DetectionSystem _detection; // Mono
     private readonly StationSystem _station; // Frontier
+    private readonly AudioSystem _audio; // BF14
     private readonly SharedShuttleSystem _shuttles;
     private readonly SharedTransformSystem _transform;
     private readonly RadarBlipsSystem _blips;
@@ -89,6 +91,8 @@ public partial class ShuttleNavControl : BaseShuttleControl // Mono
     public bool HasSonar = false;
     public Angle SonarWidth;
     public float SonarDistance;
+    // what fraction of the duration we spend drawing the ping animation
+    public float SonarPingFraction = 0.25f;
     public Color SonarColor = Color.Orange;
     public TimeSpan SonarDuration;
     public TimeSpan SonarCooldown;
@@ -129,6 +133,7 @@ public partial class ShuttleNavControl : BaseShuttleControl // Mono
         _transform = EntManager.System<SharedTransformSystem>();
         _station = EntManager.System<StationSystem>(); // Frontier
         _blips = EntManager.System<RadarBlipsSystem>();
+        _audio = EntManager.System<AudioSystem>(); // BF14
 
         OnMouseEntered += HandleMouseEntered;
         OnMouseExited += HandleMouseExited;
@@ -253,6 +258,7 @@ public partial class ShuttleNavControl : BaseShuttleControl // Mono
             && _consoleEntity is { } cons
             && EntManager.TryGetComponent<RadarConsoleComponent>(cons, out var radar))
         {
+            var wasDisabled = button.Disabled;
             if (radar.SonarLastPulse is { } pulse)
             {
                 var toRemove = new HashSet<EntityUid>();
@@ -274,6 +280,8 @@ public partial class ShuttleNavControl : BaseShuttleControl // Mono
                 button.Disabled = false;
                 label.Text = Loc.GetString("shuttle-console-sonar-ready-label");
             }
+            if (wasDisabled && !button.Disabled)
+                _audio.PlayLocal(radar.SonarCooledSound, cons, null);
         }
     }
 
@@ -482,6 +490,8 @@ public partial class ShuttleNavControl : BaseShuttleControl // Mono
         }
 
         radar.SonarLastPulse = _timing.CurTime;
+
+        _audio.PlayLocal(radar.SonarPingSound, cons, null);
     }
 
     protected override void Draw(DrawingHandleScreen handle)
@@ -526,8 +536,16 @@ public partial class ShuttleNavControl : BaseShuttleControl // Mono
         if (HasSonar && _sonarAngleSlider is { } slider && _consoleEntity is { } cons)
         {
             var segmentSize = Angle.FromDegrees(5);
-
             var sliderAngle = Angle.FromDegrees(slider.Value);
+            var pingPos = (float?)null;
+            if (EntManager.TryGetComponent<RadarConsoleComponent>(cons, out var radar)
+                && radar.SonarLastPulse is { } pulse)
+            {
+                var timeSince = _timing.CurTime - pulse;
+                var fractionSince = timeSince.TotalSeconds / SonarDuration.TotalSeconds;
+                var wantPingPos = (float)fractionSince / SonarPingFraction;
+                pingPos = wantPingPos > 1f ? null : wantPingPos;
+            }
 
             var worldToView = worldToShuttle * shuttleToView;
 
@@ -543,7 +561,7 @@ public partial class ShuttleNavControl : BaseShuttleControl // Mono
             var buffer = new Vector2[segments + 3];
             buffer[0] = center;
 
-            for (var i = 0; i < segments + 1; i++)
+            for (var i = 0; i <= segments; i++)
             {
                 var rotAngle = new Angle(segmentSize * i);
                 var vec = center + rotAngle.RotateVec(leftPoint);
@@ -553,6 +571,24 @@ public partial class ShuttleNavControl : BaseShuttleControl // Mono
             buffer[segments + 2] = center + halfWidth.RotateVec(relMidpoint);
 
             handle.DrawPrimitives(DrawPrimitiveTopology.LineLoop, buffer, SonarColor);
+
+            // also draw ping if applicable
+            if (pingPos is { } pingFrac)
+            {
+                pingFrac = MathF.Pow(pingFrac, 1.3f); // looks better
+
+                var pingLine = new Vector2[segments + 2];
+                for (var i = 0; i <= segments; i++)
+                {
+                    var rotAngle = new Angle(segmentSize * i);
+                    var vec = center + rotAngle.RotateVec(leftPoint * pingFrac);
+
+                    pingLine[i] = vec;
+                }
+                pingLine[segments + 1] = center + halfWidth.RotateVec(relMidpoint * pingFrac);
+
+                handle.DrawPrimitives(DrawPrimitiveTopology.LineStrip, pingLine, SonarColor);
+            }
         }
 
         // Draw our grid in detail

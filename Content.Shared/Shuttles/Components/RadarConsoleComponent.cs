@@ -1,6 +1,9 @@
 using Content.Shared.Shuttles.Systems;
 using Robust.Shared.GameStates;
 
+// BF14
+using Robust.Shared.Audio;
+
 namespace Content.Shared.Shuttles.Components;
 
 [RegisterComponent, NetworkedComponent, AutoGenerateComponentState]
@@ -54,9 +57,17 @@ public sealed partial class RadarConsoleComponent : Component
     [DataField]
     public bool HasSonar = false;
 
+    // <BF14>
     /// <summary>
-    /// BF14 - when we last pulsed sonar. Only updated on client.
+    /// When we last pulsed sonar. Only updated on client.
     /// </summary>
     [ViewVariables]
     public TimeSpan? SonarLastPulse = null;
+
+    [DataField]
+    public SoundSpecifier? SonarPingSound = new SoundPathSpecifier("/Audio/_Battlefield14/Effects/sonar_ping.ogg");
+
+    [DataField]
+    public SoundSpecifier? SonarCooledSound = new SoundPathSpecifier("/Audio/_Battlefield14/Effects/cool_over.ogg");
+    // </BF14>
 }
