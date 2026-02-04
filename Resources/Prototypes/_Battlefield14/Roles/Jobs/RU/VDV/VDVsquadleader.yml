@@ -71,8 +71,11 @@
     suitstorage: WeaponRifleRUAK12
     pocket1: PouchFirstAidFilled
     pocket2: PouchGrenadesFilledVDVRifleman
+    rightarmband: ClothingArmbandThighHolsterFilledRU
   storage:
     back:
     - Tourniquet
     - Zipties
     - ArmorPlateMedium
+    - MagazinePistolMP443
+    - MagazinePistolMP443

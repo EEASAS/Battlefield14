@@ -279,6 +279,7 @@
         - SurgeryTool
         - Dropper
         - GlassBeaker # BF14
+        - Tourniquet # BF14
       components:
         - Hypospray
         - Injector

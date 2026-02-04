@@ -71,8 +71,11 @@
     suitstorage: WeaponRifleUSM4A1
     pocket1: PouchFirstAidFilled
     pocket2: PouchGrenadesFilledUSMCRifleman
+    rightarmband: ClothingArmbandThighHolsterFilledUS
   storage:
     back:
     - Tourniquet
     - Zipties
     - ArmorPlateMedium
+    - MagazinePistolM9
+    - MagazinePistolM9

@@ -1,7 +1,7 @@
 - type: pointOfInterest
-  id: TSFMCHalcyon
+  id: USSBarackObama
   parent: [BasePOI, BaseRepairablePOI]
-  name: 'TSFMC Flagship Halcyon'
+  name: 'USS Barack Obama'
   minimumDistance: 3000 # Mono
   maximumDistance: 3000 # Mono
   spawnGamePreset: [ Battlefield14 , NFAdventure ]

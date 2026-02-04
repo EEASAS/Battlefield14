@@ -70,10 +70,11 @@
     back: ClothingBackpackRucksackTan
     suitstorage: WeaponSubmachinegunUSMP5
     pocket1: PouchMagsPistolLargeFilledMP5
-    pocket2: SyringeCaseFilledBF14
+    pocket2: PouchGrenadesFilledUSMCScout
   storage:
     back:
     - SupplyBoxMedicalFilled
     - DefibrillatorCompactBF
     - Tourniquet
     - Zipties
+    - SyringeCaseFilledBF14

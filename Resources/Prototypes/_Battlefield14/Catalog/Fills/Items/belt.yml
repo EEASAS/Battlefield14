@@ -247,9 +247,27 @@
       - id: ShipRepairDevice
 
 - type: entity
+  id: ClothingBeltMedicalEMTFilledBF14Basic
+  parent: ClothingBeltMedicalEMT
+  suffix: Filled, BF14, Basic
+  components:
+  - type: StorageFill
+    contents:
+      - id: HandheldHealthAnalyzerUnpowered
+      - id: Brutepack
+      - id: Ointment
+      - id: Gauze
+      - id: SyringeSaline
+      - id: SyringeInaprovaline
+      - id: PillCanisterTricordrazine
+      - id: PillCanisterDexalin
+      - id: Tourniquet
+        amount: 2
+
+- type: entity
   id: ClothingBeltMedicalEMTFilledBF14
   parent: ClothingBeltMedicalEMT
-  suffix: Filled, BF14
+  suffix: Filled, BF14, Combat medic
   components:
   - type: StorageFill
     contents:

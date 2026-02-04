@@ -68,8 +68,11 @@
     suitstorage: WeaponRifleUSM27IAR
     pocket1: PouchFirstAidFilled
     pocket2: PouchGrenadesFilledUSMCRifleman
+    rightarmband: ClothingArmbandThighHolsterFilledUS
   storage:
     back:
     - SupplyBoxAmmoUSFilled
     - Tourniquet
     - Zipties
+    - MagazinePistolM9
+    - MagazinePistolM9

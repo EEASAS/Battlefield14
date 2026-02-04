@@ -3,8 +3,8 @@
   id: BallisticGlasses
   components:
   - type: Reflect # Ballistic glasses are any glasses that have a small chance to deflect projectiles
-    spread: 270
     reflectProb: 0.01
+    spread: 270
 #    innate: true
     reflects:
     - Energy

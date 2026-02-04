@@ -92,7 +92,7 @@
   components:
   - type: StorageFill
     contents:
-    - id: MK21Handgrenade # Flashbangs
+    - id: USM84FlashBangHandgrenade
       amount: 3
     - id: USM18SmokeHandgrenade
       amount: 3
@@ -117,7 +117,7 @@
   components:
   - type: StorageFill
     contents:
-    - id: RURGD5Handgrenade # Zarya Flashbangs
+    - id: RUZaryaFlashBangHandgrenade
       amount: 3
     - id: RURDG2SmokeHandgrenade
       amount: 3

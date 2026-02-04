@@ -69,10 +69,11 @@
     neck: ClothingNeckIFFtapeWhite
     suitstorage: WeaponSubmachinegunRUVityaz
     pocket1: PouchMagsPistolLargeFilledVityaz
-    pocket2: SyringeCaseFilledBF14
+    pocket2: PouchGrenadesFilledVDVScout
   storage:
     back:
     - SupplyBoxMedicalFilled
     - DefibrillatorCompactBF
     - Tourniquet
     - Zipties
+    - SyringeCaseFilledBF14
