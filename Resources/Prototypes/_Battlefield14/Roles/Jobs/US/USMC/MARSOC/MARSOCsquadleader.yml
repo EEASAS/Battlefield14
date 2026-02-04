@@ -89,6 +89,7 @@
     - ShellBoxBF12GaugeBreaching
     - MagazinePistolM9
     - MagazinePistolM9
+    - CrowbarRed
 
 - type: startingGear
   id: MARSOCSquadLeaderGearEVA
@@ -119,4 +120,5 @@
     - MagazinePistolM9
     - MagazinePistolM9
     - DoubleEmergencyOxygenTankFilled
+    - CrowbarRed
 

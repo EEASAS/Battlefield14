@@ -85,6 +85,7 @@
     - SupplyBoxAmmoUSFilledMarsoc # Marsoc variant with bulk 7.62x51 and 6.8x52, and MP7 mags
     - Tourniquet
     - Zipties
+    - CrowbarRed
 
 - type: startingGear
   id: MARSOCAutomaticRiflemanGearEVA
@@ -110,3 +111,5 @@
     - SupplyBoxAmmoUSFilledMarsoc # Marsoc variant with bulk 7.62x51 and 6.8x52, and MP7 mags
     - Tourniquet
     - Zipties
+    - DoubleEmergencyOxygenTankFilled
+    - CrowbarRed

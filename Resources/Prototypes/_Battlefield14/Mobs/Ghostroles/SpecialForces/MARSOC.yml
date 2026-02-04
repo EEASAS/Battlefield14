@@ -101,6 +101,8 @@
     rules: ghost-role-information-marsoc-rules-bf14
     raffle:
       settings: short
+  - type: SurgerySpeedModifier
+    speedModifier: 2.25
 
 ## OUT OF ATMOSPHERE / SPACE
 
@@ -167,3 +169,5 @@
     rules: ghost-role-information-marsoc-rules-bf14
     raffle:
       settings: short
+  - type: SurgerySpeedModifier
+    speedModifier: 2.25

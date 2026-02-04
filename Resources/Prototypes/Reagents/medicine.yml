@@ -504,7 +504,7 @@
         probability: 0.3
 
 - type: reagent
-  id: Inaprovaline
+  id: Inaprovaline # Notice: heavily modified for BF14
   name: reagent-name-inaprovaline
   group: Medicine
   desc: reagent-desc-inaprovaline
@@ -534,6 +534,30 @@
             Burn: -1
       - !type:ModifyBleedAmount
         amount: -0.25
+      - !type:MovespeedModifier
+        conditions:
+        - !type:ReagentThreshold
+          min: 30.5
+        walkSpeedModifier: 0.6
+        sprintSpeedModifier: 0.5
+      - !type:Paralyze
+        conditions:
+        - !type:ReagentThreshold
+          min: 30.5
+        probability: 0.4
+        paralyzeTime: 2
+      - !type:Jitter
+        conditions:
+        - !type:ReagentThreshold
+          min: 30.5
+      - !type:GenericStatusEffect
+        conditions:
+        - !type:ReagentThreshold
+          min: 50.5
+        key: ForcedSleep
+        component: ForcedSleeping
+        refresh: false
+        type: Add
 
 - type: reagent
   id: Kelotane # Notice: heavily modified for BF14

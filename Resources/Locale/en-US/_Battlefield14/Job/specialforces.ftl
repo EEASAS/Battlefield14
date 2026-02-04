@@ -1,7 +1,7 @@
-job-name-marsoc-squadleader = MARSOC Fireteam Leader
-job-name-marsoc-rifleman = MARSOC Rifleman
-job-name-marsoc-automatic-rifleman = MARSOC Automatic Rifleman
-job-name-marsoc-medic = MARSOC Corpsman
+job-name-marsoc-squadleader = Marine Raiders Fireteam Leader
+job-name-marsoc-rifleman = Marine Raider Rifleman
+job-name-marsoc-automatic-rifleman = Marine Raider Automatic Rifleman
+job-name-marsoc-medic = Marine Raider Corpsman
 
 job-description-marsoc-squadleader = Coordinate optimal Russian shooting.
 job-description-marsoc-rifleman = Shoot Russians.

@@ -88,6 +88,7 @@
     - WeaponGrenadeLauncherUSM320
     - MagazinePistolM9
     - MagazinePistolM9
+    - CrowbarRed
 
 - type: startingGear
   id: MARSOCRiflemanGearEVA
@@ -118,3 +119,4 @@
     - MagazinePistolM9
     - MagazinePistolM9
     - DoubleEmergencyOxygenTankFilled
+    - CrowbarRed
