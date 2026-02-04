@@ -48,9 +48,9 @@
       - !type:PlaySoundBehavior
         sound:
           collection: MetalBreak
-  - type: RadarBlip
-    radarColor: "#FF0000"
-    scale: 2
+#  - type: RadarBlip
+#    radarColor: "#FF0000"
+#    scale: 2
   - type: ShipGunType
     shipType: Missile
   - type: ShipGunClass
