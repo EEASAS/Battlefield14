@@ -1,7 +1,7 @@
 # TOW3 Missile System Launcher
 - type: entity
   id: WeaponTurretTOW3
-  name: TOW3 Missile System
+  name: TOW-3 Missile System
   parent: BattlefieldArtilleryCartridge
   description: A third generation, wire-guided anti-armor missile system adapted for naval remote launch platforms. Primarily fielded by U.S. vessels and select NATO allies. Highly effective against armored targets at range. Does not rotate.
   components:
@@ -47,9 +47,9 @@
       - !type:PlaySoundBehavior
         sound:
           collection: MetalBreak
-  - type: RadarBlip
-    radarColor: "#FCBA03"
-    scale: 2
+#  - type: RadarBlip
+#    radarColor: "#FCBA03"
+#    scale: 2
   - type: ShipGunType
     shipType: Missile
   - type: ShipGunClass
@@ -57,7 +57,7 @@
 
 - type: entity
   id: TOW3Cartridge
-  name: cartridge (TOW3)
+  name: cartridge (TOW-3)
   parent: BaseCartridge
   components:
   - type: Tag
