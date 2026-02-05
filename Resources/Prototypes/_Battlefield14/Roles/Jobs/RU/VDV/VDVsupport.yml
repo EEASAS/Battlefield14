@@ -36,6 +36,8 @@
     - type: NpcFactionMember
       factions:
       - VDV
+  - !type:AddImplantSpecial
+    implants: [ TrackingImplantPACTRU ]
   #     # COMMENTED OUT: ChatRank and HullrotFaction not supported
   #     # - type: ChatRank
   #     #   rank: BF-rank-corporal

@@ -38,6 +38,8 @@
       - USMC
     - type: SurgerySpeedModifier
       SpeedModifier: 2.25
+  - !type:AddImplantSpecial
+    implants: [ TrackingImplantNATOUS ]
   # - !type:AddComponentSpecial
   #   components:
   #     # COMMENTED OUT: ChatRank and HullrotFaction not supported

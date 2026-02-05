@@ -38,6 +38,8 @@
     - type: NpcFactionMember
       factions:
       - VDV
+  - !type:AddImplantSpecial
+    implants: [ TrackingImplantPACTRU ]
   # - !type:AddComponentSpecial
   #   components:
   #     # COMMENTED OUT: ChatRank and HullrotFaction not supported

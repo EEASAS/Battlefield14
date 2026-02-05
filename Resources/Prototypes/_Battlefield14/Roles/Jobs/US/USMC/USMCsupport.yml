@@ -36,6 +36,8 @@
     - type: NpcFactionMember
       factions:
       - USMC
+  - !type:AddImplantSpecial
+    implants: [ TrackingImplantNATOUS ]
   # COMMENTED OUT: AddComponentSpecial requires at least one component, but all components are commented out
   # - !type:AddComponentSpecial
   #   components:

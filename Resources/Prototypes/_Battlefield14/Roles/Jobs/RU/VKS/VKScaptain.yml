@@ -33,6 +33,8 @@
     languagesUnderstood:
     - Russian
     - Esperanto
+  - !type:AddImplantSpecial
+    implants: [ TrackingImplantPACTRU ]
   # - !type:AddComponentSpecial
   #   components:
   #     # COMMENTED OUT: ChatRank and HullrotFaction not supported
