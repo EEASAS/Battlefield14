@@ -19,6 +19,21 @@
 
 - type: entity
   parent: BaseSubdermalImplant
+  id: TranslatorImplantEnglish
+  name: English translator implant
+  description: An implant giving the ability to understand and speak English.
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: TranslatorImplant
+    understood:
+    - English
+    spoken:
+    - English
+    requires:
+    - Sign
+
+- type: entity
+  parent: BaseSubdermalImplant
   id: TrackingImplantPACTRU
   name: Russian Ground Forces tracking implant
   description: This implant has a condition monitor tuned for Russian comms channels.
@@ -35,3 +50,19 @@
     - type: Rattle
       radioChannel: "RURadio"
       language: "Russian"
+
+- type: entity
+  parent: BaseSubdermalImplant
+  id: TranslatorImplantRussian
+  name: Russian translator implant
+  description: An implant giving the ability to understand and speak Russian.
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: TranslatorImplant
+    understood:
+    - Russian
+    # - Ukrainian
+    spoken:
+    - Russian
+    requires:
+    - Sign
