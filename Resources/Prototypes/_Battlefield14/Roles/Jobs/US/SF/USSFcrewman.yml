@@ -8,9 +8,6 @@
     # - !type:CharacterSpeciesRequirement
     #   species:
     #     - Human
-    # COMMENTED OUT: FactionRequirement not supported (faction system not implemented)
-    # - !type:FactionRequirement
-    #   factionID: "NATO"
     - !type:TraitsRequirement
       inverted: true
       traits:
