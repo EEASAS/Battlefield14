@@ -76,8 +76,9 @@
     rightarmband: ClothingArmbandThighHolsterFilledUS
   storage:
     back:
+    - ArmorPlateMedium
+    - ClothingMaskGasM40
+    - MagazinePistolM9
+    - MagazinePistolM9
     - Tourniquet
     - Zipties
-    - ArmorPlateMedium
-    - MagazinePistolM9
-    - MagazinePistolM9

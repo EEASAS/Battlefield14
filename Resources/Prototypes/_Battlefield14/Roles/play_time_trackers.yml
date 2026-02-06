@@ -30,6 +30,20 @@
 - type: playTimeTracker
   id: JobMARSOCMedic
 
+# USMC - HECU
+
+- type: playTimeTracker
+  id: JobHECUSquadLeader
+
+- type: playTimeTracker
+  id: JobHECURifleman
+
+- type: playTimeTracker
+  id: JobHECUSupport
+
+- type: playTimeTracker
+  id: JobHECUMedic
+
 # USSF
 
 - type: playTimeTracker

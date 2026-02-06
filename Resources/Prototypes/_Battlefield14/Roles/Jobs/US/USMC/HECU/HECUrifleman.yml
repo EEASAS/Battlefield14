@@ -1,8 +1,8 @@
 - type: job
-  id: USMCAutomaticRifleman
-  name: job-name-usmc-automatic-rifleman
-  description: job-description-usmc-automatic-rifleman
-  playTimeTracker: JobUSMCAutomaticRifleman
+  id: HECURifleman
+  name: job-name-hecu-rifleman
+  description: job-description-hecu-rifleman
+  playTimeTracker: JobHECURifleman
   requirements:
     # COMMENTED OUT: CharacterSpeciesRequirement not supported (species requirement system not implemented)
     # - !type:CharacterSpeciesRequirement
@@ -18,10 +18,10 @@
         - Blindness
         - Pacifist
         - WheelchairBound
-  weight: 76
-  startingGear: USMCAutomaticRiflemanGear
+  weight: 77
+  startingGear: USMCRiflemanGear
   alwaysUseSpawner: true
-  icon: "JobIconNATOSupport"
+  icon: "JobIconNATORifleman"
   requireAdminNotify: false
   supervisors: job-supervisors-usgov
   canBeAntag: false
@@ -38,12 +38,11 @@
       - USMC
   - !type:AddImplantSpecial
     implants: [ TrackingImplantNATOUS ]
-  # COMMENTED OUT: AddComponentSpecial requires at least one component, but all components are commented out
   # - !type:AddComponentSpecial
   #   components:
   #     # COMMENTED OUT: ChatRank and HullrotFaction not supported
   #     # - type: ChatRank
-  #     #   rank: BF-rank-corporal
+  #     #   rank: BF-rank-private
   access:
   - Maintenance
   - Service
@@ -56,27 +55,31 @@
   - NATOArmory
 
 - type: startingGear
-  id: USMCAutomaticRiflemanGear
+  id: HECURiflemanGear
   equipment:
-    id: USMCAutomaticRiflemanPDA
+    id: HECURiflemanPDA
     ears: ClothingHeadsetAltUS
-    belt: ClothingBeltMilitaryWebbingUSFilledSTANAG
-    jumpsuit: ClothingUniformJumpsuitCamoUS
-    head: ClothingHeadHatHelmetUSRiot
-    eyes: ClothingEyesGogglesTan
-    outerClothing: ClothingOuterArmorPlateCarrierTan
+    belt: ClothingBeltMilitaryWebbingUSFilledMP5
+    jumpsuit: ClothingUniformJumpsuitCombatSuitUrbanWhite
+    head: ClothingHeadHatHelmetUSUrban
+#    eyes: ClothingEyesGogglesTan
+    mask: ClothingMaskGasM40Green
+    gloves: ClothingHandsGlovesCombat
+    outerClothing: ClothingOuterArmorPCV
     shoes: ClothingShoesBootsJackFilled
-    back: ClothingBackpackRucksackTan
-    suitstorage: WeaponRifleUSM27IAR
+    back: ClothingBackpackMercenary
+    suitstorage: WeaponSubmachinegunUSMP5
     pocket1: PouchFirstAidFilled
     pocket2: PouchGrenadesFilledUSMCRifleman
-    rightarmband: ClothingArmbandThighHolsterFilledUS
+    leftarmband: Tourniquet
   storage:
     back:
-    - SupplyBoxAmmoUSFilled
-    - MagazinePistolM9
-    - MagazinePistolM9
-    - ClothingMaskGasM40
+    - WeaponGrenadeLauncherUSM320
+    - CrowbarRed
+    - PowerCellPCV
+    - Cartridge40x46mmHE
+    - Cartridge40x46mmHE
+    - Cartridge40x46mmHE
+    - Cartridge40x46mmHE
     - Tourniquet
     - Zipties
-

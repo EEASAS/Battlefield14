@@ -1,8 +1,8 @@
 - type: job
-  id: USMCAutomaticRifleman
-  name: job-name-usmc-automatic-rifleman
-  description: job-description-usmc-automatic-rifleman
-  playTimeTracker: JobUSMCAutomaticRifleman
+  id: HECUSquadLeader
+  name: job-name-hecu-squadleader
+  description: job-description-hecu-squadleader
+  playTimeTracker: JobHECUSquadLeader
   requirements:
     # COMMENTED OUT: CharacterSpeciesRequirement not supported (species requirement system not implemented)
     # - !type:CharacterSpeciesRequirement
@@ -11,6 +11,8 @@
     # COMMENTED OUT: FactionRequirement not supported (faction system not implemented)
     # - !type:FactionRequirement
     #   factionID: "NATO"
+#    - !type:SexRequirement # Not implemented
+#      sex: Male
     - !type:TraitsRequirement
       inverted: true
       traits:
@@ -18,10 +20,10 @@
         - Blindness
         - Pacifist
         - WheelchairBound
-  weight: 76
-  startingGear: USMCAutomaticRiflemanGear
+  weight: 78
+  startingGear: HECUSquadLeaderGear
   alwaysUseSpawner: true
-  icon: "JobIconNATOSupport"
+  icon: "JobIconNATOSquadleader"
   requireAdminNotify: false
   supervisors: job-supervisors-usgov
   canBeAntag: false
@@ -29,8 +31,10 @@
   - !type:AddLanguageSpecial
     languagesSpoken:
     - English
+    - Esperanto
     languagesUnderstood:
     - English
+    - Esperanto
   - !type:AddComponentSpecial
     components:
     - type: NpcFactionMember
@@ -38,12 +42,10 @@
       - USMC
   - !type:AddImplantSpecial
     implants: [ TrackingImplantNATOUS ]
-  # COMMENTED OUT: AddComponentSpecial requires at least one component, but all components are commented out
-  # - !type:AddComponentSpecial
   #   components:
   #     # COMMENTED OUT: ChatRank and HullrotFaction not supported
   #     # - type: ChatRank
-  #     #   rank: BF-rank-corporal
+  #     #   rank: BF-rank-sergeant
   access:
   - Maintenance
   - Service
@@ -51,32 +53,40 @@
   - Mercenary # Frontier
   - Captain # Frontier
   - NATOCommon
+  - NATOCommand
   - NATOMaintenance
   - NATOSoldier
   - NATOArmory
 
 - type: startingGear
-  id: USMCAutomaticRiflemanGear
+  id: HECUSquadLeaderGear
   equipment:
-    id: USMCAutomaticRiflemanPDA
+    id: USMCSquadLeaderPDA
     ears: ClothingHeadsetAltUS
     belt: ClothingBeltMilitaryWebbingUSFilledSTANAG
-    jumpsuit: ClothingUniformJumpsuitCamoUS
-    head: ClothingHeadHatHelmetUSRiot
-    eyes: ClothingEyesGogglesTan
-    outerClothing: ClothingOuterArmorPlateCarrierTan
+    jumpsuit: ClothingUniformJumpsuitCombatSuitUrbanWhite
+    head: ClothingHeadHatBeret
+#    eyes: ClothingEyesGogglesTan
+    gloves: ClothingHandsGlovesCombat
+    outerClothing: ClothingOuterArmorPCV
     shoes: ClothingShoesBootsJackFilled
-    back: ClothingBackpackRucksackTan
-    suitstorage: WeaponRifleUSM27IAR
+    back: ClothingBackpackMercenary
+    suitstorage: WeaponRifleUSM4A1
     pocket1: PouchFirstAidFilled
     pocket2: PouchGrenadesFilledUSMCRifleman
     rightarmband: ClothingArmbandThighHolsterFilledUS
+    leftarmband: Tourniquet
   storage:
     back:
-    - SupplyBoxAmmoUSFilled
+    - WeaponCapacitorRechargerFlatpack
+    - WeaponGrenadeLauncherUSM320
     - MagazinePistolM9
     - MagazinePistolM9
+    - CrowbarRed
+    - PowerCellPCV
     - ClothingMaskGasM40
+    - Cartridge40x46mmHE
+    - Cartridge40x46mmHE
+    - Cartridge40x46mmHE
     - Tourniquet
     - Zipties
-

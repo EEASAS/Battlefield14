@@ -30,16 +30,6 @@
     languagesUnderstood:
     - English
     - Esperanto
-#  - !type:AddComponentSpecial
-#    components:
-#    - type: NpcFactionMember
-#      factions:
-#      - USMC
-  # - !type:AddComponentSpecial
-  #   components:
-  #     # COMMENTED OUT: ChatRank and HullrotFaction not supported
-  #     # - type: ChatRank
-  #     #   rank: BF-rank-private
   access:
   - Maintenance
   - Service

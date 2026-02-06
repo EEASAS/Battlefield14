@@ -1,0 +1,141 @@
+- type: job
+  id: HECUSupport
+  name: job-name-usmc-automatic-rifleman
+  description: job-description-usmc-automatic-rifleman
+  playTimeTracker: JobHECUSupport
+  requirements:
+    # COMMENTED OUT: CharacterSpeciesRequirement not supported (species requirement system not implemented)
+    # - !type:CharacterSpeciesRequirement
+    #   species:
+    #     - Human
+    # COMMENTED OUT: FactionRequirement not supported (faction system not implemented)
+    # - !type:FactionRequirement
+    #   factionID: "NATO"
+    - !type:TraitsRequirement
+      inverted: true
+      traits:
+        - Muted
+        - Blindness
+        - Pacifist
+        - WheelchairBound
+  weight: 76
+  startingGear: HECUSupportGear
+  alwaysUseSpawner: true
+  icon: "JobIconNATOEngineer"
+  requireAdminNotify: false
+  supervisors: job-supervisors-usgov
+  canBeAntag: false
+  special:
+  - !type:AddLanguageSpecial
+    languagesSpoken:
+    - English
+    languagesUnderstood:
+    - English
+  - !type:AddComponentSpecial
+    components:
+    - type: NpcFactionMember
+      factions:
+      - USMC
+  - !type:AddImplantSpecial
+    implants: [ TrackingImplantNATOUS ]
+  # COMMENTED OUT: AddComponentSpecial requires at least one component, but all components are commented out
+  # - !type:AddComponentSpecial
+  #   components:
+  #     # COMMENTED OUT: ChatRank and HullrotFaction not supported
+  #     # - type: ChatRank
+  #     #   rank: BF-rank-corporal
+  access:
+  - Maintenance
+  - Service
+  - External
+  - Mercenary # Frontier
+  - Captain # Frontier
+  - NATOCommon
+  - NATOMaintenance
+  - NATOSoldier
+  - NATOArmory
+
+- type: startingGear
+  id: HECUSupportGear
+  equipment:
+    id: HECUSupportPDA
+    ears: ClothingHeadsetAltUS
+    belt: ClothingBeltMilitaryWebbingUSFilled12GaugeBuckSlugBreach
+    jumpsuit: ClothingUniformJumpsuitCombatSuitUrbanWhite
+    balaclava: ClothingBalaclavaMilitary
+    eyes: ClothingEyesGogglesGreen
+    gloves: ClothingHandsGlovesCombat
+    outerClothing: ClothingOuterArmorPCV
+    shoes: ClothingShoesBootsJackFilled
+    back: ClothingBackpackMercenary
+    suitstorage: WeaponShotgunUSM870
+    pocket1: PouchFirstAidFilled
+    pocket2: PouchGrenadesFilledUSMCRifleman
+    leftarmband: Tourniquet
+  storage:
+    back:
+    - SupplyBoxAmmoUSFilled
+    - Tourniquet
+    - Zipties
+    - CrowbarRed
+    - Wrench
+    - Screwdriver
+    - Wirecutter
+    - WelderIndustrial
+    - Multitool
+    - ClothingMaskGasM40
+
+- type: startingGear
+  id: HECUSupportM249Gear
+  equipment:
+    id: HECUSupportPDA
+    ears: ClothingHeadsetAltUS
+    belt: ClothingBeltMilitaryWebbingUSFilledM249
+    jumpsuit: ClothingUniformJumpsuitCombatSuitUrbanWhite
+    balaclava: ClothingBalaclavaMilitary
+    eyes: ClothingEyesGogglesGreen
+    gloves: ClothingHandsGlovesCombat
+    outerClothing: ClothingOuterArmorPCV
+    shoes: ClothingShoesBootsJackFilled
+    back: ClothingBackpackMercenary
+    suitstorage: WeaponMachineGunUSM249Para
+    pocket1: PouchFirstAidFilled
+    pocket2: PouchGrenadesFilledUSMCRifleman
+    leftarmband: Tourniquet
+    rightarmband: ClothingArmbandThighHolsterFilledUS
+  storage:
+    back:
+    - SupplyBoxAmmoUSFilled
+    - Tourniquet
+    - Zipties
+    - CrowbarRed
+    - WelderIndustrial
+    - ClothingMaskGasM40
+
+- type: startingGear
+  id: HECUSupportSMAWGear
+  equipment:
+    id: HECUSupportPDA
+    ears: ClothingHeadsetAltUS
+    belt: ClothingBeltMilitaryWebbingUSFilledSMAW
+    jumpsuit: ClothingUniformJumpsuitCombatSuitUrbanWhite
+    balaclava: ClothingBalaclavaMilitary
+    eyes: ClothingEyesGogglesGreen
+    gloves: ClothingHandsGlovesCombat
+    outerClothing: ClothingOuterArmorPCV
+    shoes: ClothingShoesBootsJackFilled
+    back: ClothingBackpackMercenary
+    suitstorage: WeaponLauncherUSSMAW
+    pocket1: PouchMagsPistolLargeFilledMP5
+    pocket2: PouchFirstAidFilled
+    leftarmband: Tourniquet
+    rightarmband: Tourniquet
+  storage:
+    back:
+    - WeaponSubmachinegunUSMP5
+    - CartridgeSMAWHEDM
+    - ClothingMaskGasM40
+    - CartridgeSMAWHEDM
+    - CartridgeSMAWNE
+    - CartridgeSMAWHEAA
+    - CrowbarRed

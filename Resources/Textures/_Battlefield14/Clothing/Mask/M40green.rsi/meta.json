@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Icon Taken from Civ13 at commit https://github.com/SepuIka/Civ13/commit/dc3fb7528dd2d209eb1a7d323a3d8c213cd7387d, worn edited by JoeHammad1844 from Jackal298 based on the sprite from tgstation at commit https://github.com/tgstation/tgstation/commit/4f6190e2895e09116663ef282d3ce1d8b35c032e",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "icon"
+    },
+    {
+      "name": "equipped-MASK",
+      "directions": 4
+    }
+  ]
+}

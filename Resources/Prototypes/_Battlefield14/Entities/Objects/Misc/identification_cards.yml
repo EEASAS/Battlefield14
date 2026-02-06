@@ -130,6 +130,64 @@
   - type: PresetIdCard
     job: MARSOCMedic
 
+# HECU
+
+- type: entity
+  parent: IDCardStandard
+  id: HECUSquadLeaderIDCard
+  name: HECU ID card
+  suffix: fireteam leader
+  components:
+  - type: Sprite
+    layers:
+    - state: silver
+  - type: Item
+    heldPrefix: silver
+  - type: PresetIdCard
+    job: HECUSquadLeader
+
+- type: entity
+  parent: IDCardStandard
+  id: HECURiflemanIDCard
+  name: HECU ID card
+  suffix: rifleman
+  components:
+  - type: Sprite
+    layers:
+    - state: silver
+  - type: Item
+    heldPrefix: silver
+  - type: PresetIdCard
+    job: HECURifleman
+
+- type: entity
+  parent: IDCardStandard
+  id: HECUSupportIDCard
+  name: HECU ID card
+  suffix: support
+  components:
+  - type: Sprite
+    layers:
+    - state: silver
+  - type: Item
+    heldPrefix: silver
+  - type: PresetIdCard
+    job: HECUSupport
+
+- type: entity
+  parent: IDCardStandard
+  id: HECUMedicIDCard
+  name: HECU ID card
+  suffix: corpsman
+  components:
+  - type: Sprite
+    layers:
+    - state: silver
+  - type: Item
+    heldPrefix: silver
+  - type: PresetIdCard
+    job: HECUMedic
+
 # USSF
 
 - type: entity

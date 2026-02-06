@@ -1,8 +1,8 @@
 - type: job
-  id: USMCAutomaticRifleman
-  name: job-name-usmc-automatic-rifleman
-  description: job-description-usmc-automatic-rifleman
-  playTimeTracker: JobUSMCAutomaticRifleman
+  id: HECUMedic
+  name: job-name-usmc-medic
+  description: job-description-usmc-medic
+  playTimeTracker: JobHECUMedic
   requirements:
     # COMMENTED OUT: CharacterSpeciesRequirement not supported (species requirement system not implemented)
     # - !type:CharacterSpeciesRequirement
@@ -18,10 +18,10 @@
         - Blindness
         - Pacifist
         - WheelchairBound
-  weight: 76
-  startingGear: USMCAutomaticRiflemanGear
+  weight: 75
+  startingGear: HECUMedicGear
   alwaysUseSpawner: true
-  icon: "JobIconNATOSupport"
+  icon: "JobIconNATOMedic"
   requireAdminNotify: false
   supervisors: job-supervisors-usgov
   canBeAntag: false
@@ -36,9 +36,10 @@
     - type: NpcFactionMember
       factions:
       - USMC
+    - type: SurgerySpeedModifier
+      SpeedModifier: 1.65
   - !type:AddImplantSpecial
     implants: [ TrackingImplantNATOUS ]
-  # COMMENTED OUT: AddComponentSpecial requires at least one component, but all components are commented out
   # - !type:AddComponentSpecial
   #   components:
   #     # COMMENTED OUT: ChatRank and HullrotFaction not supported
@@ -52,31 +53,35 @@
   - Captain # Frontier
   - NATOCommon
   - NATOMaintenance
+  - NATOMedical
   - NATOSoldier
   - NATOArmory
 
 - type: startingGear
-  id: USMCAutomaticRiflemanGear
+  id: HECUMedicGear
   equipment:
-    id: USMCAutomaticRiflemanPDA
+    id: HECUMedicPDA
     ears: ClothingHeadsetAltUS
-    belt: ClothingBeltMilitaryWebbingUSFilledSTANAG
-    jumpsuit: ClothingUniformJumpsuitCamoUS
-    head: ClothingHeadHatHelmetUSRiot
-    eyes: ClothingEyesGogglesTan
-    outerClothing: ClothingOuterArmorPlateCarrierTan
+    belt: ClothingBeltMedicalEMTFilledBF14
+    jumpsuit: ClothingUniformJumpsuitCombatSuitUrbanWhite
+    head: ClothingHeadHatHelmetUSUrban
+    eyes: ClothingEyesHudMedicalBF
+    outerClothing: ClothingOuterArmorPCV
     shoes: ClothingShoesBootsJackFilled
-    back: ClothingBackpackRucksackTan
-    suitstorage: WeaponRifleUSM27IAR
-    pocket1: PouchFirstAidFilled
-    pocket2: PouchGrenadesFilledUSMCRifleman
-    rightarmband: ClothingArmbandThighHolsterFilledUS
+    gloves: ClothingHandsGlovesLatex
+    back: ClothingBackpackMercenary
+    suitstorage: WeaponSubmachinegunUSMP5
+    pocket1: PouchMagsPistolLargeFilledMP5
+    pocket2: PouchGrenadesFilledUSMCScout
+    leftarmband: Tourniquet
   storage:
     back:
-    - SupplyBoxAmmoUSFilled
-    - MagazinePistolM9
-    - MagazinePistolM9
+    - SupplyBoxMedicalFilled
+    - DefibrillatorCompactBF
+    - MedkitAdvancedFilled
+    - CrowbarRed
     - ClothingMaskGasM40
+    - SyringeCaseFilledBF14
+    - PillCanisterHyronalin
     - Tourniquet
     - Zipties
-

@@ -30,18 +30,6 @@
     - English
   - !type:AddImplantSpecial
     implants: [ TrackingImplantNATOUS ]
-  # - !type:AddComponentSpecial
-  #   components:
-  #     # COMMENTED OUT: ChatRank and HullrotFaction not supported
-  #     # - type: ChatRank
-  #     #   rank: BF-rank-private
-  #     # - type: HullrotFaction
-  #     #   faction: USSF
-  #     # - type: LanguageAdder
-  #     #   addSpoken:
-  #     #     - English
-  #     #   addUnderstood:
-  #     #     - English
   access:
   - Maintenance
   - Service

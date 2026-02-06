@@ -72,5 +72,6 @@
     pocket2: PouchGrenadesFilledUSMCScout
   storage:
     back:
+    - ClothingMaskGasM40
     - Tourniquet
     - Zipties
