@@ -10,18 +10,43 @@
     sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/uscamo.rsi
   - type: Clothing
     sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/uscamo.rsi
+  - type: Faction
+    factionId: "Nato"
 
 - type: entity
   parent: ClothingUniformJumpsuitMilitaryGenetics
   id: ClothingUniformJumpsuitSpaceForceCrewman
   name: USSF crewman uniform
   description: A full uniform for crew aboard United States Space Force vessels.
+- type: Faction
+  factionId: "Nato"
 
 - type: entity
   parent: ClothingUniformJumpsuitMilitaryCaptain # TODO better/unique sprites
   id: ClothingUniformJumpsuitSpaceForceCaptain
   name: USSF captain uniform
   description: A full uniform for captains aboard United States Space Force vessels.
+- type: Faction
+  factionId: "Nato"
+
+- type: entity
+  parent: ClothingUniformJumpsuitCombatSuitUrbanWhite
+  id: bf14hecu
+  name: white urban combat uniform
+  description: Misko camouflaged combat suit. Camo in space... This one has been lightly used and retain its original camo.
+  components:
+  - type: StaticPrice
+    price: 700
+    vendPrice: 1150
+  - type: Sprite
+    sprite: _Mono/Clothing/Uniforms/Jumpsuit/combat-suits/white_urban.rsi
+  - type: Clothing
+    sprite: _Mono/Clothing/Uniforms/Jumpsuit/combat-suits/white_urban.rsi
+  - type: SuitSensor
+    randomMode: false
+    mode: SensorVitals
+- type: Faction
+  factionId: "Nato"
 
 # RU
 
@@ -35,6 +60,8 @@
     sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/rucamo.rsi
   - type: Clothing
     sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/rucamo.rsi
+  - type: Faction
+    factionId: "Warpact"
 
 - type: entity
   parent: ClothingUniformBase
@@ -46,18 +73,24 @@
     sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/emrcamo.rsi
   - type: Clothing
     sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/emrcamo.rsi
+  - type: Faction
+    factionId: "Warpact"
 
 - type: entity
   parent: ClothingUniformJumpsuitMilitaryColorGrey
   id: ClothingUniformJumpsuitVKSCrewman
   name: VKS crewman uniform
   description: A full uniform for crew aboard Russian Aerospace Forces vessels.
+  - type: Faction
+    factionId: "Warpact"
 
 - type: entity
   parent: ClothingUniformJumpsuitMilitaryCaptain # TODO better/unique sprites
   id: ClothingUniformJumpsuitVKSCaptain
   name: VKS captain uniform
   description: A full uniform for captains aboard Russian Aerospace Forces vessels.
+  - type: Faction
+    factionId: "Warpact"
 
 # MISC
 
