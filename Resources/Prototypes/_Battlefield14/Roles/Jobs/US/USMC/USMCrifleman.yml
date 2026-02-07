@@ -71,6 +71,8 @@
     pocket2: PouchGrenadesFilledUSMCRifleman
   storage:
     back:
+    - ArmorPlateMedium
+    - ClothingMaskGasM40
+    - FlashlightMilitaryUS
     - Tourniquet
     - Zipties
-    - ArmorPlateMedium

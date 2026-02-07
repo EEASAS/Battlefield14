@@ -1,3 +1,7 @@
+### NATO
+
+##US
+
 # USMC
 - type: entity
   id: SpawnPointUSMCSquadLeader
@@ -85,7 +89,11 @@
       - state: green
       - state: passenger
 
-# PACT
+### PACT
+
+## RU
+
+# VDV
 
 - type: entity
   id: SpawnPointVDVSquadLeader
@@ -168,6 +176,46 @@
   components:
   - type: SpawnPoint
     job_id: VKSCrewman
+  - type: Sprite
+    layers:
+      - state: green
+      - state: passenger
+
+### IND
+
+# Western Private Security
+
+- type: entity
+  id: SpawnPointWPSSecurityOfficer
+  parent: SpawnPointJobBase
+  name: WPSSecurityOfficer
+  components:
+  - type: SpawnPoint
+    job_id: WPSSecurityOfficer
+  - type: Sprite
+    layers:
+      - state: green
+      - state: passenger
+
+- type: entity
+  id: SpawnPointWPSWarden
+  parent: SpawnPointJobBase
+  name: WPSWarden
+  components:
+  - type: SpawnPoint
+    job_id: WPSWarden
+  - type: Sprite
+    layers:
+      - state: green
+      - state: passenger
+
+- type: entity
+  id: SpawnPointWPSMarshal
+  parent: SpawnPointJobBase
+  name: WPSMarshal
+  components:
+  - type: SpawnPoint
+    job_id: WPSMarshal
   - type: Sprite
     layers:
       - state: green

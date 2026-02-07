@@ -18,6 +18,34 @@
         amount: 8
 
 - type: entity
+  name: box of MP5 magazines
+  parent: BoxMagazine
+  id: BoxMagazineMP5
+  description: A box full of 9mm MP7 magazines.
+  components:
+  - type: Storage
+    grid:
+    - 0,0,3,3
+  - type: StorageFill
+    contents:
+      - id: MagazineSubmachinegunMP5
+        amount: 8
+
+- type: entity
+  name: box of M9 magazines
+  parent: BoxMagazine
+  id: BoxMagazineM9
+  description: A box full of 9mm MP7 magazines.
+  components:
+  - type: Storage
+    grid:
+    - 0,0,3,3
+  - type: StorageFill
+    contents:
+      - id: MagazinePistolM9
+        amount: 8
+
+- type: entity
   name: box of M107 magazines
   parent: BoxMagazine
   id: BoxMagazineM107
@@ -157,6 +185,34 @@
   - type: StorageFill
     contents:
       - id: MagazineShotgunKSKSlug
+        amount: 8
+
+- type: entity
+  name: box of PP-19 Vityaz magazines
+  parent: BoxMagazine
+  id: BoxMagazineVityaz
+  description: A box full of 9mm PP-19 Vityaz magazines.
+  components:
+  - type: Storage
+    grid:
+    - 0,0,3,3
+  - type: StorageFill
+    contents:
+      - id: MagazineSubmachinegunVityaz
+        amount: 8
+
+- type: entity
+  name: box of MP443 magazines
+  parent: BoxMagazine
+  id: BoxMagazineMP443
+  description: A box full of 9mm MP443 magazines.
+  components:
+  - type: Storage
+    grid:
+    - 0,0,3,3
+  - type: StorageFill
+    contents:
+      - id: MagazinePistolMP443
         amount: 8
 
 ### Grenades

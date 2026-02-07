@@ -71,5 +71,6 @@
     pocket2: PouchGrenadesFilledVDVScout
   storage:
     back:
+    - FlashlightMilitaryAlt
     - Tourniquet
     - Zipties

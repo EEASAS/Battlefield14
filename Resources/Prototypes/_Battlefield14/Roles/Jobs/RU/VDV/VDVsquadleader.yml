@@ -76,8 +76,9 @@
     rightarmband: ClothingArmbandThighHolsterFilledRU
   storage:
     back:
-    - Tourniquet
-    - Zipties
     - ArmorPlateMedium
     - MagazinePistolMP443
     - MagazinePistolMP443
+    - FlashlightMilitaryAlt
+    - Tourniquet
+    - Zipties

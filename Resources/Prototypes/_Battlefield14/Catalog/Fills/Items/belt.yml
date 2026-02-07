@@ -19,6 +19,79 @@
       - id: MagazineSubmachinegunMP5
         amount: 8
 
+- type: entity
+  id: ClothingBeltCommandFilledUS
+  parent: ClothingBeltCommand
+  suffix: Filled, US
+  components:
+  - type: ContainerFill
+    containers:
+      item:
+      - WeaponPistolM9
+  - type: StorageFill
+    contents:
+      - id: Handcuffs
+      - id: Flash
+      - id: MagazinePistolM9
+        amount: 3
+
+- type: entity
+  id: ClothingBeltMilitaryWebbingUSFilled12GaugeBuckshot
+  parent: ClothingBeltMilitaryWebbingUS
+  suffix: Filled, 12 gauge, Buckshot
+  components:
+  - type: StorageFill
+    contents:
+      - id: ShellBoxBF12GaugeBuckshot
+        amount: 4
+
+- type: entity
+  id: ClothingBeltMilitaryWebbingUSFilled12GaugeBuckSlug
+  parent: ClothingBeltMilitaryWebbingUS
+  suffix: Filled, 12 gauge, Buck/Slug
+  components:
+  - type: StorageFill
+    contents:
+      - id: ShellBoxBF12GaugeBuckshot
+        amount: 3
+      - id: ShellBoxBF12GaugeSlug
+
+- type: entity
+  id: ClothingBeltMilitaryWebbingUSFilled12GaugeBuckSlugBreach
+  parent: ClothingBeltMilitaryWebbingUS
+  suffix: Filled, 12 gauge, Buck/Slug/Breach
+  components:
+  - type: StorageFill
+    contents:
+      - id: ShellBoxBF12GaugeBuckshot
+        amount: 2
+      - id: ShellBoxBF12GaugeSlug
+      - id: ShellBoxBF12GaugeBreaching
+
+- type: entity
+  id: ClothingBeltMilitaryWebbingUSFilledM249
+  parent: ClothingBeltMilitaryWebbingUS
+  suffix: Filled, M249/M9
+  components:
+  - type: StorageFill
+    contents:
+      - id: MagazineBeltBoxM249
+        amount: 2
+      - id: MagazinePistolM9
+        amount: 2
+
+- type: entity
+  id: ClothingBeltMilitaryWebbingUSFilledSMAW
+  parent: ClothingBeltMilitaryWebbingUS
+  suffix: Filled, SMAW, HEAA/SMAW-NE
+  components:
+  - type: StorageFill
+    contents:
+      - id: CartridgeSMAWHEAA
+        amount: 2
+      - id: CartridgeSMAWNE
+        amount: 2
+
 # MARSOC
 
 - type: entity
@@ -139,6 +212,22 @@
       - id: MagazineRifleASVALShort
         amount: 8
 
+- type: entity
+  id: ClothingBeltCommandFilledRU
+  parent: ClothingBeltCommand
+  suffix: Filled, RU
+  components:
+  - type: ContainerFill
+    containers:
+      item:
+      - WeaponPistolRevolverRUMP412
+  - type: StorageFill
+    contents:
+      - id: Handcuffs
+      - id: Flash
+      - id: SpeedLoader357magnum
+        amount: 3
+
 # MISC
 
 - type: entity
@@ -159,38 +248,6 @@
       - id: FlashlightSeclite
       - id: MagazinePistolM9
         amount: 2
-
-- type: entity
-  id: ClothingBeltCommandFilledUS
-  parent: ClothingBeltCommand
-  suffix: Filled, US
-  components:
-  - type: ContainerFill
-    containers:
-      item:
-      - WeaponPistolM9
-  - type: StorageFill
-    contents:
-      - id: Handcuffs
-      - id: Flash
-      - id: MagazinePistolM9
-        amount: 3
-
-- type: entity
-  id: ClothingBeltCommandFilledRU
-  parent: ClothingBeltCommand
-  suffix: Filled, RU
-  components:
-  - type: ContainerFill
-    containers:
-      item:
-      - WeaponPistolRevolverRUMP412
-  - type: StorageFill
-    contents:
-      - id: Handcuffs
-      - id: Flash
-      - id: SpeedLoader357magnum
-        amount: 3
 
 - type: entity
   id: ClothingBeltMacheteFilled
@@ -317,6 +374,5 @@
 #      - id: BF14HyposprayFilledBigTramadol
       - id: BF14HyposprayFilledBigTricordrazine
       - id: BF14HyposprayFilledBigDylovene
-      - id: BF14HyposprayFilledBigSaline
-      - id: BF14HyposprayFilledNanoblood
-      - id: BF14HyposprayFilledHypervene
+      - id: BF14HyposprayFilledBigDexalin
+      - id: BF14HyposprayFilledSaline
