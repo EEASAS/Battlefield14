@@ -136,16 +136,6 @@
       moles:
         - 1.025689525 # oxygen
         - 1.025689525 # nitrogen
-  - type: JumpAbility # BF14
-    jumpDistance: 4
-    jumpSound: /Audio/Effects/thudswoosh.ogg
-  - type: ActionGrant
-    actions:
-    - ActionGravityJump 
-  - type: ItemActionGrant
-    actions:
-    - ActionGravityJump
-    activeIfWorn: true
 
 #Empty captain
 - type: entity

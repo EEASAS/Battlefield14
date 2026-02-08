@@ -24,6 +24,7 @@
   id: LockerWardenFilledBF
   suffix: Filled, BF14
   parent: LockerWarden
+  name: brig chief's locker
   components:
   - type: StorageFill
     contents:
@@ -50,6 +51,36 @@
       - id: WeaponShotgunUSM870
       - id: ShellBoxBF12GaugeBuckshot
         amount: 2
+      - id: CrowbarRed
+      - id: Wrench
+
+- type: entity
+  id: LockerMarshalFilledBF
+  suffix: Filled, BF14
+  parent: LockerHeadOfSecurity
+  name: marshal's locker
+  components:
+  - type: StorageFill
+    contents:
+      - id: FlashlightSeclite
+      - id: ClothingUniformJumpsuitUtilityCrewblackSec
+      - id: ClothingHeadHatHelmetCommand
+      - id: ClothingOuterArmorWebVestSec
+      - id: ClothingBeltStationSecurityFilled
+      - id: Flash
+      - id: ClothingHeadsetAltWPS
+      - id: ClothingHandsGlovesCombat
+      - id: ClothingShoesBootsJack
+      - id: DoorRemoteSecurity
+      - id: ClothingBackpackSecurity
+      - id: ClothingBackpackSatchelSecurity
+      - id: ClothingEyesGlassesSunglasses
+      - id: ArmorPlateMedium
+        amount: 2
+      - id: WeaponSubmachinegunDEMP7
+      - id: BoxMagazineMP7
+      - id: CrowbarRed
+
 
 - type: entity
   parent: GunSafeBaseSecure

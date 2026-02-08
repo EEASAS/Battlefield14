@@ -69,3 +69,30 @@
     activateSound: /Audio/_Battlefield14/Effects/nightvision.ogg
     flashDurationMultiplier: 3
     isEquipment: true
+
+- type: entity
+  parent: ClothingMaskGasM40
+  id: ClothingMaskGasM40GreenFake
+  name: M40 field protective mask
+  description: Effective against stuff you reaally dont want in your body.
+  suffix: fake
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Clothing/Mask/M40green.rsi
+    scale: 0.7, 0.7
+  - type: Clothing
+    sprite: _Battlefield14/Clothing/Mask/M40green.rsi
+
+
+- type: entity
+  parent: ClothingMaskGasM40
+  id: ClothingMaskGasM40GreenFakeObvious
+  name: M40 field protective mask
+  description: Wait a minute, these lenses are plastic?
+  suffix: fake, obvious
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Clothing/Mask/M40green.rsi
+    scale: 0.7, 0.7
+  - type: Clothing
+    sprite: _Battlefield14/Clothing/Mask/M40green.rsi

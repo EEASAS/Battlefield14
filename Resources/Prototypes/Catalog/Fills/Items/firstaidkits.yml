@@ -12,6 +12,7 @@
       - id: PillCanisterTricordrazine
       - id: PillCanisterIron #BF14
       - id: InaprovalineMedipen # BF14
+        amount: 2
       - id: HandheldHealthAnalyzerUnpowered #BF14
       # see https://github.com/tgstation/blob/master/code/game/objects/items/storage/firstaid.dm for example contents
 
@@ -25,8 +26,8 @@
       - id: Ointment
         amount: 2
       - id: PillCanisterKelotane
-#      - id: PillCanisterTramadol
-      - id: BurnAutoInjector
+#      - id: PillCanisterTramadol # BF14
+      - id: BurnAutoInjector # BF14
       - id: HandheldHealthAnalyzerUnpowered #BF14
 
 - type: entity
@@ -39,9 +40,11 @@
       - id: Brutepack
         amount: 2
       - id: Gauze
-      - id: PillCanisterBicaridine
-      - id: PillCanisterIron
+      - id: PillCanisterBicaridine # BF14
+      - id: PillCanisterIron # BF14
 #      - id: PillCanisterTramadol
+      - id: BruteAutoInjector # BF14
+      - id: SyringeSaline # BF14
       - id: HandheldHealthAnalyzerUnpowered #BF14
 
 - type: entity
@@ -70,6 +73,7 @@
       - id: EmergencyMedipen
       - id: SyringeInaprovaline
       - id: InaprovalineMedipen # BF14
+        amount: 2
       - id: PillCanisterDexalin
       - id: SyringeSaline # BF14
       - id: HandheldHealthAnalyzerUnpowered #BF14
@@ -94,13 +98,13 @@
   components:
   - type: StorageFill # BF14
     contents:
-      - id: HandheldHealthAnalyzerUnpowered
-      - id: BF14HyposprayFilledAdvanced
+      - id: HandheldHealthAnalyzerUnpowered # BF14
+      - id: BF14HyposprayFilledAdvanced # BF14
       - id: MedicatedSuture
       - id: RegenerativeMesh
       - id: InaprovalineMedipen # BF14
       - id: BF14HyposprayFilledNanoblood # BF14
-#      - id: PillCanisterTramadol
+#      - id: PillCanisterTramadol # BF14
 
 - type: entity
   id: MedkitCombatFilled
