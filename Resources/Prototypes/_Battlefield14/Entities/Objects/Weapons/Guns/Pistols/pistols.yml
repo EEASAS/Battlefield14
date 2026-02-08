@@ -1,7 +1,7 @@
 - type: entity
   name: M9 Beretta
   parent: BaseWeaponPistol
-  id: WeaponPistolM9
+  id: WeaponPistolM9  # USM9
   description: An over-engineered tent spike hammer.
   components:
   - type: Sprite
@@ -47,10 +47,10 @@
   - type: Appearance
 
 - type: entity
-  name: MP443 'grok'
+  name: MP443 'grok' # Grach
   parent: BaseWeaponPistol
   id: WeaponPistolMP443
-  description: Is this true? #The rook (Corvus frugilegus) is a member of the family Corvidae in the passerine order of- wait a minute..
+  description: Is this true? #The rook (Corvus frugilegus) is a member of the family Corvidae in the passerine order of- wait a minute.. # RUMP443
   components:
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Guns/Pistols/MP443.rsi

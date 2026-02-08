@@ -1,3 +1,5 @@
+## US
+
 # USMC
 - type: playTimeTracker
   id: JobUSMCSquadLeader
@@ -28,6 +30,20 @@
 - type: playTimeTracker
   id: JobMARSOCMedic
 
+# USMC - HECU
+
+- type: playTimeTracker
+  id: JobHECUSquadLeader
+
+- type: playTimeTracker
+  id: JobHECURifleman
+
+- type: playTimeTracker
+  id: JobHECUSupport
+
+- type: playTimeTracker
+  id: JobHECUMedic
+
 # USSF
 
 - type: playTimeTracker
@@ -35,6 +51,8 @@
 
 - type: playTimeTracker
   id: JobUSSFCrewman
+
+## RU
 
 # VDV
 
@@ -60,3 +78,16 @@
 
 - type: playTimeTracker
   id: JobVKSCrewman
+
+## IND
+
+# Western Private Security
+
+- type: playTimeTracker
+  id: JobWPSSecurityOfficer
+
+- type: playTimeTracker
+  id: JobWPSWarden
+
+- type: playTimeTracker
+  id: JobWPSMarshal

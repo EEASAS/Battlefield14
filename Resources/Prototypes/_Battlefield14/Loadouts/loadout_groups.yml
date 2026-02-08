@@ -52,3 +52,11 @@
   - LoadoutHelmetAttachmentGogglesCoverBlack
   - LoadoutHelmetAttachmentGogglesCoverOlive
   - LoadoutHelmetAttachmentGogglesCoverTan
+
+- type: loadoutGroup
+  id: BF_WPSGloves
+  name: loadout-group-BF14-soldiergloves
+  minLimit: 0
+  loadouts:
+  - LoadoutHandsGlovesSoldierBlack
+  - LoadoutHandsGlovesSoldierFingerless

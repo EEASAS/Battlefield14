@@ -8,9 +8,6 @@
     # - !type:CharacterSpeciesRequirement
     #   species:
     #     - Human
-    # COMMENTED OUT: FactionRequirement not supported (faction system not implemented)
-    # - !type:FactionRequirement
-    #   factionID: "NATO"
     - !type:TraitsRequirement
       inverted: true
       traits:
@@ -33,18 +30,6 @@
     - English
   - !type:AddImplantSpecial
     implants: [ TrackingImplantNATOUS ]
-  # - !type:AddComponentSpecial
-  #   components:
-  #     # COMMENTED OUT: ChatRank and HullrotFaction not supported
-  #     # - type: ChatRank
-  #     #   rank: BF-rank-private
-  #     # - type: HullrotFaction
-  #     #   faction: USSF
-  #     # - type: LanguageAdder
-  #     #   addSpoken:
-  #     #     - English
-  #     #   addUnderstood:
-  #     #     - English
   access:
   - Maintenance
   - Service
@@ -71,7 +56,9 @@
     pocket2: PouchFirstAidFilled
   storage:
     back:
+    - ClothingMaskGasM40
+    - FlashlightMilitaryUS
+    - MagazinePistolM9
+    - MagazinePistolM9
     - Tourniquet
     - Zipties
-    - MagazinePistolM9
-    - MagazinePistolM9

@@ -43,6 +43,9 @@
             VDVRifleman: [-1, -1]
             VDVAutomaticRifleman: [-1, -1]
             VDVMedic: [-1, -1]
-            VDVRecon: [-1, -1] # BF14 ^
+            VDVRecon: [-1, -1]
+            WPSSecurityOfficer: [-1, -1]
+            WPSWarden: [-1, -1]
+            WPSMarshal: [-1, -1] # BF14 ^
         - type: StationDeadDrop
           maxDeadDrops: 20 # Testing

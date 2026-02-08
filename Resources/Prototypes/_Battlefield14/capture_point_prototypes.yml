@@ -10,7 +10,15 @@
   - type: InteractionOutline
   - type: Sprite
     sprite: Structures/Machines/computers.rsi
-    state: generic
+    layers:
+    - map: ["computerLayerBody"]
+      state: computer
+    - map: ["computerLayerKeyboard"]
+      state: generic_keyboard
+    - map: ["computerLayerScreen"]
+      state: generic
+    - map: ["computerLayerKeys"]
+      state: generic_keys
   - type: Appearance
   - type: Transform
     anchored: true

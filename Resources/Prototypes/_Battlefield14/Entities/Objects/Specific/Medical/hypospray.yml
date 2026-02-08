@@ -150,6 +150,21 @@
         - ReagentId: Dylovene
           Quantity: 60
 
+- type: entity
+  parent: BF14Hypospray
+  id: BF14HyposprayFilledDexalin
+  suffix: Dexalin
+  name: dexalin hypospray
+  description: Filled with 60u dexalin.
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      hypospray:
+        maxVol: 60
+        reagents:
+        - ReagentId: Dexalin
+          Quantity: 60
+
 #- type: entity
 #  parent: BF14Hypospray
 #  id: BF14HyposprayFilledOxycodone
@@ -355,6 +370,21 @@
         maxVol: 120
         reagents:
         - ReagentId: Dylovene
+          Quantity: 120
+
+- type: entity
+  parent: BF14HyposprayBig
+  id: BF14HyposprayFilledBigDexalin
+  suffix: Dexalin
+  name: dexalin hypospray
+  description: Filled with 120u dexalin.
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      hypospray:
+        maxVol: 120
+        reagents:
+        - ReagentId: Dexalin
           Quantity: 120
 
 - type: entity

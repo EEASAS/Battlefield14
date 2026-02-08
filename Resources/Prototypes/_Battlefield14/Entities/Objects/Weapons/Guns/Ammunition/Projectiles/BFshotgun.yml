@@ -51,6 +51,8 @@
     armorPenetration: 0.15
   - type: StaminaDamageOnCollide
     damage: 15 # ~7 hits to stun
+  - type: TimedDespawn
+    lifetime: 0.2
 
 - type: entity
   id: PelletShotgunBF12GaugeFrag

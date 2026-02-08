@@ -78,6 +78,7 @@
   id: ClothingUniformJumpsuitVKSCrewman
   name: VKS crewman uniform
   description: A full uniform for crew aboard Russian Aerospace Forces vessels.
+  components:
   - type: Faction
     factionId: "Warpact"
 
@@ -86,6 +87,7 @@
   id: ClothingUniformJumpsuitVKSCaptain
   name: VKS captain uniform
   description: A full uniform for captains aboard Russian Aerospace Forces vessels.
+  components:
   - type: Faction
     factionId: "Warpact"
 
