@@ -10,7 +10,15 @@
   - type: InteractionOutline
   - type: Sprite
     sprite: Structures/Machines/computers.rsi
-    state: generic
+    layers:
+    - map: ["computerLayerBody"]
+      state: computer
+    - map: ["computerLayerKeyboard"]
+      state: generic_keyboard
+    - map: ["computerLayerScreen"]
+      state: generic
+    - map: ["computerLayerKeys"]
+      state: generic_keys
   - type: Appearance
   - type: Transform
     anchored: true
@@ -42,6 +50,7 @@
   id: CapturePointEngineering
   parent: BaseCapturePoint
   name: engineering control point
+  suffix: 90s / 1.5m
   components:
   - type: POICapture
     poiName: "Engineering Sector"
@@ -51,24 +60,45 @@
   id: CapturePointMedical
   parent: BaseCapturePoint
   name: medical control point
+  suffix: 120s / 2m
   components:
   - type: POICapture
     poiName: "Medical Bay"
-    timeToCapture: 75
+    timeToCapture: 120
 
 - type: entity
   id: CapturePointBridge
   parent: BaseCapturePoint
   name: bridge control point
+  suffix: 120s / 2m
   components:
   - type: POICapture
-    poiName: "Command Bridge"
+    poiName: "Bridge"
+    timeToCapture: 120
+
+- type: entity
+  id: CapturePointBridge20Minutes
+  parent: CapturePointBridge
+  suffix: 1200s / 20m
+  components:
+  - type: POICapture
+    timeToCapture: 1200
+
+- type: entity
+  id: CapturePointSecurity
+  parent: BaseCapturePoint
+  name: security control point
+  suffix: 120s / 2m
+  components:
+  - type: POICapture
+    poiName: "Security"
     timeToCapture: 120
 
 - type: entity
   id: CapturePointCargo
   parent: BaseCapturePoint
   name: cargo control point
+  suffix: 60s / 1m
   components:
   - type: POICapture
     poiName: "Cargo Department"
@@ -78,7 +108,8 @@
   id: CapturePointAtmospherics
   parent: BaseCapturePoint
   name: atmospherics control point
+  suffix: 60s / 1m
   components:
   - type: POICapture
     poiName: "Atmospherics"
-    timeToCapture: 90
+    timeToCapture: 60

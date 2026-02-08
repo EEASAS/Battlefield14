@@ -62,7 +62,7 @@
     ears: ClothingHeadsetAltUS
     neck: FlashlightMilitaryUS
     belt: ClothingBeltMilitaryWebbingUSFilled12GaugeBuckSlugBreach
-    jumpsuit: ClothingUniformJumpsuitCombatSuitUrbanWhite
+    jumpsuit: ClothingUniformJumpsuitCamoUSM81Urban
     balaclava: ClothingBalaclavaMilitary
     eyes: ClothingEyesGogglesGreen
     gloves: ClothingHandsGlovesCombat
@@ -93,7 +93,7 @@
     ears: ClothingHeadsetAltUS
     neck: FlashlightMilitaryUS
     belt: ClothingBeltMilitaryWebbingUSFilledM249
-    jumpsuit: ClothingUniformJumpsuitCombatSuitUrbanWhite
+    jumpsuit: ClothingUniformJumpsuitCamoUSM81Urban
     balaclava: ClothingBalaclavaMilitary
     eyes: ClothingEyesGogglesGreen
     gloves: ClothingHandsGlovesCombat
@@ -121,7 +121,7 @@
     ears: ClothingHeadsetAltUS
     neck: FlashlightMilitaryUS
     belt: ClothingBeltMilitaryWebbingUSFilledSMAW
-    jumpsuit: ClothingUniformJumpsuitCombatSuitUrbanWhite
+    jumpsuit: ClothingUniformJumpsuitCamoUSM81Urban
     balaclava: ClothingBalaclavaMilitary
     eyes: ClothingEyesGogglesGreen
     gloves: ClothingHandsGlovesCombat

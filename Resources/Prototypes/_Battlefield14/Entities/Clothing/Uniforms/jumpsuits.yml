@@ -33,13 +33,10 @@
 
 - type: entity
   parent: ClothingUniformJumpsuitCombatSuitUrbanWhite
-  id: bf14hecu
-  name: white urban combat uniform
-  description: Misko camouflaged combat suit. Camo in space... This one has been lightly used and retain its original camo.
+  id: ClothingUniformJumpsuitCamoUSM81Urban
+  name: M81 urban BDU
+  description: A recolour of M81 woodland to blend in better to urban areas.
   components:
-  - type: StaticPrice
-    price: 700
-    vendPrice: 1150
   - type: Sprite
     sprite: _Mono/Clothing/Uniforms/Jumpsuit/combat-suits/white_urban.rsi
   - type: Clothing

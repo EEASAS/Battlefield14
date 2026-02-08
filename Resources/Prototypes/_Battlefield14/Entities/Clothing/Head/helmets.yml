@@ -39,7 +39,7 @@
 - type: entity
   parent: ClothingHeadHelmetBasic
   id: ClothingHeadHatHelmetUSUrban
-  name: M81 Urban camo helmet
+  name: M81 urban camo helmet
   description: This isnt for catching shrap or rounds, its made to keep your grey matter from grossing out your buddies.
   components:
   - type: Sprite
