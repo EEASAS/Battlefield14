@@ -66,6 +66,7 @@
   equipment:
     id: MARSOCMedicPDA
     ears: ClothingHeadsetAltUS
+    neck: FlashlightMilitaryUS
     belt: ClothingBeltMedicalEMTFilledBF14Hyposprays
     jumpsuit: ClothingUniformJumpsuitCamoUS
     head: ClothingHeadHatHelmetUS
@@ -85,18 +86,21 @@
     back:
     - SupplyBoxMedicalFilled
     - DefibrillatorCompactBF
-    - Tourniquet
-    - Zipties
     - MedkitAdvancedFilled
+    - BoxMRE
+    - ClothingMaskGasM40Green
     - TelescopicShield
     - OmnimedTool
     - CrowbarRed
+    - Tourniquet
+    - Zipties
 
 - type: startingGear
   id: MARSOCMedicGearEVA
   equipment:
     id: MARSOCMedicPDA
     ears: ClothingHeadsetAltUS
+    neck: FlashlightMilitaryUS
     belt: ClothingBeltMedicalEMTFilledBF14Hyposprays
     jumpsuit: ClothingUniformJumpsuitCamoUS
     eyes: ClothingEyesHudMedicalBF
@@ -115,10 +119,11 @@
     back:
     - SupplyBoxMedicalFilled
     - DefibrillatorCompactBF
-    - Tourniquet
-    - Zipties
     - MedkitAdvancedFilled
+    - BoxMRE
     - TelescopicShield
     - OmnimedTool
     - CrowbarRed
+    - ClothingMaskGasM40Green
     - DoubleEmergencyOxygenTankFilled
+    - Zipties

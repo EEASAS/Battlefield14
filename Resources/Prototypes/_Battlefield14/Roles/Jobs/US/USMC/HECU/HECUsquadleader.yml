@@ -77,16 +77,17 @@
     pocket2: PouchGrenadesFilledUSMCRifleman
     rightarmband: ClothingArmbandThighHolsterFilledUS
     leftarmband: Tourniquet
+    wallet: ClothingWalletLeatherBrown
   storage:
     back:
     - WeaponCapacitorRechargerFlatpack
-    - WeaponGrenadeLauncherUSM320
-    - MagazinePistolM9
-    - MagazinePistolM9
+    - BoxMRE
+    - WeaponGrenadeLauncherUSM320HE
     - CrowbarRed
+    - MagazinePistolM9
+    - MagazinePistolM9
     - PowerCellPCV
     - ClothingMaskGasM40
-    - Cartridge40x46mmHE
     - Cartridge40x46mmHE
     - Cartridge40x46mmHE
     - Tourniquet

@@ -75,14 +75,15 @@
     pocket1: PouchMagsPistolLargeFilledMP5
     pocket2: PouchGrenadesFilledUSMCScout
     leftarmband: Tourniquet
+    wallet: ClothingWalletLeatherBrown
   storage:
     back:
     - SupplyBoxMedicalFilled
     - DefibrillatorCompactBF
+    - BoxMRE
     - MedkitAdvancedFilled
     - CrowbarRed
     - ClothingMaskGasM40
-    - SyringeCaseFilledBF14
     - PillCanisterHyronalin
     - Tourniquet
     - Zipties

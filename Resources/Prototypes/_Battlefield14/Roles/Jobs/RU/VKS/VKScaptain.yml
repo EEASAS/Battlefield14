@@ -74,5 +74,6 @@
     pocket1: PouchFirstAidFilled
   storage:
     back:
+    - ClothingMaskGasRussia
     - Tourniquet
     - Zipties

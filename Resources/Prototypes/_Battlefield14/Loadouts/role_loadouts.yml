@@ -49,6 +49,20 @@
   - BF_GoggleCover
   - ContractorWallet
 
+# USSF
+
+- type: roleLoadout
+  id: JobUSSFCaptain
+  groups:
+  - BF_NATOIFF
+  - ContractorWallet
+
+- type: roleLoadout
+  id: JobUSSFCrewman
+  groups:
+  - BF_CombatMasks
+  - BF_NATOIFF
+  - ContractorWallet
 
 ## PACT
 
@@ -106,6 +120,21 @@
   - BF_VDVHead
   - ContractorWallet
 
+# VKS
+
+- type: roleLoadout
+  id: JobVKSCaptain
+  groups:
+  - BF_VDVHead
+  - BF_PACTIFF
+  - ContractorWallet
+
+- type: roleLoadout
+  id: JobVKSCrewman
+  groups:
+  - BF_CombatMasks
+  - BF_PACTIFF
+  - ContractorWallet
 
 ### IND
 

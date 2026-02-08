@@ -35,6 +35,54 @@
       path: /Audio/Weapons/Guns/Gunshots/grenade_launcher.ogg
 
 - type: entity
+  name: M320
+  parent: WeaponGrenadeLauncherUSM320
+  id: WeaponGrenadeLauncherUSM320HE
+  suffix: loaded, HE
+  components:
+  - type: ItemSlots
+    slots:
+      gun_chamber:
+        name: Chamber
+        startingItem: Cartridge40x46mmHE
+        priority: 1
+        whitelist:
+          tags:
+            - Cartridge40x46mmGrenade
+
+- type: entity
+  name: M320
+  parent: WeaponGrenadeLauncherUSM320
+  id: WeaponGrenadeLauncherUSM320HEDP
+  suffix: loaded, HEDP
+  components:
+  - type: ItemSlots
+    slots:
+      gun_chamber:
+        name: Chamber
+        startingItem: Cartridge40x46mmHEDP
+        priority: 1
+        whitelist:
+          tags:
+            - Cartridge40x46mmGrenade
+
+- type: entity
+  name: M320
+  parent: WeaponGrenadeLauncherUSM320
+  id: WeaponGrenadeLauncherUSM320Frag
+  suffix: loaded, Frag
+  components:
+  - type: ItemSlots
+    slots:
+      gun_chamber:
+        name: Chamber
+        startingItem: Cartridge40x46mmFrag
+        priority: 1
+        whitelist:
+          tags:
+            - Cartridge40x46mmGrenade
+
+- type: entity
   name: M79 (Embiggened)
   parent: WeaponFlareGun
   id: WeaponGrenadeLauncherUSM79Big

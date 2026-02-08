@@ -264,9 +264,9 @@
   description: These tactical gloves are fireproof and shock resistant.
   components:
   - type: Sprite
-    sprite: Clothing/Hands/Gloves/Color/black.rsi # BF14
+    sprite: _Battlefield14/Clothing/Hands/Gloves/combat.yml # BF14
   - type: Clothing
-    sprite: Clothing/Hands/Gloves/Color/black.rsi # BF14
+    sprite: _Battlefield14/Clothing/Hands/Gloves/combat.yml # BF14
   - type: Insulated
   - type: Fiber
     fiberMaterial: fibers-insulative

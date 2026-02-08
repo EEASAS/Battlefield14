@@ -66,6 +66,7 @@
   equipment:
     id: MARSOCRiflemanPDA
     ears: ClothingHeadsetAltUS
+    neck: FlashlightMilitaryUS
     belt: ClothingBeltWebbingsNormalTanFilled68x52
     jumpsuit: ClothingUniformJumpsuitCamoUS
     head: ClothingHeadHatHelmetUS
@@ -83,20 +84,23 @@
     wallet: ClothingWalletLeatherBlack
   storage:
     back:
-    - BoxMagazine40x46Mixed
-    - Tourniquet
-    - Zipties
-    - ArmorPlateMedium
+    - BoxMRE
     - WeaponGrenadeLauncherUSM320
+    - BoxMagazine40x46Mixed
+    - ArmorPlateMedium
+    - ClothingMaskGasM40Green
     - MagazinePistolM9
     - MagazinePistolM9
     - CrowbarRed
+    - Tourniquet
+    - Zipties
 
 - type: startingGear
   id: MARSOCRiflemanGearEVA
   equipment:
     id: MARSOCRiflemanPDA
     ears: ClothingHeadsetAltUS
+    neck: FlashlightMilitaryUS
     belt: ClothingBeltWebbingsNormalBlackFilled68x52
     jumpsuit: ClothingUniformJumpsuitCamoUS
     eyes: ClothingEyesGogglesTan
@@ -113,12 +117,14 @@
     wallet: ClothingWalletLeatherBlack
   storage:
     back:
-    - BoxMagazine40x46Mixed
-    - Tourniquet
-    - Zipties
-    - ArmorPlateMedium
+    - BoxMRE
     - WeaponGrenadeLauncherUSM320
+    - BoxMagazine40x46Mixed
+    - ArmorPlateMedium
+    - ClothingMaskGasM40Green
     - MagazinePistolM9
     - MagazinePistolM9
     - DoubleEmergencyOxygenTankFilled
     - CrowbarRed
+    - Tourniquet
+    - Zipties

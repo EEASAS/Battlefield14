@@ -67,6 +67,7 @@
   equipment:
     id: MARSOCAutomaticRiflemanPDA
     ears: ClothingHeadsetAltUS
+    neck: FlashlightMilitaryUS
     belt: ClothingBeltWebbingsNormalTanFilledMK48
     jumpsuit: ClothingUniformJumpsuitCamoUS
     head: ClothingHeadHatHelmetUSRiot
@@ -85,15 +86,18 @@
   storage:
     back:
     - SupplyBoxAmmoUSFilledMarsoc # Marsoc variant with bulk 7.62x51 and 6.8x52, and MP7 mags
+    - BoxMRE
+    - CrowbarRed
+    - ClothingMaskGasM40Green
     - Tourniquet
     - Zipties
-    - CrowbarRed
 
 - type: startingGear
   id: MARSOCAutomaticRiflemanGearEVA
   equipment:
     id: MARSOCAutomaticRiflemanPDA
     ears: ClothingHeadsetAltUS
+    neck: FlashlightMilitaryUS
     belt: ClothingBeltWebbingsNormalBlackFilledMK48
     jumpsuit: ClothingUniformJumpsuitCamoUS
     eyes: ClothingEyesGogglesTan
@@ -111,7 +115,9 @@
   storage:
     back:
     - SupplyBoxAmmoUSFilledMarsoc # Marsoc variant with bulk 7.62x51 and 6.8x52, and MP7 mags
+    - BoxMRE
+    - CrowbarRed
+    - ClothingMaskGasM40Green
+    - DoubleEmergencyOxygenTankFilled
     - Tourniquet
     - Zipties
-    - DoubleEmergencyOxygenTankFilled
-    - CrowbarRed

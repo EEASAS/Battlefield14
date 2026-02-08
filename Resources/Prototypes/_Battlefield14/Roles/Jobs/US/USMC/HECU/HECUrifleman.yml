@@ -73,15 +73,16 @@
     pocket1: PouchFirstAidFilled
     pocket2: PouchGrenadesFilledUSMCRifleman
     leftarmband: Tourniquet
+    wallet: ClothingWalletLeatherBrown
   storage:
     back:
-    - WeaponGrenadeLauncherUSM320
+    - WeaponGrenadeLauncherUSM320HE
+    - BoxFlare
+    - BoxMRE
     - CrowbarRed
     - PowerCellPCV
     - Cartridge40x46mmHE
     - Cartridge40x46mmHE
     - Cartridge40x46mmHE
-    - Cartridge40x46mmHE
-    - BoxFlare
     - Tourniquet
     - Zipties

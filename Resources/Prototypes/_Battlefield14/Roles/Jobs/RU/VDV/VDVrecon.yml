@@ -72,5 +72,6 @@
   storage:
     back:
     - FlashlightMilitaryAlt
+    - ClothingMaskGasRussia
     - Tourniquet
     - Zipties

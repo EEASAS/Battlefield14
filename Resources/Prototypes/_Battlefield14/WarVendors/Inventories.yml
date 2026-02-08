@@ -8,8 +8,8 @@
     WeaponSubmachinegunUSMP5: 5
     MagazineSubmachinegunMP5: 20
     ShellBoxBF12GaugeBuckshot: 10
-    WeaponPistolM9: 20
-    MagazinePistolM9: 100
+    WeaponPistolM9: 2
+    MagazinePistolM9: 10
     TelescopicShield: 2
     RiotShield: 2
     CombatKnife: 100
@@ -23,6 +23,7 @@
     JetpackBlackFilled: 50
     FoodSnackNutribrick: 100
     DrinkMREFlask: 100
+    BoxMRE: 50
     HandHeldMassScanner: 150
     Crowbar: 150
     OxygenTankFilled: 150
@@ -48,10 +49,13 @@
     BreachingCharge: 10 # replace with breaching charges and put C4 in req
     JetpackBlackFilled: 20
     USM84FlashBangHandgrenade: 30
-    MK21Handgrenade: 30
+    MK21Handgrenade: 25
+    M67Handgrenade: 5
     USM18SmokeHandgrenade: 50
     SecBreachingHammer: 1
     DoubleEmergencyOxygenTankFilled: 100
+    BoxIFFNATOBlue: 10
+    BoxIFFNATOYellow: 10
     ClothingHeadHatHelmetUS: 100
     ClothingOuterArmorPlateCarrierTan: 5 # FREE PLATES
     ClothingHeadHelmetSoftsuitNasa: 50
@@ -75,8 +79,8 @@
     WeaponSubmachinegunRUVityaz: 5
     MagazineSubmachinegunVityaz: 20
     ShellBoxBF12GaugeBuckshot: 10
-    WeaponPistolMP443: 20
-    MagazinePistolMP443: 100
+    WeaponPistolMP443: 2
+    MagazinePistolMP443: 10
     TelescopicShield: 2
     RiotShield: 2
     CombatKnife: 100
@@ -90,6 +94,7 @@
     JetpackBlackFilled: 50
     FoodSnackNutribrick: 100
     DrinkMREFlask: 100
+    BoxMRE: 50
     HandHeldMassScanner: 150
     Crowbar: 150
     OxygenTankFilled: 150
@@ -119,12 +124,15 @@
     BreachingCharge: 10
     JetpackBlackFilled: 10
     RUZaryaFlashBangHandgrenade: 30
-    RURGD5Handgrenade: 30
+    RURGD5Handgrenade: 20
+    RUF1Handgrenade: 5
     RGOImpactHandgrenade: 5
     RURDG2SmokeHandgrenade: 50
     TM62Flatpack: 10
     SecBreachingHammer: 1
     DoubleEmergencyOxygenTankFilled: 100
+    BoxIFFPACTWhite: 10
+    BoxIFFPACTRed: 10
     ClothingHeadHatHelmetRUEMR: 100
     ClothingOuterArmorPlateCarrierBlack: 5 # FREE PLATES
     ClothingHeadHelmetSoftsuitVKS: 50

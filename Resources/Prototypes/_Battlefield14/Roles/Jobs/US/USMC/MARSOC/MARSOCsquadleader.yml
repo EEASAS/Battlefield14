@@ -67,6 +67,7 @@
   equipment:
     id: MARSOCSquadLeaderPDA
     ears: ClothingHeadsetAltUS
+    neck: FlashlightMilitaryUS
     belt: ClothingBeltWebbingsNormalTanFilled68x52 # Scar H mags
     jumpsuit: ClothingUniformJumpsuitCamoUS
     head: ClothingHeadHatHelmetUS
@@ -84,20 +85,23 @@
     wallet: ClothingWalletLeatherBlack
   storage:
     back:
-    - Tourniquet
-    - Zipties
     - ArmorPlateMedium
     - WeaponShotgunUSM590
     - ShellBoxBF12GaugeBreaching
+    - BoxMRE
+    - ClothingMaskGasM40Green
     - MagazinePistolM9
     - MagazinePistolM9
     - CrowbarRed
+    - Tourniquet
+    - Zipties
 
 - type: startingGear
   id: MARSOCSquadLeaderGearEVA
   equipment:
     id: MARSOCSquadLeaderPDA
     ears: ClothingHeadsetAltUS
+    neck: FlashlightMilitaryUS
     belt: ClothingBeltWebbingsNormalBlackFilled68x52 # Scar H mags later
     jumpsuit: ClothingUniformJumpsuitCamoUS
     eyes: ClothingEyesGogglesTan
@@ -114,13 +118,15 @@
     wallet: ClothingWalletLeatherBlack
   storage:
     back:
-    - Tourniquet
-    - Zipties
     - ArmorPlateMedium
     - WeaponShotgunUSM590
     - ShellBoxBF12GaugeBreaching
+    - BoxMRE
+    - ClothingMaskGasM40Green
     - MagazinePistolM9
     - MagazinePistolM9
     - DoubleEmergencyOxygenTankFilled
     - CrowbarRed
+    - Tourniquet
+    - Zipties
 

@@ -73,18 +73,19 @@
     pocket1: PouchFirstAidFilled
     pocket2: PouchGrenadesFilledUSMCRifleman
     leftarmband: Tourniquet
+    wallet: ClothingWalletLeatherBrown
   storage:
     back:
     - SupplyBoxAmmoUSFilled
-    - Tourniquet
-    - Zipties
+    - BoxMRE
+    - ClothingMaskGasM40
     - CrowbarRed
+    - WelderIndustrial
     - Wrench
     - Screwdriver
     - Wirecutter
-    - WelderIndustrial
     - Multitool
-    - ClothingMaskGasM40
+    - Zipties
 
 - type: startingGear
   id: HECUSupportM249Gear
@@ -105,14 +106,16 @@
     pocket2: PouchGrenadesFilledUSMCRifleman
     leftarmband: Tourniquet
     rightarmband: ClothingArmbandThighHolsterFilledUS
+    wallet: ClothingWalletLeatherBrown
   storage:
     back:
     - SupplyBoxAmmoUSFilled
-    - Tourniquet
-    - Zipties
+    - BoxMRE
+    - ClothingMaskGasM40
     - CrowbarRed
     - WelderIndustrial
-    - ClothingMaskGasM40
+    - Tourniquet
+    - Zipties
 
 - type: startingGear
   id: HECUSupportSMAWGear
@@ -133,6 +136,7 @@
     pocket2: PouchFirstAidFilled
     leftarmband: Tourniquet
     rightarmband: Tourniquet
+    wallet: ClothingWalletLeatherBrown
   storage:
     back:
     - WeaponSubmachinegunUSMP5

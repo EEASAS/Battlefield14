@@ -77,7 +77,7 @@
   name: military flashlight
   parent: FlashlightMilitaryUS
   id: FlashlightMilitaryAlt
-  description: A robust flashlight used by security.
+  description: A robust flashlight that can be mounted nearly anywhere. For true patriots.
   components:
   - type: Sprite
     sprite: _Battlefield14/Objects/Tools/flashlightmilitaryalt.rsi
