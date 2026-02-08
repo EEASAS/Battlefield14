@@ -54,6 +54,8 @@
     USM18SmokeHandgrenade: 50
     SecBreachingHammer: 1
     DoubleEmergencyOxygenTankFilled: 100
+    BoxIFFNATOBlue: 10
+    BoxIFFNATOYellow: 10
     ClothingHeadHatHelmetUS: 100
     ClothingOuterArmorPlateCarrierTan: 5 # FREE PLATES
     ClothingHeadHelmetSoftsuitNasa: 50
@@ -129,6 +131,8 @@
     TM62Flatpack: 10
     SecBreachingHammer: 1
     DoubleEmergencyOxygenTankFilled: 100
+    BoxIFFPACTWhite: 10
+    BoxIFFPACTRed: 10
     ClothingHeadHatHelmetRUEMR: 100
     ClothingOuterArmorPlateCarrierBlack: 5 # FREE PLATES
     ClothingHeadHelmetSoftsuitVKS: 50
