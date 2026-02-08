@@ -1,3 +1,5 @@
+## US
+
 # USMC
 
 - type: entity
@@ -146,6 +148,72 @@
   - type: PdaBorderColor
     borderColor: "#203564"
 
+# HECU
+
+- type: entity
+  parent: BasePDA
+  id: HECUSquadLeaderPDA
+  name: HECU PDA
+  description: Filled with my little dark age edits.
+  suffix: squad leader
+  components:
+  - type: Icon
+    sprite: _Battlefield14/Objects/Devices/pda.rsi
+    state: pda-us
+  - type: Pda
+    id: HECUSquadLeaderIDCard
+    state: pda-us
+  - type: PdaBorderColor
+    borderColor: "#203564"
+
+- type: entity
+  parent: BasePDA
+  id: HECURiflemanPDA
+  name: HECU PDA
+  description: Filled with my little dark age edits.
+  suffix: rifleman
+  components:
+  - type: Icon
+    sprite: _Battlefield14/Objects/Devices/pda.rsi
+    state: pda-us
+  - type: Pda
+    id: HECURiflemanIDCard
+    state: pda-us
+  - type: PdaBorderColor
+    borderColor: "#203564"
+
+- type: entity
+  parent: HECURiflemanPDA
+  id: HECUSupportPDA
+  name: HECU PDA
+  description: Filled with my little dark age edits.
+  suffix: support
+  components:
+  - type: Icon
+    sprite: _Battlefield14/Objects/Devices/pda.rsi
+    state: pda-us
+  - type: Pda
+    id: HECUSupportIDCard
+    state: pda-us
+  - type: PdaBorderColor
+    borderColor: "#203564"
+
+- type: entity
+  parent: HECURiflemanPDA
+  id: HECUMedicPDA
+  name: HECU PDA
+  description: Filled with industrial accident and war casualty videos, im sure it's for training.
+  suffix: corpsman
+  components:
+  - type: Icon
+    sprite: _Battlefield14/Objects/Devices/pda.rsi
+    state: pda-us
+  - type: Pda
+    id: HECUMedicIDCard
+    state: pda-us
+  - type: PdaBorderColor
+    borderColor: "#203564"
+
 # USSF
 
 - type: entity
@@ -179,6 +247,8 @@
     state: pda-us
   - type: PdaBorderColor
     borderColor: "#203564"
+
+## RU
 
 # VDV
 
@@ -280,3 +350,37 @@
   - type: Pda
     id: VKSCrewmanIDCard
     state: pda-ru
+
+## IND
+
+# Western Private Security
+
+- type: entity
+  parent: BasePDA
+  id: WPSSecurityOfficerPDA
+  name: Chevron PDA
+  description: Filled with bodycam footage.
+  suffix: security officer
+  components:
+  - type: Pda
+    id: WPSSecurityOfficerIDCard
+
+- type: entity
+  parent: BasePDA
+  id: WPSWardenPDA
+  name: Chevron PDA
+  description: Filled with bodycam footage.
+  suffix: warden
+  components:
+  - type: Pda
+    id: WPSWardenIDCard
+
+- type: entity
+  parent: BasePDA
+  id: WPSMarshalPDA
+  name: Chevron PDA
+  description: Filled with bodycam footage.
+  suffix: marshal
+  components:
+  - type: Pda
+    id: WPSMarshalIDCard

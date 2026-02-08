@@ -1,3 +1,5 @@
+## US
+
 # USMC
 
 - type: entity
@@ -128,6 +130,64 @@
   - type: PresetIdCard
     job: MARSOCMedic
 
+# HECU
+
+- type: entity
+  parent: IDCardStandard
+  id: HECUSquadLeaderIDCard
+  name: HECU ID card
+  suffix: fireteam leader
+  components:
+  - type: Sprite
+    layers:
+    - state: silver
+  - type: Item
+    heldPrefix: silver
+  - type: PresetIdCard
+    job: HECUSquadLeader
+
+- type: entity
+  parent: IDCardStandard
+  id: HECURiflemanIDCard
+  name: HECU ID card
+  suffix: rifleman
+  components:
+  - type: Sprite
+    layers:
+    - state: silver
+  - type: Item
+    heldPrefix: silver
+  - type: PresetIdCard
+    job: HECURifleman
+
+- type: entity
+  parent: IDCardStandard
+  id: HECUSupportIDCard
+  name: HECU ID card
+  suffix: support
+  components:
+  - type: Sprite
+    layers:
+    - state: silver
+  - type: Item
+    heldPrefix: silver
+  - type: PresetIdCard
+    job: HECUSupport
+
+- type: entity
+  parent: IDCardStandard
+  id: HECUMedicIDCard
+  name: HECU ID card
+  suffix: corpsman
+  components:
+  - type: Sprite
+    layers:
+    - state: silver
+  - type: Item
+    heldPrefix: silver
+  - type: PresetIdCard
+    job: HECUMedic
+
 # USSF
 
 - type: entity
@@ -157,6 +217,9 @@
     heldPrefix: silver
   - type: PresetIdCard
     job: USSFCrewman
+
+
+## RU
 
 # VDV
 
@@ -259,3 +322,50 @@
     heldPrefix: silver
   - type: PresetIdCard
     job: VKSCrewman
+
+
+## IND
+
+# Western Private Security
+
+- type: entity
+  parent: IDCardStandard
+  id: WPSSecurityOfficerIDCard
+  name: Chevron ID card
+  suffix: security officer
+  components:
+  - type: Sprite
+    layers:
+    - state: silver
+  - type: Item
+    heldPrefix: silver
+  - type: PresetIdCard
+    job: WPSSecurityOfficer
+
+- type: entity
+  parent: IDCardStandard
+  id: WPSWardenIDCard
+  name: Chevron ID card
+  suffix: warden
+  components:
+  - type: Sprite
+    layers:
+    - state: silver
+  - type: Item
+    heldPrefix: silver
+  - type: PresetIdCard
+    job: WPSWarden
+
+- type: entity
+  parent: IDCardStandard
+  id: WPSMarshalIDCard
+  name: Chevron ID card
+  suffix: marshal
+  components:
+  - type: Sprite
+    layers:
+    - state: silver
+  - type: Item
+    heldPrefix: silver
+  - type: PresetIdCard
+    job: WPSMarshal

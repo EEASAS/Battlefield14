@@ -24,7 +24,7 @@
   - type: Item
     size: Normal # Frontier Large<Normal
     shape:
-    - 0,0,2,2
+    - 0,0,1,1 # BF14 3x3 > 2x2
   - type: Storage
     maxItemSize: Small
     grid:
@@ -259,7 +259,7 @@
   - type: StorageFill
     contents:
       - id: Flare
-        amount: 6
+        amount: 16 # BF14
   - type: Sprite
     layers:
       - state: box

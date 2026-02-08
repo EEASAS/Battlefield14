@@ -72,7 +72,8 @@
   storage:
     back:
     - SupplyBoxAmmoRUFilled
+    - MagazinePistolMP443
+    - MagazinePistolMP443
+    - FlashlightMilitaryAlt
     - Tourniquet
     - Zipties
-    - MagazinePistolMP443
-    - MagazinePistolMP443

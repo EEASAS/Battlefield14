@@ -75,5 +75,7 @@
     pocket1: PouchFirstAidFilled
   storage:
     back:
+    - ClothingMaskGasM40
+    - FlashlightMilitaryUS
     - Tourniquet
     - Zipties
