@@ -54,7 +54,6 @@
 - type: roleLoadout
   id: JobUSSFCaptain
   groups:
-  - BF_CombatMasks
   - BF_NATOIFF
   - ContractorWallet
 
@@ -127,7 +126,6 @@
   id: JobVKSCaptain
   groups:
   - BF_VDVHead
-  - BF_CombatMasks
   - BF_PACTIFF
   - ContractorWallet
 
