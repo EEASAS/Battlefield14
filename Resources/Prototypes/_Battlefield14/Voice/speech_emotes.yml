@@ -1,0 +1,52 @@
+- type: emote
+  id: GruntUSMedicClean
+  name: chat-emote-name-grunt-us-medic
+  category: Vocal
+  icon: Interface/Actions/scream.png
+  whitelist:
+    components:
+    - Vocal
+  chatMessages: ["chat-emote-msg-grunt-us-medic"]
+  chatTriggers:
+    - screams for a medic!
+    - medic
+    - corpsman
+    - doc
+    - doctor
+
+- type: emote
+  id: GruntUSContactClean
+  name: chat-emote-name-grunt-us-contact
+  category: Vocal
+  icon: Interface/Actions/scream.png
+  whitelist:
+    components:
+    - Vocal
+  chatMessages: ["chat-emote-msg-grunt-us-contact"]
+  chatTriggers:
+    - yells contact!
+    - contact
+    - contacts
+    - enemy
+    - enemies
+    - hostile
+    - hostiles
+    - movement
+    - target
+    - targets
+
+- type: emote
+  id: GruntUSChargeClean
+  name: chat-emote-name-grunt-us-charge
+  category: Vocal
+  icon: Interface/Actions/scream.png
+  whitelist:
+    components:
+    - Vocal
+  chatMessages: ["chat-emote-msg-grunt-us-charge"]
+  chatTriggers:
+    - urges you to push forward!
+    - charge
+    - push
+    - attack
+    - forward
