@@ -123,7 +123,7 @@
   id: PACTVDVGearInventory
   startingInventory:
     BreachingCharge: 10
-    JetpackBlackFilled: 10
+    JetpackBlackFilled: 20
     RUZaryaFlashBangHandgrenade: 30
     RURGD5Handgrenade: 20
     RUF1Handgrenade: 5
