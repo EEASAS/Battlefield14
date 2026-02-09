@@ -91,6 +91,7 @@ public partial class ShuttleNavControl : BaseShuttleControl // Mono
     public bool HasSonar = false;
     public Angle SonarWidth;
     public float SonarDistance;
+    public bool SonarSeeCloaked;
     // what fraction of the duration we spend drawing the ping animation
     public float SonarPingFraction = 0.25f;
     public Color SonarColor = Color.Orange;
@@ -340,15 +341,21 @@ public partial class ShuttleNavControl : BaseShuttleControl // Mono
         RotateWithEntity = state.RotateWithEntity;
 
         // BF14
-        HasSonar = state.HasSonar;
-        SonarWidth = state.SonarWidth;
-        SonarDistance = state.SonarDistance;
-        SonarDuration = state.SonarDuration;
-        SonarCooldown = state.SonarCooldown;
-        if (HasSonar)
+        if (state.Sonar is { } sonar)
+        {
+            HasSonar = true;
+            SonarWidth = sonar.Width;
+            SonarDistance = sonar.Distance;
+            SonarDuration = sonar.Duration;
+            SonarCooldown = sonar.Cooldown;
+            SonarSeeCloaked = sonar.SeeCloaked;
             PopulateSonarControls();
+        }
         else
+        {
+            HasSonar = false;
             ClearSonarControls();
+        }
 
         // Frontier
         if (state.MaxIffRange != null)
@@ -639,14 +646,18 @@ public partial class ShuttleNavControl : BaseShuttleControl // Mono
             var gridBody = bodyQuery.GetComponent(gUid);
             EntManager.TryGetComponent<IFFComponent>(gUid, out var iff);
 
-            if (!_shuttles.CanDraw(gUid, gridBody, iff))
+            var sonarDetected = _sonarRevealed.ContainsKey(grid.Owner); // BF14
+
+            if (!_shuttles.CanDraw(gUid, gridBody, iff)
+                && (!SonarSeeCloaked || !sonarDetected) // BF14
+            )
                 continue;
 
             var hideLabel = iff != null && (iff.Flags & IFFFlags.HideLabel) != 0x0;
             var noLabel = iff != null && (iff.Flags & IFFFlags.HideLabelAlways) != 0x0;
             var detectionLevel = _consoleEntity == null ? DetectionLevel.Detected : GetGridDetected(grid.Owner);
             // BF14
-            if (_sonarRevealed.ContainsKey(grid.Owner))
+            if (sonarDetected)
                 detectionLevel = DetectionLevel.Detected;
 
             var detected = detectionLevel != DetectionLevel.Undetected || !hideLabel;
