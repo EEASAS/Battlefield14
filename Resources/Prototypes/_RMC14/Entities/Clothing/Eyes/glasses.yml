@@ -3,6 +3,7 @@
   id: RMCGlassesTriMaxYellow
   name: Ballistic Glasses # BF14 TriMax Polarized Shades
   description: Sleek, angular shades designed for the modern operator. This pair is installed with a heads-up-display for target identification, a common modification by active-duty soldiers. # BF14
+  suffix: hud
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Eyes/Glasses/trimax_yellow_glasses.rsi
@@ -16,6 +17,7 @@
   id: RMCGlassesTriMaxBronze
   name: Ballistic Glasses # BF14
   description: Sleek, angular shades designed for the modern operator. This pair is installed with a heads-up-display for target identification, a common modification by active-duty soldiers. # BF14
+  suffix: hud
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Eyes/Glasses/trimax_bronze_glasses.rsi
@@ -27,6 +29,7 @@
   id: RMCGlassesTriMaxBlack
   description: Sleek, angular shades designed for the modern operator. This pair is installed with a heads-up-display for target identification, a common modification by active-duty soldiers. # BF14
   name: Tactical Shades
+  suffix: hud
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Eyes/Glasses/trimax_black_glasses.rsi
