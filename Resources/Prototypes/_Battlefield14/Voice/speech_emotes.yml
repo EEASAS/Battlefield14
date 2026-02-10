@@ -1,3 +1,6 @@
+# Clean for raw audio
+# Mask for audio with a gas mask filter
+
 - type: emote
   id: GruntUSMedicClean
   name: chat-emote-name-grunt-us-medic
@@ -59,9 +62,24 @@
   whitelist:
     components:
     - Vocal
-  chatMessages: ["chat-emote-mgs-grunt-us-grenadethrowing"]
+  chatMessages: ["chat-emote-msg-grunt-us-grenadethrowing"]
   chatTriggers:
     - is throwing a grenade
     - grenade out
     - nade out
     - frag out
+
+- type: emote
+  id: GruntUSGrenadeSurprisedClean
+  name: chat-emote-name-grunt-us-grenadesurprised
+  category: Vocal
+  icon: _Battlefield14/Actions/Voicelines/grenadesurprised.png
+  whitelist:
+    components:
+    - Vocal
+  chatMessages: ["chat-emote-msg-grunt-us-grenadesurprised"]
+  chatTriggers:
+    - spots a grenade
+    - grenade
+    - nade
+    - frag

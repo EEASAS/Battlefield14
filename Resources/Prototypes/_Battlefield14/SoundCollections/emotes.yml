@@ -69,6 +69,19 @@
   - /Audio/_Battlefield14/Voice/Human/BlackMesa/Raw/Grenadethrowing/hg_throw06.ogg
 
 - type: soundCollection
+  id: GruntUSGrenadeSurprisedClean
+  files:
+  - /Audio/_Battlefield14/Voice/Human/BlackMesa/Raw/Grenadesurprised/hg_gren01.ogg
+  - /Audio/_Battlefield14/Voice/Human/BlackMesa/Raw/Grenadesurprised/hg_gren02.ogg
+  - /Audio/_Battlefield14/Voice/Human/BlackMesa/Raw/Grenadesurprised/hg_gren03.ogg
+  - /Audio/_Battlefield14/Voice/Human/BlackMesa/Raw/Grenadesurprised/hg_gren04.ogg
+  - /Audio/_Battlefield14/Voice/Human/BlackMesa/Raw/Grenadesurprised/hg_gren05.ogg
+  - /Audio/_Battlefield14/Voice/Human/BlackMesa/Raw/Grenadesurprised/hg_gren05_var01.ogg
+  - /Audio/_Battlefield14/Voice/Human/BlackMesa/Raw/Grenadesurprised/hg_gren10.ogg
+  - /Audio/_Battlefield14/Voice/Human/BlackMesa/Raw/Grenadesurprised/hg_gren10_var01.ogg
+  - /Audio/_Battlefield14/Voice/Human/BlackMesa/Raw/Grenadesurprised/hg_gren10_var03.ogg
+
+- type: soundCollection
   id: GruntUSScreamClean
   files:
   - /Audio/_Battlefield14/Voice/Human/BlackMesa/Raw/Screaming/hg_onfire01.ogg

@@ -29,7 +29,7 @@
 - type: emote
   id: Laugh
   name: chat-emote-name-laugh
-  category: Vocal
+#BF14  category: Vocal
   icon: Interface/Emotes/laugh.png
   whitelist:
     components:
