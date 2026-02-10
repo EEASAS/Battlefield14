@@ -61,7 +61,7 @@
     jumpsuit: ClothingUniformJumpsuitCamoRUEMR
     head: ClothingHeadHatHelmetRUEMR
     helmetattachment: ClothingHelmetAttachmentNVGsBasic # TODO replace with BF14 version
-    eyes: ClothingEyesGogglesGreen
+#    eyes: ClothingEyesGogglesGreen
     outerClothing: ClothingOuterArmorPlateCarrierBlack
     shoes: ClothingShoesBootsJackFilled
     back: ClothingBackpackRucksackBlack

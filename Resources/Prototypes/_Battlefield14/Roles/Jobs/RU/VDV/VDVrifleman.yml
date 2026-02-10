@@ -62,7 +62,7 @@
     belt: ClothingBeltMilitaryWebbingRUFilledAK12
     jumpsuit: ClothingUniformJumpsuitCamoRUEMR
     head: ClothingHeadHatHelmetRUEMR
-    eyes: ClothingEyesGogglesGreen
+#    eyes: ClothingEyesGogglesGreen
     outerClothing: ClothingOuterArmorPlateCarrierBlack
     shoes: ClothingShoesBootsJackFilled
     back: ClothingBackpackRucksackBlack

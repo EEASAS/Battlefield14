@@ -60,7 +60,7 @@
     belt: ClothingBeltMilitaryWebbingRUFilledAK74blackdrum
     jumpsuit: ClothingUniformJumpsuitCamoRUEMR
     head: ClothingHeadHatHelmetRUEMRRiot
-    eyes: ClothingEyesGogglesGreen
+#    eyes: ClothingEyesGogglesGreen
     outerClothing: ClothingOuterArmorPlateCarrierBlack
     shoes: ClothingShoesBootsJackFilled
     back: ClothingBackpackRucksackBlack
