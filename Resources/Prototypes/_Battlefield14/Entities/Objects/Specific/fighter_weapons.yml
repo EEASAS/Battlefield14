@@ -158,9 +158,9 @@
         Blunt: 100
         Heat: 40
   - type: Sprite
-    sprite: _Mono/Objects/SpaceArtillery/hybrid_rocket.rsi
+    sprite: _Mono/Objects/SpaceArtillery/hybrid_missile.rsi
     layers:
-    - state: hybrid-rocket
+    - state: hybrid-missile
   - type: Ammo
     muzzleFlash: MuzzleFlashEffectSmall
   - type: ShipWeaponProjectile
