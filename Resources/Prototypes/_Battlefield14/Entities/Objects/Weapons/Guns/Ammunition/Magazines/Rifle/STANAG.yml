@@ -1,6 +1,4 @@
 - type: entity
-  # COMMENTED OUT: Missing parent 'BaseMagazineRifle'
-  # parent: BaseMagazineRifle
   parent: BaseItem
   id: MagazineRifleSTANAG
   name: "STANAG magazine (5.56x45)"

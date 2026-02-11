@@ -217,3 +217,20 @@
           amount: 4
   - type: AccessReader
     access: [["PACTSoldier"]]
+
+- type: entity
+  id: CrateSecgearPACTFilledRPG7
+  suffix: Filled, RPG-7
+  parent: CrateSecgear
+  name: RPG-7 crate
+  components:
+  - type: StorageFill
+    contents:
+        - id: WeaponLauncherRURPG7
+          amount: 2
+        - id: CartridgeRPG7HEAT
+          amount: 4
+        - id: CartridgeRPG7Frag
+          amount: 4
+  - type: AccessReader
+    access: [["PACTSoldier"]]

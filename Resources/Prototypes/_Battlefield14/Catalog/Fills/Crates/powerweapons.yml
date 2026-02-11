@@ -86,3 +86,13 @@
     contents:
         - id: WeaponRifleRUAEK971
         - id: BoxMagazineAK74
+
+- type: entity
+  id: CratePowerWeaponFilledXM25
+  suffix: Filled, XM25
+  parent: CratePowerWeapon
+  components:
+  - type: StorageFill
+    contents:
+        - id: WeaponGrenadeLauncherUSXM25
+        - id: BoxMagazineXM25Mixed
