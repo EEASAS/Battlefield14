@@ -1,0 +1,199 @@
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: BaseBulletTrigger
+  id: Bullet25x40HE
+  name: 25x40mm explosive projectile
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    layers:
+    - state: smallfrag
+  - type: Projectile
+    damage:
+      types:
+        Structural: 150
+        Blunt: 150
+  - type: HeFragProjectile
+    fillPrototype: Bullet25x40Fragment
+    capacity: 16
+    randomAngle: true
+    minVelocity: 8
+    maxVelocity: 15
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: Default
+    totalIntensity: 100
+    intensitySlope: 5
+    maxIntensity: 30
+    maxTileBreak: 0
+  - type: StaminaDamageOnCollide
+    damage: 25 # ~4 hits to stun
+
+- type: entity
+  id: Bullet25x40AirburstFlak
+  name: 25x40mm airburst flak projectile
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 60
+    deleteOnCollide: true
+  - type: SubmunitionProjectile
+    submunitionPrototype: Bullet25x40Fragment
+    distanceDelay: 5
+#    submunitionDelay: 1.0
+    submunitionCount: 10
+    spreadAngle: 8
+    velocityMultiplier: 1.0
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    layers:
+    - state: smallfrag
+  - type: ShipWeaponProjectile
+#  - type: TimedDespawn
+#    lifetime: 100
+  - type: PointLight
+    radius: 4
+    color: orange
+    energy: 0.6
+  - type: RadarBlip
+    scale: 3.5
+    requireNoGrid: true
+    shape: triangle
+    radarColor: "#FF7700"
+
+- type: entity
+  id: Bullet25x40HEAB
+  name: 25x40mm high explosive airburst projectile
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 60
+    deleteOnCollide: true
+  - type: SubmunitionProjectile
+    submunitionPrototype: Bullet25x40Fragment
+    distanceDelay: 8
+    submunitionDelay: 0
+    submunitionCount: 40
+    spreadAngle: 180
+    velocityMultiplier: 1.0
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    layers:
+    - state: smallfrag
+  - type: ShipWeaponProjectile
+#  - type: TimedDespawn
+#    lifetime: 100
+  - type: PointLight
+    radius: 4
+    color: orange
+    energy: 0.6
+  - type: RadarBlip
+    scale: 3.5
+    requireNoGrid: true
+    shape: triangle
+    radarColor: "#FF7700"
+
+- type: entity
+  id: Bullet25x40APDS
+  name: 25x40mm armour penetrating sabot
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Blunt: 40
+    deleteOnCollide: true
+  - type: SubmunitionProjectile
+    submunitionPrototype: Bullet25x40APDSPenetrator
+    distanceDelay: 4
+    submunitionDelay: 0
+    submunitionCount: 1
+    spreadAngle: 0
+    velocityMultiplier: 1.0
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    layers:
+    - state: smallfrag
+  - type: ShipWeaponProjectile
+#  - type: TimedDespawn
+#    lifetime: 100
+  - type: PointLight
+    radius: 4
+    color: orange
+    energy: 0.6
+  - type: RadarBlip
+    scale: 3.5
+    requireNoGrid: true
+    shape: triangle
+    radarColor: "#FF7700"
+
+- type: entity
+  id: Bullet25x40Fragment
+  name: 25x40mm fragment
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Slash: 10
+        Piercing: 10
+  - type: StaminaDamageOnCollide
+    damage: 15 # ~7 hits to stun
+    deleteOnCollide: true
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    layers:
+    - state: shard
+  - type: ShipWeaponProjectile
+  - type: TimedDespawn
+    lifetime: 1.5
+  - type: PointLight
+    radius: 0.8
+    color: orange
+    energy: 0.15
+  - type: RadarBlip
+    scale: 0.4
+    requireNoGrid: true
+    shape: triangle
+    radarColor: "#FF9900"
+
+- type: entity
+  id: Bullet25x40APDSPenetrator
+  name: 25x40mm APDS Penetrator
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Structural: 40
+        Piercing: 80
+    armorPenetration: 0.5
+  - type: StaminaDamageOnCollide
+    damage: 30 # ~4 hits to stun
+    deleteOnCollide: true
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    layers:
+    - state: shard
+    scale: 1.5, 1.5
+  - type: ShipWeaponProjectile
+  - type: TimedDespawn
+    lifetime: 10
+  - type: PointLight
+    radius: 0.8
+    color: orange
+    energy: 0.15
+  - type: RadarBlip
+    scale: 0.4
+    requireNoGrid: true
+    shape: triangle
+    radarColor: "#FF9900"

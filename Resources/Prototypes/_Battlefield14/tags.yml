@@ -2,6 +2,9 @@
   id: MagazineRifleSTANAG
 
 - type: Tag
+  id: BF_CartridgeGrenade25x40
+
+- type: Tag
   id: BF_CartridgePistol45ACP
 
 - type: Tag
@@ -105,6 +108,9 @@
 
 - type: Tag
   id: MagazineShotgunUSASDrum
+
+- type: Tag
+  id: MagazineGrenadeLauncherXM25
 
 - type: Tag
   id: SpeedLoader357magnum
