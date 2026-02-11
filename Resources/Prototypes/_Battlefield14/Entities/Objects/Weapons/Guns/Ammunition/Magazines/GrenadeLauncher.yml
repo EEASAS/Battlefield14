@@ -2,7 +2,7 @@
   parent: BaseItem
   id: MagazineGrenadeLauncherXM25HE
   name: "M-25 magazine (25x40mm HE)"
-  description: A 5 round magazine for the 25x40mm fuck off bullet that fucking kills you.
+  description: A 5 round magazine for the 25x40mm fuck off bullet that fucking kills you. Explodes on contact with shrapnel.
   components:
   - type: Tag
     tags:
@@ -54,6 +54,7 @@
   parent: MagazineGrenadeLauncherXM25HE
   id: MagazineGrenadeLauncherXM25Flechette
   name: "M-25 magazine (25x40mm flechette)"
+  description: A 5 round magazine for the 25x40mm fuck off bullet that fucking kills you. It basically turns your grenade launcher into a shotgun.
   components:
   - type: BallisticAmmoProvider
     proto: BF_CartridgeGrenade25x40Flechette
@@ -75,6 +76,7 @@
   parent: MagazineGrenadeLauncherXM25HE
   id: MagazineGrenadeLauncherXM25APDS
   name: "M-25 magazine (25x40mm APDS)"
+  description: A 5 round magazine for the 25x40mm fuck off bullet that fucking kills you. Discarding sabot rounds penetrate through armour easily.
   components:
   - type: BallisticAmmoProvider
     proto: BF_CartridgeGrenade25x40APDS
@@ -96,6 +98,7 @@
   parent: MagazineGrenadeLauncherXM25HE
   id: MagazineGrenadeLauncherXM25Flak
   name: "M-25 magazine (25x40mm flak)"
+  description: A 5 round magazine for the 25x40mm fuck off bullet that fucking kills you. These rounds are designed for taking out fighters.
   components:
   - type: BallisticAmmoProvider
     proto: BF_CartridgeGrenade25x40Flak

@@ -720,6 +720,8 @@
         Piercing: 1500
     penetrationThreshold: 4000
     armorPenetration: 0.95
+  - type: ArmorPiercing
+    piercingThickness: 20
     deleteOnCollide: false
   - type: Sprite
     sprite: _Mono/Objects/SpaceArtillery/57_shell.rsi

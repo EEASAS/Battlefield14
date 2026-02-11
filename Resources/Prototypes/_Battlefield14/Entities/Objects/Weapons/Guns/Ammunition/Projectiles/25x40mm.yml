@@ -41,12 +41,12 @@
         Piercing: 60
     deleteOnCollide: true
   - type: SubmunitionProjectile
-    submunitionPrototype: Bullet25x40Fragment
-    distanceDelay: 5
-#    submunitionDelay: 1.0
-    submunitionCount: 10
-    spreadAngle: 8
-    velocityMultiplier: 1.0
+    submunitionPrototype: Bullet25x40FlakFragment
+    distanceDelay: 0
+    submunitionDelay: 1.0
+    submunitionCount: 15
+    spreadAngle: 10
+    velocityMultiplier: 3.0
   - type: Sprite
     sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
     layers:
@@ -81,7 +81,7 @@
     submunitionDelay: 0
     submunitionCount: 40
     spreadAngle: 180
-    velocityMultiplier: 1.0
+    velocityMultiplier: 0.75
   - type: Sprite
     sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
     layers:
@@ -143,10 +143,43 @@
   - type: Projectile
     damage:
       types:
-        Slash: 10
+        Slash: 5
         Piercing: 10
+    armorPenetration: 0.3
   - type: StaminaDamageOnCollide
-    damage: 15 # ~7 hits to stun
+    damage: 5 # ~20 hits to stun
+    deleteOnCollide: true
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    layers:
+    - state: shard
+  - type: ShipWeaponProjectile
+  - type: TimedDespawn
+    lifetime: 1.5
+  - type: PointLight
+    radius: 0.8
+    color: orange
+    energy: 0.15
+  - type: RadarBlip
+    scale: 0.4
+    requireNoGrid: true
+    shape: triangle
+    radarColor: "#FF9900"
+
+- type: entity
+  id: Bullet25x40FlakFragment
+  name: 25x40mm Flakfragment
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Structural: 55
+        Slash: 15
+        Piercing: 15
+  - type: StaminaDamageOnCollide
+    damage: 5 # ~20 hits to stun
     deleteOnCollide: true
   - type: Sprite
     sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
@@ -179,7 +212,9 @@
     armorPenetration: 0.5
   - type: StaminaDamageOnCollide
     damage: 30 # ~4 hits to stun
-    deleteOnCollide: true
+  - type: ArmorPiercing
+    piercingThickness: 5
+    deleteOnCollide: false
   - type: Sprite
     sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
     layers:
