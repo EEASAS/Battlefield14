@@ -1,6 +1,6 @@
 - type: pointOfInterest
   id: INDBox
-  parent: BasePOI
+  parent: [BasePOI, BaseRepairablePOI]
   name: 'Independant Box Station'
   minimumDistance: 0
   maximumDistance: 0
@@ -9,9 +9,9 @@
   gridPath: /Maps/_Battlefield14/Stations/IND/box.yml
   addComponents:
   - type: IFF
-    color: "#047abd"
-    flags: [HideLabel]
-    readOnly: true
+    color: "#efefef"
+#    flags: [HideLabel]
+#    readOnly: true
 
 - type: gameMap
   id: BF14Box
@@ -35,16 +35,9 @@
         - type: StationJobs
           availableJobs:
 #            Contractor: [ -1, -1 ]
-            USMCSquadLeader: [ 1, 1 ]  # debug remove all these jobs when gamemode is fully working
-            USMCRifleman: [ 4, 4 ]
-            USMCAutomaticRifleman: [ 4, 4 ]
-            USMCMedic: [ 4, 4 ]
-            USMCRecon: [ 4, 4 ]
-            VDVSquadLeader: [ 1, 1 ]
-            VDVRifleman: [ 4, 4 ]
-            VDVAutomaticRifleman: [ 4, 4 ]
-            VDVMedic: [ 4, 4 ]
-            VDVRecon: [ 4, 4 ]
+            WPSSecurityOfficer: [ 3, 3 ]
+            WPSWarden: [ 1, 1 ]
+            WPSMarshal: [ 1, 1 ]
 #          tags:
 #          - HeadOfPersonnel
 #          - HeadOfSecurity

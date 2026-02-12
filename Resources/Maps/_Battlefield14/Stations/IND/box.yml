@@ -4,8 +4,8 @@ meta:
   engineVersion: 264.0.0
   forkId: ""
   forkVersion: ""
-  time: 02/08/2026 09:37:29
-  entityCount: 20603
+  time: 02/12/2026 11:16:15
+  entityCount: 20605
 maps: []
 grids:
 - 1
@@ -3317,10 +3317,10 @@ entities:
     - type: GridPathfinding
     - type: SpreaderGrid
       spreadQueues:
-        Puddle: []
         Kudzu: []
         MetalFoam: []
         Smoke: []
+        Puddle: []
     - type: GravityShake
       shakeTimes: 10
     - type: GasTileOverlay
@@ -3574,7 +3574,7 @@ entities:
             1: 13104
           39,4:
             0: 36488
-            5: 4353
+            4: 4353
           40,5:
             0: 4120
             1: 61152
@@ -4708,7 +4708,7 @@ entities:
             1: 65518
           24,7:
             1: 11
-            3: 52224
+            2: 52224
           21,9:
             1: 62136
           21,10:
@@ -4790,10 +4790,9 @@ entities:
           23,17:
             1: 65520
           23,18:
-            1: 29455
-            2: 1024
+            1: 30479
           23,19:
-            1: 65327
+            1: 65295
           23,20:
             1: 65535
           24,16:
@@ -4979,7 +4978,7 @@ entities:
           24,6:
             1: 3822
           24,8:
-            3: 12
+            2: 12
             0: 3584
           25,5:
             1: 65535
@@ -4987,11 +4986,11 @@ entities:
             1: 4095
           25,7:
             1: 15
-            3: 4352
-            4: 52224
+            2: 4352
+            3: 52224
           25,8:
-            3: 1
-            4: 12
+            2: 1
+            3: 12
             0: 3840
           26,5:
             1: 65331
@@ -5000,9 +4999,9 @@ entities:
             1: 1023
           26,7:
             1: 52239
-            4: 4352
+            3: 4352
           26,8:
-            4: 1
+            3: 1
             1: 12
             0: 3840
           27,5:
@@ -5065,9 +5064,9 @@ entities:
             1: 7
             0: 3976
           28,10:
-            5: 1911
+            4: 1911
           28,11:
-            5: 1911
+            4: 1911
           25,13:
             1: 56797
           25,14:
@@ -5095,9 +5094,9 @@ entities:
           27,16:
             1: 56717
           28,12:
-            6: 1911
-          28,13:
             5: 1911
+          28,13:
+            4: 1911
           28,14:
             0: 15
             1: 3840
@@ -5349,8 +5348,7 @@ entities:
           29,16:
             1: 65327
           30,13:
-            2: 16
-            1: 65512
+            1: 65528
           30,14:
             1: 4095
           30,15:
@@ -5417,9 +5415,9 @@ entities:
             1: 65535
           30,23:
             1: 79
-            7: 60928
+            6: 60928
           30,24:
-            7: 238
+            6: 238
             1: 58368
           31,21:
             1: 29055
@@ -5427,9 +5425,9 @@ entities:
             1: 65399
           31,23:
             1: 15
-            7: 30464
+            6: 30464
           31,24:
-            7: 119
+            6: 119
             1: 61448
           32,20:
             1: 65359
@@ -5770,7 +5768,7 @@ entities:
             0: 35016
           37,4:
             0: 13874
-            5: 2176
+            4: 2176
           38,3:
             0: 240
           36,6:
@@ -5789,10 +5787,10 @@ entities:
           37,5:
             0: 546
           38,4:
-            5: 64401
+            4: 64401
             0: 1032
           38,5:
-            5: 79
+            4: 79
             0: 16384
           38,6:
             1: 4096
@@ -5934,25 +5932,6 @@ entities:
           moles:
           - 21.824879
           - 82.10312
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-        - volume: 2500
-          temperature: 293.14996
-          moles:
-          - 20.078888
-          - 75.53487
           - 0
           - 0
           - 0
@@ -48933,7 +48912,7 @@ entities:
       rot: 3.141592653589793 rad
       pos: 79.5,46.5
       parent: 1
-- proto: CapturePointBridge
+- proto: CapturePointBridge20Minutes
   entities:
   - uid: 6280
     components:
@@ -92281,6 +92260,13 @@ entities:
     - type: Transform
       pos: 129.5,37.5
       parent: 1
+- proto: SpawnPointContractor
+  entities:
+  - uid: 20604
+    components:
+    - type: Transform
+      pos: 96.5,107.5
+      parent: 1
 - proto: SpawnPointLatejoin
   entities:
   - uid: 20301
@@ -115214,6 +115200,15 @@ entities:
     - type: Transform
       pos: 109.5,56.5
       parent: 1
+- proto: WarpPoint
+  entities:
+  - uid: 20605
+    components:
+    - type: Transform
+      pos: 85.5,89.5
+      parent: 1
+    - type: WarpPoint
+      location: Independant 'Box' Station
 - proto: WaterCooler
   entities:
   - uid: 11116

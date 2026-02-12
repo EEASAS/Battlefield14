@@ -51,6 +51,23 @@
   - type: AccessReader
     access: [["NATOSoldier"]]
 
+- type: entity
+  id: LockerArmoryNATOFilledF22
+  parent: LockerSyndicatePersonal
+  suffix: Filled, F-22 equipment
+  name: F-22 "Raptor" equipment locker
+  components:
+  - type: StorageFill
+    contents:
+        - id: LightFighterM61A2
+        - id: MediumFighterMaverick
+        - id: CrowbarRed
+        - id: Screwdriver
+        - id: WelderIndustrial
+        - id: ClothingEyesGlassesMeson
+  - type: AccessReader
+    access: [["NATOArmory"]]
+
 # PACT | Russia
 
 - type: entity
@@ -102,3 +119,34 @@
         - id: BoxMagazineKSKSlug
   - type: AccessReader
     access: [["PACTSoldier"]]
+
+- type: entity
+  id: LockerArmoryPACTFilledPKM
+  parent: LockerSyndicatePersonal
+  suffix: Filled, PKM
+  name: PKM locker
+  components:
+  - type: StorageFill
+    contents:
+        - id: WeaponMachineGunRUPKM
+          amount: 2
+        - id: MagazineBeltBoxPKM
+          amount: 2
+  - type: AccessReader
+    access: [["PACTSoldier"]]
+
+- type: entity
+  id: LockerArmoryPACTFilledSU57
+  parent: LockerSyndicatePersonal
+  suffix: Filled, SU-57 equipment
+  name: SU-57 "Felon" equipment locker
+  components:
+  - type: StorageFill
+    contents:
+        - id: LightFighterGSH301
+        - id: CrowbarRed
+        - id: Screwdriver
+        - id: WelderIndustrial
+        - id: ClothingEyesGlassesMeson
+  - type: AccessReader
+    access: [["PACTArmory"]]
