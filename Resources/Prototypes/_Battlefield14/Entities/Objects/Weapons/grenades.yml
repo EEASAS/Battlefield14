@@ -340,7 +340,7 @@
       collection: FragGrenadeSFX
 
 - type: entity
-  name: RGD-2 Smoke grenade
+  name: RDG-2 Smoke grenade
   description: A simple grey smoke grenade, canned smoke for your convenience. At least, you think it’s canned smoke, you’re not entirely sure how these things actually work.
   parent: GrenadeBase
   id: RURDG2SmokeHandgrenade

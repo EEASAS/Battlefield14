@@ -61,6 +61,12 @@ uplink-natous-FUBAR-desc = A big heavy piece of shit for ripping open airlocks a
 uplink-natous-mk21-box-name = MK21 Grenade box
 uplink-natous-mk21-box-desc = Contains 8 MK21 high explosive grenades.
 
+uplink-natous-m84-box-name = M84 Flashbang Grenade box
+uplink-natous-m84-box-desc = Contains 8 MK21 M84 flashbang grenades.
+
+uplink-natous-m18-box-name = M18 Smoke Grenade box
+uplink-natous-m18-box-desc = Contains 8 M18 smoke grenades.
+
 uplink-natous-mk21-sword-name = MK21 Grenadesword
 uplink-natous-mk21-sword-desc = Oh no.
 

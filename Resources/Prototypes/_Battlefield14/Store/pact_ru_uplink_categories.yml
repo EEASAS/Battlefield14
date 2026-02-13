@@ -114,6 +114,22 @@
         tags:
           - RussianUplink
 
+- type: listing
+  id: UplinkPACTRURPG30Crate
+  name:  uplink-PACTRU-RPG30crate-name
+  description: uplink-PACTRU-RPG30crate-desc
+  productEntity: CrateSecgearPACTFilledRPG30
+  icon: { sprite: _Battlefield14/Objects/Weapons/Guns/Launchers/RPG30.rsi, state: icon }
+  cost:
+    PACTRequisition: 30 # 5 minutes
+  categories:
+    - UplinkPACTRUWeapons
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - RussianUplink
+
 # Ammo
 
 - type: listing
@@ -308,6 +324,38 @@
   icon: { sprite: _Battlefield14/Objects/Weapons/Grenades/rgo.rsi, state: icon }
   cost:
     PACTRequisition: 30 # 5 minutes
+  categories:
+    - UplinkPACTRUExplosives
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - RussianUplink
+
+- type: listing
+  id: UplinkPACTRUBoxGrenadesRDG2
+  name:  uplink-PACTRU-rdg2-box-name
+  description: uplink-PACTRU-rdg2-box-desc
+  productEntity: BoxGrenadesRDG2
+  icon: { sprite: _Battlefield14/Objects/Weapons/Grenades/rdg2.rsi, state: icon }
+  cost:
+    PACTRequisition: 9 # 1 minute 30 seconds
+  categories:
+    - UplinkPACTRUExplosives
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - RussianUplink
+
+- type: listing
+  id: UplinkPACTRUBoxGrenadesZarya
+  name:  uplink-PACTRU-zarya-box-name
+  description: uplink-PACTRU-zarya-box-desc
+  productEntity: BoxGrenadesZarya
+  icon: { sprite: _Battlefield14/Objects/Weapons/Grenades/zarya.rsi, state: icon }
+  cost:
+    PACTRequisition: 9 # 1 minute 30 seconds
   categories:
     - UplinkPACTRUExplosives
   conditions:
