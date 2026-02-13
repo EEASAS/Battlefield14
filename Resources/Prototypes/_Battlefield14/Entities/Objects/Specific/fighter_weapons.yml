@@ -189,8 +189,8 @@
     acceleration: 80
     detectionRange: 512
     scanArc: 30
-    launchSpeed: 1 # 90
-    maxSpeed: 130
+    launchSpeed: 1
+    maxSpeed: 90
     trackDelay: 1
 
 # PACT
