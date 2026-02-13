@@ -170,7 +170,7 @@
     requireNoGrid: true
     shape: triangle
   - type: TimedDespawn
-    lifetime: 6 # approx 750 meter range
+    lifetime: 6 # approx 700 meter range
   - type: PointLight
     radius: 3.5
     color: orange
@@ -283,7 +283,7 @@
     requireNoGrid: true
     shape: triangle
   - type: TimedDespawn
-    lifetime: 4 # approx 420 meter range
+    lifetime: 4 # approx 256 meter range
   - type: PointLight
     radius: 3.5
     color: orange
