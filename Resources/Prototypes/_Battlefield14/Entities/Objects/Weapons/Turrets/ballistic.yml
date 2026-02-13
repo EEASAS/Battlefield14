@@ -3,8 +3,8 @@
 - type: entity
   id: BallisticTurretHighCaliber
   parent: BaseWeaponTurret
-  name: heavy ballistic turret
-  description: A massively reinforced turret, firing a barrage of high calliber that rip up targets. Woe be the fool who walks in front of this.
+  name: high-caliber ballistic turret
+  description: A massively reinforced turret, firing a barrage of high caliber that rip up targets. Woe be the fool who walks in front of this.
   components:
   - type: Sprite
     sprite: _Mono/Objects/Weapons/Turrets/heavy_turret.rsi
@@ -74,6 +74,17 @@
     - NATO
 
 - type: entity
+  parent: BaseFlatpack
+  id: BallisticTurretHighCaliberNATOFlatpack
+  name: Ballistic turret flatpack (NATO)
+  description: A flatpack with a single high caliber ballistic inside, tuned to NATO IFF. opened with a multitool.
+  components:
+  - type: Flatpack
+    entity: BallisticTurretHighCaliberNATO
+  - type: Item
+    size: Large
+
+- type: entity
   parent: BallisticTurretHighCaliber
   id: BallisticTurretHighCaliberPACT
   suffix: PACT
@@ -81,3 +92,14 @@
   - type: NpcFactionMember
     factions:
     - PACT
+
+- type: entity
+  parent: BaseFlatpack
+  id: BallisticTurretHighCaliberPACTFlatpack
+  name: Ballistic turret flatpack (PACT)
+  description: A flatpack with a single high caliber ballistic inside, tuned to PACT IFF. opened with a multitool.
+  components:
+  - type: Flatpack
+    entity: BallisticTurretHighCaliberPACT
+  - type: Item
+    size: Large

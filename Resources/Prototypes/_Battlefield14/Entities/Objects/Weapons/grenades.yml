@@ -68,6 +68,8 @@
   parent: MK21Handgrenade
   id: MK21HandgrenadeStackTwo
   components:
+  - type: Item
+    size: Normal
   - type: OnUseTimerTrigger
     delay: 3.5
   - type: Tag
