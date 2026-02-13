@@ -11,8 +11,9 @@
   - type: Projectile
     damage:
       types:
-        Structural: 150
-        Blunt: 150
+        Structural: 30
+        Blunt: 10
+        Pierce: 30
   - type: HeFragProjectile
     fillPrototype: Bullet25x40Fragment
     capacity: 16
@@ -22,9 +23,9 @@
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: Default
-    totalIntensity: 50
-    intensitySlope: 3
-    maxIntensity: 20
+    totalIntensity: 30
+    intensitySlope: 1.5
+    maxIntensity: 10
     maxTileBreak: 0
   - type: StaminaDamageOnCollide
     damage: 25 # ~4 hits to stun
@@ -168,7 +169,7 @@
 
 - type: entity
   id: Bullet25x40FlakFragment
-  name: 25x40mm Flakfragment
+  name: 25x40mm flak fragment
   parent: BaseBullet
   categories: [ HideSpawnMenu ]
   components:

@@ -15,13 +15,13 @@
 - type: entity
   id: LightFighterM61A2
   name: M61A2 20mm gatling gun
-  description: From high-tech aircraft, to naval CIWS mounts, to 1980's era M113's, this weapon is hungry for aircraft (and infantry) everywhere.
+  description: From high-tech aircraft, to naval CIWS mounts, to 1980's era M113's, this weapon is hungry for aircraft (and infantry) everywhere. Approx range 1 kilometer.
   suffix: Fighter weapon, Light, Gun
   parent: [ BaseMechWeaponRange, LightFighterEquipment ]
   components:
   - type: Sprite
-    sprite: _Mono/Objects/Specific/Mech/tgmc_mecha_weapons.rsi
-    state: heavycannon64x32
+    sprite: _Battlefield14/Objects/Weapons/Guns/fighterweapons.rsi
+    state: M61A2
   - type: Gun
     projectileSpeed: 110
     fireRate: 8
@@ -38,22 +38,22 @@
     maxCharge: 180
   - type: ProjectileBatteryAmmoProvider
     proto: Bullet20mmPhalanx
-    fireCost: 20
+    fireCost: 25
   - type: Appearance
   - type: AmmoCounter
 
 - type: entity
   id: LightFighterAIM9
   name: AIM-9XS missile gantry
-  description: The latest iteration of the AIM-9, fins removed and replaced with shifting titanium cubes to steer and thruster redesigned to work in space.
+  description: The latest iteration of the AIM-9, fins removed and replaced with shifting titanium cubes to steer and thruster redesigned to work in space. approx 500 meter range.
   suffix: Fighter weapon, Light, Missile
   parent: [ BaseMechWeaponRange, LightFighterEquipment ]
   components:
   - type: MechEquipment
     preventFireOnGrid: true
   - type: Sprite
-    sprite: _Mono/Objects/Specific/Mech/tgmc_mecha_weapons.rsi
-    state: tow64x32
+    sprite: _Battlefield14/Objects/Weapons/Guns/fighterweapons.rsi
+    state: aim9
   - type: Gun
     projectileSpeed: 50
     fireRate: 0.2
@@ -83,9 +83,9 @@
         Blunt: 70
         Heat: 30
   - type: Sprite
-    sprite: _Mono/Objects/SpaceArtillery/mini_rocket.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/fighterweapon_projectiles.rsi
     layers:
-    - state: mini-rocket
+    - state: aim9
   - type: Ammo
     muzzleFlash: MuzzleFlashEffectSmall
   - type: ShipWeaponProjectile
@@ -120,15 +120,15 @@
 - type: entity
   id: MediumFighterMaverick
   name: AGM-67 Maverick missile gantry
-  description: An american classic, with fins redesigned to house shifting titanium cubes to steer and thrusters redesigned to work in space.
+  description: An american classic, with fins redesigned to house shifting titanium cubes to steer and thrusters redesigned to work in space. approx 700 meter range.
   suffix: Fighter weapon, Light, Missile
   parent: [ BaseMechWeaponRange, LightFighterEquipment ]
   components:
   - type: MechEquipment
     preventFireOnGrid: true
   - type: Sprite
-    sprite: _Mono/Objects/Specific/Mech/tgmc_mecha_weapons.rsi
-    state: tow64x32
+    sprite: _Battlefield14/Objects/Weapons/Guns/fighterweapons.rsi
+    state: hellfire
   - type: Gun
     projectileSpeed: 50
     fireRate: 0.2
@@ -158,9 +158,9 @@
         Blunt: 100
         Heat: 40
   - type: Sprite
-    sprite: _Mono/Objects/SpaceArtillery/hybrid_missile.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/fighterweapon_projectiles.rsi
     layers:
-    - state: hybrid-missile
+    - state: hellfire_launched
   - type: Ammo
     muzzleFlash: MuzzleFlashEffectSmall
   - type: ShipWeaponProjectile
@@ -186,10 +186,10 @@
   - type: MiningGatheringSoft
   - type: MiningGatheringHard
   - type: TargetSeeking
-    acceleration: 150
+    acceleration: 80
     detectionRange: 512
     scanArc: 35
-    launchSpeed: 150
+    launchSpeed: 1 # 90
     maxSpeed: 130
     trackDelay: 0.2
 
@@ -198,13 +198,13 @@
 - type: entity
   id: LightFighterGSH301
   name: GSh-30-1 30mm autocannon
-  description: It may be from the 80's but the 30mm frag coming out doesn't care.
+  description: It may be from the 80's but the 30mm frag coming out doesn't care. Approx range 256 meters.
   suffix: Fighter weapon, Light, Gun
   parent: [ BaseMechWeaponRange, LightFighterEquipment ]
   components:
   - type: Sprite
-    sprite: _Mono/Objects/Specific/Mech/tgmc_mecha_weapons.rsi
-    state: sniper64x32
+    sprite: _Battlefield14/Objects/Weapons/Guns/fighterweapons.rsi
+    state: GSH30
   - type: Gun
     projectileSpeed: 90
     fireRate: 5
@@ -221,6 +221,79 @@
     maxCharge: 180
   - type: ProjectileBatteryAmmoProvider
     proto: Bullet23mmFrag
-    fireCost: 30
+    fireCost: 35
   - type: Appearance
   - type: AmmoCounter
+
+- type: entity
+  id: LightFighterS8
+  name: S-8 Rocket pod
+  description: 80mm rockets coming at you can be described as highly concerning. Approx range 256 meters.
+  suffix: Fighter weapon, Light, Gun
+  parent: [ BaseMechWeaponRange, LightFighterEquipment ]
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/fighterweapons.rsi
+    state: smallrocketpod
+  - type: Gun
+    projectileSpeed: 60
+    fireRate: 8
+    minAngle: 0
+    maxAngle: 10
+    angleIncrease: 2
+    angleDecay: 10
+    selectedMode: FullAuto
+    availableModes:
+      - FullAuto
+    soundGunshot:
+      path: /Audio/_Mono/Weapons/Guns/Gunshots/slammer.ogg
+  - type: Battery
+    maxCharge: 180
+  - type: ProjectileBatteryAmmoProvider
+    proto: BulletRocketS8
+    fireCost: 50
+  - type: Appearance
+  - type: AmmoCounter
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: BaseBulletTrigger
+  id: BulletRocketS8
+  name: 80mm S-8 rocket
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/fighterweapon_projectiles.rsi
+    layers:
+    - state: FFAR
+  - type: Projectile
+    damage:
+      types:
+        Structural: 40
+        Blunt: 40
+  - type: HeFragProjectile
+    fillPrototype: Bullet25x40Fragment
+    capacity: 16
+    randomAngle: true
+    minVelocity: 8
+    maxVelocity: 15
+  - type: ShipWeaponProjectile
+  - type: RadarBlip
+    radarColor: "#FCBA03"
+    scale: 1
+    requireNoGrid: true
+    shape: triangle
+  - type: TimedDespawn
+    lifetime: 4 # approx 420 meter range
+  - type: PointLight
+    radius: 3.5
+    color: orange
+    energy: 0.5
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: Default
+    totalIntensity: 30
+    intensitySlope: 1.5
+    maxIntensity: 10
+    maxTileBreak: 1
+  - type: StaminaDamageOnCollide
+    damage: 40 # ~3 hits to stun

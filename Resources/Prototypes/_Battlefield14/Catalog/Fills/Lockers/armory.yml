@@ -144,6 +144,7 @@
   - type: StorageFill
     contents:
         - id: LightFighterGSH301
+        - id: LightFighterS8
         - id: CrowbarRed
         - id: Screwdriver
         - id: WelderIndustrial
