@@ -24,7 +24,7 @@ entities:
   - uid: 1
     components:
     - type: MetaData
-      name: grid
+      name: KTV-1
     - type: Transform
       pos: -0.484375,-0.42963982
       parent: invalid
@@ -225,6 +225,8 @@ entities:
           - 0
         chunkSize: 4
     - type: GasTileOverlay
+    - type: BecomesStation
+      id: KTV1
     - type: RadiationGridResistance
     - type: ShipGridLock
       locked: False

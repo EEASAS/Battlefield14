@@ -65,9 +65,7 @@
 - type: vendingMachineInventory
   id: NATOUSMCShipInventory
   startingInventory:
-    WeaponRifleUSM4A1: 1 # replace with an actual ship later
-#    ShipVoucherUnionfallRaider: 2
-#    ShipVoucherUnionfallIbis: 2
+    ShipVoucherAAVP8: 8
 
 - type: vendingMachineInventory
   id: PACTVDVWarInventory
@@ -143,6 +141,4 @@
 - type: vendingMachineInventory
   id: PACTVDVShipInventory
   startingInventory:
-    MagazineRifleAK74: 1 # replace with an actual ship later
-#    ShipVoucherUnionfallRaider: 2
-#    ShipVoucherUnionfallIbis: 2
+    ShipVoucherKTV1: 8

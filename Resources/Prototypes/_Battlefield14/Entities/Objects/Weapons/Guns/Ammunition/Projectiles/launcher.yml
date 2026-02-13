@@ -73,7 +73,6 @@
   - type: Projectile
     damage:
       types:
-        Structural: 30
         Slash: 15
         Piercing: 15
   - type: StaminaDamageOnCollide
@@ -169,7 +168,6 @@
   - type: Projectile
     damage:
       types:
-        Structural: 150
         Blunt: 150
   - type: HeFragProjectile
     fillPrototype: BulletRPG7OG7VFragment
@@ -196,7 +194,6 @@
   - type: Projectile
     damage:
       types:
-        Structural: 30
         Slash: 15
         Piercing: 15
   - type: StaminaDamageOnCollide

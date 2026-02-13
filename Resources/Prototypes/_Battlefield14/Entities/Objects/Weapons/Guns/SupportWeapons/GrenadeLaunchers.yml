@@ -123,6 +123,7 @@
       - SemiAuto
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/grenade_launcher.ogg
+  - type: GunRequiresWield
 
 - type: entity
   name: M-25 "Punisher" smart grenade launcher
@@ -190,3 +191,4 @@
   - type: EyeCursorOffset
     maxOffset: 5
     pvsIncrease: 0.25
+  - type: GunRequiresWield
