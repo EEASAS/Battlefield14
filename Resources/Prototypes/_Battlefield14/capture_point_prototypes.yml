@@ -113,3 +113,13 @@
   - type: POICapture
     poiName: "Atmospherics"
     timeToCapture: 60
+
+- type: entity
+  id: CapturePointResearch
+  parent: BaseCapturePoint
+  name: research control point
+  suffix: 60s / 1m
+  components:
+  - type: POICapture
+    poiName: "Research and development"
+    timeToCapture: 60
