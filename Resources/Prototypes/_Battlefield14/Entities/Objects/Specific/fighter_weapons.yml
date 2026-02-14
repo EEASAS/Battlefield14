@@ -236,7 +236,7 @@
     sprite: _Battlefield14/Objects/Weapons/Guns/fighterweapons.rsi
     state: smallrocketpod
   - type: Gun
-    projectileSpeed: 60
+    projectileSpeed: 65
     fireRate: 8
     minAngle: 0
     maxAngle: 10
