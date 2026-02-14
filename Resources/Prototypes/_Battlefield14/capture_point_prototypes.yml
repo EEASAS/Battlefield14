@@ -50,31 +50,31 @@
   id: CapturePointEngineering
   parent: BaseCapturePoint
   name: engineering control point
-  suffix: 90s / 1.5m
+  suffix: 120s / 2m
   components:
   - type: POICapture
     poiName: "Engineering Sector"
-    timeToCapture: 90
+    timeToCapture: 120
 
 - type: entity
   id: CapturePointMedical
   parent: BaseCapturePoint
   name: medical control point
-  suffix: 120s / 2m
+  suffix: 180s / 3m
   components:
   - type: POICapture
     poiName: "Medical Bay"
-    timeToCapture: 120
+    timeToCapture: 180
 
 - type: entity
   id: CapturePointBridge
   parent: BaseCapturePoint
   name: bridge control point
-  suffix: 120s / 2m
+  suffix: 180s / 3m
   components:
   - type: POICapture
     poiName: "Bridge"
-    timeToCapture: 120
+    timeToCapture: 180
 
 - type: entity
   id: CapturePointBridge20Minutes
@@ -88,28 +88,38 @@
   id: CapturePointSecurity
   parent: BaseCapturePoint
   name: security control point
-  suffix: 120s / 2m
+  suffix: 180s / 3m
   components:
   - type: POICapture
     poiName: "Security"
-    timeToCapture: 120
+    timeToCapture: 180
 
 - type: entity
   id: CapturePointCargo
   parent: BaseCapturePoint
   name: cargo control point
-  suffix: 60s / 1m
+  suffix: 120s / 2m
   components:
   - type: POICapture
     poiName: "Cargo Department"
-    timeToCapture: 60
+    timeToCapture: 120
 
 - type: entity
   id: CapturePointAtmospherics
   parent: BaseCapturePoint
   name: atmospherics control point
-  suffix: 60s / 1m
+  suffix: 120s / 2m
   components:
   - type: POICapture
     poiName: "Atmospherics"
-    timeToCapture: 60
+    timeToCapture: 120
+
+- type: entity
+  id: CapturePointResearch
+  parent: BaseCapturePoint
+  name: research control point
+  suffix: 120s / 2m
+  components:
+  - type: POICapture
+    poiName: "Research and development"
+    timeToCapture: 120
