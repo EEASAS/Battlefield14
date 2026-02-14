@@ -213,6 +213,46 @@
     sound:
       collection: FlashGrenadeSFX
 
+- type: entity
+  name: M58 CS gas grenade
+  description: Dispenses irritating CS gas for non-lethal incapacitation and dispersion of riots.
+  parent: GrenadeBase
+  id: USM58CSGasHandgrenade
+  components:
+  - type: OnUseTimerTrigger
+    delay: 2.5
+  - type: Tag
+    tags:
+      - Grenade
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Grenades/M58.rsi
+  - type: SmokeOnTrigger
+    duration: 30
+    spreadAmount: 18
+    solution:
+      reagents:
+      - ReagentId: CSGas
+        Quantity: 50
+  - type: TimerTriggerVisuals
+    primingSound:
+      path: "/Audio/_Battlefield14/Weapons/Grenades/trigger1.ogg"
+  - type: SoundOnTrigger
+    sound: /Audio/_Battlefield14/Weapons/Grenades/smoke10s.ogg
+  - type: DeleteOnTrigger
+  - type: EmitSoundOnPickup
+    sound: /Audio/_Battlefield14/Weapons/Grenades/grab1.ogg
+  - type: EmitSoundOnDrop
+    sound: /Audio/_Battlefield14/Weapons/Grenades/drop1.ogg
+  - type: EmitSoundOnLand
+    sound:
+      collection: SmokeGrenadeSFX
+ # - type: ExtendDescription
+ #  descriptionList:
+ #  - description: "Smoke lasts 30 seconds."
+ #    fontSize: 12
+ #    color: "#1c89b1"
+ #    requireDetailRange: true
+
 # RU
 
 - type: entity
@@ -408,3 +448,84 @@
   - type: EmitSoundOnLand
     sound:
       collection: FlashGrenadeSFX
+
+- type: entity
+  name: K-51 CS gas grenade
+  description: These little things earned their reputation in Grozny, being thrown into buildings to bring out militiamen.
+  parent: GrenadeBase
+  id: RUK51CSGasHandgrenade
+  components:
+  - type: OnUseTimerTrigger
+    delay: 2.5
+  - type: Tag
+    tags:
+      - Grenade
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Grenades/K51.rsi
+  - type: SmokeOnTrigger
+    duration: 30
+    spreadAmount: 18
+    solution:
+      reagents:
+      - ReagentId: CSGas
+        Quantity: 50
+  - type: TimerTriggerVisuals
+    primingSound:
+      path: "/Audio/_Battlefield14/Weapons/Grenades/trigger1.ogg"
+  - type: SoundOnTrigger
+    sound: /Audio/_Battlefield14/Weapons/Grenades/smoke10s.ogg
+  - type: DeleteOnTrigger
+  - type: EmitSoundOnPickup
+    sound: /Audio/_Battlefield14/Weapons/Grenades/grab1.ogg
+  - type: EmitSoundOnDrop
+    sound: /Audio/_Battlefield14/Weapons/Grenades/drop1.ogg
+  - type: EmitSoundOnLand
+    sound:
+      collection: SmokeGrenadeSFX
+ # - type: ExtendDescription
+ #  descriptionList:
+ #  - description: "Smoke lasts 30 seconds."
+ #    fontSize: 12
+ #    color: "#1c89b1"
+ #    requireDetailRange: true
+
+- type: entity
+  name: K-52 sarin gas grenade
+  description: A horrible, horrible thing, may God forgive you if you wish to use this against your fellow man.
+  parent: GrenadeBase
+  id: RUK52SarinGasHandgrenade
+  suffix: WAR CRIME
+  components:
+  - type: OnUseTimerTrigger
+    delay: 2.5
+  - type: Tag
+    tags:
+      - Grenade
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Grenades/K51.rsi
+  - type: SmokeOnTrigger
+    duration: 30
+    spreadAmount: 18
+    solution:
+      reagents:
+      - ReagentId: Sarin
+        Quantity: 50
+  - type: TimerTriggerVisuals
+    primingSound:
+      path: "/Audio/_Battlefield14/Weapons/Grenades/trigger1.ogg"
+  - type: SoundOnTrigger
+    sound: /Audio/_Battlefield14/Weapons/Grenades/smoke10s.ogg
+  - type: DeleteOnTrigger
+  - type: EmitSoundOnPickup
+    sound: /Audio/_Battlefield14/Weapons/Grenades/grab1.ogg
+  - type: EmitSoundOnDrop
+    sound: /Audio/_Battlefield14/Weapons/Grenades/drop1.ogg
+  - type: EmitSoundOnLand
+    sound:
+      collection: SmokeGrenadeSFX
+ # - type: ExtendDescription
+ #  descriptionList:
+ #  - description: "Smoke lasts 30 seconds."
+ #    fontSize: 12
+ #    color: "#1c89b1"
+ #    requireDetailRange: true

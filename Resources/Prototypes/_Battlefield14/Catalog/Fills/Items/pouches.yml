@@ -99,6 +99,18 @@
 
 - type: entity
   parent: PouchGrenades
+  id: PouchGrenadesFilledUSMCSupport
+  suffix: Filled, USMC Support
+  components:
+  - type: StorageFill
+    contents:
+    - id: MK21Handgrenade
+      amount: 3
+    - id: USM58CSGasHandgrenade
+      amount: 3
+
+- type: entity
+  parent: PouchGrenades
   id: PouchGrenadesFilledVDVRifleman
   suffix: Filled, VDV Rifleman
   components:
@@ -120,4 +132,16 @@
     - id: RUZaryaFlashBangHandgrenade
       amount: 3
     - id: RURDG2SmokeHandgrenade
+      amount: 3
+
+- type: entity
+  parent: PouchGrenades
+  id: PouchGrenadesFilledVDVSupport
+  suffix: Filled, VDV Support
+  components:
+  - type: StorageFill
+    contents:
+    - id: RURGD5Handgrenade
+      amount: 3
+    - id: RUK51CSGasHandgrenade
       amount: 3

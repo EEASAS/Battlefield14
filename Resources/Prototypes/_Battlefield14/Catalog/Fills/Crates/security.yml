@@ -247,3 +247,19 @@
           amount: 5
   - type: AccessReader
     access: [["PACTSoldier"]]
+
+## Misc
+# Shared
+
+- type: entity
+  id: CrateSecgearFilledBarbwire
+  suffix: Filled, barbed wire
+  parent: CrateSecgear
+  name: barbed wire coil crate
+  components:
+  - type: StorageFill
+    contents:
+        - id: BarbedWire30
+          amount: 5
+  - type: AccessReader
+    access: [["NATOSoldier"] , ["PACTSoldier"]]

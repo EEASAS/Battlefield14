@@ -180,6 +180,22 @@
         tags:
           - RussianUplink
 
+- type: listing
+  id: UplinkPACTBarbwire
+  name:  uplink-PACT-barbwirecrate-name
+  description: uplink-PACT-barbwirecrate-desc
+  productEntity: CrateSecgearFilledBarbwire
+  icon: { sprite: _RMC14/Objects/barbed_wire.rsi, state: barbed_wire_3 }
+  cost:
+    PACTRequisition: 15 # 2 minutes 30 seconds
+  categories:
+    - UplinkPACTRUUtility
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - RussianUplink
+
 # Medical
 
 - type: listing

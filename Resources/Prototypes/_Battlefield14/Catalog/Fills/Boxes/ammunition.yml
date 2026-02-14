@@ -295,6 +295,24 @@
       - state: box_security
       - state: flashbang
 
+- type: entity
+  name: box of M58 CS gas grenades
+  parent: BoxMagazine
+  id: BoxGrenadesM58
+  description: A box full of M58 CS gas grenades
+  components:
+  - type: Storage
+    grid:
+    - 0,0,3,3
+  - type: StorageFill
+    contents:
+      - id: USM58CSGasHandgrenade
+        amount: 8
+  - type: Sprite
+    layers:
+      - state: box_security
+      - state: flashbang
+
 # 40x46mm
 - type: entity
   name: box of 40x46 HE grenades
@@ -468,6 +486,43 @@
   - type: StorageFill
     contents:
       - id: RUZaryaFlashBangHandgrenade
+        amount: 8
+  - type: Sprite
+    layers:
+      - state: box_security
+      - state: flashbang
+
+- type: entity
+  name: box of K-51 CS gas grenades
+  parent: BoxMagazine
+  id: BoxGrenadesK51
+  description: A box full of K-51 CS gas grenades.
+  components:
+  - type: Storage
+    grid:
+    - 0,0,3,3
+  - type: StorageFill
+    contents:
+      - id: RUK51CSGasHandgrenade
+        amount: 8
+  - type: Sprite
+    layers:
+      - state: box_security
+      - state: flashbang
+
+- type: entity
+  name: box of K-52 sarin gas grenades
+  parent: BoxMagazine
+  id: BoxGrenadesK52
+  description: A box full of K-52 sarin gas grenades.
+  suffix: WAR CRIME
+  components:
+  - type: Storage
+    grid:
+    - 0,0,3,3
+  - type: StorageFill
+    contents:
+      - id: RUK52SarinGasHandgrenade
         amount: 8
   - type: Sprite
     layers:

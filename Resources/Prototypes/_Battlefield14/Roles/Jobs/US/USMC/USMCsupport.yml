@@ -69,7 +69,7 @@
     back: ClothingBackpackRucksackTan
     suitstorage: WeaponRifleUSM27IAR
     pocket1: PouchFirstAidFilled
-    pocket2: PouchGrenadesFilledUSMCRifleman
+    pocket2: PouchGrenadesFilledUSMCSupport
     rightarmband: ClothingArmbandThighHolsterFilledUS
   storage:
     back:

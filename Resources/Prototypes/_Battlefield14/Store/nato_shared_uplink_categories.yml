@@ -212,6 +212,22 @@
         tags:
           - AmericanUplink
 
+- type: listing
+  id: UplinkNATOBarbwire
+  name:  uplink-NATO-barbwirecrate-name
+  description: uplink-NATO-barbwirecrate-desc
+  productEntity: CrateSecgearFilledBarbwire
+  icon: { sprite: _RMC14/Objects/barbed_wire.rsi, state: barbed_wire_3 }
+  cost:
+    NATORequisition: 15 # 2 minutes 30 seconds
+  categories:
+    - UplinkNATOUSUtility
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - AmericanUplink
+
 # Medical
 
 - type: listing
