@@ -35,17 +35,17 @@
     languagesUnderstood:
     - English
     - Esperanto
+  - !type:AddComponentSpecial
+    components:
+    - type: NpcFactionMember
+      factions:
+      - USMC
+  - !type:AddImplantSpecial
+    implants: [ TrackingImplantNATOUS ]
   #   components:
   #     # COMMENTED OUT: ChatRank and HullrotFaction not supported
   #     # - type: ChatRank
   #     #   rank: BF-rank-sergeant
-  #     # - type: HullrotFaction
-  #     #   faction: USMC
-  #     # - type: LanguageAdder
-  #     #   addSpoken:
-  #     #     - English
-  #     #   addUnderstood:
-  #     #     - English
   access:
   - Maintenance
   - Service
@@ -66,15 +66,20 @@
     belt: ClothingBeltMilitaryWebbingUSFilledSTANAG
     jumpsuit: ClothingUniformJumpsuitCamoUS
     head: ClothingHeadHatHelmetUS
-    eyes: ClothingEyesGogglesTan
+#    eyes: ClothingEyesGogglesTan
     outerClothing: ClothingOuterArmorPlateCarrierTan
     shoes: ClothingShoesBootsJackFilled
     back: ClothingBackpackRucksackTan
     suitstorage: WeaponRifleUSM4A1
     pocket1: PouchFirstAidFilled
     pocket2: PouchGrenadesFilledUSMCRifleman
+    rightarmband: ClothingArmbandThighHolsterFilledUS
   storage:
     back:
+    - ArmorPlateMedium
+    - ClothingMaskGasM40
+    - FlashlightMilitaryUS
+    - MagazinePistolM9
+    - MagazinePistolM9
     - Tourniquet
     - Zipties
-    - ArmorPlateMedium

@@ -41,6 +41,7 @@
 # Mercenary techfab
 ## Clothing / Armor
   - ArmorPlateLight #Mono
+  - ArmorPlateSteel #Mono
   - RiotShield
   - ClothingNeckIFFNeutral
   - ClothingNeckIFFGreen
@@ -82,7 +83,7 @@
   - WeaponRevolverArgenti
   - WeaponPistolMk58NF
   - WeaponShotgunDoubleBarreled
-  - WeaponShotgunHelopolis
+  - WeaponShotgunHelepolis
   - WeaponRifleNovaliteC1
   - WeaponRifleGestio
   - WeaponSubMachineGunKnallstock # Mono
@@ -109,6 +110,7 @@
 ## Armor
   - ArmorPlateMedium #Mono
   - ArmorPlateTactical #Mono
+  - ArmorPlateRefractive #Mono
   - TelescopicShield
   - ClothingOuterArmorBulletproofNF
   - ClothingOuterCoatBHTrench
@@ -185,6 +187,8 @@
   - WeaponRifleNtsfLtr
   - WeaponSubMachineGunVectorNtsfHclm
   - WeaponRadAx
+  - WeaponShockMaul
+  - HardlightShield
   - WeaponRifleAk
   - UllmanHardsuitPilot
   - UllmanHardsuitEngineer

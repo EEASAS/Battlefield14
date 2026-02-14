@@ -33,7 +33,25 @@
       coefficients:
         Blunt: 0.8
         Slash: 0.8
-        Piercing: 0.95
+        Piercing: 0.8
+        Heat: 0.9
+
+- type: entity
+  parent: ClothingHeadHelmetBasic
+  id: ClothingHeadHatHelmetUSUrban
+  name: M81 urban camo helmet
+  description: This isnt for catching shrap or rounds, its made to keep your grey matter from grossing out your buddies.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Clothing/Head/Helmets/ushelmeturban.rsi
+  - type: Clothing
+    sprite: _Battlefield14/Clothing/Head/Helmets/ushelmeturban.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9
         Heat: 0.9
 
 # RU

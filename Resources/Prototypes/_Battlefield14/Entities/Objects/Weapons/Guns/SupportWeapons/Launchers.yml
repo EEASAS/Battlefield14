@@ -17,9 +17,8 @@
     slots:
     - Back
     - suitStorage
-    - Feet
   - type: Gun
-    projectileSpeed: 30
+    projectileSpeed: 40
     fireRate: 0.5
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/rpgfire.ogg
@@ -33,7 +32,7 @@
     soundInsert:
       path: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
   - type: GunRequiresWield
-  - type: AmmoCounter
+#  - type: AmmoCounter
   - type: MagazineVisuals
     magState: mag
     steps: 2
@@ -43,9 +42,13 @@
   - type: CursorOffsetRequiresWield
     maxOffset: 5
     pvsIncrease: 0.25
+  - type: ClothingSpeedModifier
+    walkModifier: 0.9
+    sprintModifier: 0.9
+  - type: HeldSpeedModifier
   - type: SpeedModifiedOnWield
-    walkModifier: 0.90
-    sprintModifier: 0.90
+    walkModifier: 0.80
+    sprintModifier: 0.80
 
 - type: entity
   name: AT4
@@ -64,12 +67,10 @@
     - Back
     - suitStorage
   - type: Item
-    size: Large
-#    storedSprite:
-#      sprite: _Battlefield14/Objects/Weapons/Guns/Launchers/AT4.rsi
-#      state: storage
+    size: Huge
   - type: Appearance
   - type: Gun
+    projectileSpeed: 40
     fireRate: 0.75
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/rpgfire.ogg
@@ -80,3 +81,93 @@
     capacity: 1
   - type: UseDelay
     delay: 1.5
+  - type: SpeedModifiedOnWield
+    walkModifier: 0.80
+    sprintModifier: 0.80
+
+# RU
+
+- type: entity
+  name: RPG-7
+  parent: [ BaseWeaponLauncher , BaseGunWieldable ]
+  id: WeaponLauncherRURPG7
+  description: A timeless classic, no doubt this will be used a thousand years from now.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Launchers/RPG7.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-1
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/Launchers/RPG7.rsi
+    slots:
+    - Back
+    - suitStorage
+  - type: Gun
+    projectileSpeed: 40
+    fireRate: 0.5
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/rpgfire.ogg
+  - type: BallisticAmmoProvider
+    autoCycle: true
+    whitelist:
+      tags:
+        - CartridgeRPG7
+    proto: CartridgeRPG7HEAT
+    capacity: 1
+    soundInsert:
+      path: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
+  - type: GunRequiresWield
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: false
+  - type: Appearance
+  - type: EyeCursorOffset
+  - type: CursorOffsetRequiresWield
+    maxOffset: 5
+    pvsIncrease: 0.25
+  - type: ClothingSpeedModifier
+    walkModifier: 0.9
+    sprintModifier: 0.9
+  - type: HeldSpeedModifier
+  - type: SpeedModifiedOnWield
+    walkModifier: 0.80
+    sprintModifier: 0.80
+
+- type: entity
+  name: RPG-30
+  parent: [ BaseWeaponLauncher , BaseGunWieldable ]
+  id: WeaponLauncherRURPG30
+  description: A 105mm disposable anti tank grenade launcher described as an "asymmetrical threat to the US armed forces." by the pentagon.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Launchers/RPG30.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/Launchers/RPG30.rsi
+    slots:
+    - Back
+    - suitStorage
+  - type: Item
+    size: Huge
+  - type: Appearance
+  - type: Gun
+    projectileSpeed: 40
+    fireRate: 0.75
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/rpgfire.ogg
+  - type: GunRequiresWield
+  - type: AmmoCounter
+  - type: BasicEntityAmmoProvider
+    proto: BulletRocketRPG7HEAT
+    capacity: 1
+  - type: UseDelay
+    delay: 1.5
+  - type: SpeedModifiedOnWield
+    walkModifier: 0.80
+    sprintModifier: 0.80

@@ -2,14 +2,37 @@
 
 - type: entity
   parent: BaseItem
-  id: MagazineBoxBigBF14
-  name: bulk ammunition box
+  id: MagazineBoxBF14
+  name: ammunition pack
   abstract: true
   components:
   - type: Tag
     tags:
       - AmmunitionBox
   - type: BallisticAmmoProvider
+    mayTransfer: true
+    capacity: 60
+    proto: BF_CartridgeRifle556x45
+  - type: Sprite
+    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Boxes/5.56x45mm.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-3
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 4
+    zeroVisible: false
+  - type: Appearance
+
+- type: entity
+  parent: BaseItem
+  id: MagazineBox556x45Big
+  name: bulk ammunition box (5.56x45mm)
+  components:
+  - type: BallisticAmmoProvider
+    mayTransfer: true
     capacity: 200
     proto: BF_CartridgeRifle556x45
   - type: Sprite
@@ -30,10 +53,9 @@
   - type: Appearance
 
 - type: entity
-  parent: BaseItem
-  id: MagazineBoxBF14
-  name: ammunition box
-  abstract: true
+  parent: MagazineBoxBF14
+  id: MagazineBox556x45
+  name: ammunition pack (5.56x45mm)
   components:
   - type: BallisticAmmoProvider
     capacity: 60
@@ -52,13 +74,13 @@
   - type: Appearance
 
 - type: entity
-  parent: MagazineBoxBigBF14
-  id: MagazineBox556x45Big
-  name: bulk ammunition box (5.56x45mm)
+  parent: MagazineBox556x45Big
+  id: MagazineBox762x51Big
+  name: bulk ammunition box (7.62x51mm)
   components:
   - type: BallisticAmmoProvider
     capacity: 200
-    proto: BF_CartridgeRifle556x45
+    proto: BF_CartridgeRifle762x51
   - type: Sprite
     sprite: _Mono/Objects/Weapons/Guns/Ammunition/Boxes/5.56x45mm.rsi
     layers:
@@ -74,12 +96,12 @@
 
 - type: entity
   parent: MagazineBoxBF14
-  id: MagazineBox556x45
-  name: ammunition box (5.56x45mm)
+  id: MagazineBox762x51
+  name: ammunition pack (7.62x51mm)
   components:
   - type: BallisticAmmoProvider
     capacity: 60
-    proto: BF_CartridgeRifle556x45
+    proto: BF_CartridgeRifle762x51
   - type: Sprite
     sprite: _Mono/Objects/Weapons/Guns/Ammunition/Boxes/5.56x45mm.rsi
     layers:
@@ -94,7 +116,7 @@
   - type: Appearance
 
 - type: entity
-  parent: MagazineBoxBigBF14
+  parent: MagazineBox556x45Big
   id: MagazineBox545x39Big
   name: bulk ammunition box (5.45x39mm)
   components:
@@ -117,7 +139,7 @@
 - type: entity
   parent: MagazineBoxBF14
   id: MagazineBox545x39
-  name: ammunition box (5.45x39mm)
+  name: ammunition pack (5.45x39mm)
   components:
   - type: BallisticAmmoProvider
     capacity: 60

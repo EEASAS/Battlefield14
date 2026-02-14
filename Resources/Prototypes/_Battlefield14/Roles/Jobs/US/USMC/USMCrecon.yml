@@ -31,18 +31,18 @@
     - English
     languagesUnderstood:
     - English
+  - !type:AddComponentSpecial
+    components:
+    - type: NpcFactionMember
+      factions:
+      - USMC
+  - !type:AddImplantSpecial
+    implants: [ TrackingImplantNATOUS ]
   # - !type:AddComponentSpecial
   #   components:
   #     # COMMENTED OUT: ChatRank and HullrotFaction not supported
   #     # - type: ChatRank
   #     #   rank: BF-rank-corporal
-  #     # - type: HullrotFaction
-  #     #   faction: USMC
-  #     # - type: LanguageAdder
-  #     #   addSpoken:
-  #     #     - LowImperial
-  #     #   addUnderstood:
-  #     #     - LowImperial
   access:
   - Maintenance
   - Service
@@ -63,7 +63,7 @@
     jumpsuit: ClothingUniformJumpsuitCamoUS
     head: ClothingHeadHatHelmetUS
     helmetattachment: ClothingHelmetAttachmentNVGsBasic # TODO replace with BF14 version
-    eyes: ClothingEyesGogglesTan
+#    eyes: ClothingEyesGogglesTan
     outerClothing: ClothingOuterArmorPlateCarrierTan
     shoes: ClothingShoesBootsJackFilled
     back: ClothingBackpackRucksackTan
@@ -72,5 +72,7 @@
     pocket2: PouchGrenadesFilledUSMCScout
   storage:
     back:
+    - ClothingMaskGasM40
+    - FlashlightMilitaryUS
     - Tourniquet
     - Zipties

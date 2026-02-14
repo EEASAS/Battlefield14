@@ -41,19 +41,6 @@
   - type: Clothing
     sprite: Clothing/Ears/Headsets/centcom.rsi
 
-# Mono Start
-
-- type: entity
-  parent: ClothingHeadsetAltCentCom
-  id: ClothingHeadsetAltCentComSR
-  components:
-  - type: ContainerFill
-    containers:
-      key_slots:
-      - EncryptionKeyCentCom
-      - EncryptionKeyStationMasterSR
-
-# Mono End
 
 - type: entity
   parent: ClothingHeadsetAlt
@@ -156,11 +143,11 @@
 - type: entity
   parent: [ClothingHeadsetAlt]
   id: ClothingHeadsetAltFreelancer
-  name: imperial over-ear headset
+  name: over-ear headset # BF14 also fuck monolith for not making their own fucking prototypes
   components:
     - type: Headset
-    - type: EncryptionKeyHolder
-      keySlots: 5
+  #  - type: EncryptionKeyHolder #Mono parity with ClothingHeadset key capacity.
+  #      keySlots: 5
     - type: ContainerFill
       containers:
         key_slots:

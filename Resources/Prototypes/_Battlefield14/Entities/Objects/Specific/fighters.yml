@@ -92,8 +92,8 @@
       maxRange: 512
       followEntity: true
     - type: RadarBlip
-      radarColor: "#3558a6"
-      scale: 3
+      radarColor: "#3760b3" #"#3558a6"
+      scale: 5
       requireNoGrid: true
       shape: diamond
 #    - type: ProjectileIFF
@@ -179,7 +179,7 @@
       followEntity: true
     - type: RadarBlip
       radarColor: "#a63536"
-      scale: 3
+      scale: 5
       requireNoGrid: true
       shape: diamond
 #    - type: ProjectileIFF
@@ -216,7 +216,7 @@
         - PowerCageUraniumCell
 
   - type: entity
-    name: F-22 Raptor Spawner
+    name: SU-57 Felon Spawner
     id: SpawnFighterRUSU57Felon
     parent: MarkerBase
     components:

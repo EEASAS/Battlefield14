@@ -113,6 +113,38 @@
         tags:
           - AmericanUplink
 
+- type: listing
+  id: UplinkNATOUSM870Crate
+  name:  uplink-NATOUS-m870crate-name
+  description: uplink-NATOUS-m870crate-desc
+  productEntity: CrateSecgearNATOFilledM870
+  icon: { sprite: _Battlefield14/Objects/Weapons/Guns/Shotguns/M870.rsi, state: icon }
+  cost:
+    NATORequisition: 18 # 3 minutes
+  categories:
+    - UplinkNATOUSWeapons
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - AmericanUplink
+
+- type: listing
+  id: UplinkNATOUSM590Crate
+  name:  uplink-NATOUS-m590crate-name
+  description: uplink-NATOUS-m590crate-desc
+  productEntity: CrateSecgearNATOFilledM590
+  icon: { sprite: _Mono/Objects/Weapons/Guns/Shotguns/Helepolis.rsi, state: icon }
+  cost:
+    NATORequisition: 18 # 3 minutes
+  categories:
+    - UplinkNATOUSWeapons
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - AmericanUplink
+
 # Ammo
 
 - type: listing
@@ -204,6 +236,38 @@
           - AmericanUplink
 
 - type: listing
+  id: UplinkNATOUSBoxGrenadesM84
+  name:  uplink-natous-m84-box-name
+  description: uplink-natous-m84-box-desc
+  productEntity: BoxGrenadesM84
+  icon: { sprite: _Battlefield14/Objects/Weapons/Grenades/M84.rsi, state: icon }
+  cost:
+    NATORequisition: 9 # 1 minute 30 seconds
+  categories:
+    - UplinkNATOUSExplosives
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - AmericanUplink
+
+- type: listing
+  id: UplinkNATOUSBoxGrenadesM18
+  name:  uplink-natous-m18-box-name
+  description: uplink-natous-m18-box-desc
+  productEntity: BoxGrenadesM18
+  icon: { sprite: _Battlefield14/Objects/Weapons/Grenades/M18.rsi, state: icon }
+  cost:
+    NATORequisition: 9 # 1 minute 30 seconds
+  categories:
+    - UplinkNATOUSExplosives
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - AmericanUplink
+
+- type: listing
   id: UplinkNATOUSMK21Sword
   name:  uplink-natous-mk21-sword-name
   description: uplink-natous-mk21-sword-desc
@@ -226,7 +290,7 @@
   productEntity: BoxMagazine40x46HE
   icon: { sprite: _Mono/Objects/Weapons/Guns/Ammunition/Explosives/explosives.rsi, state: frag }
   cost:
-    NATORequisition: 6 # 1 minute
+    NATORequisition: 18 # 3 minutes
   categories:
     - UplinkNATOUSExplosives
   conditions:
@@ -242,7 +306,7 @@
   productEntity: BoxMagazine40x46Frag
   icon: { sprite: _Mono/Objects/Weapons/Guns/Ammunition/Explosives/explosives.rsi, state: frag }
   cost:
-    NATORequisition: 6 # 1 minute
+    NATORequisition: 18 # 3 minutes
   categories:
     - UplinkNATOUSExplosives
   conditions:
@@ -258,7 +322,7 @@
   productEntity: BoxMagazine40x46HEDP
   icon: { sprite: _Mono/Objects/Weapons/Guns/Ammunition/Explosives/explosives.rsi, state: frag }
   cost:
-    NATORequisition: 10 # 1 minute 40 seconds
+    NATORequisition: 30 # 5 minutes
   categories:
     - UplinkNATOUSExplosives
   conditions:
@@ -274,7 +338,7 @@
   productEntity: BoxMagazine40x46mmMPAPERS
   icon: { sprite: _Battlefield14/Objects/Weapons/Grenades/40x46mm.rsi, state: apers }
   cost:
-    NATORequisition: 3 # 30 seconds
+    NATORequisition: 12 # 2 minutes
   categories:
     - UplinkNATOUSExplosives
   conditions:
@@ -306,7 +370,7 @@
   productEntity: BoxMagazine40x46ChemicalSmoke
   icon: { sprite: _Mono/Objects/Weapons/Guns/Ammunition/Explosives/explosives.rsi, state: blast }
   cost:
-    NATORequisition: 1 # 10 seconds
+    NATORequisition: 9 # 1 minute 30 seconds
   categories:
     - UplinkNATOUSExplosives
   conditions:

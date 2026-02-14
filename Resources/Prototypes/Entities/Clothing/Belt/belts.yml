@@ -258,28 +258,47 @@
     sprite: Clothing/Belt/medical.rsi
   - type: Clothing
     sprite: Clothing/Belt/medical.rsi
-  # - type: Storage # Frontier: commented out whitelist
-  #   whitelist:
-  #     tags:
-  #       - Wrench
-  #       - Bottle
-  #       - Spray
-  #       - Brutepack
-  #       - Bloodpack
-  #       - Gauze
-  #       - Ointment
-  #       - CigPack
-  #       - PillCanister
-  #       - Radio
-  #       - DiscreteHealthAnalyzer
-  #       - SurgeryTool
-  #       - Dropper
-  #     components:
-  #       - Hypospray
-  #       - Injector
-  #       - Pill
-  #       - HandLabeler
-  #       - SurgeryTool # Shitmed Change
+  - type: Storage # Frontier: commented out whitelist # BF14 uncommented out
+    maxItemSize: Normal
+    defaultStorageOrientation: Vertical # BF14
+    grid:
+    - 0,0,9,1 # 10x2
+    whitelist:
+      tags:
+        - Wrench
+        - Bottle
+        - Spray
+        - Brutepack
+        - Bloodpack
+        - Gauze
+        - Ointment
+        - CigPack
+        - PillCanister
+        - Radio
+        - DiscreteHealthAnalyzer
+        - SurgeryTool
+        - Dropper
+        - GlassBeaker # BF14
+        - Tourniquet # BF14
+      components:
+        - Hypospray
+        - Injector
+        - Pill
+        - HandLabeler
+        - SurgeryTool # Shitmed Change
+        - Defibrillator # BF14
+  - type: ContainerContainer # BF14
+    containers:
+      item: !type:ContainerSlot
+      storagebase: !type:Container
+        ents: []
+  - type: ItemSlots
+    slots:
+      item:
+        name: Medkit
+        whitelist:
+          tags:
+          - Medkit
   - type: ItemMapper
     mapLayers:
       bottle:

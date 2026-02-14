@@ -31,14 +31,19 @@
     - English
     languagesUnderstood:
     - English
+  - !type:AddComponentSpecial
+    components:
+    - type: NpcFactionMember
+      factions:
+      - USMC
+  - !type:AddImplantSpecial
+    implants: [ TrackingImplantNATOUS ]
   # COMMENTED OUT: AddComponentSpecial requires at least one component, but all components are commented out
   # - !type:AddComponentSpecial
   #   components:
   #     # COMMENTED OUT: ChatRank and HullrotFaction not supported
   #     # - type: ChatRank
   #     #   rank: BF-rank-corporal
-  #     # - type: HullrotFaction
-  #     #   faction: USMC
   access:
   - Maintenance
   - Service
@@ -58,15 +63,21 @@
     belt: ClothingBeltMilitaryWebbingUSFilledSTANAG
     jumpsuit: ClothingUniformJumpsuitCamoUS
     head: ClothingHeadHatHelmetUSRiot
-    eyes: ClothingEyesGogglesTan
+#    eyes: ClothingEyesGogglesTan
     outerClothing: ClothingOuterArmorPlateCarrierTan
     shoes: ClothingShoesBootsJackFilled
     back: ClothingBackpackRucksackTan
     suitstorage: WeaponRifleUSM27IAR
     pocket1: PouchFirstAidFilled
-    pocket2: PouchGrenadesFilledUSMCRifleman
+    pocket2: PouchGrenadesFilledUSMCSupport
+    rightarmband: ClothingArmbandThighHolsterFilledUS
   storage:
     back:
     - SupplyBoxAmmoUSFilled
+    - FlashlightMilitaryUS
+    - MagazinePistolM9
+    - MagazinePistolM9
+    - ClothingMaskGasM40
     - Tourniquet
     - Zipties
+

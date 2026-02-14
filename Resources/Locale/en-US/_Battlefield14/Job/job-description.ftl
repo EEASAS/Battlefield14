@@ -19,3 +19,9 @@ job-description-vdv-recon = Go on the flanks and conduct surprise attacks or rel
 
 job-description-vks-captain = Lead your battlegroup, whether that be from the front or your capital ship. Answer directly to President Valdimir Putin.
 job-description-vks-crewman = Maintain whatever capital ship/port you're assigned to.
+
+#Western Private Security#
+
+job-description-wps-officer = Keep the peace, keep the area safe.
+job-description-wps-warden = Keep the brig secure and clean.
+job-description-wps-marshal = Co-ordinate your goons.

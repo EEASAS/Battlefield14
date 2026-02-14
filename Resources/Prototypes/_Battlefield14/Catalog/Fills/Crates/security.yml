@@ -90,6 +90,36 @@
   - type: AccessReader
     access: [["NATOSoldier"]]
 
+- type: entity
+  id: CrateSecgearNATOFilledM870
+  suffix: Filled, M870
+  parent: CrateSecgear
+  name: M870 crate
+  components:
+  - type: StorageFill
+    contents:
+        - id: WeaponShotgunUSM870
+          amount: 5
+        - id: ShellBoxBF12GaugeBuckshot
+          amount: 2
+  - type: AccessReader
+    access: [["NATOSoldier"]]
+
+- type: entity
+  id: CrateSecgearNATOFilledM590
+  suffix: Filled, M590
+  parent: CrateSecgear
+  name: M590 crate
+  components:
+  - type: StorageFill
+    contents:
+        - id: WeaponShotgunUSM590
+          amount: 5
+        - id: ShellBoxBF12GaugeBreaching
+          amount: 2
+  - type: AccessReader
+    access: [["NATOSoldier"]]
+
 ## PACT
 # RU
 
@@ -173,36 +203,63 @@
   - type: AccessReader
     access: [["PACTSoldier"]]
 
-## Misc, power weapons
-
 - type: entity
-  id: CrateSecgearPowerWeaponFilledM249Para
-  suffix: Filled, power weapon, M249 Para
+  id: CrateSecgearPACTFilledPKM
+  suffix: Filled, PKM
   parent: CrateSecgear
-  name: power weapon crate
+  name: PKM crate
   components:
   - type: StorageFill
     contents:
-        - id: WeaponMachineGunUSM249Para
-          amount: 1
-        - id: MagazineBeltBoxM249
+        - id: WeaponMachineGunRUPKM
           amount: 2
+        - id: MagazineBeltBoxPKM
+          amount: 4
   - type: AccessReader
-    access: [["NATOCommand" , "PACTCommand"]]
+    access: [["PACTSoldier"]]
 
 - type: entity
-  id: CrateSecgearPowerWeaponFilledSMAW
-  suffix: Filled, power weapon, SMAW
+  id: CrateSecgearPACTFilledRPG7
+  suffix: Filled, RPG-7
   parent: CrateSecgear
-  name: power weapon crate
+  name: RPG-7 crate
   components:
   - type: StorageFill
     contents:
-        - id: WeaponLauncherUSSMAW
-          amount: 1
-        - id: CartridgeSMAWHEAA
+        - id: WeaponLauncherRURPG7
+          amount: 2
+        - id: CartridgeRPG7HEAT
           amount: 4
-        - id: CartridgeSMAWNE
+        - id: CartridgeRPG7Frag
           amount: 4
   - type: AccessReader
-    access: [["NATOCommand" , "PACTCommand"]]
+    access: [["PACTSoldier"]]
+
+- type: entity
+  id: CrateSecgearPACTFilledRPG30
+  suffix: Filled, RPG-30
+  parent: CrateSecgear
+  name: RPG-30 crate
+  components:
+  - type: StorageFill
+    contents:
+        - id: WeaponLauncherRURPG30
+          amount: 5
+  - type: AccessReader
+    access: [["PACTSoldier"]]
+
+## Misc
+# Shared
+
+- type: entity
+  id: CrateSecgearFilledBarbwire
+  suffix: Filled, barbed wire
+  parent: CrateSecgear
+  name: barbed wire coil crate
+  components:
+  - type: StorageFill
+    contents:
+        - id: BarbedWire30
+          amount: 5
+  - type: AccessReader
+    access: [["NATOSoldier"] , ["PACTSoldier"]]

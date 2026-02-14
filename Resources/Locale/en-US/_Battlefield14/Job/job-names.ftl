@@ -19,3 +19,9 @@ job-name-vdv-recon = Recon Scout
 
 job-name-vks-captain = VKS General Major
 job-name-vks-crewman = VKS Crewman
+
+#Western Private Security#
+
+job-name-wps-officer = Security Officer
+job-name-wps-warden = Brig Chief
+job-name-wps-marshal = Marshal

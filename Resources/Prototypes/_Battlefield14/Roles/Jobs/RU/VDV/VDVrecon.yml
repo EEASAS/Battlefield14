@@ -31,16 +31,16 @@
     - Russian
     languagesUnderstood:
     - Russian
+  - !type:AddComponentSpecial
+    components:
+    - type: NpcFactionMember
+      factions:
+      - VDV
+  - !type:AddImplantSpecial
+    implants: [ TrackingImplantPACTRU ]
   #     # COMMENTED OUT: ChatRank and HullrotFaction not supported
   #     # - type: ChatRank
   #     #   rank: BF-rank-private
-  #     # - type: HullrotFaction
-  #     #   faction: VDV
-  #     # - type: LanguageAdder
-  #     #   addSpoken:
-  #     #     - LowImperial
-  #     #   addUnderstood:
-  #     #     - LowImperial
   access:
   - Maintenance
   - Service
@@ -61,14 +61,17 @@
     jumpsuit: ClothingUniformJumpsuitCamoRUEMR
     head: ClothingHeadHatHelmetRUEMR
     helmetattachment: ClothingHelmetAttachmentNVGsBasic # TODO replace with BF14 version
-    eyes: ClothingEyesGogglesGreen
+#    eyes: ClothingEyesGogglesGreen
     outerClothing: ClothingOuterArmorPlateCarrierBlack
     shoes: ClothingShoesBootsJackFilled
     back: ClothingBackpackRucksackBlack
+    neck: ClothingNeckIFFtapeWhite
     suitstorage: WeaponRifleRUASVAL
     pocket1: PouchFirstAidFilled
     pocket2: PouchGrenadesFilledVDVScout
   storage:
     back:
+    - FlashlightMilitaryAlt
+    - ClothingMaskGasRussia
     - Tourniquet
     - Zipties

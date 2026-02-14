@@ -18,6 +18,35 @@
   - LoadoutMaskBF14MilitaryBalaclava
 
 - type: loadoutGroup
+  id: BF_SoldierGlassesTan
+  name: loadout-group-BF14-soldierglasses
+  minLimit: 1
+  loadouts:
+  - LoadoutEyesGlassesBallisticGogglesTan
+  - LoadoutEyesGlassesBallisticTriMaxBlack
+  - LoadoutEyesGlassesBallisticTriMaxBronze
+  - LoadoutEyesGlassesBallisticTriMaxYellow
+
+- type: loadoutGroup
+  id: BF_SoldierGlassesGreen
+  name: loadout-group-BF14-soldierglasses
+  minLimit: 1
+  loadouts:
+  - LoadoutEyesGlassesBallisticGogglesGreen
+  - LoadoutEyesGlassesBallisticTriMaxBlack
+  - LoadoutEyesGlassesBallisticTriMaxBronze
+  - LoadoutEyesGlassesBallisticTriMaxYellow
+
+- type: loadoutGroup
+  id: BF_CrewGlasses
+  name: loadout-group-BF14-soldierglasses
+  minLimit: 0
+  loadouts:
+  - LoadoutEyesGlassesBallisticTriMaxBlackNohud
+  - LoadoutEyesGlassesBallisticTriMaxBronzeNohud
+  - LoadoutEyesGlassesBallisticTriMaxYellowNohud
+
+- type: loadoutGroup
   id: BF_NATOIFF
   name: loadout-group-BF14-natoiff
   minLimit: 0
@@ -26,6 +55,8 @@
   - LoadoutNeckIFFBlueTape
   - LoadoutNeckIFFYellow
   - LoadoutNeckIFFYellowTape
+  - LoadoutNeckIFFGreen
+  - LoadoutNeckIFFGreenTape
 
 - type: loadoutGroup
   id: BF_PACTIFF
@@ -36,6 +67,8 @@
   - LoadoutNeckIFFWhiteTape
   - LoadoutNeckIFFRed
   - LoadoutNeckIFFRedTape
+  - LoadoutNeckIFFOrange
+  - LoadoutNeckIFFOrangeTape
 
 - type: loadoutGroup
   id: BF_VDVHead
@@ -52,3 +85,11 @@
   - LoadoutHelmetAttachmentGogglesCoverBlack
   - LoadoutHelmetAttachmentGogglesCoverOlive
   - LoadoutHelmetAttachmentGogglesCoverTan
+
+- type: loadoutGroup
+  id: BF_WPSGloves
+  name: loadout-group-BF14-soldiergloves
+  minLimit: 0
+  loadouts:
+  - LoadoutHandsGlovesSoldierBlack
+  - LoadoutHandsGlovesSoldierFingerless

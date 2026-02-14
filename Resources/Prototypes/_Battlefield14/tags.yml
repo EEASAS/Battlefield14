@@ -2,6 +2,15 @@
   id: MagazineRifleSTANAG
 
 - type: Tag
+  id: BF_CartridgeGrenade25x40
+
+- type: Tag
+  id: BF_CartridgePistol45ACP
+
+- type: Tag
+  id: BF_CartridgePDW46x30
+
+- type: Tag
   id: BF_CartridgeRifle556x45
 
 - type: Tag
@@ -23,16 +32,34 @@
   id: BF_CartridgePistol9x19
 
 - type: Tag
+  id: BF_CartridgePistol357
+
+- type: Tag
   id: BF_CartridgeShotgun12Gauge
 
 - type: Tag
   id: BF_CartridgeShotgun12GaugeBuckshot
 
 - type: Tag
+  id: BF_CartridgeShotgun12GaugeSlug
+
+- type: Tag
+  id: BF_CartridgeShotgun12GaugeBreaching
+
+- type: Tag
+  id: BF_CartridgeShotgun4Gauge
+
+- type: Tag
   id: CartridgeSMAW
 
 - type: Tag
   id: MagazineSMAW
+
+- type: Tag
+  id: CartridgeRPG7
+
+- type: Tag
+  id: MagazineRPG7
 
 - type: Tag
   id: MagazineRifleAK74
@@ -53,6 +80,12 @@
   id: MagazineBeltBoxMK48
 
 - type: Tag
+  id: MagazineBeltBoxPKM
+
+- type: Tag
+  id: MagazineSniperM107
+
+- type: Tag
   id: MagazinePistolM9
 
 - type: Tag
@@ -62,10 +95,25 @@
   id: MagazinePistolMP5
 
 - type: Tag
+  id: MagazinePistolMP7
+
+- type: Tag
   id: MagazinePistolVityaz
 
 - type: Tag
   id: MagazineShotgunKSK
+
+- type: Tag
+  id: MagazineShotgunUSAS
+
+- type: Tag
+  id: MagazineShotgunUSASDrum
+
+- type: Tag
+  id: MagazineGrenadeLauncherXM25
+
+- type: Tag
+  id: SpeedLoader357magnum
 
 - type: Tag
   id: AmmunitionBox
@@ -89,10 +137,13 @@
   id: AmericanUplink
 
 - type: Tag
+  id: PistolMagazine # for all kinds of pistol magazines, this is used for pistol magazine pouches
+
+- type: Tag
   id: Tourniquet
 
 - type: Tag
-  id: PistolMagazine # for all kinds of pistol magazines, this is used for pistol magazine pouches
+  id: PCVCell
 
 - type: Tag
   id: Magazine # generic tag for all magazine types

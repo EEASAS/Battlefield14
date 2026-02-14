@@ -31,18 +31,18 @@
     - Russian
     languagesUnderstood:
     - Russian
+  - !type:AddComponentSpecial
+    components:
+    - type: NpcFactionMember
+      factions:
+      - VDV
+  - !type:AddImplantSpecial
+    implants: [ TrackingImplantPACTRU ]
   # - !type:AddComponentSpecial
   #   components:
   #     # COMMENTED OUT: ChatRank and HullrotFaction not supported
   #     # - type: ChatRank
   #     #   rank: BF-rank-private
-  #     # - type: HullrotFaction
-  #     #   faction: VDV
-  #     # - type: LanguageAdder
-  #     #   addSpoken:
-  #     #     - Russian
-  #     #   addUnderstood:
-  #     #     - Russian
   access:
   - Maintenance
   - Service
@@ -62,7 +62,7 @@
     belt: ClothingBeltMilitaryWebbingRUFilledAK12
     jumpsuit: ClothingUniformJumpsuitCamoRUEMR
     head: ClothingHeadHatHelmetRUEMR
-    eyes: ClothingEyesGogglesGreen
+#    eyes: ClothingEyesGogglesGreen
     outerClothing: ClothingOuterArmorPlateCarrierBlack
     shoes: ClothingShoesBootsJackFilled
     back: ClothingBackpackRucksackBlack
@@ -72,6 +72,8 @@
     pocket2: PouchGrenadesFilledVDVRifleman
   storage:
     back:
+    - ArmorPlateMedium
+    - FlashlightMilitaryAlt
+    - ClothingMaskGasRussia
     - Tourniquet
     - Zipties
-    - ArmorPlateMedium

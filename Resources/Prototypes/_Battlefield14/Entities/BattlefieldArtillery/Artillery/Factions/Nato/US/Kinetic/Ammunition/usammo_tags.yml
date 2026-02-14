@@ -86,7 +86,13 @@
   id: Magazine120mmM256
 
 - type: Tag
+  id: Cartridge120mm
+
+- type: Tag
   id: Cartridge120mmAPFSDS
+
+- type: Tag
+  id: Cartridge120mmCanister
 
 # TOW3
 - type: Tag

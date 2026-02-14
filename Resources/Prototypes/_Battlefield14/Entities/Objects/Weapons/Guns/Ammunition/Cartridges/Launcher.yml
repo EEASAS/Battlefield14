@@ -1,3 +1,6 @@
+## US
+# SMAW
+
 - type: entity
   id: CartridgeSMAWHEAA
   name: "SMAW cartridge (HEAA)"
@@ -22,7 +25,7 @@
 
 - type: entity
   id: CartridgeSMAWNE
-  name: "SMAW cartridge (SNAW-NE)"
+  name: "SMAW cartridge (SMAW-NE)"
   parent: BaseCartridge
   description: Detonates on contact and sends fragments everywhere with a wide explosion for killing infantry.
   components:
@@ -60,6 +63,55 @@
     sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Launcher/SMAW.rsi
     layers:
     - state: base
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+
+## RU
+# RPG-7
+
+- type: entity
+  id: CartridgeRPG7HEAT
+  name: "RPG-7 rocket (PG-7VL)"
+  parent: BaseCartridge
+  description: High explosive anti armour, pierces and does damage on the inside, like HEAT.
+  components:
+  - type: Item
+    size: Normal
+  - type: Tag
+    tags:
+    - Cartridge
+    - CartridgeRPG7
+  - type: CartridgeAmmo
+    proto: BulletRocketRPG7HEAT
+    deleteOnSpawn: true
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Launcher/RPG7.rsi
+    layers:
+    - state: base
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+
+- type: entity
+  id: CartridgeRPG7Frag
+  name: "RPG-7 rocket (OG-7V)"
+  parent: BaseCartridge
+  description: Detonates on contact and sends fragments everywhere with a wide explosion for killing infantry.
+  components:
+  - type: Item
+    size: Normal
+  - type: Tag
+    tags:
+    - Cartridge
+    - CartridgeRPG7
+  - type: CartridgeAmmo
+    proto: BulletRocketRPG7Frag
+    deleteOnSpawn: true
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Launcher/RPG7.rsi
+    layers:
+    - state: frag
       map: ["enum.AmmoVisualLayers.Base"]
   - type: Appearance
   - type: SpentAmmoVisuals

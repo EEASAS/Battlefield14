@@ -57,9 +57,9 @@
           collection: MetalBreak
   - type: RadiationBlocker
     resistance: 10
-  - type: RadarBlip
-    radarColor: "#0099FF"
-    scale: 3
+#  - type: RadarBlip
+#    radarColor: "#0099FF"
+#    scale: 3
   - type: ShipGunType
     shipType: Ballistic
   - type: ShipGunClass
@@ -130,9 +130,9 @@
           collection: MetalBreak
   - type: RadiationBlocker
     resistance: 8
-  - type: RadarBlip
-    radarColor: "#FF6600"
-    scale: 1
+#  - type: RadarBlip
+#    radarColor: "#FF6600"
+#    scale: 1
   - type: ShipGunType
     shipType: Ballistic
   - type: ShipGunClass
@@ -203,9 +203,9 @@
           collection: MetalBreak
   - type: RadiationBlocker
     resistance: 8
-  - type: RadarBlip
-    radarColor: "#FF6600"
-    scale: 1
+#  - type: RadarBlip
+#    radarColor: "#FF6600"
+#    scale: 1
   - type: ShipGunType
     shipType: Ballistic
   - type: ShipGunClass
@@ -270,9 +270,9 @@
       - !type:PlaySoundBehavior
         sound:
           collection: MetalBreak
-  - type: RadarBlip
-    radarColor: "#FF6600"
-    scale: 1.5
+#  - type: RadarBlip
+#    radarColor: "#FF6600"
+#    scale: 1.5
   - type: ShipGunType
     shipType: Ballistic
   - type: ShipGunClass
@@ -337,9 +337,9 @@
       - !type:PlaySoundBehavior
         sound:
           collection: MetalBreak
-  - type: RadarBlip
-    radarColor: "#FF3300"
-    scale: 1.5
+#  - type: RadarBlip
+#    radarColor: "#FF3300"
+#    scale: 1.5
   - type: ShipGunType
     shipType: Ballistic
   - type: ShipGunClass
@@ -402,9 +402,9 @@
       - !type:PlaySoundBehavior
         sound:
           collection: MetalBreak
-  - type: RadarBlip
-    radarColor: "#FF4400"
-    scale: 2
+#  - type: RadarBlip
+#    radarColor: "#FF4400"
+#    scale: 2
   - type: ShipGunType
     shipType: Ballistic
   - type: ShipGunClass
@@ -469,9 +469,9 @@
           collection: MetalBreak
   - type: RadiationBlocker
     resistance: 10
-  - type: RadarBlip
-    radarColor: "#FF6600"
-    scale: 3
+#  - type: RadarBlip
+#    radarColor: "#FF6600"
+#    scale: 3
   - type: ShipGunType
     shipType: Ballistic
   - type: ShipGunClass

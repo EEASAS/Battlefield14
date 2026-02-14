@@ -12,6 +12,15 @@ uplink-NATO-ammo-box-9mm-big-desc = Contains 300 loose 9x19mm rounds.
 uplink-NATO-magazine-box-STANAG-name = STANAG magazine box (5.56x45mm)
 uplink-NATO-magazine-box-STANAG-desc = Contains 8 30 round STANAG magazines.
 
+uplink-NATO-ammo-box-12g-buckshot-name = Ammo pack (12 gauge buckshot)
+uplink-NATO-ammo-box-12g-buckshot-desc = Contains 30 loose 12 gauge buckshot shells.
+
+uplink-NATO-ammo-box-12g-slug-name = Ammo pack (12 gauge slug)
+uplink-NATO-ammo-box-12g-slug-desc = Contains 30 loose 12 gauge slug shells.
+
+uplink-NATO-ammo-box-12g-breaching-name = Ammo pack (12 gauge breaching)
+uplink-NATO-ammo-box-12g-breaching-desc = Contains 30 loose 12 gauge breaching shells.
+
 ## Armour
 
 uplink-nato-armor-plate-light-name = Kevlar insert
@@ -33,6 +42,9 @@ uplink-NATO-knife-sheath-desc = A rigid polymer sheath which you can strap on yo
 
 uplink-NATO-wrist-scanner-name = Wrist mounted mass scanner
 uplink-NATO-wrist-scanner-desc = A portable radar mounted on the wrist for easy access at any time.
+
+uplink-NATO-barbwirecrate-name = Barbed wire coil x5
+uplink-NATO-barbwirecrate-desc = 5 stacks of 30 barbed wire, able to lay down 6 coils each, for a total of 30.
 
 ## Medical
 

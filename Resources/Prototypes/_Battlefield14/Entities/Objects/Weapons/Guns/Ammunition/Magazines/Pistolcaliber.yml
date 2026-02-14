@@ -32,8 +32,6 @@
   - type: Appearance
 
 - type: entity
-  # COMMENTED OUT: Missing parent 'BaseMagazineRifle'
-  # parent: BaseMagazineRifle
   parent: BaseItem
   id: MagazineSubmachinegunVityaz
   name: PP-19 Vityaz magazine (9x19mm)
@@ -65,8 +63,6 @@
   - type: Appearance
 
 - type: entity
-  # COMMENTED OUT: Missing parent 'BaseMagazineRifle'
-  # parent: BaseMagazineRifle
   parent: BaseItem
   id: MagazinePistolM9
   name: M9 magazine (9x19mm)
@@ -98,8 +94,6 @@
   - type: Appearance
 
 - type: entity
-  # COMMENTED OUT: Missing parent 'BaseMagazineRifle'
-  # parent: BaseMagazineRifle
   parent: BaseItem
   id: MagazinePistolMP443
   name: MP443 magazine (9x19mm)

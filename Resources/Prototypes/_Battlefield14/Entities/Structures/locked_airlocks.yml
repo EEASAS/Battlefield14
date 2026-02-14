@@ -70,6 +70,16 @@
     containers:
       board: [ DoorElectronicsNATOFunds ]
 
+- type: entity
+  parent: AirlockNfsd
+  id: AirlockNfsdLockedNATOCrew
+  suffix: NATO Crew, Locked
+  name: NATO Crew airlock
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsNATOCrew ]
+
 # NATO glass
 
 - type: entity
@@ -142,6 +152,16 @@
     containers:
       board: [ DoorElectronicsNATOFunds ]
 
+- type: entity
+  parent: AirlockNfsdGlass
+  id: AirlockNfsdGlassLockedNATOCrew
+  suffix: NATO Crew, Locked
+  name: NATO Crew airlock
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsNATOCrew ]
+
 # NATO windoors
 
 - type: entity
@@ -203,6 +223,16 @@
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsNATOCommand ]
+
+- type: entity
+  parent: WindoorSecure
+  id: WindoorSecureNATOCrew
+  suffix: NATO Crew, Locked, Windoor
+  name: NATO Crew windoor
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsNATOCrew ]
 
 #PACT
 
@@ -276,6 +306,16 @@
     containers:
       board: [ DoorElectronicsPACTFunds ]
 
+- type: entity
+  parent: AirlockSyndicate
+  id: AirlockSyndicateLockedPACTCrew
+  suffix: PACT Crew, Locked
+  name: PACT Crew airlock
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsPACTCrew ]
+
 # PACT glass
 
 - type: entity
@@ -348,6 +388,16 @@
     containers:
       board: [ DoorElectronicsPACTFunds ]
 
+- type: entity
+  parent: AirlockSyndicateGlass
+  id: AirlockSyndicateGlassLockedPACTCrew
+  suffix: PACT Crew, Locked
+  name: PACT Crew airlock
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsPACTCrew ]
+
 # PACT windoors
 
 - type: entity
@@ -409,3 +459,13 @@
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsPACTCommand ]
+
+- type: entity
+  parent: WindoorSecure
+  id: WindoorSecurePACTCrew
+  suffix: PACT Crew, Windoor
+  name: PACT Crew windoor
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsPACTCrew ]

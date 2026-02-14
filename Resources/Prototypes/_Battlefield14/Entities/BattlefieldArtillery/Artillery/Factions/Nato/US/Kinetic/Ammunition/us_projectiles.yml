@@ -10,6 +10,9 @@
       types:
         Structural: 800
         Piercing: 600
+  - type: StaminaDamageOnCollide
+    damage: 200 # just incase you somehow some way survive
+    armorPenetration: 1
     penetrationThreshold: 2000
     deleteOnCollide: false
   - type: Sprite
@@ -41,6 +44,9 @@
       types:
         Structural: 60
         Piercing: 80
+    armorPenetration: 1
+  - type: StaminaDamageOnCollide
+    damage: 60 # ~2 hits to stun
     penetrationThreshold: 300
   - type: ArmorPiercing
     piercingThickness: 1
@@ -74,6 +80,9 @@
       types:
         Structural: 70
         Piercing: 70
+    armorPenetration: 1
+  - type: StaminaDamageOnCollide
+    damage: 60 # ~2 hits to stun
     penetrationThreshold: 200
   - type: ArmorPiercing
     piercingThickness: 1
@@ -711,6 +720,8 @@
         Piercing: 1500
     penetrationThreshold: 4000
     armorPenetration: 0.95
+  - type: ArmorPiercing
+    piercingThickness: 20
     deleteOnCollide: false
   - type: Sprite
     sprite: _Mono/Objects/SpaceArtillery/57_shell.rsi
@@ -747,7 +758,7 @@
   - type: SubmunitionProjectile
     submunitionPrototype: Bullet120mmPenetrator
     distanceDelay: 0
-    submunitionDelay: 4.0
+    submunitionDelay: 1.0
     submunitionCount: 1
     spreadAngle: 0
     velocityMultiplier: 2.0
@@ -768,6 +779,49 @@
     requireNoGrid: true
     shape: triangle
     radarColor: "#FF7700"
+
+# 120mm M256 Canister shot
+
+- type: entity
+  id: Bullet120mmCanister
+  name: 120mm APFSDS canister projectile
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Structural: 70
+        Slash: 30
+        Piercing: 50
+    deleteOnCollide: true
+  - type: Sprite
+    sprite: _Mono/Objects/SpaceArtillery/57_shell.rsi # change later
+    layers:
+    - state: 57-shell
+    scale: 0.5, 0.5
+  - type: ShipWeaponProjectile
+  - type: TimedDespawn
+    lifetime: 3
+  - type: PointLight
+    radius: 4
+    color: orange
+    energy: 0.7
+  - type: RadarBlip
+    scale: 1
+    requireNoGrid: true
+    shape: triangle
+    radarColor: "#00FFFF"
+
+- type: entity
+  id: Bullet120mmCanister_Spread
+  categories: [ HideSpawnMenu ]
+  parent: Bullet120mmCanister
+  components:
+  - type: ProjectileSpread
+    proto: Bullet120mmCanister
+    count: 40
+    spread: 20
 
 # 40x46mm MK20 Plasma Gas
 - type: entity

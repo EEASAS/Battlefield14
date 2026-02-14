@@ -4,13 +4,6 @@
   description: job-description-vks-crewman
   playTimeTracker: JobVKSCrewman
   requirements:
-    # COMMENTED OUT: CharacterSpeciesRequirement not supported (species requirement system not implemented)
-    # - !type:CharacterSpeciesRequirement
-    #   species:
-    #     - Human
-    # COMMENTED OUT: FactionRequirement not supported (faction system not implemented)
-    # - !type:FactionRequirement
-    #   factionID: "PACT"
     - !type:TraitsRequirement
       inverted: true
       traits:
@@ -31,18 +24,15 @@
     - Russian
     languagesUnderstood:
     - Russian
-  # - !type:AddComponentSpecial
-  #   components:
-  #     # COMMENTED OUT: ChatRank and HullrotFaction not supported
-  #     # - type: ChatRank
-  #     #   rank: BF-rank-private
-  #     # - type: HullrotFaction
-  #     #   faction: VDV
-  #     # - type: LanguageAdder
-  #     #   addSpoken:
-  #     #     - Russian
-  #     #   addUnderstood:
-  #     #     - Russian
+  - !type:AddImplantSpecial
+    implants: [ TrackingImplantPACTRU ]
+  - !type:AddComponentSpecial
+    components:
+    - type: NpcFactionMember
+      factions:
+      - PACT
+    - type: SurgerySpeedModifier
+      SpeedModifier: 1.25
   access:
   - Maintenance
   - Service
@@ -53,6 +43,7 @@
   - PACTCommand
   - PACTMaintenance
   - PACTArmory
+  - PACTCrew
 
 - type: startingGear
   id: VKSCrewmanGear
@@ -62,13 +53,14 @@
     jumpsuit: ClothingUniformJumpsuitVKSCrewman
     shoes: ClothingShoesBootsJackFilled
     back: ClothingBackpackSecurity
-    belt: ClothingBeltAssaultFilledToolsRCD
+    belt: ClothingBeltAssaultFilledToolsSRD
     gloves: ClothingHandsGlovesCombat
     pocket1: WeaponPistolMP443
     pocket2: PouchFirstAidFilled
   storage:
     back:
+    - ClothingMaskGasRussia
+    - MagazinePistolMP443
+    - MagazinePistolMP443
     - Tourniquet
     - Zipties
-    - MagazinePistolMP443
-    - MagazinePistolMP443

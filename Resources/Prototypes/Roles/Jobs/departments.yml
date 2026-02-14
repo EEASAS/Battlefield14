@@ -127,6 +127,7 @@
   - SeniorOfficer # Frontier
   - PublicAffairsLiaison # Frontier
   - TsfEngineer # Mono
+  - TsfBorg # Mono
   editorHidden: true # BF14
 
 - type: department

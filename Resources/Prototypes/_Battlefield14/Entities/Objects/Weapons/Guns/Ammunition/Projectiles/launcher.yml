@@ -1,8 +1,10 @@
+## US
+
 - type: entity
   categories: [ HideSpawnMenu ]
   parent: BaseBulletTrigger
   id: BulletRocket84mmHEAT # High explosive anti tank, pierces and does damage on the inside
-  name: 84mm HEAT rocket
+  name: 84mm HEAT rocket # Used for the AT4 and HEAA SMAW cartridge
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
@@ -63,6 +65,37 @@
     damage: 200 # It's a fucking rocket
 
 - type: entity
+  id: Bullet84mmHEATFragment
+  name: 84mm HEAT fragment
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Slash: 15
+        Piercing: 15
+  - type: StaminaDamageOnCollide
+    damage: 15 # ~7 hits to stun
+    deleteOnCollide: true
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    layers:
+    - state: shard
+  - type: ShipWeaponProjectile
+  - type: TimedDespawn
+    lifetime: 1.5
+  - type: PointLight
+    radius: 0.8
+    color: orange
+    energy: 0.15
+  - type: RadarBlip
+    scale: 0.4
+    requireNoGrid: true
+    shape: triangle
+    radarColor: "#FF9900"
+
+- type: entity
   categories: [ HideSpawnMenu ]
   parent: BaseBulletTrigger
   id: BulletRocket83mmHEDM
@@ -87,26 +120,89 @@
   - type: StaminaDamageOnCollide
     damage: 200 # It's a fucking rocket
 
+## RU
+
 - type: entity
-  id: Bullet84mmHEATFragment
-  name: 84mm HEAT fragment
+  categories: [ HideSpawnMenu ]
+  parent: BaseBulletTrigger
+  id: BulletRocketRPG7HEAT
+  name: PG-7VL HEAT rocket
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Launcher/RPG7.rsi
+    layers:
+    - state: base-spent
+  - type: Projectile
+    damage:
+      types:
+        Structural: 2000
+        Piercing: 250
+    deleteOnCollide: false
+  - type: ArmorPiercing
+    piercingThickness: 7
+  - type: Heat
+    explosionDelay: 0.1
+    fragmentationDelay: 0.1
+    fragmentationCount: 40
+    fragmentationPrototype: BulletRPG7OG7VFragment
+  - type: StaminaDamageOnCollide
+    damage: 200 # It's a fucking rocket
+#  - type: ExplodeOnTrigger
+#  - type: Explosive
+#    explosionType: Default
+#    totalIntensity: 300
+#    intensitySlope: 5
+#    maxIntensity: 50
+#    maxTileBreak: 2
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: BaseBulletTrigger
+  id: BulletRocketRPG7Frag
+  name: OG-7V frag rocket
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Launcher/RPG7.rsi
+    layers:
+    - state: frag-spent
+  - type: Projectile
+    damage:
+      types:
+        Blunt: 150
+  - type: HeFragProjectile
+    fillPrototype: BulletRPG7OG7VFragment
+    capacity: 40
+    randomAngle: true
+    minVelocity: 8
+    maxVelocity: 15
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: Default
+    totalIntensity: 300
+    intensitySlope: 5
+    maxIntensity: 25
+    maxTileBreak: 0
+  - type: StaminaDamageOnCollide
+    damage: 200 # It's a fucking rocket
+
+- type: entity
+  id: BulletRPG7OG7VFragment
+  name: OG-7V fragment
   parent: BaseBullet
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
     damage:
       types:
-        Structural: 30
         Slash: 15
         Piercing: 15
   - type: StaminaDamageOnCollide
     damage: 15 # ~7 hits to stun
     deleteOnCollide: true
   - type: Sprite
-    sprite: _Mono/Objects/SpaceArtillery/50_armorpiercing_machinegun_casing.rsi
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
     layers:
-    - state: base-projectile
-    scale: 0.3, 0.3
+    - state: shard
   - type: ShipWeaponProjectile
   - type: TimedDespawn
     lifetime: 1.5

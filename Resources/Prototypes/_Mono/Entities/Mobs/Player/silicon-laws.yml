@@ -29,6 +29,11 @@
   order: 5
   lawString: law-ads-5
 
+- type: siliconLaw
+  id: Redacted6
+  order: 6
+  lawString: law-ads-6
+
 - type: siliconLawset
   id: Redacted
   laws:
@@ -37,6 +42,7 @@
   - Redacted3
   - Redacted4
   - Redacted5
+  - Redacted6
   obeysTo: laws-owner-syndicate
 
 - type: siliconLawset
@@ -47,6 +53,7 @@
   - Redacted3
   - Redacted4
   - Redacted5
+  - Redacted6
   obeysTo: laws-owner-syndicate
 
 # Vessel lawset
@@ -124,6 +131,11 @@
   order: 4
   lawString: law-tsfmc-4
 
+- type: siliconLaw
+  id: TSFMCBORG3
+  order: 3
+  lawString: law-tsfmc-borg-3
+
 - type: siliconLawset
   id: TSFMCLawset
   laws:
@@ -131,6 +143,14 @@
   - TSFMC2
   - TSFMC3
   - TSFMC4
+  obeysTo: laws-owner-crew
+
+- type: siliconLawset
+  id: TSFMCBorgLawset
+  laws:
+  - TSFMC1
+  - TSFMC2
+  - TSFMCBORG3
   obeysTo: laws-owner-crew
 
 # Freeman lawset

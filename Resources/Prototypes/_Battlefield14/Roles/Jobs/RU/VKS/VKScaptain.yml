@@ -4,13 +4,6 @@
   description: job-description-vks-captain
   playTimeTracker: JobVKSCaptain
   requirements:
-    # COMMENTED OUT: CharacterSpeciesRequirement not supported (species requirement system not implemented)
-    # - !type:CharacterSpeciesRequirement
-    #   species:
-    #     - Human
-    # COMMENTED OUT: FactionRequirement not supported (faction system not implemented)
-    # - !type:FactionRequirement
-    #   factionID: "PACT"
     - !type:TraitsRequirement
       inverted: true
       traits:
@@ -29,20 +22,19 @@
   - !type:AddLanguageSpecial
     languagesSpoken:
     - Russian
+    - Esperanto
     languagesUnderstood:
     - Russian
-  # - !type:AddComponentSpecial
-  #   components:
-  #     # COMMENTED OUT: ChatRank and HullrotFaction not supported
-  #     # - type: ChatRank
-  #     #   rank: BF-rank-private
-  #     # - type: HullrotFaction
-  #     #   faction: VDV
-  #     # - type: LanguageAdder
-  #     #   addSpoken:
-  #     #     - Russian
-  #     #   addUnderstood:
-  #     #     - Russian
+    - Esperanto
+  - !type:AddImplantSpecial
+    implants: [ TrackingImplantPACTRU ]
+  - !type:AddComponentSpecial
+    components:
+    - type: NpcFactionMember
+      factions:
+      - PACT
+    - type: SurgerySpeedModifier
+      SpeedModifier: 1.25
   access:
   - Maintenance
   - Service
@@ -52,7 +44,11 @@
   - PACTCommon
   - PACTCommand
   - PACTMaintenance
+  - PACTSoldier
   - PACTArmory
+  - PACTFunds
+  - PACTCrew
+  - PACTCaptain
 
 - type: startingGear
   id: VKSCaptainGear
@@ -67,5 +63,6 @@
     pocket1: PouchFirstAidFilled
   storage:
     back:
+    - ClothingMaskGasRussia
     - Tourniquet
     - Zipties

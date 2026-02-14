@@ -222,7 +222,7 @@
     tags:
     - CanPilot
     - FootstepSound
-    - DoorBumpOpener
+#BF14    - DoorBumpOpener
     - AnomalyHost
     - Humanoid # Mono
   - type: Targeting # Shitmed Change
@@ -280,7 +280,7 @@
     sweatHeatRegulation: 2000
     shiveringHeatRegulation: 2000
     normalBodyTemperature: 310.15
-    thermalRegulationTemperatureThreshold: 25
+    thermalRegulationTemperatureThreshold: 2
   - type: Perishable
   - type: Butcherable
     butcheringType: Spike # TODO human.

@@ -4,13 +4,6 @@
   description: job-description-ussf-crewman
   playTimeTracker: JobUSSFCrewman
   requirements:
-    # COMMENTED OUT: CharacterSpeciesRequirement not supported (species requirement system not implemented)
-    # - !type:CharacterSpeciesRequirement
-    #   species:
-    #     - Human
-    # COMMENTED OUT: FactionRequirement not supported (faction system not implemented)
-    # - !type:FactionRequirement
-    #   factionID: "NATO"
     - !type:TraitsRequirement
       inverted: true
       traits:
@@ -31,18 +24,15 @@
     - English
     languagesUnderstood:
     - English
-  # - !type:AddComponentSpecial
-  #   components:
-  #     # COMMENTED OUT: ChatRank and HullrotFaction not supported
-  #     # - type: ChatRank
-  #     #   rank: BF-rank-private
-  #     # - type: HullrotFaction
-  #     #   faction: USSF
-  #     # - type: LanguageAdder
-  #     #   addSpoken:
-  #     #     - English
-  #     #   addUnderstood:
-  #     #     - English
+  - !type:AddImplantSpecial
+    implants: [ TrackingImplantNATOUS ]
+  - !type:AddComponentSpecial
+    components:
+    - type: NpcFactionMember
+      factions:
+      - NATO
+    - type: SurgerySpeedModifier
+      SpeedModifier: 1.25
   access:
   - Maintenance
   - Service
@@ -53,6 +43,7 @@
   - NATOCommand
   - NATOMaintenance
   - NATOArmory
+  - NATOCrew
 
 - type: startingGear
   id: USSFCrewmanGear
@@ -62,13 +53,15 @@
     jumpsuit: ClothingUniformJumpsuitSpaceForceCrewman
     shoes: ClothingShoesBootsJackFilled
     back: ClothingBackpackSecurity
-    belt: ClothingBeltAssaultFilledToolsRCD
+    belt: ClothingBeltAssaultFilledToolsSRD
     gloves: ClothingHandsGlovesCombat
     pocket1: WeaponPistolM9
     pocket2: PouchFirstAidFilled
   storage:
     back:
+    - ClothingMaskGasM40
+    - FlashlightMilitaryUS
+    - MagazinePistolM9
+    - MagazinePistolM9
     - Tourniquet
     - Zipties
-    - MagazinePistolM9
-    - MagazinePistolM9

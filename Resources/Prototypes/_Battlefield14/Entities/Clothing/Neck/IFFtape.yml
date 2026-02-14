@@ -22,6 +22,17 @@
 
 - type: entity
   parent: ClothingNeckBase
+  id: ClothingNeckIFFtapeStGeorge
+  name: IFF tape (St. George's ribbon)
+  description: Prevents friendly fire as long as you have your colour-identification flash card.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Clothing/Neck/IFFtapeStGeorge.rsi
+  - type: Clothing
+    sprite: _Battlefield14/Clothing/Neck/IFFtapeStGeorge.rsi
+
+- type: entity
+  parent: ClothingNeckBase
   id: ClothingNeckIFFtapeBlue
   name: IFF tape (blue)
   description: Prevents friendly fire as long as you have your colour-identification flash card.
@@ -41,3 +52,14 @@
     sprite: _Battlefield14/Clothing/Neck/IFFtapeYellow.rsi
   - type: Clothing
     sprite: _Battlefield14/Clothing/Neck/IFFtapeYellow.rsi
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckIFFtapeGreen
+  name: IFF tape (green)
+  description: Prevents friendly fire as long as you have your colour-identification flash card.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Clothing/Neck/IFFtapeGreen.rsi
+  - type: Clothing
+    sprite: _Battlefield14/Clothing/Neck/IFFtapeGreen.rsi

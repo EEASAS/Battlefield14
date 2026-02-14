@@ -13,6 +13,7 @@
     - 0,0,3,3
   - type: Storage
     maxItemSize: Small
+    defaultStorageOrientation: Vertical
     grid:
     - 0,0,3,1
   - type: PhysicalComposition
@@ -29,7 +30,7 @@
   - type: Sprite
     sprite: _Battlefield14/Objects/Misc/pouches.rsi
     layers:
-      - state: small_firstaid
+      - state: firstaid
   - type: Storage
     whitelist:
       tags:
@@ -43,6 +44,20 @@
         - Hypospray
         - Injector
         - Pill
+
+- type: entity
+  id: PouchMedkit
+  parent: PouchFirstAid
+  name: medkit pouch
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Misc/pouches.rsi
+    layers:
+      - state: medkit
+  - type: Storage
+    maxItemSize: Small
+    grid:
+    - 0,0,3,2
 
 - type: entity
   id: PouchMags

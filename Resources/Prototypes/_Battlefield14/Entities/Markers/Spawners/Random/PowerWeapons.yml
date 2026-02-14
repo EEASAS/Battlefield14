@@ -6,11 +6,13 @@
   - type: Sprite
     layers:
       - state: red
-      - sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/M4.rsi
+      - sprite: _Battlefield14/Objects/Weapons/Guns/Shotguns/USAS12.rsi
         state: icon
   - type: RandomSpawner
     offset: 0
-    prototypes: # Placeholder until I actually make unique ones
-      - CrateSecgearPowerWeaponFilledM249Para
-      - CrateSecgearPowerWeaponFilledSMAW
+    prototypes:
+      - CratePowerWeaponFilledM107
+      - CratePowerWeaponFilledUSAS12
+      - CratePowerWeaponFilledAEK971
+      - CratePowerWeaponFilledXM25
     chance: 1

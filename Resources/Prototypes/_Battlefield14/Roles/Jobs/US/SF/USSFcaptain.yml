@@ -4,13 +4,6 @@
   description: job-description-ussf-captain
   playTimeTracker: JobUSSFCaptain
   requirements:
-    # COMMENTED OUT: CharacterSpeciesRequirement not supported (species requirement system not implemented)
-    # - !type:CharacterSpeciesRequirement
-    #   species:
-    #     - Human
-    # COMMENTED OUT: FactionRequirement not supported (faction system not implemented)
-    # - !type:FactionRequirement
-    #   factionID: "NATO"
     - !type:TraitsRequirement
       inverted: true
       traits:
@@ -33,18 +26,15 @@
     languagesUnderstood:
     - English
     - Esperanto
-  # - !type:AddComponentSpecial
-  #   components:
-  #     # COMMENTED OUT: ChatRank and HullrotFaction not supported
-  #     # - type: ChatRank
-  #     #   rank: BF-rank-private
-  #     # - type: HullrotFaction
-  #     #   faction: USSF
-  #     # - type: LanguageAdder
-  #     #   addSpoken:
-  #     #     - English
-  #     #   addUnderstood:
-  #     #     - English
+  - !type:AddImplantSpecial
+    implants: [ TrackingImplantNATOUS ]
+  - !type:AddComponentSpecial
+    components:
+    - type: NpcFactionMember
+      factions:
+      - NATO
+    - type: SurgerySpeedModifier
+      SpeedModifier: 1.25
   access:
   - Maintenance
   - Service
@@ -57,6 +47,8 @@
   - NATOSoldier
   - NATOArmory
   - NATOFunds
+  - NATOCrew
+  - NATOCaptain
 
 - type: startingGear
   id: USSFCaptainGear
@@ -71,5 +63,7 @@
     pocket1: PouchFirstAidFilled
   storage:
     back:
+    - ClothingMaskGasM40
+    - FlashlightMilitaryUS
     - Tourniquet
     - Zipties

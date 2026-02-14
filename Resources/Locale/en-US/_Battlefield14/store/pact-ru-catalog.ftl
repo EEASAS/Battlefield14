@@ -1,5 +1,8 @@
 ## Weapons
 
+uplink-PACTRU-PKMcrate-name = PKM x2
+uplink-PACTRU-PKMcrate-desc = A crate of two PKM machineguns and four belt boxes.
+
 uplink-PACTRU-ak74crate-name = AK-74 x10
 uplink-PACTRU-ak74crate-desc = A crate of ten AK-74 rifles and two boxes of spare ammunition.
 
@@ -41,6 +44,12 @@ uplink-PACTRU-magazine-box-AK12-desc = Contains 8 5.45x39 magazines for the AK-1
 uplink-PACTRU-magazine-box-AK203-name = AK-203 magazine box
 uplink-PACTRU-magazine-box-AK203-desc = Contains 8 7.62x39 magazines for the AK-203.
 
+uplink-PACTRU-magazine-box-ASVALshort-name = AS-VAL magazine box (short)
+uplink-PACTRU-magazine-box-ASVALshort-desc = Contains 8 20 round 9x39 magazines for the AS-VAL.
+
+uplink-PACTRU-magazine-box-ASVAL-name = AS-VAL magazine box
+uplink-PACTRU-magazine-box-ASVAL-desc = Contains 8 9x39 magazines for the AS-VAL.
+
 uplink-PACTRU-magazine-box-KSKBuckshot-name = KS-K magazine box (buckshot)
 uplink-PACTRU-magazine-box-KSKBuckshot-desc = 8 mags of 8 rounds of 12 gauge buckshot in magazines that fit in the KS-K.
 
@@ -62,11 +71,17 @@ uplink-PACTRU-evakit-combat-desc = Contains a 'Goida' combat voidsuit, tactical 
 
 ## Explosives
 
-uplink-PACTRU-rgd5-box-name = RGD5 Grenade box
-uplink-PACTRU-rgd5-box-desc = Contains 8 RGD5 high explosive grenades.
+uplink-PACTRU-rgd5-box-name = RGD-5 Grenade box
+uplink-PACTRU-rgd5-box-desc = Contains 8 RGD-5 high explosive grenades.
 
 uplink-PACTRU-rgo-box-name = RGO Grenade box
 uplink-PACTRU-rgo-box-desc = Contains 8 RGO offensive high explosive impact grenades.
+
+uplink-PACTRU-zarya-box-name = Zarya Flashbang Grenade box
+uplink-PACTRU-zarya-box-desc = Contains 8 RGO 'zarya' flashbang grenades.
+
+uplink-PACTRU-rdg2-box-name = RDG-2 Grenade box
+uplink-PACTRU-rdg2-box-desc = Contains 8 RDG-2 smoke grenades.
 
 ## Ship ammo
 

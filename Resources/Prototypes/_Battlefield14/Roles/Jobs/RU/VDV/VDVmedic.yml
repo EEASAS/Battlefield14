@@ -31,16 +31,18 @@
     - Russian
     languagesUnderstood:
     - Russian
+  - !type:AddComponentSpecial
+    components:
+    - type: NpcFactionMember
+      factions:
+      - VDV
+    - type: SurgerySpeedModifier
+      SpeedModifier: 1.65
+  - !type:AddImplantSpecial
+    implants: [ TrackingImplantPACTRU ]
   #     # COMMENTED OUT: ChatRank and HullrotFaction not supported
   #     # - type: ChatRank
   #     #   rank: BF-rank-corporal
-  #     # - type: HullrotFaction
-  #     #   faction: VDV
-  #     # - type: LanguageAdder
-  #     #   addSpoken:
-  #     #     - LowImperial
-  #     #   addUnderstood:
-  #     #     - LowImperial
   access:
   - Maintenance
   - Service
@@ -69,10 +71,13 @@
     neck: ClothingNeckIFFtapeWhite
     suitstorage: WeaponSubmachinegunRUVityaz
     pocket1: PouchMagsPistolLargeFilledVityaz
-    pocket2: SyringeCaseFilledBF14
+    pocket2: PouchGrenadesFilledVDVScout
   storage:
     back:
     - SupplyBoxMedicalFilled
     - DefibrillatorCompactBF
+    - SyringeCaseFilledBF14
+    - FlashlightMilitaryAlt
+    - ClothingMaskGasRussia
     - Tourniquet
     - Zipties

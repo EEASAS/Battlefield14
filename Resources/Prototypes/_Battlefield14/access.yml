@@ -28,6 +28,14 @@
   id: NATOFunds
   name: id-card-access-NATO-funds
 
+- type: accessLevel
+  id: NATOCrew
+  name: id-card-access-NATO-crew
+
+- type: accessLevel
+  id: NATOCaptain
+  name: id-card-access-NATO-captain
+
 # PACT #
 
 - type: accessLevel
@@ -57,3 +65,11 @@
 - type: accessLevel
   id: PACTFunds
   name: id-card-access-PACT-funds
+
+- type: accessLevel
+  id: PACTCrew
+  name: id-card-access-PACT-crew
+
+- type: accessLevel
+  id: PACTCaptain
+  name: id-card-access-PACT-captain
