@@ -14,46 +14,25 @@
     layers:
     - state: base
       map: ["enum.AmmoVisualLayers.Base"]
+    scale: 0.75, 0.75
   - type: Appearance
   - type: SpentAmmoVisuals
 
 - type: entity
   id: BF_CartridgeGrenade25x40HEAB
   name: 25x40mm HEAB cartridge
-  parent: BaseCartridge
+  parent: BF_CartridgeGrenade25x40HE
   components:
-  - type: Tag
-    tags:
-    - Cartridge
-    - BF_CartridgeGrenade25x40
   - type: CartridgeAmmo
     proto: Bullet25x40HEAB
-  - type: Sprite
-    sprite: _Mono/Objects/SpaceArtillery/50_armorpiercing_machinegun_casing.rsi
-    layers:
-    - state: base
-      map: ["enum.AmmoVisualLayers.Base"]
-  - type: Appearance
-  - type: SpentAmmoVisuals
 
 - type: entity
   id: BF_CartridgeGrenade25x40Flechette
   name: 25x40mm flechette cartridge
-  parent: BaseCartridge
+  parent: BF_CartridgeGrenade25x40HE
   components:
-  - type: Tag
-    tags:
-    - Cartridge
-    - BF_CartridgeGrenade25x40
   - type: CartridgeAmmo
     proto: Bullet25x40Fragment_Spread
-  - type: Sprite
-    sprite: _Mono/Objects/SpaceArtillery/50_armorpiercing_machinegun_casing.rsi
-    layers:
-    - state: base
-      map: ["enum.AmmoVisualLayers.Base"]
-  - type: Appearance
-  - type: SpentAmmoVisuals
 
 - type: entity
   id: Bullet25x40Fragment_Spread
@@ -68,37 +47,15 @@
 - type: entity
   id: BF_CartridgeGrenade25x40APDS
   name: 25x40mm APDS cartridge
-  parent: BaseCartridge
+  parent: BF_CartridgeGrenade25x40HE
   components:
-  - type: Tag
-    tags:
-    - Cartridge
-    - BF_CartridgeGrenade25x40
   - type: CartridgeAmmo
     proto: Bullet25x40APDS
-  - type: Sprite
-    sprite: _Mono/Objects/SpaceArtillery/50_armorpiercing_machinegun_casing.rsi
-    layers:
-    - state: base
-      map: ["enum.AmmoVisualLayers.Base"]
-  - type: Appearance
-  - type: SpentAmmoVisuals
 
 - type: entity
   id: BF_CartridgeGrenade25x40Flak
   name: 25x40mm airburst flak cartridge
-  parent: BaseCartridge
+  parent: BF_CartridgeGrenade25x40HE
   components:
-  - type: Tag
-    tags:
-    - Cartridge
-    - BF_CartridgeGrenade25x40
   - type: CartridgeAmmo
     proto: Bullet25x40AirburstFlak
-  - type: Sprite
-    sprite: _Mono/Objects/SpaceArtillery/50_armorpiercing_machinegun_casing.rsi
-    layers:
-    - state: base
-      map: ["enum.AmmoVisualLayers.Base"]
-  - type: Appearance
-  - type: SpentAmmoVisuals

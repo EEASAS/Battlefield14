@@ -4,8 +4,8 @@ meta:
   engineVersion: 264.0.0
   forkId: ""
   forkVersion: ""
-  time: 02/06/2026 03:56:12
-  entityCount: 1763
+  time: 02/13/2026 12:50:57
+  entityCount: 1748
 maps: []
 grids:
 - 1
@@ -44,7 +44,7 @@ entities:
   - uid: 1
     components:
     - type: MetaData
-      name: "USS Barack Obama"
+      name: USS Barack Obama
     - type: Transform
       pos: 1,1
       parent: invalid
@@ -92,10 +92,10 @@ entities:
     - type: OccluderTree
     - type: SpreaderGrid
       spreadQueues:
+        Smoke: []
+        Kudzu: []
         Puddle: []
         MetalFoam: []
-        Kudzu: []
-        Smoke: []
       updateAccumulator: 0.50004435
     - type: Shuttle
       dampingModifier: 0.25
@@ -316,7 +316,7 @@ entities:
             0: 48059
           0,4:
             0: 13059
-            4: 32768
+            3: 32768
           1,0:
             0: 12339
             2: 32768
@@ -351,8 +351,7 @@ entities:
           -1,-1:
             0: 45942
           1,-4:
-            0: 12592
-            3: 512
+            0: 13104
             2: 32768
           1,-3:
             0: 53555
@@ -373,14 +372,14 @@ entities:
             0: 4112
           -4,-4:
             2: 8
-            4: 2176
+            3: 2176
           -4,-5:
             2: 34944
-            4: 8
+            3: 8
           -4,-1:
-            4: 32768
+            3: 32768
           -4,0:
-            4: 1096
+            3: 1096
           -3,-5:
             2: 4352
             0: 52428
@@ -401,8 +400,7 @@ entities:
           -2,-2:
             0: 65535
           -2,-1:
-            0: 14192
-            5: 16384
+            0: 30576
           -2,-5:
             0: 65535
           -2,0:
@@ -420,17 +418,17 @@ entities:
           -4,2:
             0: 32768
           -4,3:
-            4: 2112
+            3: 2112
             2: 128
           -3,2:
             0: 65534
           -3,3:
             2: 36592
-            4: 24832
+            3: 24832
           -3,1:
             0: 61166
           -3,4:
-            4: 8
+            3: 8
           -2,1:
             0: 28166
           -2,2:
@@ -452,16 +450,16 @@ entities:
             2: 15
             0: 60928
           1,-7:
-            4: 12288
+            3: 12288
           1,-6:
             0: 12288
-            4: 12
+            3: 12
           2,-6:
-            4: 16
+            3: 16
           -4,-6:
-            4: 32768
+            3: 32768
           -3,-6:
-            4: 24
+            3: 24
             0: 49152
           -2,-6:
             0: 61440
@@ -470,17 +468,17 @@ entities:
             2: 57344
           0,5:
             0: 17
-            4: 9288
+            3: 9288
           -1,5:
             0: 13240
           0,6:
-            4: 274
+            3: 274
           -1,6:
             2: 2176
             0: 819
-            4: 32768
+            3: 32768
           -2,6:
-            4: 8721
+            3: 8721
             0: 2184
           -2,5:
             0: 34944
@@ -543,48 +541,10 @@ entities:
           - 0
           - 0
         - volume: 2500
-          temperature: 293.15
-          moles:
-          - 21.6852
-          - 81.57766
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-        - volume: 2500
           immutable: True
           moles:
           - 0
           - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-        - volume: 2500
-          temperature: 293.15
-          moles:
-          - 21.813705
-          - 82.06108
           - 0
           - 0
           - 0
@@ -5594,23 +5554,6 @@ entities:
           showEnts: False
           occludes: True
           ent: null
-- proto: Crowbar
-  entities:
-  - uid: 1591
-    components:
-    - type: Transform
-      pos: -5.5177526,10.598805
-      parent: 1
-  - uid: 1592
-    components:
-    - type: Transform
-      pos: -5.5177526,7.64884
-      parent: 1
-  - uid: 1593
-    components:
-    - type: Transform
-      pos: -5.4969196,4.563363
-      parent: 1
 - proto: CryogenicSleepUnitSpawnerLateJoin
   entities:
   - uid: 721
@@ -6432,22 +6375,22 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
-- proto: LightFighterM61A2
+- proto: LockerArmoryNATOFilledF22
   entities:
-  - uid: 1570
+  - uid: 895
     components:
     - type: Transform
-      pos: -5.4298067,10.680339
+      pos: -5.5,4.5
       parent: 1
-  - uid: 1572
+  - uid: 1565
     components:
     - type: Transform
-      pos: -5.5027237,7.740797
+      pos: -5.5,7.5
       parent: 1
-  - uid: 1573
+  - uid: 1566
     components:
     - type: Transform
-      pos: -5.5339737,4.7908697
+      pos: -5.5,10.5
       parent: 1
 - proto: LockerArmoryNATOFilledM249Para
   entities:
@@ -6865,23 +6808,6 @@ entities:
     components:
     - type: Transform
       pos: 5.5363274,-12.146921
-      parent: 1
-- proto: MediumFighterMaverick
-  entities:
-  - uid: 1571
-    components:
-    - type: Transform
-      pos: -5.38814,10.430165
-      parent: 1
-  - uid: 1574
-    components:
-    - type: Transform
-      pos: -5.45064,7.4494934
-      parent: 1
-  - uid: 1575
-    components:
-    - type: Transform
-      pos: -5.45064,4.4265614
       parent: 1
 - proto: MedkitAdvancedFilled
   entities:
@@ -7918,23 +7844,6 @@ entities:
     - type: Transform
       pos: 7.5,-3.5
       parent: 1
-- proto: Screwdriver
-  entities:
-  - uid: 1588
-    components:
-    - type: Transform
-      pos: -5.4969196,10.671773
-      parent: 1
-  - uid: 1589
-    components:
-    - type: Transform
-      pos: -5.476086,7.700959
-      parent: 1
-  - uid: 1590
-    components:
-    - type: Transform
-      pos: -5.4552526,4.698874
-      parent: 1
 - proto: ShotGunCabinetUSFilledM870
   entities:
   - uid: 1397
@@ -8612,26 +8521,11 @@ entities:
     - type: Transform
       pos: 3.5,4.5
       parent: 1
-  - uid: 1461
-    components:
-    - type: Transform
-      pos: -5.5,10.5
-      parent: 1
-  - uid: 1469
-    components:
-    - type: Transform
-      pos: -5.5,7.5
-      parent: 1
   - uid: 1554
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 3.5,-9.5
-      parent: 1
-  - uid: 1565
-    components:
-    - type: Transform
-      pos: -5.5,4.5
       parent: 1
 - proto: Thruster
   entities:
@@ -10743,6 +10637,23 @@ entities:
       rot: 1.5707963267948966 rad
       pos: -7.5,-24.5
       parent: 1
+- proto: WallWeaponCapacitorRecharger
+  entities:
+  - uid: 896
+    components:
+    - type: Transform
+      pos: -5.5,5.5
+      parent: 1
+  - uid: 1461
+    components:
+    - type: Transform
+      pos: -5.5,8.5
+      parent: 1
+  - uid: 1469
+    components:
+    - type: Transform
+      pos: -5.5,11.5
+      parent: 1
 - proto: WarpPoint
   entities:
   - uid: 1364
@@ -10752,16 +10663,6 @@ entities:
       parent: 1
 - proto: WeaponCapacitorRecharger
   entities:
-  - uid: 895
-    components:
-    - type: Transform
-      pos: -5.5,10.5
-      parent: 1
-  - uid: 896
-    components:
-    - type: Transform
-      pos: -5.5,4.5
-      parent: 1
   - uid: 1464
     components:
     - type: Transform
@@ -10773,11 +10674,6 @@ entities:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 0.5,-11.5
-      parent: 1
-  - uid: 1566
-    components:
-    - type: Transform
-      pos: -5.5,7.5
       parent: 1
   - uid: 1746
     components:
@@ -10909,23 +10805,6 @@ entities:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: -3.5,22.5
-      parent: 1
-- proto: WelderIndustrial
-  entities:
-  - uid: 1594
-    components:
-    - type: Transform
-      pos: -5.444836,10.598805
-      parent: 1
-  - uid: 1595
-    components:
-    - type: Transform
-      pos: -5.444836,7.617568
-      parent: 1
-  - uid: 1596
-    components:
-    - type: Transform
-      pos: -5.538586,4.5842113
       parent: 1
 - proto: WeldingFuelTankFull
   entities:
