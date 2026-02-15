@@ -3,7 +3,7 @@
   id: WeaponTurretTRUMPCARD
   name: TRUMPCARD 17.76mm railgun
   suffix: US
-  parent: BattlefieldArtilleryMagazine
+  parent: BallisticArtilleryBase
   description: A capital ship mounted electromagnetic railgun chambered in 17.76 mm. Designed for deliberate, single-shot engagements against orbital infrastructure and designated enemies of freedom. Deployed almost exclusively aboard U.S. capital vessels, with limited NATO export.
   components:
   - type: StaticPrice
@@ -32,18 +32,14 @@
     powerUsePassive: 1200
     powerUseActive: 8000
   - type: Actions
-  - type: ItemSlots
-    slots:
-      gun_magazine:
-        name: Magazine
-        startingItem: Magazine1776mmRailgun
-        insertSound: /Audio/Weapons/Guns/MagIn/hpistol_magin.ogg
-        ejectSound: /Audio/Weapons/Guns/MagOut/sfrifle_magout.ogg
-        priority: 2
-        whitelist:
-          tags:
-          - Magazine1776mmRailgun
-        whitelistFailPopup: gun-magazine-whitelist-fail
+  - type: BallisticAmmoProvider
+    whitelist:
+      tags:
+      - Cartridge1776mmRailgun
+    capacity: 1
+    proto: Cartridge1776mmRailgun
+    soundInsert:
+      path: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
   - type: Destructible
     thresholds:
     - trigger:
@@ -413,9 +409,9 @@
 # M256 120mm Heavy Cannon
 - type: entity
   id: WeaponTurretM256
-  name: 120 mm M256 Heavy Cannon
+  name: 120mm M256 Heavy Cannon
   suffix: US
-  parent: BattlefieldArtilleryMagazine
+  parent: BallisticArtilleryBase
   description: A high-caliber heavy cannon derived from the M256 Abrams tank gun lineage. Developed under U.S. defense contracts at extreme cost through iterative scaling rather than conceptual redesign. Adopted by NATO fleets. Delivers overwhelming force with minimal novelty.
   components:
   - type: StaticPrice
@@ -444,18 +440,14 @@
     powerUsePassive: 800
     powerUseActive: 5000
   - type: Actions
-  - type: ItemSlots
-    slots:
-      gun_magazine:
-        name: Magazine
-        startingItem: Magazine120mmM256
-        insertSound: /Audio/Weapons/Guns/MagIn/hpistol_magin.ogg
-        ejectSound: /Audio/Weapons/Guns/MagOut/sfrifle_magout.ogg
-        priority: 2
-        whitelist:
-          tags:
-          - Magazine120mmM256
-        whitelistFailPopup: gun-magazine-whitelist-fail
+  - type: BallisticAmmoProvider
+    whitelist:
+      tags:
+      - Cartridge120mm
+    capacity: 5
+    proto: Cartridge120mmAPFSDS
+    soundInsert:
+      path: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
   - type: Destructible
     thresholds:
     - trigger:
@@ -476,4 +468,3 @@
     shipType: Ballistic
   - type: ShipGunClass
     shipClass: Heavy
-

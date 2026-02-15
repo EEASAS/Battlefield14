@@ -44,6 +44,8 @@
         - Hypospray
         - Injector
         - Pill
+  - type: ExplosionResistance
+    damageCoefficient: 0.0
 
 - type: entity
   id: PouchMedkit
@@ -58,6 +60,8 @@
     maxItemSize: Small
     grid:
     - 0,0,3,2
+  - type: ExplosionResistance
+    damageCoefficient: 0.0
 
 - type: entity
   id: PouchMags

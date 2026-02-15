@@ -83,6 +83,9 @@
   id: Magazine125mmMolotN
 
 - type: Tag
+  id: Cartridge125mm
+
+- type: Tag
   id: Cartridge125mmAPFSDS
 
 # Kornet-N Guided Missile System Launcher

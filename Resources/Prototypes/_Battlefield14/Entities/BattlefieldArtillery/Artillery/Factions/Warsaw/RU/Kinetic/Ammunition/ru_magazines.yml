@@ -1013,6 +1013,7 @@
     mayTransfer: true
     whitelist:
       tags:
+      - Cartridge125mm
       - Cartridge125mmAPFSDS
   - type: ContainerContainer
     containers:
@@ -1040,6 +1041,7 @@
   - type: Tag
     tags:
     - Cartridge
+    - Cartridge125mm
     - Cartridge125mmAPFSDS
   - type: CartridgeAmmo
     deleteOnSpawn: true
@@ -1070,4 +1072,3 @@
   - type: Damageable
     damageContainer: Inorganic
     damageModifierSet: Metallic
-

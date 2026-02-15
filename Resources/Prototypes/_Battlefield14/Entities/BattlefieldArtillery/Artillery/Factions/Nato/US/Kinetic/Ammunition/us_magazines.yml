@@ -39,8 +39,9 @@
 
 - type: entity
   id: Cartridge1776mmRailgun
-  name: cartridge (17.76mm railgun)
+  name: 17.76mm depleted uranium penetrator
   parent: BaseCartridge
+  suffix: trumpcard
   components:
   - type: Tag
     tags:
@@ -1056,4 +1057,3 @@
   - type: Appearance
   - type: StaticPrice
     price: 1
-

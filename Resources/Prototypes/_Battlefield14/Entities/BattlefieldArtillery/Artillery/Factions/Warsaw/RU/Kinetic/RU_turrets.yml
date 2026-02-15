@@ -360,7 +360,7 @@
   id: WeaponTurretMolotN
   name: K-1250 "Molot-N" Heavy Cannon
   suffix: RU
-  parent: BattlefieldArtilleryMagazine
+  parent: BallisticArtilleryBase
   description: Ripped off a current manufacture T-90 tank, much like the T-90 this weapon has been around since the T-64 and "modernised" by slapping whatever modern gizmos and bells and whistles on it until it counts as up-to-date.
   components:
   - type: StaticPrice
@@ -389,18 +389,14 @@
     powerUsePassive: 1400
     powerUseActive: 9000
   - type: Actions
-  - type: ItemSlots
-    slots:
-      gun_magazine:
-        name: Magazine
-        startingItem: Magazine125mmMolotN
-        insertSound: /Audio/Weapons/Guns/MagIn/hpistol_magin.ogg
-        ejectSound: /Audio/Weapons/Guns/MagOut/sfrifle_magout.ogg
-        priority: 2
-        whitelist:
-          tags:
-          - Magazine125mmMolotN
-        whitelistFailPopup: gun-magazine-whitelist-fail
+  - type: BallisticAmmoProvider
+    whitelist:
+      tags:
+      - Cartridge125mmAPFSDS
+    capacity: 5
+    proto: Cartridge125mmAPFSDS
+    soundInsert:
+      path: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
   - type: Destructible
     thresholds:
     - trigger:
@@ -421,4 +417,3 @@
     shipType: Ballistic
   - type: ShipGunClass
     shipClass: Heavy
-
