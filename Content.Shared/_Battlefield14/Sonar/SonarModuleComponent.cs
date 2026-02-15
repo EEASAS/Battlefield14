@@ -29,4 +29,10 @@ public sealed partial class SonarModuleComponent : Component
     /// </summary>
     [DataField]
     public TimeSpan SonarCooldown = TimeSpan.FromSeconds(10);
+
+    /// <summary>
+    /// Whether to allow revealing cloaked ships.
+    /// </summary>
+    [DataField]
+    public bool SeeCloaked = true;
 }

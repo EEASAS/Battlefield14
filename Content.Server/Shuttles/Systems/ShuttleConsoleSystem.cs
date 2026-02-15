@@ -565,11 +565,7 @@ public sealed partial class ShuttleConsoleSystem : SharedShuttleConsoleSystem
             return new NavInterfaceState(SharedRadarConsoleSystem.DefaultMaxRange, GetNetCoordinates(coordinates), angle, docks, InertiaDampeningMode.Dampen); // Frontier: add inertial dampening
 
         // BF14: query sonar
-        var hasSonar = false;
-        var sonarWidth = new Angle();
-        var sonarDistance = 0f;
-        var sonarDuration = new TimeSpan();
-        var sonarCooldown = new TimeSpan();
+        var sonarState = (SonarState?)null;
         if (entity.Comp1.HasSonar && entity.Comp2?.GridUid is { } grid && TryComp<MapGridComponent>(grid, out var gridComp))
         {
             var sonars = new HashSet<Entity<SonarModuleComponent>>();
@@ -579,11 +575,11 @@ public sealed partial class ShuttleConsoleSystem : SharedShuttleConsoleSystem
                 if (!Transform(sonar).Anchored || !this.IsPowered(sonar, EntityManager))
                     continue;
 
-                hasSonar = true;
-                sonarWidth = sonar.Comp.SonarWidth;
-                sonarDistance = sonar.Comp.SonarDistance;
-                sonarDuration = sonar.Comp.SonarDuration;
-                sonarCooldown = sonar.Comp.SonarCooldown;
+                sonarState = new(sonar.Comp.SonarWidth,
+                                 sonar.Comp.SonarDistance,
+                                 sonar.Comp.SonarDuration,
+                                 sonar.Comp.SonarCooldown,
+                                 sonar.Comp.SeeCloaked);
                 break;
             }
         }
@@ -597,11 +593,7 @@ public sealed partial class ShuttleConsoleSystem : SharedShuttleConsoleSystem
             portNames,
             entity.Comp1.Pannable, // Mono
             entity.Comp1.RelativePanning, // Mono
-            entity.Comp1.HasSonar && hasSonar, // BF14
-            sonarWidth, // BF14
-            sonarDistance, // BF14
-            sonarDuration, // BF14
-            sonarCooldown); // BF14
+            sonarState); // BF14
     }
 
     /// <summary>

@@ -49,13 +49,7 @@ public sealed class NavInterfaceState
     public bool Pannable = true; // Mono
     public bool RelativePanning = false; // Mono
 
-    // <BF14>
-    public bool HasSonar = false;
-    public Angle SonarWidth;
-    public float SonarDistance;
-    public TimeSpan SonarDuration;
-    public TimeSpan SonarCooldown;
-    // </BF14>
+    public SonarState? Sonar = null; // BF14
 
     public NavInterfaceState(
         float maxRange,
@@ -66,11 +60,7 @@ public sealed class NavInterfaceState
         Dictionary<string, string>? networkPortNames = null,
         bool pannable = true, // Mono
         bool relativePan = false, // Mono
-        bool hasSonar = false, // BF14
-        Angle sonarWidth = new(), // BF14
-        float sonarDistance = 0f, // BF14
-        TimeSpan sonarDuration = new(), // BF14
-        TimeSpan sonarCooldown = new()) // BF14
+        SonarState? sonar = null) // BF14
     {
         MaxRange = maxRange;
         Coordinates = coordinates;
@@ -80,13 +70,7 @@ public sealed class NavInterfaceState
         NetworkPortNames = networkPortNames ?? new Dictionary<string, string>();
         Pannable = pannable; // Mono
         RelativePanning = relativePan; // Mono
-        // <BF14>
-        HasSonar = hasSonar;
-        SonarWidth = sonarWidth;
-        SonarDistance = sonarDistance;
-        SonarDuration = sonarDuration;
-        SonarCooldown = sonarCooldown;
-        // </BF14>
+        Sonar = sonar; // BF14
     }
 }
 
@@ -95,3 +79,7 @@ public enum RadarConsoleUiKey : byte
 {
     Key
 }
+
+// BF14
+[Serializable, NetSerializable]
+public record struct SonarState(Angle Width, float Distance, TimeSpan Duration, TimeSpan Cooldown, bool SeeCloaked);
