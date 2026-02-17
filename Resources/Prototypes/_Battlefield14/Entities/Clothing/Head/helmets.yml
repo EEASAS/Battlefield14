@@ -112,3 +112,34 @@
     sprite: _Battlefield14/Clothing/Head/Helmets/helmetcom.rsi
   - type: Clothing
     sprite: _Battlefield14/Clothing/Head/Helmets/helmetcom.rsi
+
+- type: entity
+  parent: [ ClothingHeadHelmetBasic , ClothingHeadLightBase ]
+  id: ClothingHeadHatHelmetThinker
+  name: thinker helmet
+  description: Ah, the shit pythagoras cares about, truly profound.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Clothing/Head/Helmets/thinker.rsi
+  - type: Clothing
+    sprite: _Battlefield14/Clothing/Head/Helmets/thinker.rsi
+    clothingVisuals:
+      head:
+      - state: off-equipped-HELMET
+        offset: "0, 0.12"
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.8
+        Piercing: 0.9
+        Heat: 0.9
+        Shock: 3
+  - type: PointLight
+    enabled: false
+    radius: 3
+    energy: 1
+    color: "#FFC458"
+    mask: null
+    autoRot: true
+    netsync: false
