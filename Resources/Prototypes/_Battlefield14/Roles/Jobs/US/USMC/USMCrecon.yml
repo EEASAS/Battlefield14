@@ -57,7 +57,7 @@
 - type: startingGear
   id: USMCReconGear
   equipment:
-    id: USMCRiflemanPDA
+    id: USMCReconPDA
     ears: ClothingHeadsetAltUS
     belt: ClothingBeltMilitaryWebbingUSFilledSTANAG
     jumpsuit: ClothingUniformJumpsuitCamoUS
