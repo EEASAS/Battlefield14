@@ -18,7 +18,7 @@
     explosionType: Default
     maxIntensity: 100
     intensitySlope: 4
-    totalIntensity: 200
+    totalIntensity: 100
     canCreateVacuum: false
   - type: TimerTriggerVisuals
     primingSound:
@@ -49,7 +49,7 @@
     explosionType: Default
     maxIntensity: 100
     intensitySlope: 4
-    totalIntensity: 200
+    totalIntensity: 100
     canCreateVacuum: false
   - type: TimerTriggerVisuals
     primingSound:
@@ -82,7 +82,7 @@
     explosionType: Default
     maxIntensity: 200
     intensitySlope: 8
-    totalIntensity: 400
+    totalIntensity: 300
     canCreateVacuum: true
   - type: TimerTriggerVisuals
     primingSound:
@@ -271,9 +271,9 @@
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: Default
-    maxIntensity: 100
-    intensitySlope: 4
-    totalIntensity: 200
+    maxIntensity: 10
+    intensitySlope: 3
+    totalIntensity: 100
     canCreateVacuum: false
   - type: TimerTriggerVisuals
     primingSound:
@@ -304,7 +304,7 @@
     explosionType: Default
     maxIntensity: 100
     intensitySlope: 4
-    totalIntensity: 200
+    totalIntensity: 100
     canCreateVacuum: false
   - type: TimerTriggerVisuals
     primingSound:
@@ -371,7 +371,7 @@
     explosionType: Default
     maxIntensity: 100
     intensitySlope: 4
-    totalIntensity: 200
+    totalIntensity: 100
     canCreateVacuum: false
   - type: EmitSoundOnPickup
     sound: /Audio/_Battlefield14/Weapons/Grenades/grab1.ogg
