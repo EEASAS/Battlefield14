@@ -86456,9 +86456,10 @@ entities:
       parent: 1
     - type: RandomSpawner
       prototypes:
-      - WeaponRifleUSM27IAR
-      - WeaponRifleRUAKMS
-      - WeaponRifleRUASVAL
+      - CratePowerWeaponFilledM107
+      - CratePowerWeaponFilledUSAS12
+      - CratePowerWeaponFilledAEK971
+      - CratePowerWeaponFilledXM25
 - proto: RandomVendingDrinks
   entities:
   - uid: 12958

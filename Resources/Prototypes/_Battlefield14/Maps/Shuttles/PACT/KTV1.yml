@@ -14,7 +14,7 @@
   mapPath: /Maps/_Battlefield14/Shuttles/PACT/KTV1.yml
   minPlayers: 0
   stations:
-    AAVP8:
+    KTV1:
       stationProto: StandardFrontierSecurityVessel
       gridComponents:
       - type: VesselInfo
