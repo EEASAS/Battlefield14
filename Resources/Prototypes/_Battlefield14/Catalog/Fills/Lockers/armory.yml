@@ -61,6 +61,8 @@
     contents:
         - id: LightFighterM61A2
         - id: MediumFighterMaverick
+        - id: LightFighterAIM9
+        - id: LightFighterFlarePod
         - id: CrowbarRed
         - id: Screwdriver
         - id: WelderIndustrial
@@ -145,6 +147,7 @@
     contents:
         - id: LightFighterGSH301
         - id: LightFighterS8
+        - id: LightFighterFlarePod
         - id: CrowbarRed
         - id: Screwdriver
         - id: WelderIndustrial

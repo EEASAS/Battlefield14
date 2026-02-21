@@ -4,8 +4,6 @@
     components:
     - type: Mech
       maxEquipmentAmount: 3
-#     - type: CanBeHeatTracked
-#     - type: ProximityFuseTarget
     - type: Physics
       bodyType: Dynamic
     - type: PassiveThermalSignature
@@ -24,6 +22,33 @@
           # COMMENTED OUT: Invalid enum value 'FighterMask' - not found in physics layer enum
           # layer:
           # - FighterMask
+    - type: TargetSeekingTarget # needed for A2A missiles
+    - type: TargetSeekerAlert
+      targetGainSound:
+        path: /Audio/_Mono/Effects/Alerts/rwr_beep.ogg
+      distanceAlertSettings:
+      - maximumDistance: 220
+        sound:
+          path: /Audio/_Mono/Effects/Alerts/launchwarning.ogg
+          params:
+            loop: true
+            volume: 0.9
+            pitch: 1.05
+      - maximumDistance: 400
+        sound:
+          path: /Audio/_Mono/Effects/Alerts/master_caution.ogg
+          params:
+            loop: true
+            volume: 1.3
+            pitch: 1.15
+      - maximumDistance: 650
+        sound:
+          path: /Audio/_Mono/Effects/Alerts/master_caution.ogg
+          params:
+            loop: true
+            volume: 1.2
+            pitch: 1.05
+            variation: 0.05
 
   - type: entity
     id: LightFighterBF
@@ -96,10 +121,6 @@
       scale: 5
       requireNoGrid: true
       shape: diamond
-#    - type: ProjectileIFF
-#      visualType: Diamond
-#      color: "#203564"
-#      scale: 3
     - type: StaticPrice
       price: 15000
     - type: Fixtures
@@ -182,10 +203,6 @@
       scale: 5
       requireNoGrid: true
       shape: diamond
-#    - type: ProjectileIFF
-#      visualType: Diamond
-#      color: "#a02829"
-#      scale: 3
     - type: StaticPrice
       price: 15000
     - type: Fixtures
