@@ -330,17 +330,17 @@
     contents:
       - id: MedicatedSuture
       - id: RegenerativeMesh
+      - id: HandheldHealthAnalyzerUnpowered
       - id: BF14HyposprayFilledTricordrazine
       - id: BF14HyposprayFilledSaline
-      - id: BF14HyposprayFilledNanoblood
-      - id: BF14HyposprayFilledHypervene
+      - id: BF14HyposprayFilledInaprovaline
+#      - id: BF14HyposprayFilledTramadol
       - id: PillCanisterBicaridine
       - id: PillCanisterKelotane
       - id: PillCanisterTricordrazine
 #      - id: PillCanisterTramadol
       - id: PillCanisterDylovene
       - id: PillCanisterDexalin
-      - id: HandheldHealthAnalyzerUnpowered
 
 - type: entity
   id: ClothingBeltMedicalEMTFilledBF14Pills

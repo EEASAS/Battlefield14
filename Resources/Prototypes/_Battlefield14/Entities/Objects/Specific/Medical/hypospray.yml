@@ -165,6 +165,21 @@
         - ReagentId: Dexalin
           Quantity: 60
 
+- type: entity
+  parent: BF14Hypospray
+  id: BF14HyposprayFilledInaprovaline
+  suffix: Inaprovaline
+  name: inaprovaline hypospray
+  description: Filled with 60u inaprovaline.
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      hypospray:
+        maxVol: 60
+        reagents:
+        - ReagentId: Inaprovaline
+          Quantity: 60
+
 #- type: entity
 #  parent: BF14Hypospray
 #  id: BF14HyposprayFilledOxycodone

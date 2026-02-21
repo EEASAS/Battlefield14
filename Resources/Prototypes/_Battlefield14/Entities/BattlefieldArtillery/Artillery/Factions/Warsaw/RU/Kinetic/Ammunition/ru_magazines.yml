@@ -14,7 +14,7 @@
   - type: BallisticAmmoProvider
     infiniteUnspawned: false
     proto: Cartridge127mmKordN
-    capacity: 40
+    capacity: 200
     mayTransfer: true
     whitelist:
       tags:
@@ -91,7 +91,7 @@
   - type: BallisticAmmoProvider
     infiniteUnspawned: false
     proto: Cartridge23mmHE
-    capacity: 40
+    capacity: 400
     mayTransfer: true
     whitelist:
       tags:
@@ -326,7 +326,7 @@
   - type: BallisticAmmoProvider
     infiniteUnspawned: false
     proto: Cartridge30mmAPDS
-    capacity: 40
+    capacity: 150
     mayTransfer: true
     whitelist:
       tags:
@@ -525,7 +525,7 @@
   - type: BallisticAmmoProvider
     infiniteUnspawned: false
     proto: Cartridge30mmAPT
-    capacity: 40
+    capacity: 150
     mayTransfer: true
     whitelist:
       tags:
@@ -563,7 +563,7 @@
   - type: BallisticAmmoProvider
     infiniteUnspawned: false
     proto: Cartridge30mmFrag
-    capacity: 40
+    capacity: 150
     mayTransfer: true
     whitelist:
       tags:
@@ -601,7 +601,7 @@
   - type: BallisticAmmoProvider
     infiniteUnspawned: false
     proto: Cartridge57mmBurevestnikN
-    capacity: 40
+    capacity: 100
     mayTransfer: true
     whitelist:
       tags:
@@ -679,7 +679,7 @@
   - type: BallisticAmmoProvider
     infiniteUnspawned: false
     proto: Cartridge83mmMortar
-    capacity: 40
+    capacity: 10
     mayTransfer: true
     whitelist:
       tags:
@@ -1009,7 +1009,7 @@
   - type: BallisticAmmoProvider
     infiniteUnspawned: false
     proto: Cartridge125mmAPFSDS
-    capacity: 40
+    capacity: 5
     mayTransfer: true
     whitelist:
       tags:

@@ -14,7 +14,7 @@
   - type: BallisticAmmoProvider
     infiniteUnspawned: false
     proto: Cartridge1776mmRailgun
-    capacity: 40
+    capacity: 1
     mayTransfer: true
     whitelist:
       tags:
@@ -86,7 +86,7 @@
   - type: BallisticAmmoProvider
     infiniteUnspawned: false
     proto: Cartridge127mmAP
-    capacity: 40
+    capacity: 200
     mayTransfer: true
     whitelist:
       tags:
@@ -163,7 +163,7 @@
   - type: BallisticAmmoProvider
     infiniteUnspawned: false
     proto: Cartridge20mmPhalanx
-    capacity: 40
+    capacity: 500
     mayTransfer: true
     whitelist:
       tags:
@@ -240,7 +240,7 @@
   - type: BallisticAmmoProvider
     infiniteUnspawned: false
     proto: Cartridge25mmAPDS
-    capacity: 40
+    capacity: 200
     mayTransfer: true
     whitelist:
       tags:
@@ -439,7 +439,7 @@
   - type: BallisticAmmoProvider
     infiniteUnspawned: false
     proto: Cartridge25mmAPT
-    capacity: 40
+    capacity: 150
     mayTransfer: true
     whitelist:
       tags:
@@ -477,7 +477,7 @@
   - type: BallisticAmmoProvider
     infiniteUnspawned: false
     proto: Cartridge25mmFrag
-    capacity: 40
+    capacity: 150
     mayTransfer: true
     whitelist:
       tags:
@@ -516,7 +516,7 @@
   - type: BallisticAmmoProvider
     infiniteUnspawned: false
     proto: Cartridge40x46mmHE
-    capacity: 40
+    capacity: 80
     mayTransfer: true
     whitelist:
       tags:
@@ -801,7 +801,7 @@
   - type: BallisticAmmoProvider
     infiniteUnspawned: false
     proto: Cartridge40mmBofors
-    capacity: 40
+    capacity: 100
     mayTransfer: true
     whitelist:
       tags:
@@ -879,7 +879,7 @@
   - type: BallisticAmmoProvider
     infiniteUnspawned: false
     proto: Cartridge120mmAPFSDS
-    capacity: 40
+    capacity: 5
     mayTransfer: true
     whitelist:
       tags:
@@ -997,7 +997,7 @@
   - type: BallisticAmmoProvider
     infiniteUnspawned: false
     proto: Cartridge40x46mmPlasmaGas
-    capacity: 40
+    capacity: 80
     mayTransfer: true
     whitelist:
       tags:
@@ -1035,7 +1035,7 @@
   - type: BallisticAmmoProvider
     infiniteUnspawned: false
     proto: Cartridge40x46mmChemicalSmoke
-    capacity: 40
+    capacity: 80
     mayTransfer: true
     whitelist:
       tags:
