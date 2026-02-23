@@ -326,7 +326,7 @@
       types:
         Slash: -15 # Was 5
         Piercing: -20 # Was 10, Buffed due to limb damage changes (Goobstation)
-    bloodlossModifier: -10
+    bloodlossModifier: -6 #BF14 -10 > -6
     healingBeginSound:
       path: "/Audio/Items/Medical/brutepack_begin.ogg"
       params:

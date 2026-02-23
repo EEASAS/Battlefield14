@@ -333,6 +333,8 @@
           - Wrench
     sprite: Clothing/Belt/belt_overlay.rsi
   - type: Appearance
+  - type: ExplosionResistance # BF14
+    damageCoefficient: 0.0
 
 - type: entity
   parent: ClothingBeltMedical
@@ -724,7 +726,7 @@
     #- type: Item # Frontier
     #size: Huge # Frontier
   - type: ExplosionResistance
-    damageCoefficient: 0.1
+    damageCoefficient: 0.0 # BF14 0.1 > 0.0
 
 - type: entity
   parent: NFClothingBeltStorageBase # Frontier: ClothingBeltStorageBase<NFClothingBeltStorageBase

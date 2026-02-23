@@ -372,13 +372,13 @@
     radius: 15.0
     energy: 9.0
   - type: Projectile
-    deleteOnCollide: false
+    deleteOnCollide: true
     damage:
       types:
         Heat: 5
   - type: RadarBlip
-    radarColor: "#a63536"
-    scale: 5
+    radarColor: "#FCBA03"
+    scale: 2
     requireNoGrid: true
     shape: diamond
   - type: TargetSeekingTarget

@@ -37,3 +37,14 @@
   - "/Audio/_Battlefield14/Voice/Human/AmmoAndHealth/US_Marines_Med15.ogg"
   - "/Audio/_Battlefield14/Voice/Human/AmmoAndHealth/US_Marines_Med16.ogg"
   - "/Audio/_Battlefield14/Voice/Human/AmmoAndHealth/US_Marines_Med17.ogg"
+
+- type: soundCollection
+  id: GruntUSOuchClean # TODO add /hg_pain
+  files:
+  - /Audio/_Battlefield14/Voice/Human/BlackMesa/Raw/Hit/hg_hit04.ogg
+  - /Audio/_Battlefield14/Voice/Human/BlackMesa/Raw/Hit/hg_hit05.ogg
+  - /Audio/_Battlefield14/Voice/Human/BlackMesa/Raw/Hit/hg_hit06.ogg
+  - /Audio/_Battlefield14/Voice/Human/BlackMesa/Raw/Hit/hg_hit07.ogg
+  - /Audio/_Battlefield14/Voice/Human/BlackMesa/Raw/Hit/hg_hit08.ogg
+  - /Audio/_Battlefield14/Voice/Human/BlackMesa/Raw/Hit/hg_hit09.ogg
+  - /Audio/_Battlefield14/Voice/Human/BlackMesa/Raw/Hit/hg_hit10.ogg
