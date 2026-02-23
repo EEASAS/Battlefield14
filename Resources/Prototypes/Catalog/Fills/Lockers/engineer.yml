@@ -136,7 +136,7 @@
   components:
   - type: StorageFill
     contents:
-      - id: UndeterminedVoidsuitEngineer # Goob edit
+      - id: ClothingOuterHardsuitEngineering # BF14 | UndeterminedVoidsuitEngineer # Goob edit
       - id: OxygenTankFilled
       - id: NitrogenTankFilled
       - id: ClothingHandsGlovesColorYellow
