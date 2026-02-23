@@ -128,7 +128,7 @@
         - id: DoubleEmergencyOxygenTankFilled # BF14
 #BF14        - id: NitrogenTankFilled
         - id: ClothingShoesBootsMag
-        - id: UndeterminedVoidsuitEngineer # Goob edit
+        - id: ClothingOuterHardsuitEngineering # BF14 | UndeterminedVoidsuitEngineer # Goob edit
         - id: ClothingMaskBreath
         - id: JetpackBlackFilled # BF14
         - id: HandheldGPSBasic # BF14
