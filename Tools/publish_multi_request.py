@@ -16,7 +16,7 @@ RELEASE_DIR = "release"
 # Forks should change these to publish to their own infrastructure.
 #
 ROBUST_CDN_URL = "http://cdn-ss14.erisws.com:8992/"
-FORK_ID = "Excelente"
+FORK_ID = "excelente"
 
 def main():
     parser = argparse.ArgumentParser()
