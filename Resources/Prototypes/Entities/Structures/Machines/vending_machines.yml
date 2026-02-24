@@ -881,6 +881,8 @@
     radius: 1.5
     energy: 1.6
     color: "#b89e2a"
+  - type: MarketModifier # BF14
+    mod: 0 # BF14
 
 - type: entity
   parent: VendingMachine
@@ -1350,6 +1352,8 @@
     radius: 1.5
     energy: 1.6
     color: "#d4ab33"
+  - type: MarketModifier # BF14
+    mod: 0 # BF14
 
 - type: entity
   parent: VendingMachine
