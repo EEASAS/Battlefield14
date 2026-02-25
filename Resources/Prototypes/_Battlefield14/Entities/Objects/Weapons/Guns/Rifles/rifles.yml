@@ -153,10 +153,11 @@
     unwieldOnUse: false
   - type: GunWieldBonus
     minAngle: -14
-    maxAngle: -16
+    maxAngle: -20
   - type: Gun
     minAngle: 16
-    maxAngle: 32
+    maxAngle: 30
+    angleIncrease: 1
     projectileSpeed: 40 # Shorter barrel
     availableModes:
     - SemiAuto
@@ -255,7 +256,7 @@
     unwieldOnUse: false
   - type: GunWieldBonus
     minAngle: -19
-    maxAngle: -27
+    maxAngle: -24
   - type: Gun
     minAngle: 21
     maxAngle: 32

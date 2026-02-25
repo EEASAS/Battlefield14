@@ -28,8 +28,8 @@
   - type: IncreaseDamageOnWield
     damage:
       types:
-        Blunt: 25
-        Structural: 25
+        Blunt: 35
+        Structural: 35
   - type: PhysicalComposition
     materialComposition: 
       Steel: 200

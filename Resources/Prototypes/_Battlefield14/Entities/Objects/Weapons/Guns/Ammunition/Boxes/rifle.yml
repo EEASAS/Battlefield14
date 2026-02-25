@@ -31,6 +31,9 @@
   id: MagazineBox556x45Big
   name: bulk ammunition box (5.56x45mm)
   components:
+  - type: Tag
+    tags:
+      - AmmunitionBox
   - type: BallisticAmmoProvider
     mayTransfer: true
     capacity: 200
@@ -78,6 +81,9 @@
   id: MagazineBox762x51Big
   name: bulk ammunition box (7.62x51mm)
   components:
+  - type: Tag
+    tags:
+      - AmmunitionBox
   - type: BallisticAmmoProvider
     capacity: 200
     proto: BF_CartridgeRifle762x51
@@ -120,6 +126,9 @@
   id: MagazineBox545x39Big
   name: bulk ammunition box (5.45x39mm)
   components:
+  - type: Tag
+    tags:
+      - AmmunitionBox
   - type: BallisticAmmoProvider
     capacity: 200
     proto: BF_CartridgeRifle545x39

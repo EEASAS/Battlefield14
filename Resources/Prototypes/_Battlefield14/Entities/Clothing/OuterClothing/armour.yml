@@ -20,6 +20,11 @@
     damageCoefficient: 0.75
   - type: StaminaDamageResistance
     coefficient: 0.6
+  - type: ClothingSpeedModifier
+    walkModifier: 0.925
+    sprintModifier: 0.925
+  - type: HeldSpeedModifier
+
 - type: entity
   parent: ClothingOuterArmorPlateCarrierBlack
   id: ClothingOuterArmorPlateCarrierTan
@@ -51,6 +56,10 @@
         Caustic: 0.9
   - type: ExplosionResistance
     damageCoefficient: 0.75
+  - type: ClothingSpeedModifier
+    walkModifier: 0.925
+    sprintModifier: 0.925
+  - type: HeldSpeedModifier
 
 - type: entity
   parent: [ClothingOuterArmorBasic, ClothingArmorPlateLight]
