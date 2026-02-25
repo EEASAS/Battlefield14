@@ -367,7 +367,7 @@
     maxAngle: 2
     shootThermalSignature: 1500000
     soundGunshot:
-      path: /Audio/_Mono/Weapons/Guns/Gunshots/mortar.ogg
+      collection: BF_Bofors_Gunshots
     soundEmpty:
       path: /Audio/Weapons/Guns/Empty/lmg_empty.ogg
   - type: SpaceArtillery

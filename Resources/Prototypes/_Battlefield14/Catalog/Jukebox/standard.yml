@@ -63,4 +63,10 @@
    path:
      path: /Audio/_Battlefield14/Jukebox/STIMFSMCATTALU2YTR.ogg
 
+ - type: jukebox
+   id: hellofromthesky
+   name: Hello from the sky - Russian Airborne Forces (VDV)
+   path:
+     path: /Audio/_Battlefield14/Jukebox/vdv.ogg
+
 # Misc
