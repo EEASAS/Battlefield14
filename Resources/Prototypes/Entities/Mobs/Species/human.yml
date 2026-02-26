@@ -49,11 +49,11 @@
             volume: 5
     - trigger:
         !type:DamageTrigger
-        damage: 80
+        damage: 75
       behaviors:
       - !type:PlaySoundBehavior
         sound:
-          collection: GruntUSScreamClean
+          collection: GruntUSOuchClean
           params:
             volume: 5
     - trigger:
@@ -65,7 +65,7 @@
     - trigger:
         !type:DamageTypeTrigger
         damageType: Heat
-        damage: 1500
+        damage: 1500 # BF14 welcome back ashing
       behaviors:
       - !type:SpawnEntitiesBehavior
         spawnInContainer: true
