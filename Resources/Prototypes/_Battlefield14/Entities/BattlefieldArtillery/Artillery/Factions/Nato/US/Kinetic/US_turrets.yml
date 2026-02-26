@@ -85,7 +85,7 @@
     ports:
     - Toggle
   - type: Gun
-    fireRate: 15
+    fireRate: 8
     projectileSpeed: 140
     minAngle: 0
     maxAngle: 5
@@ -161,7 +161,7 @@
     fireRate: 20
     projectileSpeed: 150
     minAngle: 0
-    maxAngle: 5
+    maxAngle: 3
     shootThermalSignature: 25000
     soundGunshot:
       path: /Audio/_Mono/Weapons/Guns/Gunshots/slammer.ogg
@@ -230,7 +230,7 @@
     fireRate: 3
     projectileSpeed: 200
     minAngle: 0
-    maxAngle: 3
+    maxAngle: 1
     shootThermalSignature: 500000
     soundGunshot:
       path: /Audio/_Mono/Weapons/Guns/Gunshots/mortar.ogg
@@ -429,7 +429,7 @@
     fireRate: 0.3
     minAngle: 0
     maxAngle: 0
-    projectileSpeed: 100
+    projectileSpeed: 180
     shootThermalSignature: 5000000
     soundGunshot:
       path: /Audio/_Mono/Weapons/Guns/Gunshots/leviathan_fire.ogg

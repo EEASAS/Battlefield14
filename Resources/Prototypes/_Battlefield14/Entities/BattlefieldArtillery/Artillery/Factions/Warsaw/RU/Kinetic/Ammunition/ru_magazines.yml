@@ -250,7 +250,7 @@
   - type: BallisticAmmoProvider
     infiniteUnspawned: false
     proto: Cartridge23mmAPT
-    capacity: 40
+    capacity: 400
     mayTransfer: true
     whitelist:
       tags:
@@ -288,7 +288,7 @@
   - type: BallisticAmmoProvider
     infiniteUnspawned: false
     proto: Cartridge23mmFrag
-    capacity: 40
+    capacity: 400
     mayTransfer: true
     whitelist:
       tags:

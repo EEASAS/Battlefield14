@@ -143,7 +143,7 @@
       thresholds:
       - trigger:
           !type:DamageTrigger
-          damage: 75
+          damage: 150
         behaviors:
         - !type:PlaySoundBehavior
           sound:
@@ -252,6 +252,37 @@
           # COMMENTED OUT: Invalid enum value 'FighterMask' - not found in physics layer enum
           # layer:
           # - FighterMask
+    - type: Destructible
+      thresholds:
+      - trigger:
+          !type:DamageTrigger
+          damage: 150
+        behaviors:
+        - !type:PlaySoundBehavior
+          sound:
+            path: /Audio/Machines/warning_buzzer.ogg
+            params:
+              volume: 5
+      - trigger:
+          !type:DamageTrigger
+          damage: 500
+        behaviors:
+        - !type:PlaySoundBehavior
+          sound:
+            path: /Audio/_Mono/Items/sevastopolplush/sevastopolplush-structuraldamage.ogg
+            params:
+              volume: 5
+      - trigger:
+          !type:DamageTrigger
+          damage: 1500 # Over max integrity so it doesnt just disappear out of nowhere
+        behaviors:
+        - !type:PlaySoundBehavior
+          sound:
+            collection: MetalBreak
+        - !type:ChangeConstructionNodeBehavior
+          node: start
+        - !type:DoActsBehavior
+          acts: ["Destruction"]
 
   - type: entity
     id: FighterRUSU57FelonBattery
