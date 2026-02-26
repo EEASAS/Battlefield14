@@ -473,7 +473,6 @@
       - state: box_security
       - state: flashbang
 
-
 - type: entity
   name: box of zarya flashbang grenades
   parent: BoxMagazine
@@ -528,6 +527,37 @@
     layers:
       - state: box_security
       - state: flashbang
+
+# charges
+
+- type: entity
+  name: box of APM-6 cluster charges
+  parent: BoxMagazine
+  id: BoxChargeFuze
+  description: A box full of APM-6 cluster charges.
+  components:
+  - type: Storage
+    grid:
+    - 0,0,3,3
+  - type: StorageFill
+    contents:
+      - id: FuzeCharge
+        amount: 4
+
+- type: entity
+  name: APM-6 cluster charge kit
+  parent: BoxMagazine
+  id: BoxChargeFuzeKit
+  description: A box containing one APM-6 cluster charge, a detonator, and a multitool.
+  components:
+  - type: Storage
+    grid:
+    - 0,0,3,3
+  - type: StorageFill
+    contents:
+      - id: FuzeCharge
+      - id: RemoteSignallerClacker
+      - id: Multitool
 
 ## UNSC
 

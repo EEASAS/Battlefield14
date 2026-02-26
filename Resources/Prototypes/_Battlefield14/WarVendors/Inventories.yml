@@ -57,6 +57,7 @@
     BoxIFFNATOBlue: 10
     BoxIFFNATOYellow: 10
     BoxIFFNATOGreen: 10
+    RemoteSignallerM57: 10
     ClothingHeadHatHelmetUS: 100
     ClothingOuterArmorPlateCarrierTan: 5 # FREE PLATES
     ClothingHeadHelmetSoftsuitNasa: 50
@@ -128,6 +129,7 @@
     RGOImpactHandgrenade: 5
     RURDG2SmokeHandgrenade: 50
     TM62Flatpack: 10
+# uncomment when this shit doesn't have INFINITE USES    BoxChargeFuzeKit: 5
     SecBreachingHammer: 1
     DoubleEmergencyOxygenTankFilled: 100
     BoxIFFPACTWhite: 10
