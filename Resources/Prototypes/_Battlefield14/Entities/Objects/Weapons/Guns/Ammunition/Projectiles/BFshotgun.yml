@@ -46,7 +46,9 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 10
+        Blunt: 4
+        Slash: 4
+        Piercing: 4
         Structural: 100
     armorPenetration: 0.15
   - type: StaminaDamageOnCollide

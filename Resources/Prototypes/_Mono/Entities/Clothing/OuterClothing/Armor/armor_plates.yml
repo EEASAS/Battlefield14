@@ -17,9 +17,10 @@
     maxDurability: 60 # BF14
     walkSpeedModifier: 1 # BF14
     sprintSpeedModifier: 1 # BF14
-    staminaDamageMultiplier: 0.2 # BF14
+    staminaDamageMultiplier: 0.3 # BF14
     absorptionRatios:
       Piercing: 1
+      Structural: 1 # BF14
   - type: Damageable
     damageContainer: StructuralInorganic # BF14
   - type: Destructible
@@ -58,6 +59,7 @@
     staminaDamageMultiplier: 0.05 # BF14
     absorptionRatios:
       Piercing: 1
+      Structural: 1 # BF14
   - type: Damageable
     damageContainer: StructuralInorganic # BF14
   - type: Destructible
@@ -93,9 +95,10 @@
     maxDurability: 200 # BF14
     walkSpeedModifier: 9.6 # BF14
     sprintSpeedModifier: 9.6 # BF14
-    staminaDamageMultiplier: 0.1 # BF14
+    staminaDamageMultiplier: 0.15 # BF14
     absorptionRatios:
       Piercing: 1
+      Structural: 1 # BF14
   - type: Damageable
     damageContainer: StructuralInorganic # BF14
   - type: Destructible
@@ -134,6 +137,7 @@
     staminaDamageMultiplier: 0.0 # BF14
     absorptionRatios:
       Piercing: 1
+      Structural: 1 # BF14
   - type: Damageable
     damageContainer: StructuralInorganic # BF14
   - type: Destructible
