@@ -25,13 +25,12 @@
     fragmentationPrototype: Bullet84mmHEATFragment
   - type: StaminaDamageOnCollide
     damage: 200 # It's a fucking rocket
-#  - type: ExplodeOnTrigger
-#  - type: Explosive
-#    explosionType: Default
-#    totalIntensity: 300
-#    intensitySlope: 5
-#    maxIntensity: 50
-#    maxTileBreak: 2
+  - type: Explosive
+    explosionType: Default
+    totalIntensity: 300
+    intensitySlope: 5
+    maxIntensity: 50
+    maxTileBreak: 2
 
 - type: entity
   categories: [ HideSpawnMenu ]
@@ -147,13 +146,12 @@
     fragmentationPrototype: BulletRPG7OG7VFragment
   - type: StaminaDamageOnCollide
     damage: 200 # It's a fucking rocket
-#  - type: ExplodeOnTrigger
-#  - type: Explosive
-#    explosionType: Default
-#    totalIntensity: 300
-#    intensitySlope: 5
-#    maxIntensity: 50
-#    maxTileBreak: 2
+  - type: Explosive
+    explosionType: Default
+    totalIntensity: 300
+    intensitySlope: 5
+    maxIntensity: 50
+    maxTileBreak: 2
 
 - type: entity
   categories: [ HideSpawnMenu ]
