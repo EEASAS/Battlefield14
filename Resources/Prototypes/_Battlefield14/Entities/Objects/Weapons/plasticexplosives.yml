@@ -79,9 +79,7 @@
   id: FuzeCharge
   components:
   - type: Item
-    size: Small
-    shape:
-    - 0,0,1,1
+    size: Normal
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Charges/fuze.rsi
     state: icon

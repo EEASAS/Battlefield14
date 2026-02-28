@@ -537,8 +537,15 @@
   description: A box full of APM-6 cluster charges.
   components:
   - type: Storage
+    maxItemSize: Normal
     grid:
     - 0,0,3,3
+    whitelist:
+      tags:
+        - RemoteSignaller
+        - Multitool
+      components:
+        - Sticky
   - type: StorageFill
     contents:
       - id: FuzeCharge
@@ -546,13 +553,10 @@
 
 - type: entity
   name: APM-6 cluster charge kit
-  parent: BoxMagazine
+  parent: BoxChargeFuze
   id: BoxChargeFuzeKit
   description: A box containing one APM-6 cluster charge, a detonator, and a multitool.
   components:
-  - type: Storage
-    grid:
-    - 0,0,3,3
   - type: StorageFill
     contents:
       - id: FuzeCharge
