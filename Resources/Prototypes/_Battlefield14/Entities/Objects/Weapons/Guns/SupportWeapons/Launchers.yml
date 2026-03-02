@@ -85,6 +85,41 @@
     walkModifier: 0.80
     sprintModifier: 0.80
 
+- type: entity
+  name: SMAW-D
+  parent: [ BaseWeaponLauncher , BaseGunWieldable ]
+  id: WeaponLauncherUSSMAWDisposable
+  description: SMAW-D, D for disposable. Fires an anti-infantry Novel Explosive round, cannot be reloaded, drop after use.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Launchers/SMAWD.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/Launchers/SMAWD.rsi
+    slots:
+    - Back
+    - suitStorage
+  - type: Item
+    size: Huge
+  - type: Appearance
+  - type: Gun
+    projectileSpeed: 40
+    fireRate: 0.75
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/rpgfire.ogg
+  - type: GunRequiresWield
+  - type: AmmoCounter
+  - type: BasicEntityAmmoProvider
+    proto: BulletRocket83mmNE
+    capacity: 1
+  - type: UseDelay
+    delay: 1.5
+  - type: SpeedModifiedOnWield
+    walkModifier: 0.80
+    sprintModifier: 0.80
+
 # RU
 
 - type: entity

@@ -46,6 +46,19 @@
     access: [["NATOSoldier"]]
 
 - type: entity
+  id: CrateSecgearNATOFilledSMAWDisposable
+  suffix: Filled, SMAW-D
+  parent: CrateSecgear
+  name: SMAW-D crate
+  components:
+  - type: StorageFill
+    contents:
+        - id: WeaponLauncherUSSMAWDisposable
+          amount: 5
+  - type: AccessReader
+    access: [["NATOSoldier"]]
+
+- type: entity
   id: CrateSecgearNATOFilledM27IAR
   suffix: Filled, M27IAR
   parent: CrateSecgear

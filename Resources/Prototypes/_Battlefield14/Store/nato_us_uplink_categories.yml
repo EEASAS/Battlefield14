@@ -50,6 +50,22 @@
           - AmericanUplink
 
 - type: listing
+  id: UplinkNATOUSSMAWDisposable
+  name:  uplink-natous-SMAWDcrate-name
+  description: uplink-natous-SMAWDcrate-desc
+  productEntity: CrateSecgearNATOFilledSMAWDisposable
+  icon: { sprite: _Battlefield14/Objects/Weapons/Guns/Launchers/SMAWD.rsi, state: icon }
+  cost:
+    NATORequisition: 30 # 5 minutes
+  categories:
+    - UplinkNATOUSWeapons
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - AmericanUplink
+
+- type: listing
   id: UplinkNATOUSM320
   name:  uplink-natous-m320-name
   description: uplink-natous-m320-desc
