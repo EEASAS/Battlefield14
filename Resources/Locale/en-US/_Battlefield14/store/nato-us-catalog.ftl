@@ -25,7 +25,7 @@ uplink-natous-SMAWcrate-name = SMAW x2
 uplink-natous-SMAWcrate-desc = Two Shoulder-Launched Multipurpose Assault Weapons, firing 83mm projectiles, comes with 4 frag and 4 HEAT rounds.
 
 uplink-natous-SMAWDcrate-name = SMAW-D x5
-uplink-natous-SMAWDcrate-desc = 5 disposable anti-infantry SMAW rounds.
+uplink-natous-SMAWDcrate-desc = 5 disposable anti-infantry SMAW-D tubes.
 
 uplink-natous-AT4crate-name = AT4 x5
 uplink-natous-AT4crate-desc = 5 disposable 'eighty-four' milimeter launchers firing HEAT warheads.

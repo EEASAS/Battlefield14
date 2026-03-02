@@ -11,6 +11,8 @@
     armorPenetration: -0.1
   - type: StaminaDamageOnCollide
     damage: 5 # 20 hits to stun lol
+  - type: Ammo
+    muzzleFlash: MuzzleFlashEffectSmall
 
 - type: entity
   id: BulletPistolBF45ACP
@@ -25,6 +27,8 @@
     armorPenetration: -0.2
   - type: StaminaDamageOnCollide
     damage: 9 # ~11 hits to stun
+  - type: Ammo
+    muzzleFlash: MuzzleFlashEffectSmall
 
 - type: entity
   id: BulletPistolBF357
@@ -38,5 +42,20 @@
         Piercing: 35
         Structural: 35
     armorPenetration: 0.5
+  - type: StaminaDamageOnCollide
+    damage: 10 # 10 hits to stun
+
+- type: entity
+  id: BulletPistolBF50AE
+  name: bullet (.50 Action Express)
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 50
+        Structural: 20
+    armorPenetration: -0.4
   - type: StaminaDamageOnCollide
     damage: 10 # 10 hits to stun
