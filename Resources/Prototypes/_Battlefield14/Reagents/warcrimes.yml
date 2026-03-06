@@ -15,7 +15,8 @@
       - !type:HealthChange
         damage:
           types:
-            Poison: 4
+            Caustic: 1
+            Poison: 3
       - !type:MovespeedModifier
         walkSpeedModifier: 0.75
         sprintSpeedModifier: 0.75
@@ -179,6 +180,7 @@
         damage:
           types:
             Heat: 1
+            Caustic: 1
             Poison: 1
       - !type:AdjustTemperature
         amount: 6000

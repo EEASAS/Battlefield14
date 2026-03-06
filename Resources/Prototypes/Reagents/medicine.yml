@@ -825,7 +825,7 @@
         - !type:SatiateThirst
           factor: 1 # BF14
         - !type:ModifyBloodLevel
-          amount: 2 # BF14
+          amount: 1.2 # BF14
 
 - type: reagent
   id: Siderlac
