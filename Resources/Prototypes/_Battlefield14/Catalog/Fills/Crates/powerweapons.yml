@@ -1,0 +1,98 @@
+## Misc, power weapons
+
+- type: entity
+  parent: CrateBaseSecure
+  id: CratePowerWeapon
+  name: power weapon crate
+  description: It's shut tight and heavily reinforced, but someone with high access could probably open it.
+  suffix: power weapon
+  components:
+  - type: Icon
+    sprite: Structures/Storage/Crates/sec_gear.rsi
+  - type: Sprite
+    sprite: Structures/Storage/Crates/sec_gear.rsi
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: StructuralMetallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 750000 # so you cant just magdump it lol you need to unlock it
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+  - type: AccessReader
+    access: [ ["NATOCommand"] , ["PACTCommand"] ]
+
+- type: entity
+  id: CratePowerWeaponFilledM249Para
+  suffix: Filled, M249 Para
+  parent: CratePowerWeapon
+  components:
+  - type: StorageFill
+    contents:
+        - id: WeaponMachineGunUSM249Para
+          amount: 1
+        - id: MagazineBeltBoxM249
+          amount: 2
+
+- type: entity
+  id: CratePowerWeaponFilledSMAW
+  suffix: Filled, SMAW
+  parent: CratePowerWeapon
+  components:
+  - type: StorageFill
+    contents:
+        - id: WeaponLauncherUSSMAW
+          amount: 1
+        - id: CartridgeSMAWHEAA
+          amount: 4
+        - id: CartridgeSMAWNE
+          amount: 4
+
+- type: entity
+  id: CratePowerWeaponFilledM107
+  suffix: Filled, M107
+  parent: CratePowerWeapon
+  components:
+  - type: StorageFill
+    contents:
+        - id: WeaponSniperUSM107
+        - id: BoxMagazineM107
+
+- type: entity
+  id: CratePowerWeaponFilledUSAS12
+  suffix: Filled, USAS-12
+  parent: CratePowerWeapon
+  components:
+  - type: StorageFill
+    contents:
+        - id: WeaponShotgunUSUSAS12Frag
+        - id: MagazineShotgunUSASDrum
+          amount: 4
+        - id: MagazineShotgunUSASDrumFrag
+          amount: 2
+
+- type: entity
+  id: CratePowerWeaponFilledAEK971
+  suffix: Filled, AEK-971
+  parent: CratePowerWeapon
+  components:
+  - type: StorageFill
+    contents:
+        - id: WeaponRifleRUAEK971
+        - id: BoxMagazineAK74
+
+- type: entity
+  id: CratePowerWeaponFilledXM25
+  suffix: Filled, XM25
+  parent: CratePowerWeapon
+  components:
+  - type: StorageFill
+    contents:
+        - id: WeaponGrenadeLauncherUSXM25
+        - id: BoxMagazineXM25Mixed

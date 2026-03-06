@@ -1,0 +1,66 @@
+- type: job
+  id: VKSCrewman
+  name: job-name-vks-crewman
+  description: job-description-vks-crewman
+  playTimeTracker: JobVKSCrewman
+  requirements:
+    - !type:TraitsRequirement
+      inverted: true
+      traits:
+        - Muted
+        - Blindness
+        - Pacifist
+        - WheelchairBound
+  weight: 77
+  startingGear: VKSCrewmanGear
+  alwaysUseSpawner: true
+  icon: "JobIconPACTEngineer"
+  requireAdminNotify: false
+  supervisors: job-supervisors-rugov
+  canBeAntag: false
+  special:
+  - !type:AddLanguageSpecial
+    languagesSpoken:
+    - Russian
+    languagesUnderstood:
+    - Russian
+  - !type:AddImplantSpecial
+    implants: [ TrackingImplantPACTRU ]
+  - !type:AddComponentSpecial
+    components:
+    - type: NpcFactionMember
+      factions:
+      - PACT
+    - type: SurgerySpeedModifier
+      SpeedModifier: 1.25
+  access:
+  - Maintenance
+  - Service
+  - External
+  - Mercenary # Frontier
+  - Captain # Frontier
+  - PACTCommon
+  - PACTCommand
+  - PACTMaintenance
+  - PACTArmory
+  - PACTCrew
+
+- type: startingGear
+  id: VKSCrewmanGear
+  equipment:
+    id: VKSCrewmanPDA
+    ears: ClothingHeadsetAltRU
+    jumpsuit: ClothingUniformJumpsuitVKSCrewman
+    shoes: ClothingShoesBootsJackFilled
+    back: ClothingBackpackSecurity
+    belt: ClothingBeltAssaultFilledToolsSRD
+    gloves: ClothingHandsGlovesCombat
+    pocket1: WeaponPistolMP443
+    pocket2: PouchFirstAidFilled
+  storage:
+    back:
+    - ClothingMaskGasRussia
+    - MagazinePistolMP443
+    - MagazinePistolMP443
+    - Tourniquet
+    - Zipties

@@ -1,0 +1,10 @@
+- type: gamePreset
+  id: Battlefield14
+  alias:
+  - battlefield14
+  - BF14
+  name: Battlefield
+  showInVote: true
+  description: Larp and frag.
+  rules:
+  - NFAdventure

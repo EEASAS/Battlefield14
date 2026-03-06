@@ -56,7 +56,6 @@
   - type: ProjectileBatteryAmmoProvider
     proto: Bullet45_ACPFMJ_Mech
     fireCost: 20
-
   - type: Appearance
   - type: AmmoCounter
 

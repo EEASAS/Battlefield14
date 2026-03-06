@@ -1,0 +1,85 @@
+- type: job
+  id: USMCSquadLeader
+  name: job-name-usmc-squadleader
+  description: job-description-usmc-squadleader
+  playTimeTracker: JobUSMCSquadLeader
+  requirements:
+    # COMMENTED OUT: CharacterSpeciesRequirement not supported (species requirement system not implemented)
+    # - !type:CharacterSpeciesRequirement
+    #   species:
+    #     - Human
+    # COMMENTED OUT: FactionRequirement not supported (faction system not implemented)
+    # - !type:FactionRequirement
+    #   factionID: "NATO"
+#    - !type:SexRequirement # Not implemented
+#      sex: Male
+    - !type:TraitsRequirement
+      inverted: true
+      traits:
+        - Muted
+        - Blindness
+        - Pacifist
+        - WheelchairBound
+  weight: 78
+  startingGear: USMCSquadLeaderGear
+  alwaysUseSpawner: true
+  icon: "JobIconNATOSquadleader"
+  requireAdminNotify: false
+  supervisors: job-supervisors-usgov
+  canBeAntag: false
+  special:
+  - !type:AddLanguageSpecial
+    languagesSpoken:
+    - English
+    - Esperanto
+    languagesUnderstood:
+    - English
+    - Esperanto
+  - !type:AddComponentSpecial
+    components:
+    - type: NpcFactionMember
+      factions:
+      - USMC
+  - !type:AddImplantSpecial
+    implants: [ TrackingImplantNATOUS ]
+  #   components:
+  #     # COMMENTED OUT: ChatRank and HullrotFaction not supported
+  #     # - type: ChatRank
+  #     #   rank: BF-rank-sergeant
+  access:
+  - Maintenance
+  - Service
+  - External
+  - Mercenary # Frontier
+  - Captain # Frontier
+  - NATOCommon
+  - NATOCommand
+  - NATOMaintenance
+  - NATOSoldier
+  - NATOArmory
+
+- type: startingGear
+  id: USMCSquadLeaderGear
+  equipment:
+    id: USMCSquadLeaderPDA
+    ears: ClothingHeadsetAltUS
+    belt: ClothingBeltMilitaryWebbingUSFilledSTANAG
+    jumpsuit: ClothingUniformJumpsuitCamoUS
+    head: ClothingHeadHatHelmetUS
+#    eyes: ClothingEyesGogglesTan
+    outerClothing: ClothingOuterArmorPlateCarrierTan
+    shoes: ClothingShoesBootsJackFilled
+    back: ClothingBackpackRucksackTan
+    suitstorage: WeaponRifleUSM4A1
+    pocket1: PouchFirstAidFilled
+    pocket2: PouchGrenadesFilledUSMCRifleman
+    rightarmband: ClothingArmbandThighHolsterFilledUS
+  storage:
+    back:
+    - ArmorPlateMedium
+    - ClothingMaskGasM40
+    - FlashlightMilitaryUS
+    - MagazinePistolM9
+    - MagazinePistolM9
+    - Tourniquet
+    - Zipties

@@ -1,0 +1,30 @@
+- type: entity
+  parent: BaseItem
+  id: MagazineSubmachinegunMP7
+  name: MP7 magazine (4.6x30)
+  description: Gun food.
+  components:
+  - type: Tag
+    tags:
+      - MagazinePistolMP7
+      - Magazine
+      - PistolMagazine
+  - type: BallisticAmmoProvider
+    proto: BF_CartridgePDW46x30
+    mayTransfer: true
+    whitelist:
+      tags:
+        - BF_CartridgePDW46x30
+    capacity: 40
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Pistolcaliber/MP5.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 3
+    zeroVisible: false
+  - type: Appearance

@@ -12,9 +12,10 @@
         amount: 2
       - id: Ointment
         amount: 2
-      - id: Bloodpack
-        amount: 2
+#      - id: Bloodpack
+#        amount: 2
       - id: Gauze
+        amount: 2 # BF14
 
 - type: entity
   id: LockerWallMedicalFilled
@@ -31,9 +32,10 @@
         amount: 2
       - id: Ointment
         amount: 2
-      - id: Bloodpack
-        amount: 2
+#      - id: Bloodpack
+#        amount: 2
       - id: Gauze
+        amount: 2 # BF14
 
 - type: entity
   id: LockerMedicalFilled
@@ -42,7 +44,7 @@
   components:
   - type: StorageFill
     contents:
-      - id: HandheldHealthAnalyzer
+      - id: HandheldHealthAnalyzerUnpowered # BF14
 #        prob: 0.6 # Frontier
 #      - id: ClothingHeadMirror # Frontier
 #        prob: 0.1 # Frontier
@@ -79,7 +81,7 @@
   components:
   - type: StorageFill
     contents:
-      - id: HandheldHealthAnalyzer
+      - id: HandheldHealthAnalyzerUnpowered # BF14
 #        prob: 0.6
       - id: ClothingHandsGlovesLatex
 #      - id: ClothingHeadsetMedical # Frontier
@@ -136,7 +138,7 @@
   components:
   - type: StorageFill
     contents:
-      - id: UndeterminedVoidsuitParamedic # Goob
+#BF14      - id: UndeterminedVoidsuitParamedic # Goob
     #      - id: ClothingHeadHatParamedicsoft # Frontier
 #      - id: ClothingUniformJumpsuitParamedic # Frontier
 #      - id: ClothingUniformJumpskirtParamedic # Frontier
