@@ -167,7 +167,7 @@
         damage:
           types:
             Heat: 1 # BF14
-#BF14            Poison: 1.5
+            Poison: 1.5
       - !type:HealthChange
         conditions:
         - !type:ReagentThreshold
@@ -272,15 +272,12 @@
     Medicine:
       metabolismRate: 0.2 # BF14
       effects:
-      - !type:HealthChange
+      - !type:EvenHealthChange
         conditions:
         - !type:ReagentThreshold
           max: 15.5 # BF14
         damage:
-          types:
-            Heat: -2
-            Shock: -2
-            Cold: -2
+          Burn: -2
       - !type:HealthChange
         conditions:
         - !type:ReagentThreshold
@@ -301,7 +298,7 @@
       - !type:AdjustTemperature # BF14
         conditions:
         - !type:Temperature
-          min: 293.15
+          min: 300
         amount: -10000
 
 - type: reagent
@@ -527,15 +524,14 @@
         damage:
           types:
             Asphyxiation: -5
-      - !type:HealthChange # BF14
+      - !type:EvenHealthChange # BF14
         conditions:
         - !type:TotalDamage
           min: 90
           max: 110
         damage:
-          groups:
-            Brute: -1
-            Burn: -1
+          Brute: -0.8
+          Burn: -0.8
       - !type:ModifyBleedAmount
         amount: -0.25
       - !type:MovespeedModifier
@@ -575,15 +571,12 @@
     Medicine:
       metabolismRate: 0.2 # BF14
       effects:
-      - !type:HealthChange
+      - !type:EvenHealthChange
         conditions:
         - !type:ReagentThreshold
-          max: 50 # BF14
+          max: 50.5 # BF14
         damage:
-          types:
-            Heat: -1 #BF14
-            Shock: -1 #BF14
-            Cold: -1 #BF14
+          Burn: -1
       - !type:HealthChange # BF14 added actual OD
         conditions:
         - !type:ReagentThreshold
@@ -949,16 +942,14 @@
           max: 30 # BF14
         damage:
           types:
-            Heat: -0.8
-            Shock: -0.8
-            Cold: -0.8
             Poison: -0.2
       - !type:EvenHealthChange
         conditions:
         - !type:ReagentThreshold
           max: 30 # BF14
         damage:
-          Brute: -1 # BF14 approx 75 of each damage per 15u
+          Brute: -0.8
+          Burn: -0.8
       - !type:HealthChange
         conditions:
         - !type:ReagentThreshold
