@@ -472,7 +472,7 @@
     unwieldOnUse: false
   - type: GunWieldBonus
     minAngle: -19
-    maxAngle: -20
+    maxAngle: -17
   - type: Gun
     minAngle: 21
     maxAngle: 30
@@ -537,11 +537,11 @@
         map: ["enum.GunVisualLayers.Mag"]
   - type: GunWieldBonus
     minAngle: -19
-    maxAngle: -25
+    maxAngle: -20
   - type: Gun # Improved recoil over the AKM
     minAngle: 21
     maxAngle: 30
-    angleIncrease: 0.4
+    angleIncrease: 1
     angleDecay: 16
   - type: Clothing
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AK203.rsi

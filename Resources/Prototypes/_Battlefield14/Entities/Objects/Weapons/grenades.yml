@@ -258,6 +258,7 @@
   description: Willy Pete, a war criminal to rival Cuban Pete.
   parent: GrenadeBase
   id: USHandgrenadeM34WhitePhosphorus
+  suffix: WAR CRIME
   components:
   - type: OnUseTimerTrigger
     delay: 3
