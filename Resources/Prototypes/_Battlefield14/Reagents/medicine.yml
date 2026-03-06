@@ -57,15 +57,12 @@
     Medicine:
       metabolismRate: 0.2
       effects:
-      - !type:HealthChange
+      - !type:EvenHealthChange
         conditions:
         - !type:ReagentThreshold
           max: 15.5
         damage:
-          types: # approx 75 of each damage per 7.5u TODO: port healing groups evenly from wizden, should work how i want it then, aka how it does in TGMC
-            Blunt: -2
-            Slash: -2
-            Piercing: -2
+          Brute: -2
       - !type:HealthChange
         conditions:
         - !type:ReagentThreshold
