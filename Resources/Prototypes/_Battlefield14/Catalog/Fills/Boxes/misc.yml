@@ -57,6 +57,26 @@
     layers:
       - state: box_security
 
+- type: entity
+  parent: BoxMagazine
+  id: BoxIPOCK
+  name: IPOCK
+  description: Individual Point Of Capture Kit. Contains everything you need to safely capture a person for transport to a secondary location.
+  components:
+  - type: Storage
+    grid:
+    - 0,0,3,3
+  - type: StorageFill
+    contents:
+      - id: ClothingNeckHeadphones
+      - id: ClothingEyesBlindfold
+      - id: Handcuffs
+      - id: DrinkWaterBottleFull
+      - id: Zipties
+  - type: Sprite
+    layers:
+      - state: box_security
+
 # PACT
 
 - type: entity

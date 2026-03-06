@@ -4,16 +4,13 @@
     EVAKitCombatUSMC: 50
     WeaponRifleUSM16A4: 50
     WeaponRifleUSM4A1: 2
-    MagazineRifleSTANAG: 100
+    MagazineRifleSTANAG: 10
     WeaponSubmachinegunUSMP5: 5
-    MagazineSubmachinegunMP5: 20
-    ShellBoxBF12GaugeBuckshot: 10
     WeaponPistolM9: 2
     MagazinePistolM9: 10
     TelescopicShield: 2
     RiotShield: 2
     CombatKnife: 100
-    BoxMagazineSTANAG: 5
     ClothingBeltMedicalEMTFilledBF14Basic: 4
     ClothingBeltMilitaryWebbingUS: 50
     ClothingBeltAssault: 50
@@ -38,6 +35,7 @@
   startingInventory:
     MagazineRifleSTANAG: 100
     BoxMagazineSTANAG: 10
+    ShellBoxBF12GaugeBuckshot: 10
     MagazineBox556x45Big: 5
     MagazineBox556x45: 5
     MagazineSubmachinegunMP5: 100
@@ -58,6 +56,9 @@
     BoxIFFNATOYellow: 10
     BoxIFFNATOGreen: 10
     RemoteSignallerM57: 10
+    Handcuffs: 5
+    Zipties: 15
+    IPOCK: 10
     ClothingHeadHatHelmetUS: 100
     ClothingOuterArmorPlateCarrierTan: 5 # FREE PLATES
     ClothingHeadHelmetSoftsuitNasa: 50
@@ -74,17 +75,12 @@
     EVAKitCombatRU: 50
     WeaponRifleRUAK12: 50
     WeaponRifleRUAKS74U: 2
-    MagazineRifleAK12: 50
-    MagazineRifleAK74: 50
     WeaponSubmachinegunRUVityaz: 5
-    MagazineSubmachinegunVityaz: 20
-    ShellBoxBF12GaugeBuckshot: 10
     WeaponPistolMP443: 2
     MagazinePistolMP443: 10
     TelescopicShield: 2
     RiotShield: 2
     CombatKnife: 100
-    BoxMagazineAK74: 5
     ClothingBeltMedicalEMTFilledBF14Basic: 4
     ClothingBeltMilitaryWebbingRU: 50
     ClothingBeltAssault: 50
@@ -109,11 +105,12 @@
   startingInventory:
     MagazineRifleAK12: 40
     MagazineRifleAK74: 60
+    MagazineSubmachinegunVityaz: 100
+    ShellBoxBF12GaugeBuckshot: 10
     BoxMagazineAK12: 5
     BoxMagazineAK74: 5
     MagazineBox545x39Big: 5
     MagazineBox545x39: 20
-    MagazineSubmachinegunVityaz: 100
     MagazineBox9x19mmBig: 5
     BoxMagazineASVALShort: 5
     BoxMagazineAKM: 2
@@ -129,12 +126,14 @@
     RGOImpactHandgrenade: 5
     RURDG2SmokeHandgrenade: 50
     TM62Flatpack: 10
-# uncomment when this shit doesn't have INFINITE USES    BoxChargeFuzeKit: 5
+    BoxChargeFuzeKit: 3
     SecBreachingHammer: 1
     DoubleEmergencyOxygenTankFilled: 100
     BoxIFFPACTWhite: 10
     BoxIFFPACTRed: 10
     BoxIFFPACTStGeorge: 10
+    Handcuffs: 5
+    Zipties: 15
     ClothingHeadHatHelmetRUEMR: 100
     ClothingOuterArmorPlateCarrierBlack: 5 # FREE PLATES
     ClothingHeadHelmetSoftsuitVKS: 50

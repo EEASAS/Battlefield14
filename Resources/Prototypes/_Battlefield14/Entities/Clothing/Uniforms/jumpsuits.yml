@@ -93,6 +93,23 @@
   - type: Faction
     factionId: "Warpact"
 
+- type: entity
+  parent: ClothingUniformJumpsuitCombatSuitUrbanWhite
+  id: ClothingUniformJumpsuitCamoRUDigitalRed
+  name: red digital camo BDU
+  suffix: BF14 USE THIS
+  description: A modern symbol of Russian irredentism, known for its widespread use during the 3 hour long battle of Warsaw.
+  components:
+  - type: Sprite
+    sprite: _Mono/Clothing/Uniforms/Jumpsuit/combat-suits/Digital/digital_red.rsi
+  - type: Clothing
+    sprite: _Mono/Clothing/Uniforms/Jumpsuit/combat-suits/Digital/digital_red.rsi
+  - type: SuitSensor
+    randomMode: false
+    mode: SensorVitals
+  - type: Faction
+    factionId: "Warpact"
+
 # MISC
 
 - type: entity

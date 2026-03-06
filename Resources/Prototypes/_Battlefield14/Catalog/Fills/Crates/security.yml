@@ -178,9 +178,9 @@
           amount: 5
         - id: BoxMagazineAK203
           amount: 2
-        - id: ClothingUniformJumpsuitCombatSuitDigitalRed
+        - id: ClothingUniformJumpsuitCamoRUDigitalRed
           amount: 5
-        - id: ClothingHelmetCoverRedDigital
+        - id: ClothingHelmetCoverRUDigitalRed
           amount: 5
   - type: AccessReader
     access: [["PACTSoldier"]]
