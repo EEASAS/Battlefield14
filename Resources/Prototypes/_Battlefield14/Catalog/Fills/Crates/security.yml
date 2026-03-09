@@ -261,6 +261,32 @@
   - type: AccessReader
     access: [["PACTSoldier"]]
 
+- type: entity
+  id: CrateSecgearPACTFilledRPG26
+  suffix: Filled, RPG-26
+  parent: CrateSecgear
+  name: RPG-26 crate
+  components:
+  - type: StorageFill
+    contents:
+        - id: WeaponLauncherRURPG26
+          amount: 5
+  - type: AccessReader
+    access: [["PACTSoldier"]]
+
+- type: entity
+  id: CrateSecgearPACTFilledRPG26Thermobaric
+  suffix: Filled, RShG-2
+  parent: CrateSecgear
+  name: RShG-2 crate
+  components:
+  - type: StorageFill
+    contents:
+        - id: WeaponLauncherRURPG26Thermobaric
+          amount: 5
+  - type: AccessReader
+    access: [["PACTSoldier"]]
+
 ## Misc
 # Shared
 

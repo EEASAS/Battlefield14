@@ -206,3 +206,48 @@
   - type: SpeedModifiedOnWield
     walkModifier: 0.80
     sprintModifier: 0.80
+
+- type: entity
+  name: RPG-26
+  parent: [ BaseWeaponLauncher , BaseGunWieldable ]
+  id: WeaponLauncherRURPG26
+  description: An outdated 72.5mm disposable anti tank grenade launcher, better used as a museum piece if you have anything better in stock. Still scary to equally out-dated targets.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Launchers/RPG26.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/Launchers/RPG26.rsi
+    slots:
+    - Back
+    - suitStorage
+  - type: Item
+    size: Huge
+  - type: Appearance
+  - type: Gun
+    projectileSpeed: 40
+    fireRate: 0.75
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/rpgfire.ogg
+  - type: GunRequiresWield
+  - type: AmmoCounter
+  - type: BasicEntityAmmoProvider
+    proto: BulletRocketRPG26HEAT
+    capacity: 1
+  - type: UseDelay
+    delay: 1.5
+  - type: SpeedModifiedOnWield
+    walkModifier: 0.80
+    sprintModifier: 0.80
+
+- type: entity
+  name: RShG-2
+  parent: WeaponLauncherRURPG26
+  id: WeaponLauncherRURPG26Thermobaric
+  description: Unlike tanks and APCs, infantry can't get armour that allows them to shrug off 40 year old anti-personnel solutions.
+  components:
+  - type: BasicEntityAmmoProvider
+    proto: BulletRocketRPG26Thermobaric
+    capacity: 1

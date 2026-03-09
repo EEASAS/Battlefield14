@@ -98,7 +98,7 @@
   categories: [ HideSpawnMenu ]
   parent: BaseBulletTrigger
   id: BulletRocket83mmHEDM
-  name: 83mm HEDM rocket # High explosive dual mode, explodes on contact in a small area to blast open walls and such
+  name: 83mm HEDM rocket # High explosive dual mode, explodes on contact in a 3x3 area to blast open walls and such
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
@@ -111,11 +111,11 @@
         Blunt: 150
   - type: ExplodeOnTrigger
   - type: Explosive
-    explosionType: Default
+    explosionType: DemolitionCharge
     totalIntensity: 300
     intensitySlope: 25
     maxIntensity: 100
-    maxTileBreak: 2
+    maxTileBreak: 1
   - type: StaminaDamageOnCollide
     damage: 200 # It's a fucking rocket
 
@@ -213,3 +213,65 @@
     requireNoGrid: true
     shape: triangle
     radarColor: "#FF9900"
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: BaseBulletTrigger
+  id: BulletRocketRPG26HEAT
+  name: 72.5mm HEAT rocket
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Launcher/RPG7.rsi
+    layers:
+    - state: base-spent
+  - type: Projectile
+    damage:
+      types:
+        Structural: 1000
+        Piercing: 250
+    deleteOnCollide: false
+  - type: ArmorPiercing
+    piercingThickness: 4
+  - type: Heat
+    explosionDelay: 0.1
+    fragmentationDelay: 0.1
+    fragmentationCount: 20
+    fragmentationPrototype: BulletRPG7OG7VFragment
+  - type: StaminaDamageOnCollide
+    damage: 200 # It's a fucking rocket
+  - type: Explosive
+    explosionType: Default
+    totalIntensity: 200
+    intensitySlope: 5
+    maxIntensity: 50
+    maxTileBreak: 1
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: BaseBulletTrigger
+  id: BulletRocketRPG26Thermobaric
+  name: 72.5mm thermobaric rocket
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Launcher/RPG7.rsi
+    layers:
+    - state: frag-spent
+  - type: Projectile
+    damage:
+      types:
+        Blunt: 150
+#  - type: HeFragProjectile
+#    fillPrototype: BulletRPG7OG7VFragment
+#    capacity: 40
+#    randomAngle: true
+#    minVelocity: 8
+#    maxVelocity: 15
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: FireBomb
+    totalIntensity: 350
+    intensitySlope: 6
+    maxIntensity: 25
+    maxTileBreak: 0
+  - type: StaminaDamageOnCollide
+    damage: 200 # It's a fucking rocket

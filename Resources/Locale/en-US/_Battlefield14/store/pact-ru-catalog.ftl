@@ -24,6 +24,9 @@ uplink-PACTRU-RPG7crate-desc = Two RPG-7 rocket launchers, comes with 4 frag and
 uplink-PACTRU-RPG30crate-name = RPG-30 x5
 uplink-PACTRU-RPG30crate-desc = 5 disposable RPG-30 105mm HEAT launchers.
 
+uplink-PACTRU-rshg1crate-name = RShG-1 x5
+uplink-PACTRU-rshg1crate-desc = 5 disposable RShG-1 thermobaric launchers.
+
 uplink-PACTRU-RPOAShmelcrate-name = RPO-A Shmel x5
 uplink-PACTRU-RPOAShmelcrate-desc = 5 disposable RPO-A thermobaric launchers.
 

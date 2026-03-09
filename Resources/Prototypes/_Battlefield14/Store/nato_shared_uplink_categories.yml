@@ -231,11 +231,59 @@
 # Medical
 
 - type: listing
-  id: UplinkNATOCombatMedkit
+  id: UplinkNATOMedkitCombat
   name:  uplink-nato-medkit-combat-name
   description: uplink-nato-medkit-combat-desc
   productEntity: MedkitCombatFilled
   icon: { sprite: _NF/Objects/Specific/Medical/firstaidkits.rsi, state: blackkit }
+  cost:
+    NATORequisition: 10 # 1 minute 40 seconds
+  categories:
+    - UplinkNATOUSMedical
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - AmericanUplink
+
+- type: listing
+  id: UplinkNATOMedkitAdvanced
+  name:  uplink-NATO-medkit-advanced-name
+  description: uplink-NATO-medkit-advanced-desc
+  productEntity: MedkitAdvancedFilled
+  icon: { sprite: _NF/Objects/Specific/Medical/firstaidkits.rsi, state: advkit }
+  cost:
+    NATORequisition: 15 # 2 minutes 30 seconds
+  categories:
+    - UplinkNATOUSMedical
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - AmericanUplink
+
+- type: listing
+  id: UplinkNATOPartsLimbsCyberBox
+  name:  uplink-NATO-parts-limbs-cyber-box-name
+  description: uplink-NATO-parts-limbs-cyber-box-desc
+  productEntity: BoxPartsLimbsCyber
+  icon: { sprite: _EinsteinEngines/Mobs/Species/IPC/parts.rsi, state: full }
+  cost:
+    NATORequisition: 15 # 2 minutes 30 seconds
+  categories:
+    - UplinkNATOUSMedical
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - AmericanUplink
+
+- type: listing
+  id: UplinkNATOPartsOrgansSynthCrate
+  name:  uplink-NATO-parts-organs-synth-crate-name
+  description: uplink-NATO-parts-organs-synth-crate-desc
+  productEntity: CrateFreezerPartsOrgansSynthetic
+  icon: { sprite: Mobs/Species/Human/organs.rsi, state: heart-off }
   cost:
     NATORequisition: 15 # 2 minutes 30 seconds
   categories:

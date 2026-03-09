@@ -45,3 +45,12 @@ uplink-PACT-barbwirecrate-desc = 5 stacks of 30 barbed wire, able to lay down 6 
 
 uplink-PACT-medkit-combat-name = Combat medkit
 uplink-PACT-medkit-combat-desc = One singular combat medkit.
+
+uplink-PACT-medkit-advanced-name = Advanced medkit
+uplink-PACT-medkit-advanced-desc = One singular advanced medkit.
+
+uplink-PACT-parts-limbs-cyber-box-name = Box of cybernetic limbs
+uplink-PACT-parts-limbs-cyber-box-desc = A box full of cybernetic limbs for prosthesis. Head not included.
+
+uplink-PACT-parts-organs-synth-crate-name = Crate of synthetic organs
+uplink-PACT-parts-organs-synth-crate-desc = A crate full of synthetic organs for emergency replacement. On ice.

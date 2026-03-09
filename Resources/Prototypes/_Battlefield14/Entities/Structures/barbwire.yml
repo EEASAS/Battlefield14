@@ -28,10 +28,10 @@
         shape:
           !type:PhysShapeAabb
           bounds: "-0.4,-0.4,0.4,0.4"
-        layer:
-          - SlipLayer # LowImpassable ? this thing goes under catwalks visually
+        layer: # Not sure why but it displays under blood and catwalks
+        - TableLayer
         mask:
-          - ItemMask
+        - TableMask
         density: 1000
         hard: false
 #  - type: FootstepModifier
@@ -42,8 +42,13 @@
   - type: Rotatable
   - type: InteractionOutline
   - type: Slippery # tangles up your feet
-  - type: StepTrigger
-    intersectRatio: 0.1
+  - type: TriggerOnProximity
+    triggerspeed: 1
+    enabled: true
+    cooldown: 3
+    shape:
+      !type:PhysShapeCircle
+      radius: 0.4
   - type: Construction
     graph: BarbwireFloor
     node: barbwirefloor
@@ -51,6 +56,11 @@
   - type: Damageable
     damageContainer: StructuralInorganic
     damageModifierSet: Barbwire
+#  - type: TriggerOnCollide
+  - type: DamageUserOnTrigger
+    damage:
+      types:
+        Slash: 20 # base damage, scales based on mass. DEALS DAMAGE TO ITEMS THROWN OVER IT
   - type: MeleeSound
     soundGroups:
       Brute:

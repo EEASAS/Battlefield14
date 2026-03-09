@@ -23,15 +23,15 @@
       - Timer
   - type: Damageable
     damageContainer: Inorganic
-  - type: Destructible
-    thresholds:
-    - trigger:
-        !type:DamageTrigger
-        damage: 10
-      behaviors:
-      - !type:TriggerBehavior
-      - !type:DoActsBehavior
-        acts: ["Destruction"]
+#BF14  - type: Destructible # BF14 disabled this because grenades thrown over barbed wire would take damage from the DamageUserOnTrigger comp and detonate instantly
+#BF14    thresholds:
+#BF14    - trigger:
+#BF14        !type:DamageTrigger
+#BF14        damage: 10
+#BF14      behaviors:
+#BF14      - !type:TriggerBehavior
+#BF14      - !type:DoActsBehavior
+#BF14        acts: ["Destruction"]
   - type: Appearance
   - type: AnimationPlayer
   - type: GenericVisualizer

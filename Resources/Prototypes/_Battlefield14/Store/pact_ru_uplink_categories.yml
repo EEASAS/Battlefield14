@@ -130,6 +130,22 @@
         tags:
           - RussianUplink
 
+- type: listing
+  id: UplinkPACTRURPG26ThermobaricCrate
+  name:  uplink-PACTRU-rshg1crate-name
+  description: uplink-PACTRU-rshg1crate-desc
+  productEntity: CrateSecgearPACTFilledRPG26Thermobaric
+  icon: { sprite: _Battlefield14/Objects/Weapons/Guns/Launchers/RPG26.rsi, state: icon }
+  cost:
+    PACTRequisition: 30 # 5 minutes
+  categories:
+    - UplinkPACTRUWeapons
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - RussianUplink
+
 # Ammo
 
 - type: listing

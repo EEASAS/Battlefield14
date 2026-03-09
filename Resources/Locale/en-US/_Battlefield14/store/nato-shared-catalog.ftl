@@ -50,3 +50,12 @@ uplink-NATO-barbwirecrate-desc = 5 stacks of 30 barbed wire, able to lay down 6 
 
 uplink-nato-medkit-combat-name = Combat medkit
 uplink-nato-medkit-combat-desc = One singular combat medkit.
+
+uplink-NATO-medkit-advanced-name = Advanced medkit
+uplink-NATO-medkit-advanced-desc = One singular advanced medkit.
+
+uplink-NATO-parts-limbs-cyber-box-name = Box of cybernetic limbs
+uplink-NATO-parts-limbs-cyber-box-desc = A box full of cybernetic limbs for prosthesis. Head not included.
+
+uplink-NATO-parts-organs-synth-crate-name = Crate of synthetic organs
+uplink-NATO-parts-organs-synth-crate-desc = A crate full of synthetic organs for emergency replacement. On ice.

@@ -79,7 +79,7 @@
 - type: entity
   name: box of M34 white phosphorus smoke grenades
   parent: BoxMagazine
-  id: BoxGrenadesM58
+  id: BoxGrenadesM34
   description: A box full of M34 white phosphorus smoke grenades.
   suffix: WAR CRIME
   components:
