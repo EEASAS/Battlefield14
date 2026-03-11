@@ -41,29 +41,29 @@
   components:
     - type: Unrevivable
 
-- type: trait #BF14 removed it and it shit the bed so here we are
-  id: Muted
-  name: trait-muted-name
-  description: trait-muted-desc
-  category: Disabilities
-  blacklist:
-    components:
-      - BorgChassis
-  components:
-    - type: Muted
-
-- type: trait BF14
-  id: Paracusia
-  name: trait-paracusia-name
-  description: trait-paracusia-desc
-  category: Disabilities
-  components:
-    - type: Paracusia
-      minTimeBetweenIncidents: 0.1
-      maxTimeBetweenIncidents: 300
-      maxSoundDistance: 7
-      sounds:
-        collection: Paracusia
+#- type: trait BF14
+#  id: Muted
+#  name: trait-muted-name
+#  description: trait-muted-desc
+#  category: Disabilities
+#  blacklist:
+#    components:
+#      - BorgChassis
+#  components:
+#    - type: Muted
+#
+#- type: trait BF14
+#  id: Paracusia
+#  name: trait-paracusia-name
+#  description: trait-paracusia-desc
+#  category: Disabilities
+#  components:
+#    - type: Paracusia
+#      minTimeBetweenIncidents: 0.1
+#      maxTimeBetweenIncidents: 300
+#      maxSoundDistance: 7
+#      sounds:
+#        collection: Paracusia
 
 - type: trait
   id: PainNumbness
