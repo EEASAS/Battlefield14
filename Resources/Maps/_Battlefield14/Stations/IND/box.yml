@@ -81970,10 +81970,6 @@ entities:
     components:
     - type: Transform
       parent: 11051
-    - type: SpecialRespawn
-      stationMap:
-      - invalid
-      - 1
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
