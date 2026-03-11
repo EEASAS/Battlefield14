@@ -1,37 +1,37 @@
-#- type: trait BF14
-#  id: Blindness
-#  name: trait-blindness-name
-#  description: trait-blindness-desc
-#  traitGear: WhiteCane
-#  category: Disabilities
-#  whitelist:
-#    components:
-#      - Blindable
-#  components:
-#    - type: PermanentBlindness
-#
-#- type: trait BF14
-#  id: PoorVision
-#  name: trait-poor-vision-name
-#  description: trait-poor-vision-desc
-#  traitGear: ClothingEyesGlasses
-#  category: Disabilities
-#  whitelist:
-#    components:
-#      - Blindable
-#  components:
-#    - type: PermanentBlindness
-#      blindness: 4
-#
-#- type: trait BF14
-#  id: Narcolepsy
-#  name: trait-narcolepsy-name
-#  description: trait-narcolepsy-desc
-#  category: Disabilities
-#  components:
-#    - type: Narcolepsy
-#      timeBetweenIncidents: 300, 600
-#      durationOfIncident: 10, 30
+- type: trait
+  id: Blindness
+  name: trait-blindness-name
+  description: trait-blindness-desc
+  traitGear: WhiteCane
+  category: Disabilities
+  whitelist:
+    components:
+      - Blindable
+  components:
+    - type: PermanentBlindness
+
+- type: trait
+  id: PoorVision
+  name: trait-poor-vision-name
+  description: trait-poor-vision-desc
+  traitGear: ClothingEyesGlasses
+  category: Disabilities
+  whitelist:
+    components:
+      - Blindable
+  components:
+    - type: PermanentBlindness
+      blindness: 4
+
+- type: trait
+  id: Narcolepsy
+  name: trait-narcolepsy-name
+  description: trait-narcolepsy-desc
+  category: Disabilities
+  components:
+    - type: Narcolepsy
+      timeBetweenIncidents: 300, 600
+      durationOfIncident: 10, 30
 
 - type: trait
   id: Unrevivable
