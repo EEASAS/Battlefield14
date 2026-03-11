@@ -52,7 +52,7 @@
   components:
     - type: Muted
 
-- type: trait BF14
+- type: trait
   id: Paracusia
   name: trait-paracusia-name
   description: trait-paracusia-desc
