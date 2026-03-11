@@ -3,17 +3,6 @@
   name: job-name-wps-officer
   description: job-description-wps-officer
   playTimeTracker: JobWPSSecurityOfficer
-  requirements:
-    # COMMENTED OUT: CharacterSpeciesRequirement not supported (species requirement system not implemented)
-    # - !type:CharacterSpeciesRequirement
-    #   species:
-    #     - Human
-    - !type:TraitsRequirement
-      inverted: true
-      traits:
-        - Blindness
-        - Pacifist
-        - WheelchairBound
   weight: 70
   startingGear: WPSSecurityOfficerGear
   alwaysUseSpawner: true

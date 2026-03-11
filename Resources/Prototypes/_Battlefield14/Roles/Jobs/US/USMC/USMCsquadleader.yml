@@ -3,22 +3,6 @@
   name: job-name-usmc-squadleader
   description: job-description-usmc-squadleader
   playTimeTracker: JobUSMCSquadLeader
-  requirements:
-    # COMMENTED OUT: CharacterSpeciesRequirement not supported (species requirement system not implemented)
-    # - !type:CharacterSpeciesRequirement
-    #   species:
-    #     - Human
-    # COMMENTED OUT: FactionRequirement not supported (faction system not implemented)
-    # - !type:FactionRequirement
-    #   factionID: "NATO"
-#    - !type:SexRequirement # Not implemented
-#      sex: Male
-    - !type:TraitsRequirement
-      inverted: true
-      traits:
-        - Blindness
-        - Pacifist
-        - WheelchairBound
   weight: 78
   startingGear: USMCSquadLeaderGear
   alwaysUseSpawner: true

@@ -3,20 +3,6 @@
   name: job-name-hecu-rifleman
   description: job-description-hecu-rifleman
   playTimeTracker: JobHECURifleman
-  requirements:
-    # COMMENTED OUT: CharacterSpeciesRequirement not supported (species requirement system not implemented)
-    # - !type:CharacterSpeciesRequirement
-    #   species:
-    #     - Human
-    # COMMENTED OUT: FactionRequirement not supported (faction system not implemented)
-    # - !type:FactionRequirement
-    #   factionID: "NATO"
-    - !type:TraitsRequirement
-      inverted: true
-      traits:
-        - Blindness
-        - Pacifist
-        - WheelchairBound
   weight: 77
   startingGear: USMCRiflemanGear
   alwaysUseSpawner: true

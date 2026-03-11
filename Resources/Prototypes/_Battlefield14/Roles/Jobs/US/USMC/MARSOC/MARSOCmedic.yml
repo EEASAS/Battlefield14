@@ -3,20 +3,6 @@
   name: job-name-marsoc-medic
   description: job-description-marsoc-medic
   playTimeTracker: JobMARSOCMedic
-  requirements:
-    # COMMENTED OUT: CharacterSpeciesRequirement not supported (species requirement system not implemented)
-    # - !type:CharacterSpeciesRequirement
-    #   species:
-    #     - Human
-    # COMMENTED OUT: FactionRequirement not supported (faction system not implemented)
-    # - !type:FactionRequirement
-    #   factionID: "NATO"
-    - !type:TraitsRequirement
-      inverted: true
-      traits:
-        - Blindness
-        - Pacifist
-        - WheelchairBound
   weight: 75
   startingGear: MARSOCMedicGear
   alwaysUseSpawner: true

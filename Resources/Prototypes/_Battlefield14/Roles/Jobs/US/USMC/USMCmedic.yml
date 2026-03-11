@@ -3,20 +3,6 @@
   name: job-name-usmc-medic
   description: job-description-usmc-medic
   playTimeTracker: JobUSMCMedic
-  requirements:
-    # COMMENTED OUT: CharacterSpeciesRequirement not supported (species requirement system not implemented)
-    # - !type:CharacterSpeciesRequirement
-    #   species:
-    #     - Human
-    # COMMENTED OUT: FactionRequirement not supported (faction system not implemented)
-    # - !type:FactionRequirement
-    #   factionID: "NATO"
-    - !type:TraitsRequirement
-      inverted: true
-      traits:
-        - Blindness
-        - Pacifist
-        - WheelchairBound
   weight: 75
   startingGear: USMCMedicGear
   alwaysUseSpawner: true
