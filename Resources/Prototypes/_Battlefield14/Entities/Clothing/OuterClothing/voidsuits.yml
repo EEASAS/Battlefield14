@@ -41,7 +41,7 @@
     clothingPrototypes:
       head: ClothingHeadHelmetVoidsuitRussianCombat
       helmetcover: ClothingHeadHelmetCoverBlock
-      helmetattachment: ClothingHeadHelmetAttachmentBlock
+#      helmetattachment: ClothingHeadHelmetAttachmentBlock
   - type: StaticPrice
     price: 4500
 #   COMMENTED OUT: ClothingAddFaction not supported (faction system not implemented)
@@ -83,7 +83,7 @@
     clothingPrototypes:
       head: ClothingHeadHelmetVoidsuitRussianCombat # change later
       helmetcover: ClothingHeadHelmetCoverBlock
-      helmetattachment: ClothingHeadHelmetAttachmentBlock
+#      helmetattachment: ClothingHeadHelmetAttachmentBlock
   - type: StaticPrice
     price: 8000
   # COMMENTED OUT: ClothingAddFaction not supported (faction system not implemented)
@@ -132,7 +132,7 @@
     clothingPrototypes:
       head: ClothingHeadHelmetVoidsuitAmericanCombatMarine
       helmetcover: ClothingHeadHelmetCoverBlock
-      helmetattachment: ClothingHeadHelmetAttachmentBlock
+#      helmetattachment: ClothingHeadHelmetAttachmentBlock
   - type: StaticPrice
     price: 4500
   # COMMENTED OUT: ClothingAddFaction not supported (faction system not implemented)

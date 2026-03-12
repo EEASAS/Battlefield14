@@ -23,7 +23,7 @@
   maxRandomOffset: 0
   stations:
     USSBarackObama:
-      stationProto: SecurityFrontierOutpost
+      stationProto: StandardFrontierSecurityVessel
       gridComponents:
       - type: VesselInfo
         description: "A Jefferson Davis class spacecraft carrier, pride and joy of the United States Space Force."
@@ -44,6 +44,3 @@
             USMCAutomaticRifleman: [ 3, 3 ]
             USMCMedic: [ 3, 3 ]
             USMCRecon: [ 3, 3 ]
-#          tags:
-#          - HeadOfPersonnel
-#          - HeadOfSecurity

@@ -23,7 +23,7 @@
   maxRandomOffset: 0
   stations:
     SVOGoydin:
-      stationProto: SecurityFrontierOutpost
+      stationProto: StandardFrontierSecurityVessel
       gridComponents:
       - type: VesselInfo
         description: "A Katsap class spacecraft carrier, woe to whoever crosses her."
