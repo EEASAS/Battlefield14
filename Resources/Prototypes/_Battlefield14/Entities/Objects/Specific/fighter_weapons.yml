@@ -74,14 +74,14 @@
 
 - type: entity
   id: FighterMissileAim9xs
-  name: AIM-9XS Missile # currently does not work sadly, fighters don't emit a heat signature this missile can track
+  name: AIM-9XS Missile
   parent: BaseBulletTrigger
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
     damage:
       types: # For reference, air to air missiles should be mainly direct damage, so they are worse at taking out ships; fighters have 1,000 health
-        Structural: 600
+        Structural: 300
         Blunt: 70
         Heat: 70
   - type: Sprite

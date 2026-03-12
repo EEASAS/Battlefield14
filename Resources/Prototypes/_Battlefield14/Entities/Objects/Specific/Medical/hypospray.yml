@@ -137,6 +137,27 @@
 
 - type: entity
   parent: BF14Hypospray
+  id: BF14HyposprayFilledCombat
+  suffix: BKT # BKTT
+  name: combat hypospray
+  description: Filled with equal parts bicaridine, kelotane, and tricordrazine; or BKT. # tricordrazine, and tramadol; or BKTT.
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      hypospray:
+        maxVol: 60
+        reagents:
+        - ReagentId: Bicaridine
+          Quantity: 20
+        - ReagentId: Kelotane
+          Quantity: 20
+        - ReagentId: Tricordrazine
+          Quantity: 20
+#        - ReagentId: Tramadol
+#          Quantity: 15
+
+- type: entity
+  parent: BF14Hypospray
   id: BF14HyposprayFilledDylovene
   suffix: Dylovene
   name: dylovene hypospray
@@ -351,24 +372,24 @@
 #        - ReagentId: Tramadol
 #          Quantity: 120
 
-#- type: entity
-#  parent: BF14HyposprayBig
-#  id: BF14HyposprayFilledBigCombat
-#  suffix: BKTT
-#  name: combat hypospray
-#  description: Filled with equal parts bicaridine, kelotane, tricordrazine, and tramadol; or BKTT.
-#  components:
-#  - type: SolutionContainerManager
-#    solutions:
-#      hypospray:
-#        maxVol: 120
-#        reagents:
-#        - ReagentId: Bicaridine
-#          Quantity: 30
-#        - ReagentId: Kelotane
-#          Quantity: 30
-#        - ReagentId: Tricordrazine
-#          Quantity: 30
+- type: entity
+  parent: BF14HyposprayBig
+  id: BF14HyposprayFilledBigCombat
+  suffix: BKT # BKTT
+  name: combat hypospray
+  description: Filled with equal parts bicaridine, kelotane, and tricordrazine; or BKT. # tricordrazine, and tramadol; or BKTT.
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      hypospray:
+        maxVol: 120
+        reagents:
+        - ReagentId: Bicaridine
+          Quantity: 40
+        - ReagentId: Kelotane
+          Quantity: 40
+        - ReagentId: Tricordrazine
+          Quantity: 40
 #        - ReagentId: Tramadol
 #          Quantity: 30
 

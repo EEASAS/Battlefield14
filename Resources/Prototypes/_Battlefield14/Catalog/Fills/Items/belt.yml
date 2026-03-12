@@ -331,10 +331,10 @@
       - id: MedicatedSuture
       - id: RegenerativeMesh
       - id: HandheldHealthAnalyzerUnpowered
-      - id: BF14HyposprayFilledTricordrazine
+      - id: BF14HyposprayFilledBicaridine
+      - id: BF14HyposprayFilledKelotane
       - id: BF14HyposprayFilledSaline
       - id: BF14HyposprayFilledInaprovaline
-#      - id: BF14HyposprayFilledTramadol
       - id: PillCanisterBicaridine
       - id: PillCanisterKelotane
       - id: PillCanisterTricordrazine

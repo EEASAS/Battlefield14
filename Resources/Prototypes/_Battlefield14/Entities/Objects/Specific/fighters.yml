@@ -24,7 +24,7 @@
           # layer:
           # - FighterMask
     - type: TargetSeekingTarget # needed for A2A missiles
-    - type: TargetSeekerAlert
+    - type: TargetSeekerAlert # only works on grids i believe
       targetGainSound:
         path: /Audio/_Mono/Effects/Alerts/rwr_beep.ogg
       distanceAlertSettings:
@@ -136,10 +136,9 @@
           layer:
           - MobLayer
           - MachineLayer
-          #- FighterImpassable
-          # COMMENTED OUT: Invalid enum value 'FighterMask' - not found in physics layer enum
-          # layer:
-          # - FighterMask
+    - type: Damageable
+      damageContainer: StructuralInorganic
+      damageModifierSet: BF_LightFighter
     - type: Destructible
       thresholds:
       - trigger:
@@ -249,10 +248,9 @@
           layer:
           - MobLayer
           - MachineLayer
-          #- FighterImpassable
-          # COMMENTED OUT: Invalid enum value 'FighterMask' - not found in physics layer enum
-          # layer:
-          # - FighterMask
+    - type: Damageable
+      damageContainer: StructuralInorganic
+      damageModifierSet: BF_LightFighter
     - type: Destructible
       thresholds:
       - trigger:
