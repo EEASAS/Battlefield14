@@ -56,7 +56,7 @@
     maxDurability: 120 # BF14
     walkSpeedModifier: 0.98 # BF14
     sprintSpeedModifier: 0.98 # BF14
-    staminaDamageMultiplier: 0.05 # BF14
+    staminaDamageMultiplier: 0.15 # BF14
     absorptionRatios:
       Piercing: 1
       Structural: 1 # BF14

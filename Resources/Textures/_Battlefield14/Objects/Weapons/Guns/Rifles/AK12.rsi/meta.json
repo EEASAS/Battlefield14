@@ -29,6 +29,9 @@
       "name": "mag-3"
     },
     {
+      "name": "magnifier"
+    },
+    {
       "name": "inhand-left",
       "directions": 4
     },

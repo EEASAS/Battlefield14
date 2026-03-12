@@ -11,8 +11,6 @@
   - type: IFF
     color: "#bd0404"
     readOnly: true
-#  - type: SolarPoweredGrid
-#    doNotCull: true
 
 - type: gameMap
   id: SVOGoydin

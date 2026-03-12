@@ -452,6 +452,25 @@
   - type: Appearance
 
 - type: entity
+  name: AK-12 (Magnifier)
+  parent: WeaponRifleRUAK12
+  id: WeaponRifleRUAK12Magnified
+  description: A "modernised" '74 pattern rifle, which looks attractive but doesn't advance much farther than the AK74M.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AK12.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: magnifier
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: CursorOffsetRequiresWield
+  - type: EyeCursorOffset
+    maxOffset: 5
+    pvsIncrease: 0.25
+
+- type: entity
   name: AKMS
   parent: WeaponRifleRUAK74
   id: WeaponRifleRUAKMS

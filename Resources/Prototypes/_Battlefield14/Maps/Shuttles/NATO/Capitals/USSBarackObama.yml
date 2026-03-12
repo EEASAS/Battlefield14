@@ -2,8 +2,8 @@
   id: USSBarackObama
   parent: [BaseMobilePOI, BaseRepairablePOI]
   name: 'USS Barack Obama'
-  minimumDistance: 3000 # Mono
-  maximumDistance: 3000 # Mono
+  minimumDistance: 3000
+  maximumDistance: 3000
   spawnGamePreset: [ Battlefield14 , NFAdventure ]
   spawnGroup: Required
   gridPath: /Maps/_Battlefield14/Shuttles/NATO/Capitals/USSBarackObama.yml
@@ -11,8 +11,6 @@
   - type: IFF
     color: "#047abd"
     readOnly: true
-#  - type: SolarPoweredGrid
-#    doNotCull: true
 
 - type: gameMap
   id: USSBarackObama
@@ -44,6 +42,3 @@
             USMCAutomaticRifleman: [ 3, 3 ]
             USMCMedic: [ 3, 3 ]
             USMCRecon: [ 3, 3 ]
-#          tags:
-#          - HeadOfPersonnel
-#          - HeadOfSecurity
