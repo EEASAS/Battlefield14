@@ -1,6 +1,6 @@
 - type: pointOfInterest
   id: SVOGoydin
-  parent: [BasePOI, BaseRepairablePOI]
+  parent: [BaseMobilePOI, BaseRepairablePOI]
   name: 'SVO Goydin'
   minimumDistance: 3000
   maximumDistance: 3000

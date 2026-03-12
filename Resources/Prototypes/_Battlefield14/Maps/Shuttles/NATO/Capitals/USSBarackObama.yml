@@ -1,6 +1,6 @@
 - type: pointOfInterest
   id: USSBarackObama
-  parent: [BasePOI, BaseRepairablePOI]
+  parent: [BaseMobilePOI, BaseRepairablePOI]
   name: 'USS Barack Obama'
   minimumDistance: 3000 # Mono
   maximumDistance: 3000 # Mono
