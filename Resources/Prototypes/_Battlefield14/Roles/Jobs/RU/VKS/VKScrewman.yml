@@ -3,14 +3,6 @@
   name: job-name-vks-crewman
   description: job-description-vks-crewman
   playTimeTracker: JobVKSCrewman
-  requirements:
-    - !type:TraitsRequirement
-      inverted: true
-      traits:
-        - Muted
-        - Blindness
-        - Pacifist
-        - WheelchairBound
   weight: 77
   startingGear: VKSCrewmanGear
   alwaysUseSpawner: true

@@ -3,14 +3,6 @@
   name: job-name-vks-captain
   description: job-description-vks-captain
   playTimeTracker: JobVKSCaptain
-  requirements:
-    - !type:TraitsRequirement
-      inverted: true
-      traits:
-        - Muted
-        - Blindness
-        - Pacifist
-        - WheelchairBound
   weight: 78
   startingGear: VKSCaptainGear
   alwaysUseSpawner: true

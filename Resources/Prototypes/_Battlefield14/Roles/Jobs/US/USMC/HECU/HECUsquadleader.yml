@@ -3,23 +3,6 @@
   name: job-name-hecu-squadleader
   description: job-description-hecu-squadleader
   playTimeTracker: JobHECUSquadLeader
-  requirements:
-    # COMMENTED OUT: CharacterSpeciesRequirement not supported (species requirement system not implemented)
-    # - !type:CharacterSpeciesRequirement
-    #   species:
-    #     - Human
-    # COMMENTED OUT: FactionRequirement not supported (faction system not implemented)
-    # - !type:FactionRequirement
-    #   factionID: "NATO"
-#    - !type:SexRequirement # Not implemented
-#      sex: Male
-    - !type:TraitsRequirement
-      inverted: true
-      traits:
-        - Muted
-        - Blindness
-        - Pacifist
-        - WheelchairBound
   weight: 78
   startingGear: HECUSquadLeaderGear
   alwaysUseSpawner: true

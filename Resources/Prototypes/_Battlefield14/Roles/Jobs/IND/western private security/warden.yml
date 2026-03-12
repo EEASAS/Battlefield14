@@ -3,18 +3,6 @@
   name: job-name-wps-warden
   description: job-description-wps-warden
   playTimeTracker: JobWPSWarden
-  requirements:
-    # COMMENTED OUT: CharacterSpeciesRequirement not supported (species requirement system not implemented)
-    # - !type:CharacterSpeciesRequirement
-    #   species:
-    #     - Human
-    - !type:TraitsRequirement
-      inverted: true
-      traits:
-        - Muted
-        - Blindness
-        - Pacifist
-        - WheelchairBound
   weight: 75
   startingGear: WPSWardenGear
   alwaysUseSpawner: true

@@ -3,14 +3,6 @@
   name: job-name-ussf-crewman
   description: job-description-ussf-crewman
   playTimeTracker: JobUSSFCrewman
-  requirements:
-    - !type:TraitsRequirement
-      inverted: true
-      traits:
-        - Muted
-        - Blindness
-        - Pacifist
-        - WheelchairBound
   weight: 77
   startingGear: USSFCrewmanGear
   alwaysUseSpawner: true

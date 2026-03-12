@@ -3,21 +3,6 @@
   name: job-name-vdv-recon
   description: job-description-vdv-recon
   playTimeTracker: JobVDVRecon
-  requirements:
-    # COMMENTED OUT: CharacterSpeciesRequirement not supported (species requirement system not implemented)
-    # - !type:CharacterSpeciesRequirement
-    #   species:
-    #     - Human
-    # COMMENTED OUT: FactionRequirement not supported (faction system not implemented)
-    # - !type:FactionRequirement
-    #   factionID: "PACT"
-    - !type:TraitsRequirement
-      inverted: true
-      traits:
-        - Muted
-        - Blindness
-        - Pacifist
-        - WheelchairBound
   weight: 74
   startingGear: VDVReconGear
   alwaysUseSpawner: true

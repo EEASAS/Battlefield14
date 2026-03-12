@@ -3,14 +3,6 @@
   name: job-name-ussf-captain
   description: job-description-ussf-captain
   playTimeTracker: JobUSSFCaptain
-  requirements:
-    - !type:TraitsRequirement
-      inverted: true
-      traits:
-        - Muted
-        - Blindness
-        - Pacifist
-        - WheelchairBound
   weight: 78
   startingGear: USSFCaptainGear
   alwaysUseSpawner: true
