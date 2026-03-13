@@ -35,6 +35,15 @@
         - MachineMask
         layer:
         - MachineLayer
+  - type: PointLight
+    enabled: true
+    radius: 1.5
+    energy: 2.5
+    color: "#43a20d"
+    netsync: false
+  - type: NavMapBeacon
+    defaultText: objective-beacon-general
+    color: "#FFFF00"
   - type: POICapture
     poiName: "Control Point Alpha"
     timeToCapture: 60 # 1 minute to capture
@@ -55,6 +64,9 @@
   - type: POICapture
     poiName: "Engineering Sector"
     timeToCapture: 120
+  - type: NavMapBeacon
+    defaultText: objective-beacon-engineering
+    color: "#FFFF00"
 
 - type: entity
   id: CapturePointMedical
@@ -65,6 +77,9 @@
   - type: POICapture
     poiName: "Medical Bay"
     timeToCapture: 180
+  - type: NavMapBeacon
+    defaultText: objective-beacon-medical
+    color: "#FFFF00"
 
 - type: entity
   id: CapturePointBridge
@@ -75,6 +90,9 @@
   - type: POICapture
     poiName: "Bridge"
     timeToCapture: 180
+  - type: NavMapBeacon
+    defaultText: objective-beacon-bridge
+    color: "#FFFF00"
 
 - type: entity
   id: CapturePointBridge20Minutes
@@ -93,6 +111,9 @@
   - type: POICapture
     poiName: "Security"
     timeToCapture: 180
+  - type: NavMapBeacon
+    defaultText: objective-beacon-security
+    color: "#FFFF00"
 
 - type: entity
   id: CapturePointCargo
@@ -103,6 +124,9 @@
   - type: POICapture
     poiName: "Cargo Department"
     timeToCapture: 120
+  - type: NavMapBeacon
+    defaultText: objective-beacon-cargo
+    color: "#FFFF00"
 
 - type: entity
   id: CapturePointAtmospherics
@@ -113,6 +137,9 @@
   - type: POICapture
     poiName: "Atmospherics"
     timeToCapture: 120
+  - type: NavMapBeacon
+    defaultText: objective-beacon-atmospherics
+    color: "#FFFF00"
 
 - type: entity
   id: CapturePointResearch
@@ -123,3 +150,6 @@
   - type: POICapture
     poiName: "Research and development"
     timeToCapture: 120
+  - type: NavMapBeacon
+    defaultText: objective-beacon-science
+    color: "#FFFF00"

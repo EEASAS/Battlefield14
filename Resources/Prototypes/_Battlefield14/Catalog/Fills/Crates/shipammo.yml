@@ -113,3 +113,16 @@
     - id: KornetNCartridge
       amount: 10
     access: [["PACTArmory"]]
+
+- type: entity
+  parent: CrateAmmoSecureMercenary
+  id: CrateAmmoBox57mmHE
+  name: 57mm high explosive magazine box
+  description: Contains 10 mags.
+  suffix: Burevestnik-N
+  components:
+  - type: StorageFill
+    contents:
+    - id: Magazine57mmBurevestnikN
+      amount: 10
+    access: [["PACTArmory"]]

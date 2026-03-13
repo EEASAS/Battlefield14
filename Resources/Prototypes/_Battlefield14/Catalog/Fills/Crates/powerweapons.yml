@@ -29,32 +29,6 @@
     access: [ ["NATOCommand"] , ["PACTCommand"] ]
 
 - type: entity
-  id: CratePowerWeaponFilledM249Para
-  suffix: Filled, M249 Para
-  parent: CratePowerWeapon
-  components:
-  - type: StorageFill
-    contents:
-        - id: WeaponMachineGunUSM249Para
-          amount: 1
-        - id: MagazineBeltBoxM249
-          amount: 2
-
-- type: entity
-  id: CratePowerWeaponFilledSMAW
-  suffix: Filled, SMAW
-  parent: CratePowerWeapon
-  components:
-  - type: StorageFill
-    contents:
-        - id: WeaponLauncherUSSMAW
-          amount: 1
-        - id: CartridgeSMAWHEAA
-          amount: 4
-        - id: CartridgeSMAWNE
-          amount: 4
-
-- type: entity
   id: CratePowerWeaponFilledM107
   suffix: Filled, M107
   parent: CratePowerWeapon

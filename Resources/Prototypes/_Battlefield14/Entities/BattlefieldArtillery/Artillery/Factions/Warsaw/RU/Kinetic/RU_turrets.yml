@@ -22,6 +22,7 @@
     ports:
     - Toggle
   - type: Gun
+    recoil: 0
     fireRate: 10
     projectileSpeed: 140
     minAngle: 0
@@ -95,6 +96,7 @@
     ports:
     - Toggle
   - type: Gun
+    recoil: 0
     fireRate: 14
     projectileSpeed: 120
     minAngle: 0
@@ -170,6 +172,7 @@
     ports:
     - Toggle
   - type: Gun
+    recoil: 0
     fireRate: 12
     projectileSpeed: 150
     minAngle: 0
@@ -241,6 +244,7 @@
   - type: WirelessNetworkConnection
     range: 700
   - type: Gun
+    recoil: 0
     fireRate: 8
     projectileSpeed: 120
     minAngle: 3
@@ -308,6 +312,7 @@
   - type: WirelessNetworkConnection
     range: 700
   - type: Gun
+    recoil: 0
     fireRate: 2
     projectileSpeed: 100
     minAngle: 10
@@ -375,6 +380,7 @@
   - type: WirelessNetworkConnection
     range: 500
   - type: Gun
+    recoil: 0
     fireRate: 0.1
     minAngle: 0
     maxAngle: 0
