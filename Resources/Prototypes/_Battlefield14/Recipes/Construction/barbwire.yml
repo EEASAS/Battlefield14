@@ -6,12 +6,13 @@
   targetNode: barbwirefloor
   category: construction-category-structures
   description: A pokey ouchie roll of barbed wire for slowing down advances.
-  conditions:
-    - !type:TileNotBlocked
-      failIfSpace: false
+#  conditions:
+#    - !type:TileNotBlocked
+#      failIfSpace: true
   icon:
     sprite: _Battlefield14/Structures/barbwire.rsi
     state: floor
   objectType: Structure
   placementMode: SnapgridCenter
+  canBuildInImpassable: false
   canRotate: true
