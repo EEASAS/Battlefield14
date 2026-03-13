@@ -12,7 +12,7 @@
         Piercing: 80
     armorPenetration: 0.7
     penetrationThreshold: 300
-    deleteOnCollide: false
+    deleteOnCollide: true
   - type: ArmorPiercing
     piercingThickness: 1
   - type: Sprite
@@ -45,7 +45,7 @@
         Structural: 80
         Blunt: 50
         Heat: 30
-    deleteOnCollide: false
+    deleteOnCollide: true
   - type: ArmorPiercing
     piercingThickness: 20
   - type: Heat
@@ -90,7 +90,7 @@
         Structural: 70
         Piercing: 90
     penetrationThreshold: 250
-    deleteOnCollide: false
+    deleteOnCollide: true
   - type: Sprite
     sprite: _Mono/Objects/SpaceArtillery/50_armorpiercing_machinegun_casing.rsi
     layers:
@@ -195,7 +195,7 @@
         Piercing: 220
     penetrationThreshold: 900
     armorPenetration: 0.85
-    deleteOnCollide: false
+    deleteOnCollide: true
   - type: Sprite
     sprite: _Mono/Objects/SpaceArtillery/57_shell.rsi
     layers:
@@ -227,7 +227,7 @@
         Structural: 170
         Piercing: 200
     penetrationThreshold: 800
-    deleteOnCollide: false
+    deleteOnCollide: true
   - type: Sprite
     sprite: _Mono/Objects/SpaceArtillery/57_shell.rsi
     layers:
@@ -333,7 +333,7 @@
         Structural: 120
         Piercing: 60
         Heat: 40
-    deleteOnCollide: false
+    deleteOnCollide: true
   - type: ArmorPiercing
     piercingThickness: 1
   - type: Heat
@@ -413,7 +413,7 @@
         Blunt: 200
         Heat: 100
     penetrationThreshold: 600
-    deleteOnCollide: false
+    deleteOnCollide: true
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: Default

@@ -2,10 +2,10 @@
   id: INDBox
   parent: [BasePOI, BaseRepairablePOI]
   name: 'Independant Box Station'
-  minimumDistance: 0
-  maximumDistance: 0
-  spawnGamePreset: [ Battlefield14 , NFAdventure ]
-  spawnGroup: Required
+#  minimumDistance: 0
+#  maximumDistance: 0
+#  spawnGamePreset: [ Battlefield14 , NFAdventure ]
+#  spawnGroup: Required
   gridPath: /Maps/_Battlefield14/Stations/IND/box.yml
   addComponents:
   - type: IFF
@@ -19,6 +19,7 @@
   mapPath: /Maps/_Battlefield14/Stations/IND/box.yml
   minPlayers: 0
   maxPlayers: 120
+  fallback: true
   randomRotation: false
   maxRandomOffset: 0
   stations:
@@ -34,8 +35,8 @@
           lobbySortOrder: 1
         - type: StationJobs
           availableJobs:
-#            Contractor: [ -1, -1 ]
-            WPSSecurityOfficer: [ 3, 3 ]
+#            Contractor: [ 2, 3 ]
+            WPSSecurityOfficer: [ 1, 1 ] #[ 3, 3 ]
             WPSWarden: [ 1, 1 ]
             WPSMarshal: [ 1, 1 ]
 #          tags:
