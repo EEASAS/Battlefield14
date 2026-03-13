@@ -4,8 +4,8 @@ meta:
   engineVersion: 264.0.0
   forkId: ""
   forkVersion: ""
-  time: 02/20/2026 07:31:15
-  entityCount: 3137
+  time: 03/13/2026 11:59:36
+  entityCount: 3138
 maps: []
 grids:
 - 1
@@ -483,10 +483,10 @@ entities:
     - type: GridPathfinding
     - type: SpreaderGrid
       spreadQueues:
-        Puddle: []
         Kudzu: []
-        MetalFoam: []
+        Puddle: []
         Smoke: []
+        MetalFoam: []
     - type: GravityShake
       shakeTimes: 10
     - type: GasTileOverlay
@@ -640,7 +640,7 @@ entities:
           2,13:
             1: 128
           3,13:
-            1: 16
+            1: 144
             0: 2048
           4,12:
             2: 4465
@@ -740,6 +740,7 @@ entities:
             0: 3
             1: 3072
           7,13:
+            1: 32
             0: 512
           8,12:
             2: 52703
@@ -10512,6 +10513,18 @@ entities:
       powerLoad: 5
     - type: Battery
       startingCharge: 0
+- proto: CrateAmmoBox57mmHE
+  entities:
+  - uid: 1106
+    components:
+    - type: Transform
+      pos: 9.5,42.5
+      parent: 1
+  - uid: 1107
+    components:
+    - type: Transform
+      pos: 9.5,43.5
+      parent: 1
 - proto: CrateAmmoBoxRU125APFSDS
   entities:
   - uid: 1291
@@ -10564,16 +10577,6 @@ entities:
     components:
     - type: Transform
       pos: 10.5,43.5
-      parent: 1
-  - uid: 1293
-    components:
-    - type: Transform
-      pos: 9.5,43.5
-      parent: 1
-  - uid: 1296
-    components:
-    - type: Transform
-      pos: 9.5,42.5
       parent: 1
 - proto: CrateAmmoBoxRU30Frag
   entities:
@@ -12371,6 +12374,13 @@ entities:
     components:
     - type: Transform
       pos: 36.421333,30.441658
+      parent: 1
+- proto: MedkitAdvancedFilled
+  entities:
+  - uid: 3138
+    components:
+    - type: Transform
+      pos: 36.578262,30.569378
       parent: 1
 - proto: MedkitBruteFilled
   entities:
@@ -17925,6 +17935,20 @@ entities:
       parent: 1566
     - type: Physics
       canCollide: False
+- proto: WeaponTurretBurevestnikN
+  entities:
+  - uid: 1293
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 15.5,53.5
+      parent: 1
+  - uid: 1296
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 29.5,53.5
+      parent: 1
 - proto: WeaponTurretGromN
   entities:
   - uid: 1103
@@ -17944,18 +17968,6 @@ entities:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 13.5,53.5
-      parent: 1
-  - uid: 1106
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 15.5,53.5
-      parent: 1
-  - uid: 1107
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 29.5,53.5
       parent: 1
   - uid: 1108
     components:

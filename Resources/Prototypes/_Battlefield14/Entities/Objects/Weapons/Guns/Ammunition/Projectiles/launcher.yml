@@ -14,6 +14,7 @@
     damage:
       types:
         Structural: 2000
+        Blunt: 250
         Piercing: 250
     deleteOnCollide: false
   - type: ArmorPiercing
@@ -46,7 +47,7 @@
     damage:
       types:
         Structural: 150
-        Blunt: 150
+        Blunt: 250
   - type: HeFragProjectile
     fillPrototype: Bullet84mmHEATFragment
     capacity: 40
@@ -108,7 +109,7 @@
     damage:
       types:
         Structural: 400
-        Blunt: 150
+        Blunt: 250
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: DemolitionCharge
@@ -166,7 +167,7 @@
   - type: Projectile
     damage:
       types:
-        Blunt: 150
+        Blunt: 250
   - type: HeFragProjectile
     fillPrototype: BulletRPG7OG7VFragment
     capacity: 40
@@ -228,6 +229,7 @@
     damage:
       types:
         Structural: 1000
+        Blunt: 250
         Piercing: 250
     deleteOnCollide: false
   - type: ArmorPiercing
@@ -259,7 +261,7 @@
   - type: Projectile
     damage:
       types:
-        Blunt: 150
+        Blunt: 250
 #  - type: HeFragProjectile
 #    fillPrototype: BulletRPG7OG7VFragment
 #    capacity: 40

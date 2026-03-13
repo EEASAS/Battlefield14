@@ -69,6 +69,12 @@
    path:
      path: /Audio/_Battlefield14/Jukebox/vdv.ogg
 
+ - type: jukebox
+   id: hellofromthesky
+   name: Russian mate - Sektor Gaza
+   path:
+     path: /Audio/_Battlefield14/Lobby/secondchechenwar.ogg
+
 # Misc
 
  - type: jukebox

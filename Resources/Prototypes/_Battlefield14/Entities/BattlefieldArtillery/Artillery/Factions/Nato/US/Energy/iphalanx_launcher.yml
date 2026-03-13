@@ -23,6 +23,7 @@
   - type: WirelessNetworkConnection
     range: 500
   - type: Gun
+    recoil: 0
     fireRate: 20
     minAngle: 0
     maxAngle: 0
