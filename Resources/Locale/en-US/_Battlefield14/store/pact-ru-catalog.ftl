@@ -18,14 +18,17 @@ uplink-PACTRU-sv98crate-desc = A crate of two SV-98 7.62x54mmR sniper rifles and
 uplink-PACTRU-KSKcrate-name = KS-K x2
 uplink-PACTRU-KSKcrate-desc = Two KS-K semi-automatic 12 gauge magfed shotguns and two boxes of buckshot and one box of slug ammunition.
 
+uplink-PACTRU-KS23Mcrate-name = KS-23M x2
+uplink-PACTRU-KS23Mcrate-desc = Two KS-23M pump-action 4 gauge shotguns and four boxes of buckshot and two boxes of slug ammunition.
+
 uplink-PACTRU-RPG7crate-name = RPG-7 x2
 uplink-PACTRU-RPG7crate-desc = Two RPG-7 rocket launchers, comes with 4 frag and 4 HEAT rounds.
 
 uplink-PACTRU-RPG30crate-name = RPG-30 x5
 uplink-PACTRU-RPG30crate-desc = 5 disposable RPG-30 105mm HEAT launchers.
 
-uplink-PACTRU-rshg1crate-name = RShG-1 x5
-uplink-PACTRU-rshg1crate-desc = 5 disposable RShG-1 thermobaric launchers.
+uplink-PACTRU-rshg2crate-name = RShG-2 x5
+uplink-PACTRU-rshg2crate-desc = 5 disposable RShG-2 thermobaric launchers.
 
 uplink-PACTRU-RPOAShmelcrate-name = RPO-A Shmel x5
 uplink-PACTRU-RPOAShmelcrate-desc = 5 disposable RPO-A thermobaric launchers.

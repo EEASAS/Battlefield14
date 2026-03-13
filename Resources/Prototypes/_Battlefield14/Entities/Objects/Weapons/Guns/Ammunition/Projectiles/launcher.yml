@@ -262,12 +262,12 @@
     damage:
       types:
         Blunt: 250
-#  - type: HeFragProjectile
-#    fillPrototype: BulletRPG7OG7VFragment
-#    capacity: 40
-#    randomAngle: true
-#    minVelocity: 8
-#    maxVelocity: 15
+  - type: HeFragProjectile
+    fillPrototype: BulletRPG7OG7VFragment
+    capacity: 40
+    randomAngle: true
+    minVelocity: 8
+    maxVelocity: 15
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: FireBomb

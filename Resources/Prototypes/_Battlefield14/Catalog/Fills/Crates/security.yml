@@ -133,6 +133,25 @@
   - type: AccessReader
     access: [["NATOSoldier"]]
 
+- type: entity
+  id: CrateSecgearNATOFilledM320
+  suffix: Filled, M320
+  parent: CrateSecgear
+  name: M320 crate
+  components:
+  - type: StorageFill
+    contents:
+        - id: WeaponGrenadeLauncherUSM320
+          amount: 2
+        - id: BoxMagazine40x46HE
+          amount: 1
+        - id: BoxMagazine40x46Frag
+          amount: 2
+        - id: BoxMagazine40x46ChemicalSmoke
+          amount: 2
+  - type: AccessReader
+    access: [["NATOSoldier"]]
+
 ## PACT
 # RU
 
@@ -284,6 +303,23 @@
     contents:
         - id: WeaponLauncherRURPG26Thermobaric
           amount: 5
+  - type: AccessReader
+    access: [["PACTSoldier"]]
+
+- type: entity
+  id: CrateSecgearPACTFilledKS23M
+  suffix: Filled, KS-23M
+  parent: CrateSecgear
+  name: KS-23M crate
+  components:
+  - type: StorageFill
+    contents:
+        - id: WeaponShotgunRUKS23M
+          amount: 2
+        - id: ShellBoxBF4GaugeShrap10
+          amount: 4
+        - id: ShellBoxBF4GaugeBarricade
+          amount: 2
   - type: AccessReader
     access: [["PACTSoldier"]]
 

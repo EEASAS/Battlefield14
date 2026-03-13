@@ -57,7 +57,7 @@
   productEntity: CrateSecgearPACTFilledSV98
   icon: { sprite: _Battlefield14/Objects/Weapons/Guns/Snipers/SV98.rsi, state: icon }
   cost:
-    PACTRequisition: 9 # 2 minutes
+    PACTRequisition: 9 # 1 minute 30 seconds
   categories:
     - UplinkPACTRUWeapons
   conditions:
@@ -73,7 +73,23 @@
   productEntity: CrateSecgearPACTFilledKSK
   icon: { sprite: _Battlefield14/Objects/Weapons/Guns/Shotguns/KSK.rsi, state: icon }
   cost:
-    PACTRequisition: 30 # 5 minutes
+    PACTRequisition: 24 # 4 minutes
+  categories:
+    - UplinkPACTRUWeapons
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - RussianUplink
+
+- type: listing
+  id: UplinkPACTRUKS23MCrate
+  name:  uplink-PACTRU-KS23Mcrate-name
+  description: uplink-PACTRU-KS23Mcrate-desc
+  productEntity: CrateSecgearPACTFilledKS23M
+  icon: { sprite: _Battlefield14/Objects/Weapons/Guns/Shotguns/KS23M.rsi, state: icon }
+  cost:
+    PACTRequisition: 24 # 4 minutes
   categories:
     - UplinkPACTRUWeapons
   conditions:
@@ -132,8 +148,8 @@
 
 - type: listing
   id: UplinkPACTRURPG26ThermobaricCrate
-  name:  uplink-PACTRU-rshg1crate-name
-  description: uplink-PACTRU-rshg1crate-desc
+  name:  uplink-PACTRU-rshg2crate-name
+  description: uplink-PACTRU-rshg2crate-desc
   productEntity: CrateSecgearPACTFilledRPG26Thermobaric
   icon: { sprite: _Battlefield14/Objects/Weapons/Guns/Launchers/RPG26.rsi, state: icon }
   cost:
@@ -269,7 +285,7 @@
   productEntity: EVAKitCombatRU
   icon: { sprite: _Battlefield14/Clothing/OuterClothing/Voidsuits/russiancombat.rsi, state: icon }
   cost:
-    PACTRequisition: 12 # 2 minutes
+    PACTRequisition: 6 # 1 minute
   categories:
     - UplinkPACTRUArmour
   conditions:

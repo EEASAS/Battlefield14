@@ -308,7 +308,7 @@
   name: AKS-74u
   parent: BaseWeaponSubMachineGun
   id: WeaponRifleRUAKS74U
-  description: You know when they decided to bring this out? Afghanistan, rough.
+  description: You know when they decided to bring this out? Afghanistan. Rough.
   components:
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AKS74u.rsi
@@ -323,11 +323,11 @@
     unwieldOnUse: false
   - type: GunWieldBonus
     minAngle: -14
-    maxAngle: -16
+    maxAngle: -12
   - type: Gun
     minAngle: 16
     maxAngle: 32
-    angleIncrease: 1
+    angleIncrease: 2
     projectileSpeed: 40 # Shorter barrel
     availableModes:
     - SemiAuto
@@ -381,8 +381,7 @@
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
-#    - state: supp
-#      map: ["enum.GunVisualLayers.Base"]
+    - state: supp
     - state: mag-0
       map: ["enum.GunVisualLayers.Mag"]
   - type: Clothing
@@ -391,13 +390,12 @@
     unwieldOnUse: false
   - type: GunWieldBonus
     minAngle: -14
-    maxAngle: -20
+    maxAngle: -12
   - type: Gun
     minAngle: 16
-    maxAngle: 30
-    fireRate: 6
-    angleIncrease: 1
-    projectileSpeed: 40 # Shorter barrel
+    maxAngle: 32
+    angleIncrease: 2
+    projectileSpeed: 35 # Shorter barrel + suppressed
     availableModes:
     - SemiAuto
     - FullAuto
@@ -455,7 +453,7 @@
   name: AK-12 (Magnifier)
   parent: WeaponRifleRUAK12
   id: WeaponRifleRUAK12Magnified
-  description: A "modernised" '74 pattern rifle, which looks attractive but doesn't advance much farther than the AK74M.
+  description: A "modernised" '74 pattern rifle, which looks attractive but doesn't advance much farther than the AK74M. This one has a magnifier.
   components:
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AK12.rsi
@@ -476,8 +474,6 @@
   id: WeaponRifleRUAKMS
   description: The right arm of the enslaved world.
   components:
-#  - type: Item
-#    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AKMS.rsi
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AKMSnew.rsi
     layers:
@@ -604,16 +600,17 @@
     unwieldOnUse: false
   - type: GunWieldBonus
     minAngle: -14
-    maxAngle: -16
+    maxAngle: -19
   - type: Gun
     minAngle: 16
     maxAngle: 32
+    angleIncrease: 1
     availableModes:
     - SemiAuto
     - FullAuto
     selectedMode: FullAuto
     fireRate: 9
-    projectileSpeed: 35 # subsonic
+    projectileSpeed: 40 # subsonic
     soundGunshot:
       collection: BF_M16_Gunshots_SUPP # Looks weird, but these sound more pew pew than the galil (used by M4A1 SUPP) and this is an ASVAL
       params:

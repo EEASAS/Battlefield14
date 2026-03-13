@@ -69,10 +69,10 @@
   id: UplinkNATOUSM320
   name:  uplink-natous-m320-name
   description: uplink-natous-m320-desc
-  productEntity: WeaponGrenadeLauncherUSM320
+  productEntity: CrateSecgearNATOFilledM320
   icon: { sprite: _Battlefield14/Objects/Weapons/Guns/GrenadeLaunchers/M320.rsi, state: icon }
   cost:
-    NATORequisition: 12 # 2 minutes
+    NATORequisition: 30 # 5 minutes
   categories:
     - UplinkNATOUSWeapons
   conditions:
@@ -188,7 +188,7 @@
   productEntity: EVAKitCombatUSMC
   icon: { sprite: _Battlefield14/Clothing/OuterClothing/Voidsuits/americancombatmarine.rsi, state: icon }
   cost:
-    NATORequisition: 12 # 2 minutes
+    NATORequisition: 6 # 1 minute
   categories:
     - UplinkNATOUSArmour
   conditions:
