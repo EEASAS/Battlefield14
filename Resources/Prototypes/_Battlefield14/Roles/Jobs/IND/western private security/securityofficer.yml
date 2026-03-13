@@ -27,6 +27,7 @@
   - Security
   - Brig
   - Command
+  - Medical
 
 - type: startingGear
   id: WPSSecurityOfficerGear
