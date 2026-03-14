@@ -27,18 +27,12 @@
     sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
     layers:
     - state: grenade
-  - type: ShipWeaponProjectile
   - type: TimedDespawn
     lifetime: 10
   - type: PointLight
     radius: 3
     color: orange
     energy: 0.5
-  - type: RadarBlip
-    scale: 1.5
-    requireNoGrid: true
-    shape: triangle
-    radarColor: "#FF3300"
 
 - type: entity
   id: Bullet43x30mmFragFragment
@@ -60,18 +54,12 @@
     layers:
     - state: base-projectile
     scale: 0.4, 0.4
-  - type: ShipWeaponProjectile
   - type: TimedDespawn
     lifetime: 2
   - type: PointLight
     radius: 1
     color: orange
     energy: 0.2
-  - type: RadarBlip
-    scale: 0.5
-    requireNoGrid: true
-    shape: triangle
-    radarColor: "#FF9900"
 
 - type: entity
   id: Bullet43x30mmThermobaric
@@ -104,18 +92,12 @@
     sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
     layers:
     - state: grenade
-  - type: ShipWeaponProjectile
   - type: TimedDespawn
     lifetime: 10
   - type: PointLight
     radius: 3
     color: orange
     energy: 0.5
-  - type: RadarBlip
-    scale: 1.5
-    requireNoGrid: true
-    shape: triangle
-    radarColor: "#FF3300"
 
 - type: entity
   id: Bullet43x30mmChemicalSmoke
@@ -141,15 +123,9 @@
     sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
     layers:
     - state: grenade
-  - type: ShipWeaponProjectile
   - type: TimedDespawn
     lifetime: 10
   - type: PointLight
     radius: 3
     color: gray
     energy: 0.5
-  - type: RadarBlip
-    scale: 1.5
-    requireNoGrid: true
-    shape: triangle
-    radarColor: "#666666"

@@ -228,6 +228,7 @@
 #    proto: Cartridge43x30mmHEFrag
     soundInsert:
       path: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
+  - type: GunRequiresWield
 
 - type: entity
   parent: WeaponGrenadeLauncherRUGM94
