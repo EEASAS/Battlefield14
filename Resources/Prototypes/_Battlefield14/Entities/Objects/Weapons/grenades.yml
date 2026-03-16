@@ -22,9 +22,9 @@
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: Default
-    maxIntensity: 70
-    intensitySlope: 5
-    totalIntensity: 80
+    totalIntensity: 60
+    intensitySlope: 4
+    maxIntensity: 30
     maxTileBreak: 0
   - type: TimerTriggerVisuals
     primingSound:
@@ -381,9 +381,9 @@
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: Default
-    maxIntensity: 70
-    intensitySlope: 5
-    totalIntensity: 80
+    totalIntensity: 60
+    intensitySlope: 4
+    maxIntensity: 30
     maxTileBreak: 0
   - type: TimerTriggerVisuals
     primingSound:
@@ -424,7 +424,7 @@
 
 - type: entity
   name: RGO Offensive Impact grenade
-  description: What does this even stand for? Russian Grenade something? oh well, chuck it and it blows up.
+  description: What does this even stand for? Russian Grenade something? oh well, pull the pin, chuck it, and it blows up.
   parent: BaseItem
   id: RGOImpactHandgrenade
   components:
