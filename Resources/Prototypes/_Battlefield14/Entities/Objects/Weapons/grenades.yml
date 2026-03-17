@@ -111,7 +111,7 @@
     sprite: _Battlefield14/Objects/Weapons/Grenades/MK21StackTwo.rsi
   - type: ExplodeOnTrigger
   - type: Explosive
-    explosionType: Default
+    explosionType: DemolitionCharge
     maxIntensity: 200
     intensitySlope: 8
     totalIntensity: 300
@@ -456,11 +456,12 @@
       path: /Audio/_Battlefield14/Weapons/Grenades/disable1.ogg
   - type: Damageable
     damageContainer: Inorganic
+    damageModifierSet: Grenade
   - type: Destructible
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 10
+        damage: 20
       behaviors:
       - !type:TriggerBehavior
       - !type:DoActsBehavior
@@ -470,13 +471,13 @@
     - type: DamageOnLand
       damage:
         types:
-          Blunt: 50
+          Blunt: 60
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: Default
-    maxIntensity: 100
-    intensitySlope: 4
-    totalIntensity: 100
+    maxIntensity: 10
+    intensitySlope: 3
+    totalIntensity: 80
     canCreateVacuum: false
   - type: EmitSoundOnPickup
     sound: /Audio/_Battlefield14/Weapons/Grenades/grab1.ogg

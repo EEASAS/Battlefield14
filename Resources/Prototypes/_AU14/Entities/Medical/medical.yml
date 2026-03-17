@@ -31,7 +31,7 @@
   parent: BaseItem #CMBaseHealingItem
   id: AU14HemostaticGauzePacketTrash
   name: used hemostatic gauze packet
-  description: A vacuum sealed packet of chemically treated gauze designed to stop arterial bleeding fast. The powder burns like hell, but it works. Single-use. This one is trash, its already been used!
+  description: A vacuum sealed packet of chemically treated gauze designed to stop bleeding fast. The powder burns like hell, but it works. This one is trash, its already been used!
   components:
   - type: Sprite
     sprite: _AU14/Items/quickclot.rsi

@@ -22,7 +22,7 @@
     plasmaAmount: 0
   - type: ExplodeOnTrigger
   - type: Explosive
-    explosionType: Default
+    explosionType: DemolitionCharge
     totalIntensity: 180
     intensitySlope: 6
     maxIntensity: 25

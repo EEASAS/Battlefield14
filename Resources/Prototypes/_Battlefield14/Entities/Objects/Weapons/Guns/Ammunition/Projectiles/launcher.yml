@@ -27,7 +27,7 @@
   - type: StaminaDamageOnCollide
     damage: 200 # It's a fucking rocket
   - type: Explosive
-    explosionType: Default
+    explosionType: DemolitionCharge
     totalIntensity: 300
     intensitySlope: 5
     maxIntensity: 50
@@ -148,7 +148,7 @@
   - type: StaminaDamageOnCollide
     damage: 200 # It's a fucking rocket
   - type: Explosive
-    explosionType: Default
+    explosionType: DemolitionCharge
     totalIntensity: 300
     intensitySlope: 5
     maxIntensity: 50
@@ -242,7 +242,7 @@
   - type: StaminaDamageOnCollide
     damage: 200 # It's a fucking rocket
   - type: Explosive
-    explosionType: Default
+    explosionType: DemolitionCharge
     totalIntensity: 200
     intensitySlope: 5
     maxIntensity: 50
