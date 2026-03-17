@@ -1,6 +1,6 @@
 # US
 - type: entity
-  name: SMAW
+  name: Mk 153 SMAW
   parent: [ BaseWeaponLauncher , BaseGunWieldable ]
   id: WeaponLauncherUSSMAW
   description: Shoulder-Launched Multipurpose Assault Weapon, developed for the United States Marine Corps.

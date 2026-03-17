@@ -127,6 +127,11 @@
     burstFireRate: 20
     burstCooldown: 3
     shotsPerBurst: 2
+    soundGunshot:
+      collection: BF_SPAS12_Gunshots
+      params:
+        volume: -7
+        variation: 0.125
   - type: Tag
     tags:
     - WeaponShotgunKammerer
@@ -137,3 +142,7 @@
       - BF_CartridgeShotgun12Gauge
     capacity: 8
     proto: BF_CartridgeShotgun12GaugeBuckshot
+    soundInsert:
+      collection: BF_SPAS12_ShellIn
+      params:
+        volume: -5

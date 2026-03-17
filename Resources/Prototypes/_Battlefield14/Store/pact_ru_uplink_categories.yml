@@ -57,7 +57,7 @@
   productEntity: CrateSecgearPACTFilledSV98
   icon: { sprite: _Battlefield14/Objects/Weapons/Guns/Snipers/SV98.rsi, state: icon }
   cost:
-    PACTRequisition: 9 # 2 minutes
+    PACTRequisition: 9 # 1 minute 30 seconds
   categories:
     - UplinkPACTRUWeapons
   conditions:
@@ -72,6 +72,38 @@
   description: uplink-PACTRU-KSKcrate-desc
   productEntity: CrateSecgearPACTFilledKSK
   icon: { sprite: _Battlefield14/Objects/Weapons/Guns/Shotguns/KSK.rsi, state: icon }
+  cost:
+    PACTRequisition: 24 # 4 minutes
+  categories:
+    - UplinkPACTRUWeapons
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - RussianUplink
+
+- type: listing
+  id: UplinkPACTRUKS23MCrate
+  name:  uplink-PACTRU-KS23Mcrate-name
+  description: uplink-PACTRU-KS23Mcrate-desc
+  productEntity: CrateSecgearPACTFilledKS23M
+  icon: { sprite: _Battlefield14/Objects/Weapons/Guns/Shotguns/KS23M.rsi, state: icon }
+  cost:
+    PACTRequisition: 24 # 4 minutes
+  categories:
+    - UplinkPACTRUWeapons
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - RussianUplink
+
+- type: listing
+  id: UplinkPACTRUGM94Crate
+  name:  uplink-PACTRU-GM94crate-name
+  description: uplink-PACTRU-GM94crate-desc
+  productEntity: CrateSecgearPACTFilledGM94
+  icon: { sprite: _Battlefield14/Objects/Weapons/Guns/GrenadeLaunchers/GM94.rsi, state: icon }
   cost:
     PACTRequisition: 30 # 5 minutes
   categories:
@@ -132,8 +164,8 @@
 
 - type: listing
   id: UplinkPACTRURPG26ThermobaricCrate
-  name:  uplink-PACTRU-rshg1crate-name
-  description: uplink-PACTRU-rshg1crate-desc
+  name:  uplink-PACTRU-rshg2crate-name
+  description: uplink-PACTRU-rshg2crate-desc
   productEntity: CrateSecgearPACTFilledRPG26Thermobaric
   icon: { sprite: _Battlefield14/Objects/Weapons/Guns/Launchers/RPG26.rsi, state: icon }
   cost:
@@ -269,7 +301,7 @@
   productEntity: EVAKitCombatRU
   icon: { sprite: _Battlefield14/Clothing/OuterClothing/Voidsuits/russiancombat.rsi, state: icon }
   cost:
-    PACTRequisition: 12 # 2 minutes
+    PACTRequisition: 6 # 1 minute
   categories:
     - UplinkPACTRUArmour
   conditions:
@@ -370,6 +402,54 @@
   description: uplink-PACTRU-zarya-box-desc
   productEntity: BoxGrenadesZarya
   icon: { sprite: _Battlefield14/Objects/Weapons/Grenades/zarya.rsi, state: icon }
+  cost:
+    PACTRequisition: 9 # 1 minute 30 seconds
+  categories:
+    - UplinkPACTRUExplosives
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - RussianUplink
+
+- type: listing
+  id: UplinkPACTRUBoxGrenades43x30HEFrag
+  name:  uplink-PACTRU-43x30-box-HEFrag-name
+  description: uplink-PACTRU-43x30-box-HEFrag-desc
+  productEntity: BoxMagazine43x30HEFrag
+  icon: { sprite: _Mono/Objects/Weapons/Guns/Ammunition/Explosives/explosives.rsi, state: frag }
+  cost:
+    PACTRequisition: 18 # 3 minutes
+  categories:
+    - UplinkPACTRUExplosives
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - RussianUplink
+
+- type: listing
+  id: UplinkPACTRUBoxGrenades43x30Thermobaric
+  name:  uplink-PACTRU-43x30-box-Thermobaric-name
+  description: uplink-PACTRU-43x30-box-Thermobaric-desc
+  productEntity: BoxMagazine43x30Thermobaric
+  icon: { sprite: _Mono/Objects/Weapons/Guns/Ammunition/Explosives/explosives.rsi, state: frag }
+  cost:
+    PACTRequisition: 18 # 3 minutes
+  categories:
+    - UplinkPACTRUExplosives
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - RussianUplink
+
+- type: listing
+  id: UplinkPACTRUBoxGrenades43x30ChemicalSmoke
+  name:  uplink-PACTRU-43x30-box-ChemicalSmoke-name
+  description: uplink-PACTRU-43x30-box-ChemicalSmoke-desc
+  productEntity: BoxMagazine43x30ChemicalSmoke
+  icon: { sprite: _Mono/Objects/Weapons/Guns/Ammunition/Explosives/explosives.rsi, state: blast }
   cost:
     PACTRequisition: 9 # 1 minute 30 seconds
   categories:

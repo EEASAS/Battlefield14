@@ -13,13 +13,19 @@
       - Grenade
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Grenades/m67.rsi
+  - type: ContainerContainer
+    containers:
+      cluster-payload: !type:Container
+  - type: ProjectileGrenade
+    fillPrototype: BulletGrenadeM67Fragment
+    capacity: 30
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: Default
-    maxIntensity: 100
+    totalIntensity: 60
     intensitySlope: 4
-    totalIntensity: 100
-    canCreateVacuum: false
+    maxIntensity: 30
+    maxTileBreak: 0
   - type: TimerTriggerVisuals
     primingSound:
       path: "/Audio/_Battlefield14/Weapons/Grenades/trigger2.ogg"
@@ -30,6 +36,32 @@
   - type: EmitSoundOnLand
     sound:
       collection: FragGrenadeSFX
+
+- type: entity
+  id: BulletGrenadeM67Fragment
+  name: M67 grenade fragment
+  parent: BaseBulletTrigger
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Slash: 8
+        Piercing: 8
+  - type: StaminaDamageOnCollide
+    damage: 6 # ~17 hits to stun
+    deleteOnCollide: true
+  - type: Sprite
+    sprite: _Mono/Objects/SpaceArtillery/50_armorpiercing_machinegun_casing.rsi
+    layers:
+    - state: base-projectile
+    scale: 0.4, 0.4
+  - type: TimedDespawn
+    lifetime: 1
+  - type: PointLight
+    radius: 1
+    color: orange
+    energy: 0.2
 
 - type: entity
   name: MK21 Offensive Grenade
@@ -79,7 +111,7 @@
     sprite: _Battlefield14/Objects/Weapons/Grenades/MK21StackTwo.rsi
   - type: ExplodeOnTrigger
   - type: Explosive
-    explosionType: Default
+    explosionType: DemolitionCharge
     maxIntensity: 200
     intensitySlope: 8
     totalIntensity: 300
@@ -340,13 +372,19 @@
       - Grenade
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Grenades/f1.rsi
+  - type: ContainerContainer
+    containers:
+      cluster-payload: !type:Container
+  - type: ProjectileGrenade
+    fillPrototype: BulletGrenadeF1Fragment
+    capacity: 30
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: Default
-    maxIntensity: 100
+    totalIntensity: 60
     intensitySlope: 4
-    totalIntensity: 100
-    canCreateVacuum: false
+    maxIntensity: 30
+    maxTileBreak: 0
   - type: TimerTriggerVisuals
     primingSound:
       path: "/Audio/_Battlefield14/Weapons/Grenades/trigger1.ogg"
@@ -359,8 +397,34 @@
       collection: FragGrenadeSFX
 
 - type: entity
+  id: BulletGrenadeF1Fragment
+  name: F1 grenade fragment
+  parent: BaseBulletTrigger
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Slash: 8
+        Piercing: 8
+  - type: StaminaDamageOnCollide
+    damage: 6 # ~17 hits to stun
+    deleteOnCollide: true
+  - type: Sprite
+    sprite: _Mono/Objects/SpaceArtillery/50_armorpiercing_machinegun_casing.rsi
+    layers:
+    - state: base-projectile
+    scale: 0.4, 0.4
+  - type: TimedDespawn
+    lifetime: 1
+  - type: PointLight
+    radius: 1
+    color: orange
+    energy: 0.2
+
+- type: entity
   name: RGO Offensive Impact grenade
-  description: What does this even stand for? Russian Grenade something? oh well, chuck it and it blows up.
+  description: What does this even stand for? Russian Grenade something? oh well, pull the pin, chuck it, and it blows up.
   parent: BaseItem
   id: RGOImpactHandgrenade
   components:
@@ -392,11 +456,12 @@
       path: /Audio/_Battlefield14/Weapons/Grenades/disable1.ogg
   - type: Damageable
     damageContainer: Inorganic
+    damageModifierSet: Grenade
   - type: Destructible
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 10
+        damage: 20
       behaviors:
       - !type:TriggerBehavior
       - !type:DoActsBehavior
@@ -406,13 +471,13 @@
     - type: DamageOnLand
       damage:
         types:
-          Blunt: 50
+          Blunt: 60
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: Default
-    maxIntensity: 100
-    intensitySlope: 4
-    totalIntensity: 100
+    maxIntensity: 10
+    intensitySlope: 3
+    totalIntensity: 80
     canCreateVacuum: false
   - type: EmitSoundOnPickup
     sound: /Audio/_Battlefield14/Weapons/Grenades/grab1.ogg

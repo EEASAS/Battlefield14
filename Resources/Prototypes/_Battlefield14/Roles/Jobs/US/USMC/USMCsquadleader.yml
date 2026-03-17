@@ -60,9 +60,11 @@
   storage:
     back:
     - ArmorPlateMedium
+    - HandheldStationMapUnpowered
     - ClothingMaskGasM40
     - FlashlightMilitaryUS
     - MagazinePistolM9
     - MagazinePistolM9
+    - Whistle
     - Tourniquet
     - Zipties

@@ -58,6 +58,7 @@
     back:
     - FlashlightMilitaryAlt
     - ClothingMaskGasRussia
-    - Binoculars
+    - Rangefinder
+    - HandheldStationMapUnpowered
     - Tourniquet
     - Zipties

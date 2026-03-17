@@ -34,6 +34,7 @@
   - NATOCommon
   - NATOCommand
   - NATOMaintenance
+  - NATOMedical
   - NATOArmory
   - NATOCrew
 
@@ -46,14 +47,15 @@
     shoes: ClothingShoesBootsJackFilled
     back: ClothingBackpackSecurity
     belt: ClothingBeltAssaultFilledToolsSRD
+    outerClothing: ClothingOuterArmorWebVestSec
     gloves: ClothingHandsGlovesCombat
-    pocket1: WeaponPistolM9
+    suitstorage: WeaponSubmachinegunUSMP5
     pocket2: PouchFirstAidFilled
   storage:
     back:
     - ClothingMaskGasM40
     - FlashlightMilitaryUS
-    - MagazinePistolM9
-    - MagazinePistolM9
+    - MagazineSubmachinegunMP5
+    - MagazineSubmachinegunMP5
     - Tourniquet
     - Zipties

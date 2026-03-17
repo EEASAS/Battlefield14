@@ -2,16 +2,16 @@
   name: FUBAR
   parent: BaseItem
   id: FUBAR
-  description: The BAR that fucks you up beyond all recognition. Cam be used to pry open unpowered airlocks and unanchor things.
+  description: The BAR that fucks you up beyond all recognition. Can be used to pry open airlocks and unanchor things.
   components:
   - type: Sprite
     sprite: _NF/Objects/Tools/maintenance-jack.rsi
     state: icon
   - type: MeleeWeapon
     heavyStaminaCost: 20
-    wideAnimationRotation: -45
+    wideAnimationRotation: -90
     swingLeft: true
-    attackRate: 0.75
+    attackRate: 0.6
     damage:
       types:
         Blunt: 10
@@ -29,14 +29,14 @@
     damage:
       types:
         Blunt: 35
-        Structural: 35
+        Structural: 95
   - type: PhysicalComposition
     materialComposition: 
       Steel: 200
   - type: Item
     size: Large
   - type: Clothing
-    sprite: Objects/Weapons/Melee/fireaxe.rsi # Lazy NF guy. heres a tip, just rotate the inhand sprite 90 degrees lol
+    sprite: _NF/Objects/Tools/maintenance-jack.rsi
     quickEquip: false
     slots:
     - back
@@ -45,11 +45,11 @@
   - type: Tool
     qualities:
       - Prying
-#      - Axing
       - Anchoring
     speedModifier: 1.2
     useSound: /Audio/Items/crowbar.ogg
   - type: Prying
     useSound: /Audio/Items/crowbar.ogg
+    pryPowered: true
   - type: UseDelay
     delay: 1

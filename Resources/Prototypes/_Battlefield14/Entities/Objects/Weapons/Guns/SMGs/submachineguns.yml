@@ -210,3 +210,74 @@
     steps: 1
     zeroVisible: true
   - type: Appearance
+
+- type: entity
+  name: Vladistokyov
+  parent: BaseWeaponSubMachineGun
+  id: WeaponSubmachinegunRUVlad
+  description: A couple pipes slapped together into a "working" firearm. Despite it's.. lackluster craftsmanship, you don't want to be on the wrong end of this piece.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/vlad.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/vlad.rsi
+  - type: Gun
+    minAngle: 3
+    maxAngle: 30
+    fireRate: 15
+    angleIncrease: 2.2
+    angleDecay: 20
+    projectileSpeed: 35 # pistol caliber
+    availableModes:
+    - FullAuto
+    soundGunshot:
+      collection: BF_MP5_Gunshots
+      params:
+        volume: -5
+  - type: ChamberMagazineAmmoProvider
+    soundRack:
+      path: /Audio/_Battlefield14/Weapons/Guns/MP5/uc_mp5_rack.ogg
+      params:
+        volume: -3
+    soundBoltClosed:
+      path: /Audio/_Battlefield14/Weapons/Guns/MP5/uc_mp5_slap.ogg
+      params:
+        volume: -3
+    soundBoltOpened:
+      path: /Audio/_Battlefield14/Weapons/Guns/MP5/uc_mp5_chlock.ogg
+      params:
+        volume: -3
+        variation: 0.125
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazineSubmachinegunVlad
+        insertSound: /Audio/_Battlefield14/Weapons/Guns/MP5/uc_mp5_magin.ogg
+        ejectSound: /Audio/_Battlefield14/Weapons/Guns/MP5/uc_mp5_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MagazinePistolVlad
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: BF_CartridgePistol9x19
+        priority: 1
+        whitelist:
+          tags:
+            - BF_CartridgePistol9x19
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: Appearance

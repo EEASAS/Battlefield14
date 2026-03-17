@@ -18,17 +18,23 @@ uplink-PACTRU-sv98crate-desc = A crate of two SV-98 7.62x54mmR sniper rifles and
 uplink-PACTRU-KSKcrate-name = KS-K x2
 uplink-PACTRU-KSKcrate-desc = Two KS-K semi-automatic 12 gauge magfed shotguns and two boxes of buckshot and one box of slug ammunition.
 
+uplink-PACTRU-KS23Mcrate-name = KS-23M x2
+uplink-PACTRU-KS23Mcrate-desc = Two KS-23M pump-action 4 gauge shotguns and four boxes of buckshot and two boxes of slug ammunition.
+
 uplink-PACTRU-RPG7crate-name = RPG-7 x2
 uplink-PACTRU-RPG7crate-desc = Two RPG-7 rocket launchers, comes with 4 frag and 4 HEAT rounds.
 
 uplink-PACTRU-RPG30crate-name = RPG-30 x5
 uplink-PACTRU-RPG30crate-desc = 5 disposable RPG-30 105mm HEAT launchers.
 
-uplink-PACTRU-rshg1crate-name = RShG-1 x5
-uplink-PACTRU-rshg1crate-desc = 5 disposable RShG-1 thermobaric launchers.
+uplink-PACTRU-rshg2crate-name = RShG-2 x5
+uplink-PACTRU-rshg2crate-desc = 5 disposable RShG-2 thermobaric launchers.
 
 uplink-PACTRU-RPOAShmelcrate-name = RPO-A Shmel x5
 uplink-PACTRU-RPOAShmelcrate-desc = 5 disposable RPO-A thermobaric launchers.
+
+uplink-PACTRU-GM94crate-name = GM-94 x2
+uplink-PACTRU-GM94crate-desc = 2 GM-94 pump-action grenade launchers, along with two boxes each of HE-Frag, Thermobaric, and chemical smoke grenades.
 
 ## Ammo
 
@@ -81,10 +87,19 @@ uplink-PACTRU-rgo-box-name = RGO Grenade box
 uplink-PACTRU-rgo-box-desc = Contains 8 RGO offensive high explosive impact grenades.
 
 uplink-PACTRU-zarya-box-name = Zarya Flashbang Grenade box
-uplink-PACTRU-zarya-box-desc = Contains 8 RGO 'zarya' flashbang grenades.
+uplink-PACTRU-zarya-box-desc = Contains 8 'zarya' flashbang grenades.
 
 uplink-PACTRU-rdg2-box-name = RDG-2 Grenade box
 uplink-PACTRU-rdg2-box-desc = Contains 8 RDG-2 smoke grenades.
+
+uplink-PACTRU-43x30-box-HEFrag-name = 43x30 HE-Frag Grenade box
+uplink-PACTRU-43x30-box-HEFrag-desc = Contains 8 43x30 high explosive fragmenting grenades.
+
+uplink-PACTRU-43x30-box-Thermobaric-name = 43x30 Thermobaric Grenade box
+uplink-PACTRU-43x30-box-Thermobaric-desc = Contains 8 43x30 thermobaric grenades.
+
+uplink-PACTRU-43x30-box-ChemicalSmoke-name = 43x30 CS gas Grenade box
+uplink-PACTRU-43x30-box-ChemicalSmoke-desc = Contains 8 43x30 chemical smoke grenades.
 
 ## Ship ammo
 

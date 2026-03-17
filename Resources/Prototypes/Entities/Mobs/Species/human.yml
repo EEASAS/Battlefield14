@@ -44,7 +44,7 @@
       behaviors:
       - !type:PlaySoundBehavior
         sound:
-          collection: GruntUSOuchClean
+          collection: GruntUSPainClean
           params:
             volume: 5
     - trigger:
@@ -53,7 +53,7 @@
       behaviors:
       - !type:PlaySoundBehavior
         sound:
-          collection: GruntUSOuchClean
+          collection: GruntUSHitClean
           params:
             volume: 5
     - trigger:

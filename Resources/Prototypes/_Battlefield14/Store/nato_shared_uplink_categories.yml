@@ -155,7 +155,7 @@
   productEntity: ClothingBeltMacheteFilled
   icon: { sprite: _Battlefield14/Clothing/Belt/machetebelt.rsi, state: icon }
   cost:
-    NATORequisition: 15 # 2 minutes 30 seconds
+    NATORequisition: 8 # 1 minute 20 seconds
   categories:
     - UplinkNATOUSUtility
   conditions:

@@ -1,16 +1,16 @@
 meta:
   format: 7
-  category: Grid
+  category: Map
   engineVersion: 264.0.0
   forkId: ""
   forkVersion: ""
-  time: 02/14/2026 13:36:25
-  entityCount: 20896
-maps: []
+  time: 03/13/2026 02:07:37
+  entityCount: 20897
+maps:
+- 20897
 grids:
 - 1
-orphans:
-- 1
+orphans: []
 nullspace: []
 tilemap:
   0: Space
@@ -52,7 +52,7 @@ entities:
       name: Independant 'Box' station
     - type: Transform
       pos: -92,-82
-      parent: invalid
+      parent: 20897
     - type: MapGrid
       chunks:
         0,4:
@@ -3317,8 +3317,8 @@ entities:
     - type: GridPathfinding
     - type: SpreaderGrid
       spreadQueues:
-        Smoke: []
         Puddle: []
+        Smoke: []
         MetalFoam: []
         Kudzu: []
     - type: GravityShake
@@ -3574,7 +3574,7 @@ entities:
             1: 13104
           39,4:
             0: 36488
-            4: 4353
+            2: 4353
           40,5:
             0: 4120
             1: 61152
@@ -4708,7 +4708,7 @@ entities:
             1: 65518
           24,7:
             1: 11
-            2: 52224
+            3: 52224
           21,9:
             1: 62136
           21,10:
@@ -4978,7 +4978,7 @@ entities:
           24,6:
             1: 3822
           24,8:
-            2: 12
+            3: 12
             0: 3584
           25,5:
             1: 65535
@@ -4986,11 +4986,11 @@ entities:
             1: 4095
           25,7:
             1: 15
-            2: 4352
-            3: 52224
+            3: 4352
+            4: 52224
           25,8:
-            2: 1
-            3: 12
+            3: 1
+            4: 12
             0: 3840
           26,5:
             1: 65331
@@ -4999,9 +4999,9 @@ entities:
             1: 1023
           26,7:
             1: 52239
-            3: 4352
+            4: 4352
           26,8:
-            3: 1
+            4: 1
             1: 12
             0: 3840
           27,5:
@@ -5064,9 +5064,9 @@ entities:
             1: 7
             0: 3976
           28,10:
-            4: 1911
+            2: 1911
           28,11:
-            4: 1911
+            2: 1911
           25,13:
             1: 56797
           25,14:
@@ -5096,7 +5096,7 @@ entities:
           28,12:
             5: 1911
           28,13:
-            4: 1911
+            2: 1911
           28,14:
             0: 15
             1: 3840
@@ -5768,7 +5768,7 @@ entities:
             0: 35016
           37,4:
             0: 13874
-            4: 2176
+            2: 2176
           38,3:
             0: 240
           36,6:
@@ -5787,10 +5787,10 @@ entities:
           37,5:
             0: 546
           38,4:
-            4: 64401
+            2: 64401
             0: 1032
           38,5:
-            4: 79
+            2: 79
             0: 16384
           38,6:
             1: 4096
@@ -5950,25 +5950,6 @@ entities:
           temperature: 293.15
           moles:
           - 0
-          - 6666.982
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-        - volume: 2500
-          temperature: 293.15
-          moles:
-          - 6666.982
           - 0
           - 0
           - 0
@@ -5988,6 +5969,25 @@ entities:
           temperature: 293.15
           moles:
           - 0
+          - 6666.982
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+        - volume: 2500
+          temperature: 293.15
+          moles:
+          - 6666.982
           - 0
           - 0
           - 0
@@ -6042,6 +6042,16 @@ entities:
           - 0
           - 0
         chunkSize: 4
+  - uid: 20897
+    components:
+    - type: MetaData
+      name: Map Entity
+    - type: Transform
+    - type: Map
+      mapPaused: True
+    - type: GridTree
+    - type: Broadphase
+    - type: OccluderTree
 - proto: AccordionInstrument
   entities:
   - uid: 20578
@@ -81970,6 +81980,10 @@ entities:
     components:
     - type: Transform
       parent: 11051
+    - type: SpecialRespawn
+      stationMap:
+      - 20897
+      - 1
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
@@ -86450,12 +86464,6 @@ entities:
     - type: Transform
       pos: 83.5,136.5
       parent: 1
-    - type: RandomSpawner
-      prototypes:
-      - CratePowerWeaponFilledM107
-      - CratePowerWeaponFilledUSAS12
-      - CratePowerWeaponFilledAEK971
-      - CratePowerWeaponFilledXM25
 - proto: RandomVendingDrinks
   entities:
   - uid: 12958
@@ -91186,11 +91194,41 @@ entities:
     - type: Transform
       pos: 85.71967,136.57559
       parent: 1
+    - type: Blocking
+      expandShape:
+        shape: !type:PolygonShape
+          radius: 0.01
+          vertices:
+          - -0.5,-0.5
+          - 0.5,-0.5
+          - 0.5,0.5
+          - -0.5,0.5
+        mask: []
+        layer: []
+        density: 1
+        hard: True
+        restitution: 0
+        friction: 0.4
   - uid: 6515
     components:
     - type: Transform
       pos: 85.71967,136.57559
       parent: 1
+    - type: Blocking
+      expandShape:
+        shape: !type:PolygonShape
+          radius: 0.01
+          vertices:
+          - -0.5,-0.5
+          - 0.5,-0.5
+          - 0.5,0.5
+          - -0.5,0.5
+        mask: []
+        layer: []
+        density: 1
+        hard: True
+        restitution: 0
+        friction: 0.4
 - proto: RiotShield
   entities:
   - uid: 6511
@@ -91198,16 +91236,61 @@ entities:
     - type: Transform
       pos: 86.26655,136.4974
       parent: 1
+    - type: Blocking
+      expandShape:
+        shape: !type:PolygonShape
+          radius: 0.01
+          vertices:
+          - -0.5,-0.5
+          - 0.5,-0.5
+          - 0.5,0.5
+          - -0.5,0.5
+        mask: []
+        layer: []
+        density: 1
+        hard: True
+        restitution: 0
+        friction: 0.4
   - uid: 6524
     components:
     - type: Transform
       pos: 86.26655,136.4974
       parent: 1
+    - type: Blocking
+      expandShape:
+        shape: !type:PolygonShape
+          radius: 0.01
+          vertices:
+          - -0.5,-0.5
+          - 0.5,-0.5
+          - 0.5,0.5
+          - -0.5,0.5
+        mask: []
+        layer: []
+        density: 1
+        hard: True
+        restitution: 0
+        friction: 0.4
   - uid: 6525
     components:
     - type: Transform
       pos: 86.26655,136.4974
       parent: 1
+    - type: Blocking
+      expandShape:
+        shape: !type:PolygonShape
+          radius: 0.01
+          vertices:
+          - -0.5,-0.5
+          - 0.5,-0.5
+          - 0.5,0.5
+          - -0.5,0.5
+        mask: []
+        layer: []
+        density: 1
+        hard: True
+        restitution: 0
+        friction: 0.4
 - proto: RMCGlassesTriMaxYellowNohud
   entities:
   - uid: 20896

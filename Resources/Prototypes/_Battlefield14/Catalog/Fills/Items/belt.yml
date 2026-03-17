@@ -311,9 +311,9 @@
   - type: StorageFill
     contents:
       - id: HandheldHealthAnalyzerUnpowered
+      - id: AU14HemostaticGauzePacket
       - id: Brutepack
       - id: Ointment
-      - id: Gauze
       - id: SyringeSaline
       - id: SyringeInaprovaline
       - id: PillCanisterTricordrazine

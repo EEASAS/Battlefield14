@@ -11,6 +11,9 @@
   id: BF_CartridgePDW46x30
 
 - type: Tag
+  id: BF_CartridgeRifle127x55
+
+- type: Tag
   id: BF_CartridgeRifle556x45
 
 - type: Tag
@@ -65,6 +68,9 @@
   id: MagazineRifleAK74
 
 - type: Tag
+  id: MagazineRifleASH12
+
+- type: Tag
   id: MagazineRifleASVAL
 
 - type: Tag
@@ -99,6 +105,9 @@
 
 - type: Tag
   id: MagazinePistolVityaz
+
+- type: Tag
+  id: MagazinePistolVlad
 
 - type: Tag
   id: MagazineShotgunKSK
@@ -150,3 +159,9 @@
 
 - type: Tag
   id: FitsInVoidsuitKit
+
+- type: Tag
+  id: Cartridge43x30mmGrenade
+
+- type: Tag
+  id: Cartridge43x30mmChemicalSmoke

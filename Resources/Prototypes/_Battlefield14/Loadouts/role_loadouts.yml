@@ -41,7 +41,6 @@
   - BF_CombatMasks
   - BF_SoldierGloves
   - BF_NATOIFF
-  - BF_GoggleCover
   - ContractorWallet
 
 - type: roleLoadout
@@ -116,7 +115,6 @@
   - BF_CombatMasks
   - BF_SoldierGloves
   - BF_PACTIFF
-  - BF_GoggleCover
   - BF_VDVHead
   - ContractorWallet
 

@@ -130,3 +130,51 @@
       map: ["enum.AmmoVisualLayers.Base"]
   - type: Appearance
   - type: SpentAmmoVisuals
+
+- type: entity
+  id: BF_CartridgeRifle127x55
+  name: cartridge (12.7x55)
+  parent: BaseCartridge
+  components:
+  - type: Tag
+    tags:
+    - Cartridge
+    - BF_CartridgeRifle127x55
+  - type: CartridgeAmmo
+    proto: BulletRifleBF127x55
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Ammunition/Casings/large_casing.rsi
+    layers:
+    - state: base
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+
+- type: entity
+  id: BF_CartridgeRifle127x55Duplex
+  name: cartridge (12.7x55) duplex
+  parent: BaseCartridge
+  components:
+  - type: Tag
+    tags:
+    - Cartridge
+    - BF_CartridgeRifle127x55
+  - type: CartridgeAmmo
+    proto: BulletRifleBF127x55Duplex_Spread
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Ammunition/Casings/large_casing.rsi
+    layers:
+    - state: base
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+
+- type: entity
+  id: BulletRifleBF127x55Duplex_Spread
+  categories: [ HideSpawnMenu ]
+  parent: BulletRifleBF127x55Duplex
+  components:
+  - type: ProjectileSpread
+    proto: BulletRifleBF127x55Duplex
+    count: 2
+    spread: 2

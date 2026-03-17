@@ -87,3 +87,31 @@
   - "/Audio/_Battlefield14/Weapons/Guns/MP7/uc_mp7_fire-04.ogg"
   - "/Audio/_Battlefield14/Weapons/Guns/MP7/uc_mp7_fire-05.ogg"
   - "/Audio/_Battlefield14/Weapons/Guns/MP7/uc_mp7_fire-06.ogg"
+
+- type: soundCollection
+  id: BF_SPAS12_Gunshots # SPAS-12 - Used for SPAS-12
+  files:
+  - "/Audio/_Battlefield14/Weapons/Guns/SPAS12/uc_spas12_fire-01.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/SPAS12/uc_spas12_fire-02.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/SPAS12/uc_spas12_fire-03.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/SPAS12/uc_spas12_fire-04.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/SPAS12/uc_spas12_fire-05.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/SPAS12/uc_spas12_fire-06.ogg"
+
+- type: soundCollection
+  id: BF_SPAS12_ShellIn # SPAS-12 - Used for SPAS-12
+  files:
+  - "/Audio/_Battlefield14/Weapons/Guns/SPAS12/uc_spas12_shell-insert-01.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/SPAS12/uc_spas12_shell-insert-02.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/SPAS12/uc_spas12_shell-insert-03.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/SPAS12/uc_spas12_shell-insert-04.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/SPAS12/uc_spas12_shell-insert-05.ogg"
+
+- type: soundCollection
+  id: BF_FAL_Gunshots # FAL - Used for ASH-12
+  files:
+  - "/Audio/_Battlefield14/Weapons/Guns/FAL/uc_fal_fire-01.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/FAL/uc_fal_fire-02.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/FAL/uc_fal_fire-03.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/FAL/uc_fal_fire-04.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/FAL/uc_fal_fire-05.ogg"

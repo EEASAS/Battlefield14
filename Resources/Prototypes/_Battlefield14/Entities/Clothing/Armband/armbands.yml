@@ -1,9 +1,49 @@
+# Storage
+
+- type: entity
+  parent: ClothingArmbandBase
+  id: ClothingArmbandDumpPouchBlack
+  name: black dump pouch
+  description: A small bag which you can strap on your leg, able to store small items such as loose shot shells, tools, or empty magazines.
+  components:
+  - type: Item
+    size: Large
+  - type: Sprite
+    sprite: _Battlefield14/Clothing/Accessories/dumppouchblack.rsi
+  - type: Clothing
+    sprite: _Battlefield14/Clothing/Accessories/dumppouchblack.rsi
+    clothingVisuals:
+      leftarmband:
+      - state: equipped-ARMBANDLEFT
+      rightarmband:
+      - state: equipped-ARMBANDRIGHT
+  - type: Storage
+    grid:
+    - 0,0,2,1
+    maxItemSize: Small
+  - type: ContainerContainer
+    containers:
+      storagebase: !type:Container
+        ents: []
+  - type: UserInterface
+    interfaces:
+      enum.StorageUiKey.Key:
+        type: StorageBoundUserInterface
+  - type: UseDelay # to prevent bag open/honk spam
+    delay: 0.5
+  - type: ExplosionResistance
+    damageCoefficient: 0.9
+
+# Holsters/Sheaths
+
 - type: entity
   parent: ClothingArmbandBase
   id: ClothingArmbandSheathKnifePolymer
   name: polymer knife sheath
   description: A rigid polymer sheath which you can strap on your leg.
   components:
+  - type: Item
+    size: Normal
   - type: Sprite
     sprite: _Battlefield14/Clothing/Accessories/knifesheathpolymer.rsi
   - type: Clothing
@@ -22,7 +62,7 @@
           - Knife
 
 - type: entity
-  parent: ClothingArmbandBase
+  parent: ClothingArmbandSheathKnifePolymer
   id: ClothingArmbandThighHolster
   name: thigh holster
   description: A drop leg holster made of a durable synthetic fiber.
@@ -31,11 +71,6 @@
     sprite: _Battlefield14/Clothing/Accessories/thighholster.rsi
   - type: Clothing
     sprite: _Battlefield14/Clothing/Accessories/thighholster.rsi
-    clothingVisuals:
-      leftarmband:
-      - state: equipped-ARMBANDLEFT
-      rightarmband:
-      - state: equipped-ARMBANDRIGHT
   - type: ItemSlots
     slots:
       item:
@@ -44,12 +79,16 @@
           tags:
           - Sidearm
 
+# Misc
+
 - type: entity
   parent: ClothingArmbandBase
   id: ClothingArmbandMassScanner
   name: wrist-mounted mass scanner
   description: A portable radar mounted on the wrist for easy access at any time.
   components:
+  - type: Item
+    size: Normal
   - type: Sprite
     sprite: _Battlefield14/Clothing/Accessories/wristscanner.rsi
   - type: Clothing

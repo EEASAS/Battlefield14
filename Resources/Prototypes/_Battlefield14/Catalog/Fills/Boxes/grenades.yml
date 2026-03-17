@@ -96,6 +96,7 @@
       - state: flashbang
 
 # 40x46mm
+
 - type: entity
   name: box of 40x46 HE grenades
   parent: BoxMagazine
@@ -309,6 +310,50 @@
     layers:
       - state: box_security
       - state: flashbang
+
+# 43x30mm
+
+- type: entity
+  name: box of 43x30mm HE-Frag grenades
+  parent: BoxMagazine
+  id: BoxMagazine43x30HEFrag
+  description: A box full of high explosive fragmenting 43x30mm grenades.
+  components:
+  - type: Storage
+    grid:
+    - 0,0,3,3
+  - type: StorageFill
+    contents:
+      - id: Cartridge43x30mmHEFrag
+        amount: 8
+
+- type: entity
+  name: box of 43x30mm thermobaric grenades
+  parent: BoxMagazine
+  id: BoxMagazine43x30Thermobaric
+  description: A box full of thermobaric 43x30mm grenades.
+  components:
+  - type: Storage
+    grid:
+    - 0,0,3,3
+  - type: StorageFill
+    contents:
+      - id: Cartridge43x30mmThermobaric
+        amount: 8
+
+- type: entity
+  name: box of 43x30mm CS gas grenades
+  parent: BoxMagazine
+  id: BoxMagazine43x30ChemicalSmoke
+  description: A box full of CS gas 43x30mm grenades.
+  components:
+  - type: Storage
+    grid:
+    - 0,0,3,3
+  - type: StorageFill
+    contents:
+      - id: Cartridge43x30mmChemicalSmoke
+        amount: 8
 
 ## Charges
 

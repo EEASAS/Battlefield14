@@ -59,6 +59,7 @@
     back:
     - ClothingMaskGasM40
     - FlashlightMilitaryUS
-    - Binoculars
+    - Rangefinder
+    - HandheldStationMapUnpowered
     - Tourniquet
     - Zipties

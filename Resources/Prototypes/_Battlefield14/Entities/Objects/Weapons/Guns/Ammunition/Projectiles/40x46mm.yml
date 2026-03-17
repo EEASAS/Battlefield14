@@ -10,15 +10,15 @@
     damage:
       types:
         Structural: 80
-        Blunt: 50
+        Blunt: 40
     deleteOnCollide: false
   - type: SmokeOnTrigger
     duration: 40
-    spreadAmount: 60
+    spreadAmount: 20
     smokePrototype: Smoke
     solution:
       reagents:
-      - ReagentId: TearGas
+      - ReagentId: CSGas
         Quantity: 50
   - type: Sprite
     sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi

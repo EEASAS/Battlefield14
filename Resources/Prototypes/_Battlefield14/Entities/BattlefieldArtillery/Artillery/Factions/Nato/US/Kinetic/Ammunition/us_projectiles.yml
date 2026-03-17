@@ -47,7 +47,7 @@
         Piercing: 80
     armorPenetration: 1
 #    penetrationThreshold: 300
-    deleteOnCollide: false
+    deleteOnCollide: true
   - type: StaminaDamageOnCollide
     damage: 40 # ~3 hits to stun
   - type: ArmorPiercing
@@ -82,12 +82,12 @@
         Structural: 70
         Piercing: 70
     armorPenetration: 1
+    deleteOnCollide: true
   - type: StaminaDamageOnCollide
     damage: 60 # ~2 hits to stun
     penetrationThreshold: 200
   - type: ArmorPiercing
     piercingThickness: 1
-    deleteOnCollide: false
   - type: Sprite
     sprite: _Mono/Objects/SpaceArtillery/50_armorpiercing_machinegun_casing.rsi
     layers:
@@ -188,7 +188,7 @@
         Structural: 140
         Piercing: 180
     penetrationThreshold: 700
-    deleteOnCollide: false
+    deleteOnCollide: true
   - type: Sprite
     sprite: _Mono/Objects/SpaceArtillery/57_shell.rsi
     layers:
@@ -235,7 +235,7 @@
     plasmaAmount: 0
   - type: ExplodeOnTrigger
   - type: Explosive
-    explosionType: Default
+    explosionType: MicroBomb
     totalIntensity: 60
     intensitySlope: 3
     maxIntensity: 10
@@ -419,7 +419,7 @@
     deleteOnCollide: true
   - type: ExplodeOnTrigger
   - type: Explosive
-    explosionType: Default
+    explosionType: MicroBomb
     totalIntensity: 120
     intensitySlope: 4
     maxIntensity: 20
@@ -451,7 +451,7 @@
   - type: Projectile
     damage:
       types:
-        Structural: 80
+        Structural: 110
         Piercing: 40
     deleteOnCollide: false
   - type: ArmorPiercing
@@ -464,7 +464,7 @@
     plasmaAmount: 0
   - type: ExplodeOnTrigger
   - type: Explosive
-    explosionType: Default
+    explosionType: MicroBomb
     totalIntensity: 150
     intensitySlope: 5
     maxIntensity: 25
@@ -537,6 +537,8 @@
         Slash: 10
         Piercing: 10
     deleteOnCollide: true
+  - type: StaminaDamageOnCollide
+    damage: 6 # ~17 hits to stun
   - type: Sprite
     sprite: _Mono/Objects/SpaceArtillery/50_armorpiercing_machinegun_casing.rsi
     layers:
@@ -568,9 +570,9 @@
         Structural: 20
         Slash: 10
         Piercing: 10
-  - type: StaminaDamageOnCollide
-    damage: 4 # ~25 hits to stun
     deleteOnCollide: true
+  - type: StaminaDamageOnCollide
+    damage: 6 # ~17 hits to stun
   - type: Sprite
     sprite: _Mono/Objects/SpaceArtillery/50_armorpiercing_machinegun_casing.rsi
     layers:
@@ -684,7 +686,7 @@
     deleteOnCollide: true
   - type: ExplodeOnTrigger
   - type: Explosive
-    explosionType: Default
+    explosionType: MicroBomb
     totalIntensity: 180
     intensitySlope: 5
     maxIntensity: 30
@@ -885,7 +887,7 @@
     smokePrototype: Smoke
     solution:
       reagents:
-      - ReagentId: TearGas
+      - ReagentId: CSGas
         Quantity: 50
   - type: Sprite
     sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
@@ -903,4 +905,3 @@
     requireNoGrid: true
     shape: triangle
     radarColor: "#666666"
-

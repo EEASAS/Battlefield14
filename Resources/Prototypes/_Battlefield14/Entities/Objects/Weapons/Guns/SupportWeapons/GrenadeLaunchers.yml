@@ -192,3 +192,64 @@
     maxOffset: 5
     pvsIncrease: 0.25
   - type: GunRequiresWield
+
+# PACT
+
+- type: entity
+  name: GM-94
+  parent: [BaseWeaponLauncher, BaseGunWieldable]
+  id: WeaponGrenadeLauncherRUGM94
+  description: An odd design, loaded from the top into a magazine tube, and then pumped, like a shotgun. Brings to mind the M90A from Halo™.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/GrenadeLaunchers/GM94.rsi
+    layers:
+      - state: icon
+        map: ["enum.GunVisualLayers.Base"]
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/GrenadeLaunchers/GM94.rsi
+    slots:
+    - Back
+    - suitStorage
+  - type: AmmoCounter
+  - type: Gun
+    fireRate: 0.75
+    selectedMode: SemiAuto
+    availableModes:
+      - SemiAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/grenade_launcher.ogg
+  - type: BallisticAmmoProvider
+    autoCycle: false
+    whitelist:
+      tags:
+        - Cartridge43x30mmGrenade
+    capacity: 3
+#    proto: Cartridge43x30mmHEFrag
+    soundInsert:
+      path: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
+  - type: GunRequiresWield
+
+- type: entity
+  parent: WeaponGrenadeLauncherRUGM94
+  id: WeaponGrenadeLauncherRUGM94HEFrag
+  suffix: HE-Frag
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge43x30mmHEFrag
+
+- type: entity
+  parent: WeaponGrenadeLauncherRUGM94
+  id: WeaponGrenadeLauncherRUGM94Thermobaric
+  suffix: Thermobaric
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge43x30mmThermobaric
+
+- type: entity
+  parent: WeaponGrenadeLauncherRUGM94
+  id: WeaponGrenadeLauncherRUGM94ChemicalSmoke
+  suffix: CS Gas
+  components:
+  - type: BallisticAmmoProvider
+    proto: Bullet43x30mmChemicalSmokeInfantry

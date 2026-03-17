@@ -166,7 +166,7 @@
     soundGunshot:
       collection: BF_Galil_Gunshots_SUPP
       params:
-        volume: -10
+        volume: -12
         variation: 0.125
     fireRate: 7
   - type: Appearance
@@ -308,7 +308,7 @@
   name: AKS-74u
   parent: BaseWeaponSubMachineGun
   id: WeaponRifleRUAKS74U
-  description: You know when they decided to bring this out? Afghanistan, rough.
+  description: You know when they decided to bring this out? Afghanistan. Rough.
   components:
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AKS74u.rsi
@@ -323,11 +323,11 @@
     unwieldOnUse: false
   - type: GunWieldBonus
     minAngle: -14
-    maxAngle: -16
+    maxAngle: -12
   - type: Gun
     minAngle: 16
     maxAngle: 32
-    angleIncrease: 1
+    angleIncrease: 2
     projectileSpeed: 40 # Shorter barrel
     availableModes:
     - SemiAuto
@@ -381,8 +381,8 @@
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
-#    - state: supp
-#      map: ["enum.GunVisualLayers.Base"]
+    - state: supp
+      offset: 0.1, 0.08
     - state: mag-0
       map: ["enum.GunVisualLayers.Mag"]
   - type: Clothing
@@ -391,13 +391,12 @@
     unwieldOnUse: false
   - type: GunWieldBonus
     minAngle: -14
-    maxAngle: -20
+    maxAngle: -12
   - type: Gun
     minAngle: 16
-    maxAngle: 30
-    fireRate: 6
-    angleIncrease: 1
-    projectileSpeed: 40 # Shorter barrel
+    maxAngle: 32
+    angleIncrease: 2
+    projectileSpeed: 35 # Shorter barrel + suppressed
     availableModes:
     - SemiAuto
     - FullAuto
@@ -455,7 +454,7 @@
   name: AK-12 (Magnifier)
   parent: WeaponRifleRUAK12
   id: WeaponRifleRUAK12Magnified
-  description: A "modernised" '74 pattern rifle, which looks attractive but doesn't advance much farther than the AK74M.
+  description: A "modernised" '74 pattern rifle, which looks attractive but doesn't advance much farther than the AK74M. This one has a magnifier.
   components:
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AK12.rsi
@@ -476,8 +475,6 @@
   id: WeaponRifleRUAKMS
   description: The right arm of the enslaved world.
   components:
-#  - type: Item
-#    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AKMS.rsi
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AKMSnew.rsi
     layers:
@@ -604,20 +601,21 @@
     unwieldOnUse: false
   - type: GunWieldBonus
     minAngle: -14
-    maxAngle: -16
+    maxAngle: -19
   - type: Gun
     minAngle: 16
     maxAngle: 32
+    angleIncrease: 1
     availableModes:
     - SemiAuto
     - FullAuto
     selectedMode: FullAuto
     fireRate: 9
-    projectileSpeed: 35 # subsonic
+    projectileSpeed: 40 # subsonic
     soundGunshot:
       collection: BF_M16_Gunshots_SUPP # Looks weird, but these sound more pew pew than the galil (used by M4A1 SUPP) and this is an ASVAL
       params:
-        volume: -10
+        volume: -13
         variation: 0.125
   - type: ChamberMagazineAmmoProvider
     boltClosed: null # means the bolt doesnt lock back like M16 pattern rifles, also means you need to cycle the gun after an empty mag
@@ -651,3 +649,94 @@
     steps: 1
     zeroVisible: true
   - type: Appearance
+
+- type: entity
+  name: ASH-12
+  parent: BaseWeaponRifle
+  id: WeaponRifleRUASH12
+  description: Also known as the sHAK-12, this weapon was designed to provide the maximum firepower for close quarters combat, and provides it with the monsterous 12.7x55 round.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/ASH12.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/ASH12.rsi
+  - type: Wieldable
+    unwieldOnUse: false
+  - type: GunWieldBonus
+    minAngle: -14
+    maxAngle: -19
+  - type: Gun
+    minAngle: 16
+    maxAngle: 32
+    angleIncrease: 1.5
+    angleDecay: 10
+    availableModes:
+    - SemiAuto
+    - FullAuto
+    selectedMode: FullAuto
+    fireRate: 5
+    projectileSpeed: 50
+    soundGunshot:
+      collection: BF_FAL_Gunshots
+      params:
+        volume: -5
+        variation: 0.125
+  - type: ChamberMagazineAmmoProvider
+    boltClosed: null # means the bolt doesnt lock back like M16 pattern rifles, also means you need to cycle the gun after an empty mag
+    soundRack:
+      path: /Audio/_Battlefield14/Weapons/Guns/FAL/uc_fal_rack.ogg
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazineRifleASH12
+        insertSound: /Audio/_Battlefield14/Weapons/Guns/FAL/uc_fal_magin.ogg
+        ejectSound: /Audio/_Battlefield14/Weapons/Guns/FAL/uc_fal_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MagazineRifleASH12
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: BF_CartridgeRifle127x55
+        priority: 1
+        whitelist:
+          tags:
+            - BF_CartridgeRifle127x55
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: Appearance
+
+- type: entity
+  name: ASH-12 SUPP.
+  parent: WeaponRifleRUASH12
+  id: WeaponRifleRUASH12Suppressed
+  description: Also known as the sHAK-12, this weapon was designed to provide the maximum firepower for close quarters combat, and provides it with the monsterous 12.7x55 round. The suppressor is not for any stealth purpose, but to give you the mercy of not burning your eyes out as your skull gets a new canoe shape.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/ASH12.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: supp
+        offset: 0.19, 0
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Gun
+    soundGunshot:
+      collection: BF_Galil_Gunshots_SUPP
+      params:
+        volume: -8
+        variation: 0.125
