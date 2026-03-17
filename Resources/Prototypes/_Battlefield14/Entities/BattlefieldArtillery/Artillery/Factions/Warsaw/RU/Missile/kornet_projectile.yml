@@ -24,7 +24,7 @@
     plasmaReleaseDelay: 0
   - type: ExplodeOnTrigger
   - type: Explosive
-    explosionType: Default
+    explosionType: DemolitionCharge
     totalIntensity: 350
     intensitySlope: 8
     maxIntensity: 50

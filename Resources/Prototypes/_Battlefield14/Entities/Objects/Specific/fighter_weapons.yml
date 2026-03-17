@@ -179,7 +179,7 @@
     energy: 0.5
   - type: ExplodeOnTrigger
   - type: Explosive
-    explosionType: Default
+    explosionType: DemolitionCharge
     totalIntensity: 700
     intensitySlope: 25
     maxIntensity: 100
@@ -292,7 +292,7 @@
     energy: 0.5
   - type: ExplodeOnTrigger
   - type: Explosive
-    explosionType: Default
+    explosionType: MicroBomb
     totalIntensity: 30
     intensitySlope: 1.5
     maxIntensity: 10

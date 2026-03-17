@@ -55,7 +55,7 @@
     plasmaAmount: 0
   - type: ExplodeOnTrigger
   - type: Explosive
-    explosionType: Default
+    explosionType: MicroBomb
     totalIntensity: 70
     intensitySlope: 4
     maxIntensity: 12
@@ -416,7 +416,7 @@
     deleteOnCollide: true
   - type: ExplodeOnTrigger
   - type: Explosive
-    explosionType: Default
+    explosionType: MicroBomb
     totalIntensity: 280
     intensitySlope: 5
     maxIntensity: 35
@@ -455,7 +455,7 @@
     deleteOnCollide: true
   - type: ExplodeOnTrigger
   - type: Explosive
-    explosionType: Default
+    explosionType: DemolitionCharge
     totalIntensity: 180
     intensitySlope: 4
     maxIntensity: 25
@@ -493,7 +493,7 @@
     deleteOnCollide: true
   - type: ExplodeOnTrigger
   - type: Explosive
-    explosionType: Default
+    explosionType: FireBomb
     totalIntensity: 150
     intensitySlope: 4
     maxIntensity: 20

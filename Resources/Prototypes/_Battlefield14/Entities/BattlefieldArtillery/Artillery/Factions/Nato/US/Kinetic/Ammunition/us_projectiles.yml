@@ -235,7 +235,7 @@
     plasmaAmount: 0
   - type: ExplodeOnTrigger
   - type: Explosive
-    explosionType: Default
+    explosionType: MicroBomb
     totalIntensity: 60
     intensitySlope: 3
     maxIntensity: 10
@@ -419,7 +419,7 @@
     deleteOnCollide: true
   - type: ExplodeOnTrigger
   - type: Explosive
-    explosionType: Default
+    explosionType: MicroBomb
     totalIntensity: 120
     intensitySlope: 4
     maxIntensity: 20
@@ -464,7 +464,7 @@
     plasmaAmount: 0
   - type: ExplodeOnTrigger
   - type: Explosive
-    explosionType: Default
+    explosionType: MicroBomb
     totalIntensity: 150
     intensitySlope: 5
     maxIntensity: 25
@@ -686,7 +686,7 @@
     deleteOnCollide: true
   - type: ExplodeOnTrigger
   - type: Explosive
-    explosionType: Default
+    explosionType: MicroBomb
     totalIntensity: 180
     intensitySlope: 5
     maxIntensity: 30
@@ -887,7 +887,7 @@
     smokePrototype: Smoke
     solution:
       reagents:
-      - ReagentId: TearGas
+      - ReagentId: CSGas
         Quantity: 50
   - type: Sprite
     sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
