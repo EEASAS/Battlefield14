@@ -28,4 +28,6 @@
   - type: ShipyardListing
     shuttles:
     - KTV1
+  - type: ShiftTimeLock
+    shiftTime: 10m
 
