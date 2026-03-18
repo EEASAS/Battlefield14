@@ -220,6 +220,21 @@
     access: [["PACTSoldier"]]
 
 - type: entity
+  id: CrateSecgearPACTFilledSVDS
+  suffix: Filled, SVDS
+  parent: CrateSecgear
+  name: SVDS crate
+  components:
+  - type: StorageFill
+    contents:
+        - id: WeaponSniperRUSVDS
+          amount: 2
+        - id: BoxMagazineSVDS
+          amount: 2
+  - type: AccessReader
+    access: [["PACTSoldier"]]
+
+- type: entity
   id: CrateSecgearPACTFilledKSK
   suffix: Filled, KSK
   parent: CrateSecgear

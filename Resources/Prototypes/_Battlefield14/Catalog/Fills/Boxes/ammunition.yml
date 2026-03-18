@@ -186,6 +186,17 @@
         amount: 8
 
 - type: entity
+  name: box of 7.62x54mmR SVDS magazines
+  parent: BoxMagazine
+  id: BoxMagazineSVDS
+  description: A box full of 7.62x54mmR SVDS compatible magazines.
+  components:
+  - type: StorageFill
+    contents:
+      - id: MagazineSniperSVDS
+        amount: 8
+
+- type: entity
   name: box of 12 gauge KS-K buckshot magazines
   parent: BoxMagazine
   id: BoxMagazineKSKBuckshot

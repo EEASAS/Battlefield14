@@ -11,6 +11,9 @@
   id: BF_CartridgePDW46x30
 
 - type: Tag
+  id: BF_CartridgePDW9x21
+
+- type: Tag
   id: BF_CartridgeRifle127x55
 
 - type: Tag
@@ -95,10 +98,16 @@
   id: MagazineSniperM107
 
 - type: Tag
+  id: MagazineSniperSVDS
+
+- type: Tag
   id: MagazinePistolM9
 
 - type: Tag
   id: MagazinePistolMP443
+
+- type: Tag
+  id: MagazinePistolSR1MP
 
 - type: Tag
   id: MagazinePistolMP5

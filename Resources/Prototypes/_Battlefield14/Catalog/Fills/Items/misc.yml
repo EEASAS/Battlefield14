@@ -37,6 +37,16 @@
       - WeaponPistolMP443
 
 - type: entity
+  id: ClothingArmbandThighHolsterFilledRUSR1MP
+  parent: ClothingArmbandThighHolster
+  suffix: Filled, RU, SR1MP
+  components:
+  - type: ContainerFill
+    containers:
+      item:
+      - WeaponPistolRUSR1MP
+
+- type: entity
   id: ClothingArmbandSheathKnifePolymerFilled
   parent: ClothingArmbandSheathKnifePolymer
   suffix: Filled

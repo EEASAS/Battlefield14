@@ -88,6 +88,21 @@
     access: [["PACTSoldier"]]
 
 - type: entity
+  id: LockerArmoryPACTFilledSVDS
+  parent: LockerSyndicatePersonal
+  suffix: Filled, SVDS
+  name: SVDS locker
+  components:
+  - type: StorageFill
+    contents:
+        - id: WeaponSniperRUSVDS
+          amount: 2
+        - id: BoxMagazineSVDS
+          amount: 2
+  - type: AccessReader
+    access: [["PACTSoldier"]]
+
+- type: entity
   id: LockerArmoryPACTFilledAK203
   parent: LockerSyndicatePersonal
   suffix: Filled, AK203

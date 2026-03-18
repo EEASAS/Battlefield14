@@ -138,3 +138,76 @@
   - type: Appearance
   - type: StaticPrice
     price: 3000
+
+- type: entity
+  name: SVDS
+  parent: [BaseWeaponRifle, BaseGunWieldable]
+  id: WeaponSniperRUSVDS
+  description: The first true designated marksman rifle, as with any soviet bloc weapon it has of course had a world tour. Reccomended firing cadence is once per second.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Snipers/SVDS.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/Snipers/SVDS.rsi
+  - type: GunRequiresWield
+  - type: Item
+    shape:
+    - 0,0,5,2
+  - type: GunWieldBonus # needed so min angle doesn't go negative
+    minAngle: 0
+    maxAngle: 0
+  - type: Gun
+    fireRate: 3
+    minAngle: 0
+    maxAngle: 15
+    angleIncrease: 6.5
+    angleDecay: 13
+    projectileSpeed: 50
+    soundGunshot:
+      path: /Audio/_Mono/Weapons/Guns/SmallArms/Gunshots/dmr.ogg
+    selectedMode: SemiAuto
+    availableModes:
+      - SemiAuto
+  - type: ChamberMagazineAmmoProvider
+    boltClosed: null
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazineSniperSVDS
+        insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MagazineSniperSVDS
+      gun_chamber:
+        name: Chamber
+        startingItem: BF_CartridgeRifle762x54r
+        priority: 1
+        whitelist:
+          tags:
+            - BF_CartridgeRifle762x54r
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: CursorOffsetRequiresWield
+  - type: EyeCursorOffset
+    maxOffset: 10
+    pvsIncrease: 0.8
+  - type: SpeedModifiedOnWield
+    walkModifier: 0.80
+    sprintModifier: 0.80
+  - type: Appearance
+  - type: StaticPrice
+    price: 3000

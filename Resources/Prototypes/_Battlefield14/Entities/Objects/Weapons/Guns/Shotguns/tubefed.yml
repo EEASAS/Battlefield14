@@ -17,6 +17,11 @@
   - type: Gun
     fireRate: 2
     projectileSpeed: 35
+    soundGunshot:
+      collection: BF_M870_Gunshots
+      params:
+        volume: -5
+        variation: 0.125
   - type: GunSpreadModifier
     spread: 0.6
   - type: Tag
@@ -29,6 +34,10 @@
       - BF_CartridgeShotgun12Gauge
     capacity: 7
     proto: BF_CartridgeShotgun12GaugeBuckshot
+    soundInsert:
+      collection: BF_M870_ShellIn
+      params:
+        volume: -5
 
 - type: entity
   name: M590
@@ -58,6 +67,10 @@
       - BF_CartridgeShotgun12Gauge
     capacity: 4
     proto: BF_CartridgeShotgun12GaugeBreaching
+    soundInsert:
+      collection: BF_M870_ShellIn
+      params:
+        volume: -5
   - type: AltFireMelee
     attackType: Heavy
   - type: MeleeWeapon
@@ -65,7 +78,7 @@
       types:
        Blunt: 6.7 # idiot
     angle: 0
-    wideAnimationRotation: 90 # -90 if it takes bayonets (hits with muzzle) 90 if not (hits with butt)
+    wideAnimationRotation: -90 # -90 if it takes bayonets (hits with muzzle) 90 if not (hits with butt)
     soundHit:
       collection: MetalThud
 
@@ -102,6 +115,10 @@
       - BF_CartridgeShotgun4Gauge
     capacity: 4
     proto: BF_CartridgeShotgun4GaugeShrap10
+    soundInsert:
+      collection: BF_SPAS12_ShellIn
+      params:
+        volume: -5
 
 - type: entity
   name: SPAS-12
