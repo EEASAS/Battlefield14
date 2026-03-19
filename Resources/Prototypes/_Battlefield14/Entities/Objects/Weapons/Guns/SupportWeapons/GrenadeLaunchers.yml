@@ -260,4 +260,4 @@
   suffix: CS Gas
   components:
   - type: BallisticAmmoProvider
-    proto: Bullet43x30mmChemicalSmoke
+    proto: Cartridge43x30mmChemicalSmoke
