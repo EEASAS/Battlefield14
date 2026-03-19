@@ -39,6 +39,7 @@
     MagazineBox556x45: 5
     MagazineSubmachinegunMP5: 100
     MagazineBox9x19mmBig: 10
+    CrayonBox: 1
 
 - type: vendingMachineInventory
   id: NATOUSMCGearInventory
@@ -117,6 +118,7 @@
     MagazineBox9x19mmBig: 5
     BoxMagazineASVALShort: 5
     BoxMagazineAKM: 2
+    CrayonBox: 1
 
 - type: vendingMachineInventory
   id: PACTVDVGearInventory

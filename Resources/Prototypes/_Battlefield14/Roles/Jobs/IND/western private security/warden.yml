@@ -33,12 +33,15 @@
   - Service
   - External
   - Mercenary # Frontier
-  - Captain # Frontier
+#  - Captain # Frontier
   - Security
   - Brig
   - Armory
   - Command
   - Medical
+  - Cargo
+  - Engineering
+  - Research
 
 - type: startingGear
   id: WPSWardenGear

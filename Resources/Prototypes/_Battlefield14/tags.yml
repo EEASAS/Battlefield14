@@ -110,6 +110,9 @@
   id: MagazinePistolSR1MP
 
 - type: Tag
+  id: MagazineSubmachinegunSR2MP
+
+- type: Tag
   id: MagazinePistolMP5
 
 - type: Tag

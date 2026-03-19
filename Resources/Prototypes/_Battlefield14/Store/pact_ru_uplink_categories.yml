@@ -57,7 +57,23 @@
   productEntity: CrateSecgearPACTFilledSV98
   icon: { sprite: _Battlefield14/Objects/Weapons/Guns/Snipers/SV98.rsi, state: icon }
   cost:
-    PACTRequisition: 9 # 1 minute 30 seconds
+    PACTRequisition: 10 # 1 minute 40 seconds
+  categories:
+    - UplinkPACTRUWeapons
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - RussianUplink
+
+- type: listing
+  id: UplinkPACTRUSVDSCrate
+  name:  uplink-PACTRU-SVDScrate-name
+  description: uplink-PACTRU-SVDScrate-desc
+  productEntity: CrateSecgearPACTFilledSVDS
+  icon: { sprite: _Battlefield14/Objects/Weapons/Guns/Snipers/SVDS.rsi, state: icon }
+  cost:
+    PACTRequisition: 10 # 1 minute 40 seconds
   categories:
     - UplinkPACTRUWeapons
   conditions:
