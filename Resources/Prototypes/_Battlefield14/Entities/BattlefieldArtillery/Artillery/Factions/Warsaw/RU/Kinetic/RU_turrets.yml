@@ -83,7 +83,7 @@
   - type: StaticPrice
     price: 700
   - type: Sprite
-    sprite: _Mono/Objects/ShuttleWeapons/50cal.rsi
+    sprite: _Battlefield14/BattlefieldArtillery/hmg.rsi
     layers:
     - state: space_artillery
   - type: Appearance
