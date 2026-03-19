@@ -296,14 +296,14 @@
   description: Designed alongside the SR1MP to use the new armour penetrating 9x21 round.
   components:
   - type: Sprite
-    sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/MP7.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/SR2MP.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
     - state: mag-0
       map: ["enum.GunVisualLayers.Mag"]
   - type: Clothing
-    sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/MP7.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/SR2MP.rsi
   - type: GunWieldBonus
     minAngle: -2
     maxAngle: -10
@@ -339,13 +339,13 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: MagazinePistolSR2MP
+        startingItem: MagazineSubmachinegunSR2MP
         insertSound: /Audio/_Battlefield14/Weapons/Guns/MP7/uc_mp7_magin.ogg
         ejectSound: /Audio/_Battlefield14/Weapons/Guns/MP7/uc_mp7_magout.ogg
         priority: 2
         whitelist:
           tags:
-            - MagazinePistolSR2MP
+            - MagazineSubmachinegunSR2MP
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
