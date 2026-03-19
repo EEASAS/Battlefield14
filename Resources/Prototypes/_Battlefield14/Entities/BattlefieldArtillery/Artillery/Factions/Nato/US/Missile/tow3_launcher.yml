@@ -4,6 +4,7 @@
   name: TOW-3 Missile System
   parent: BattlefieldArtilleryCartridge
   description: A third generation, wire-guided anti-armor missile system adapted for naval remote launch platforms. Primarily fielded by U.S. vessels and select NATO allies. Highly effective against armored targets at range. Does not rotate.
+  suffix: BF14, NATO, US
   components:
   - type: StaticPrice
     price: 6000

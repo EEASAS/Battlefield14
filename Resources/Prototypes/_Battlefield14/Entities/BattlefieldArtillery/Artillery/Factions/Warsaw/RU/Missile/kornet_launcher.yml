@@ -2,7 +2,7 @@
 - type: entity
   id: WeaponTurretKornetN
   name: Kornet-N Guided Missile System
-  suffix: RU
+  suffix: BF14, PACT, RU
   parent: BattlefieldArtilleryCartridge
   description: An upgrade from the previous 9K111 and 9K113 ATGMs, this missile launcher has been used in all sorts of roles; from an infantry portable anti-tank solution, to mounted onto the latest and greatest helicopters, tanks, and warships that come out of the design beurau. Despite being superior to its previous iterations, they still see use due to its semi-prohibitive cost and weight. Does not rotate.
   components:

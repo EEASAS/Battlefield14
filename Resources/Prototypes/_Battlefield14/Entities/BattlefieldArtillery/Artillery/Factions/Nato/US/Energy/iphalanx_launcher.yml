@@ -4,11 +4,12 @@
   name: iPhalanx Point Defense Laser
   parent: BattlefieldArtillery
   description: An energy-based point defense system standard across U.S. and NATO fleets. Designed to intercept missiles, rockets, and light craft using extreme rates of fire and automated targeting. Uses hitscan laser technology for instant target engagement.
+  suffix: BF14, NATO, US
   components:
   - type: StaticPrice
     price: 2500
   - type: Sprite
-    sprite: _Mono/Objects/ShuttleWeapons/hlgg9.rsi
+    sprite: _Battlefield14/BattlefieldArtillery/pdtlaser.rsi
     layers:
     - state: space_artillery
   - type: Appearance
