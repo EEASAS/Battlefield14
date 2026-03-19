@@ -212,7 +212,15 @@
     - Back
     - suitStorage
   - type: AmmoCounter
+  - type: Wieldable
+    unwieldOnUse: false
+  - type: GunWieldBonus
+    minAngle: 0
+    maxAngle: 0
   - type: Gun
+    minAngle: 3
+    maxAngle: 6
+    angleIncrease: 3
     fireRate: 0.75
     selectedMode: SemiAuto
     availableModes:
@@ -252,4 +260,4 @@
   suffix: CS Gas
   components:
   - type: BallisticAmmoProvider
-    proto: Bullet43x30mmChemicalSmokeInfantry
+    proto: Bullet43x30mmChemicalSmoke

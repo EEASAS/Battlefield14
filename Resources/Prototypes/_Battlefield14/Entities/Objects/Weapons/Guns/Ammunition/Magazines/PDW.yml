@@ -68,7 +68,7 @@
   components:
   - type: Tag
     tags:
-      - MagazinePistolSR2MP
+      - MagazineSubmachinegunSR2MP
       - Magazine
       - PistolMagazine
   - type: BallisticAmmoProvider
