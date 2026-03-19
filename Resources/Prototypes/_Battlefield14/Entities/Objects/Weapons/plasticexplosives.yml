@@ -58,12 +58,18 @@
         - Impassable
         - BulletImpassable
         restitution: 0.9  # bouncyness
+  - type: ContainerContainer
+    containers:
+      cluster-payload: !type:Container
+  - type: ProjectileGrenade
+    fillPrototype: BulletGrenadeF1Fragment
+    capacity: 10
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: Default
-    maxIntensity: 3 # max 45 per tile
-    intensitySlope: 1
-    totalIntensity: 7 # ~100 total damage to distribute over tiles
+    totalIntensity: 30
+    intensitySlope: 3
+    maxIntensity: 15
     maxTileBreak: 0
 
 #    explosionType: Default

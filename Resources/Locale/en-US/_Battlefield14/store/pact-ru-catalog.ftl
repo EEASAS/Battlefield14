@@ -15,6 +15,9 @@ uplink-PACTRU-ak203crate-desc = A crate of five AK-203 7.62x39 rifles and two bo
 uplink-PACTRU-sv98crate-name = SV-98 x2
 uplink-PACTRU-sv98crate-desc = A crate of two SV-98 7.62x54mmR sniper rifles and two boxes of spare ammunition.
 
+uplink-PACTRU-SVDScrate-name = SVDS x2
+uplink-PACTRU-SVDScrate-desc = A crate of two SVDS 7.62x54mmR designated marksman rifles and two boxes of spare ammunition.
+
 uplink-PACTRU-KSKcrate-name = KS-K x2
 uplink-PACTRU-KSKcrate-desc = Two KS-K semi-automatic 12 gauge magfed shotguns and two boxes of buckshot and one box of slug ammunition.
 

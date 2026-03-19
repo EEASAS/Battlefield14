@@ -21,8 +21,8 @@
       cluster-payload: !type:Container
   - type: ProjectileGrenade
     triggerKey: trigger
-    fillPrototype: Bullet84mmHEATFragment #BF14 PelletClusterLethalHeavy does not exist
-    capacity: 20
+    fillPrototype: BulletGrenadeF1Fragment #BF14 PelletClusterLethalHeavy does not exist
+    capacity: 40
     randomAngle: true
     MaxVelocity: 10
     MinVelocity: 8
