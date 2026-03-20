@@ -28,6 +28,3 @@
   - type: ShipyardListing
     shuttles:
     - AAVP8
-  - type: ShiftTimeLock
-    shiftTime: 10m
-

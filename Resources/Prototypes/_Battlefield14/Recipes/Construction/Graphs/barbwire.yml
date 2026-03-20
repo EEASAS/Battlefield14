@@ -27,4 +27,3 @@
           steps:
             - tool: Cutting
               doAfter: 3.5
-

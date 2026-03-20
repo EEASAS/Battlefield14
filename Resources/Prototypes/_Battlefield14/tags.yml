@@ -68,7 +68,10 @@
   id: CartridgeLauncher
 
 - type: Tag
-  id: MagazineRPG7
+  id: ShellMortar81M252
+
+- type: Tag
+  id: ShellMortar822B14
 
 - type: Tag
   id: MagazineRifleAK74
