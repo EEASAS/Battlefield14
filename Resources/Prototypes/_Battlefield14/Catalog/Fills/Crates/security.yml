@@ -165,6 +165,21 @@
   - type: AccessReader
     access: [["NATOSoldier"]]
 
+- type: entity
+  id: CrateSecgearNATOFilledM14EBR
+  suffix: Filled, Mk-14 EBR
+  parent: CrateSecgear
+  name: Mk-14 EBR crate
+  components:
+  - type: StorageFill
+    contents:
+        - id: WeaponSniperUSM14EBR
+          amount: 2
+        - id: BoxMagazineM14
+          amount: 2
+  - type: AccessReader
+    access: [["NATOSoldier"]]
+
 ## PACT
 # RU
 

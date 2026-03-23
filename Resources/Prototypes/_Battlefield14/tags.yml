@@ -1,7 +1,4 @@
 - type: Tag
-  id: MagazineRifleSTANAG
-
-- type: Tag
   id: BF_CartridgeGrenade25x40
 
 - type: Tag
@@ -74,7 +71,13 @@
   id: ShellMortar822B14
 
 - type: Tag
+  id: MagazineRifleAKM
+
+- type: Tag
   id: MagazineRifleAK74
+
+- type: Tag
+  id: MagazineRifleSTANAG
 
 - type: Tag
   id: MagazineRifleASH12
@@ -83,10 +86,10 @@
   id: MagazineRifleASVAL
 
 - type: Tag
-  id: MagazineRifleAKM
+  id: MagazineRifleSV98
 
 - type: Tag
-  id: MagazineRifleSV98
+  id: MagazineRifleM14
 
 - type: Tag
   id: MagazineBeltBoxM249

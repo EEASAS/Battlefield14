@@ -33,6 +33,22 @@
           - AmericanUplink
 
 - type: listing
+  id: UplinkNATOAmmoBox762Big
+  name:  uplink-NATO-ammo-box-762-big-name
+  description: uplink-NATO-ammo-box-762-big-desc
+  productEntity: MagazineBox762x51Big
+  icon: { sprite: _Mono/Objects/Weapons/Guns/Ammunition/Boxes/5.56x45mm.rsi, state: base-b }
+  cost:
+    NATORequisition: 8 # 1 minute 20 seconds
+  categories:
+    - UplinkNATOUSAmmo
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - AmericanUplink
+
+- type: listing
   id: UplinkNATOAmmoBox9mmBig
   name:  uplink-NATO-ammo-box-9mm-big-name
   description: uplink-NATO-ammo-box-9mm-big-desc

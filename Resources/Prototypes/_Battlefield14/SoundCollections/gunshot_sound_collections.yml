@@ -132,3 +132,13 @@
   - "/Audio/_Battlefield14/Weapons/Guns/M870/uc_r870_shell-insert-01.ogg"
   - "/Audio/_Battlefield14/Weapons/Guns/M870/uc_r870_shell-insert-02.ogg"
   - "/Audio/_Battlefield14/Weapons/Guns/M870/uc_r870_shell-insert-03.ogg"
+
+- type: soundCollection
+  id: BF_M14_Gunshots # M14 - Used for M14/EBR
+  files:
+  - "/Audio/_Battlefield14/Weapons/Guns/M14/uc_m14_fire-01.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/M14/uc_m14_fire-02.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/M14/uc_m14_fire-03.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/M14/uc_m14_fire-04.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/M14/uc_m14_fire-05.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/M14/uc_m14_fire-06.ogg"

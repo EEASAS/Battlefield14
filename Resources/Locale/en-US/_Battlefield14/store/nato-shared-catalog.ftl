@@ -6,6 +6,9 @@ uplink-NATO-ammo-box-556-desc = Contains 60 loose 5.56x45mm rounds.
 uplink-NATO-ammo-box-556-big-name = Bulk ammo box (5.56x45mm)
 uplink-NATO-ammo-box-556-big-desc = Contains 200 loose 5.56x45mm rounds.
 
+uplink-NATO-ammo-box-762-big-name = Bulk ammo box (7.62x51mm)
+uplink-NATO-ammo-box-762-big-desc = Contains 200 loose 7.62x51mm rounds.
+
 uplink-NATO-ammo-box-9mm-big-name = Bulk ammo box (9x19mm)
 uplink-NATO-ammo-box-9mm-big-desc = Contains 300 loose 9x19mm rounds.
 

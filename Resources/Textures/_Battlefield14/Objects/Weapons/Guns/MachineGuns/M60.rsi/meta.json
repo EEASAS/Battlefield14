@@ -11,7 +11,13 @@
       "name": "icon"
     },
     {
+      "name": "base"
+    },
+    {
       "name": "bolt-open"
+    },
+    {
+      "name": "mag-0"
     }
   ]
 }

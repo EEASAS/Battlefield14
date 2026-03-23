@@ -177,6 +177,22 @@
         tags:
           - AmericanUplink
 
+- type: listing
+  id: UplinkNATOUSM14EBRCrate
+  name:  uplink-NATOUS-M14EBRcrate-name
+  description: uplink-NATOUS-M14EBRcrate-desc
+  productEntity: CrateSecgearNATOFilledM14EBR
+  icon: { sprite: _Battlefield14/Objects/Weapons/Guns/Snipers/M14EBR.rsi, state: icon }
+  cost:
+    NATORequisition: 18 # 3 minutes
+  categories:
+    - UplinkNATOUSWeapons
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - AmericanUplink
+
 # Ammo
 
 - type: listing
