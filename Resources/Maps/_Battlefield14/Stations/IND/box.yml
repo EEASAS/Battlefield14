@@ -4,10 +4,10 @@ meta:
   engineVersion: 264.0.0
   forkId: ""
   forkVersion: ""
-  time: 03/23/2026 06:20:24
-  entityCount: 20903
+  time: 03/24/2026 08:41:49
+  entityCount: 20904
 maps:
-- 2421
+- 6535
 grids:
 - 1
 orphans: []
@@ -52,7 +52,7 @@ entities:
       name: Independant 'Box' station
     - type: Transform
       pos: -92,-82
-      parent: 2421
+      parent: 6535
     - type: InitRepairSnapshot
     - type: MapGrid
       chunks:
@@ -3318,10 +3318,10 @@ entities:
     - type: GridPathfinding
     - type: SpreaderGrid
       spreadQueues:
-        Kudzu: []
-        Smoke: []
         Puddle: []
         MetalFoam: []
+        Kudzu: []
+        Smoke: []
     - type: GravityShake
       shakeTimes: 10
     - type: GasTileOverlay
@@ -6043,7 +6043,7 @@ entities:
           - 0
           - 0
         chunkSize: 4
-  - uid: 2421
+  - uid: 6535
     components:
     - type: MetaData
       name: Map Entity
@@ -81925,7 +81925,7 @@ entities:
       parent: 11051
     - type: SpecialRespawn
       stationMap:
-      - 2421
+      - 6535
       - 1
     - type: Physics
       canCollide: False
@@ -94073,6 +94073,13 @@ entities:
     components:
     - type: Transform
       pos: 110.5,115.5
+      parent: 1
+- proto: SpawnPointObserver
+  entities:
+  - uid: 2421
+    components:
+    - type: Transform
+      pos: 85.5,95.5
       parent: 1
 - proto: SpawnPointUSMCAutomaticRifleman
   entities:

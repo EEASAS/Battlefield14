@@ -28,6 +28,14 @@ book-text-manual-artillery-mortar = Instructional guide on the proper usage of m
       He calls out to you "Fire on my position, offset 5 meters north", simply increase your Y offset by 5, the end result being 15, -5
 
 
+      Solo ranging and firing
+
+      If you have your mortar and your target both in line of sight at once, you can lase your target and your mortar to get your firing solution
+      For this method it is highly reccomended you stay in a cardinal direction to your mortar and your target to make calculations simple
+      For this example, say you are to the left of your mortar in a straight line, and your target is north of you, you lase your target and your mortar and recieve 11 and 7 in that order
+      Your firing solution will be -7, and 11
+
+
       Here is a graph visualising X and Y coordinates
 
       Y

@@ -4,8 +4,8 @@ meta:
   engineVersion: 264.0.0
   forkId: ""
   forkVersion: ""
-  time: 03/23/2026 06:20:45
-  entityCount: 20902
+  time: 03/24/2026 08:33:30
+  entityCount: 20903
 maps: []
 grids:
 - 1
@@ -3320,8 +3320,8 @@ entities:
       spreadQueues:
         Kudzu: []
         Smoke: []
-        Puddle: []
         MetalFoam: []
+        Puddle: []
     - type: GravityShake
       shakeTimes: 10
     - type: GasTileOverlay
@@ -94063,6 +94063,13 @@ entities:
     components:
     - type: Transform
       pos: 110.5,115.5
+      parent: 1
+- proto: SpawnPointObserver
+  entities:
+  - uid: 2421
+    components:
+    - type: Transform
+      pos: 85.5,95.5
       parent: 1
 - proto: SpawnPointUSMCAutomaticRifleman
   entities:

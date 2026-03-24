@@ -6,7 +6,7 @@
 #  maximumDistance: 0
 #  spawnGamePreset: [ Battlefield14 , NFAdventure ]
 #  spawnGroup: Required
-  gridPath: /Maps/_Battlefield14/Stations/IND/box.yml
+  gridPath: /Maps/_Battlefield14/Stations/IND/boxgrid.yml
   addComponents:
   - type: IFF
     color: "#efefef"
@@ -30,8 +30,8 @@
           mapNameTemplate: 'Independant "Box" Station'
         - type: ExtraStationInformation
           iconPath: /Textures/_NF/Structures/Decoration/banner.rsi/nfsd-banner.png
-          stationSubtext: 'frontier-lobby-frontier-subtext'
-          stationDescription: 'frontier-lobby-frontier-subtext'
+          stationSubtext: 'frontier-lobby-frontier-subtext' # TODO
+          stationDescription: 'frontier-lobby-frontier-subtext' # TODO
           lobbySortOrder: 1
         - type: StationJobs
           availableJobs:

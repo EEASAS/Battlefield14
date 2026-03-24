@@ -2,6 +2,7 @@
   id: DefaultMapPool
   maps:
   - BF14Box #BF14
+  - BF14Fland
 
 # Frontier: below are the upstream map pools.
   # - Amber
