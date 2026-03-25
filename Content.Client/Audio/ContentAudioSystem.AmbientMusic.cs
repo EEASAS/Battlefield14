@@ -48,7 +48,8 @@ public sealed partial class ContentAudioSystem
     private const string NpcFactionPDV = "PirateNF"; //we should really fucking change these on monolith. wtf
     private const string NpcFactionTSFMC = "TSFMC";
     private const string NpcFactionUSMC = "USMC"; // BF14
-    private const string NpcFactionVDV = "VDV "; // BF14
+    private const string NpcFactionVDV = "VDV"; // BF14
+    private const string NpcFactionFSB = "FSB"; // BF14
 
     // This stores the music stream. It's used to start/stop the music on the fly.
     private EntityUid? _ambientMusicStream;
@@ -307,6 +308,9 @@ public sealed partial class ContentAudioSystem
                         break;
                     case NpcFactionVDV:
                         combatFactionSuffix = "VDV";
+                        break;
+                    case NpcFactionFSB:
+                        combatFactionSuffix = "FSB";
                         break;
                     default:
                         combatFactionSuffix = "Default";
