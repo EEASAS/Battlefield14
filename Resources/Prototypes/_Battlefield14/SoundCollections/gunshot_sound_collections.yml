@@ -39,6 +39,16 @@
   - "/Audio/_Battlefield14/Weapons/Guns/AK_545/uc_ak_545_39_fire-06.ogg"
 
 - type: soundCollection
+  id: BF_AK_545_Gunshots_SUPP # AK-74's/12's, 5.45x39 - Used by 5.45 AK weapons
+  files:
+  - "/Audio/_Battlefield14/Weapons/Guns/AK_545/uc_ak_545_39_fire-sup-01.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/AK_545/uc_ak_545_39_fire-sup-02.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/AK_545/uc_ak_545_39_fire-sup-03.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/AK_545/uc_ak_545_39_fire-sup-04.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/AK_545/uc_ak_545_39_fire-sup-05.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/AK_545/uc_ak_545_39_fire-sup-06.ogg"
+
+- type: soundCollection
   id: BF_AK_762_Gunshots # AKM's/47's, 7.62x39
   files:
   - "/Audio/_Battlefield14/Weapons/Guns/AK_762/uc_ak_fire-01.ogg"

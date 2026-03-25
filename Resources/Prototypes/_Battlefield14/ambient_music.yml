@@ -24,3 +24,14 @@
   files:
     - /Audio/_Battlefield14/Ambience/CombatMode/VDV_1.ogg
     - /Audio/_Battlefield14/Ambience/CombatMode/VDV_2.ogg
+
+# FSB | Somewhat stealthy I guess tracks with some industrial hints, or the other way around / just whatever Russian stuff
+- type: ambientMusic
+  id: CombatModeFSB
+  sound:
+    collection: CombatModeFSB
+
+- type: soundCollection
+  id: CombatModeFSB
+  files:
+    - /Audio/_Battlefield14/Ambience/CombatMode/FSB_1.ogg

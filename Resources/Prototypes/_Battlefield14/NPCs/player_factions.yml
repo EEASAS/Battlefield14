@@ -10,6 +10,7 @@
   hostile:
   - PACT
   - VDV
+  - FSB
 
 - type: npcFaction
   id: USMC
@@ -23,11 +24,13 @@
   hostile:
   - PACT
   - VDV
+  - FSB
 
 - type: npcFaction
   id: PACT
   friendly:
   - VDV
+  - FSB
   neutral:
   - NanoTrasen
   - Cat
@@ -41,6 +44,21 @@
   id: VDV
   friendly:
   - PACT
+  - FSB
+  neutral:
+  - NanoTrasen
+  - Cat
+  - PetsNT
+  - SimpleNeutral
+  hostile:
+  - NATO
+  - USMC
+
+- type: npcFaction
+  id: FSB
+  friendly:
+  - PACT
+  - VDV
   neutral:
   - NanoTrasen
   - Cat

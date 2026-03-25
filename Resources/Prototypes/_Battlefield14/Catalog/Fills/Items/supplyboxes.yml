@@ -73,3 +73,19 @@
       - MagazineBox545x39Big
       ammobox2:
       - MagazineBox9x19mmBig
+
+- type: entity
+  id: SupplyBoxAmmoRUFilledFSB
+  parent: SupplyBoxAmmoRU
+  suffix: FSB, Filled
+  components:
+  - type: ContainerFill
+    containers:
+      magazinebox:
+      - BoxMagazineAK74
+      magazinebox2:
+      - BoxMagazineAK74
+      ammobox:
+      - MagazineBox545x39Big
+      ammobox2:
+      - MagazineBox9x21mmBig

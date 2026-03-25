@@ -35,7 +35,6 @@
     whitelist:
       tags:
         - Brutepack
-        - Bloodpack
         - Gauze
         - Ointment
         - PillCanister
@@ -60,8 +59,19 @@
     maxItemSize: Small
     grid:
     - 0,0,3,2
-  - type: ExplosionResistance
-    damageCoefficient: 0.0
+    whitelist:
+      tags:
+        - DiscreteHealthAnalyzer
+        - Brutepack
+        - Gauze
+        - Ointment
+        - PillCanister
+        - Tourniquet
+      components:
+        - Hypospray
+        - Injector
+        - Pill
+
 
 - type: entity
   id: PouchMags

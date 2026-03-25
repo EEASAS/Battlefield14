@@ -39,9 +39,10 @@
       - id: MedicatedSuture
       - id: RegenerativeMesh
       - id: BF14HyposprayFilledAdvanced
-#      - id: BF14HyposprayFilledOxycodone
       - id: InaprovalineMedipen # BF14
       - id: PillCanisterTricordrazine
+      - id: Tourniquet
+        amount: 2
 
 - type: entity
   parent: PouchMagsPistolLarge
@@ -71,6 +72,16 @@
   - type: StorageFill
     contents:
     - id: MagazineSubmachinegunVityaz
+      amount: 6
+
+- type: entity
+  parent: PouchMagsPistolLarge
+  id: PouchMagsPistolLargeFilledSR2MP
+  suffix: Filled, SR2MP
+  components:
+  - type: StorageFill
+    contents:
+    - id: MagazineSubmachinegunSR2MP
       amount: 6
 
 - type: entity

@@ -38,3 +38,21 @@ ghost-role-information-hecu-rules = You are a member of [color=#348099][bold]NAT
                                              You don't remember any of your previous life, and you don't remember anything you learned as a ghost.
                                              You are allowed to remember knowledge about the game in general, such as how to cook, how to use objects, etc.
                                              You are absolutely [color=red]NOT[/color] allowed to remember the name, appearance, etc. of your previous character.
+
+job-name-fsb-squadleader = Spetzgruppa "A" Team Leader
+job-name-fsb-rifleman = Spetzgruppa "A" Operative
+job-name-fsb-support = Spetzgruppa "A" Specialist
+job-name-fsb-medic = Spetzgruppa "A" Combat Medic
+job-name-fsb-recon = Spetzgruppa "A" Forward Recon
+
+job-description-fsb-squadleader = Coordinate optimal American shooting.
+job-description-fsb-rifleman = Shoot Americans.
+job-description-fsb-support = Suppress enemies with your grenade launcher, resupply your team-mates.
+job-description-fsb-medic = Bring back your buds from the brink, go ratatat-tat with your SR2MP.
+job-description-fsb-recon = Go on the flanks and conduct surprise attacks or relay intel.
+
+ghost-role-information-fsb-rules = You are a member of [color=red][bold]PACT[/bold][/color]. You should generally not seek to harm your fellow faction members or their ships.
+                                             As a member of [color=red][bold]the FSB[/bold][/color], you only take orders directly from [color=#348099][bold]Vladimir Putin[/bold][/color]. Who will usually be played by admins.
+                                             You don't remember any of your previous life, and you don't remember anything you learned as a ghost.
+                                             You are allowed to remember knowledge about the game in general, such as how to cook, how to use objects, etc.
+                                             You are absolutely [color=red]NOT[/color] allowed to remember the name, appearance, etc. of your previous character.

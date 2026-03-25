@@ -38,4 +38,4 @@
             WPSSecurityOfficer: [ 1, 1 ] # National guard
             WPSWarden: [ 1, 1 ]
             WPSMarshal: [ 1, 1 ]
-            VDVRecon: [ 3, 3 ] # Spacefaring FSB
+            FSBRecon: [ 3, 3 ]

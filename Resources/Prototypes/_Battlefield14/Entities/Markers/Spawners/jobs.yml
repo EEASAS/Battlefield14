@@ -155,6 +155,20 @@
       - state: green
       - state: passenger
 
+# FSB
+
+- type: entity
+  id: SpawnPointFSBRecon
+  parent: SpawnPointJobBase
+  name: FSB Recon
+  components:
+  - type: SpawnPoint
+    job_id: FSBRecon
+  - type: Sprite
+    layers:
+      - state: green
+      - state: passenger
+
 # VKS
 
 - type: entity

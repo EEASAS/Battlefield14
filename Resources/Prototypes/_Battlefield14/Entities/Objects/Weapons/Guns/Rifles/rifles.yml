@@ -401,9 +401,9 @@
     - SemiAuto
     - FullAuto
     soundGunshot:
-      collection: BF_Galil_Gunshots_SUPP
+      collection: BF_AK_545_Gunshots_SUPP
       params:
-        volume: -10
+        volume: -8
         variation: 0.125
 
 - type: entity
@@ -476,6 +476,45 @@
       - state: magnifier
       - state: mag-0
         map: ["enum.GunVisualLayers.Mag"]
+  - type: CursorOffsetRequiresWield
+  - type: EyeCursorOffset
+    maxOffset: 5
+    pvsIncrease: 0.25
+
+- type: entity
+  name: AK-74 FSB MOD.
+  parent: WeaponRifleRUAK74
+  id: WeaponRifleRUAK74FSB
+  description: An AK-74 with aftermarket parts geared towards the needs of the FSB.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AK74MOD.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: supp
+        offset: 0.43, 0
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AK74MOD.rsi
+  - type: GunWieldBonus
+    minAngle: -19
+    maxAngle: -24
+  - type: Gun
+    minAngle: 21
+    maxAngle: 32
+    availableModes:
+    - SemiAuto
+    - FullAuto
+    selectedMode: FullAuto
+    fireRate: 6
+    projectileSpeed: 45
+    soundGunshot:
+      collection: BF_AK_545_Gunshots_SUPP
+      params:
+        volume: -10
+        variation: 0.125
   - type: CursorOffsetRequiresWield
   - type: EyeCursorOffset
     maxOffset: 5

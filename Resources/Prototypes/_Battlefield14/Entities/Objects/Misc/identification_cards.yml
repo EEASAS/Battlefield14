@@ -293,6 +293,78 @@
   - type: PresetIdCard
     job: VDVRecon
 
+# FSB
+
+- type: entity
+  parent: IDCardStandard
+  id: FSBSquadLeaderIDCard
+  name: FSB ID card
+  suffix: senior rifleman
+  components:
+  - type: Sprite
+    layers:
+    - state: silver
+  - type: Item
+    heldPrefix: silver
+  - type: PresetIdCard
+    job: FSBSquadLeader
+
+- type: entity
+  parent: IDCardStandard
+  id: FSBRiflemanIDCard
+  name: FSB ID card
+  suffix: rifleman
+  components:
+  - type: Sprite
+    layers:
+    - state: silver
+  - type: Item
+    heldPrefix: silver
+  - type: PresetIdCard
+    job: FSBRifleman
+
+- type: entity
+  parent: IDCardStandard
+  id: FSBSupportIDCard
+  name: FSB ID card
+  suffix: support
+  components:
+  - type: Sprite
+    layers:
+    - state: silver
+  - type: Item
+    heldPrefix: silver
+  - type: PresetIdCard
+    job: FSBSupport
+
+- type: entity
+  parent: IDCardStandard
+  id: FSBMedicIDCard
+  name: FSB ID card
+  suffix: combat medic
+  components:
+  - type: Sprite
+    layers:
+    - state: silver
+  - type: Item
+    heldPrefix: silver
+  - type: PresetIdCard
+    job: FSBMedic
+
+- type: entity
+  parent: IDCardStandard
+  id: FSBReconIDCard
+  name: FSB ID card
+  suffix: recon scout
+  components:
+  - type: Sprite
+    layers:
+    - state: silver
+  - type: Item
+    heldPrefix: silver
+  - type: PresetIdCard
+    job: FSBRecon
+
 # VKS
 
 - type: entity

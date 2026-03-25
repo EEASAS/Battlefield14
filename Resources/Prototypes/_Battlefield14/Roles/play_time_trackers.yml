@@ -71,6 +71,23 @@
 - type: playTimeTracker
   id: JobVDVRecon
 
+# FSB
+
+- type: playTimeTracker
+  id: JobFSBSquadLeader
+
+- type: playTimeTracker
+  id: JobFSBRifleman
+
+- type: playTimeTracker
+  id: JobFSBSupport
+
+- type: playTimeTracker
+  id: JobFSBMedic
+
+- type: playTimeTracker
+  id: JobFSBRecon
+
 # VKS
 
 - type: playTimeTracker
