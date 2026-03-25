@@ -18,7 +18,9 @@
       settings: short
   - type: GhostTakeoverAvailable
   - type: RandomMetadata
-    nameSegments: [names_death_commando]
+    nameSegments: # Save this for the maga marines[names_death_commando]
+    - NamesFirstMilitary
+    - names_last
   - type: NpcFactionMember
     factions:
     - USMC
