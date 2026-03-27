@@ -38,7 +38,7 @@
   - type: ActiveTimerTrigger
     timeRemaining: 600
   - type: SpawnOnTrigger
-    proto: BaseComputerShuttle
+    proto: ComputerShuttle
   - type: DeleteOnTrigger
 
 - type: entity
