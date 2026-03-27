@@ -1,12 +1,12 @@
 - type: pointOfInterest
-  id: INDFland
+  id: INDBagel
   parent: [BasePOI, BaseRepairablePOI]
-  name: 'Independant Fland Installation'
+  name: 'Independant Bagel Station'
 #  minimumDistance: 0
 #  maximumDistance: 0
 #  spawnGamePreset: [ Battlefield14 , NFAdventure ]
 #  spawnGroup: Required
-  gridPath: /Maps/_Battlefield14/Stations/IND/flandgrid.yml
+  gridPath: /Maps/_Battlefield14/Stations/IND/bagelgrid.yml
   addComponents:
   - type: IFF
     color: "#efefef"
@@ -14,19 +14,19 @@
 #    readOnly: true
 
 - type: gameMap
-  id: BF14Fland
-  mapName: 'Fland Installation'
-  mapPath: /Maps/_Battlefield14/Stations/IND/fland.yml
-  minPlayers: 25
-  maxPlayers: 120
+  id: BF14Bagel
+  mapName: 'Bagel Station'
+  mapPath: /Maps/_Battlefield14/Stations/IND/bagel.yml
+  minPlayers: 0
+  maxPlayers: 25
   randomRotation: false
   maxRandomOffset: 0
   stations:
-    BF14Fland:
+    BF14Bagel:
       stationProto: StandardFrontierStation
       components:
         - type: StationNameSetup
-          mapNameTemplate: 'Independant "Fland" Installation' # Redo to 'N.G. 'Fland' defense installation' once I add national guard
+          mapNameTemplate: 'Independant "Bagel" Station'
         - type: ExtraStationInformation
           iconPath: /Textures/_NF/Structures/Decoration/banner.rsi/nfsd-banner.png
           stationSubtext: 'frontier-lobby-frontier-subtext' # TODO
@@ -35,7 +35,6 @@
         - type: StationJobs
           availableJobs:
 #            Contractor: [ 2, 3 ]
-            WPSSecurityOfficer: [ 1, 1 ] # National guard
+            WPSSecurityOfficer: [ 1, 1 ] #[ 3, 3 ]
             WPSWarden: [ 1, 1 ]
             WPSMarshal: [ 1, 1 ]
-            FSBRecon: [ 3, 3 ]
