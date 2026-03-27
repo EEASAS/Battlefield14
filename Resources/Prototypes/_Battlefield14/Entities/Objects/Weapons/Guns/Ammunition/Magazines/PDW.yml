@@ -17,7 +17,7 @@
         - BF_CartridgePDW46x30
     capacity: 40
   - type: Sprite
-    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Pistolcaliber/MP5.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/PDW/MP7.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -25,7 +25,7 @@
       map: ["enum.GunVisualLayers.Mag"]
   - type: MagazineVisuals
     magState: mag
-    steps: 3
+    steps: 8
     zeroVisible: false
   - type: Appearance
 
