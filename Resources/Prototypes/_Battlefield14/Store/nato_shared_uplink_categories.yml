@@ -132,12 +132,12 @@
 
 - type: listing
   id: UplinkNATOArmorPlateLight
-  name:  uplink-nato-armor-plate-light-name
-  description: uplink-nato-armor-plate-light-name
-  productEntity: ArmorPlateLight
+  name:  uplink-nato-armor-plate-light-crate-name
+  description: uplink-NATO-armor-plate-light-crate-desc
+  productEntity: CratePlateLight
   icon: { sprite: _Mono/Clothing/ArmorPlate/armor_light.rsi, state: icon }
   cost:
-    NATORequisition: 3 # 30 seconds
+    NATORequisition: 6 # 1 minute
   categories:
     - UplinkNATOUSArmour
   conditions:
@@ -148,12 +148,12 @@
 
 - type: listing
   id: UplinkNATOArmorPlateMedium
-  name:  uplink-nato-armor-plate-medium-name
-  description: uplink-nato-armor-plate-medium-name
-  productEntity: ArmorPlateMedium
+  name:  uplink-nato-armor-plate-medium-crate-name
+  description: uplink-NATO-armor-plate-medium-crate-desc
+  productEntity: CratePlateMedium
   icon: { sprite: _Mono/Clothing/ArmorPlate/armor_medium.rsi, state: icon }
   cost:
-    NATORequisition: 6 # 1 minute
+    NATORequisition: 12 # 2 minutes
   categories:
     - UplinkNATOUSArmour
   conditions:

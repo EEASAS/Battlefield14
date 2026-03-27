@@ -29,8 +29,14 @@ uplink-NATO-ammo-box-12g-breaching-desc = Contains 30 loose 12 gauge breaching s
 uplink-nato-armor-plate-light-name = Kevlar insert
 uplink-nato-armor-plate-light-desc = One singular kevlar insert.
 
+uplink-NATO-armor-plate-light-crate-name = Kevlar insert x3
+uplink-NATO-armor-plate-light-crate-desc = Three kevlar inserts.
+
 uplink-nato-armor-plate-medium-name = Ceramic armour plate
 uplink-nato-armor-plate-medium-desc = One singular ceramic armour plate.
+
+uplink-NATO-armor-plate-medium-crate-name = Ceramic armour plate x3
+uplink-NATO-armor-plate-medium-crate-desc = Three ceramic armour plates.
 
 ## Utility
 

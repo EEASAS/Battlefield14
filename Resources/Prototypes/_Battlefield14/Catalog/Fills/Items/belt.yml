@@ -318,6 +318,7 @@
       - id: PillCanisterDexalin
       - id: Tourniquet
         amount: 2
+      - id: FoodCondimentPacketKaolin
 
 - type: entity
   id: ClothingBeltMedicalEMTFilledBF14
@@ -339,6 +340,7 @@
 #      - id: PillCanisterTramadol
       - id: PillCanisterDylovene
       - id: PillCanisterDexalin
+      - id: FoodCondimentPacketKaolin
 
 - type: entity
   id: ClothingBeltMedicalEMTFilledBF14Pills
@@ -356,6 +358,7 @@
 #      - id: PillCanisterTramadol
       - id: PillCanisterDylovene
       - id: PillCanisterDexalin
+      - id: FoodCondimentPacketKaolin
 
 - type: entity
   id: ClothingBeltMedicalEMTFilledBF14Hyposprays
@@ -374,3 +377,4 @@
       - id: BF14HyposprayFilledBigDylovene
       - id: BF14HyposprayFilledBigDexalin
       - id: BF14HyposprayFilledSaline
+      - id: FoodCondimentPacketKaolin

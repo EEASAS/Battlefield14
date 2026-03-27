@@ -21,8 +21,15 @@ uplink-PACT-ammo-box-12g-slug-desc = Contains 30 loose 12 gauge slug shells.
 uplink-PACT-armor-plate-light-name = Kevlar insert
 uplink-PACT-armor-plate-light-desc = One singular kevlar insert.
 
+uplink-PACT-armor-plate-light-crate-name = Kevlar insert x3
+uplink-PACT-armor-plate-light-crate-desc = Three kevlar inserts.
+
 uplink-PACT-armor-plate-medium-name = Ceramic armour plate
 uplink-PACT-armor-plate-medium-desc = One singular ceramic armour plate.
+
+uplink-PACT-armor-plate-medium-crate-name = Ceramic armour plate x3
+uplink-PACT-armor-plate-medium-crate-desc = Three ceramic armour plates.
+
 
 ## Utility
 

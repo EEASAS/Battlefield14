@@ -84,12 +84,12 @@
 
 - type: listing
   id: UplinkPACTArmorPlateLight
-  name:  uplink-PACT-armor-plate-light-name
-  description: uplink-PACT-armor-plate-light-name
-  productEntity: ArmorPlateLight
+  name:  uplink-PACT-armor-plate-light-crate-name
+  description: uplink-PACT-armor-plate-light-crate-desc
+  productEntity: CratePlateLight
   icon: { sprite: _Mono/Clothing/ArmorPlate/armor_light.rsi, state: icon }
   cost:
-    PACTRequisition: 3 # 30 seconds
+    PACTRequisition: 6 # 1 minute
   categories:
     - UplinkPACTRUArmour
   conditions:
@@ -100,12 +100,12 @@
 
 - type: listing
   id: UplinkPACTArmorPlateMedium
-  name:  uplink-PACT-armor-plate-medium-name
-  description: uplink-PACT-armor-plate-medium-name
-  productEntity: ArmorPlateMedium
+  name:  uplink-PACT-armor-plate-medium-crate-name
+  description: uplink-PACT-armor-plate-medium-crate-desc
+  productEntity: CratePlateMedium
   icon: { sprite: _Mono/Clothing/ArmorPlate/armor_medium.rsi, state: icon }
   cost:
-    PACTRequisition: 6 # 1 minute
+    PACTRequisition: 12 # 2 minutes
   categories:
     - UplinkPACTRUArmour
   conditions:
