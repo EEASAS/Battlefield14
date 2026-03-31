@@ -607,7 +607,7 @@
         map: ["enum.GunVisualLayers.Mag"]
   - type: GunWieldBonus
     minAngle: -19
-    maxAngle: -20
+    maxAngle: -24
   - type: Gun # Improved recoil over the AKM
     minAngle: 21
     maxAngle: 30
