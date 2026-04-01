@@ -225,7 +225,7 @@
       - Grenade
       - GrenadeFlashBang
   - type: FlashOnTrigger
-    range: 7
+    range: 5
   - type: SpawnOnTrigger
     proto: GrenadeFlashEffect
   - type: Sprite
@@ -534,7 +534,7 @@
       - Grenade
       - GrenadeFlashBang
   - type: FlashOnTrigger
-    range: 7
+    range: 5
   - type: SpawnOnTrigger
     proto: GrenadeFlashEffect
   - type: Sprite

@@ -705,6 +705,93 @@
   - type: Appearance
 
 - type: entity
+  name: SR-3M
+  parent: BaseWeaponSubMachineGun
+  id: WeaponRifleRUSR3M
+  description: Essentially a chopped down AS-VAL without a suppressor for special forces and concealed carry.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/SR3M.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/SR3M.rsi
+  - type: Wieldable
+    unwieldOnUse: false
+  - type: GunWieldBonus
+    minAngle: -14
+    maxAngle: -19
+  - type: Gun
+    minAngle: 16
+    maxAngle: 32
+    angleIncrease: 1
+    availableModes:
+    - SemiAuto
+    - FullAuto
+    selectedMode: FullAuto
+    fireRate: 9
+    projectileSpeed: 40 # short barrel
+    soundGunshot:
+      collection: BF_AK_762_Gunshots
+      params:
+        volume: -5
+        variation: 0.125
+  - type: ChamberMagazineAmmoProvider
+    boltClosed: null # means the bolt doesnt lock back like M16 pattern rifles, also means you need to cycle the gun after an empty mag
+    soundRack:
+      path: /Audio/Weapons/Guns/Cock/ltrifle_cock.ogg
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazineRifleASVAL
+        insertSound: /Audio/_Battlefield14/Weapons/Guns/AK_545/uc_ak_magin.ogg
+        ejectSound: /Audio/_Battlefield14/Weapons/Guns/AK_545/uc_ak_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MagazineRifleASVAL
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: BF_CartridgeRifle9x39
+        priority: 1
+        whitelist:
+          tags:
+            - BF_CartridgeRifle9x39
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: Appearance
+
+- type: entity
+  name: SR-3M
+  parent: WeaponRifleRUSR3M
+  id: WeaponRifleRUSR3MShort
+  suffix: 20 round magazine
+  components:
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazineRifleASVALShort
+        insertSound: /Audio/_Battlefield14/Weapons/Guns/AK_545/uc_ak_magin.ogg
+        ejectSound: /Audio/_Battlefield14/Weapons/Guns/AK_545/uc_ak_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MagazineRifleASVAL
+        whitelistFailPopup: gun-magazine-whitelist-fail
+
+- type: entity
   name: ASH-12
   parent: BaseWeaponRifle
   id: WeaponRifleRUASH12
