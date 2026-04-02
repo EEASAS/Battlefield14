@@ -148,7 +148,7 @@
   - type: Gun
     minAngle: 16
     maxAngle: 30
-    angleIncrease: 3
+    angleIncrease: 4
     projectileSpeed: 40
     fireRate: 2
     availableModes:
@@ -218,8 +218,8 @@
     minAngle: 0
     maxAngle: 0
   - type: Gun
-    minAngle: 3
-    maxAngle: 6
+    minAngle: 4
+    maxAngle: 10
     angleIncrease: 3
     fireRate: 0.75
     selectedMode: SemiAuto
