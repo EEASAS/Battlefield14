@@ -4,11 +4,15 @@
   parent: BaseBullet
   categories: [ HideSpawnMenu ]
   components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Projectiles/ballistic.rsi
+    layers:
+    - state: small
   - type: Projectile
     damage:
       types:
         Piercing: 22
-    armorPenetration: -0.1
+    armorPenetration: -0.2
   - type: StaminaDamageOnCollide
     damage: 5 # 20 hits to stun lol
   - type: Ammo
@@ -20,6 +24,10 @@
   parent: BaseBullet
   categories: [ HideSpawnMenu ]
   components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Projectiles/ballistic.rsi
+    layers:
+    - state: small
   - type: Projectile
     damage:
       types:
@@ -36,6 +44,10 @@
   parent: BaseBullet
   categories: [ HideSpawnMenu ]
   components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Projectiles/ballistic.rsi
+    layers:
+    - state: small
   - type: Projectile
     damage:
       types:
@@ -51,6 +63,10 @@
   parent: BaseBullet
   categories: [ HideSpawnMenu ]
   components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Projectiles/ballistic.rsi
+    layers:
+    - state: small
   - type: Projectile
     damage:
       types:

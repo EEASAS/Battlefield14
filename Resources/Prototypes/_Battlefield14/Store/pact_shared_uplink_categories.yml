@@ -5,9 +5,9 @@
   name:  uplink-PACT-ammo-box-545-big-name
   description: uplink-PACT-ammo-box-545-big-desc
   productEntity: MagazineBox545x39Big
-  icon: { sprite: _Mono/Objects/Weapons/Guns/Ammunition/Boxes/5.56x45mm.rsi, state: base-b }
+  icon: { sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Casings/intermediate_steel.rsi, state: 545-nameplate }
   cost:
-    PACTRequisition: 6 # 1 minutes
+    PACTRequisition: 6 # 1 minute
   categories:
     - UplinkPACTRUAmmo
   conditions:
@@ -21,9 +21,25 @@
   name:  uplink-PACT-ammo-box-545-name
   description: uplink-PACT-ammo-box-545-desc
   productEntity: MagazineBox545x39
-  icon: { sprite: _Mono/Objects/Weapons/Guns/Ammunition/Boxes/5.56x45mm.rsi, state: base }
+  icon: { sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Casings/intermediate_steel.rsi, state: 545-nameplate }
   cost:
     PACTRequisition: 1 # 10 seconds
+  categories:
+    - UplinkPACTRUAmmo
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - RussianUplink
+
+- type: listing
+  id: UplinkPACTAmmoBox762
+  name:  uplink-PACT-ammo-box-762-big-name
+  description: uplink-PACT-ammo-box-762-big-desc
+  productEntity: MagazineBox762x39Big
+  icon: { sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Casings/intermediate.rsi, state: 762-nameplate }
+  cost:
+    PACTRequisition: 6 # 1 minutes
   categories:
     - UplinkPACTRUAmmo
   conditions:
@@ -37,7 +53,7 @@
   name:  uplink-PACT-ammo-box-9mm-big-name
   description: uplink-PACT-ammo-box-9mm-big-desc
   productEntity: MagazineBox9x19mmBig
-  icon: { sprite: _Mono/Objects/Weapons/Guns/Ammunition/Boxes/9x19mm.rsi, state: base-b }
+  icon: { sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Casings/pistol.rsi, state: 9x19-nameplate }
   cost:
     PACTRequisition: 4 # 40 seconds
   categories:

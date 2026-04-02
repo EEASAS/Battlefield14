@@ -4,6 +4,10 @@
   parent: BaseBullet
   categories: [ HideSpawnMenu ]
   components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Projectiles/ballistic.rsi
+    layers:
+    - state: intermediate
   - type: Projectile
     damage:
       types:
@@ -17,6 +21,10 @@
   parent: BaseBullet
   categories: [ HideSpawnMenu ]
   components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Projectiles/ballistic.rsi
+    layers:
+    - state: intermediate
   - type: Projectile
     damage:
       types:
@@ -30,6 +38,10 @@
   parent: BaseBullet
   categories: [ HideSpawnMenu ]
   components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Projectiles/ballistic.rsi
+    layers:
+    - state: intermediate
   - type: Projectile
     damage:
       types:
@@ -45,6 +57,10 @@
   parent: BaseBullet
   categories: [ HideSpawnMenu ]
   components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Projectiles/ballistic.rsi
+    layers:
+    - state: rifle
   - type: Projectile
     damage:
       types:
@@ -60,6 +76,10 @@
   parent: BaseBullet
   categories: [ HideSpawnMenu ]
   components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Projectiles/ballistic.rsi
+    layers:
+    - state: rifle
   - type: Projectile
     damage:
       types:
@@ -74,6 +94,10 @@
   parent: BaseBullet
   categories: [ HideSpawnMenu ]
   components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Projectiles/ballistic.rsi
+    layers:
+    - state: rifle
   - type: Projectile
     damage:
       types:
@@ -89,6 +113,10 @@
   parent: BaseBullet
   categories: [ HideSpawnMenu ]
   components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Projectiles/ballistic.rsi
+    layers:
+    - state: rifle
   - type: Projectile
     damage:
       types:
@@ -104,6 +132,10 @@
   parent: BaseBullet
   categories: [ HideSpawnMenu ]
   components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Projectiles/ballistic.rsi
+    layers:
+    - state: rifle
   - type: Projectile
     damage:
       types:
@@ -118,6 +150,10 @@
   parent: BaseBullet
   categories: [ HideSpawnMenu ]
   components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Projectiles/ballistic.rsi
+    layers:
+    - state: rifle
   - type: Projectile
     damage:
       types:

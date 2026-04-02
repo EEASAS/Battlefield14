@@ -21,7 +21,7 @@
       - ReagentId: CSGas
         Quantity: 50
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Projectiles/ballistic.rsi
     layers:
     - state: grenade
   - type: ShipWeaponProjectile

@@ -10,7 +10,7 @@
   - type: CartridgeAmmo
     proto: BulletRifleBF556x45
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Ammunition/Casings/ammo_casing.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Casings/intermediate.rsi
     layers:
     - state: base
       map: ["enum.AmmoVisualLayers.Base"]
@@ -29,7 +29,7 @@
   - type: CartridgeAmmo
     proto: BulletRifleBF545x39
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Ammunition/Casings/ammo_casing.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Casings/intermediate_steel.rsi
     layers:
     - state: base
       map: ["enum.AmmoVisualLayers.Base"]
@@ -48,7 +48,7 @@
   - type: CartridgeAmmo
     proto: BulletRifleBF762x39
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Ammunition/Casings/ammo_casing.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Casings/intermediate.rsi
     layers:
     - state: base
       map: ["enum.AmmoVisualLayers.Base"]
@@ -67,7 +67,7 @@
   - type: CartridgeAmmo
     proto: BulletRifleBF762x51
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Ammunition/Casings/ammo_casing.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Casings/7.62x51.rsi
     layers:
     - state: base
       map: ["enum.AmmoVisualLayers.Base"]
@@ -86,7 +86,7 @@
   - type: CartridgeAmmo
     proto: BulletRifleBF9x39
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Ammunition/Casings/ammo_casing.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Casings/intermediate_steel.rsi
     layers:
     - state: base
       map: ["enum.AmmoVisualLayers.Base"]
@@ -105,7 +105,7 @@
   - type: CartridgeAmmo
     proto: BulletRifleBF762x54mmR
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Ammunition/Casings/ammo_casing.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Casings/7.62x54mmR.rsi
     layers:
     - state: base
       map: ["enum.AmmoVisualLayers.Base"]
@@ -124,7 +124,7 @@
   - type: CartridgeAmmo
     proto: BulletRifleBF762x54mmRAP
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Ammunition/Casings/ammo_casing.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Casings/7.62x54mmR.rsi
     layers:
     - state: base
       map: ["enum.AmmoVisualLayers.Base"]
@@ -143,7 +143,7 @@
   - type: CartridgeAmmo
     proto: BulletRifleBF127x55
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Ammunition/Casings/large_casing.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Casings/12.7x55.rsi
     layers:
     - state: base
       map: ["enum.AmmoVisualLayers.Base"]
@@ -162,7 +162,7 @@
   - type: CartridgeAmmo
     proto: BulletRifleBF127x55Duplex_Spread
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Ammunition/Casings/large_casing.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Casings/12.7x55.rsi
     layers:
     - state: base
       map: ["enum.AmmoVisualLayers.Base"]

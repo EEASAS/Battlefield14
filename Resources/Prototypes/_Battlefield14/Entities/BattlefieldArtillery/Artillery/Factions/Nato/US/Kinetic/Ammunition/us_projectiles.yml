@@ -36,7 +36,7 @@
 # 12.7mm M5 Browning AP
 - type: entity
   id: Bullet127mmAP
-  name: 12.7mm AP projectile
+  name: 12.7x99mm AP projectile
   parent: BaseBullet
   categories: [ HideSpawnMenu ]
   components:
@@ -53,9 +53,9 @@
   - type: ArmorPiercing
     piercingThickness: 1
   - type: Sprite
-    sprite: _Mono/Objects/SpaceArtillery/50_armorpiercing_machinegun_casing.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Projectiles/TGMC.rsi
     layers:
-    - state: base-projectile
+    - state: autocannon
   - type: ShipWeaponProjectile
   - type: TimedDespawn
     lifetime: 10
@@ -88,9 +88,9 @@
   - type: ArmorPiercing
     piercingThickness: 1
   - type: Sprite
-    sprite: _Mono/Objects/SpaceArtillery/50_armorpiercing_machinegun_casing.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Projectiles/ballistic.rsi
     layers:
-    - state: base-projectile
+    - state: shell
   - type: ShipWeaponProjectile
   - type: TimedDespawn
     lifetime: 10
@@ -119,10 +119,9 @@
     armorPenetration: 5
     deleteOnCollide: false
   - type: Sprite
-    sprite: _Mono/Objects/SpaceArtillery/57_shell.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Projectiles/TGMC.rsi
     layers:
-    - state: 57-shell
-    scale: 0.9, 0.9
+    - state: autocannon
   - type: ShipWeaponProjectile
   - type: TimedDespawn
     lifetime: 20
@@ -157,10 +156,9 @@
     spreadAngle: 0
     velocityMultiplier: 2.0
   - type: Sprite
-    sprite: _Mono/Objects/SpaceArtillery/57_shell.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Projectiles/ballistic.rsi
     layers:
-    - state: 57-shell
-    scale: 0.9, 0.9
+    - state: shell
   - type: ShipWeaponProjectile
   - type: TimedDespawn
     lifetime: 20
@@ -189,10 +187,9 @@
     penetrationThreshold: 700
     deleteOnCollide: true
   - type: Sprite
-    sprite: _Mono/Objects/SpaceArtillery/57_shell.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Projectiles/TGMC.rsi
     layers:
-    - state: 57-shell
-    scale: 0.9, 0.9
+    - state: autocannon
   - type: ShipWeaponProjectile
   - type: TimedDespawn
     lifetime: 20
@@ -240,10 +237,9 @@
     maxIntensity: 10
     maxTileBreak: 1
   - type: Sprite
-    sprite: _Mono/Objects/SpaceArtillery/57_shell.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Projectiles/TGMC.rsi
     layers:
-    - state: 57-shell
-    scale: 0.9, 0.9
+    - state: autocannon
   - type: ShipWeaponProjectile
   - type: TimedDespawn
     lifetime: 20
@@ -309,10 +305,9 @@
     maxVelocity: 12
   - type: ExplodeOnTrigger
   - type: Sprite
-    sprite: _Mono/Objects/SpaceArtillery/57_shell.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Projectiles/TGMC.rsi
     layers:
-    - state: 57-shell
-    scale: 0.9, 0.9
+    - state: autocannon
   - type: ShipWeaponProjectile
   - type: TimedDespawn
     lifetime: 4
@@ -386,10 +381,9 @@
     maxIntensity: 15
     maxTileBreak: 1
   - type: Sprite
-    sprite: _Mono/Objects/SpaceArtillery/57_shell.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Projectiles/TGMC.rsi
     layers:
-    - state: 57-shell
-    scale: 0.9, 0.9
+    - state: autocannon
   - type: ShipWeaponProjectile
   - type: TimedDespawn
     lifetime: 20
@@ -424,7 +418,7 @@
     maxIntensity: 20
     maxTileBreak: 1
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Projectiles/ballistic.rsi
     layers:
     - state: grenade
   - type: ShipWeaponProjectile
@@ -469,7 +463,7 @@
     maxIntensity: 25
     maxTileBreak: 2
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Projectiles/ballistic.rsi
     layers:
     - state: grenade
   - type: ShipWeaponProjectile
@@ -506,7 +500,7 @@
     maxVelocity: 15
   - type: ExplodeOnTrigger
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Projectiles/ballistic.rsi
     layers:
     - state: grenade
   - type: ShipWeaponProjectile
@@ -611,7 +605,7 @@
     maxVelocity: 18
   - type: ExplodeOnTrigger
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Projectiles/ballistic.rsi
     layers:
     - state: grenade
   - type: ShipWeaponProjectile
@@ -643,10 +637,9 @@
     damage: 4 # ~25 hits to stun
     deleteOnCollide: true
   - type: Sprite
-    sprite: _Mono/Objects/SpaceArtillery/50_armorpiercing_machinegun_casing.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Projectiles/ballistic.rsi
     layers:
-    - state: base-projectile
-    scale: 0.3, 0.3
+    - state: small
   - type: ShipWeaponProjectile
   - type: TimedDespawn
     lifetime: 1.5
@@ -691,10 +684,9 @@
     maxIntensity: 30
     maxTileBreak: 3
   - type: Sprite
-    sprite: _Mono/Objects/SpaceArtillery/630_armorpiercing_shell_casing.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Projectiles/TGMC.rsi
     layers:
-    - state: base-projectile
-    scale: 1.2, 1.2
+    - state: autocannon
   - type: ShipWeaponProjectile
   - type: TimedDespawn
     lifetime: 50
@@ -726,10 +718,9 @@
     piercingThickness: 20
     deleteOnCollide: false
   - type: Sprite
-    sprite: _Mono/Objects/SpaceArtillery/57_shell.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Projectiles/ballistic.rsi
     layers:
-    - state: 57-shell
-    scale: 1.5, 1.5
+    - state: bigsabot
   - type: ShipWeaponProjectile
   - type: TimedDespawn
     lifetime: 100
@@ -765,10 +756,9 @@
     spreadAngle: 0
     velocityMultiplier: 2.0
   - type: Sprite
-    sprite: _Mono/Objects/SpaceArtillery/630_armorpiercing_shell_casing.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Projectiles/ballistic.rsi
     layers:
-    - state: base-projectile
-    scale: 1.8, 1.8
+    - state: shell
   - type: ShipWeaponProjectile
   - type: TimedDespawn
     lifetime: 100
@@ -798,10 +788,9 @@
         Piercing: 50
     deleteOnCollide: true
   - type: Sprite
-    sprite: _Mono/Objects/SpaceArtillery/57_shell.rsi # change later
+    sprite: _Battlefield14/Objects/Weapons/Guns/Projectiles/ballistic.rsi
     layers:
-    - state: 57-shell
-    scale: 0.5, 0.5
+    - state: small
   - type: ShipWeaponProjectile
   - type: TimedDespawn
     lifetime: 3
@@ -850,7 +839,7 @@
     plasmaAmount: 150
     plasmaTemperature: 1500
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Projectiles/ballistic.rsi
     layers:
     - state: grenade
   - type: ShipWeaponProjectile
@@ -889,7 +878,7 @@
       - ReagentId: CSGas
         Quantity: 50
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Projectiles/ballistic.rsi
     layers:
     - state: grenade
   - type: ShipWeaponProjectile

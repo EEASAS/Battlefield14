@@ -1,7 +1,7 @@
 # K-145 "Kord-N" 12.7mm AP
 - type: entity
   id: Bullet127mmKordN
-  name: 12.7mm Kord-N projectile
+  name: 12.7x108mm Kord-N projectile
   parent: BaseBullet
   categories: [ HideSpawnMenu ]
   components:
@@ -16,9 +16,9 @@
   - type: ArmorPiercing
     piercingThickness: 1
   - type: Sprite
-    sprite: _Mono/Objects/SpaceArtillery/50_armorpiercing_machinegun_casing.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Projectiles/ballistic.rsi
     layers:
-    - state: base-projectile
+    - state: shell
   - type: ShipWeaponProjectile
   - type: TimedDespawn
     lifetime: 10
@@ -61,9 +61,9 @@
     maxIntensity: 12
     maxTileBreak: 1
   - type: Sprite
-    sprite: _Mono/Objects/SpaceArtillery/50_armorpiercing_machinegun_casing.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Projectiles/ballistic.rsi
     layers:
-    - state: base-projectile
+    - state: shell
   - type: ShipWeaponProjectile
   - type: TimedDespawn
     lifetime: 10
@@ -92,9 +92,9 @@
     penetrationThreshold: 250
     deleteOnCollide: true
   - type: Sprite
-    sprite: _Mono/Objects/SpaceArtillery/50_armorpiercing_machinegun_casing.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Projectiles/ballistic.rsi
     layers:
-    - state: base-projectile
+    - state: shell
   - type: ShipWeaponProjectile
   - type: TimedDespawn
     lifetime: 10
@@ -133,9 +133,9 @@
     maxVelocity: 10
   - type: ExplodeOnTrigger
   - type: Sprite
-    sprite: _Mono/Objects/SpaceArtillery/50_armorpiercing_machinegun_casing.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Projectiles/ballistic.rsi
     layers:
-    - state: base-projectile
+    - state: shell
   - type: ShipWeaponProjectile
   - type: TimedDespawn
     lifetime: 3
@@ -197,10 +197,9 @@
     armorPenetration: 0.85
     deleteOnCollide: true
   - type: Sprite
-    sprite: _Mono/Objects/SpaceArtillery/57_shell.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Projectiles/TGMC.rsi
     layers:
-    - state: 57-shell
-    scale: 0.95, 0.95
+    - state: autocannon
   - type: ShipWeaponProjectile
   - type: TimedDespawn
     lifetime: 20
@@ -229,10 +228,9 @@
     penetrationThreshold: 800
     deleteOnCollide: true
   - type: Sprite
-    sprite: _Mono/Objects/SpaceArtillery/57_shell.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Projectiles/TGMC.rsi
     layers:
-    - state: 57-shell
-    scale: 0.95, 0.95
+    - state: autocannon
   - type: ShipWeaponProjectile
   - type: TimedDespawn
     lifetime: 20
@@ -271,10 +269,9 @@
     maxVelocity: 12
   - type: ExplodeOnTrigger
   - type: Sprite
-    sprite: _Mono/Objects/SpaceArtillery/57_shell.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Projectiles/TGMC.rsi
     layers:
-    - state: 57-shell
-    scale: 0.95, 0.95
+    - state: autocannon
   - type: ShipWeaponProjectile
   - type: TimedDespawn
     lifetime: 4
@@ -350,10 +347,9 @@
     maxIntensity: 18
     maxTileBreak: 1
   - type: Sprite
-    sprite: _Mono/Objects/SpaceArtillery/57_shell.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Projectiles/TGMC.rsi
     layers:
-    - state: 57-shell
-    scale: 0.95, 0.95
+    - state: autocannon
   - type: ShipWeaponProjectile
   - type: TimedDespawn
     lifetime: 20
@@ -422,10 +418,9 @@
     maxIntensity: 35
     maxTileBreak: 3
   - type: Sprite
-    sprite: _Mono/Objects/SpaceArtillery/57_shell.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Projectiles/TGMC.rsi
     layers:
-    - state: 57-shell
-    scale: 1.1, 1.1
+    - state: autocannon
   - type: ShipWeaponProjectile
   - type: TimedDespawn
     lifetime: 35
@@ -772,10 +767,9 @@
     armorPenetration: 0.95
     deleteOnCollide: false
   - type: Sprite
-    sprite: _Mono/Objects/SpaceArtillery/57_shell.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Projectiles/ballistic.rsi
     layers:
-    - state: 57-shell
-    scale: 1.6, 1.6
+    - state: bigsabot
   - type: ShipWeaponProjectile
   - type: TimedDespawn
     lifetime: 100
@@ -812,10 +806,9 @@
     spreadAngle: 0
     velocityMultiplier: 2.1
   - type: Sprite
-    sprite: _Mono/Objects/SpaceArtillery/630_armorpiercing_shell_casing.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Projectiles/shell.rsi
     layers:
-    - state: base-projectile
-    scale: 1.9, 1.9
+    - state: bigsabot
   - type: ShipWeaponProjectile
   - type: TimedDespawn
     lifetime: 100
