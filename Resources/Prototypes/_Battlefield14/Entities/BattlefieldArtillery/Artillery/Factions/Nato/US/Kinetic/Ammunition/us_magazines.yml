@@ -81,7 +81,7 @@
 # 12.7mm M5 Browning HMG
 - type: entity
   id: Magazine127mmM5
-  name: "12.7mm M5 HMG magazine (AP)"
+  name: "12.7x99mm M5 HMG magazine (AP)"
   description: "An ammunition belt for the M5 Browning heavy machine gun. Loaded with armor-piercing rounds."
   parent: [BaseItem, RecyclableItemSteelTiny]
   components:
@@ -118,7 +118,7 @@
 
 - type: entity
   id: Cartridge127mmAP
-  name: cartridge (12.7mm AP)
+  name: cartridge (12.7x99mm AP)
   parent: BaseCartridge
   components:
   - type: Tag

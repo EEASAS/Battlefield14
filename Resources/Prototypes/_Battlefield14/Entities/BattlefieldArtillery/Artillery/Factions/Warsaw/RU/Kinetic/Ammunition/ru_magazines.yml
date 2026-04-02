@@ -2,7 +2,7 @@
 # K-145 "Kord-N" 12.7mm HMG
 - type: entity
   id: Magazine127mmKordN
-  name: "12.7mm Kord-N HMG magazine (AP)"
+  name: "12.7x108mm Kord-N HMG magazine (AP)"
   description: "An ammunition belt for the K-145 Kord-N heavy machine gun. Loaded with armor-piercing rounds."
   parent: [BaseItem, RecyclableItemSteelTiny]
   components:
@@ -39,7 +39,7 @@
 
 - type: entity
   id: Cartridge127mmKordN
-  name: cartridge (12.7mm Kord-N)
+  name: cartridge (12.7x108mm Kord-N)
   parent: BaseCartridge
   components:
   - type: Tag
@@ -50,9 +50,9 @@
     deleteOnSpawn: true
     proto: Bullet127mmKordN
   - type: Sprite
-    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Explosives/generic_cartridges.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Casings/12.7x108.rsi
     layers:
-    - state: 90mm
+    - state: base
       map: ["enum.AmmoVisualLayers.Base"]
   - type: Appearance
   - type: SpentAmmoVisuals

@@ -1,7 +1,7 @@
 # K-145 "Kord-N" 12.7mm AP
 - type: entity
   id: Bullet127mmKordN
-  name: 12.7mm Kord-N projectile
+  name: 12.7x108mm Kord-N projectile
   parent: BaseBullet
   categories: [ HideSpawnMenu ]
   components:

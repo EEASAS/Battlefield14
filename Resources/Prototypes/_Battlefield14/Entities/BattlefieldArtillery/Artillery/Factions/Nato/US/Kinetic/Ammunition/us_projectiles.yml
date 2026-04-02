@@ -36,7 +36,7 @@
 # 12.7mm M5 Browning AP
 - type: entity
   id: Bullet127mmAP
-  name: 12.7mm AP projectile
+  name: 12.7x99mm AP projectile
   parent: BaseBullet
   categories: [ HideSpawnMenu ]
   components:
