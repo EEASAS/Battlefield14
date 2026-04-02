@@ -6,6 +6,9 @@
   - type: BallisticAmmoProvider
     capacity: 300 # uhh 9 > 5.56? It's fine its like half as long lol
     proto: BF_CartridgePistol9x19
+    whitelist:
+      tags:
+        - BF_CartridgePistol9x19
   - type: Sprite
     sprite: _Mono/Objects/Weapons/Guns/Ammunition/Boxes/9x19mm.rsi
     layers:
