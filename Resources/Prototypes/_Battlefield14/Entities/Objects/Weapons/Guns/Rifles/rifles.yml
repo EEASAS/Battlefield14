@@ -650,7 +650,7 @@
       - state: mag-0
         map: ["enum.GunVisualLayers.Mag"]
   - type: Clothing
-    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/ASVALworn.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/ASVAL.rsi
   - type: Wieldable
     unwieldOnUse: false
   - type: GunWieldBonus
