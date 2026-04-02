@@ -8,6 +8,9 @@
   components:
   - type: OnUseTimerTrigger
     delay: 3.5
+  - type: RandomTimerTrigger
+    min: 3
+    max: 5
   - type: Tag
     tags:
       - Grenade
@@ -70,6 +73,9 @@
   components:
   - type: OnUseTimerTrigger
     delay: 3.5
+  - type: RandomTimerTrigger
+    min: 3
+    max: 5
   - type: Tag
     tags:
       - Grenade
@@ -103,6 +109,9 @@
     size: Normal
   - type: OnUseTimerTrigger
     delay: 3.5
+  - type: RandomTimerTrigger
+    min: 3
+    max: 5
   - type: Tag
     tags:
       - Grenade
@@ -136,6 +145,9 @@
     size: Large
   - type: OnUseTimerTrigger
     delay: 3.5
+  - type: RandomTimerTrigger
+    min: 3
+    max: 5
   - type: Tag
     tags:
       - Grenade
@@ -220,6 +232,9 @@
   components:
   - type: OnUseTimerTrigger
     delay: 2
+  - type: RandomTimerTrigger
+    min: 2
+    max: 4
   - type: Tag
     tags:
       - Grenade
@@ -335,6 +350,9 @@
   components:
   - type: OnUseTimerTrigger
     delay: 3.5
+  - type: RandomTimerTrigger
+    min: 3
+    max: 5
   - type: Tag
     tags:
       - Grenade
@@ -366,6 +384,9 @@
   components:
   - type: OnUseTimerTrigger
     delay: 3.5
+  - type: RandomTimerTrigger
+    min: 3
+    max: 5
   - type: Tag
     tags:
       - Grenade
@@ -529,6 +550,9 @@
   components:
   - type: OnUseTimerTrigger
     delay: 2
+  - type: RandomTimerTrigger
+    min: 2
+    max: 4
   - type: Tag
     tags:
       - Grenade

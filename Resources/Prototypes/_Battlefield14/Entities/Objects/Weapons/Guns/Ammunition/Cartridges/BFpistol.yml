@@ -10,7 +10,7 @@
     - Cartridge
     - BF_CartridgePistol9x19
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Ammunition/Casings/ammo_casing.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Casings/pistol.rsi
     layers:
     - state: base
       map: ["enum.AmmoVisualLayers.Base"]
@@ -29,7 +29,7 @@
     - Cartridge
     - BF_CartridgePistol45ACP
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Ammunition/Casings/ammo_casing.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Casings/pistol.rsi
     layers:
     - state: base
       map: ["enum.AmmoVisualLayers.Base"]
@@ -48,7 +48,7 @@
     - Cartridge
     - BF_CartridgePistol357
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Ammunition/Casings/ammo_casing.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Casings/pistol.rsi
     layers:
     - state: base
       map: ["enum.AmmoVisualLayers.Base"]

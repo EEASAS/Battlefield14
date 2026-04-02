@@ -5,8 +5,9 @@
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
-    state: buckshot
+    sprite: _Battlefield14/Objects/Weapons/Guns/Projectiles/ballistic.rsi
+    layers:
+    - state: small
   - type: Projectile
     damage:
       types:
@@ -24,7 +25,8 @@
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
-    state: slug
+    layers:
+    - state: slug
   - type: Projectile
     damage:
       types:
@@ -42,7 +44,8 @@
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
-    state: slug
+    layers:
+    - state: slug
   - type: Projectile
     damage:
       types:
@@ -64,7 +67,8 @@
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
-    state: slug
+    layers:
+    - state: bullet
   - type: Projectile
     damage:
       types:
@@ -91,8 +95,9 @@
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
-    state: buckshot
+    sprite: _Battlefield14/Objects/Weapons/Guns/Projectiles/ballistic.rsi
+    layers:
+    - state: small
   - type: Projectile
     damage:
       types:
@@ -110,7 +115,8 @@
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
-    state: slug
+    layers:
+    - state: slug
   - type: Projectile
     damage:
       types:

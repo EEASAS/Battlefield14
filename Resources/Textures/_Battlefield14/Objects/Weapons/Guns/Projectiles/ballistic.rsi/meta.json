@@ -8,16 +8,25 @@
     },
     "states": [
         {
-            "name": "icon"
+            "name": "small"
         },
         {
-            "name": "icon-nameplate"
+            "name": "intermediate"
         },
         {
-            "name": "base"
+            "name": "rifle"
         },
         {
-            "name": "base-spent"
+            "name": "grenade"
+        },
+        {
+            "name": "shell"
+        },
+        {
+            "name": "sabot"
+        },
+        {
+            "name": "bigsabot"
         }
     ]
 }

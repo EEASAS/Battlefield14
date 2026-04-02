@@ -5,9 +5,9 @@
   name: 25x40mm explosive projectile
   components:
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Projectiles/ballistic.rsi
     layers:
-    - state: smallfrag
+    - state: grenade
   - type: Projectile
     damage:
       types:
@@ -49,9 +49,9 @@
     spreadAngle: 10
     velocityMultiplier: 3.0
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Projectiles/ballistic.rsi
     layers:
-    - state: smallfrag
+    - state: grenade
   - type: ShipWeaponProjectile
 #  - type: TimedDespawn
 #    lifetime: 100
@@ -84,9 +84,9 @@
     spreadAngle: 180
     velocityMultiplier: 0.75
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Projectiles/ballistic.rsi
     layers:
-    - state: smallfrag
+    - state: grenade
   - type: ShipWeaponProjectile
 #  - type: TimedDespawn
 #    lifetime: 100
@@ -119,9 +119,9 @@
     spreadAngle: 0
     velocityMultiplier: 1.0
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Projectiles/ballistic.rsi
     layers:
-    - state: smallfrag
+    - state: grenade
   - type: ShipWeaponProjectile
 #  - type: TimedDespawn
 #    lifetime: 100

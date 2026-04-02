@@ -8,10 +8,16 @@
     },
     "states": [
         {
-            "name": "icon"
+            "name": "556"
         },
         {
-            "name": "icon-nameplate"
+            "name": "556-nameplate"
+        },
+        {
+            "name": "762"
+        },
+        {
+            "name": "762-nameplate"
         },
         {
             "name": "base"

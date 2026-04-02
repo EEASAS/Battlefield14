@@ -24,7 +24,7 @@
     maxIntensity: 20
     maxTileBreak: 0
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Projectiles/ballistic.rsi
     layers:
     - state: grenade
   - type: TimedDespawn
@@ -83,7 +83,7 @@
   - type: SpawnOnTrigger
     proto: InstantEffectGravityWellThermobaric
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Projectiles/ballistic.rsi
     layers:
     - state: grenade
   - type: TimedDespawn
@@ -114,7 +114,7 @@
       - ReagentId: CSGas
         Quantity: 50
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Projectiles/ballistic.rsi
     layers:
     - state: grenade
   - type: TimedDespawn
