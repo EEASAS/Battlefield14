@@ -13,11 +13,11 @@ public sealed partial class FlyBySoundComponent : Component
     /// Probability that the sound plays
     /// </summary>
     [ViewVariables(VVAccess.ReadWrite), DataField("prob")]
-    public float Prob = 0.10f;
+    public float Prob = 0.30f; // BF14 0.10f > 0.30f
 
     [ViewVariables(VVAccess.ReadWrite), DataField("sound")]
     [AutoNetworkedField]
-    public SoundSpecifier Sound = new SoundCollectionSpecifier("BulletMiss")
+    public SoundSpecifier Sound = new SoundCollectionSpecifier("BF_BulletMiss") // BF14 BulletMiss > BF_BulletMiss
     {
         Params = AudioParams.Default,
     };

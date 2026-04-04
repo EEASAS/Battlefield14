@@ -76,14 +76,18 @@
   components:
   - type: Sprite
     sprite: _Battlefield14/Clothing/Neck/IFFtapeFSB.rsi
-    layers:
-    - state: icon
-      map: ["unfoldedLayer"]
-      visible: true
-    - state: icon_flipped
-      map: ["foldedLayer"]
-      visible: false
+#    layers:
+#    - state: icon
+#      map: [ "unfoldedLayer" ]
+#    - state: icon_flipped
+#      map: ["foldedLayer"]
+#      visible: false
   - type: Clothing
     sprite: _Battlefield14/Clothing/Neck/IFFtapeFSB.rsi
   - type: Foldable
     canFoldInsideContainer: true
+    unfoldVerbText: fold-flip-verb
+    foldVerbText: fold-flip-verb
+  - type: FoldableClothing
+    foldedEquippedPrefix: flipped
+    foldedHeldPrefix: flipped

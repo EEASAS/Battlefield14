@@ -152,3 +152,20 @@
   - "/Audio/_Battlefield14/Weapons/Guns/M14/uc_m14_fire-04.ogg"
   - "/Audio/_Battlefield14/Weapons/Guns/M14/uc_m14_fire-05.ogg"
   - "/Audio/_Battlefield14/Weapons/Guns/M14/uc_m14_fire-06.ogg"
+
+- type: soundCollection
+  id: BF_BulletMiss
+  files:
+  - /Audio/_Battlefield14/Weapons/Guns/Miss/Whiz.ogg
+  - /Audio/_Battlefield14/Weapons/Guns/Miss/Whiz1.ogg
+  - /Audio/_Battlefield14/Weapons/Guns/Miss/Whiz2.ogg
+  - /Audio/_Battlefield14/Weapons/Guns/Miss/Whiz3.ogg
+  - /Audio/_Battlefield14/Weapons/Guns/Miss/Whiz4.ogg
+  - /Audio/_Battlefield14/Weapons/Guns/Miss/Whiz5.ogg
+  - /Audio/_Battlefield14/Weapons/Guns/Miss/Whiz6.ogg
+  - /Audio/_Battlefield14/Weapons/Guns/Miss/Whiz7.ogg
+  - /Audio/_Battlefield14/Weapons/Guns/Miss/Whiz8.ogg
+  - /Audio/Weapons/Guns/Miss/bullet_miss1.ogg
+  - /Audio/Weapons/Guns/Miss/bullet_miss2.ogg
+  - /Audio/Weapons/Guns/Miss/bullet_miss3.ogg
+  - /Audio/Weapons/Guns/Miss/bullet_miss4.ogg

@@ -47,7 +47,7 @@
     ears: ClothingHeadsetAltRU
     belt: ClothingBeltMilitaryWebbingRUFilledAK74
     jumpsuit: ClothingUniformJumpsuitCamoRUEMR # Gorka
-    head: ClothingHeadHatHelmetRUEMR # blank
+    head: ClothingHeadHatHelmetRUEMR # can't wear the NVGs without this
     balaclava: ClothingBalaclavaMilitary
     eyes: ClothingEyesGogglesGreen
     helmetattachment: ClothingHelmetAttachmentNVGsBasic # TODO replace with BF14 version
@@ -82,7 +82,7 @@
     ears: ClothingHeadsetAltRU
     belt: ClothingBeltMilitaryWebbingRUFilledAK74
     jumpsuit: ClothingUniformJumpsuitCamoRUEMR # Gorka
-    head: ClothingHeadHatHelmetRUEMR # can't wear the NVGs without this
+    head: ClothingHeadHatSkullcrusher
     balaclava: ClothingBalaclavaMilitary
     eyes: ClothingEyesGogglesGreen
     helmetattachment: ClothingHelmetAttachmentNVGsBasic # TODO replace with BF14 version
