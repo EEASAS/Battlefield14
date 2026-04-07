@@ -1,0 +1,6 @@
+- type: dataset
+  id: names_AR15_police
+  values:
+  - "AR-15 Police Carbine"
+  - "RO933 Police Carbine"
+  - "Patrol Rifle"
