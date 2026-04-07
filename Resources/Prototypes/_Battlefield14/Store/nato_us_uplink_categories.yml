@@ -102,7 +102,7 @@
   name:  uplink-natous-m27iarcrate-name
   description: uplink-natous-m27iarcrate-desc
   productEntity: CrateSecgearNATOFilledM27IAR
-  icon: { sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/M27-IAR.rsi, state: icon }
+  icon: { sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/iconstates.rsi, state: icon-full-M27IAR }
   cost:
     NATORequisition: 18 # 3 minutes
   categories:
@@ -118,7 +118,7 @@
   name:  uplink-natous-m16a4crate-name
   description: uplink-natous-m16a4crate-desc
   productEntity: CrateSecgearNATOFilledM16A4
-  icon: { sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/M16A4.rsi, state: icon }
+  icon: { sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/iconstates.rsi, state: icon-full-M16A4 }
   cost:
     NATORequisition: 6 # 1 minutes
   categories:
@@ -134,7 +134,7 @@
   name:  uplink-natous-m4a1crate-name
   description: uplink-natous-m4a1crate-desc
   productEntity: CrateSecgearNATOFilledM4A1
-  icon: { sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/M4A1.rsi, state: icon }
+  icon: { sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/iconstates.rsi, state: icon-full-M4A1 }
   cost:
     NATORequisition: 12 # 2 minutes
   categories:

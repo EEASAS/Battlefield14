@@ -111,11 +111,11 @@
   parent: GunSafeBaseSecure
   id: GunSafeWPSM4A1
   name: Rifle safe
-  Suffix: WPS, M4A1, 2
+  Suffix: WPS, AR-15, 2
   components:
   - type: StorageFill
     contents:
-    - id: WeaponRifleUSM4A1
+    - id: WeaponRifleUSAR15Police
       amount: 2
     - id: BoxMagazineSTANAG
       amount: 2

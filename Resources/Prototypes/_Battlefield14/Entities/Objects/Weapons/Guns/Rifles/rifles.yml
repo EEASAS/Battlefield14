@@ -271,6 +271,45 @@
     zeroVisible: true
   - type: Appearance
 
+- type: entity
+  name: AR-15 Police Carbine
+  parent: WeaponRifleUSM4A1
+  id: WeaponRifleUSAR15Police
+  description: An off the shelf AR-15 with some extra attachments and a law enforcement serial number.
+  components:
+  - type: Item # Controls inhand sprites
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/M4A1.rsi
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/iconstates.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: reddot
+      - state: stock-adjustable
+      - state: carbine-length-barrel-quadrail
+      - state: foregrip
+      - state: railcover
+      - state: mag-30-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/M4A1worn.rsi
+  - type: Wieldable
+    unwieldOnUse: false
+  - type: GunWieldBonus
+    minAngle: -14
+    maxAngle: -20
+  - type: Gun
+    minAngle: 16
+    maxAngle: 30
+    angleIncrease: 1
+    projectileSpeed: 40 # Shorter barrel
+    fireRate: 5
+    availableModes:
+    - SemiAuto
+    selectedMode: SemiAuto
+  - type: RandomMetadata
+    nameSegments: [names_AR15_police]
+
 # Rifles - RU
 
 - type: entity

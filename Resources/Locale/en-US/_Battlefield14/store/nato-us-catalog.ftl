@@ -33,11 +33,11 @@ uplink-natous-AT4crate-desc = 5 disposable 'eighty-four' milimeter launchers fir
 uplink-natous-stingercrate-name = FIM-92 Stinger MANPADS x5
 uplink-natous-stingercrate-desc = 5 stinger MANPADS systems for shooting down fighters.
 
-uplink-natous-M14EBRcrate-name = Mk-14 EBR x2
-uplink-natous-M14EBRcrate-desc = 2 mk-14 EBR scoped designated marksman rifles and two boxes of spare ammunition.
+uplink-NATOUS-M14EBRcrate-name = Mk-14 EBR x2
+uplink-NATOUS-M14EBRcrate-desc = 2 mk-14 EBR scoped designated marksman rifles and two boxes of spare ammunition.
 
-uplink-natous-1776railgun-name = 17.76mm Liberator railgun
-uplink-natous-1776railgun-desc = A singlular unit of the experimental Liberator railgun, fires shortened 17.76mm depleted-uranium penetrators.
+uplink-NATOUS-1776railgun-name = 17.76mm Liberator railgun
+uplink-NATOUS-1776railgun-desc = A singlular unit of the experimental Liberator railgun, fires shortened 17.76mm depleted-uranium penetrators.
 
 ## Ammo
 
