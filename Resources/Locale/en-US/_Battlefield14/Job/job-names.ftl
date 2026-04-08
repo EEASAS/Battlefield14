@@ -20,6 +20,7 @@ job-name-vdv-recon = Recon Scout
 
 job-name-vks-captain = VKS General Major
 job-name-vks-crewman = VKS Crewman
+job-name-vks-fighter-pilot = VKS Fighter Pilot
 
 #Western Private Security#
 

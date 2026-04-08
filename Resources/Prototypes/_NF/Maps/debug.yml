@@ -35,6 +35,7 @@
             USSFFighterPilot: [ -1, -1 ]
             VKSCaptain: [ -1, -1 ]
             VKSCrewman: [ -1, -1 ]
+            VKSFighterPilot: [ -1, -1 ]
             USMCSquadLeader: [-1, -1]
             USMCRifleman: [-1, -1]
             USMCAutomaticRifleman: [-1, -1]

@@ -44,6 +44,7 @@
   roles:
   - VKSCaptain
   - VKSCrewman
+  - VKSFighterPilot
 
 - type: department
   id: WPS

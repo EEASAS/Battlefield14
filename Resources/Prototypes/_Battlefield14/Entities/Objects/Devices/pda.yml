@@ -444,6 +444,17 @@
     id: VKSCrewmanIDCard
     state: pda-ru
 
+- type: entity
+  parent: VDVRiflemanPDA
+  id: VKSFighterPilotPDA
+  name: VKS PDA
+  description: Filled with autistic space game footage.
+  suffix: fighter pilot
+  components:
+  - type: Pda
+    id: VKSFighterPilotIDCard
+    state: pda-ru
+
 ## IND
 
 # Western Private Security

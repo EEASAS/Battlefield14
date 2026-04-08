@@ -409,6 +409,20 @@
   - type: PresetIdCard
     job: VKSCrewman
 
+- type: entity
+  parent: IDCardStandard
+  id: VKSFighterPilotIDCard
+  name: VKS ID card
+  suffix: fighter pilot
+  components:
+  - type: Sprite
+    layers:
+    - state: silver
+  - type: Item
+    heldPrefix: silver
+  - type: PresetIdCard
+    job: VKSFighterPilot
+
 
 ## IND
 

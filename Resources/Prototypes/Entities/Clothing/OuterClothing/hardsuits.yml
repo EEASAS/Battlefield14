@@ -39,6 +39,12 @@
       head: ClothingHeadHelmetHardsuitBasic
       helmetcover: ClothingHeadHelmetCoverBlock
       helmetattachment: ClothingHeadHelmetAttachmentBlock
+  - type: Reflect # BF14
+    reflectProb: 0.01
+    spread: 270
+    reflects:
+    - Energy
+    - NonEnergy
 
 #Atmospherics Hardsuit
 - type: entity

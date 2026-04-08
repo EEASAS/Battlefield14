@@ -28,6 +28,12 @@
     sound:
       path: /Audio/_Goobstation/Items/handling/helmet_drop.ogg
   # Goobstation edit end
+  - type: Reflect # BF14
+    reflectProb: 0.01
+    spread: 270
+    reflects:
+    - Energy
+    - NonEnergy
 
 #Basic Helmet (Security Helmet)
 - type: entity

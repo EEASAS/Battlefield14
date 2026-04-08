@@ -99,6 +99,9 @@
 - type: playTimeTracker
   id: JobVKSCrewman
 
+- type: playTimeTracker
+  id: JobVKSFighterPilot
+
 ## IND
 
 # Western Private Security

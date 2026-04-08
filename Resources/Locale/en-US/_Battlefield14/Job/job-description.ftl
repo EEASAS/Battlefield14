@@ -8,7 +8,7 @@ job-description-usmc-recon = Go on the flanks and conduct surprise attacks or re
 
 job-description-ussf-captain = Lead your battlegroup, whether that be from the front or your capital ship. Answer directly to President Trump.
 job-description-ussf-crewman = Maintain whatever capital ship/port you're assigned to.
-job-description-ussf-fighter-pilot = Eviscerate infantry, splash bandits.
+job-description-ussf-fighter-pilot = Eviscerate infantry, splash bandits, lust over your F-22 Raptor.
 
 #Russian Federation#
 
@@ -20,7 +20,7 @@ job-description-vdv-recon = Go on the flanks and conduct surprise attacks or rel
 
 job-description-vks-captain = Lead your battlegroup, whether that be from the front or your capital ship. Answer directly to President Valdimir Putin.
 job-description-vks-crewman = Maintain whatever capital ship/port you're assigned to.
-job-description-vks-fighter-pilot = Eviscerate infantry, splash bandits.
+job-description-vks-fighter-pilot = Eviscerate infantry, splash bandits, lust over your SU-57 Felon.
 
 #Western Private Security#
 

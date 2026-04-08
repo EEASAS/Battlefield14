@@ -1,12 +1,12 @@
 - type: job
-  id: VKSCrewman
-  name: job-name-vks-crewman
-  description: job-description-vks-crewman
-  playTimeTracker: JobVKSCrewman
-  weight: 77
-  startingGear: VKSCrewmanGear
+  id: VKSFighterPilot
+  name: job-name-vks-fighter-pilot
+  description: job-description-vks-fighter-pilot
+  playTimeTracker: JobVKSFighterPilot
+  weight: 76
+  startingGear: VKSFighterPilotGear
   alwaysUseSpawner: true
-  icon: "JobIconPACTEngineer"
+  icon: "JobIconPACTFighterPilot"
   requireAdminNotify: false
   supervisors: job-supervisors-rugov
   canBeAntag: false
@@ -23,8 +23,6 @@
     - type: NpcFactionMember
       factions:
       - PACT
-    - type: SurgerySpeedModifier
-      SpeedModifier: 1.25
   access:
   - Maintenance
   - Service
@@ -32,21 +30,21 @@
   - Mercenary # Frontier
   - Captain # Frontier
   - PACTCommon
-  - PACTCommand
   - PACTMaintenance
   - PACTMedical
   - PACTArmory
   - PACTCrew
 
 - type: startingGear
-  id: VKSCrewmanGear
+  id: VKSFighterPilotGear
   equipment:
-    id: VKSCrewmanPDA
+    id: VKSFighterPilotPDA
     ears: ClothingHeadsetAltRU
     jumpsuit: ClothingUniformJumpsuitVKSCrewman
+    head: ClothingHeadHatHelmetPilotBlack
     shoes: ClothingShoesBootsJackFilled
     back: ClothingBackpackSecurity
-    belt: ClothingBeltAssaultFilledToolsSRD
+    belt: ClothingBeltAssaultFilledTools
     outerClothing: ClothingOuterArmorWebVestSec
     gloves: ClothingHandsGlovesCombat
     suitstorage: WeaponRifleRUAKS74U

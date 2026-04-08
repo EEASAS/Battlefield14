@@ -153,6 +153,13 @@
   - BF_PACTIFF
   - ContractorWallet
 
+- type: roleLoadout
+  id: JobVKSFighterPilot
+  groups:
+  - BF_CombatMasks
+  - BF_PACTIFF
+  - ContractorWallet
+
 # FSB
 
 - type: roleLoadout
