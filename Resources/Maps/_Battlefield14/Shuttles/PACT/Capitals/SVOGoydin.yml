@@ -4,8 +4,8 @@ meta:
   engineVersion: 264.0.0
   forkId: ""
   forkVersion: ""
-  time: 04/08/2026 01:59:21
-  entityCount: 3302
+  time: 04/08/2026 12:11:22
+  entityCount: 3305
 maps: []
 grids:
 - 1
@@ -483,9 +483,9 @@ entities:
     - type: GridPathfinding
     - type: SpreaderGrid
       spreadQueues:
-        Smoke: []
-        Puddle: []
         Kudzu: []
+        Puddle: []
+        Smoke: []
         MetalFoam: []
     - type: GravityShake
       shakeTimes: 10
@@ -1160,6 +1160,23 @@ entities:
     - type: Transform
       pos: 27.5,31.5
       parent: 1
+- proto: AirlockSyndicateLockedPACTCrew
+  entities:
+  - uid: 620
+    components:
+    - type: Transform
+      pos: 5.5,23.5
+      parent: 1
+  - uid: 621
+    components:
+    - type: Transform
+      pos: 5.5,27.5
+      parent: 1
+  - uid: 622
+    components:
+    - type: Transform
+      pos: 5.5,31.5
+      parent: 1
 - proto: AirlockSyndicateLockedPACTMaintenance
   entities:
   - uid: 7
@@ -1289,24 +1306,6 @@ entities:
       parent: 1
 - proto: AirlockSyndicateLockedPACTSoldier
   entities:
-  - uid: 620
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 5.5,31.5
-      parent: 1
-  - uid: 621
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 5.5,27.5
-      parent: 1
-  - uid: 622
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 5.5,23.5
-      parent: 1
   - uid: 1125
     components:
     - type: Transform
@@ -14850,6 +14849,23 @@ entities:
     components:
     - type: Transform
       pos: 20.5,30.5
+      parent: 1
+- proto: SpawnPointVKSFighterPilot
+  entities:
+  - uid: 3303
+    components:
+    - type: Transform
+      pos: 4.5,23.5
+      parent: 1
+  - uid: 3304
+    components:
+    - type: Transform
+      pos: 4.5,27.5
+      parent: 1
+  - uid: 3305
+    components:
+    - type: Transform
+      pos: 4.5,31.5
       parent: 1
 - proto: SpawnVehicleWheelchair
   entities:

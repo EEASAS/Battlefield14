@@ -4,8 +4,8 @@ meta:
   engineVersion: 264.0.0
   forkId: ""
   forkVersion: ""
-  time: 04/08/2026 01:51:56
-  entityCount: 3725
+  time: 04/08/2026 12:16:37
+  entityCount: 3728
 maps: []
 grids:
 - 1
@@ -119,9 +119,9 @@ entities:
     - type: OccluderTree
     - type: SpreaderGrid
       spreadQueues:
-        Smoke: []
-        Puddle: []
         Kudzu: []
+        Puddle: []
+        Smoke: []
         MetalFoam: []
     - type: Shuttle
       dampingModifier: 0.25
@@ -1047,7 +1047,7 @@ entities:
           3,-4:
             0: 53759
           0,-3:
-            0: 8
+            2: 8
           2,-3:
             0: 39327
           2,-2:
@@ -1404,7 +1404,7 @@ entities:
       pos: 20.5,-21.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -16509.44
+      secondsUntilStateChange: -16811.938
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -1517,6 +1517,18 @@ entities:
     - type: Transform
       pos: 26.5,-35.5
       parent: 1
+- proto: AirlockNfsdGlassLockedNATOCrew
+  entities:
+  - uid: 2414
+    components:
+    - type: Transform
+      pos: 8.5,-24.5
+      parent: 1
+  - uid: 2415
+    components:
+    - type: Transform
+      pos: 8.5,-25.5
+      parent: 1
 - proto: AirlockNfsdGlassLockedNATOSoldier
   entities:
   - uid: 2402
@@ -1530,18 +1542,6 @@ entities:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 16.5,-47.5
-      parent: 1
-  - uid: 2414
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 8.5,-24.5
-      parent: 1
-  - uid: 2415
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 8.5,-25.5
       parent: 1
 - proto: AirlockNfsdLockedNATOCommon
   entities:
@@ -12343,7 +12343,7 @@ entities:
       pos: 10.5,-42.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -14347.844
+      secondsUntilStateChange: -14650.343
       state: Closing
   - uid: 2294
     components:
@@ -19034,6 +19034,23 @@ entities:
     components:
     - type: Transform
       pos: 15.5,-33.5
+      parent: 1
+- proto: SpawnPointUSSFFighterPilot
+  entities:
+  - uid: 3726
+    components:
+    - type: Transform
+      pos: 5.5,-27.5
+      parent: 1
+  - uid: 3727
+    components:
+    - type: Transform
+      pos: 5.5,-28.5
+      parent: 1
+  - uid: 3728
+    components:
+    - type: Transform
+      pos: 5.5,-29.5
       parent: 1
 - proto: SpawnVehicleWheelchair
   entities:
