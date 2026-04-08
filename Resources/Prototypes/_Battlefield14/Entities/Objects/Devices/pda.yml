@@ -248,6 +248,22 @@
   - type: PdaBorderColor
     borderColor: "#203564"
 
+- type: entity
+  parent: BasePDA
+  id: USSFFighterPilotPDA
+  name: USSF PDA
+  description: Filled with autistic space game footage.
+  suffix: fighter pilot
+  components:
+  - type: Icon
+    sprite: _Battlefield14/Objects/Devices/pda.rsi
+    state: pda-us
+  - type: Pda
+    id: USSFFighterPilotIDCard
+    state: pda-us
+  - type: PdaBorderColor
+    borderColor: "#203564"
+
 ## RU
 
 # VDV

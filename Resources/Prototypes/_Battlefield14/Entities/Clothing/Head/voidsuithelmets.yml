@@ -19,6 +19,7 @@
     highPressureMultiplier: 0.1
     lowPressureMultiplier: 1000
   - type: IdentityBlocker
+  - type: ShowJobIcons
   - type: Armor
     modifiers:
       coefficients:
@@ -50,6 +51,7 @@
     highPressureMultiplier: 0.1
     lowPressureMultiplier: 1000
   - type: IdentityBlocker
+  - type: ShowJobIcons
   - type: Armor
     modifiers:
       coefficients:

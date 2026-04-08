@@ -218,6 +218,20 @@
   - type: PresetIdCard
     job: USSFCrewman
 
+- type: entity
+  parent: IDCardStandard
+  id: USSFFighterPilotIDCard
+  name: Space Force ID card
+  suffix: fighter pilot
+  components:
+  - type: Sprite
+    layers:
+    - state: silver
+  - type: Item
+    heldPrefix: silver
+  - type: PresetIdCard
+    job: USSFFighterPilot
+
 
 ## RU
 

@@ -20,6 +20,7 @@
   roles:
   - USSFCaptain
   - USSFCrewman
+  - USSFFighterPilot
 
 - type: department
   id: VDV

@@ -8,6 +8,7 @@ job-name-usmc-recon = Force Recon
 
 job-name-ussf-captain = USSF Colonel
 job-name-ussf-crewman = USSF Crewman
+job-name-ussf-fighter-pilot = USSF Fighter Pilot
 
 #Russian Federation#
 

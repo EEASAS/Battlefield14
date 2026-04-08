@@ -1,23 +1,21 @@
 - type: job
-  id: USSFCaptain
-  name: job-name-ussf-captain
-  description: job-description-ussf-captain
-  playTimeTracker: JobUSSFCaptain
-  weight: 78
-  startingGear: USSFCaptainGear
+  id: USSFFighterPilot
+  name: job-name-ussf-fighter-pilot
+  description: job-description-ussf-fighter-pilot
+  playTimeTracker: JobUSSFFighterPilot
+  weight: 76
+  startingGear: USSFFighterPilotGear
   alwaysUseSpawner: true
-  icon: "JobIconNATOCaptain"
-  requireAdminNotify: true
+  icon: "JobIconNATOFighterPilot"
+  requireAdminNotify: false
   supervisors: job-supervisors-usgov
   canBeAntag: false
   special:
   - !type:AddLanguageSpecial
     languagesSpoken:
     - English
-    - Esperanto
     languagesUnderstood:
     - English
-    - Esperanto
   - !type:AddImplantSpecial
     implants: [ TrackingImplantNATOUS ]
   - !type:AddComponentSpecial
@@ -25,8 +23,6 @@
     - type: NpcFactionMember
       factions:
       - NATO
-    - type: SurgerySpeedModifier
-      SpeedModifier: 1.25
   access:
   - Maintenance
   - Service
@@ -34,28 +30,30 @@
   - Mercenary # Frontier
   - Captain # Frontier
   - NATOCommon
-  - NATOCommand
   - NATOMaintenance
-  - NATOSoldier
+  - NATOMedical
   - NATOArmory
-  - NATOFunds
   - NATOCrew
-  - NATOCaptain
 
 - type: startingGear
-  id: USSFCaptainGear
+  id: USSFFighterPilotGear
   equipment:
-    id: USSFCaptainPDA
+    id: USSFFighterPilotPDA
     ears: ClothingHeadsetAltUS
-    jumpsuit: ClothingUniformJumpsuitSpaceForceCaptain
+    jumpsuit: ClothingUniformJumpsuitSpaceForceCrewman
+    head: ClothingHeadHatHelmetPilotNavyBlue
     shoes: ClothingShoesBootsJackFilled
-    back: ClothingBackpackSatchelSecurity
-    belt: ClothingBeltCommandFilledUS
+    back: ClothingBackpackSecurity
+    belt: ClothingBeltAssaultFilledTools
+    outerClothing: ClothingOuterArmorWebVestSec
     gloves: ClothingHandsGlovesCombat
-    pocket1: PouchFirstAidFilled
+    suitstorage: WeaponRifleUSM4
+    pocket2: PouchFirstAidFilled
   storage:
     back:
     - ClothingMaskGasM40
     - FlashlightMilitaryUS
+    - MagazineRifleSTANAG
+    - MagazineRifleSTANAG
     - Tourniquet
     - Zipties
