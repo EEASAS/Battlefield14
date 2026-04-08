@@ -4,7 +4,7 @@ meta:
   engineVersion: 264.0.0
   forkId: ""
   forkVersion: ""
-  time: 03/26/2026 06:20:51
+  time: 04/08/2026 01:59:21
   entityCount: 3302
 maps: []
 grids:
@@ -484,9 +484,9 @@ entities:
     - type: SpreaderGrid
       spreadQueues:
         Smoke: []
-        MetalFoam: []
-        Kudzu: []
         Puddle: []
+        Kudzu: []
+        MetalFoam: []
     - type: GravityShake
       shakeTimes: 10
     - type: GasTileOverlay
@@ -11344,13 +11344,6 @@ entities:
     - type: Transform
       pos: 14.5,44.5
       parent: 1
-- proto: CrateSecgearPACTFilledRPG7
-  entities:
-  - uid: 1137
-    components:
-    - type: Transform
-      pos: 14.5,40.5
-      parent: 1
 - proto: CurtainsBlackOpen
   entities:
   - uid: 2871
@@ -12936,13 +12929,6 @@ entities:
     - type: Transform
       pos: 4.5,26.5
       parent: 1
-- proto: LockerArmoryPACTFilledSV98
-  entities:
-  - uid: 1135
-    components:
-    - type: Transform
-      pos: 16.5,43.5
-      parent: 1
 - proto: LockerMedicineFilled
   entities:
   - uid: 1031
@@ -14308,6 +14294,20 @@ entities:
     components:
     - type: Transform
       pos: 19.5,29.5
+      parent: 1
+- proto: RandomWeaponPACTRULauncher
+  entities:
+  - uid: 1135
+    components:
+    - type: Transform
+      pos: 14.5,40.5
+      parent: 1
+- proto: RandomWeaponPACTRUSniper
+  entities:
+  - uid: 1137
+    components:
+    - type: Transform
+      pos: 16.5,43.5
       parent: 1
 - proto: ReinforcedWindow
   entities:

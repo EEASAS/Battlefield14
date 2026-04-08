@@ -29,6 +29,6 @@
   - type: Tag
     tags:
     - ClothMade
-  - type: StaticPrice
-    price: 350
-    vendPrice: 500
+#BF14  - type: StaticPrice
+#BF14    price: 350
+#BF14    vendPrice: 500

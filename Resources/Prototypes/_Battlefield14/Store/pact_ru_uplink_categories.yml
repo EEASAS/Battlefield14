@@ -4,7 +4,7 @@
 
 - type: listing
   id: UplinkPACTRUAK203Crate
-  name:  uplink-PACTRU-ak203crate-name
+  name: uplink-PACTRU-ak203crate-name
   description: uplink-PACTRU-ak203crate-desc
   productEntity: CrateSecgearPACTFilledAK203
   icon: { sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AK203.rsi, state: icon }
@@ -20,7 +20,7 @@
 
 - type: listing
   id: UplinkPACTRUAK74Crate
-  name:  uplink-PACTRU-ak74crate-name
+  name: uplink-PACTRU-ak74crate-name
   description: uplink-PACTRU-ak74crate-desc
   productEntity: CrateSecgearPACTFilledAK74
   icon: { sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AK74.rsi, state: icon }
@@ -36,7 +36,7 @@
 
 - type: listing
   id: UplinkPACTRUAK12Crate
-  name:  uplink-PACTRU-ak12crate-name
+  name: uplink-PACTRU-ak12crate-name
   description: uplink-PACTRU-ak12crate-desc
   productEntity: CrateSecgearPACTFilledAK12
   icon: { sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AK12.rsi, state: icon }
@@ -52,7 +52,7 @@
 
 - type: listing
   id: UplinkPACTRUSV98Crate
-  name:  uplink-PACTRU-sv98crate-name
+  name: uplink-PACTRU-sv98crate-name
   description: uplink-PACTRU-sv98crate-desc
   productEntity: CrateSecgearPACTFilledSV98
   icon: { sprite: _Battlefield14/Objects/Weapons/Guns/Snipers/SV98.rsi, state: icon }
@@ -68,7 +68,7 @@
 
 - type: listing
   id: UplinkPACTRUSVDSCrate
-  name:  uplink-PACTRU-SVDScrate-name
+  name: uplink-PACTRU-SVDScrate-name
   description: uplink-PACTRU-SVDScrate-desc
   productEntity: CrateSecgearPACTFilledSVDS
   icon: { sprite: _Battlefield14/Objects/Weapons/Guns/Snipers/SVDS.rsi, state: icon }
@@ -84,7 +84,7 @@
 
 - type: listing
   id: UplinkPACTRUKSKCrate
-  name:  uplink-PACTRU-KSKcrate-name
+  name: uplink-PACTRU-KSKcrate-name
   description: uplink-PACTRU-KSKcrate-desc
   productEntity: CrateSecgearPACTFilledKSK
   icon: { sprite: _Battlefield14/Objects/Weapons/Guns/Shotguns/KSK.rsi, state: icon }
@@ -100,7 +100,7 @@
 
 - type: listing
   id: UplinkPACTRUKS23MCrate
-  name:  uplink-PACTRU-KS23Mcrate-name
+  name: uplink-PACTRU-KS23Mcrate-name
   description: uplink-PACTRU-KS23Mcrate-desc
   productEntity: CrateSecgearPACTFilledKS23M
   icon: { sprite: _Battlefield14/Objects/Weapons/Guns/Shotguns/KS23M.rsi, state: icon }
@@ -116,7 +116,7 @@
 
 - type: listing
   id: UplinkPACTRUGM94Crate
-  name:  uplink-PACTRU-GM94crate-name
+  name: uplink-PACTRU-GM94crate-name
   description: uplink-PACTRU-GM94crate-desc
   productEntity: CrateSecgearPACTFilledGM94
   icon: { sprite: _Battlefield14/Objects/Weapons/Guns/GrenadeLaunchers/GM94.rsi, state: icon }
@@ -132,7 +132,7 @@
 
 - type: listing
   id: UplinkPACTRUPKMCrate
-  name:  uplink-PACTRU-PKMcrate-name
+  name: uplink-PACTRU-PKMcrate-name
   description: uplink-PACTRU-PKMcrate-desc
   productEntity: CrateSecgearPACTFilledPKM
   icon: { sprite: _Battlefield14/Objects/Weapons/Guns/MachineGuns/PKM.rsi, state: icon }
@@ -148,7 +148,7 @@
 
 - type: listing
   id: UplinkPACTRURPG7Crate
-  name:  uplink-PACTRU-RPG7crate-name
+  name: uplink-PACTRU-RPG7crate-name
   description: uplink-PACTRU-RPG7crate-desc
   productEntity: CrateSecgearPACTFilledRPG7
   icon: { sprite: _Battlefield14/Objects/Weapons/Guns/Launchers/RPG7.rsi, state: icon }
@@ -164,7 +164,7 @@
 
 - type: listing
   id: UplinkPACTRURPG30Crate
-  name:  uplink-PACTRU-RPG30crate-name
+  name: uplink-PACTRU-RPG30crate-name
   description: uplink-PACTRU-RPG30crate-desc
   productEntity: CrateSecgearPACTFilledRPG30
   icon: { sprite: _Battlefield14/Objects/Weapons/Guns/Launchers/RPG30.rsi, state: icon }
@@ -180,7 +180,7 @@
 
 - type: listing
   id: UplinkPACTRURPG26ThermobaricCrate
-  name:  uplink-PACTRU-rshg2crate-name
+  name: uplink-PACTRU-rshg2crate-name
   description: uplink-PACTRU-rshg2crate-desc
   productEntity: CrateSecgearPACTFilledRPG26Thermobaric
   icon: { sprite: _Battlefield14/Objects/Weapons/Guns/Launchers/RPG26.rsi, state: icon }
@@ -196,7 +196,7 @@
 
 - type: listing
   id: UplinkPACTRUIglae
-  name:  uplink-PACTRU-iglacrate-name
+  name: uplink-PACTRU-iglacrate-name
   description: uplink-PACTRU-iglacrate-desc
   productEntity: CrateSecgearPACTFilledIgla
   icon: { sprite: _Battlefield14/Objects/Weapons/Guns/Launchers/Igla.rsi, state: icon }
@@ -214,7 +214,7 @@
 
 - type: listing
   id: UplinkPACTRUAmmoBag
-  name:  uplink-PACTRU-ammo-bag-name
+  name: uplink-PACTRU-ammo-bag-name
   description: uplink-PACTRU-ammo-bag-desc
   productEntity: SupplyBoxAmmoRUFilled
   icon: { sprite: _Battlefield14/Objects/Misc/ammobagru.rsi, state: icon }
@@ -230,7 +230,7 @@
 
 - type: listing
   id: UplinkPACTRUAmmoAK12
-  name:  uplink-PACTRU-magazine-box-AK12-name
+  name: uplink-PACTRU-magazine-box-AK12-name
   description: uplink-PACTRU-magazine-box-AK12-desc
   productEntity: BoxMagazineAK12
   icon: { sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Rifle/AK12.rsi, state: mag-12 }
@@ -246,7 +246,7 @@
 
 - type: listing
   id: UplinkPACTRUAmmoAK203
-  name:  uplink-PACTRU-magazine-box-AK203-name
+  name: uplink-PACTRU-magazine-box-AK203-name
   description: uplink-PACTRU-magazine-box-AK203-desc
   productEntity: BoxMagazineAK203
   icon: { sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Rifle/AK203.rsi, state: base }
@@ -262,7 +262,7 @@
 
 - type: listing
   id: UplinkPACTRUAmmoASVALShort
-  name:  uplink-PACTRU-magazine-box-ASVALshort-name
+  name: uplink-PACTRU-magazine-box-ASVALshort-name
   description: uplink-PACTRU-magazine-box-ASVALshort-desc
   productEntity: BoxMagazineASVALShort
   icon: { sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Rifle/ASVAL.rsi, state: base }
@@ -278,7 +278,7 @@
 
 - type: listing
   id: UplinkPACTRUAmmoASVAL
-  name:  uplink-PACTRU-magazine-box-ASVAL-name
+  name: uplink-PACTRU-magazine-box-ASVAL-name
   description: uplink-PACTRU-magazine-box-ASVAL-desc
   productEntity: BoxMagazineASVAL
   icon: { sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Rifle/ASVAL.rsi, state: base }
@@ -294,7 +294,7 @@
 
 - type: listing
   id: UplinkPACTRUAmmoKSKBuckshot
-  name:  uplink-PACTRU-magazine-box-KSKBuckshot-name
+  name: uplink-PACTRU-magazine-box-KSKBuckshot-name
   description: uplink-PACTRU-magazine-box-KSKBuckshot-desc
   productEntity: BoxMagazineKSKBuckshot
   icon: { sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Shotgun/KSK.rsi, state: icon }
@@ -310,7 +310,7 @@
 
 - type: listing
   id: UplinkPACTRUAmmoKSKSlug
-  name:  uplink-PACTRU-magazine-box-KSKSlug-name
+  name: uplink-PACTRU-magazine-box-KSKSlug-name
   description: uplink-PACTRU-magazine-box-KSKSlug-desc
   productEntity: BoxMagazineKSKSlug
   icon: { sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Shotgun/KSK.rsi, state: icon }
@@ -328,7 +328,7 @@
 
 - type: listing
   id: UplinkPACTRUEVAKitCombat
-  name:  uplink-PACTRU-evakit-combat-name
+  name: uplink-PACTRU-evakit-combat-name
   description: uplink-PACTRU-evakit-combat-desc
   productEntity: EVAKitCombatRU
   icon: { sprite: _Battlefield14/Clothing/OuterClothing/Voidsuits/russiancombat.rsi, state: icon }
@@ -346,7 +346,7 @@
 #
 #- type: listing
 #  id: UplinkPACTRUMacheteBelt
-#  name:  uplink-PACTRU-machete-belt-name
+#  name: uplink-PACTRU-machete-belt-name
 #  description: uplink-PACTRU-machete-belt-desc
 #  productEntity: ClothingBeltMacheteFilled
 #  icon: { sprite: _Battlefield14/Clothing/Belt/machetebelt.rsi, state: icon }
@@ -364,7 +364,7 @@
 #
 #- type: listing
 #  id: UplinkPACTRUCombatMedkit
-#  name:  uplink-PACTRU-medkit-combat-name
+#  name: uplink-PACTRU-medkit-combat-name
 #  description: uplink-PACTRU-medkit-combat-desc
 #  productEntity: MedkitCombatFilled
 #  icon: { sprite: _NF/Objects/Specific/Medical/firstaidkits.rsi, state: blackkit }
@@ -382,7 +382,7 @@
 
 - type: listing
   id: UplinkPACTRUBoxGrenadesRGD5
-  name:  uplink-PACTRU-rgd5-box-name
+  name: uplink-PACTRU-rgd5-box-name
   description: uplink-PACTRU-rgd5-box-desc
   productEntity: BoxGrenadesRGD5
   icon: { sprite: _Battlefield14/Objects/Weapons/Grenades/rgd5.rsi, state: icon }
@@ -398,7 +398,7 @@
 
 - type: listing
   id: UplinkPACTRUBoxGrenadesRGO
-  name:  uplink-PACTRU-rgo-box-name
+  name: uplink-PACTRU-rgo-box-name
   description: uplink-PACTRU-rgo-box-desc
   productEntity: BoxGrenadesRGO
   icon: { sprite: _Battlefield14/Objects/Weapons/Grenades/rgo.rsi, state: icon }
@@ -414,7 +414,7 @@
 
 - type: listing
   id: UplinkPACTRUBoxGrenadesRDG2
-  name:  uplink-PACTRU-rdg2-box-name
+  name: uplink-PACTRU-rdg2-box-name
   description: uplink-PACTRU-rdg2-box-desc
   productEntity: BoxGrenadesRDG2
   icon: { sprite: _Battlefield14/Objects/Weapons/Grenades/rdg2.rsi, state: icon }
@@ -430,7 +430,7 @@
 
 - type: listing
   id: UplinkPACTRUBoxGrenadesZarya
-  name:  uplink-PACTRU-zarya-box-name
+  name: uplink-PACTRU-zarya-box-name
   description: uplink-PACTRU-zarya-box-desc
   productEntity: BoxGrenadesZarya
   icon: { sprite: _Battlefield14/Objects/Weapons/Grenades/zarya.rsi, state: icon }
@@ -446,7 +446,7 @@
 
 - type: listing
   id: UplinkPACTRUBoxGrenades43x30HEFrag
-  name:  uplink-PACTRU-43x30-box-HEFrag-name
+  name: uplink-PACTRU-43x30-box-HEFrag-name
   description: uplink-PACTRU-43x30-box-HEFrag-desc
   productEntity: BoxMagazine43x30HEFrag
   icon: { sprite: _Mono/Objects/Weapons/Guns/Ammunition/Explosives/explosives.rsi, state: frag }
@@ -462,7 +462,7 @@
 
 - type: listing
   id: UplinkPACTRUBoxGrenades43x30Thermobaric
-  name:  uplink-PACTRU-43x30-box-Thermobaric-name
+  name: uplink-PACTRU-43x30-box-Thermobaric-name
   description: uplink-PACTRU-43x30-box-Thermobaric-desc
   productEntity: BoxMagazine43x30Thermobaric
   icon: { sprite: _Mono/Objects/Weapons/Guns/Ammunition/Explosives/explosives.rsi, state: frag }
@@ -478,7 +478,7 @@
 
 - type: listing
   id: UplinkPACTRUBoxGrenades43x30ChemicalSmoke
-  name:  uplink-PACTRU-43x30-box-ChemicalSmoke-name
+  name: uplink-PACTRU-43x30-box-ChemicalSmoke-name
   description: uplink-PACTRU-43x30-box-ChemicalSmoke-desc
   productEntity: BoxMagazine43x30ChemicalSmoke
   icon: { sprite: _Mono/Objects/Weapons/Guns/Ammunition/Explosives/explosives.rsi, state: blast }
@@ -496,7 +496,7 @@
 
 - type: listing
   id: UplinkPACTRU30mmFrag
-  name:  uplink-PACTRU-gromn-frag-name
+  name: uplink-PACTRU-gromn-frag-name
   description: uplink-PACTRU-gromn-frag-desc
   productEntity: Magazine30mmFrag
   icon: { sprite: _Mono/Objects/Weapons/Guns/Ammunition/Boxes/generic_shipgun_box.rsi, state: base }

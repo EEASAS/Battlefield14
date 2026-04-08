@@ -564,12 +564,11 @@
     - Cartridge40x46mmHE
     - Cartridge40x46mmGrenade
   - type: CartridgeAmmo
-    deleteOnSpawn: true
     proto: Bullet40x46mmHE
   - type: Sprite
-    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Explosives/explosives.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Casings/40x46.rsi
     layers:
-    - state: frag
+    - state: base
       map: ["enum.AmmoVisualLayers.Base"]
   - type: Appearance
   - type: SpentAmmoVisuals
@@ -607,12 +606,11 @@
     - Cartridge40x46mmHEDP
     - Cartridge40x46mmGrenade
   - type: CartridgeAmmo
-    deleteOnSpawn: true
     proto: Bullet40x46mmHEDP
   - type: Sprite
-    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Explosives/explosives.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Casings/40x46.rsi
     layers:
-    - state: frag
+    - state: base
       map: ["enum.AmmoVisualLayers.Base"]
   - type: Appearance
   - type: SpentAmmoVisuals
@@ -650,12 +648,11 @@
     - Cartridge40x46mmFrag
     - Cartridge40x46mmGrenade
   - type: CartridgeAmmo
-    deleteOnSpawn: true
     proto: Bullet40x46mmFrag
   - type: Sprite
-    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Explosives/explosives.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Casings/40x46.rsi
     layers:
-    - state: frag
+    - state: base
       map: ["enum.AmmoVisualLayers.Base"]
   - type: Appearance
   - type: SpentAmmoVisuals
@@ -693,7 +690,6 @@
     - Cartridge40x46mmMPAPERS
     - Cartridge40x46mmGrenade
   - type: CartridgeAmmo
-    deleteOnSpawn: true
     proto: 40x46mmMPAPERSSpread
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Grenades/40x46mm.rsi
@@ -719,12 +715,11 @@
     - Cartridge40x46mmPlasmaGas
     - Cartridge40x46mmGrenade
   - type: CartridgeAmmo
-    deleteOnSpawn: true
     proto: Bullet40x46mmPlasmaGas
   - type: Sprite
-    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Explosives/explosives.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Casings/40x46.rsi
     layers:
-    - state: emp
+    - state: base
       map: ["enum.AmmoVisualLayers.Base"]
   - type: Appearance
   - type: SpentAmmoVisuals
@@ -763,12 +758,11 @@
     - Cartridge40x46mmChemicalSmoke
     - Cartridge40x46mmGrenade
   - type: CartridgeAmmo
-    deleteOnSpawn: true
     proto: Bullet40x46mmChemicalSmoke
   - type: Sprite
-    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Explosives/explosives.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Casings/40x46.rsi
     layers:
-    - state: blast
+    - state: base
       map: ["enum.AmmoVisualLayers.Base"]
   - type: Appearance
   - type: SpentAmmoVisuals

@@ -4,7 +4,7 @@
     EVAKitCombatUSMC: 50
     WeaponRifleUSM16A4: 50
     WeaponRifleUSM4A1: 2
-    MagazineRifleSTANAG: 10
+    WeaponRifleUSM4: 2
     WeaponSubmachinegunUSMP5: 5
     WeaponPistolM9: 2
     MagazinePistolM9: 10
@@ -39,6 +39,7 @@
     MagazineBox556x45: 5
     MagazineSubmachinegunMP5: 100
     MagazineBox9x19mmBig: 10
+    BoxFlare: 4
     CrayonBox: 1
 
 - type: vendingMachineInventory
@@ -79,7 +80,7 @@
   startingInventory:
     EVAKitCombatRU: 50
     WeaponRifleRUAK12: 50
-    WeaponRifleRUAKS74U: 2
+    WeaponRifleRUAKS74U: 4
     WeaponSubmachinegunRUVityaz: 5
     WeaponPistolMP443: 2
     MagazinePistolMP443: 10
@@ -118,6 +119,7 @@
     MagazineBox9x19mmBig: 5
     BoxMagazineASVALShort: 5
     BoxMagazineAKM: 2
+    BoxFlare: 4
     CrayonBox: 1
 
 - type: vendingMachineInventory

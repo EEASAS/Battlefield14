@@ -49,12 +49,12 @@
     belt: ClothingBeltAssaultFilledToolsSRD
     outerClothing: ClothingOuterArmorWebVestSec
     gloves: ClothingHandsGlovesCombat
-    suitstorage: WeaponSubmachinegunRUVityaz
+    suitstorage: WeaponRifleRUAKS74U
     pocket2: PouchFirstAidFilled
   storage:
     back:
     - ClothingMaskGasRussia
-    - MagazineSubmachinegunVityaz
-    - MagazineSubmachinegunVityaz
+    - MagazineRifleAK74
+    - MagazineRifleAK74
     - Tourniquet
     - Zipties

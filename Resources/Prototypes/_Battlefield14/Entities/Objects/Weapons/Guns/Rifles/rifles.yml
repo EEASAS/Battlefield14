@@ -27,7 +27,7 @@
     unwieldOnUse: false
   - type: GunWieldBonus
     minAngle: -19
-    maxAngle: -30
+    maxAngle: -25
   - type: Gun
     minAngle: 19
     maxAngle: 32
@@ -39,6 +39,7 @@
     burstCooldown: 0.3
     fireRate: 4
     projectileSpeed: 55 # twenty inch barrel
+    angleIncrease: 1
     soundGunshot:
       collection: BF_M16_Gunshots
       params:
@@ -48,7 +49,7 @@
     soundBoltClosed:
       path: /Audio/_Battlefield14/Weapons/Guns/M16/uc_m16_chamber_press.ogg
       params:
-        volume: -3
+        volume: -5
   - type: ItemSlots
     slots:
       gun_magazine:
@@ -125,6 +126,11 @@
         volume: -5
         variation: 0.125
     fireRate: 7
+  - type: ChamberMagazineAmmoProvider
+    soundBoltClosed:
+      path: /Audio/_Battlefield14/Weapons/Guns/M16/uc_m16_chamber_press.ogg
+      params:
+        volume: -5
   - type: ItemSlots
     slots:
       gun_magazine:
@@ -199,12 +205,13 @@
 
 - type: entity
   name: M4 Carbine
-  parent: BaseWeaponSubMachineGun
+  parent: WeaponRifleUSM4A1
   id: WeaponRifleUSM4
   description: Before the M4 was A1 it had a 3 round burst #A favorite of tacticool larpers and MAC V SOG commandos alike.
   components:
   - type: Item # Controls inhand sprites
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/M4.rsi
+    size: Large
   - type: Icon
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/iconstates.rsi
     state: icon-full-M4A1
@@ -220,8 +227,6 @@
         map: ["enum.GunVisualLayers.Mag"]
   - type: Clothing
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/M4.rsi
-  - type: Wieldable
-    unwieldOnUse: false
   - type: GunWieldBonus
     minAngle: -14
     maxAngle: -15
@@ -237,39 +242,6 @@
     burstFireRate: 16
     burstCooldown: 0.3
     fireRate: 4
-    soundGunshot:
-      collection: BF_M16_Gunshots
-      params:
-        volume: -5
-        variation: 0.125
-  - type: ItemSlots
-    slots:
-      gun_magazine:
-        name: Magazine
-        startingItem: MagazineRifleSTANAG
-        insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
-        ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
-        priority: 2
-        whitelist:
-          tags:
-            - MagazineRifleSTANAG
-        whitelistFailPopup: gun-magazine-whitelist-fail
-      gun_chamber:
-        name: Chamber
-        startingItem: BF_CartridgeRifle556x45
-        priority: 1
-        whitelist:
-          tags:
-            - BF_CartridgeRifle556x45
-  - type: ContainerContainer
-    containers:
-      gun_magazine: !type:ContainerSlot
-      gun_chamber: !type:ContainerSlot
-  - type: MagazineVisuals
-    magState: mag-30
-    steps: 1
-    zeroVisible: true
-  - type: Appearance
 
 - type: entity
   name: AR-15 Police Carbine
@@ -406,6 +378,7 @@
     maxAngle: 32
     angleIncrease: 2
     projectileSpeed: 40 # Shorter barrel
+    fireRate: 6
     availableModes:
     - SemiAuto
     - FullAuto
@@ -474,6 +447,7 @@
     maxAngle: 32
     angleIncrease: 2
     projectileSpeed: 35 # Shorter barrel + suppressed
+    fireRate: 8
     availableModes:
     - SemiAuto
     - FullAuto
@@ -588,7 +562,7 @@
     - SemiAuto
     - FullAuto
     selectedMode: FullAuto
-    fireRate: 6
+    fireRate: 8
     projectileSpeed: 45
     soundGunshot:
       collection: BF_AK_545_Gunshots_SUPP

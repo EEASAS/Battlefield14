@@ -49,13 +49,13 @@
     belt: ClothingBeltAssaultFilledToolsSRD
     outerClothing: ClothingOuterArmorWebVestSec
     gloves: ClothingHandsGlovesCombat
-    suitstorage: WeaponSubmachinegunUSMP5
+    suitstorage: WeaponRifleUSM4
     pocket2: PouchFirstAidFilled
   storage:
     back:
     - ClothingMaskGasM40
     - FlashlightMilitaryUS
-    - MagazineSubmachinegunMP5
-    - MagazineSubmachinegunMP5
+    - MagazineRifleSTANAG
+    - MagazineRifleSTANAG
     - Tourniquet
     - Zipties

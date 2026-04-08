@@ -108,3 +108,18 @@
     access: [ ["PACTCaptain"] ]
   - type: Lock
     locked: true
+
+- type: entity
+  parent: StructureRackLockWallmountedSingle
+  id: StructureRackLockWallmountedSingleFilledPACTRUCaptainSR3M
+  suffix: Filled, PACT, Captain, SR-3M
+  components:
+  - type: StorageFill
+    contents:
+      - id: WeaponRifleRUSR3M
+      - id: MagazineRifleASVAL
+        amount: 4
+  - type: AccessReader
+    access: [ ["PACTCaptain"] ]
+  - type: Lock
+    locked: true

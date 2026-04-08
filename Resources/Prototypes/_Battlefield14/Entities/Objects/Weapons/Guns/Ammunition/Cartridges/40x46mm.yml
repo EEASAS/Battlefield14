@@ -13,12 +13,11 @@
     - Cartridge40x46mmChemicalSmoke
     - Cartridge40x46mmGrenade
   - type: CartridgeAmmo
-    deleteOnSpawn: true
     proto: Bullet40x46mmChemicalSmokeInfantry
   - type: Sprite
-    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Explosives/explosives.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Casings/40x46.rsi
     layers:
-    - state: blast
+    - state: base
       map: ["enum.AmmoVisualLayers.Base"]
   - type: Appearance
   - type: SpentAmmoVisuals

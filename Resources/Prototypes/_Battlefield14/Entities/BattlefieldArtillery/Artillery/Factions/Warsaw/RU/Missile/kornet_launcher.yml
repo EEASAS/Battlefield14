@@ -18,7 +18,7 @@
     range: 500
   - type: Gun
     recoil: 0
-    fireRate: 0.5
+    fireRate: 0.25
     shootThermalSignature: 4500000
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/rocket_launcher.ogg
@@ -96,4 +96,3 @@
   - type: Damageable
     damageContainer: Inorganic
     damageModifierSet: Metallic
-

@@ -4,8 +4,8 @@ meta:
   engineVersion: 264.0.0
   forkId: ""
   forkVersion: ""
-  time: 03/21/2026 05:24:29
-  entityCount: 3274
+  time: 04/08/2026 02:02:18
+  entityCount: 3302
 maps: []
 grids:
 - 1
@@ -483,10 +483,10 @@ entities:
     - type: GridPathfinding
     - type: SpreaderGrid
       spreadQueues:
-        MetalFoam: []
+        Smoke: []
         Puddle: []
         Kudzu: []
-        Smoke: []
+        MetalFoam: []
     - type: GravityShake
       shakeTimes: 10
     - type: GasTileOverlay
@@ -523,10 +523,10 @@ entities:
             2: 13104
             0: 34952
           2,2:
-            2: 13175
+            2: 13107
             0: 34952
           2,3:
-            2: 47243
+            2: 47115
           2,0:
             0: 34962
           2,4:
@@ -538,7 +538,7 @@ entities:
           3,2:
             0: 65297
           3,3:
-            2: 56785
+            2: 56769
           3,4:
             2: 57341
           4,2:
@@ -632,7 +632,7 @@ entities:
           4,9:
             2: 36831
           4,10:
-            2: 6553
+            2: 4505
           4,11:
             2: 4113
             1: 17472
@@ -644,7 +644,7 @@ entities:
             1: 144
             0: 2048
           4,12:
-            2: 4465
+            2: 4433
             0: 128
           5,2:
             0: 65280
@@ -662,9 +662,9 @@ entities:
             2: 32759
           8,2:
             0: 13107
-            2: 35020
+            2: 34952
           8,3:
-            2: 45883
+            2: 45835
           5,4:
             2: 4080
           5,5:
@@ -704,11 +704,11 @@ entities:
           5,9:
             2: 65535
           5,10:
-            2: 4095
+            2: 255
           6,9:
             2: 16255
           6,10:
-            2: 819
+            2: 51
           6,11:
             1: 17472
           7,9:
@@ -736,7 +736,7 @@ entities:
             0: 15
           6,12:
             0: 48
-            2: 192
+            2: 64
           6,13:
             0: 3
             1: 3072
@@ -782,13 +782,13 @@ entities:
           9,8:
             2: 35771
           10,5:
-            2: 63232
+            2: 30464
           10,6:
-            2: 30711
+            2: 30583
           10,7:
-            2: 32631
+            2: 30583
           10,8:
-            2: 13183
+            2: 13175
           11,4:
             0: 4096
           11,5:
@@ -3194,6 +3194,127 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 13.5,42.5
       parent: 1
+- proto: BlastDoorGracePeriod
+  entities:
+  - uid: 3275
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 34.5,9.5
+      parent: 1
+  - uid: 3283
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 43.5,32.5
+      parent: 1
+  - uid: 3284
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 43.5,30.5
+      parent: 1
+  - uid: 3285
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 43.5,25.5
+      parent: 1
+  - uid: 3286
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 43.5,23.5
+      parent: 1
+  - uid: 3287
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 32.5,13.5
+      parent: 1
+  - uid: 3288
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 33.5,13.5
+      parent: 1
+  - uid: 3289
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 12.5,13.5
+      parent: 1
+  - uid: 3290
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 11.5,13.5
+      parent: 1
+  - uid: 3291
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 34.5,8.5
+      parent: 1
+  - uid: 3292
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 17.5,49.5
+      parent: 1
+  - uid: 3293
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 10.5,9.5
+      parent: 1
+  - uid: 3294
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 10.5,8.5
+      parent: 1
+  - uid: 3295
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 27.5,49.5
+      parent: 1
+  - uid: 3296
+    components:
+    - type: Transform
+      pos: 25.5,42.5
+      parent: 1
+  - uid: 3297
+    components:
+    - type: Transform
+      pos: 24.5,42.5
+      parent: 1
+  - uid: 3298
+    components:
+    - type: Transform
+      pos: 23.5,42.5
+      parent: 1
+  - uid: 3299
+    components:
+    - type: Transform
+      pos: 22.5,42.5
+      parent: 1
+  - uid: 3300
+    components:
+    - type: Transform
+      pos: 21.5,42.5
+      parent: 1
+  - uid: 3301
+    components:
+    - type: Transform
+      pos: 20.5,42.5
+      parent: 1
+  - uid: 3302
+    components:
+    - type: Transform
+      pos: 19.5,42.5
+      parent: 1
 - proto: BlastDoorOpen
   entities:
   - uid: 977
@@ -3309,6 +3430,23 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 31.5,25.5
       parent: 1
+  - uid: 3277
+    components:
+    - type: Transform
+      pos: 21.5,27.5
+      parent: 1
+  - uid: 3279
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 13.5,44.5
+      parent: 1
+  - uid: 3280
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 23.5,32.5
+      parent: 1
 - proto: ButtonFrameCautionSecurity
   entities:
   - uid: 1638
@@ -3382,6 +3520,12 @@ entities:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 33.5,49.5
+      parent: 1
+  - uid: 3282
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 18.5,39.5
       parent: 1
 - proto: CableApcExtension
   entities:
@@ -10928,7 +11072,7 @@ entities:
       startingCharge: 0
 - proto: ComputerShipyardRussianNaval
   entities:
-  - uid: 2284
+  - uid: 1135
     components:
     - type: Transform
       rot: 3.141592653589793 rad
@@ -10937,7 +11081,9 @@ entities:
     - type: ApcPowerReceiver
       powerLoad: 5
     - type: Battery
-      startingCharge: 0
+      startingCharge: 62.5
+    - type: ApcPowerReceiverBattery
+      enabled: True
 - proto: ComputerShuttle
   entities:
   - uid: 946
@@ -10945,66 +11091,12 @@ entities:
     - type: Transform
       pos: 22.5,33.5
       parent: 1
-    - type: DeviceLinkSource
-      linkedPorts:
-        978:
-        - - device-button-3
-          - Toggle
-        977:
-        - - device-button-3
-          - Toggle
-        2269:
-        - - device-button-3
-          - Toggle
-        2270:
-        - - device-button-3
-          - Toggle
-        3181:
-        - - device-button-4
-          - Toggle
-        1107:
-        - - device-button-4
-          - Toggle
-        2285:
-        - - device-button-5
-          - Toggle
-        2286:
-        - - device-button-5
-          - Toggle
-        2287:
-        - - device-button-5
-          - Toggle
-        2288:
-        - - device-button-5
-          - Toggle
-        2289:
-        - - device-button-5
-          - Toggle
-        292:
-        - - device-button-6
-          - Toggle
-        300:
-        - - device-button-6
-          - Toggle
-        308:
-        - - device-button-6
-          - Toggle
-        316:
-        - - device-button-6
-          - Toggle
-        324:
-        - - device-button-6
-          - Toggle
-        332:
-        - - device-button-6
-          - Toggle
-        340:
-        - - device-button-6
-          - Toggle
     - type: ApcPowerReceiver
       powerLoad: 5
     - type: Battery
-      startingCharge: 0
+      startingCharge: 90
+    - type: ApcPowerReceiverBattery
+      enabled: True
 - proto: ComputerSurveillanceCameraMonitor
   entities:
   - uid: 965
@@ -11263,13 +11355,6 @@ entities:
     components:
     - type: Transform
       pos: 14.5,44.5
-      parent: 1
-- proto: CrateSecgearPACTFilledRPG7
-  entities:
-  - uid: 1137
-    components:
-    - type: Transform
-      pos: 14.5,40.5
       parent: 1
 - proto: CurtainsBlackOpen
   entities:
@@ -12772,6 +12857,73 @@ entities:
     - type: Transform
       pos: 35.5,32.5
       parent: 1
+- proto: LockableButtonPACTCommand
+  entities:
+  - uid: 3276
+    components:
+    - type: Transform
+      pos: 21.5,27.5
+      parent: 1
+    - type: DeviceLinkSource
+      linkedPorts:
+        2285:
+        - - Pressed
+          - Toggle
+        2286:
+        - - Pressed
+          - Toggle
+        2287:
+        - - Pressed
+          - Toggle
+        2288:
+        - - Pressed
+          - Toggle
+        2289:
+        - - Pressed
+          - Toggle
+  - uid: 3278
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 13.5,44.5
+      parent: 1
+    - type: DeviceLinkSource
+      linkedPorts:
+        1107:
+        - - Pressed
+          - Toggle
+        3181:
+        - - Pressed
+          - Toggle
+  - uid: 3281
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 18.5,39.5
+      parent: 1
+    - type: DeviceLinkSource
+      linkedPorts:
+        292:
+        - - Pressed
+          - Toggle
+        300:
+        - - Pressed
+          - Toggle
+        308:
+        - - Pressed
+          - Toggle
+        316:
+        - - Pressed
+          - Toggle
+        324:
+        - - Pressed
+          - Toggle
+        332:
+        - - Pressed
+          - Toggle
+        340:
+        - - Pressed
+          - Toggle
 - proto: LockerArmoryPACTFilledSU57
   entities:
   - uid: 641
@@ -12788,13 +12940,6 @@ entities:
     components:
     - type: Transform
       pos: 4.5,26.5
-      parent: 1
-- proto: LockerArmoryPACTFilledSV98
-  entities:
-  - uid: 1135
-    components:
-    - type: Transform
-      pos: 16.5,43.5
       parent: 1
 - proto: LockerMedicineFilled
   entities:
@@ -13164,30 +13309,6 @@ entities:
     - type: Transform
       pos: 22.5,20.5
       parent: 1
-- proto: PaperOffice
-  entities:
-  - uid: 2268
-    components:
-    - type: Transform
-      pos: 23.5,32.5
-      parent: 1
-    - type: Paper
-      content: >-
-        Port 1 -
-
-        Port 2 -
-
-        Port 3 - Toggle bridge blast doors
-
-        Port 4 - Toggle infantry armoury blast doors
-
-        (Note: this will allow access to requisitions)
-
-        Port 5 - Toggle war vendor blast doors
-
-        (Note: it is a good idea to give your soldiers a briefing first)
-
-        Port 6 - Toggle Oreshnik blast doors
 - proto: PortableGeneratorSuperPacmanShuttle
   entities:
   - uid: 1652
@@ -14186,6 +14307,20 @@ entities:
     - type: Transform
       pos: 19.5,29.5
       parent: 1
+- proto: RandomWeaponPACTRULauncher
+  entities:
+  - uid: 1137
+    components:
+    - type: Transform
+      pos: 14.5,40.5
+      parent: 1
+- proto: RandomWeaponPACTRUSniper
+  entities:
+  - uid: 1584
+    components:
+    - type: Transform
+      pos: 16.5,43.5
+      parent: 1
 - proto: ReinforcedWindow
   entities:
   - uid: 12
@@ -14339,6 +14474,28 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 31.5,26.5
       parent: 1
+- proto: SignalButton
+  entities:
+  - uid: 2284
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 23.5,32.5
+      parent: 1
+    - type: DeviceLinkSource
+      linkedPorts:
+        978:
+        - - Pressed
+          - Toggle
+        977:
+        - - Pressed
+          - Toggle
+        2269:
+        - - Pressed
+          - Toggle
+        2270:
+        - - Pressed
+          - Toggle
 - proto: SignalButtonDirectional
   entities:
   - uid: 1641
@@ -14850,7 +15007,7 @@ entities:
       parent: 1
 - proto: StructureRackLockWallmountedSingleFilledPACTRUCaptainAKS74U
   entities:
-  - uid: 1584
+  - uid: 2268
     components:
     - type: Transform
       pos: 25.5,28.5

@@ -413,7 +413,7 @@
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: MicroBomb
-    totalIntensity: 120
+    totalIntensity: 60
     intensitySlope: 4
     maxIntensity: 20
     maxTileBreak: 1
@@ -452,13 +452,13 @@
   - type: Heat
     explosionDelay: 0
     fragmentationDelay: 0
-    fragmentationCount: 75
+    fragmentationCount: 40
     fragmentationPrototype: Bullet40x46mmHEDPFragment
     plasmaAmount: 0
   - type: ExplodeOnTrigger
   - type: Explosive
-    explosionType: MicroBomb
-    totalIntensity: 150
+    explosionType: DemolitionCharge
+    totalIntensity: 100
     intensitySlope: 5
     maxIntensity: 25
     maxTileBreak: 2
@@ -560,9 +560,9 @@
   - type: Projectile
     damage:
       types:
-        Structural: 20
-        Slash: 10
-        Piercing: 10
+        Structural: 10
+        Slash: 12
+        Piercing: 12
     deleteOnCollide: true
   - type: StaminaDamageOnCollide
     damage: 6 # ~17 hits to stun

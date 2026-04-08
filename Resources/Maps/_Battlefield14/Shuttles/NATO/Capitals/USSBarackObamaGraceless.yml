@@ -4,8 +4,8 @@ meta:
   engineVersion: 264.0.0
   forkId: ""
   forkVersion: ""
-  time: 03/21/2026 05:22:21
-  entityCount: 3721
+  time: 04/08/2026 01:52:23
+  entityCount: 3725
 maps: []
 grids:
 - 1
@@ -119,10 +119,10 @@ entities:
     - type: OccluderTree
     - type: SpreaderGrid
       spreadQueues:
-        MetalFoam: []
+        Smoke: []
         Puddle: []
         Kudzu: []
-        Smoke: []
+        MetalFoam: []
     - type: Shuttle
       dampingModifier: 0.25
     - type: GridPathfinding
@@ -1187,7 +1187,7 @@ entities:
           3,-14:
             0: 63931
           3,-17:
-            0: 61158
+            0: 61152
           4,-16:
             0: 30479
           4,-15:
@@ -1195,7 +1195,7 @@ entities:
           4,-14:
             0: 65535
           4,-17:
-            0: 65296
+            0: 30480
           5,-17:
             0: 4353
           5,-15:
@@ -1404,7 +1404,7 @@ entities:
       pos: 20.5,-21.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -15937.132
+      secondsUntilStateChange: -16535.736
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -1941,6 +1941,11 @@ entities:
       parent: 1
 - proto: AtmosFixBlockerMarker
   entities:
+  - uid: 1157
+    components:
+    - type: Transform
+      pos: 3.5,-11.5
+      parent: 1
   - uid: 2274
     components:
     - type: Transform
@@ -2788,6 +2793,32 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 29.5,-49.5
       parent: 1
+- proto: BlastDoorGracePeriod
+  entities:
+  - uid: 426
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 13.5,-67.5
+      parent: 1
+  - uid: 3722
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 14.5,-67.5
+      parent: 1
+  - uid: 3723
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 19.5,-64.5
+      parent: 1
+  - uid: 3724
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 19.5,-65.5
+      parent: 1
 - proto: BlastDoorOpen
   entities:
   - uid: 651
@@ -2936,6 +2967,12 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 11.5,-31.5
       parent: 1
+  - uid: 2425
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 10.5,-5.5
+      parent: 1
   - uid: 2804
     components:
     - type: Transform
@@ -3001,12 +3038,6 @@ entities:
       parent: 1
 - proto: ButtonFrameCautionSecurity
   entities:
-  - uid: 2424
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 19.5,-31.5
-      parent: 1
   - uid: 2837
     components:
     - type: Transform
@@ -10712,7 +10743,7 @@ entities:
       startingCharge: 0
 - proto: ComputerShipyardUnitedStatesNaval
   entities:
-  - uid: 767
+  - uid: 530
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
@@ -10721,7 +10752,22 @@ entities:
     - type: ApcPowerReceiver
       powerLoad: 5
     - type: Battery
-      startingCharge: 0
+      startingCharge: 70
+    - type: ApcPowerReceiverBattery
+      enabled: True
+- proto: ComputerShuttle
+  entities:
+  - uid: 411
+    components:
+    - type: Transform
+      pos: 12.5,-30.5
+      parent: 1
+    - type: ApcPowerReceiver
+      powerLoad: 5
+    - type: Battery
+      startingCharge: 25
+    - type: ApcPowerReceiverBattery
+      enabled: True
 - proto: ComputerTabletopAlert
   entities:
   - uid: 433
@@ -10763,17 +10809,6 @@ entities:
     components:
     - type: Transform
       pos: 17.5,-30.5
-      parent: 1
-    - type: ApcPowerReceiver
-      powerLoad: 5
-    - type: Battery
-      startingCharge: 0
-- proto: ComputerTabletopShuttle
-  entities:
-  - uid: 426
-    components:
-    - type: Transform
-      pos: 12.5,-30.5
       parent: 1
     - type: ApcPowerReceiver
       powerLoad: 5
@@ -10921,10 +10956,10 @@ entities:
           ent: null
 - proto: CrateMaterialsBasicFilled
   entities:
-  - uid: 787
+  - uid: 2424
     components:
     - type: Transform
-      pos: 3.5,-43.5
+      pos: 2.5,-45.5
       parent: 1
 - proto: CrateMedicalRollerBeds
   entities:
@@ -10939,13 +10974,6 @@ entities:
     components:
     - type: Transform
       pos: 2.5,-42.5
-      parent: 1
-- proto: CrateSecgearNATOFilledSMAW
-  entities:
-  - uid: 1157
-    components:
-    - type: Transform
-      pos: 3.5,-42.5
       parent: 1
 - proto: CrateSecgearNATOFilledStinger
   entities:
@@ -12327,7 +12355,7 @@ entities:
       pos: 10.5,-42.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -13775.537
+      secondsUntilStateChange: -14374.142
       state: Closing
   - uid: 2294
     components:
@@ -16526,6 +16554,28 @@ entities:
     - type: Transform
       pos: 17.5,-53.5
       parent: 1
+- proto: LockableButtonNATOCommand
+  entities:
+  - uid: 431
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 10.5,-5.5
+      parent: 1
+    - type: DeviceLinkSource
+      linkedPorts:
+        250:
+        - - Pressed
+          - Toggle
+        238:
+        - - Pressed
+          - Toggle
+        232:
+        - - Pressed
+          - Toggle
+        233:
+        - - Pressed
+          - Toggle
 - proto: LockerArmoryNATOFilledF22
   entities:
   - uid: 307
@@ -18152,18 +18202,6 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 3.5,-42.5
       parent: 1
-  - uid: 431
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 3.5,-44.5
-      parent: 1
-  - uid: 530
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 3.5,-43.5
-      parent: 1
   - uid: 553
     components:
     - type: Transform
@@ -18416,6 +18454,12 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 1.5,-18.5
       parent: 1
+  - uid: 3725
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 3.5,-46.5
+      parent: 1
 - proto: RailingCorner
   entities:
   - uid: 43
@@ -18603,6 +18647,13 @@ entities:
     - type: Transform
       pos: 17.5,-1.5
       parent: 1
+- proto: RandomWeaponNATOUSLauncher
+  entities:
+  - uid: 787
+    components:
+    - type: Transform
+      pos: 3.5,-42.5
+      parent: 1
 - proto: Recycler
   entities:
   - uid: 720
@@ -18654,32 +18705,6 @@ entities:
         2854:
         - - Pressed
           - Toggle
-  - uid: 2425
-    components:
-    - type: MetaData
-      name: signal button (war vendors)
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 19.5,-31.5
-      parent: 1
-    - type: DeviceLinkSource
-      linkedPorts:
-        250:
-        - - Pressed
-          - Toggle
-        238:
-        - - Pressed
-          - Toggle
-        232:
-        - - Pressed
-          - Toggle
-        233:
-        - - Pressed
-          - Toggle
-    - type: Label
-      currentLabel: war vendors
-    - type: NameModifier
-      baseName: signal button
   - uid: 2846
     components:
     - type: Transform
@@ -18865,6 +18890,14 @@ entities:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 11.5,-31.5
+      parent: 1
+- proto: SignNfsdBrig
+  entities:
+  - uid: 767
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 14.5,-46.5
       parent: 1
 - proto: SinkWide
   entities:
@@ -19361,11 +19394,6 @@ entities:
     components:
     - type: Transform
       pos: 6.5,-27.5
-      parent: 1
-  - uid: 411
-    components:
-    - type: Transform
-      pos: 12.5,-30.5
       parent: 1
   - uid: 412
     components:

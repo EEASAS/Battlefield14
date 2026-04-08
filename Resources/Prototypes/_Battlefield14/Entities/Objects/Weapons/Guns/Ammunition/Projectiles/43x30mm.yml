@@ -13,15 +13,15 @@
   - type: HeFragProjectile
     explosionDelay: 0
     fragmentationDelay: 0
-    fragmentationCount: 20
+    fragmentationCount: 30
     fragmentationPrototype: Bullet43x30mmFragFragment
     plasmaAmount: 0
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: Default
-    totalIntensity: 120
+    totalIntensity: 90
     intensitySlope: 4
-    maxIntensity: 20
+    maxIntensity: 30
     maxTileBreak: 0
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Guns/Projectiles/ballistic.rsi
@@ -43,7 +43,7 @@
   - type: Projectile
     damage:
       types:
-        Structural: 20
+        Structural: 10
         Slash: 10
         Piercing: 10
   - type: StaminaDamageOnCollide
@@ -75,7 +75,7 @@
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: FireBomb
-    totalIntensity: 150
+    totalIntensity: 100
     intensitySlope: 5
     maxIntensity: 30
     maxTileBreak: 0

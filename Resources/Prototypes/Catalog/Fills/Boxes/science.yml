@@ -8,6 +8,9 @@
     grid:
     - 0,0,3,2
     maxItemSize: Normal
+    whitelist: # BF14
+      tags:
+        - GlassBeaker
   - type: StorageFill
     contents:
     - id: LargeBeaker
@@ -18,3 +21,5 @@
     layers:
       - state: box
       - state: beaker
+  - type: ExplosionResistance # BF14
+    damageCoefficient: 0.0
