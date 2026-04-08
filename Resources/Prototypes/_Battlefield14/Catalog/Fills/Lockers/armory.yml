@@ -67,6 +67,7 @@
         - id: Screwdriver
         - id: WelderIndustrial
         - id: ClothingEyesGlassesMeson
+        - id: EVAKitCombatUSMC # Temp
   - type: AccessReader
     access: [["NATOArmory"]]
 
@@ -167,5 +168,6 @@
         - id: Screwdriver
         - id: WelderIndustrial
         - id: ClothingEyesGlassesMeson
+        - id: EVAKitCombatRU # Temp
   - type: AccessReader
     access: [["PACTArmory"]]

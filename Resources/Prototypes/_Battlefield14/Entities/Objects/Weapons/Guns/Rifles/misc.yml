@@ -80,7 +80,7 @@
   description: Something isn't right here.
   components:
   - type: Item # Controls inhand sprites
-    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/M4A1.rsi # Teeeemp
+    sprite: _Mono/Objects/Weapons/Guns/Rifles/lecter_inhands_32x.rsi # Teeeemp
   - type: Icon
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/M42A5.rsi
     state: icon
