@@ -7,7 +7,7 @@
   description: An old Stoner design, many rifles have tried to take its place and many have failed.
   components:
   - type: Item # Controls inhand sprites
-    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/M16A4.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/M16A4.rsi
   - type: Icon
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/iconstates.rsi
     state: icon-full-M16A4
@@ -22,7 +22,7 @@
       - state: mag-30-0
         map: ["enum.GunVisualLayers.Mag"]
   - type: Clothing
-    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/M16A4worn.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/M16A4.rsi
   - type: Wieldable
     unwieldOnUse: false
   - type: GunWieldBonus
@@ -90,7 +90,7 @@
   description: The classic American slugthrower.
   components:
   - type: Item # Controls inhand sprites
-    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/M4A1.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/M4A1.rsi
   - type: Icon
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/iconstates.rsi
     state: icon-full-M4A1
@@ -105,7 +105,7 @@
       - state: mag-30-0
         map: ["enum.GunVisualLayers.Mag"]
   - type: Clothing
-    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/M4A1worn.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/M4A1.rsi
   - type: Wieldable
     unwieldOnUse: false
   - type: GunWieldBonus
@@ -163,7 +163,7 @@
   description: This is so CAG bro!.
   components:
   - type: Item # Controls inhand sprites
-    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/M4A1SUPP.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/M4A1SUPP.rsi
   - type: Icon
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/iconstates.rsi
     state: icon-full-M4A1
@@ -180,7 +180,7 @@
       - state: mag-30-0
         map: ["enum.GunVisualLayers.Mag"]
   - type: Clothing
-    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/M4A1worn.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/M4A1SUPP.rsi
   - type: Wieldable
     unwieldOnUse: false
   - type: GunWieldBonus
@@ -210,7 +210,7 @@
   description: Before the M4 was A1 it had a 3 round burst #A favorite of tacticool larpers and MAC V SOG commandos alike.
   components:
   - type: Item # Controls inhand sprites
-    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/M4.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/M4.rsi
     size: Large
   - type: Icon
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/iconstates.rsi
@@ -226,7 +226,7 @@
       - state: mag-30-0
         map: ["enum.GunVisualLayers.Mag"]
   - type: Clothing
-    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/M4.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/M4.rsi
   - type: GunWieldBonus
     minAngle: -14
     maxAngle: -15
@@ -249,8 +249,6 @@
   id: WeaponRifleUSAR15Police
   description: An off the shelf AR-15 with some extra attachments and a law enforcement serial number.
   components:
-  - type: Item # Controls inhand sprites
-    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/M4A1.rsi
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/iconstates.rsi
     layers:
@@ -263,8 +261,6 @@
       - state: railcover
       - state: mag-30-0
         map: ["enum.GunVisualLayers.Mag"]
-  - type: Clothing
-    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/M4A1worn.rsi
   - type: Wieldable
     unwieldOnUse: false
   - type: GunWieldBonus

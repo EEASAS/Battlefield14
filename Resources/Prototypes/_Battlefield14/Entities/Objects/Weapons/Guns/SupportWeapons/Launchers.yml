@@ -177,7 +177,7 @@
 # RU
 
 - type: entity
-  name: RPG-7
+  name: RPG-7V2
   parent: [ BaseWeaponLauncher , BaseGunWieldable , WeaponHandlingLauncher ]
   id: WeaponLauncherRURPG7
   description: A timeless classic, no doubt this will be used a thousand years from now.
