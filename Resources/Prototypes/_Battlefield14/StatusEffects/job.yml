@@ -53,6 +53,13 @@
 
 - type: jobIcon
   parent: JobIcon
+  id: JobIconNATORecon
+  icon:
+    sprite: /Textures/_Battlefield14/Interface/Misc/class_icons.rsi
+    state: natorecon
+
+- type: jobIcon
+  parent: JobIcon
   id: JobIconNATOEngineer
   icon:
     sprite: /Textures/_Battlefield14/Interface/Misc/class_icons.rsi
@@ -60,10 +67,10 @@
 
 - type: jobIcon
   parent: JobIcon
-  id: JobIconNATORecon
+  id: JobIconNATOFighterPilot
   icon:
     sprite: /Textures/_Battlefield14/Interface/Misc/class_icons.rsi
-    state: natorecon
+    state: natofighterpilot
 
 - type: jobIcon
   parent: JobIcon
@@ -122,6 +129,13 @@
   icon:
     sprite: /Textures/_Battlefield14/Interface/Misc/class_icons.rsi
     state: pactengineer
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconPACTFighterPilot
+  icon:
+    sprite: /Textures/_Battlefield14/Interface/Misc/class_icons.rsi
+    state: pactfighterpilot
 
 - type: jobIcon
   parent: JobIcon

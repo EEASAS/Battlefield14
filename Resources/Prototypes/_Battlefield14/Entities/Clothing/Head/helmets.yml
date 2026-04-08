@@ -134,7 +134,7 @@
         Slash: 0.8
         Piercing: 0.9
         Heat: 0.9
-        Shock: 3
+        Shock: 5
   - type: PointLight
     enabled: false
     radius: 3
@@ -143,3 +143,32 @@
     mask: null
     autoRot: true
     netsync: false
+
+- type: entity
+  parent: ClothingHeadHatHelmetUS
+  id: ClothingHeadHatHelmetPilotBlack
+  name: pilot helmet
+  description: Has enough protection to stop your head getting caved in after ejection and is equipped with an advanced IFF sensor suite and welding arc protection.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Clothing/Head/Helmets/helmetpilotblack.rsi
+  - type: Clothing
+    sprite: _Battlefield14/Clothing/Head/Helmets/helmetpilotblack.rsi
+  - type: ShowJobIcons
+  - type: Tag
+    tags:
+    - HudSecurity
+  - type: EyeProtection # welding protection, not flash protection
+  - type: IdentityBlocker
+    coverage: EYES
+
+- type: entity
+  parent: ClothingHeadHatHelmetPilotBlack
+  id: ClothingHeadHatHelmetPilotNavyBlue
+  name: pilot helmet
+  description: Has enough protection to stop your head getting caved in after ejection and is equipped with an advanced IFF sensor suite and welding arc protection.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Clothing/Head/Helmets/helmetpilotnavyblue.rsi
+  - type: Clothing
+    sprite: _Battlefield14/Clothing/Head/Helmets/helmetpilotnavyblue.rsi

@@ -7,7 +7,7 @@
   startingGear: USSFCaptainGear
   alwaysUseSpawner: true
   icon: "JobIconNATOCaptain"
-  requireAdminNotify: false
+  requireAdminNotify: true
   supervisors: job-supervisors-usgov
   canBeAntag: false
   special:

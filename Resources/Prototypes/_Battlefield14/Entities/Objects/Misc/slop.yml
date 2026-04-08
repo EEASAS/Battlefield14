@@ -106,3 +106,36 @@
         reagents:
         - ReagentId: WhitePhosphorus
           Quantity: 10
+
+- type: entity
+  parent: BasePlushie
+  id: PlushieTrump
+  name: Donald Trump plushie
+  description: A cute toy that resembles the sitting president of the United States.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Misc/trump.rsi
+    state: drumpf
+  - type: Item
+    size: Normal
+  - type: Extractable
+    grindableSolutionName: trump
+  - type: SolutionContainerManager
+    solutions:
+      trump:
+        reagents:
+        - ReagentId: WhitePhosphorus
+          Quantity: 10
+      food:
+        maxVol: 10
+        reagents:
+        - ReagentId: WhitePhosphorus
+          Quantity: 10
+
+- type: entity
+  parent: PlushieTrump
+  id: PlushieTrumpRealistic
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Misc/trump.rsi
+    state: trump

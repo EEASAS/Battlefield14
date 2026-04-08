@@ -1,0 +1,59 @@
+- type: job
+  id: USSFFighterPilot
+  name: job-name-ussf-fighter-pilot
+  description: job-description-ussf-fighter-pilot
+  playTimeTracker: JobUSSFFighterPilot
+  weight: 76
+  startingGear: USSFFighterPilotGear
+  alwaysUseSpawner: true
+  icon: "JobIconNATOFighterPilot"
+  requireAdminNotify: false
+  supervisors: job-supervisors-usgov
+  canBeAntag: false
+  special:
+  - !type:AddLanguageSpecial
+    languagesSpoken:
+    - English
+    languagesUnderstood:
+    - English
+  - !type:AddImplantSpecial
+    implants: [ TrackingImplantNATOUS ]
+  - !type:AddComponentSpecial
+    components:
+    - type: NpcFactionMember
+      factions:
+      - NATO
+  access:
+  - Maintenance
+  - Service
+  - External
+  - Mercenary # Frontier
+  - Captain # Frontier
+  - NATOCommon
+  - NATOMaintenance
+  - NATOMedical
+  - NATOArmory
+  - NATOCrew
+
+- type: startingGear
+  id: USSFFighterPilotGear
+  equipment:
+    id: USSFFighterPilotPDA
+    ears: ClothingHeadsetAltUS
+    jumpsuit: ClothingUniformJumpsuitSpaceForceCrewman
+    head: ClothingHeadHatHelmetPilotNavyBlue
+    shoes: ClothingShoesBootsJackFilled
+    back: ClothingBackpackSecurity
+    belt: ClothingBeltAssaultFilledTools
+    outerClothing: ClothingOuterArmorWebVestSec
+    gloves: ClothingHandsGlovesCombat
+    suitstorage: WeaponRifleUSM4
+    pocket2: PouchFirstAidFilled
+  storage:
+    back:
+    - ClothingMaskGasM40
+    - FlashlightMilitaryUS
+    - MagazineRifleSTANAG
+    - MagazineRifleSTANAG
+    - Tourniquet
+    - Zipties

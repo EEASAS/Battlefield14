@@ -20,6 +20,7 @@
   roles:
   - USSFCaptain
   - USSFCrewman
+  - USSFFighterPilot
 
 - type: department
   id: VDV
@@ -43,6 +44,7 @@
   roles:
   - VKSCaptain
   - VKSCrewman
+  - VKSFighterPilot
 
 - type: department
   id: WPS

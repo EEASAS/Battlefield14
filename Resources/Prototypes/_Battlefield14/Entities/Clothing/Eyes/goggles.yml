@@ -31,12 +31,6 @@
   - type: EyeProtection # welding protection, not flash protection
   - type: IdentityBlocker
     coverage: EYES
-  - type: Reflect # just putting this here in case the parent doesn't work
-    reflectProb: 0.01
-    spread: 270
-    reflects:
-    - Energy
-    - NonEnergy
 
 - type: entity
   parent: ClothingEyesGogglesTan

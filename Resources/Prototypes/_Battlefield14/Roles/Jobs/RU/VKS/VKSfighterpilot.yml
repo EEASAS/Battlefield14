@@ -1,0 +1,59 @@
+- type: job
+  id: VKSFighterPilot
+  name: job-name-vks-fighter-pilot
+  description: job-description-vks-fighter-pilot
+  playTimeTracker: JobVKSFighterPilot
+  weight: 76
+  startingGear: VKSFighterPilotGear
+  alwaysUseSpawner: true
+  icon: "JobIconPACTFighterPilot"
+  requireAdminNotify: false
+  supervisors: job-supervisors-rugov
+  canBeAntag: false
+  special:
+  - !type:AddLanguageSpecial
+    languagesSpoken:
+    - Russian
+    languagesUnderstood:
+    - Russian
+  - !type:AddImplantSpecial
+    implants: [ TrackingImplantPACTRU ]
+  - !type:AddComponentSpecial
+    components:
+    - type: NpcFactionMember
+      factions:
+      - PACT
+  access:
+  - Maintenance
+  - Service
+  - External
+  - Mercenary # Frontier
+  - Captain # Frontier
+  - PACTCommon
+  - PACTMaintenance
+  - PACTMedical
+  - PACTArmory
+  - PACTCrew
+
+- type: startingGear
+  id: VKSFighterPilotGear
+  equipment:
+    id: VKSFighterPilotPDA
+    ears: ClothingHeadsetAltRU
+    jumpsuit: ClothingUniformJumpsuitVKSCrewman
+    head: ClothingHeadHatHelmetPilotBlack
+    shoes: ClothingShoesBootsJackFilled
+    back: ClothingBackpackSecurity
+    belt: ClothingBeltAssaultFilledTools
+    outerClothing: ClothingOuterArmorWebVestSec
+    gloves: ClothingHandsGlovesCombat
+    suitstorage: WeaponRifleRUAKS74U
+    pocket2: PouchFirstAidFilled
+  storage:
+    back:
+    - ClothingMaskGasRussia
+    - FlashlightMilitaryAlt
+    - MagazineRifleAK74
+    - MagazineRifleAK74
+    - Tourniquet
+    - Zipties

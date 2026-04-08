@@ -7,7 +7,7 @@
   startingGear: VKSCaptainGear
   alwaysUseSpawner: true
   icon: "JobIconPACTCaptain"
-  requireAdminNotify: false
+  requireAdminNotify: true
   supervisors: job-supervisors-rugov
   canBeAntag: false
   special:
@@ -56,5 +56,6 @@
   storage:
     back:
     - ClothingMaskGasRussia
+    - FlashlightMilitaryAlt
     - Tourniquet
     - Zipties

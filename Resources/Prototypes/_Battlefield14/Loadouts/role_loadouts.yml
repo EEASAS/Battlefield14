@@ -69,6 +69,13 @@
   - BF_NATOIFF
   - ContractorWallet
 
+- type: roleLoadout
+  id: JobUSSFFighterPilot
+  groups:
+  - BF_CombatMasks
+  - BF_NATOIFF
+  - ContractorWallet
+
 ## PACT
 
 ## RU
@@ -145,6 +152,20 @@
   - BF_CombatMasks
   - BF_PACTIFF
   - ContractorWallet
+
+- type: roleLoadout
+  id: JobVKSFighterPilot
+  groups:
+  - BF_CombatMasks
+  - BF_PACTIFF
+  - ContractorWallet
+
+# FSB
+
+- type: roleLoadout
+  id: JobFSBRecon
+  groups:
+  - ContractorWallet # required so you spawn with anything
 
 ### IND
 

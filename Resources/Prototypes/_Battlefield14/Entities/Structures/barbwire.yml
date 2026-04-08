@@ -14,7 +14,7 @@
   - type: Clickable
   - type: Sprite
     sprite: _Battlefield14/Structures/barbwire.rsi
-    drawdepth: BelowFloor
+    drawdepth: Mobs
     layers:
       - state: floor
   - type: SpeedModifierContacts

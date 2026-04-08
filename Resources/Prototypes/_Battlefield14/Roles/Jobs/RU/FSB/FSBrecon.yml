@@ -61,7 +61,6 @@
     pocket2: PouchGrenadesFilledVDVScout
     leftarmband: ClothingArmbandDumpPouchBlack
     rightarmband: ClothingArmbandThighHolsterFilledRUSR1MP
-    wallet: ClothingWalletLeatherBlack
   storage:
     back:
     - ArmorPlateMedium
@@ -96,7 +95,6 @@
     pocket2: PouchGrenadesFilledVDVScout
     leftarmband: ClothingArmbandDumpPouchBlack
     rightarmband: ClothingArmbandThighHolsterFilledRUSR1MP
-    wallet: ClothingWalletLeatherBlack
   storage:
     back:
     - ArmorPlateMedium
