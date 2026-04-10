@@ -11,9 +11,10 @@
   - type: SpawnPoint
     job_id: USMCSquadLeader
   - type: Sprite
+    sprite: _Battlefield14/Interface/Misc/class_icons.rsi
     layers:
-      - state: green
-      - state: passenger
+    - state: natosquadleader
+      scale: 1.5,1.5
 
 - type: entity
   id: SpawnPointUSMCRifleman
@@ -23,9 +24,10 @@
   - type: SpawnPoint
     job_id: USMCRifleman
   - type: Sprite
+    sprite: _Battlefield14/Interface/Misc/class_icons.rsi
     layers:
-      - state: green
-      - state: passenger
+    - state: natoinfantry
+    scale: 1.5,1.5
 
 - type: entity
   id: SpawnPointUSMCAutomaticRifleman
@@ -35,9 +37,10 @@
   - type: SpawnPoint
     job_id: USMCAutomaticRifleman
   - type: Sprite
+    sprite: _Battlefield14/Interface/Misc/class_icons.rsi
     layers:
-      - state: green
-      - state: passenger
+    - state: natosupport
+      scale: 1.5,1.5
 
 - type: entity
   id: SpawnPointUSMCMedic
@@ -47,9 +50,10 @@
   - type: SpawnPoint
     job_id: USMCMedic
   - type: Sprite
+    sprite: _Battlefield14/Interface/Misc/class_icons.rsi
     layers:
-      - state: green
-      - state: passenger
+    - state: natomedic
+      scale: 1.5,1.5
 
 - type: entity
   id: SpawnPointUSMCRecon
@@ -59,9 +63,10 @@
   - type: SpawnPoint
     job_id: USMCRecon
   - type: Sprite
+    sprite: _Battlefield14/Interface/Misc/class_icons.rsi
     layers:
-      - state: green
-      - state: passenger
+    - state: natorecon
+      scale: 1.5,1.5
 
 # USSF
 
@@ -73,9 +78,10 @@
   - type: SpawnPoint
     job_id: USSFCaptain
   - type: Sprite
+    sprite: _Battlefield14/Interface/Misc/class_icons.rsi
     layers:
-      - state: green
-      - state: passenger
+    - state: natocaptain
+      scale: 1.5,1.5
 
 - type: entity
   id: SpawnPointUSSFCrewman
@@ -85,9 +91,10 @@
   - type: SpawnPoint
     job_id: USSFCrewman
   - type: Sprite
+    sprite: _Battlefield14/Interface/Misc/class_icons.rsi
     layers:
-      - state: green
-      - state: passenger
+    - state: natoengineer
+      scale: 1.5,1.5
 
 - type: entity
   id: SpawnPointUSSFFighterPilot
@@ -97,9 +104,10 @@
   - type: SpawnPoint
     job_id: USSFFighterPilot
   - type: Sprite
+    sprite: _Battlefield14/Interface/Misc/class_icons.rsi
     layers:
-      - state: green
-      - state: passenger
+    - state: natofighterpilot
+      scale: 1.5,1.5
 
 ### PACT
 
@@ -115,9 +123,10 @@
   - type: SpawnPoint
     job_id: VDVSquadLeader
   - type: Sprite
+    sprite: _Battlefield14/Interface/Misc/class_icons.rsi
     layers:
-      - state: green
-      - state: passenger
+    - state: pactsquadleader
+      scale: 1.5,1.5
 
 - type: entity
   id: SpawnPointVDVRifleman
@@ -127,9 +136,10 @@
   - type: SpawnPoint
     job_id: VDVRifleman
   - type: Sprite
+    sprite: _Battlefield14/Interface/Misc/class_icons.rsi
     layers:
-      - state: green
-      - state: passenger
+    - state: pactinfantry
+      scale: 1.5,1.5
 
 - type: entity
   id: SpawnPointVDVAutomaticRifleman
@@ -139,9 +149,10 @@
   - type: SpawnPoint
     job_id: VDVAutomaticRifleman
   - type: Sprite
+    sprite: _Battlefield14/Interface/Misc/class_icons.rsi
     layers:
-      - state: green
-      - state: passenger
+    - state: pactsupport
+      scale: 1.5,1.5
 
 - type: entity
   id: SpawnPointVDVMedic
@@ -151,9 +162,10 @@
   - type: SpawnPoint
     job_id: VDVMedic
   - type: Sprite
+    sprite: _Battlefield14/Interface/Misc/class_icons.rsi
     layers:
-      - state: green
-      - state: passenger
+    - state: pactmedic
+      scale: 1.5,1.5
 
 - type: entity
   id: SpawnPointVDVRecon
@@ -163,9 +175,10 @@
   - type: SpawnPoint
     job_id: VDVRecon
   - type: Sprite
+    sprite: _Battlefield14/Interface/Misc/class_icons.rsi
     layers:
-      - state: green
-      - state: passenger
+    - state: pactrecon
+      scale: 1.5,1.5
 
 # FSB
 
@@ -177,9 +190,10 @@
   - type: SpawnPoint
     job_id: FSBRecon
   - type: Sprite
+    sprite: _Battlefield14/Interface/Misc/class_icons.rsi
     layers:
-      - state: green
-      - state: passenger
+    - state: pactspecialforces
+      scale: 1.5,1.5
 
 # VKS
 
@@ -191,9 +205,10 @@
   - type: SpawnPoint
     job_id: VKSCaptain
   - type: Sprite
+    sprite: _Battlefield14/Interface/Misc/class_icons.rsi
     layers:
-      - state: green
-      - state: passenger
+    - state: pactcaptain
+      scale: 1.5,1.5
 
 - type: entity
   id: SpawnPointVKSCrewman
@@ -203,9 +218,10 @@
   - type: SpawnPoint
     job_id: VKSCrewman
   - type: Sprite
+    sprite: _Battlefield14/Interface/Misc/class_icons.rsi
     layers:
-      - state: green
-      - state: passenger
+    - state: pactengineer
+      scale: 1.5,1.5
 
 - type: entity
   id: SpawnPointVKSFighterPilot
@@ -215,9 +231,10 @@
   - type: SpawnPoint
     job_id: VKSFighterPilot
   - type: Sprite
+    sprite: _Battlefield14/Interface/Misc/class_icons.rsi
     layers:
-      - state: green
-      - state: passenger
+    - state: pactfighterpilot
+      scale: 1.5,1.5
 
 ### IND
 

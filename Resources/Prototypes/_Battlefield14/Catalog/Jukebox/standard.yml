@@ -30,6 +30,11 @@
    path:
      path: /Audio/_Battlefield14/Lobby/junglework.ogg
 
+ - type: jukebox
+   id: farben
+   name: Farben - Orange Sector
+   path:
+     path: /Audio/_Battlefield14/Jukebox/farben.ogg
 
 # Eastern / east associated songs
 

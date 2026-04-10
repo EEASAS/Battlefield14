@@ -4,7 +4,7 @@
     EVAKitCombatUSMC: 50
     WeaponRifleUSM16A4: 50
     WeaponRifleUSM4A1: 2
-    WeaponRifleUSM4: 2
+    WeaponRifleUSM4: 5
     WeaponSubmachinegunUSMP5: 5
     WeaponPistolM9: 2
     MagazinePistolM9: 10
@@ -32,13 +32,12 @@
 - type: vendingMachineInventory
   id: NATOUSMCAmmoInventory
   startingInventory:
-    MagazineRifleSTANAG: 100
-    BoxMagazineSTANAG: 10
-    ShellBoxBF12GaugeBuckshot: 10
-    MagazineBox556x45Big: 5
+    BoxMagazineSTANAG: 5
+    MagazineBox556x45Big: 2
     MagazineBox556x45: 5
-    MagazineSubmachinegunMP5: 100
-    MagazineBox9x19mmBig: 10
+    BoxMagazineMP5: 5
+    MagazineBox9x19mmBig: 5
+    ShellBoxBF12GaugeBuckshot: 10
     BoxFlare: 4
     CrayonBox: 1
 
@@ -47,10 +46,10 @@
   startingInventory:
     BreachingCharge: 10 # replace with breaching charges and put C4 in req
     JetpackBlackFilled: 20
-    USM84FlashBangHandgrenade: 30
-    MK21Handgrenade: 25
+    USM84FlashBangHandgrenade: 20
+    MK21Handgrenade: 15
     M67Handgrenade: 5
-    USM18SmokeHandgrenade: 50
+    USM18SmokeHandgrenade: 20
     FUBAR: 1
     DoubleEmergencyOxygenTankFilled: 100
     BoxIFFNATOBlue: 10
@@ -62,7 +61,7 @@
     PouchMags: 5
     Handcuffs: 5
     Zipties: 15
-    IPOCK: 10
+    BoxIPOCK: 10
     Whistle: 3
     Boombox: 2
     ClothingHeadHatHelmetUS: 100
@@ -108,15 +107,15 @@
 - type: vendingMachineInventory
   id: PACTVDVAmmoInventory
   startingInventory:
-    MagazineRifleAK12: 40
-    MagazineRifleAK74: 60
-    MagazineSubmachinegunVityaz: 100
-    ShellBoxBF12GaugeBuckshot: 10
-    BoxMagazineAK12: 5
-    BoxMagazineAK74: 5
-    MagazineBox545x39Big: 5
-    MagazineBox545x39: 20
+    BoxMagazineAK12: 2
+    BoxMagazineAK74: 3
+    BoxMagazineVityaz: 5
+    MagazineBox545x39Big: 2
+    MagazineBox545x39: 5
+    MagazineBox762x39Big: 2
+    MagazineBox762x39: 5
     MagazineBox9x19mmBig: 5
+    ShellBoxBF12GaugeBuckshot: 10
     BoxMagazineASVALShort: 5
     BoxMagazineAKM: 2
     BoxFlare: 4
@@ -127,13 +126,13 @@
   startingInventory:
     BreachingCharge: 10
     JetpackBlackFilled: 20
-    RUZaryaFlashBangHandgrenade: 30
-    RURGD5Handgrenade: 20
+    RUZaryaFlashBangHandgrenade: 20
+    RURGD5Handgrenade: 10
     RUF1Handgrenade: 5
     RGOImpactHandgrenade: 5
-    RURDG2SmokeHandgrenade: 50
+    RURDG2SmokeHandgrenade: 20
     TM62Flatpack: 10
-    BoxChargeFuzeKit: 3
+    BoxChargeFuzeKit: 5
     SecBreachingHammer: 1
     DoubleEmergencyOxygenTankFilled: 100
     BoxIFFPACTWhite: 10
