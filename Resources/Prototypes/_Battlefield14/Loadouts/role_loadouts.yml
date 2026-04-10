@@ -12,6 +12,8 @@
   - BF_SoldierGloves
   - BF_NATOIFF
   - BF_GoggleCover
+  - BF_BackpacksTan
+  - BF_MiscItemsNATO
   - ContractorWallet
 
 - type: roleLoadout
@@ -22,6 +24,8 @@
   - BF_SoldierGloves
   - BF_NATOIFF
   - BF_GoggleCover
+  - BF_BackpacksTan
+  - BF_MiscItemsNATO
   - ContractorWallet
 
 - type: roleLoadout
@@ -32,6 +36,8 @@
   - BF_SoldierGloves
   - BF_NATOIFF
   - BF_GoggleCover
+  - BF_BackpacksTan
+  - BF_MiscItemsNATO
   - ContractorWallet
 
 - type: roleLoadout
@@ -41,6 +47,8 @@
   - BF_CombatMasks
   - BF_SoldierGloves
   - BF_NATOIFF
+  - BF_BackpacksTan
+  - BF_MiscItemsNATO
   - ContractorWallet
 
 - type: roleLoadout
@@ -50,6 +58,8 @@
   - BF_SoldierGloves
   - BF_NATOIFF
   - BF_GoggleCover
+  - BF_BackpacksTan
+  - BF_MiscItemsNATO
   - ContractorWallet
 
 # USSF
@@ -59,6 +69,8 @@
   groups:
   - BF_CrewGlasses
   - BF_NATOIFF
+  - BF_BackpacksBlack
+  - BF_MiscItemsNATO
   - ContractorWallet
 
 - type: roleLoadout
@@ -67,6 +79,8 @@
   - BF_CrewGlasses
   - BF_CombatMasks
   - BF_NATOIFF
+  - BF_BackpacksBlack
+  - BF_MiscItemsNATO
   - ContractorWallet
 
 - type: roleLoadout
@@ -74,6 +88,8 @@
   groups:
   - BF_CombatMasks
   - BF_NATOIFF
+  - BF_BackpacksBlack
+  - BF_MiscItemsNATO
   - ContractorWallet
 
 ## PACT
@@ -91,6 +107,8 @@
   - BF_PACTIFF
   - BF_GoggleCover
   - BF_VDVHead
+  - BF_BackpacksBlack
+  - BF_MiscItemsPACT
   - ContractorWallet
 
 - type: roleLoadout
@@ -102,6 +120,8 @@
   - BF_PACTIFF
   - BF_GoggleCover
   - BF_VDVHead
+  - BF_BackpacksBlack
+  - BF_MiscItemsPACT
   - ContractorWallet
 
 - type: roleLoadout
@@ -113,6 +133,8 @@
   - BF_PACTIFF
   - BF_GoggleCover
   - BF_VDVHead
+  - BF_BackpacksBlack
+  - BF_MiscItemsPACT
   - ContractorWallet
 
 - type: roleLoadout
@@ -123,6 +145,8 @@
   - BF_SoldierGloves
   - BF_PACTIFF
   - BF_VDVHead
+  - BF_BackpacksBlack
+  - BF_MiscItemsPACT
   - ContractorWallet
 
 - type: roleLoadout
@@ -133,6 +157,8 @@
   - BF_PACTIFF
   - BF_GoggleCover
   - BF_VDVHead
+  - BF_BackpacksBlack
+  - BF_MiscItemsPACT
   - ContractorWallet
 
 # VKS
@@ -143,6 +169,8 @@
   - BF_VDVHead
   - BF_CrewGlasses
   - BF_PACTIFF
+  - BF_BackpacksBlack
+  - BF_MiscItemsPACT
   - ContractorWallet
 
 - type: roleLoadout
@@ -151,6 +179,8 @@
   - BF_CrewGlasses
   - BF_CombatMasks
   - BF_PACTIFF
+  - BF_BackpacksBlack
+  - BF_MiscItemsPACT
   - ContractorWallet
 
 - type: roleLoadout
@@ -158,6 +188,8 @@
   groups:
   - BF_CombatMasks
   - BF_PACTIFF
+  - BF_BackpacksBlack
+  - BF_MiscItemsPACT
   - ContractorWallet
 
 # FSB
@@ -177,6 +209,8 @@
   - BF_CrewGlasses
   - BF_CombatMasks
   - BF_WPSGloves
+  - BF_BackpacksBlack
+  - BF_MiscItemsIND
   - ContractorWallet
 
 - type: roleLoadout
@@ -185,6 +219,8 @@
   - BF_CrewGlasses
   - BF_CombatMasks
   - BF_WPSGloves
+  - BF_BackpacksBlack
+  - BF_MiscItemsIND
   - ContractorWallet
 
 - type: roleLoadout
@@ -193,4 +229,6 @@
   - BF_CrewGlasses
   - BF_CombatMasks
   - BF_WPSGloves
+  - BF_BackpacksBlack
+  - BF_MiscItemsIND
   - ContractorWallet

@@ -46,6 +46,7 @@
   startingInventory:
     BreachingCharge: 10 # replace with breaching charges and put C4 in req
     JetpackBlackFilled: 20
+    BarbedWire30: 1
     USM84FlashBangHandgrenade: 20
     MK21Handgrenade: 15
     M67Handgrenade: 5
@@ -126,6 +127,7 @@
   startingInventory:
     BreachingCharge: 10
     JetpackBlackFilled: 20
+    BarbedWire30: 1
     RUZaryaFlashBangHandgrenade: 20
     RURGD5Handgrenade: 10
     RUF1Handgrenade: 5

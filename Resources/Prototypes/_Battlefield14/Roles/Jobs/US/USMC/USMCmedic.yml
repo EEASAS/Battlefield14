@@ -55,7 +55,7 @@
     outerClothing: ClothingOuterArmorPlateCarrierTan
     shoes: ClothingShoesBootsJackFilled
     gloves: ClothingHandsGlovesLatex
-    back: ClothingBackpackRucksackTan
+#    back: ClothingBackpackRucksackTan
     suitstorage: WeaponSubmachinegunUSMP5
     pocket1: PouchMagsPistolLargeFilledMP5
     pocket2: PouchGrenadesFilledUSMCScout

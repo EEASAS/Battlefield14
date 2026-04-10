@@ -1,21 +1,22 @@
-- type: loadoutGroup
-  id: BF_SoldierGloves
-  name: loadout-group-BF14-soldiergloves
-  minLimit: 0
-  loadouts:
-  - LoadoutHandsGlovesSoldierBlack
-  - LoadoutHandsGlovesSoldierFingerless
-  - LoadoutHandsGlovesSoldierCombat
-  - LoadoutHandsGlovesSoldierMercCombat
-  - LoadoutHandsGlovesSoldierMercFingerless
+# HEAD
 
 - type: loadoutGroup
-  id: BF_CombatMasks
-  name: loadout-group-BF14-combatmask
+  id: BF_VDVHead
+  name: loadout-group-BF14-vdvhead
   minLimit: 0
   loadouts:
-  - LoadoutMaskBF14NeckGaiter
-  - LoadoutMaskBF14MilitaryBalaclava
+  - LoadoutHeadBeretVDV
+
+- type: loadoutGroup
+  id: BF_GoggleCover
+  name: loadout-group-BF14-gogglecovers
+  minLimit: 0
+  loadouts:
+  - LoadoutHelmetAttachmentGogglesCoverBlack
+  - LoadoutHelmetAttachmentGogglesCoverOlive
+  - LoadoutHelmetAttachmentGogglesCoverTan
+
+# EYES
 
 - type: loadoutGroup
   id: BF_SoldierGlassesTan
@@ -46,6 +47,16 @@
   - LoadoutEyesGlassesBallisticTriMaxBronzeNohud
   - LoadoutEyesGlassesBallisticTriMaxYellowNohud
 
+# FACE
+
+- type: loadoutGroup
+  id: BF_CombatMasks
+  name: loadout-group-BF14-combatmask
+  minLimit: 0
+  loadouts:
+  - LoadoutMaskBF14NeckGaiter
+  - LoadoutMaskBF14MilitaryBalaclava
+
 - type: loadoutGroup
   id: BF_NATOIFF
   name: loadout-group-BF14-natoiff
@@ -57,6 +68,10 @@
   - LoadoutNeckIFFYellowTape
   - LoadoutNeckIFFGreen
   - LoadoutNeckIFFGreenTape
+
+# EARS
+
+# NECK
 
 - type: loadoutGroup
   id: BF_PACTIFF
@@ -70,21 +85,40 @@
   - LoadoutNeckIFFOrange
   - LoadoutNeckIFFOrangeTape
 
-- type: loadoutGroup
-  id: BF_VDVHead
-  name: loadout-group-BF14-vdvhead
-  minLimit: 0
-  loadouts:
-  - LoadoutHeadBeretVDV
+# BODY (uniform/armour)
+
+# BACK
 
 - type: loadoutGroup
-  id: BF_GoggleCover
-  name: loadout-group-BF14-gogglecovers
+  id: BF_BackpacksTan
+  name: loadout-group-BF14-backpack
+  minLimit: 1
+  loadouts:
+  - LoadoutBackRucksackTan
+  - MonoSecurityGuardBackpack
+
+- type: loadoutGroup
+  id: BF_BackpacksBlack
+  name: loadout-group-BF14-backpack
+  minLimit: 1
+  loadouts:
+  - LoadoutBackRucksackBlack
+  - MonoSecurityGuardBackpack
+
+# ARMS 
+
+# HANDS
+
+- type: loadoutGroup
+  id: BF_SoldierGloves
+  name: loadout-group-BF14-soldiergloves
   minLimit: 0
   loadouts:
-  - LoadoutHelmetAttachmentGogglesCoverBlack
-  - LoadoutHelmetAttachmentGogglesCoverOlive
-  - LoadoutHelmetAttachmentGogglesCoverTan
+  - LoadoutHandsGlovesSoldierBlack
+  - LoadoutHandsGlovesSoldierFingerless
+  - LoadoutHandsGlovesSoldierCombat
+  - LoadoutHandsGlovesSoldierMercCombat
+  - LoadoutHandsGlovesSoldierMercFingerless
 
 - type: loadoutGroup
   id: BF_WPSGloves
@@ -93,3 +127,36 @@
   loadouts:
   - LoadoutHandsGlovesSoldierBlack
   - LoadoutHandsGlovesSoldierFingerless
+
+# FEET
+
+# MISC
+
+- type: loadoutGroup
+  id: BF_MiscItemsNATO
+  name: loadout-group-BF14-miscitem
+  minLimit: 0
+  loadouts:
+  - LoadoutMiscItemsIFFFlashcardNATO
+  - LoadoutMiscItemsMREFlask
+  - LoadoutMiscItemsMonsterWhite
+  - LoadoutMiscItemsEntrenchingTool
+
+- type: loadoutGroup
+  id: BF_MiscItemsPACT
+  name: loadout-group-BF14-miscitem
+  minLimit: 0
+  loadouts:
+  - LoadoutMiscItemsIFFFlashcardPACT
+  - LoadoutMiscItemsMREFlask
+  - LoadoutMiscItemsMonsterWhite
+  - LoadoutMiscItemsEntrenchingTool
+
+- type: loadoutGroup
+  id: BF_MiscItemsIND
+  name: loadout-group-BF14-miscitem
+  minLimit: 0
+  loadouts:
+  - LoadoutMiscItemsIFFFlashcardIND
+  - LoadoutMiscItemsMREFlask
+  - LoadoutMiscItemsMonsterWhite

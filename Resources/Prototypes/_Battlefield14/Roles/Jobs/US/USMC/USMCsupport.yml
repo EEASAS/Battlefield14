@@ -51,7 +51,7 @@
 #    eyes: ClothingEyesGogglesTan
     outerClothing: ClothingOuterArmorPlateCarrierTan
     shoes: ClothingShoesBootsJackFilled
-    back: ClothingBackpackRucksackTan
+#    back: ClothingBackpackRucksackTan
     suitstorage: WeaponRifleUSM27IAR
     pocket1: PouchFirstAidFilled
     pocket2: PouchGrenadesFilledUSMCSupport

@@ -49,7 +49,7 @@
     ears: ClothingHeadsetAltRU
     jumpsuit: ClothingUniformJumpsuitVKSCaptain
     shoes: ClothingShoesBootsJackFilled
-    back: ClothingBackpackSatchelSecurity
+#    back: ClothingBackpackSatchelSecurity
     belt: ClothingBeltCommandFilledRU
     gloves: ClothingHandsGlovesCombat
     pocket1: PouchFirstAidFilled

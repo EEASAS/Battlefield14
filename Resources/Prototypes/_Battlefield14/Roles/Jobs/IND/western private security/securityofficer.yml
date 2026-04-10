@@ -42,7 +42,7 @@
     head: ClothingHeadHatHelmetSecurityBF14
     outerClothing: ClothingOuterArmorWebVestSec
     shoes: ClothingShoesBootsJackFilled
-    back: ClothingBackpackSecurity
+#    back: ClothingBackpackSecurity
     pocket2: PouchFirstAidFilled
   storage:
     back:

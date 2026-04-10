@@ -1,0 +1,72 @@
+# Items
+
+- type: entity
+  parent: BaseBattlemap
+  id: IdentificationFlashcardNATO
+  name: IFF flashcard (NATO)
+  description: A handy dandy flashcard for identifying friend or foe based off their coloured armband.. if they have one.
+  components:
+    - type: Item
+      size: Tiny
+    - type: Sprite
+      sprite: Objects/Misc/bureaucracy.rsi
+      state: paper_dotmatrix
+    - type: TabletopGame
+      size: 250, 250
+      setup:
+        !type:TabletopEmptySetup
+        boardPrototype: CardPhotoIdentificationNATO
+
+- type: entity
+  parent: IdentificationFlashcardNATO
+  id: IdentificationFlashcardPACT
+  name: IFF flashcard (PACT)
+  components:
+    - type: TabletopGame
+      size: 250, 250
+      setup:
+        !type:TabletopEmptySetup
+        boardPrototype: CardPhotoIdentificationPACT
+
+- type: entity
+  parent: IdentificationFlashcardNATO
+  id: IdentificationFlashcardIND
+  name: IFF flashcard (INDEPENDANT)
+  components:
+    - type: TabletopGame
+      size: 250, 250
+      setup:
+        !type:TabletopEmptySetup
+        boardPrototype: CardPhotoIdentificationIND
+
+# Image protos
+
+- type: entity
+  parent: BaseBoardTabletop
+  id: CardPhotoIdentificationNATO
+  name: IFF Flashcard
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Misc/flashcards.rsi
+    state: CardNATO
+
+- type: entity
+  parent: BaseBoardTabletop
+  id: CardPhotoIdentificationPACT
+  name: IFF Flashcard
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Misc/flashcards.rsi
+    state: CardPACT
+
+- type: entity
+  parent: BaseBoardTabletop
+  id: CardPhotoIdentificationIND
+  name: IFF Flashcard
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Misc/flashcards.rsi
+    state: CardIND

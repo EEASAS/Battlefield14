@@ -53,7 +53,7 @@
 #    eyes: ClothingEyesGogglesGreen
     outerClothing: ClothingOuterArmorPlateCarrierBlack
     shoes: ClothingShoesBootsJackFilled
-    back: ClothingBackpackRucksackBlack
+#    back: ClothingBackpackRucksackBlack
     neck: ClothingNeckIFFtapeWhite
     suitstorage: WeaponRifleRUAK12Magnified
     pocket1: PouchFirstAidFilled

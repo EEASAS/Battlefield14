@@ -48,7 +48,7 @@
 #    eyes: ClothingEyesGogglesGreen
     outerClothing: ClothingOuterArmorPlateCarrierBlack
     shoes: ClothingShoesBootsJackFilled
-    back: ClothingBackpackRucksackBlack
+#    back: ClothingBackpackRucksackBlack
     neck: ClothingNeckIFFtapeWhite
     suitstorage: WeaponRifleRURPK2016
     pocket1: PouchFirstAidFilled

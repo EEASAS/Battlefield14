@@ -1,0 +1,35 @@
+- type: loadout
+  id: LoadoutMiscItemsIFFFlashcardNATO
+  storage:
+    back:
+    - IdentificationFlashcardNATO
+
+- type: loadout
+  id: LoadoutMiscItemsIFFFlashcardPACT
+  storage:
+    back:
+    - IdentificationFlashcardPACT
+
+- type: loadout
+  id: LoadoutMiscItemsIFFFlashcardIND
+  storage:
+    back:
+    - IdentificationFlashcardIND
+
+- type: loadout
+  id: LoadoutMiscItemsMonsterWhite
+  storage:
+    back:
+    - DrinkMonsterCanWhite
+
+- type: loadout
+  id: LoadoutMiscItemsMREFlask
+  storage:
+    back:
+    - DrinkMREFlask
+
+- type: loadout
+  id: LoadoutMiscItemsEntrenchingTool
+  storage:
+    back:
+    - EntrenchingTool

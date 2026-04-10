@@ -43,7 +43,7 @@
     jumpsuit: ClothingUniformJumpsuitSpaceForceCrewman
     head: ClothingHeadHatHelmetPilotNavyBlue
     shoes: ClothingShoesBootsJackFilled
-    back: ClothingBackpackSecurity
+#    back: ClothingBackpackSecurity
     belt: ClothingBeltAssaultFilledTools
     outerClothing: ClothingOuterArmorWebVestSec
     gloves: ClothingHandsGlovesCombat

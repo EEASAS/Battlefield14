@@ -49,7 +49,7 @@
     ears: ClothingHeadsetAltUS
     jumpsuit: ClothingUniformJumpsuitSpaceForceCaptain
     shoes: ClothingShoesBootsJackFilled
-    back: ClothingBackpackSatchelSecurity
+#    back: ClothingBackpackSatchelSecurity
     belt: ClothingBeltCommandFilledUS
     gloves: ClothingHandsGlovesCombat
     pocket1: PouchFirstAidFilled

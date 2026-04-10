@@ -51,7 +51,7 @@
 #    eyes: ClothingEyesGogglesTan
     outerClothing: ClothingOuterArmorPlateCarrierTan
     shoes: ClothingShoesBootsJackFilled
-    back: ClothingBackpackRucksackTan
+#    back: ClothingBackpackRucksackTan
     suitstorage: WeaponRifleUSM4A1SUPP
     pocket1: PouchFirstAidFilled
     pocket2: PouchGrenadesFilledUSMCScout

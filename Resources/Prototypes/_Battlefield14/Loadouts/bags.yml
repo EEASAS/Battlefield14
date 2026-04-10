@@ -1,0 +1,9 @@
+- type: loadout
+  id: LoadoutBackRucksackTan
+  equipment:
+    back: ClothingBackpackRucksackTan
+
+- type: loadout
+  id: LoadoutBackRucksackBlack
+  equipment:
+    back: ClothingBackpackRucksackBlack

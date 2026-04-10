@@ -45,7 +45,7 @@
     ears: ClothingHeadsetAltUS
     jumpsuit: ClothingUniformJumpsuitSpaceForceCrewman
     shoes: ClothingShoesBootsJackFilled
-    back: ClothingBackpackSecurity
+#    back: ClothingBackpackSecurity
     belt: ClothingBeltAssaultFilledToolsSRD
     outerClothing: ClothingOuterArmorWebVestSec
     gloves: ClothingHandsGlovesCombat

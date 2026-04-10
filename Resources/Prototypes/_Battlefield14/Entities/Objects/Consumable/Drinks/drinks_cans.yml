@@ -1,0 +1,22 @@
+- type: entity
+  parent: DrinkCanBaseFull
+  id: DrinkMonsterCanWhite
+  name: White Monster can
+  description: A widely known energy drink guaranteed to make your parents worried. Unfortunately they are right, chugging the entire can is not reccommended.
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 35 # These cans are slightly larger than the average can
+        reagents:
+        - ReagentId: MonsterWhite
+          Quantity: 35
+  - type: Tag
+    tags:
+    - Cola
+    - DrinkCan
+    - Recyclable
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Consumable/Drinks/whitemonster.rsi
+  - type: Item
+    sprite: _Battlefield14/Objects/Consumable/Drinks/whitemonster.rsi
