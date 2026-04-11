@@ -33,6 +33,8 @@ using System.Collections.Concurrent;
 using Robust.Shared.Timing;
 using Content.Shared._Mono;
 using Content.Shared.Tag;
+using Content.Shared.BarricadeBlock; // BF14
+using Robust.Shared.Random; // BF14
 
 namespace Content.Shared.Projectiles;
 
@@ -55,6 +57,7 @@ public abstract partial class SharedProjectileSystem : EntitySystem
     [Dependency] private readonly IParallelManager _parallel = default!;
     [Dependency] private readonly IGameTiming _gameTiming = default!;
     [Dependency] private readonly INetManager _net = default!;
+    [Dependency] private readonly IRobustRandom _random = default!; // BF14
 
     // Cache of projectiles waiting for collision checks
     private readonly ConcurrentQueue<(EntityUid Uid, ProjectileComponent Component, EntityUid Target)> _pendingCollisionChecks = new();
@@ -379,6 +382,79 @@ public abstract partial class SharedProjectileSystem : EntitySystem
         _hands.TryPickupAnyHand(args.User, embeddable);
     }
 
+    //ported from civ14
+    private void PreventCollision(EntityUid uid, ProjectileComponent component, ref PreventCollideEvent args)
+    {
+        if (component.IgnoreShooter && (args.OtherEntity == component.Shooter || args.OtherEntity == component.Weapon))
+        {
+            args.Cancelled = true;
+        }
+        //check for BarricadeBlock component (percentage of chance to hit/pass over)
+        if (TryComp(args.OtherEntity, out BarricadeBlockComponent? BarricadeBlock))
+        {
+            var alwaysPassThrough = false;
+            //_sawmill.Info("Checking BarricadeBlock...");
+            if (component.Shooter is { } shooterUid && Exists(shooterUid))
+            {
+                // Condition 1: Directions are the same (using cardinal directions).
+                // Or, if bidirectional, directions can be opposite.
+                var shooterWorldRotation = _transform.GetWorldRotation(shooterUid);
+                var BarricadeBlockWorldRotation = _transform.GetWorldRotation(args.OtherEntity);
+
+                var shooterDir = shooterWorldRotation.GetCardinalDir();
+                var BarricadeBlockDir = BarricadeBlockWorldRotation.GetCardinalDir();
+
+                bool directionallyAllowed = false;
+                if (shooterDir == BarricadeBlockDir)
+                {
+                    directionallyAllowed = true;
+                    //_sawmill.Debug("Shooter and BarricadeBlock facing same cardinal direction.");
+                }
+                else if (BarricadeBlock.Bidirectional)
+                {
+                    var oppositeBarricadeBlockDir = (Direction)(((int)BarricadeBlockDir + 4) % 8);
+                    if (shooterDir == oppositeBarricadeBlockDir)
+                    {
+                        directionallyAllowed = true;
+                        //_sawmill.Debug("Shooter and BarricadeBlock facing opposite cardinal directions (bidirectional pass).");
+                    }
+                }
+
+                if (directionallyAllowed)
+                {
+                    // Condition 2: Firer is within 1 tile of the BarricadeBlock.
+                    var shooterCoords = Transform(shooterUid).Coordinates;
+                    var BarricadeBlockCoords = Transform(args.OtherEntity).Coordinates;
+
+                    if (shooterCoords.TryDistance(EntityManager, BarricadeBlockCoords, out var distance) &&
+                        distance <= 1.5f)
+                    {
+                        alwaysPassThrough = true;
+                    }
+                }
+            }
+
+            if (alwaysPassThrough)
+            {
+                args.Cancelled = true;
+            }
+            else
+            {
+                //_sawmill.Debug("BarricadeBlock direction/distance check failed or shooter not valid.");
+                // Standard BarricadeBlock blocking logic if the special conditions are not met.
+                var rando = _random.NextFloat(0.0f, 100.0f);
+                if (rando >= BarricadeBlock.Blocking)
+                {
+                    args.Cancelled = true;
+                }
+                else
+                {
+                    return;
+                }
+            }
+        }
+    }
+
     private void OnEmbedThrowDoHit(Entity<EmbeddableProjectileComponent> embeddable, ref ThrowDoHitEvent args)
     {
         if (!embeddable.Comp.EmbedOnThrow)
@@ -489,69 +565,69 @@ public abstract partial class SharedProjectileSystem : EntitySystem
         }
     }
 
-    private void PreventCollision(EntityUid uid, ProjectileComponent component, ref PreventCollideEvent args)
-    {
-        // Goobstation - Crawling fix
-        if (TryComp<RequireProjectileTargetComponent>(args.OtherEntity, out var requireTarget) && requireTarget.IgnoreThrow && requireTarget.Active)
-            return;
-
-        if (component.IgnoreShooter && (args.OtherEntity == component.Shooter || args.OtherEntity == component.Weapon))
-        {
-            args.Cancelled = true;
-            return;
-        }
-
-        // Get transforms once for subsequent checks to avoid repeated calls
-        var projectileXform = Transform(uid);
-        var targetXform = Transform(args.OtherEntity);
-
-        // Check for ProjectileGridPhaseComponent and origin-grid phasing
-        if (TryComp<ProjectileGridPhaseComponent>(uid, out var phaseComp))
-        {
-            if (phaseComp.SourceGrid.HasValue &&
-                targetXform.GridUid.HasValue &&
-                phaseComp.SourceGrid == targetXform.GridUid)
-            {
-                args.Cancelled = true;
-                return; // Projectile phases through entities on its origin grid.
-            }
-        }
-
-        // Add collision check to queue for batch processing if we have enough
-        if (_pendingCollisionChecks.Count >= MinProjectilesForParallel / 2)
-        {
-            _pendingCollisionChecks.Enqueue((uid, component, args.OtherEntity));
-
-            // Assume collision for now - if shield check passes, we'll handle it in the batch process
-            return;
-        }
-
-        // For low volume, process immediately
-        // Check if any shield system wants to prevent collision
-        var ev = new ProjectileCollisionAttemptEvent(uid, args.OtherEntity);
-        RaiseLocalEvent(ref ev);
-
-        if (ev.Cancelled)
-        {
-            args.Cancelled = true;
-            return;
-        }
-
-        // Check if target and projectile are on different maps/z-levels
-        if (projectileXform.MapID != targetXform.MapID)
-        {
-            args.Cancelled = true;
-            return;
-        }
-
-        // Define the tag constant
-        const string GunCanAimShooterTag = "GunCanAimShooter";
-
-        if ((component.Shooter == args.OtherEntity || component.Weapon == args.OtherEntity) &&
-            component.Weapon != null && _tag.HasTag(component.Weapon.Value, GunCanAimShooterTag) &&
-            TryComp(uid, out TargetedProjectileComponent? targeted) && targeted.Target == args.OtherEntity)
-            return;
-    }
+//    private void PreventCollision(EntityUid uid, ProjectileComponent component, ref PreventCollideEvent args)
+//    {
+//        // Goobstation - Crawling fix
+//        if (TryComp<RequireProjectileTargetComponent>(args.OtherEntity, out var requireTarget) && requireTarget.IgnoreThrow && requireTarget.Active)
+//            return;
+//
+//        if (component.IgnoreShooter && (args.OtherEntity == component.Shooter || args.OtherEntity == component.Weapon))
+//        {
+//            args.Cancelled = true;
+//            return;
+//        }
+//
+//        // Get transforms once for subsequent checks to avoid repeated calls
+//        var projectileXform = Transform(uid);
+//        var targetXform = Transform(args.OtherEntity);
+//
+//        // Check for ProjectileGridPhaseComponent and origin-grid phasing
+//        if (TryComp<ProjectileGridPhaseComponent>(uid, out var phaseComp))
+//        {
+//            if (phaseComp.SourceGrid.HasValue &&
+//                targetXform.GridUid.HasValue &&
+//                phaseComp.SourceGrid == targetXform.GridUid)
+//            {
+//                args.Cancelled = true;
+//                return; // Projectile phases through entities on its origin grid.
+//            }
+//        }
+//
+//        // Add collision check to queue for batch processing if we have enough
+//        if (_pendingCollisionChecks.Count >= MinProjectilesForParallel / 2)
+//        {
+//            _pendingCollisionChecks.Enqueue((uid, component, args.OtherEntity));
+//
+//            // Assume collision for now - if shield check passes, we'll handle it in the batch process
+//            return;
+//        }
+//
+//        // For low volume, process immediately
+//        // Check if any shield system wants to prevent collision
+//        var ev = new ProjectileCollisionAttemptEvent(uid, args.OtherEntity);
+//        RaiseLocalEvent(ref ev);
+//
+//        if (ev.Cancelled)
+//        {
+//            args.Cancelled = true;
+//            return;
+//        }
+//
+//        // Check if target and projectile are on different maps/z-levels
+//        if (projectileXform.MapID != targetXform.MapID)
+//        {
+//            args.Cancelled = true;
+//            return;
+//        }
+//
+//        // Define the tag constant
+//        const string GunCanAimShooterTag = "GunCanAimShooter";
+//
+//        if ((component.Shooter == args.OtherEntity || component.Weapon == args.OtherEntity) &&
+//            component.Weapon != null && _tag.HasTag(component.Weapon.Value, GunCanAimShooterTag) &&
+//            TryComp(uid, out TargetedProjectileComponent? targeted) && targeted.Target == args.OtherEntity)
+//            return;
+//    }
 
     // Goobstation - Crawling fix
     private void EmbeddablePreventCollision(EntityUid uid, EmbeddableProjectileComponent component, ref PreventCollideEvent args)
