@@ -52,7 +52,7 @@
     node: base
   - type: BarricadeBlock
     bidirectional: true
-    blocking: 100
+    blocking: 75
 
 - type: entity
   abstract: true
