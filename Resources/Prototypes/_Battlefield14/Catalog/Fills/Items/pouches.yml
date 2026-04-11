@@ -156,3 +156,46 @@
       amount: 3
     - id: RUK51CSGasHandgrenade
       amount: 3
+
+- type: entity
+  parent: PouchFlares
+  id: PouchFlaresFilled
+  suffix: Filled
+  components:
+  - type: StorageFill
+    contents:
+    - id: Flare
+      amount: 10
+
+- type: entity
+  parent: PouchFlares
+  id: PouchFlaresFilledGlowsticksRed
+  name: glowtick pouch
+  suffix: Filled, glowsticks, red
+  components:
+  - type: StorageFill
+    contents:
+    - id: GlowstickRed
+      amount: 10
+
+- type: entity
+  parent: PouchFlares
+  id: PouchFlaresFilledGlowsticksBlue
+  suffix: Filled, glowsticks, blue
+  name: glowtick pouch
+  components:
+  - type: StorageFill
+    contents:
+    - id: GlowstickBlue
+      amount: 10
+
+- type: entity
+  parent: PouchFlares
+  id: PouchFlaresFilledGlowsticksGreen
+  suffix: Filled, glowsticks, green
+  name: glowtick pouch
+  components:
+  - type: StorageFill
+    contents:
+    - id: GlowstickBase
+      amount: 10

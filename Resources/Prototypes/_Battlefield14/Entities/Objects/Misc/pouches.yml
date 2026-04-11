@@ -189,3 +189,29 @@
     price: 100
   - type: ExplosionResistance # add to medical pouches too btw
     damageCoefficient: 0.0
+
+- type: entity
+  id: PouchFlares
+  parent: BasePouch
+  name: flare pouch
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Misc/pouches.rsi
+    layers:
+      - state: utility
+  - type: Item
+    Size: Small
+#    shape:
+#    - 0,0,1,1
+  - type: Storage
+    maxItemSize: Tiny
+    grid:
+    - 0,0,4,1
+    whitelist:
+      tags:
+        - Flare
+  - type: Clothing
+    quickEquip: false
+    slots:
+    - ARMBANDLEFT
+    - ARMBANDRIGHT

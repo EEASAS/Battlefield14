@@ -2946,7 +2946,7 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 44.5,45.5
       parent: 1
-- proto: BaseComputerShuttleGracePeriod
+- proto: ComputerShuttleGracePeriodSVOGoydin
   entities:
   - uid: 2268
     components:

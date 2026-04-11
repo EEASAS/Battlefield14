@@ -8,9 +8,9 @@
     - type: ExpendableLight
       spentName: expendable-light-spent-green-glowstick-name
       spentDesc: expendable-light-spent-glowstick-desc
-      glowDuration: 900 # time in seconds
+      glowDuration: 600 # BF14 900 # time in seconds
       glowColorLit: "#00FF00"
-      fadeOutDuration: 300
+      fadeOutDuration: 100 # BF14 300
       turnOnBehaviourID: turn_on
       fadeOutBehaviourID: fade_out
       iconStateLit: glowstick_lit
@@ -29,6 +29,7 @@
       - map: [ enum.ExpendableLightVisualLayers.Overlay ]
         state: glowstick_unlit
     - type: Item
+      size: Tiny # BF14
       sprite: Objects/Misc/glowstick.rsi
       heldPrefix: unlit
     - type: Appearance
@@ -63,6 +64,7 @@
     - type: Tag
       tags:
       - Trash
+      - Flare # BF14
 
 - type: entity
   name: red glowstick

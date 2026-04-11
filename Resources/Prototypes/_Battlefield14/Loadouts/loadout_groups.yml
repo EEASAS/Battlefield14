@@ -141,6 +141,10 @@
   - LoadoutMiscItemsMREFlask
   - LoadoutMiscItemsMonsterWhite
   - LoadoutMiscItemsEntrenchingTool
+  - LoadoutMiscItemsHandheldStationMapUnpowered
+  - LoadoutMiscItemsBible
+  - LoadoutMiscItemsPouchFlaresGlowsticksBlue
+  - LoadoutMiscItemsCalculator
 
 - type: loadoutGroup
   id: BF_MiscItemsPACT
@@ -151,6 +155,10 @@
   - LoadoutMiscItemsMREFlask
   - LoadoutMiscItemsMonsterWhite
   - LoadoutMiscItemsEntrenchingTool
+  - LoadoutMiscItemsHandheldStationMapUnpowered
+  - LoadoutMiscItemsBible
+  - LoadoutMiscItemsPouchFlaresGlowsticksRed
+  - LoadoutMiscItemsCalculator
 
 - type: loadoutGroup
   id: BF_MiscItemsIND
@@ -160,3 +168,7 @@
   - LoadoutMiscItemsIFFFlashcardIND
   - LoadoutMiscItemsMREFlask
   - LoadoutMiscItemsMonsterWhite
+  - LoadoutMiscItemsHandheldStationMapUnpowered
+  - LoadoutMiscItemsBible
+  - LoadoutMiscItemsPouchFlaresGlowsticksGreen
+  - LoadoutMiscItemsCalculator

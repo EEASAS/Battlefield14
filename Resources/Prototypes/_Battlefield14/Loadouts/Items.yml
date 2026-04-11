@@ -33,3 +33,42 @@
   storage:
     back:
     - EntrenchingTool
+
+- type: loadout
+  id: LoadoutMiscItemsHandheldStationMapUnpowered
+  storage:
+    back:
+    - HandheldStationMapUnpowered
+
+- type: loadout
+  id: LoadoutMiscItemsBible
+  storage:
+    back:
+    - Bible
+
+- type: loadout
+  id: LoadoutMiscItemsCalculator
+  storage:
+    back:
+    - MortarCalculatorGreen
+
+- type: loadout
+  id: LoadoutMiscItemsPouchFlares
+  equipment:
+    leftarmband:
+    - PouchFlaresFilled
+
+- type: loadout
+  id: LoadoutMiscItemsPouchFlaresGlowsticksGreen
+  equipment:
+    leftarmband: PouchFlaresFilledGlowsticksGreen
+
+- type: loadout
+  id: LoadoutMiscItemsPouchFlaresGlowsticksBlue
+  equipment:
+    leftarmband: PouchFlaresFilledGlowsticksBlue
+
+- type: loadout
+  id: LoadoutMiscItemsPouchFlaresGlowsticksRed
+  equipment:
+    leftarmband: PouchFlaresFilledGlowsticksRed

@@ -69,7 +69,7 @@ public sealed partial class PinpointerComponent : Component
 
     // Frontier - time in seconds to retarget
     [DataField("retargetDoAfter")]
-    public float RetargetDoAfter = 15f;
+    public float RetargetDoAfter = 3f; //BF14 15 > 3
 
     // Frontier - whether this pinpointer can target mobs
     [DataField("canTargetMobs")]

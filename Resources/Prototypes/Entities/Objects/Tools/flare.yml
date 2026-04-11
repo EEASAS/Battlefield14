@@ -12,7 +12,7 @@
   - type: ExpendableLight
     spentName: expendable-light-spent-flare-name
     spentDesc: expendable-light-spent-flare-desc
-    glowDuration: 225
+    glowDuration: 300 # BF14 225
     fadeOutDuration: 15
     iconStateOn: flare_unlit
     iconStateSpent: flare_spent

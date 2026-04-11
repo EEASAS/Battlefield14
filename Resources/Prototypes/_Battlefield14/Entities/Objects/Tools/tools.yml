@@ -9,8 +9,9 @@
   - type: MeleeWeapon
     damage:
       types:
-        Blunt: 12
-        Slash: 4
+        Blunt: 15
+        Slash: 5
+        Structural: 5
   - type: Item
     sprite: _NF/Objects/Tools/cm-shovel.rsi
   - type: StaticPrice
@@ -78,7 +79,7 @@
     damage:
       types:
         Blunt: 10
-        Slash: 3
+        Slash: 5
   - type: BalloonPopper
   - type: Utensil
     types:

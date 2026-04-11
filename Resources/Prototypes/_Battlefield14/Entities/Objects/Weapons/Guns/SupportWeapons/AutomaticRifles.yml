@@ -38,7 +38,7 @@
     - SemiAuto
     - FullAuto
     selectedMode: FullAuto
-    fireRate: 8
+    fireRate: 7
     projectileSpeed: 50 # twenty inch barrel
     soundGunshot:
       collection: BF_M16_Gunshots
