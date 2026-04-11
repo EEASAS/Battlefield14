@@ -142,7 +142,7 @@
     repairCost: 10
   - type: BarricadeBlock
     bidirectional: true
-    blocking: 40
+    blocking: 67
 
 - type: entity
   parent: VendingMachine
