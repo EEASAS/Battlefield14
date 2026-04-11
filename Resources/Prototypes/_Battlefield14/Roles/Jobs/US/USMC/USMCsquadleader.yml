@@ -7,7 +7,7 @@
   startingGear: USMCSquadLeaderGear
   alwaysUseSpawner: true
   icon: "JobIconNATOSquadleader"
-  requireAdminNotify: false
+  requireAdminNotify: true
   supervisors: job-supervisors-usgov
   canBeAntag: false
   special:
@@ -60,7 +60,7 @@
   storage:
     back:
     - ArmorPlateMedium
-    - HandheldStationMapUnpowered
+    - BoxPinpointerUniversalNATO
     - ClothingMaskGasM40
     - FlashlightMilitaryUS
     - MagazinePistolM9

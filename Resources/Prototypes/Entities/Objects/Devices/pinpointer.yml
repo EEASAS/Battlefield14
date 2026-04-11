@@ -22,6 +22,7 @@
     state: pinpointer
   - type: Item
     sprite: Objects/Devices/pinpointer.rsi
+    size: Normal # BF14
   - type: Pinpointer
   - type: Appearance
   - type: GenericVisualizer
@@ -38,6 +39,11 @@
           Medium: { state: pinonmedium }
           Far: { state: pinonfar }
   - type: AnimationPlayer
+  - type: Clothing # BF14
+    quickEquip: false
+    slots:
+    - ARMBANDLEFT
+    - ARMBANDRIGHT
 
 - type: entity
   name: pinpointer

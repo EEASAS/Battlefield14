@@ -17,7 +17,7 @@
   id: BF14Fland
   mapName: 'Fland Installation'
   mapPath: /Maps/_Battlefield14/Stations/IND/fland.yml
-  minPlayers: 25
+  minPlayers: 15
   maxPlayers: 120
   randomRotation: false
   maxRandomOffset: 0

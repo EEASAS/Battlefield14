@@ -1,6 +1,6 @@
 - type: entity
   name: bible
-  description: New Interstellar Version 2340.
+  description: The Holy word of God. Divine, pure, perfect. #BF14 New Interstellar Version 2340.
   parent: BaseStorageItem
   id: Bible
   components:
@@ -26,7 +26,7 @@
         Holy: 25
         Blunt: 1
   - type: Prayable
-    bibleUserOnly: true
+    bibleUserOnly: false #BF14 true
   - type: Summonable
     specialItem: SpawnPointGhostRemilia
   - type: ReactionMixer

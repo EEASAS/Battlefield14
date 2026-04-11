@@ -1,0 +1,41 @@
+- type: entity
+  parent: PinpointerUniversal
+  id: PinpointerUniversalNATO
+  name: GPS tracker
+  description: A handheld tracking device that locks onto any physical entity while off. Keep upright to retain accuracy.
+  components:
+  - type: Icon
+    state: pinpointer-crew
+  - type: Pinpointer
+    updateTargetName: true
+    canRetarget: true
+  - type: Sprite
+    noRot: True
+    sprite: Objects/Devices/pinpointer.rsi
+    layers:
+    - state: pinpointer-crewprox
+      map: ["enum.PinpointerLayers.Base"]
+    - state: pinonnull
+      map: ["enum.PinpointerLayers.Screen"]
+      shader: unshaded
+      visible: false
+
+- type: entity
+  parent: PinpointerUniversalNATO
+  id: PinpointerUniversalPACT
+  components:
+  - type: Icon
+    state: pinpointer-syndicate
+  - type: Pinpointer
+    updateTargetName: true
+    canRetarget: true
+  - type: Sprite
+    noRot: True
+    sprite: Objects/Devices/pinpointer.rsi
+    layers:
+    - state: pinpointer-syndicate
+      map: ["enum.PinpointerLayers.Base"]
+    - state: pinonnull
+      map: ["enum.PinpointerLayers.Screen"]
+      shader: unshaded
+      visible: false

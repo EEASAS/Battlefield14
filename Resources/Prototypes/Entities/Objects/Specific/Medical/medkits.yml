@@ -12,6 +12,29 @@
     defaultStorageOrientation: Vertical # BF14
     grid:
     - 0,0,3,2 # BF14
+    whitelist: # BF14
+      tags:
+        - Bottle
+        - Spray
+        - Brutepack
+        - Bloodpack
+        - Gauze
+        - Ointment
+        - CigPack
+        - PillCanister
+        - Radio
+        - DiscreteHealthAnalyzer
+        - SurgeryTool
+        - Dropper
+        - GlassBeaker # BF14
+        - Tourniquet # BF14
+        - Packet # BF14
+      components:
+        - Hypospray
+        - Injector
+        - Pill
+        - HandLabeler
+        - SurgeryTool # Shitmed Change
   - type: Item
     size: Normal # BF14
     sprite: _NF/Objects/Specific/Medical/firstaidkits.rsi # Frontier: _NF prefix

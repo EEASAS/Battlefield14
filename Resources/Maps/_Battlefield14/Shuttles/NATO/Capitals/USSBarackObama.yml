@@ -2543,7 +2543,7 @@ entities:
       rot: 3.141592653589793 rad
       pos: 10.5,3.5
       parent: 1
-- proto: BaseComputerShuttleGracePeriod
+- proto: ComputerShuttleGracePeriodUSSBarackObama
   entities:
   - uid: 767
     components:

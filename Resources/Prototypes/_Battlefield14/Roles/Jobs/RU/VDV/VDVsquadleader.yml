@@ -7,7 +7,7 @@
   startingGear: VDVSquadLeaderGear
   alwaysUseSpawner: true
   icon: "JobIconPACTSquadleader"
-  requireAdminNotify: false
+  requireAdminNotify: true
   supervisors: job-supervisors-rugov
   canBeAntag: false
   special:
@@ -62,7 +62,7 @@
   storage:
     back:
     - ArmorPlateMedium
-    - HandheldStationMapUnpowered
+    - BoxPinpointerUniversalPACT
     - MagazinePistolMP443
     - MagazinePistolMP443
     - FlashlightMilitaryAlt

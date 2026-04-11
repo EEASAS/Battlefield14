@@ -131387,7 +131387,7 @@ entities:
     - type: Transform
       pos: -40.5,3.5
       parent: 60
-- proto: SuitStorageCaptain
+- proto: SuitStorageSec
   entities:
   - uid: 2926
     components:

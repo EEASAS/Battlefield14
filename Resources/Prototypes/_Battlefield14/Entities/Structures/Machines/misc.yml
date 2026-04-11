@@ -42,6 +42,48 @@
   - type: DeleteOnTrigger
 
 - type: entity
+  parent: BaseComputerShuttleGracePeriod
+  id: ComputerShuttleGracePeriodUSSBarackObama
+  suffix: USS Barack Obama
+  components:
+  - type: SpawnOnTrigger
+    proto: ComputerShuttleAnnounceUSSBarackObama
+  - type: DeleteOnTrigger
+
+- type: entity
+  parent: BaseComputerShuttleGracePeriod
+  id: ComputerShuttleGracePeriodSVOGoydin
+  suffix: SVO Goydin
+  components:
+  - type: SpawnOnTrigger
+    proto: ComputerShuttleAnnounceSVOGoydin
+  - type: DeleteOnTrigger
+
+- type: entity
+  parent: ComputerShuttle
+  id: ComputerShuttleAnnounceUSSBarackObama
+  suffix: Announce, USS Barack Obama
+  components:
+  - type: AnnounceOnSpawn
+    message: "USS Barack Obama at 100% combat readiness"
+    sender: "USS Barack Obama"
+    sound:
+      path: /Audio/Announcements/bloblarm.ogg
+#    color: "#BE8700"
+
+- type: entity
+  parent: ComputerShuttle
+  id: ComputerShuttleAnnounceSVOGoydin
+  suffix: Announce, SVO Goydin
+  components:
+  - type: AnnounceOnSpawn
+    message: "SVO Goydin at 100% combat readiness"
+    sender: "SVO Goydin"
+    sound:
+      path: /Audio/Announcements/bloblarm.ogg
+#    color: "#BE8700"
+
+- type: entity
   id: BlastDoorGracePeriod
   parent: BaseStructure
   name: shutter

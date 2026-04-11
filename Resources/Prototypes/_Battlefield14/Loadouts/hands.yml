@@ -24,3 +24,8 @@
   id: LoadoutHandsGlovesSoldierMercFingerless
   equipment:
     gloves: ClothingHandsGlovesMercFingerless
+
+- type: loadout
+  id: LoadoutHandsGlovesSoldierWristwatch
+  equipment:
+    gloves: Wristwatch
