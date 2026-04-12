@@ -419,6 +419,11 @@ public abstract partial class SharedProjectileSystem : EntitySystem
                         //_sawmill.Debug("Shooter and BarricadeBlock facing opposite cardinal directions (bidirectional pass).");
                     }
                 }
+                else if (BarricadeBlock.Omnidirectional)
+                {
+                    directionallyAllowed = true;
+                    //_sawmill.Debug("Has the omnidirectional component");
+                }
 
                 if (directionallyAllowed)
                 {

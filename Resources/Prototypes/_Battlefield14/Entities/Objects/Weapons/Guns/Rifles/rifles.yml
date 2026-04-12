@@ -46,6 +46,10 @@
         volume: -5
         variation: 0.125
   - type: ChamberMagazineAmmoProvider
+    soundRack:
+      path: /Audio/_Battlefield14/Weapons/Guns/M16/rack.ogg
+      params:
+        volume: -2
     soundBoltClosed:
       path: /Audio/_Battlefield14/Weapons/Guns/M16/uc_m16_chamber_press.ogg
       params:
@@ -132,6 +136,10 @@
         variation: 0.125
     fireRate: 7
   - type: ChamberMagazineAmmoProvider
+    soundRack:
+      path: /Audio/_Battlefield14/Weapons/Guns/M16/rack.ogg
+      params:
+        volume: -2
     soundBoltClosed:
       path: /Audio/_Battlefield14/Weapons/Guns/M16/uc_m16_chamber_press.ogg
       params:
@@ -329,7 +337,7 @@
   - type: ChamberMagazineAmmoProvider
     boltClosed: null # means the bolt doesnt lock back like M16 pattern rifles, also means you need to cycle the gun after an empty mag
     soundRack:
-      path: /Audio/Weapons/Guns/Cock/ltrifle_cock.ogg
+      path: /Audio/_Battlefield14/Weapons/Guns/AK_GENERIC/rack.ogg
   - type: ItemSlots
     slots:
       gun_magazine:
@@ -401,7 +409,7 @@
   - type: ChamberMagazineAmmoProvider
     boltClosed: null # means the bolt doesnt lock back like M16 pattern rifles, also means you need to cycle the gun after an empty mag
     soundRack:
-      path: /Audio/Weapons/Guns/Cock/ltrifle_cock.ogg
+      path: /Audio/_Battlefield14/Weapons/Guns/AK_GENERIC/rack.ogg
   - type: ItemSlots
     slots:
       gun_magazine:
@@ -605,8 +613,6 @@
         map: ["enum.GunVisualLayers.Mag"]
   - type: Clothing
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AKMS.rsi
-  - type: Wieldable
-    unwieldOnUse: false
   - type: GunWieldBonus
     minAngle: -19
     maxAngle: -17
@@ -626,10 +632,6 @@
       params:
         volume: -5
         variation: 0.125
-  - type: ChamberMagazineAmmoProvider
-    boltClosed: null
-    soundRack:
-      path: /Audio/Weapons/Guns/Cock/ltrifle_cock.ogg
   - type: ItemSlots
     slots:
       gun_magazine:
@@ -649,14 +651,6 @@
         whitelist:
           tags:
             - BF_CartridgeRifle762x39
-  - type: ContainerContainer
-    containers:
-      gun_magazine: !type:ContainerSlot
-      gun_chamber: !type:ContainerSlot
-  - type: MagazineVisuals
-    magState: mag
-    steps: 1
-    zeroVisible: true
   - type: Appearance
   - type: ExtendDescription
     descriptionList:
@@ -746,7 +740,7 @@
   - type: ChamberMagazineAmmoProvider
     boltClosed: null # means the bolt doesnt lock back like M16 pattern rifles, also means you need to cycle the gun after an empty mag
     soundRack:
-      path: /Audio/Weapons/Guns/Cock/ltrifle_cock.ogg
+      path: /Audio/_Battlefield14/Weapons/Guns/AK_GENERIC/rack.ogg
   - type: ItemSlots
     slots:
       gun_magazine:
@@ -819,7 +813,7 @@
   - type: ChamberMagazineAmmoProvider
     boltClosed: null # means the bolt doesnt lock back like M16 pattern rifles, also means you need to cycle the gun after an empty mag
     soundRack:
-      path: /Audio/Weapons/Guns/Cock/ltrifle_cock.ogg
+      path: /Audio/_Battlefield14/Weapons/Guns/AK_GENERIC/rack.ogg
   - type: ItemSlots
     slots:
       gun_magazine:

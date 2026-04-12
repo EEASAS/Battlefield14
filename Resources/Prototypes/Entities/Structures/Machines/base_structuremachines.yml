@@ -52,6 +52,10 @@
   - type: FootstepModifier # mono
     footstepSoundCollection:
       collection: FootstepHull
+  - type: BarricadeBlock # BF14
+    bidirectional: false
+    omnidirectional: true
+    blocking: 67
 
 - type: entity
   abstract: true

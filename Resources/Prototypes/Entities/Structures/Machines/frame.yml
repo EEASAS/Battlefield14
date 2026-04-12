@@ -56,6 +56,10 @@
       sprite: Structures/Machines/parts.rsi
       state: box_0
       snapCardinals: true
+    - type: BarricadeBlock # BF14
+      bidirectional: false
+      omnidirectional: true
+      blocking: 33
 
 - type: entity
   id: MachineFrame
@@ -124,6 +128,10 @@
           whitelist:
             components:
             - MachineBoard
+    - type: BarricadeBlock # BF14
+      bidirectional: false
+      omnidirectional: true
+      blocking: 33
 
 - type: entity
   id: MachineFrameDestroyed

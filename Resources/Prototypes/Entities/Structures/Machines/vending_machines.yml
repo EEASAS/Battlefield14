@@ -140,8 +140,9 @@
   - type: ShipRepairable
     repairTime: 5
     repairCost: 10
-  - type: BarricadeBlock
-    bidirectional: true
+  - type: BarricadeBlock # BF14
+    bidirectional: false
+    omnidirectional: true
     blocking: 67
 
 - type: entity

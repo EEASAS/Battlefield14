@@ -71,7 +71,8 @@
         - TableMask
         layer:
         - TableLayer
-        
+        - LowImpassable # BF14
+
 - type: entity
   id: N14BarricadeTanktrapRusty
   parent: N14BarricadeTanktrap

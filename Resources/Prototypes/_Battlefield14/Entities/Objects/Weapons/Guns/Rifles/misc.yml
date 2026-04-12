@@ -206,3 +206,8 @@
         whitelist:
           tags:
             - BF_CartridgeRifle762x39
+  - type: ExtendDescription
+    descriptionList:
+      - description: Takes AKM pattern magazines.
+        color: "#4f94ad"
+        requireDetailRange: true

@@ -76,6 +76,10 @@
   - type: Construction
     graph: BarricadeCovering
     node: barricadecover
+  - type: BarricadeBlock # BF14
+    bidirectional: false
+    omnidirectional: true
+    blocking: 67
 
 #Directional Barricade
 - type: entity
@@ -115,3 +119,7 @@
   - type: FireVisuals
     sprite: Effects/fire.rsi
     normalState: 1
+  - type: BarricadeBlock # BF14
+    bidirectional: false
+    omnidirectional: true
+    blocking: 67

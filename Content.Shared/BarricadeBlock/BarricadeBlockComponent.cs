@@ -21,6 +21,11 @@ public sealed partial class BarricadeBlockComponent : Component
     [DataField("bidirectional")]
     public bool Bidirectional = true;
 
+    /// <summary>
+    /// Can it be used omnidirectionally (e.g. vending machines)
+    /// </summary>
+    [DataField("omnidirectional")]
+    public bool Omnidirectional = true;
 
 
 }
