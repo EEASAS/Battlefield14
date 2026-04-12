@@ -22,6 +22,8 @@
     slots:
       gun_chamber:
         name: Chamber
+        insertSound: /Audio/_Battlefield14/Weapons/Guns/M320/gl_insert.ogg
+        ejectSound: /Audio/_Battlefield14/Weapons/Guns/M320/gl_remove.ogg
         priority: 1
         whitelist:
           tags:
@@ -32,7 +34,10 @@
     availableModes:
       - SemiAuto
     soundGunshot:
-      path: /Audio/Weapons/Guns/Gunshots/grenade_launcher.ogg
+      path: /Audio/_Battlefield14/Weapons/Guns/M320/gl_fire.ogg
+#      params:
+#        volume: -5
+#        variation: 0.125
 
 - type: entity
   name: M320
@@ -43,12 +48,9 @@
   - type: ItemSlots
     slots:
       gun_chamber:
-        name: Chamber
         startingItem: Cartridge40x46mmHE
-        priority: 1
-        whitelist:
-          tags:
-            - Cartridge40x46mmGrenade
+        insertSound: /Audio/_Battlefield14/Weapons/Guns/M320/gl_insert.ogg
+        ejectSound: /Audio/_Battlefield14/Weapons/Guns/M320/gl_remove.ogg
 
 - type: entity
   name: M320
@@ -59,12 +61,9 @@
   - type: ItemSlots
     slots:
       gun_chamber:
-        name: Chamber
         startingItem: Cartridge40x46mmHEDP
-        priority: 1
-        whitelist:
-          tags:
-            - Cartridge40x46mmGrenade
+        insertSound: /Audio/_Battlefield14/Weapons/Guns/M320/gl_insert.ogg
+        ejectSound: /Audio/_Battlefield14/Weapons/Guns/M320/gl_remove.ogg
 
 - type: entity
   name: M320
@@ -75,12 +74,9 @@
   - type: ItemSlots
     slots:
       gun_chamber:
-        name: Chamber
         startingItem: Cartridge40x46mmFrag
-        priority: 1
-        whitelist:
-          tags:
-            - Cartridge40x46mmGrenade
+        insertSound: /Audio/_Battlefield14/Weapons/Guns/M320/gl_insert.ogg
+        ejectSound: /Audio/_Battlefield14/Weapons/Guns/M320/gl_remove.ogg
 
 - type: entity
   name: M79 (Embiggened)
@@ -235,7 +231,9 @@
     capacity: 3
 #    proto: Cartridge43x30mmHEFrag
     soundInsert:
-      path: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
+      collection: BF_M870_ShellIn
+      params:
+        volume: -2
   - type: GunRequiresWield
 
 - type: entity

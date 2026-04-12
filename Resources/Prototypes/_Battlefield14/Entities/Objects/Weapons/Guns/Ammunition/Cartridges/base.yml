@@ -1,0 +1,29 @@
+- type: entity
+  parent: [BaseCartridge, RecyclableItemSteelTiny]
+  id: BaseCartridgeRifle
+  components:
+  - type: EmitSoundOnLand
+    sound:
+      collection: BF_Cartridge_Drop_556x45
+      params:
+        volume: -1
+
+- type: entity
+  parent: [BaseCartridge, RecyclableItemSteelTiny]
+  id: BaseCartridgePistol
+  components:
+  - type: EmitSoundOnLand
+    sound:
+      collection: BF_Cartridge_Drop_9x19
+      params:
+        volume: -1
+
+- type: entity
+  parent: [BaseCartridge, RecyclableItemSteelTiny]
+  id: BaseCartridge40x46
+  components:
+  - type: EmitSoundOnLand
+    sound:
+      collection: BF_Cartridge_Drop_40x46mm
+      params:
+        volume: -1

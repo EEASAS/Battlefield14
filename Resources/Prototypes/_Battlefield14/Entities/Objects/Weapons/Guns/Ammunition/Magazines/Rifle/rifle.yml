@@ -1,5 +1,5 @@
 - type: entity
-  parent: BaseItem
+  parent: BaseMagazineRifle
   id: MagazineRifleASH12
   name: "ASH-12 magazine (12.7x55)"
   description: Big and chunky mag, holding 20 12.7x55 bullets for eradicating "cag operators" in CQB with Russian brutality.
@@ -43,7 +43,7 @@
     capacity: 20
 
 - type: entity
-  parent: BaseItem
+  parent: BaseMagazineRifle
   id: MagazineRifleM14
   name: "M14 magazine (7.62x51mm)"
   description: It's a magazine.

@@ -3,7 +3,7 @@
 - type: entity
   id: Cartridge40x46mmChemicalSmokeInfantry
   name: cartridge (40x46mm CS gas)
-  parent: BaseCartridge
+  parent: BaseCartridge40x46
   components:
   - type: Item
     size: Small

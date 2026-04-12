@@ -1,7 +1,7 @@
 - type: entity
   id: BF_CartridgePistol9x19
   name: cartridge (9x19mm Parabellum)
-  parent: BaseCartridge
+  parent: BaseCartridgePistol
   components:
   - type: CartridgeAmmo
     proto: BulletPistolBF9x19
@@ -20,7 +20,7 @@
 - type: entity
   id: BF_CartridgePistol45ACP
   name: cartridge (.45 ACP)
-  parent: BaseCartridge
+  parent: BaseCartridgePistol
   components:
   - type: CartridgeAmmo
     proto: BulletPistolBF45ACP
@@ -39,7 +39,7 @@
 - type: entity
   id: BF_CartridgePistol357
   name: cartridge (.357 Magnum)
-  parent: BaseCartridge
+  parent: BaseCartridgePistol
   components:
   - type: CartridgeAmmo
     proto: BulletPistolBF357

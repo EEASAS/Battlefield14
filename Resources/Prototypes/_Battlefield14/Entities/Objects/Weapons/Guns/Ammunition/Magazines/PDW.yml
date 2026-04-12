@@ -1,5 +1,5 @@
 - type: entity
-  parent: BaseItem
+  parent: BaseMagazineSMG
   id: MagazineSubmachinegunMP7
   name: MP7 magazine (4.6x30mm)
   description: A bunch of itty bitty bullets that like to go ZIP right through you, packaged all neat.
@@ -30,7 +30,7 @@
   - type: Appearance
 
 - type: entity
-  parent: BaseItem
+  parent: BaseMagazineSMG
   id: MagazinePistolSR1MP
   name: SR1MP magazine (9x21mm)
   description: When you pull the trigger, the last bullet in the magazine will ascend a fixed distance, until fired; after which the slide will lock to the rear.
@@ -61,7 +61,7 @@
   - type: Appearance
 
 - type: entity
-  parent: BaseItem
+  parent: BaseMagazineSMG
   id: MagazineSubmachinegunSR2MP
   name: SR2MP magazine (9x21mm)
   description: Gun food.

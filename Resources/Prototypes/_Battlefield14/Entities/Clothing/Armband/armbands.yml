@@ -75,6 +75,8 @@
     slots:
       item:
         name: Handgun
+        insertSound: /Audio/_Battlefield14/Weapons/Guns/misc/draw.ogg
+        ejectSound: /Audio/_Battlefield14/Weapons/Guns/misc/holster_replace.ogg
         whitelist:
           tags:
           - Sidearm

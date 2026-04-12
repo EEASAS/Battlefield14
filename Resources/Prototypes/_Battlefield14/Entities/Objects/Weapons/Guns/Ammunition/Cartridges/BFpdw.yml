@@ -1,7 +1,7 @@
 - type: entity
   id: BF_CartridgePDW46x30
   name: cartridge (4.6x30mm)
-  parent: BaseCartridge
+  parent: BaseCartridgePistol
   components:
   - type: CartridgeAmmo
     proto: BulletPDWBF46x30
@@ -20,7 +20,7 @@
 - type: entity
   id: BF_CartridgePDW9x21
   name: cartridge (9x21mm)
-  parent: BaseCartridge
+  parent: BaseCartridgePistol
   components:
   - type: CartridgeAmmo
     proto: BulletPDWBF9x21
