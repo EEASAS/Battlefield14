@@ -12,9 +12,34 @@
     size: Huge
   - type: ExplosionResistance
     damageCoefficient: 0
+  - type: Storage
+    maxItemSize: Normal
+    defaultStorageOrientation: Vertical
+    grid:
+    - 0,0,7,1
+    storageOpenSound:
+      collection: BF_Magpouch_Open
+      params:
+        volume: -3
+        variation: 0.125
+    storageCloseSound:
+      collection: BF_Magpouch_Open
+      params:
+        volume: -3
+        variation: 0.125
+    storageInsertSound:
+      collection: BF_Magpouch_Insert
+      params:
+        volume: -1
+        variation: 0.125
+    storageRemoveSound:
+      collection: BF_Magpouch_Remove
+      params:
+        volume: -1
+        variation: 0.125
 
 - type: entity
-  parent: [ClothingBeltStorageBase, ContentsExplosionResistanceBase]
+  parent: ClothingBeltMilitaryWebbingUS
   id: ClothingBeltMilitaryWebbingRU
   name: RU belt rig
   description: You wish you had a smersh.

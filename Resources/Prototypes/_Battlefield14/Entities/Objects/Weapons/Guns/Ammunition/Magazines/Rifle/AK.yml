@@ -1,7 +1,7 @@
 - type: entity
   # COMMENTED OUT: Missing parent 'BaseMagazineRifle'
   # parent: BaseMagazineRifle
-  parent: BaseItem
+  parent: BaseMagazineRifle
   id: MagazineRifleAK74
   name: "AK-74 magazine (5.45x39mm)"
   description: Classic rock-and-lock magazine in 5.45, for 74 pattern rifles.
@@ -82,7 +82,7 @@
 
 
 - type: entity
-  parent: BaseItem
+  parent: BaseMagazineRifle
   id: MagazineRifleAKM
   name: "AKM magazine (7.62x39)"
   description: Classic banana mag, just not yellow.
@@ -135,7 +135,7 @@
       map: ["enum.GunVisualLayers.Mag"]
 
 - type: entity
-  parent: BaseItem
+  parent: BaseMagazineRifle
   id: MagazineRifleASVAL
   name: "AS-VAL magazine (9x39)"
   description: 9mm slugs, a little slow but still hit hard.

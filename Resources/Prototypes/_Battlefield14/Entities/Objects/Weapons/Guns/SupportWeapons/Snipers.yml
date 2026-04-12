@@ -34,14 +34,18 @@
     availableModes:
       - SemiAuto
   - type: ChamberMagazineAmmoProvider
+    soundRack:
+      path: /Audio/_Battlefield14/Weapons/Guns/M82/rack.ogg
+      params:
+        volume: -2
     boltClosed: null
   - type: ItemSlots
     slots:
       gun_magazine:
         name: Magazine
         startingItem: MagazineSniperM107
-        insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
-        ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
+        insertSound: /Audio/_Battlefield14/Weapons/Guns/M82/magin.ogg
+        ejectSound: /Audio/_Battlefield14/Weapons/Guns/M82/magout.ogg
         priority: 2
         whitelist:
           tags:

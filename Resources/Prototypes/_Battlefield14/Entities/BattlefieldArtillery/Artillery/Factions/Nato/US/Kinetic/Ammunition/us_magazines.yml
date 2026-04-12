@@ -554,7 +554,7 @@
 - type: entity
   id: Cartridge40x46mmHE
   name: cartridge (40x46mm HE)
-  parent: BaseCartridge
+  parent: BaseCartridge40x46
   components:
   - type: Item
     size: Small
@@ -596,7 +596,7 @@
 - type: entity
   id: Cartridge40x46mmHEDP
   name: cartridge (40x46mm HEDP)
-  parent: BaseCartridge
+  parent: BaseCartridge40x46
   components:
   - type: Item
     size: Small
@@ -638,7 +638,7 @@
 - type: entity
   id: Cartridge40x46mmFrag
   name: cartridge (40x46mm fragmentation)
-  parent: BaseCartridge
+  parent: BaseCartridge40x46
   components:
   - type: Item
     size: Small
@@ -680,7 +680,7 @@
 - type: entity
   id: Cartridge40x46mmMPAPERS
   name: cartridge (40x46mm MP-APERS)
-  parent: BaseCartridge
+  parent: BaseCartridge40x46
   components:
   - type: Item
     size: Small
@@ -705,7 +705,7 @@
 - type: entity
   id: Cartridge40x46mmPlasmaGas
   name: cartridge (40x46mm plasma gas)
-  parent: BaseCartridge
+  parent: BaseCartridge40x46
   components:
   - type: Item
     size: Small
@@ -748,7 +748,7 @@
 - type: entity
   id: Cartridge40x46mmChemicalSmoke
   name: cartridge (40x46mm chemical smoke)
-  parent: BaseCartridge
+  parent: BaseCartridge40x46
   components:
   - type: Item
     size: Small

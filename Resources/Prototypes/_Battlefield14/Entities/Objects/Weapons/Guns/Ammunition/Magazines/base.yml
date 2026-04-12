@@ -1,0 +1,30 @@
+- type: entity
+  parent: BaseItem
+  id: BaseMagazineRifle
+  components:
+  - type: EmitSoundOnLand
+    sound:
+      collection: BF_Magazine_Drop_Rifle
+      params:
+        volume: -2
+
+- type: entity
+  parent: BaseItem
+  id: BaseMagazineSMG
+  components:
+  - type: EmitSoundOnLand
+    sound:
+      collection: BF_Magazine_Drop_SMG
+      params:
+        volume: -2
+
+- type: entity
+  parent: BaseItem
+  id: BaseMagazinePistol
+  components:
+  - type: EmitSoundOnLand
+    sound:
+      path: "/Audio/_Battlefield14/Weapons/Guns/magazines/pistol_magdrop.ogg"
+      params:
+        volume: -2
+        variation: 0.125

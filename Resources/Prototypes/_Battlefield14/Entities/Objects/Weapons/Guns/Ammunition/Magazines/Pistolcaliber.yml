@@ -1,5 +1,5 @@
 - type: entity
-  parent: BaseItem
+  parent: BaseMagazineSMG
   id: MagazineSubmachinegunMP5
   name: MP5 magazine (9x19mm)
   description: Gun food.
@@ -30,7 +30,7 @@
   - type: Appearance
 
 - type: entity
-  parent: BaseItem
+  parent: BaseMagazineSMG
   id: MagazineSubmachinegunVityaz
   name: PP-19 Vityaz magazine (9x19mm)
   description: You expected them to make this in 9x18, but you're kindof glad they didn't.
@@ -61,7 +61,7 @@
   - type: Appearance
 
 - type: entity
-  parent: BaseItem
+  parent: BaseMagazineSMG
   id: MagazineSubmachinegunVlad
   name: vladistokyov magazine (9x19mm)
   description: Gun food.
@@ -92,7 +92,7 @@
   - type: Appearance
 
 - type: entity
-  parent: BaseItem
+  parent: BaseMagazinePistol
   id: MagazinePistolM9
   name: M9 magazine (9x19mm)
   description: A 9x19 MILLY METAH magazine that fits in the M9 beretta.
@@ -123,7 +123,7 @@
   - type: Appearance
 
 - type: entity
-  parent: BaseItem
+  parent: BaseMagazinePistol
   id: MagazinePistolMP443
   name: MP443 magazine (9x19mm)
   description: The rook needs a man in the tower, this has 18.

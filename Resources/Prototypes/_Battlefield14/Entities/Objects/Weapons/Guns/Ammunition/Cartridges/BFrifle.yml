@@ -1,7 +1,7 @@
 - type: entity
   id: BF_CartridgeRifle556x45
   name: cartridge (5.56x45mm)
-  parent: BaseCartridge
+  parent: BaseCartridgeRifle
   components:
   - type: Tag
     tags:
@@ -20,7 +20,7 @@
 - type: entity
   id: BF_CartridgeRifle545x39
   name: cartridge (5.45x39mm)
-  parent: BaseCartridge
+  parent: BaseCartridgeRifle
   components:
   - type: Tag
     tags:
@@ -39,7 +39,7 @@
 - type: entity
   id: BF_CartridgeRifle762x39
   name: cartridge (7.62x39mm)
-  parent: BaseCartridge
+  parent: BaseCartridgeRifle
   components:
   - type: Tag
     tags:
@@ -58,7 +58,7 @@
 - type: entity
   id: BF_CartridgeRifle762x51
   name: cartridge (7.62x51mm)
-  parent: BaseCartridge
+  parent: BaseCartridgeRifle
   components:
   - type: Tag
     tags:
@@ -77,7 +77,7 @@
 - type: entity
   id: BF_CartridgeRifle9x39
   name: cartridge (9x39mm)
-  parent: BaseCartridge
+  parent: BaseCartridgeRifle
   components:
   - type: Tag
     tags:
@@ -96,7 +96,7 @@
 - type: entity
   id: BF_CartridgeRifle762x54r
   name: cartridge (7.62x54mmR)
-  parent: BaseCartridge
+  parent: BaseCartridgeRifle
   components:
   - type: Tag
     tags:
@@ -115,7 +115,7 @@
 - type: entity
   id: BF_CartridgeRifle762x54rAP
   name: cartridge (7.62x54mmR AP)
-  parent: BaseCartridge
+  parent: BaseCartridgeRifle
   components:
   - type: Tag
     tags:
@@ -134,7 +134,7 @@
 - type: entity
   id: BF_CartridgeRifle127x55
   name: cartridge (12.7x55)
-  parent: BaseCartridge
+  parent: BaseCartridgeRifle
   components:
   - type: Tag
     tags:
@@ -153,7 +153,7 @@
 - type: entity
   id: BF_CartridgeRifle127x55Duplex
   name: cartridge (12.7x55) duplex
-  parent: BaseCartridge
+  parent: BaseCartridgeRifle
   components:
   - type: Tag
     tags:

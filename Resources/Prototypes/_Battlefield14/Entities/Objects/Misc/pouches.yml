@@ -94,6 +94,26 @@
     whitelist:
       tags:
       - Magazine
+    storageOpenSound:
+      collection: BF_Magpouch_Open
+      params:
+        volume: -1
+        variation: 0.125
+    storageCloseSound:
+      collection: BF_Magpouch_Open
+      params:
+        volume: -1
+        variation: 0.125
+    storageInsertSound:
+      collection: BF_Magpouch_Insert
+      params:
+        volume: -1
+        variation: 0.125
+    storageRemoveSound:
+      collection: BF_Magpouch_Remove
+      params:
+        volume: -1
+        variation: 0.125
   - type: PhysicalComposition
     materialComposition:
       Plastic: 100
