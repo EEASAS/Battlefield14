@@ -116,6 +116,10 @@
     stateDoorClosed: generic_door
   - type: StaticPrice
     price: 50 # Frontier: 75<50 - TODO: material value rework
+  - type: BarricadeBlock # BF14
+    bidirectional: false
+    omnidirectional: true
+    blocking: 67
 
 # steel closet base (that can be constructed/deconstructed)
 - type: entity
