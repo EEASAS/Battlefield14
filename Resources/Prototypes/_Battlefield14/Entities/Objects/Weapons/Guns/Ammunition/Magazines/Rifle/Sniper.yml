@@ -29,19 +29,6 @@
   - type: Appearance
 
 - type: entity
-  parent: MagazineRifleSV98
-  id: MagazineRifleSV98AP
-  name: "SV-98 magazine (7.62x54mmR AP)"
-  components:
-  - type: BallisticAmmoProvider
-    proto: BF_CartridgeRifle762x54rAP
-    mayTransfer: true
-    whitelist:
-      tags:
-        - BF_CartridgeRifle762x54r
-    capacity: 5
-
-- type: entity
   parent: BaseMagazineRifle
   id: MagazineSniperM107
   name: "M107 magazine (.50 BMG)"

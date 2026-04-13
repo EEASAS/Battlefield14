@@ -15,7 +15,7 @@
     sprite: _Battlefield14/Objects/Weapons/Guns/Shotguns/M870.rsi
   - type: GunRequiresWield
   - type: Gun
-    fireRate: 2
+    fireRate: 1
     projectileSpeed: 35
     soundGunshot:
       collection: BF_M870_Gunshots
@@ -28,7 +28,7 @@
     tags:
     - WeaponShotgunKammerer
   - type: BallisticAmmoProvider
-    autoCycle: false
+    autoCycle: true
     whitelist:
       tags:
       - BF_CartridgeShotgun12Gauge
@@ -53,7 +53,7 @@
   - type: Clothing
     sprite: _Mono/Objects/Weapons/Guns/Shotguns/Helepolis.rsi
   - type: Gun
-    fireRate: 2
+    fireRate: 1
     projectileSpeed: 20 # short barrel
   - type: GunSpreadModifier
     spread: 1.5 # short barrel
@@ -61,7 +61,7 @@
     tags:
     - WeaponShotgunKammerer
   - type: BallisticAmmoProvider
-    autoCycle: false
+    autoCycle: true
     whitelist:
       tags:
       - BF_CartridgeShotgun12Gauge
@@ -99,7 +99,7 @@
     sprite: _Battlefield14/Objects/Weapons/Guns/Shotguns/KS23M.rsi
   - type: GunRequiresWield
   - type: Gun
-    fireRate: 1
+    fireRate: 0.7
     projectileSpeed: 45 # why not lol
     soundGunshot:
       path: /Audio/_Mono/Weapons/Guns/SmallArms/Gunshots/bigshotgun_fire.ogg
@@ -109,7 +109,7 @@
     tags:
     - WeaponShotgunKammerer
   - type: BallisticAmmoProvider
-    autoCycle: false
+    autoCycle: true
     whitelist:
       tags:
       - BF_CartridgeShotgun4Gauge

@@ -1,6 +1,8 @@
 
 gun-selected-mode-examine = Current selected fire mode is [color={$color}]{$mode}[/color].
 gun-fire-rate-examine = Fire rate is [color={$color}]{$fireRate}[/color] per second.
+gun-fire-rate-examine = Fire rate is [color={$color}]{$fireRate}[/color] rounds per minute.
+gun-damage-modifier-examine = Its shots deal [color={$color}]{$damage}x[/color] damage.
 gun-selector-verb = Change to {$mode}
 gun-selected-mode = Selected {$mode}
 gun-disabled = You can't use guns!
@@ -52,4 +54,5 @@ gun-speedloader-empty = Speedloader empty
 
 # GunSpreadModifier
 examine-gun-spread-modifier-reduction = The spread has been reduced by [color=yellow]{$percentage}%[/color].
+examine-gun-spread-modifier-increase = The spread has been increased by [color=yellow]{$percentage}%[/color].
 examine-gun-spread-modifier-increase = The spread has been increased by [color=yellow]{$percentage}%[/color].

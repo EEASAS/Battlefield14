@@ -12,7 +12,7 @@
     damage:
       types:
         Piercing: 22
-    armorPenetration: -0.2
+    armorPenetration: -0.3
   - type: StaminaDamageOnCollide
     damage: 5 # 20 hits to stun lol
   - type: Ammo
@@ -32,7 +32,7 @@
     damage:
       types:
         Piercing: 26
-    armorPenetration: -0.2
+    armorPenetration: -0.4
   - type: StaminaDamageOnCollide
     damage: 9 # ~11 hits to stun
   - type: Ammo
@@ -52,8 +52,6 @@
     damage:
       types:
         Piercing: 35
-        Structural: 35
-    armorPenetration: 0.5
   - type: StaminaDamageOnCollide
     damage: 10 # 10 hits to stun
 
