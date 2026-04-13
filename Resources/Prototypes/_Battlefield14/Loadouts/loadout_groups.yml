@@ -147,6 +147,7 @@
   - LoadoutMiscItemsBible
   - LoadoutMiscItemsPouchFlaresGlowsticksBlue
   - LoadoutMiscItemsCalculator
+  - LoadoutMiscItemsGasMaskPouch
 
 - type: loadoutGroup
   id: BF_MiscItemsPACT
@@ -161,6 +162,7 @@
   - LoadoutMiscItemsBible
   - LoadoutMiscItemsPouchFlaresGlowsticksRed
   - LoadoutMiscItemsCalculator
+  - LoadoutMiscItemsGasMaskPouch
 
 - type: loadoutGroup
   id: BF_MiscItemsIND
@@ -174,3 +176,4 @@
   - LoadoutMiscItemsBible
   - LoadoutMiscItemsPouchFlaresGlowsticksGreen
   - LoadoutMiscItemsCalculator
+  - LoadoutMiscItemsGasMaskPouch

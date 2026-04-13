@@ -81,6 +81,44 @@
           tags:
           - Sidearm
 
+- type: entity
+  parent: ClothingArmbandSheathKnifePolymer
+  id: ClothingArmbandGasMaskPouch
+  name: gas mask pouch
+  description: A small pouch with the sole purpose of holding a gas mask at the ready in your time of need.
+  components:
+  - type: Item
+    size: Small
+    shape:
+    - 0,0,1,1
+  - type: Sprite
+    sprite: _RMC14/Clothing/Webbing/ml66a_pouch.rsi
+    state: webbing
+  - type: Clothing
+    sprite: _RMC14/Clothing/Webbing/ml66a_pouch.rsi
+    clothingVisuals:
+      leftarmband:
+      - state: equipped
+      rightarmband:
+      - state: equipped
+  - type: ItemSlots
+    slots:
+      item:
+        name: "gas mask"
+        insertSound:
+          collection: BF_Magpouch_Insert
+          params:
+            volume: -1
+            variation: 0.125
+        ejectSound:
+          collection: BF_Magpouch_Remove
+          params:
+            volume: -1
+            variation: 0.125
+        whitelist:
+          tags:
+          - GasMask
+
 # Misc
 
 - type: entity

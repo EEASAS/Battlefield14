@@ -214,15 +214,16 @@
   id: PouchFlares
   parent: BasePouch
   name: flare pouch
+  description: A convenient set of pouches for holding flares and glowsticks for on the go lighting solutions.
   components:
   - type: Sprite
     sprite: _Battlefield14/Objects/Misc/pouches.rsi
     layers:
       - state: utility
   - type: Item
-    Size: Small
-#    shape:
-#    - 0,0,1,1
+    size: Small
+    shape:
+    - 0,0,1,1
   - type: Storage
     maxItemSize: Tiny
     grid:
