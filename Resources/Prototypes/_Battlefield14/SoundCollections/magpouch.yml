@@ -16,5 +16,6 @@
   id: BF_Magpouch_Remove
   files:
   - "/Audio/_Battlefield14/Weapons/Guns/magpouch/magpouchout.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/magpouch/magpouch_pull.ogg"
   - "/Audio/_Battlefield14/Weapons/Guns/magpouch/magpouch_pull_small.ogg"
   - "/Audio/_Battlefield14/Weapons/Guns/magpouch/magpouch_gear_short.ogg"

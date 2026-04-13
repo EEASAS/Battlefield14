@@ -193,7 +193,7 @@
 
 - type: entity
   name: GM-94
-  parent: [BaseWeaponLauncher, BaseGunWieldable]
+  parent: BaseWeaponShotgun
   id: WeaponGrenadeLauncherRUGM94
   description: An odd design, loaded from the top into a magazine tube, and then pumped, like a shotgun. Brings to mind the M90A from Halo™.
   components:
@@ -217,7 +217,8 @@
     minAngle: 4
     maxAngle: 10
     angleIncrease: 3
-    fireRate: 0.75
+    angleDecay: 1
+    fireRate: 0.85
     selectedMode: SemiAuto
     availableModes:
       - SemiAuto
@@ -229,7 +230,7 @@
       tags:
         - Cartridge43x30mmGrenade
     capacity: 3
-#    proto: Cartridge43x30mmHEFrag
+    proto: null
     soundInsert:
       collection: BF_M870_ShellIn
       params:

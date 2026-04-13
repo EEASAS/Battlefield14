@@ -77,6 +77,19 @@
       - !type:PlaySoundBehavior
         sound:
           collection: MeatLaserImpact
+#  - type: TriggerOnMobstateChange # BF14
+#    mobState:
+#    - Critical
+#  - type: EmitSoundOnTrigger
+#    sound:
+#      collection: SadTrombone
+#      params:
+#        variation: 0.125
+#  - type: BarricadeBlock # BF14
+#    bidirectional: false
+#    omnidirectional: true
+#    distance: 0.5
+#    blocking: 100
 
 - type: entity
   parent: BaseSpeciesDummy
