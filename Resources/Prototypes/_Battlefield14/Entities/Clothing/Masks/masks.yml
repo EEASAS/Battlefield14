@@ -40,6 +40,16 @@
     - Snout
     - Hair
     hideOnToggle: true
+  - type: Tag
+    tags:
+    - HamsterWearable
+    - WhitelistChameleon
+    - GasMask
+  - type: IngestionBlocker # Goobstation
+    blockSmokeIngestion: true
+  - type: ClothingSpeedModifier
+    walkModifier: 0.9
+    sprintModifier: 0.9
 
 - type: entity
   parent: [ ClothingMaskBase , ShowSecurityIcons ]
@@ -98,7 +108,7 @@
     sprite: _Battlefield14/Clothing/Mask/M40green.rsi
 
 - type: entity
-  parent: ClothingMaskBase
+  parent: ClothingMaskGasM40
   id: ClothingMaskGasRussia # yeah no idea what its actually called, the file from c13 was literally just 'russiamask', so im keeping this generic so it can be easily renamed
   name: GP-21 gas mask # a complete guess based off the shape
   description: Effective against stuff you reaally dont want in your body.

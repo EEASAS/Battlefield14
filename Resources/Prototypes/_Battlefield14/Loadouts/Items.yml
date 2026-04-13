@@ -72,3 +72,8 @@
   id: LoadoutMiscItemsPouchFlaresGlowsticksRed
   equipment:
     leftarmband: PouchFlaresFilledGlowsticksRed
+
+- type: loadout
+  id: LoadoutMiscItemsGasMaskPouch
+  equipment:
+    leftarmband: ClothingArmbandGasMaskPouch
