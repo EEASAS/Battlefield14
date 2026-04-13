@@ -101,7 +101,9 @@
     - Back
     - suitStorage
   - type: Item
-    size: Huge
+    size: Large
+    shape:
+    - 0,0,3,2
   - type: Appearance
   - type: Gun
     projectileSpeed: 40
@@ -131,7 +133,9 @@
     - Back
     - suitStorage
   - type: Item
-    size: Huge
+    size: Large
+    shape:
+    - 0,0,3,2
   - type: Appearance
   - type: Gun
     projectileSpeed: 40
@@ -161,7 +165,9 @@
     - Back
     - suitStorage
   - type: Item
-    size: Huge
+    size: Large
+    shape:
+    - 0,0,3,2
   - type: Appearance
   - type: Gun
     projectileSpeed: 8
@@ -236,7 +242,9 @@
     - Back
     - suitStorage
   - type: Item
-    size: Huge
+    size: Large
+    shape:
+    - 0,0,3,2
   - type: Appearance
   - type: Gun
     projectileSpeed: 40
@@ -266,7 +274,9 @@
     - Back
     - suitStorage
   - type: Item
-    size: Huge
+    size: Large
+    shape:
+    - 0,0,3,2
   - type: Appearance
   - type: Gun
     projectileSpeed: 40
@@ -306,7 +316,9 @@
     - Back
     - suitStorage
   - type: Item
-    size: Huge
+    size: Large
+    shape:
+    - 0,0,3,2
   - type: Appearance
   - type: Gun
     projectileSpeed: 8

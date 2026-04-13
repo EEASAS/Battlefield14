@@ -53,7 +53,7 @@ uplink-NATO-wrist-scanner-name = Wrist mounted mass scanner
 uplink-NATO-wrist-scanner-desc = A portable radar mounted on the wrist for easy access at any time.
 
 uplink-NATO-barbwirecrate-name = Barbed wire coil x5
-uplink-NATO-barbwirecrate-desc = 5 stacks of 30 barbed wire, able to lay down 6 coils each, for a total of 30.
+uplink-NATO-barbwirecrate-desc = 5 stacks of 10 barbed wire, able to lay down 1 coils each, for a total of 50.
 
 ## Medical
 

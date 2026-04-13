@@ -1,0 +1,25 @@
+- type: constructionGraph
+  id: BarricadeTanktrap
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: tanktrap
+          completed:
+            - !type:SnapToGrid
+              southRotation: false
+          steps:
+            - material: MetalRod
+              amount: 6
+              doAfter: 4
+
+    - node: tanktrap
+      entity: N14BarricadeTanktrap
+#      edges:
+#        - to: start
+#          completed:
+#            - !type:AdminLog # Needs a log for start of attempt in addition to the completion log
+#              message: "A barbed wire roll was cut"
+#            - !type:SpawnPrototype
+#              prototype: MetalRod
+#              amount: 6

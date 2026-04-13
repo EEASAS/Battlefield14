@@ -7,11 +7,11 @@
         - to: barbwirefloor
           completed:
             - !type:SnapToGrid
-              southRotation: false
+              southRotation: true
           steps:
             - material: BarbedWire
-              amount: 5
-              doAfter: 4
+              amount: 1
+              doAfter: 3
 
     - node: barbwirefloor
       entity: BarbwireFloor

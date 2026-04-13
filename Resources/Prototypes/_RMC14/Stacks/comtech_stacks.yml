@@ -3,4 +3,4 @@
   name: barbed wire
   icon: { sprite: _RMC14/Objects/barbed_wire.rsi, state: barbed_wire }
   spawn: BarbedWire1
-  maxCount: 30 # BF14 20 > 30
+  maxCount: 10 # BF14 20 > 10

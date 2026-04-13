@@ -13,7 +13,7 @@
   - type: SyncSprite
   - type: Clickable
   - type: Sprite
-    sprite: _Battlefield14/Structures/barbwire.rsi
+    sprite: _HaloSSE/Structures/barbwire.rsi
     drawdepth: Mobs
     layers:
       - state: floor
@@ -39,7 +39,7 @@
 #      collection: FootstepWater
 #      params:
 #        volume: 8
-  - type: Rotatable
+#  - type: Rotatable
   - type: InteractionOutline
   - type: Slippery # tangles up your feet
   - type: TriggerOnProximity
@@ -61,6 +61,8 @@
     damage:
       types:
         Slash: 20 # base damage, scales based on mass. DEALS DAMAGE TO ITEMS THROWN OVER IT
+  - type: SoundOnTrigger
+    sound: /Audio/_RMC14/items/barbed_wire_movement.ogg
   - type: MeleeSound
     soundGroups:
       Brute:

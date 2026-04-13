@@ -63,3 +63,19 @@
   placementMode: SnapgridCenter
   canRotate: true
   canBuildInImpassable: true
+
+- type: construction
+  id: BarricadeTanktrap
+  graph: BarricadeTanktrap
+  name: tank trap
+  description: A hardened barricade built to keep the extra bad out. This one can be opened with a latch.
+  icon:
+    sprite: _Nuclear14/Structures/Furniture/barricades.rsi
+    state: iron_barricade
+  startNode: start
+  targetNode: tanktrap
+  category: construction-category-structures
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: false
+  canBuildInImpassable: false

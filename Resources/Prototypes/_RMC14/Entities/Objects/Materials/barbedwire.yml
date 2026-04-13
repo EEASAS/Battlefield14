@@ -36,6 +36,10 @@
     size: Normal
   - type: Appearance
 #  - type: BarbedWire
+  - type: SpawnAfterInteract
+    prototype: BarbwireFloor
+    doAfter: 3
+    removeOnInteract: true # cant change the amount for this for some reason
 
 - type: entity
   parent: BarbedWireBase
@@ -50,25 +54,14 @@
 
 - type: entity
   parent: BarbedWireBase
-  id: BarbedWire15
-  suffix: "15"
+  id: BarbedWire5
+  suffix: "5"
   components:
   - type: Sprite
     state: barbed_wire
   - type: Stack
     stackType: BarbedWire
-    count: 15
-
-- type: entity
-  parent: BarbedWireBase
-  id: BarbedWire30
-  suffix: "30"
-  components:
-  - type: Sprite
-    state: barbed_wire
-  - type: Stack
-    stackType: BarbedWire
-    count: 30
+    count: 5
 
 - type: entity
   parent: BarbedWireBase

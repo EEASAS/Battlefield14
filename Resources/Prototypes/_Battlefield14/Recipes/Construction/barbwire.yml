@@ -10,9 +10,9 @@
 #    - !type:TileNotBlocked
 #      failIfSpace: true
   icon:
-    sprite: _Battlefield14/Structures/barbwire.rsi
+    sprite: _HaloSSE/Structures/barbwire.rsi
     state: floor
   objectType: Structure
   placementMode: SnapgridCenter
   canBuildInImpassable: false
-  canRotate: true
+  canRotate: false

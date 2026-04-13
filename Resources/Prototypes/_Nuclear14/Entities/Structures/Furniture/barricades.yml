@@ -65,13 +65,16 @@
       fix1:
         shape:
           !type:PhysShapeAabb
-          bounds: "-0.5,-0.5,0.5,0.5"
+          bounds: "-0.4,-0.4,0.4,0.4" # BF14 0.5 > 0.4
         density: 1000
         mask:
         - TableMask
         layer:
         - TableLayer
         - LowImpassable # BF14
+  - type: Construction # BF14
+    graph: BarricadeTanktrap
+    node: tanktrap
 
 - type: entity
   id: N14BarricadeTanktrapRusty

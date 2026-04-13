@@ -409,7 +409,7 @@
   components:
   - type: StorageFill
     contents:
-        - id: BarbedWire30
+        - id: BarbedWire10
           amount: 5
   - type: AccessReader
     access: [["NATOSoldier"] , ["PACTSoldier"]]
