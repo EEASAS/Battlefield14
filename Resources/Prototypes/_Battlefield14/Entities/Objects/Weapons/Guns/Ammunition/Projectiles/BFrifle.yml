@@ -108,25 +108,6 @@
     damage: 10 # ~10 hits to stun
 
 - type: entity
-  id: BulletRifleBF762x54mmRAP
-  name: bullet (7.62x54mmR AP)
-  parent: BaseBullet
-  categories: [ HideSpawnMenu ]
-  components:
-  - type: Sprite
-    sprite: _Battlefield14/Objects/Weapons/Guns/Projectiles/ballistic.rsi
-    layers:
-    - state: rifle
-  - type: Projectile
-    damage:
-      types:
-        Piercing: 50
-        Structural: 80
-    armorPenetration: 0.7
-  - type: StaminaDamageOnCollide
-    damage: 7 # ~15 hits to stun
-
-- type: entity
   id: BulletRifleBF127x55
   name: bullet (12.7x55)
   parent: BaseBullet

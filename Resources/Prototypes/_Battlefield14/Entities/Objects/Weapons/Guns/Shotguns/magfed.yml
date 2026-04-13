@@ -19,7 +19,7 @@
     availableModes:
     - SemiAuto
     selectedMode: SemiAuto
-    fireRate: 2
+    fireRate: 3
     projectileSpeed: 35
     soundGunshot:
       path: /Audio/_Mono/Weapons/Guns/SmallArms/Gunshots/bigshotgun_fire.ogg

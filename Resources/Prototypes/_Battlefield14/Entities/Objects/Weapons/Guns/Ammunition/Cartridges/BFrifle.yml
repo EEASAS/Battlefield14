@@ -113,25 +113,6 @@
   - type: SpentAmmoVisuals
 
 - type: entity
-  id: BF_CartridgeRifle762x54rAP
-  name: cartridge (7.62x54mmR AP)
-  parent: BaseCartridgeRifle
-  components:
-  - type: Tag
-    tags:
-    - Cartridge
-    - BF_CartridgeRifle762x54r
-  - type: CartridgeAmmo
-    proto: BulletRifleBF762x54mmRAP
-  - type: Sprite
-    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Casings/7.62x54mmR.rsi
-    layers:
-    - state: base
-      map: ["enum.AmmoVisualLayers.Base"]
-  - type: Appearance
-  - type: SpentAmmoVisuals
-
-- type: entity
   id: BF_CartridgeRifle127x55
   name: cartridge (12.7x55)
   parent: BaseCartridgeRifle

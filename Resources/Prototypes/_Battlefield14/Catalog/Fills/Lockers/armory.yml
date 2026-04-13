@@ -83,7 +83,7 @@
     contents:
         - id: WeaponSniperRUSV98
           amount: 2
-        - id: BoxMagazineSV98AP
+        - id: BoxMagazineSV98
           amount: 2
   - type: AccessReader
     access: [["PACTSoldier"]]
