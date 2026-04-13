@@ -430,9 +430,10 @@ public abstract partial class SharedProjectileSystem : EntitySystem
                     // Condition 2: Firer is within 1 tile of the BarricadeBlock.
                     var shooterCoords = Transform(shooterUid).Coordinates;
                     var BarricadeBlockCoords = Transform(args.OtherEntity).Coordinates;
+                    var BypassDistance = BarricadeBlock.PassThroughDistance;
 
                     if (shooterCoords.TryDistance(EntityManager, BarricadeBlockCoords, out var distance) &&
-                        distance <= 1.5f)
+                        distance <= BypassDistance)
                     {
                         alwaysPassThrough = true;
                     }

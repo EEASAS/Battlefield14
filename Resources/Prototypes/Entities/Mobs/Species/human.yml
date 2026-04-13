@@ -85,11 +85,11 @@
 #      collection: SadTrombone
 #      params:
 #        variation: 0.125
-#  - type: BarricadeBlock # BF14
-#    bidirectional: false
-#    omnidirectional: true
-#    distance: 0.5
-#    blocking: 100
+  - type: BarricadeBlock # BF14
+    bidirectional: false
+    omnidirectional: true
+    passthroughdistance: 1
+    blocking: 100
 
 - type: entity
   parent: BaseSpeciesDummy
