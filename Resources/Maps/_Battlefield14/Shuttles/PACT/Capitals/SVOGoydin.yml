@@ -4,8 +4,8 @@ meta:
   engineVersion: 264.0.0
   forkId: ""
   forkVersion: ""
-  time: 04/08/2026 12:11:22
-  entityCount: 3305
+  time: 04/14/2026 05:45:00
+  entityCount: 3319
 maps: []
 grids:
 - 1
@@ -483,10 +483,10 @@ entities:
     - type: GridPathfinding
     - type: SpreaderGrid
       spreadQueues:
-        Kudzu: []
         Puddle: []
-        Smoke: []
         MetalFoam: []
+        Kudzu: []
+        Smoke: []
     - type: GravityShake
       shakeTimes: 10
     - type: GasTileOverlay
@@ -1580,12 +1580,6 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 34.5,20.5
       parent: 1
-  - uid: 2405
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 37.5,24.5
-      parent: 1
   - uid: 2466
     components:
     - type: Transform
@@ -1602,6 +1596,11 @@ entities:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 11.5,30.5
+      parent: 1
+  - uid: 3306
+    components:
+    - type: Transform
+      pos: 36.5,31.5
       parent: 1
 - proto: AtmosDeviceFanDirectional
   entities:
@@ -2945,13 +2944,6 @@ entities:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 44.5,45.5
-      parent: 1
-- proto: ComputerShuttleGracePeriodSVOGoydin
-  entities:
-  - uid: 2268
-    components:
-    - type: Transform
-      pos: 22.5,33.5
       parent: 1
 - proto: Beaker
   entities:
@@ -4775,6 +4767,11 @@ entities:
     - type: Transform
       pos: 36.5,18.5
       parent: 1
+  - uid: 2411
+    components:
+    - type: Transform
+      pos: 36.5,26.5
+      parent: 1
   - uid: 2419
     components:
     - type: Transform
@@ -4784,21 +4781,6 @@ entities:
     components:
     - type: Transform
       pos: 37.5,24.5
-      parent: 1
-  - uid: 2429
-    components:
-    - type: Transform
-      pos: 37.5,26.5
-      parent: 1
-  - uid: 2430
-    components:
-    - type: Transform
-      pos: 37.5,27.5
-      parent: 1
-  - uid: 2431
-    components:
-    - type: Transform
-      pos: 37.5,25.5
       parent: 1
   - uid: 2432
     components:
@@ -6284,6 +6266,46 @@ entities:
     components:
     - type: Transform
       pos: 13.5,40.5
+      parent: 1
+  - uid: 3307
+    components:
+    - type: Transform
+      pos: 36.5,31.5
+      parent: 1
+  - uid: 3313
+    components:
+    - type: Transform
+      pos: 33.5,31.5
+      parent: 1
+  - uid: 3314
+    components:
+    - type: Transform
+      pos: 33.5,32.5
+      parent: 1
+  - uid: 3315
+    components:
+    - type: Transform
+      pos: 33.5,33.5
+      parent: 1
+  - uid: 3316
+    components:
+    - type: Transform
+      pos: 34.5,33.5
+      parent: 1
+  - uid: 3317
+    components:
+    - type: Transform
+      pos: 35.5,33.5
+      parent: 1
+  - uid: 3318
+    components:
+    - type: Transform
+      pos: 36.5,33.5
+      parent: 1
+  - uid: 3319
+    components:
+    - type: Transform
+      pos: 36.5,32.5
       parent: 1
 - proto: CableHV
   entities:
@@ -8514,30 +8536,25 @@ entities:
     - type: Transform
       pos: 37.5,22.5
       parent: 1
-  - uid: 2411
-    components:
-    - type: Transform
-      pos: 37.5,23.5
-      parent: 1
   - uid: 2412
     components:
     - type: Transform
-      pos: 37.5,24.5
+      pos: 36.5,26.5
       parent: 1
   - uid: 2413
     components:
     - type: Transform
-      pos: 37.5,25.5
+      pos: 36.5,24.5
       parent: 1
   - uid: 2414
     components:
     - type: Transform
-      pos: 37.5,26.5
+      pos: 30.5,27.5
       parent: 1
   - uid: 2415
     components:
     - type: Transform
-      pos: 37.5,27.5
+      pos: 31.5,27.5
       parent: 1
   - uid: 2416
     components:
@@ -8593,6 +8610,21 @@ entities:
     components:
     - type: Transform
       pos: 38.5,22.5
+      parent: 1
+  - uid: 2429
+    components:
+    - type: Transform
+      pos: 36.5,23.5
+      parent: 1
+  - uid: 2430
+    components:
+    - type: Transform
+      pos: 36.5,25.5
+      parent: 1
+  - uid: 2431
+    components:
+    - type: Transform
+      pos: 32.5,27.5
       parent: 1
   - uid: 2449
     components:
@@ -9008,6 +9040,31 @@ entities:
     components:
     - type: Transform
       pos: 11.5,30.5
+      parent: 1
+  - uid: 3308
+    components:
+    - type: Transform
+      pos: 36.5,28.5
+      parent: 1
+  - uid: 3309
+    components:
+    - type: Transform
+      pos: 36.5,29.5
+      parent: 1
+  - uid: 3310
+    components:
+    - type: Transform
+      pos: 36.5,30.5
+      parent: 1
+  - uid: 3311
+    components:
+    - type: Transform
+      pos: 36.5,31.5
+      parent: 1
+  - uid: 3312
+    components:
+    - type: Transform
+      pos: 36.5,32.5
       parent: 1
 - proto: CableTerminal
   entities:
@@ -11084,6 +11141,13 @@ entities:
       rot: 3.141592653589793 rad
       pos: 24.5,20.5
       parent: 1
+- proto: ComputerShuttleGracePeriodSVOGoydin
+  entities:
+  - uid: 2268
+    components:
+    - type: Transform
+      pos: 22.5,33.5
+      parent: 1
 - proto: ComputerSurveillanceCameraMonitor
   entities:
   - uid: 965
@@ -11476,6 +11540,14 @@ entities:
     components:
     - type: Transform
       pos: 34.5,28.5
+      parent: 1
+- proto: DefibrillatorCabinetFilled
+  entities:
+  - uid: 2405
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 37.5,24.5
       parent: 1
 - proto: DisposalBend
   entities:
@@ -14793,11 +14865,6 @@ entities:
     - type: Transform
       pos: 11.5,29.5
       parent: 1
-  - uid: 1593
-    components:
-    - type: Transform
-      pos: 9.5,26.5
-      parent: 1
 - proto: SpawnPointVDVMedic
   entities:
   - uid: 1581
@@ -14814,6 +14881,11 @@ entities:
       parent: 1
 - proto: SpawnPointVDVRifleman
   entities:
+  - uid: 1593
+    components:
+    - type: Transform
+      pos: 9.5,26.5
+      parent: 1
   - uid: 1595
     components:
     - type: Transform
