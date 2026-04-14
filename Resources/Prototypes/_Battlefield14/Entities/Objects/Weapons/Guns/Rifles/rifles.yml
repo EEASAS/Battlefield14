@@ -7,7 +7,7 @@
   description: The classic American slugthrower.
   components:
   - type: Item # Controls inhand sprites
-    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/M16A4.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/M16A2.rsi
   - type: Icon
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/iconstates.rsi
     state: icon-full-M16A4
@@ -22,7 +22,7 @@
       - state: mag-20-0
         map: ["enum.GunVisualLayers.Mag"]
   - type: Clothing
-    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/M16A4.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/M16A2.rsi
   - type: Wieldable
     unwieldOnUse: false
   - type: GunWieldBonus
@@ -89,7 +89,7 @@
   description: An old Stoner design, many rifles have tried to take its place and many have failed.
   components:
   - type: Item # Controls inhand sprites
-    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/M16A4.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/M16A2.rsi
   - type: Icon
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/iconstates.rsi
     state: icon-full-M16A4
@@ -104,7 +104,7 @@
       - state: mag-30-0
         map: ["enum.GunVisualLayers.Mag"]
   - type: Clothing
-    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/M16A4.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/M16A2.rsi
   - type: GunWieldBonus
     minAngle: -19
     maxAngle: -23
@@ -155,11 +155,6 @@
   id: WeaponRifleUSM16A3
   description: The classic American slugthrower.
   components:
-  - type: Item # Controls inhand sprites
-    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/M16A4.rsi
-  - type: Icon
-    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/iconstates.rsi
-    state: icon-full-M4A1
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/iconstates.rsi
     layers:
@@ -170,8 +165,6 @@
       - state: rifle-length-barrel-clamshell
       - state: mag-30-0
         map: ["enum.GunVisualLayers.Mag"]
-  - type: Clothing
-    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/M16A4.rsi
   - type: Gun
     projectileSpeed: 55 # twenty inch barrel
   - type: ItemSlots
