@@ -89,6 +89,8 @@
     - type: ShipRepairable
       repairTime: 2
       repairCost: 2
+    - type: ArmorThickness # BF14
+      thickness: 3
 
 - type: entity
   id: ClockworkGrille
