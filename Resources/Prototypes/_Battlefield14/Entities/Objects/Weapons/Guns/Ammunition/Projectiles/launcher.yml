@@ -436,7 +436,7 @@
         Piercing: 250
     deleteOnCollide: false
   - type: ArmorPiercing
-    piercingThickness: 4
+    piercingThickness: 5
   - type: Heat
     explosionDelay: 0.1
     fragmentationDelay: 0.1

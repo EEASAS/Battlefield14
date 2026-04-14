@@ -1,47 +1,21 @@
 - type: entity
   id: BulletRifleBF556x45
   name: bullet (5.56x45)
-  parent: BaseBullet
+  parent: BaseBulletIntermediate
   categories: [ HideSpawnMenu ]
-  components:
-  - type: Sprite
-    sprite: _Battlefield14/Objects/Weapons/Guns/Projectiles/ballistic.rsi
-    layers:
-    - state: intermediate
-  - type: Projectile
-    damage:
-      types:
-        Piercing: 25
-  - type: StaminaDamageOnCollide
-    damage: 7 # ~15 hits to stun
 
 - type: entity
   id: BulletRifleBF545x39
   name: bullet (5.45x39)
-  parent: BaseBullet
+  parent: BaseBulletIntermediate
   categories: [ HideSpawnMenu ]
-  components:
-  - type: Sprite
-    sprite: _Battlefield14/Objects/Weapons/Guns/Projectiles/ballistic.rsi
-    layers:
-    - state: intermediate
-  - type: Projectile
-    damage:
-      types:
-        Piercing: 25
-  - type: StaminaDamageOnCollide
-    damage: 7 # ~15 hits to stun
 
 - type: entity
   id: BulletRifleBF762x39
   name: bullet (7.62x39)
-  parent: BaseBullet
+  parent: BaseBulletIntermediate
   categories: [ HideSpawnMenu ]
   components:
-  - type: Sprite
-    sprite: _Battlefield14/Objects/Weapons/Guns/Projectiles/ballistic.rsi
-    layers:
-    - state: intermediate
   - type: Projectile
     damage:
       types:
@@ -54,32 +28,22 @@
 - type: entity
   id: BulletRifleBF762x51
   name: bullet (7.62x51)
-  parent: BaseBullet
+  parent: BaseBulletRifle
   categories: [ HideSpawnMenu ]
   components:
-  - type: Sprite
-    sprite: _Battlefield14/Objects/Weapons/Guns/Projectiles/ballistic.rsi
-    layers:
-    - state: rifle
   - type: Projectile
     damage:
       types:
         Piercing: 30
         Structural: 10
     armorPenetration: 0.3
-  - type: StaminaDamageOnCollide
-    damage: 8 # ~13 hits to stun
 
 - type: entity
   id: BulletRifleBF9x39
   name: bullet (9x39)
-  parent: BaseBullet
+  parent: BaseBulletRifle
   categories: [ HideSpawnMenu ]
   components:
-  - type: Sprite
-    sprite: _Battlefield14/Objects/Weapons/Guns/Projectiles/ballistic.rsi
-    layers:
-    - state: rifle
   - type: Projectile
     damage:
       types:
@@ -91,13 +55,9 @@
 - type: entity
   id: BulletRifleBF762x54mmR
   name: bullet (7.62x54mmR)
-  parent: BaseBullet
+  parent: BaseBulletRifle
   categories: [ HideSpawnMenu ]
   components:
-  - type: Sprite
-    sprite: _Battlefield14/Objects/Weapons/Guns/Projectiles/ballistic.rsi
-    layers:
-    - state: rifle
   - type: Projectile
     damage:
       types:
@@ -110,13 +70,9 @@
 - type: entity
   id: BulletRifleBF127x55
   name: bullet (12.7x55)
-  parent: BaseBullet
+  parent: BaseBulletRifle
   categories: [ HideSpawnMenu ]
   components:
-  - type: Sprite
-    sprite: _Battlefield14/Objects/Weapons/Guns/Projectiles/ballistic.rsi
-    layers:
-    - state: rifle
   - type: Projectile
     damage:
       types:
@@ -128,13 +84,9 @@
 - type: entity
   id: BulletRifleBF127x55Duplex
   name: bullet (12.7x55 duplex)
-  parent: BaseBullet
+  parent: BulletRifleBF127x55
   categories: [ HideSpawnMenu ]
   components:
-  - type: Sprite
-    sprite: _Battlefield14/Objects/Weapons/Guns/Projectiles/ballistic.rsi
-    layers:
-    - state: rifle
   - type: Projectile
     damage:
       types:
@@ -152,17 +104,14 @@
 - type: entity
   id: BulletRifleBF127x55DuplexSubmunition
   name: bullet (12.7x55 duplex)
-  parent: BaseBullet
+  parent: BulletRifleBF127x55
   categories: [ HideSpawnMenu ]
   components:
-  - type: Sprite
-    sprite: _Battlefield14/Objects/Weapons/Guns/Projectiles/ballistic.rsi
-    layers:
-    - state: rifle
   - type: Projectile
     damage:
       types:
         Piercing: 30 # x2 = 60
   - type: StaminaDamageOnCollide
     damage: 7 # ~15 hits to stun, x2 = ~8
-
+  - type: ArmorPiercing
+    piercingThickness: 2

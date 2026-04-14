@@ -39,7 +39,7 @@
   - type: StaticPrice
     price: 25
   - type: ArmorThickness
-    thickness: 3
+    thickness: 5 # BF14
   - type: ShipRepairable
     repairTime: 2
     repairCost: 3
@@ -83,7 +83,7 @@
   - type: StaticPrice
     price: 25
   - type: ArmorThickness
-    thickness: 5
+    thickness: 7 # BF14
   - type: ShipRepairable
     repairTime: 3
     repairCost: 6

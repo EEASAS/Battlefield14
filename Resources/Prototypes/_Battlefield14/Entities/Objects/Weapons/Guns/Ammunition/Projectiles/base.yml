@@ -1,0 +1,77 @@
+- type: entity
+  id: BaseBulletPistol
+  name: bullet
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Projectiles/ballistic.rsi
+    layers:
+    - state: small
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 20
+  - type: StaminaDamageOnCollide
+    damage: 5 # 20 hits to stun lol
+  - type: Ammo
+    muzzleFlash: MuzzleFlashEffectSmall
+
+- type: entity
+  id: BaseBulletPDW
+  name: bullet
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Projectiles/ballistic.rsi
+    layers:
+    - state: small
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 20
+  - type: StaminaDamageOnCollide
+    damage: 4 # 25 hits to stun lol
+  - type: ArmorPiercing
+    piercingThickness: 1
+  - type: Ammo
+    muzzleFlash: MuzzleFlashEffectSmall
+
+- type: entity
+  id: BaseBulletIntermediate
+  name: bullet
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Projectiles/ballistic.rsi
+    layers:
+    - state: intermediate
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 25
+  - type: StaminaDamageOnCollide
+    damage: 7 # ~15 hits to stun
+  - type: ArmorPiercing
+    piercingThickness: 2
+
+- type: entity
+  id: BaseBulletRifle
+  name: bullet
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Projectiles/ballistic.rsi
+    layers:
+    - state: rifle
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 25
+  - type: StaminaDamageOnCollide
+    damage: 8 # ~13 hits to stun
+  - type: ArmorPiercing
+    piercingThickness: 3

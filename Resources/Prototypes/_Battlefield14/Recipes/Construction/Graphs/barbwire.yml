@@ -22,7 +22,7 @@
               message: "A barbed wire roll was cut"
             - !type:SpawnPrototype
               prototype: BarbedWire1
-              amount: 5
+              amount: 1
             - !type:DeleteEntity
           steps:
             - tool: Cutting

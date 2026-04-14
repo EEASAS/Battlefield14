@@ -144,6 +144,12 @@
     bidirectional: false
     omnidirectional: true
     blocking: 67
+  - type: ExtendDescription # BF14
+    descriptionList:
+      - description: This object can be used as cover.
+        fontSize: 12
+        color: "#4f94ad"
+        requireDetailRange: true
 
 - type: entity
   parent: VendingMachine

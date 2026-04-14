@@ -98,6 +98,8 @@
   - type: ShipRepairable
     repairTime: 3
     repairCost: 3
+  - type: ArmorThickness # BF14
+    thickness: 3
 
 - type: entity
   parent: Window
@@ -225,6 +227,8 @@
   - type: ShipRepairable
     repairTime: 2
     repairCost: 2
+  - type: ArmorThickness # BF14
+    thickness: 1
 
 - type: entity
   id: WindowDirectionalRCDResistant

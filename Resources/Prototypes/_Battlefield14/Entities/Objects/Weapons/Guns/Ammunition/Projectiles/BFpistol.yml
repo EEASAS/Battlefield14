@@ -1,33 +1,21 @@
 - type: entity
   id: BulletPistolBF9x19
   name: bullet (9x19 Parabellum)
-  parent: BaseBullet
+  parent: BaseBulletPistol
   categories: [ HideSpawnMenu ]
   components:
-  - type: Sprite
-    sprite: _Battlefield14/Objects/Weapons/Guns/Projectiles/ballistic.rsi
-    layers:
-    - state: small
   - type: Projectile
     damage:
       types:
         Piercing: 22
     armorPenetration: -0.3
-  - type: StaminaDamageOnCollide
-    damage: 5 # 20 hits to stun lol
-  - type: Ammo
-    muzzleFlash: MuzzleFlashEffectSmall
 
 - type: entity
   id: BulletPistolBF45ACP
   name: bullet (.45 ACP)
-  parent: BaseBullet
+  parent: BaseBulletPistol
   categories: [ HideSpawnMenu ]
   components:
-  - type: Sprite
-    sprite: _Battlefield14/Objects/Weapons/Guns/Projectiles/ballistic.rsi
-    layers:
-    - state: small
   - type: Projectile
     damage:
       types:
@@ -35,19 +23,13 @@
     armorPenetration: -0.4
   - type: StaminaDamageOnCollide
     damage: 9 # ~11 hits to stun
-  - type: Ammo
-    muzzleFlash: MuzzleFlashEffectSmall
 
 - type: entity
   id: BulletPistolBF357
   name: bullet (.357 Magnum)
-  parent: BaseBullet
+  parent: BaseBulletPistol
   categories: [ HideSpawnMenu ]
   components:
-  - type: Sprite
-    sprite: _Battlefield14/Objects/Weapons/Guns/Projectiles/ballistic.rsi
-    layers:
-    - state: small
   - type: Projectile
     damage:
       types:
@@ -58,13 +40,9 @@
 - type: entity
   id: BulletPistolBF50AE
   name: bullet (.50 Action Express)
-  parent: BaseBullet
+  parent: BaseBulletPistol
   categories: [ HideSpawnMenu ]
   components:
-  - type: Sprite
-    sprite: _Battlefield14/Objects/Weapons/Guns/Projectiles/ballistic.rsi
-    layers:
-    - state: small
   - type: Projectile
     damage:
       types:

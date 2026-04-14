@@ -109,7 +109,7 @@
     soundGunshot:
       collection: BF_M14_Gunshots
       params:
-        volume: -3
+        volume: -5
         variation: 0.125
     selectedMode: SemiAuto
     availableModes:
@@ -118,23 +118,29 @@
     soundRack:
       path: /Audio/_Battlefield14/Weapons/Guns/M14/uc_m14_rack.ogg
       params:
-        volume: -2
+        volume: -5
     soundBoltClosed:
       path: /Audio/_Battlefield14/Weapons/Guns/M14/uc_m14_chforward.ogg
       params:
-        volume: -2
+        volume: -5
     soundBoltOpened:
       path: /Audio/_Battlefield14/Weapons/Guns/M14/uc_m14_chback.ogg
       params:
-        volume: -2
+        volume: -5
         variation: 0.125
   - type: ItemSlots
     slots:
       gun_magazine:
         name: Magazine
         startingItem: MagazineRifleM14
-        insertSound: /Audio/_Battlefield14/Weapons/Guns/M14/uc_m14_magin.ogg
-        ejectSound: /Audio/_Battlefield14/Weapons/Guns/M14/uc_m14_magout.ogg
+        insertSound:
+          path:  /Audio/_Battlefield14/Weapons/Guns/M14/uc_m14_magin.ogg
+          params:
+            volume: -6
+        ejectSound:
+          path: /Audio/_Battlefield14/Weapons/Guns/M14/uc_m14_magout.ogg
+          params:
+            volume: -6
         priority: 2
         whitelist:
           tags:
