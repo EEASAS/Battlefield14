@@ -2,6 +2,11 @@
   parent: BaseItem
   id: BaseMagazineRifle
   components:
+#  - type: EmitSoundOnDrop # these play when you insert them into guns, annoying
+#    sound:
+#      collection: BF_Magazine_Drop_Rifle
+#      params:
+#        volume: -3
   - type: EmitSoundOnLand
     sound:
       collection: BF_Magazine_Drop_Rifle
@@ -12,6 +17,11 @@
   parent: BaseItem
   id: BaseMagazineSMG
   components:
+#  - type: EmitSoundOnDrop
+#    sound:
+#      collection: BF_Magazine_Drop_SMG
+#      params:
+#        volume: -3
   - type: EmitSoundOnLand
     sound:
       collection: BF_Magazine_Drop_SMG
@@ -22,6 +32,12 @@
   parent: BaseItem
   id: BaseMagazinePistol
   components:
+#  - type: EmitSoundOnDrop
+#    sound:
+#      path: "/Audio/_Battlefield14/Weapons/Guns/magazines/pistol_magdrop.ogg"
+#      params:
+#        volume: -5
+#        variation: 0.125
   - type: EmitSoundOnLand
     sound:
       path: "/Audio/_Battlefield14/Weapons/Guns/magazines/pistol_magdrop.ogg"
