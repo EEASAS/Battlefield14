@@ -1,0 +1,21 @@
+- type: entityTable
+  id: BF14TableSurplusM16
+  table: !type:GroupSelector
+    children:
+    # Common Group
+    - !type:GroupSelector
+      weight: 69
+      children:
+      - !type:GroupSelector
+        children:
+        - id: WeaponRifleUSM16A1
+        - id: WeaponRifleUSM16A2
+        - id: WeaponRifleUSM16A3
+        - id: WeaponRifleUSM16A4
+          weight: 0.5
+      - !type:GroupSelector
+        children:
+        - id: WeaponRifleUSXM177E2
+        - id: WeaponRifleUSM4
+        - id: WeaponRifleUSM4A1
+          weight: 0.5

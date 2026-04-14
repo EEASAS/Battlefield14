@@ -27,3 +27,23 @@
     steps: 3
     zeroVisible: false
   - type: Appearance
+
+- type: entity
+  parent: MagazineRifleSTANAG
+  id: MagazineRifleSTANAGShort
+  name: "STANAG 20 round magazine (5.56x45)"
+  components:
+  - type: BallisticAmmoProvider
+    proto: BF_CartridgeRifle556x45
+    mayTransfer: true
+    whitelist:
+      tags:
+        - BF_CartridgeRifle556x45
+    capacity: 20
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Rifle/STANAG20.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]

@@ -73,6 +73,103 @@
     zeroVisible: true
   - type: Appearance
 
+- type: entity
+  name: MAC-10
+  parent: BaseWeaponSubMachineGun
+  id: WeaponSubmachinegunUSMAC10
+  description: A cheap, compact, and concealable package, can give you a belly full of lead in less than a second.
+  components:
+  - type: Item
+    size: Normal
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/M10.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+      offset: 0.2, 0
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+      offset: 0.2, 0
+  - type: Clothing
+    sprite: null
+  - type: Gun
+    minAngle: 3
+    maxAngle: 30
+    fireRate: 15
+    angleIncrease: 2.2
+    angleDecay: 20
+    projectileSpeed: 35 # pistol caliber
+    availableModes:
+    - FullAuto
+    soundGunshot:
+      collection: BF_MP5_Gunshots
+      params:
+        volume: -5
+  - type: ChamberMagazineAmmoProvider
+    soundRack:
+      path: /Audio/_Battlefield14/Weapons/Guns/MP5/uc_mp5_rack.ogg
+      params:
+        volume: -3
+    soundBoltClosed:
+      path: /Audio/_Battlefield14/Weapons/Guns/MP5/uc_mp5_slap.ogg
+      params:
+        volume: -3
+    soundBoltOpened:
+      path: /Audio/_Battlefield14/Weapons/Guns/MP5/uc_mp5_chlock.ogg
+      params:
+        volume: -3
+        variation: 0.125
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazineSubmachinegunMAC10
+        insertSound: /Audio/_Battlefield14/Weapons/Guns/MP5/uc_mp5_magin.ogg
+        ejectSound: /Audio/_Battlefield14/Weapons/Guns/MP5/uc_mp5_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MagazinePistolMAC10
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: BF_CartridgePistol9x19
+        priority: 1
+        whitelist:
+          tags:
+            - BF_CartridgePistol9x19
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: Appearance
+
+- type: entity
+  parent: WeaponSubmachinegunUSMAC10
+  id: WeaponSubmachinegunUSMAC10Supp
+  name: MAC-10 SUPP.
+  components:
+  - type: Item
+    size: Large
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/M10.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+    - state: supp
+  - type: Gun
+    soundGunshot:
+      collection: BF_Galil_Gunshots_SUPP
+      params:
+        volume: -12
+        variation: 0.125
+
 # DE
 
 - type: entity
@@ -220,7 +317,7 @@
 
 - type: entity
   name: Vladistokyov
-  parent: BaseWeaponSubMachineGun
+  parent: WeaponSubmachinegunUSMAC10
   id: WeaponSubmachinegunRUVlad
   description: A couple pipes slapped together into a "working" firearm. Despite it's.. lackluster craftsmanship, you don't want to be on the wrong end of this piece.
   components:
@@ -233,61 +330,6 @@
       map: ["enum.GunVisualLayers.Mag"]
   - type: Clothing
     sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/vlad.rsi
-  - type: Gun
-    minAngle: 3
-    maxAngle: 30
-    fireRate: 15
-    angleIncrease: 2.2
-    angleDecay: 20
-    projectileSpeed: 35 # pistol caliber
-    availableModes:
-    - FullAuto
-    soundGunshot:
-      collection: BF_MP5_Gunshots
-      params:
-        volume: -5
-  - type: ChamberMagazineAmmoProvider
-    soundRack:
-      path: /Audio/_Battlefield14/Weapons/Guns/MP5/uc_mp5_rack.ogg
-      params:
-        volume: -3
-    soundBoltClosed:
-      path: /Audio/_Battlefield14/Weapons/Guns/MP5/uc_mp5_slap.ogg
-      params:
-        volume: -3
-    soundBoltOpened:
-      path: /Audio/_Battlefield14/Weapons/Guns/MP5/uc_mp5_chlock.ogg
-      params:
-        volume: -3
-        variation: 0.125
-  - type: ItemSlots
-    slots:
-      gun_magazine:
-        name: Magazine
-        startingItem: MagazineSubmachinegunVlad
-        insertSound: /Audio/_Battlefield14/Weapons/Guns/MP5/uc_mp5_magin.ogg
-        ejectSound: /Audio/_Battlefield14/Weapons/Guns/MP5/uc_mp5_magout.ogg
-        priority: 2
-        whitelist:
-          tags:
-            - MagazinePistolVlad
-        whitelistFailPopup: gun-magazine-whitelist-fail
-      gun_chamber:
-        name: Chamber
-        startingItem: BF_CartridgePistol9x19
-        priority: 1
-        whitelist:
-          tags:
-            - BF_CartridgePistol9x19
-  - type: ContainerContainer
-    containers:
-      gun_magazine: !type:ContainerSlot
-      gun_chamber: !type:ContainerSlot
-  - type: MagazineVisuals
-    magState: mag
-    steps: 1
-    zeroVisible: true
-  - type: Appearance
 
 - type: entity
   name: SR2MP

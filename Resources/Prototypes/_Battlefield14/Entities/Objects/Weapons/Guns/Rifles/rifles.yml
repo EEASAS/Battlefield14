@@ -1,9 +1,91 @@
 # Rifles - US
 
 - type: entity
-  name: M16A4
+  name: M16A1
   parent: BaseWeaponRifle
-  id: WeaponRifleUSM16A4
+  id: WeaponRifleUSM16A1
+  description: The classic American slugthrower.
+  components:
+  - type: Item # Controls inhand sprites
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/M16A4.rsi
+  - type: Icon
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/iconstates.rsi
+    state: icon-full-M16A4
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/iconstates.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: carryhandle
+      - state: stock-full
+      - state: rifle-length-barrel-M16
+      - state: mag-20-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/M16A4.rsi
+  - type: Wieldable
+    unwieldOnUse: false
+  - type: GunWieldBonus
+    minAngle: -14
+    maxAngle: -17
+  - type: Gun
+    minAngle: 16
+    maxAngle: 30
+    angleIncrease: 1
+    projectileSpeed: 55 # twenty inch barrel
+    availableModes:
+    - SemiAuto
+    - FullAuto
+    selectedMode: FullAuto
+    soundGunshot:
+      collection: BF_M16_Gunshots
+      params:
+        volume: -5
+        variation: 0.125
+    fireRate: 7
+  - type: ChamberMagazineAmmoProvider
+    soundRack:
+      path: /Audio/_Battlefield14/Weapons/Guns/M16/rack.ogg
+      params:
+        volume: -2
+    soundBoltClosed:
+      path: /Audio/_Battlefield14/Weapons/Guns/M16/uc_m16_chamber_press.ogg
+      params:
+        volume: -5
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazineRifleSTANAGShort
+        insertSound: /Audio/_Battlefield14/Weapons/Guns/M16/uc_m16_magin.ogg
+        ejectSound: /Audio/_Battlefield14/Weapons/Guns/M16/uc_m16_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MagazineRifleSTANAG
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: BF_CartridgeRifle556x45
+        priority: 1
+        whitelist:
+          tags:
+            - BF_CartridgeRifle556x45
+  - type: MagazineVisuals
+    magState: mag-20
+    steps: 1
+    zeroVisible: true
+  - type: Appearance
+  - type: ExtendDescription
+    descriptionList:
+      - description: Takes STANAG magazines.
+        color: "#4f94ad"
+        requireDetailRange: true
+
+- type: entity
+  name: M16A2
+  parent: WeaponRifleUSM16A1
+  id: WeaponRifleUSM16A2
   description: An old Stoner design, many rifles have tried to take its place and many have failed.
   components:
   - type: Item # Controls inhand sprites
@@ -16,15 +98,13 @@
     layers:
       - state: base
         map: ["enum.GunVisualLayers.Base"]
-      - state: acog
+      - state: carryhandle
       - state: stock-full
-      - state: rifle-length-barrel-quadrail
+      - state: rifle-length-barrel-clamshell
       - state: mag-30-0
         map: ["enum.GunVisualLayers.Mag"]
   - type: Clothing
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/M16A4.rsi
-  - type: Wieldable
-    unwieldOnUse: false
   - type: GunWieldBonus
     minAngle: -19
     maxAngle: -23
@@ -40,20 +120,6 @@
     fireRate: 4
     projectileSpeed: 55 # twenty inch barrel
     angleIncrease: 1
-    soundGunshot:
-      collection: BF_M16_Gunshots
-      params:
-        volume: -5
-        variation: 0.125
-  - type: ChamberMagazineAmmoProvider
-    soundRack:
-      path: /Audio/_Battlefield14/Weapons/Guns/M16/rack.ogg
-      params:
-        volume: -2
-    soundBoltClosed:
-      path: /Audio/_Battlefield14/Weapons/Guns/M16/uc_m16_chamber_press.ogg
-      params:
-        volume: -5
   - type: ItemSlots
     slots:
       gun_magazine:
@@ -82,24 +148,15 @@
     steps: 1
     zeroVisible: true
   - type: Appearance
-  - type: CursorOffsetRequiresWield
-  - type: EyeCursorOffset
-    maxOffset: 5
-    pvsIncrease: 0.25
-  - type: ExtendDescription
-    descriptionList:
-      - description: Takes STANAG magazines.
-        color: "#4f94ad"
-        requireDetailRange: true
 
 - type: entity
-  name: M4A1 Carbine
-  parent: BaseWeaponRifle
-  id: WeaponRifleUSM4A1
+  name: M16A3
+  parent: WeaponRifleUSM16A1
+  id: WeaponRifleUSM16A3
   description: The classic American slugthrower.
   components:
   - type: Item # Controls inhand sprites
-    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/M4A1.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/M16A4.rsi
   - type: Icon
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/iconstates.rsi
     state: icon-full-M4A1
@@ -108,42 +165,15 @@
     layers:
       - state: base
         map: ["enum.GunVisualLayers.Base"]
-      - state: reddot
-      - state: stock-adjustable
-      - state: carbine-length-barrel-quadrail
+      - state: carryhandle
+      - state: stock-full
+      - state: rifle-length-barrel-clamshell
       - state: mag-30-0
         map: ["enum.GunVisualLayers.Mag"]
   - type: Clothing
-    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/M4A1.rsi
-  - type: Wieldable
-    unwieldOnUse: false
-  - type: GunWieldBonus
-    minAngle: -14
-    maxAngle: -20
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/M16A4.rsi
   - type: Gun
-    minAngle: 16
-    maxAngle: 30
-    angleIncrease: 1
-    projectileSpeed: 40 # Shorter barrel
-    availableModes:
-    - SemiAuto
-    - FullAuto
-    selectedMode: FullAuto
-    soundGunshot:
-      collection: BF_M16_Gunshots
-      params:
-        volume: -5
-        variation: 0.125
-    fireRate: 7
-  - type: ChamberMagazineAmmoProvider
-    soundRack:
-      path: /Audio/_Battlefield14/Weapons/Guns/M16/rack.ogg
-      params:
-        volume: -2
-    soundBoltClosed:
-      path: /Audio/_Battlefield14/Weapons/Guns/M16/uc_m16_chamber_press.ogg
-      params:
-        volume: -5
+    projectileSpeed: 55 # twenty inch barrel
   - type: ItemSlots
     slots:
       gun_magazine:
@@ -168,11 +198,94 @@
     steps: 1
     zeroVisible: true
   - type: Appearance
-  - type: ExtendDescription
-    descriptionList:
-      - description: Takes STANAG magazines.
-        color: "#4f94ad"
-        requireDetailRange: true
+
+- type: entity
+  name: M16A4
+  parent: WeaponRifleUSM16A2
+  id: WeaponRifleUSM16A4
+  description: An old Stoner design, many rifles have tried to take its place and many have failed.
+  components:
+  - type: Item # Controls inhand sprites
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/M16A4.rsi
+  - type: Icon
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/iconstates.rsi
+    state: icon-full-M16A4
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/iconstates.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: acog
+      - state: stock-full
+      - state: rifle-length-barrel-quadrail
+      - state: mag-30-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/M16A4.rsi
+  - type: Appearance
+  - type: CursorOffsetRequiresWield
+  - type: EyeCursorOffset
+    maxOffset: 5
+    pvsIncrease: 0.25
+
+- type: entity
+  name: XM177E2
+  parent: WeaponRifleUSM16A1
+  id: WeaponRifleUSXM177E2
+  description: The classic American slugthrower.
+  components:
+  - type: Item # Controls inhand sprites
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/M4.rsi
+    size: Large
+  - type: Icon
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/iconstates.rsi
+    state: icon-full-M4A1
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/iconstates.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: carryhandle
+      - state: stock-full-short
+      - state: carbine-length-barrel-XM177
+      - state: mag-20-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/M4.rsi
+  - type: Gun
+    projectileSpeed: 40 # Shorter barrel
+
+- type: entity
+  name: M4A1 Carbine
+  parent: WeaponRifleUSM16A3
+  id: WeaponRifleUSM4A1
+  description: The classic American slugthrower.
+  components:
+  - type: Item # Controls inhand sprites
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/M4A1.rsi
+  - type: Icon
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/iconstates.rsi
+    state: icon-full-M4A1
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/iconstates.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: reddot
+      - state: stock-adjustable
+      - state: carbine-length-barrel-quadrail
+      - state: mag-30-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/M4A1.rsi
+  - type: GunWieldBonus
+    minAngle: -14
+    maxAngle: -20
+  - type: Gun
+    minAngle: 16
+    maxAngle: 30
+    angleIncrease: 1
+    projectileSpeed: 40 # Shorter barrel
 
 - type: entity
   name: M4A1 Carbine SUPP.

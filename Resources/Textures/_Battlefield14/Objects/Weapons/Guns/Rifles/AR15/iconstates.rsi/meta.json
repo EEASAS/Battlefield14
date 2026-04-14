@@ -71,10 +71,16 @@
       "name": "rifle-length-barrel-quadrail"
     },
     {
-      "name": "carbine-length-barrel-quadrail"
+      "name": "rifle-length-barrel-clamshell"
     },
     {
       "name": "rifle-length-barrel-M16"
+    },
+    {
+      "name": "carbine-length-barrel-quadrail"
+    },
+    {
+      "name": "carbine-length-barrel-clamshell"
     },
     {
       "name": "carbine-length-barrel-XM177"

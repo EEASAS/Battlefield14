@@ -62,13 +62,13 @@
 
 - type: entity
   parent: BaseMagazineSMG
-  id: MagazineSubmachinegunVlad
-  name: vladistokyov magazine (9x19mm)
+  id: MagazineSubmachinegunMAC10
+  name: MAC-10 magazine (9x19mm)
   description: Gun food.
   components:
   - type: Tag
     tags:
-      - MagazinePistolVlad
+      - MagazinePistolMAC10
       - Magazine
       - PistolMagazine
   - type: BallisticAmmoProvider
