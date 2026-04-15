@@ -115,8 +115,8 @@ namespace Content.Server._Mono.EntityEffects.Effects
                 IgnoreResistances,
                 interruptsDoAfters: false,
                 targetPart: TargetBodyPart.All,
-                partMultiplier: 1.00f, // Mono, 0.5f->1.00f
-                canSever: false);
+                partMultiplier: 2.50f, // Mono, 0.5f->1.00f BF14 1.00f > 2.50f
+                canSever: false); // BF14 true > false (DELIMBING IS SO ASS FOR A COMBAT FORK, EXPLOSIONS ALREADY DISABLE YOU ENOUGH)
         }
     }
 }
