@@ -7,7 +7,7 @@
     WeaponSubmachinegunUSMP5: 5
     WeaponPistolM9: 2
     MagazinePistolM9: 10
-    RiotShield: 3
+    RiotBulletShield: 3
     CombatKnife: 100
     ClothingBeltMedicalEMTFilledBF14Basic: 4
     ClothingBeltMilitaryWebbingUS: 50
@@ -83,7 +83,7 @@
     WeaponSubmachinegunRUVityaz: 5
     WeaponPistolMP443: 2
     MagazinePistolMP443: 10
-    RiotShield: 3
+    RiotBulletShield: 3
     CombatKnife: 100
     ClothingBeltMedicalEMTFilledBF14Basic: 4
     ClothingBeltMilitaryWebbingRU: 50
