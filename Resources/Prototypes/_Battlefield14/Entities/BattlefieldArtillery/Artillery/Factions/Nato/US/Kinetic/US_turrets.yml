@@ -249,14 +249,13 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: Magazine25mmAPT
+        startingItem: Magazine25mmBushmaster
         insertSound: /Audio/Weapons/Guns/MagIn/hpistol_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/sfrifle_magout.ogg
         priority: 2
         whitelist:
           tags:
           - Magazine25mmBushmaster
-          - Magazine25mmAPT
           - Magazine25mmFrag
         whitelistFailPopup: gun-magazine-whitelist-fail
   - type: Destructible

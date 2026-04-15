@@ -711,7 +711,7 @@
   description: The right arm of the enslaved world.
   components:
   - type: Sprite
-    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AKMSnew.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AKMS.rsi
     layers:
       - state: base
         map: ["enum.GunVisualLayers.Base"]
@@ -732,7 +732,7 @@
     - FullAuto
     selectedMode: FullAuto
     fireRate: 5
-    projectileSpeed: 35 # slower boolet
+    projectileSpeed: 40
     soundGunshot:
       collection: BF_AK_762_Gunshots
       params:

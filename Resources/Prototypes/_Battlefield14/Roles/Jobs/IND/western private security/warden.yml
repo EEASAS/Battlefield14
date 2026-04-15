@@ -6,7 +6,7 @@
   weight: 75
   startingGear: WPSWardenGear
   alwaysUseSpawner: true
-  icon: "JobIconWarden"
+  icon: "JobIconINDWarden"
   requireAdminNotify: false
   supervisors: job-supervisors-wps
   canBeAntag: false

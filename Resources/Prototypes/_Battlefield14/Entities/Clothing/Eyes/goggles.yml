@@ -46,18 +46,3 @@
     sprite: _Battlefield14/Clothing/Eyes/Goggles/ballisticgogglesgreen.rsi
   - type: Clothing
     sprite: _Battlefield14/Clothing/Eyes/Goggles/ballisticgogglesgreen.rsi
-
-- type: entity
-  parent: ClothingEyesNightVisionGoggles
-  id: ClothingEyesGogglesSkullcrusher
-  name: skullcrusher-mounted PVS-14 binoculars
-  categories: [ HideSpawnMenu ]
-  components:
-  - type: Sprite
-    sprite: _Battlefield14/Clothing/Head/Helmets/skullcrusher.rsi
-    state: goggle
-  - type: Clothing
-    sprite: null
-#  - type: NightVision
-#    isEquipment: true
-

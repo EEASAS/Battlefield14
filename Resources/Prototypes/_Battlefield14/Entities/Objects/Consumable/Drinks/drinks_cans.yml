@@ -20,3 +20,8 @@
     sprite: _Battlefield14/Objects/Consumable/Drinks/whitemonster.rsi
   - type: Item
     sprite: _Battlefield14/Objects/Consumable/Drinks/whitemonster.rsi
+  - type: ExtendDescription
+    descriptionList:
+      - description: Taking more than 4 sips in quick succession will poison you, but also increase your movespeed.
+        color: "#4f94ad"
+        requireDetailRange: true

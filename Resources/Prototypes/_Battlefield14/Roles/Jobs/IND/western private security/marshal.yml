@@ -6,7 +6,7 @@
   weight: 77
   startingGear: WPSMarshalGear
   alwaysUseSpawner: true
-  icon: "JobIconHeadOfSecurity"
+  icon: "JobIconINDSquadLeader"
   requireAdminNotify: false
   supervisors: job-supervisors-wps
   canBeAntag: false

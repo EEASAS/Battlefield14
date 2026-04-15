@@ -140,6 +140,9 @@
     slots:
     - back
     - suitStorage
+  - type: Prying # BF14
+  - type: UseDelay # BF14
+    delay: 1
 
 - type: entity
   name: claymore # Mono TODO: make this a wieldable weapon

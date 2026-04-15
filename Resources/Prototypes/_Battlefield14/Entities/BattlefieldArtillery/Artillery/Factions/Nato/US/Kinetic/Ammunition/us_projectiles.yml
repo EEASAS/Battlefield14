@@ -172,41 +172,6 @@
     shape: triangle
     radarColor: "#FF6600"
 
-# 25mm M242 Bushmaster AP-T
-- type: entity
-  id: Bullet25mmAPT
-  name: 25mm AP-T projectile
-  parent: BaseBullet
-  categories: [ HideSpawnMenu ]
-  components:
-  - type: Projectile
-    damage:
-      types:
-        Structural: 140
-        Piercing: 180
-    penetrationThreshold: 700
-    deleteOnCollide: true
-  - type: Sprite
-    sprite: _Battlefield14/Objects/Weapons/Guns/Projectiles/TGMC.rsi
-    layers:
-    - state: autocannon
-  - type: ShipWeaponProjectile
-  - type: TimedDespawn
-    lifetime: 20
-  - type: PointLight
-    radius: 3
-    color: orange
-    energy: 0.5
-  - type: Tracer
-    color: "#FF6600FF"
-    length: 5
-    lifetime: 4
-  - type: RadarBlip
-    scale: 1.2
-    requireNoGrid: true
-    shape: triangle
-    radarColor: "#FF6600"
-
 # 25mm M242 Bushmaster HEAT
 - type: entity
   id: Bullet25mmHEAT
@@ -367,12 +332,13 @@
         Heat: 30
     deleteOnCollide: false
   - type: ArmorPiercing
-    piercingThickness: 40
-  - type: Heat
-    explosionDelay: 0
-    fragmentationDelay: 0
-    fragmentationCount: 0
-    plasmaAmount: 0
+    piercingThickness: 4
+  - type: HeFragProjectile
+    fillPrototype: Bullet25mmFragFragment
+    capacity: 40
+    randomAngle: true
+    minVelocity: 6
+    maxVelocity: 12
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: Default

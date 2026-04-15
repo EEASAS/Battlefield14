@@ -6,7 +6,7 @@
   weight: 70
   startingGear: WPSSecurityOfficerGear
   alwaysUseSpawner: true
-  icon: "JobIconSecurityOfficer"
+  icon: "JobIconINDSecurity"
   requireAdminNotify: false
   supervisors: job-supervisors-wps
   canBeAntag: false

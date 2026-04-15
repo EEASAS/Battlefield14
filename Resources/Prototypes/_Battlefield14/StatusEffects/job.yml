@@ -143,3 +143,33 @@
   icon:
     sprite: /Textures/_Battlefield14/Interface/Misc/class_icons.rsi
     state: pactspecialforces
+
+# Independants
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconINDCaptain
+  icon:
+    sprite: /Textures/_Battlefield14/Interface/Misc/class_icons.rsi
+    state: indcaptain
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconINDSquadLeader
+  icon:
+    sprite: /Textures/_Battlefield14/Interface/Misc/class_icons.rsi
+    state: indsquadleader
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconINDWarden
+  icon:
+    sprite: /Textures/_Battlefield14/Interface/Misc/class_icons.rsi
+    state: indwarden
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconINDSecurity
+  icon:
+    sprite: /Textures/_Battlefield14/Interface/Misc/class_icons.rsi
+    state: indsecurity

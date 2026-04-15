@@ -100,11 +100,10 @@
     contents:
       - id: HandheldHealthAnalyzerUnpowered # BF14
       - id: BF14HyposprayFilledAdvanced # BF14
+      - id: BF14HyposprayFilledNanoblood # BF14
+      - id: BF14HyposprayFilledHypervene # BF14
       - id: MedicatedSuture
       - id: RegenerativeMesh
-      - id: InaprovalineMedipen # BF14
-      - id: BF14HyposprayFilledNanoblood # BF14
-#      - id: PillCanisterTramadol # BF14
 
 - type: entity
   id: MedkitCombatFilled

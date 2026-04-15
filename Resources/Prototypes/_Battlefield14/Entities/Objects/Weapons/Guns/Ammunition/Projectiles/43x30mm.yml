@@ -21,7 +21,7 @@
     explosionType: Default
     totalIntensity: 40
     intensitySlope: 3
-    maxIntensity: 30
+    maxIntensity: 20
     maxTileBreak: 0
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Guns/Projectiles/ballistic.rsi

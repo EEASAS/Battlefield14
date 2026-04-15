@@ -252,7 +252,6 @@
     whitelist:
       tags:
       - Cartridge25mmAPDS
-      - Cartridge25mmAPT
       - Cartridge25mmHEIT
       - Cartridge25mmFrag
   - type: ContainerContainer
@@ -351,46 +350,6 @@
     damageContainer: Inorganic
     damageModifierSet: Metallic
 
-# 25mm M242 Bushmaster AP-T
-- type: entity
-  id: Cartridge25mmAPT
-  name: cartridge (25mm AP-T)
-  parent: BaseCartridge
-  components:
-  - type: Tag
-    tags:
-    - Cartridge
-    - Cartridge25mmAPT
-  - type: CartridgeAmmo
-    deleteOnSpawn: true
-    proto: Bullet25mmAPT
-  - type: Sprite
-    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Explosives/generic_cartridges.rsi
-    layers:
-    - state: 90mm
-      map: ["enum.AmmoVisualLayers.Base"]
-  - type: Appearance
-  - type: SpentAmmoVisuals
-  - type: StaticPrice
-    price: 1
-  - type: Destructible
-    thresholds:
-    - trigger:
-        !type:DamageTrigger
-        damage: 400
-      behaviors:
-      - !type:DoActsBehavior
-        acts: ["Destruction"]
-      - !type:ExplodeBehavior
-  - type: Explosive
-    explosionType: Default
-    maxIntensity: 100
-    intensitySlope: 3
-    totalIntensity: 0.7
-  - type: Damageable
-    damageContainer: Inorganic
-    damageModifierSet: Metallic
-
 # 25mm M242 Bushmaster Fragmentation
 - type: entity
   id: Cartridge25mmFrag
@@ -430,44 +389,6 @@
   - type: Damageable
     damageContainer: Inorganic
     damageModifierSet: Metallic
-
-# 25mm M242 Bushmaster AP-T Magazine
-- type: entity
-  id: Magazine25mmAPT
-  name: "25mm M242 Bushmaster magazine (AP-T)"
-  description: "An ammunition loader for the M242 Bushmaster autocannon, loaded with armor-piercing tracer rounds."
-  parent: [BaseItem, RecyclableItemSteelTiny]
-  components:
-  - type: Tag
-    tags:
-    - Magazine25mmAPT
-  - type: Item
-    size: Small
-  - type: BallisticAmmoProvider
-    infiniteUnspawned: false
-    proto: Cartridge25mmAPT
-    capacity: 150
-    mayTransfer: true
-    whitelist:
-      tags:
-      - Cartridge25mmAPT
-  - type: ContainerContainer
-    containers:
-      ballistic-ammo: !type:Container
-  - type: Sprite
-    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Boxes/generic_shipgun_box.rsi
-    layers:
-    - state: base
-      map: ["enum.GunVisualLayers.Base"]
-    - state: mag-0
-      map: ["enum.GunVisualLayers.Mag"]
-  - type: MagazineVisuals
-    magState: mag
-    steps: 4
-    zeroVisible: false
-  - type: Appearance
-  - type: StaticPrice
-    price: 1
 
 # 25mm M242 Bushmaster Fragmentation Magazine
 - type: entity

@@ -29,13 +29,7 @@
   id: Cartridge25mmAPDS
 
 - type: Tag
-  id: Cartridge25mmAPT
-
-- type: Tag
   id: Cartridge25mmFrag
-
-- type: Tag
-  id: Magazine25mmAPT
 
 - type: Tag
   id: Magazine25mmFrag
