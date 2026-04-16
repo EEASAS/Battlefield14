@@ -52,6 +52,10 @@
     sprite: _Mono/Objects/Weapons/Guns/Shotguns/Helepolis.rsi
   - type: Clothing
     sprite: _Mono/Objects/Weapons/Guns/Shotguns/Helepolis.rsi
+    slots:
+    - Back
+    - suitStorage
+    - SUITSTORAGE2
   - type: Gun
     fireRate: 1
     projectileSpeed: 20 # short barrel

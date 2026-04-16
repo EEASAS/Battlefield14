@@ -32,6 +32,7 @@ public enum SlotFlags
     ARMBANDLEFT = 1 << 19,
     HELMETCOVER = 1 << 20,
     HELMETATTACHMENT = 1 << 21, //Mono end
+    SUITSTORAGE2 = 1 << 22, // BF14
     All = ~NONE,
 
     WITHOUT_POCKET = All & ~POCKET

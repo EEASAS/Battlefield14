@@ -1,4 +1,39 @@
 - type: entity
+  name: disposable rocket launcher
+  parent: [ BaseWeaponLauncher , BaseGunWieldable , WeaponHandlingLauncherDisposable ]
+  id: BaseWeaponLauncherDisposable
+  description: SMAW-D, D for disposable. Fires an anti-infantry Novel Explosive round, cannot be reloaded, drop after use.
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Launchers/SMAWD.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/Launchers/SMAWD.rsi
+    slots:
+    - Back
+    - suitStorage
+    - SUITSTORAGE2
+    clothingVisuals:
+      suitstorage2:
+      - state: equipped-BACKPACK
+    unequipDelay: 1
+  - type: Item
+  - type: Appearance
+  - type: Gun
+    projectileSpeed: 40
+    fireRate: 0.75
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/rpgfire.ogg
+  - type: GunRequiresWield
+  - type: AmmoCounter
+  - type: BasicEntityAmmoProvider
+    proto: BulletRocket83mmNE
+    capacity: 1
+
+- type: entity
   id: WeaponHandlingLauncher
   abstract: true
   components:
@@ -25,14 +60,17 @@
   abstract: true
   components:
   - type: UseDelay
-    delay: 1.5
+    delay: 1
+  - type: ClothingSpeedModifier
+    walkModifier: 0.95
+    sprintModifier: 0.95
   - type: HeldSpeedModifier
   - type: SpeedModifiedOnWield
     walkModifier: 0.70
     sprintModifier: 0.70
   - type: WieldDelay
-    baseDelay: 1.5
-    modifiedDelay: 1.5
+    baseDelay: 1
+    modifiedDelay: 1
     preventFiring: true
   - type: WieldedCrosshair
     rsi:
@@ -86,7 +124,7 @@
 
 - type: entity
   name: AT4
-  parent: [ BaseWeaponLauncher , BaseGunWieldable , WeaponHandlingLauncherDisposable ]
+  parent: BaseWeaponLauncherDisposable
   id: WeaponLauncherUSAT4
   description: A single shot 84mm disposable Light Anti-structure Weapon for precisely taking out structures with little collateral damage.
   components:
@@ -97,28 +135,13 @@
         map: ["enum.GunVisualLayers.Base"]
   - type: Clothing
     sprite: _Battlefield14/Objects/Weapons/Guns/Launchers/AT4.rsi
-    slots:
-    - Back
-    - suitStorage
-  - type: Item
-    size: Large
-    shape:
-    - 0,0,3,2
-  - type: Appearance
-  - type: Gun
-    projectileSpeed: 40
-    fireRate: 0.75
-    soundGunshot:
-      path: /Audio/Weapons/Guns/Gunshots/rpgfire.ogg
-  - type: GunRequiresWield
-  - type: AmmoCounter
   - type: BasicEntityAmmoProvider
     proto: BulletRocket84mmHEAT
     capacity: 1
 
 - type: entity
   name: SMAW-D
-  parent: [ BaseWeaponLauncher , BaseGunWieldable , WeaponHandlingLauncherDisposable ]
+  parent: BaseWeaponLauncherDisposable
   id: WeaponLauncherUSSMAWDisposable
   description: SMAW-D, D for disposable. Fires an anti-infantry Novel Explosive round, cannot be reloaded, drop after use.
   components:
@@ -129,28 +152,13 @@
         map: ["enum.GunVisualLayers.Base"]
   - type: Clothing
     sprite: _Battlefield14/Objects/Weapons/Guns/Launchers/SMAWD.rsi
-    slots:
-    - Back
-    - suitStorage
-  - type: Item
-    size: Large
-    shape:
-    - 0,0,3,2
-  - type: Appearance
-  - type: Gun
-    projectileSpeed: 40
-    fireRate: 0.75
-    soundGunshot:
-      path: /Audio/Weapons/Guns/Gunshots/rpgfire.ogg
-  - type: GunRequiresWield
-  - type: AmmoCounter
   - type: BasicEntityAmmoProvider
     proto: BulletRocket83mmNE
     capacity: 1
 
 - type: entity
   name: FIM-92 Stinger MANPADS
-  parent: [ BaseWeaponLauncher , BaseGunWieldable , WeaponHandlingLauncherDisposable ]
+  parent: BaseWeaponLauncherDisposable
   id: WeaponLauncherUSStinger
   description: You know who the CIA decided to give this thing to? The Mujahideen. They were fighting the communists at the time though so I suppose it's justified.
   components:
@@ -161,24 +169,17 @@
         map: ["enum.GunVisualLayers.Base"]
   - type: Clothing
     sprite: _Battlefield14/Objects/Weapons/Guns/Launchers/stinger.rsi
-    slots:
-    - Back
-    - suitStorage
-  - type: Item
-    size: Large
-    shape:
-    - 0,0,3,2
-  - type: Appearance
   - type: Gun
     projectileSpeed: 8
     fireRate: 0.75
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/rpgfire.ogg
-  - type: GunRequiresWield
-  - type: AmmoCounter
   - type: BasicEntityAmmoProvider
     proto: BulletRocketStingerMANPADSMissile
     capacity: 1
+  - type: CursorOffsetRequiresWield
+    maxOffset: 5
+    pvsIncrease: 0.25
 
 # RU
 
@@ -227,7 +228,7 @@
 
 - type: entity
   name: RPG-30
-  parent: [ BaseWeaponLauncher , BaseGunWieldable , WeaponHandlingLauncherDisposable ]
+  parent: BaseWeaponLauncherDisposable
   id: WeaponLauncherRURPG30
   description: A 105mm disposable anti tank grenade launcher described as an "asymmetrical threat to the US armed forces." by the pentagon.
   components:
@@ -238,28 +239,13 @@
         map: ["enum.GunVisualLayers.Base"]
   - type: Clothing
     sprite: _Battlefield14/Objects/Weapons/Guns/Launchers/RPG30.rsi
-    slots:
-    - Back
-    - suitStorage
-  - type: Item
-    size: Large
-    shape:
-    - 0,0,3,2
-  - type: Appearance
-  - type: Gun
-    projectileSpeed: 40
-    fireRate: 0.75
-    soundGunshot:
-      path: /Audio/Weapons/Guns/Gunshots/rpgfire.ogg
-  - type: GunRequiresWield
-  - type: AmmoCounter
   - type: BasicEntityAmmoProvider
     proto: BulletRocketRPG7HEAT
     capacity: 1
 
 - type: entity
   name: RPG-26
-  parent: [ BaseWeaponLauncher , BaseGunWieldable , WeaponHandlingLauncherDisposable ]
+  parent: BaseWeaponLauncherDisposable
   id: WeaponLauncherRURPG26
   description: An outdated 72.5mm disposable anti tank grenade launcher, better used as a museum piece if you have anything better in stock. Still scary to equally out-dated targets.
   components:
@@ -270,21 +256,6 @@
         map: ["enum.GunVisualLayers.Base"]
   - type: Clothing
     sprite: _Battlefield14/Objects/Weapons/Guns/Launchers/RPG26.rsi
-    slots:
-    - Back
-    - suitStorage
-  - type: Item
-    size: Large
-    shape:
-    - 0,0,3,2
-  - type: Appearance
-  - type: Gun
-    projectileSpeed: 40
-    fireRate: 0.75
-    soundGunshot:
-      path: /Audio/Weapons/Guns/Gunshots/rpgfire.ogg
-  - type: GunRequiresWield
-  - type: AmmoCounter
   - type: BasicEntityAmmoProvider
     proto: BulletRocketRPG26HEATArmingDistance
     capacity: 1
@@ -301,7 +272,7 @@
 
 - type: entity
   name: 9K38 Igla MANPADS
-  parent: [ BaseWeaponLauncher , BaseGunWieldable , WeaponHandlingLauncherDisposable ]
+  parent: BaseWeaponLauncherDisposable
   id: WeaponLauncherRUIgla
   description: The high tech equivalent of throwing a really long spear at someone, if that person was a helicopter and the spear could heat track it.
   components:
@@ -312,21 +283,14 @@
         map: ["enum.GunVisualLayers.Base"]
   - type: Clothing
     sprite: _Battlefield14/Objects/Weapons/Guns/Launchers/Igla.rsi
-    slots:
-    - Back
-    - suitStorage
-  - type: Item
-    size: Large
-    shape:
-    - 0,0,3,2
-  - type: Appearance
   - type: Gun
     projectileSpeed: 8
     fireRate: 0.75
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/rpgfire.ogg
-  - type: GunRequiresWield
-  - type: AmmoCounter
   - type: BasicEntityAmmoProvider
     proto: BulletRocketIglaMANPADSMissile
     capacity: 1
+  - type: CursorOffsetRequiresWield
+    maxOffset: 5
+    pvsIncrease: 0.25
