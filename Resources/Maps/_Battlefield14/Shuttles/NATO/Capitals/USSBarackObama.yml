@@ -4,8 +4,8 @@ meta:
   engineVersion: 264.0.0
   forkId: ""
   forkVersion: ""
-  time: 04/15/2026 02:36:03
-  entityCount: 3736
+  time: 04/16/2026 05:55:55
+  entityCount: 3737
 maps: []
 grids:
 - 1
@@ -119,10 +119,10 @@ entities:
     - type: OccluderTree
     - type: SpreaderGrid
       spreadQueues:
-        Puddle: []
+        Kudzu: []
         Smoke: []
         MetalFoam: []
-        Kudzu: []
+        Puddle: []
     - type: Shuttle
       dampingModifier: 0.25
     - type: GridPathfinding
@@ -1424,7 +1424,7 @@ entities:
       pos: 20.5,-21.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -17206.844
+      secondsUntilStateChange: -17357.701
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -11022,6 +11022,13 @@ entities:
     - type: Transform
       pos: 2.5,-42.5
       parent: 1
+- proto: CrateSecgearNATOFilledMortarM252
+  entities:
+  - uid: 3737
+    components:
+    - type: Transform
+      pos: 2.5,-43.5
+      parent: 1
 - proto: CrateSecgearNATOFilledStinger
   entities:
   - uid: 3729
@@ -12409,7 +12416,7 @@ entities:
       pos: 10.5,-42.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -15045.248
+      secondsUntilStateChange: -15196.1045
       state: Closing
   - uid: 2294
     components:
