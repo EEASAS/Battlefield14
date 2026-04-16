@@ -2,6 +2,12 @@
   parent: [BaseCartridge, RecyclableItemSteelTiny]
   id: BaseCartridgeRifle
   components:
+  - type: CartridgeAmmo
+    soundEject:
+      collection: BF_Cartridge_Drop_556x45
+      params:
+        volume: -5
+        variation: 0.125
   - type: EmitSoundOnLand
     sound:
       collection: BF_Cartridge_Drop_556x45
@@ -12,6 +18,12 @@
   parent: [BaseCartridge, RecyclableItemSteelTiny]
   id: BaseCartridgePistol
   components:
+  - type: CartridgeAmmo
+    soundEject:
+      collection: BF_Cartridge_Drop_9x19
+      params:
+        volume: -5
+        variation: 0.125
   - type: EmitSoundOnLand
     sound:
       collection: BF_Cartridge_Drop_9x19
@@ -22,6 +34,12 @@
   parent: [BaseCartridge, RecyclableItemSteelTiny]
   id: BaseCartridge40x46
   components:
+  - type: CartridgeAmmo
+    soundEject:
+      collection: BF_Cartridge_Drop_40x46mm
+      params:
+        volume: -5
+        variation: 0.125
   - type: EmitSoundOnLand
     sound:
       collection: BF_Cartridge_Drop_40x46mm
