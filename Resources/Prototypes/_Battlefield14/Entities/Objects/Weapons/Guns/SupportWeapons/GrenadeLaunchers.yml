@@ -35,9 +35,9 @@
       - SemiAuto
     soundGunshot:
       path: /Audio/_Battlefield14/Weapons/Guns/M320/gl_fire.ogg
-#      params:
-#        volume: -5
-#        variation: 0.125
+      params:
+        volume: -2
+        variation: 0.125
 
 - type: entity
   name: M320
