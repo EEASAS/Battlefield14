@@ -14,7 +14,7 @@
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: DemolitionCharge
-    maxIntensity: 80
+    maxIntensity: 9
     intensitySlope: 4
     totalIntensity: 80
     maxTileBreak: 1
@@ -133,7 +133,7 @@
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: DemolitionCharge
-    maxIntensity: 80
+    maxIntensity: 9
     intensitySlope: 4
     totalIntensity: 80
     maxTileBreak: 1
@@ -161,9 +161,9 @@
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: FireBomb
-    maxIntensity: 120
-    intensitySlope: 4
-    totalIntensity: 120
+    maxIntensity: 15
+    intensitySlope: 6
+    totalIntensity: 160
     maxTileBreak: 0
   - type: SpawnOnTrigger
     proto: InstantEffectGravityWellThermobaric

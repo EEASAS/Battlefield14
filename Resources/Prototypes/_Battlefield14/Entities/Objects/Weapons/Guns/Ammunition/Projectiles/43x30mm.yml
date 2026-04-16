@@ -19,9 +19,9 @@
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: Default
-    totalIntensity: 40
+    totalIntensity: 50
     intensitySlope: 3
-    maxIntensity: 20
+    maxIntensity: 4.5
     maxTileBreak: 0
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Guns/Projectiles/ballistic.rsi
@@ -75,9 +75,9 @@
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: FireBomb
-    totalIntensity: 50
-    intensitySlope: 3
-    maxIntensity: 30
+    totalIntensity: 90
+    intensitySlope: 6
+    maxIntensity: 9
     maxTileBreak: 0
   - type: SpawnOnTrigger
     proto: InstantEffectGravityWellThermobaric
