@@ -25,9 +25,9 @@
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: Default
-    totalIntensity: 60
+    totalIntensity: 50
     intensitySlope: 4
-    maxIntensity: 30
+    maxIntensity: 6
     maxTileBreak: 0
   - type: TimerTriggerVisuals
     primingSound:
@@ -90,7 +90,7 @@
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: Default
-    maxIntensity: 100
+    maxIntensity: 10
     intensitySlope: 4
     totalIntensity: 100
     canCreateVacuum: false
@@ -375,7 +375,7 @@
   - type: Explosive
     explosionType: Default
     maxIntensity: 10
-    intensitySlope: 3
+    intensitySlope: 4
     totalIntensity: 100
     canCreateVacuum: false
   - type: TimerTriggerVisuals
@@ -419,9 +419,9 @@
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: Default
-    totalIntensity: 60
+    totalIntensity: 50
     intensitySlope: 4
-    maxIntensity: 30
+    maxIntensity: 6
     maxTileBreak: 0
   - type: TimerTriggerVisuals
     primingSound:
