@@ -207,7 +207,6 @@
     slots:
     - Back
     - suitStorage
-  - type: AmmoCounter
   - type: Wieldable
     unwieldOnUse: false
   - type: GunWieldBonus

@@ -18,7 +18,7 @@
     slots:
     - Back
     - suitStorage
-  - type: AmmoCounter
+#BF14  - type: AmmoCounter
   - type: Gun
     fireRate: 2
     projectileSpeed: 40 # Mono
