@@ -38,3 +38,10 @@
     - back
     - suitStorage # Frontier - Same as axe
 #mono edit end
+    - SUITSTORAGE2 # BF14
+    clothingVisuals:
+      suitstorage2:
+      - state: equipped-BACKPACK
+  - type: ClothingSpeedModifier # BF14
+    walkModifier: 0.9
+    sprintModifier: 0.9

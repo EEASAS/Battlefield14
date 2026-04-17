@@ -54,6 +54,11 @@
     rsi:
       sprite: _RMC14/Interface/MousePointer/explosive_mouse.rsi
       state: all
+  - type: ExtendDescription
+    descriptionList:
+      - description: Has a minimum arming distance of 6 tiles.
+        color: "#4f94ad"
+        requireDetailRange: true
 
 - type: entity
   id: WeaponHandlingLauncherDisposable
@@ -76,6 +81,11 @@
     rsi:
       sprite: _RMC14/Interface/MousePointer/explosive_mouse.rsi
       state: all
+  - type: ExtendDescription
+    descriptionList:
+      - description: Has a minimum arming distance of 6 tiles.
+        color: "#4f94ad"
+        requireDetailRange: true
 
 # US
 - type: entity
@@ -136,7 +146,7 @@
   - type: Clothing
     sprite: _Battlefield14/Objects/Weapons/Guns/Launchers/AT4.rsi
   - type: BasicEntityAmmoProvider
-    proto: BulletRocket84mmHEAT
+    proto: BulletRocket84mmHEATArmingDistance
     capacity: 1
 
 - type: entity
@@ -153,7 +163,7 @@
   - type: Clothing
     sprite: _Battlefield14/Objects/Weapons/Guns/Launchers/SMAWD.rsi
   - type: BasicEntityAmmoProvider
-    proto: BulletRocket83mmNE
+    proto: BulletRocket83mmNEArmingDistance
     capacity: 1
 
 - type: entity
@@ -240,7 +250,7 @@
   - type: Clothing
     sprite: _Battlefield14/Objects/Weapons/Guns/Launchers/RPG30.rsi
   - type: BasicEntityAmmoProvider
-    proto: BulletRocketRPG7HEAT
+    proto: BulletRocketRPG7HEATArmingDistance
     capacity: 1
 
 - type: entity

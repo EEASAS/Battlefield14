@@ -34,13 +34,17 @@
     materialComposition: 
       Steel: 200
   - type: Item
-    size: Large
+    size: Huge
   - type: Clothing
     sprite: _NF/Objects/Tools/maintenance-jack.rsi
     quickEquip: false
     slots:
     - back
     - suitStorage
+    - SUITSTORAGE2
+    clothingVisuals:
+      suitstorage2:
+      - state: equipped-BACKPACK
   - type: ToolTileCompatible
   - type: Tool
     qualities:
@@ -53,3 +57,6 @@
     pryPowered: true
   - type: UseDelay
     delay: 1
+  - type: ClothingSpeedModifier
+    walkModifier: 0.9
+    sprintModifier: 0.9
