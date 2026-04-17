@@ -577,7 +577,7 @@
     maxAngle: 32
     angleIncrease: 2
     projectileSpeed: 35 # Shorter barrel + suppressed
-    fireRate: 8
+    fireRate: 7
     availableModes:
     - SemiAuto
     - FullAuto
@@ -692,7 +692,7 @@
     - SemiAuto
     - FullAuto
     selectedMode: FullAuto
-    fireRate: 8
+    fireRate: 7
     projectileSpeed: 45
     soundGunshot:
       collection: BF_AK_545_Gunshots_SUPP
@@ -836,7 +836,7 @@
     - SemiAuto
     - FullAuto
     selectedMode: FullAuto
-    fireRate: 9
+    fireRate: 8
     projectileSpeed: 40 # subsonic
     soundGunshot:
       collection: BF_M16_Gunshots_SUPP # Looks weird, but these sound more pew pew than the galil (used by M4A1 SUPP) and this is an ASVAL
@@ -909,7 +909,7 @@
     - SemiAuto
     - FullAuto
     selectedMode: FullAuto
-    fireRate: 9
+    fireRate: 8
     projectileSpeed: 40 # short barrel
     soundGunshot:
       collection: BF_AK_762_Gunshots

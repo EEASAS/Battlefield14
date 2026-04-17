@@ -19,7 +19,7 @@
   - type: Gun
     minAngle: 0
     maxAngle: 10
-    fireRate: 10
+    fireRate: 8
     angleIncrease: 1.5
     angleDecay: 15
     projectileSpeed: 35 # pistol caliber
@@ -193,7 +193,7 @@
   - type: Gun
     minAngle: 2
     maxAngle: 15
-    fireRate: 8
+    fireRate: 6.5
     angleIncrease: 2
     angleDecay: 15
     projectileSpeed: 40
@@ -268,7 +268,7 @@
   - type: Gun
     minAngle: 0
     maxAngle: 10
-    fireRate: 10
+    fireRate: 8
     angleIncrease: 1.5
     angleDecay: 15
     projectileSpeed: 35 # pistol caliber

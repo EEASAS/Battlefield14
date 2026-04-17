@@ -27,7 +27,7 @@
     - FullAuto
     - Burst
     selectedMode: FullAuto
-    fireRate: 8
+    fireRate: 7
     projectileSpeed: 40 # 13 inch barrel
     shotsPerBurst: 8 # Fictional, to help with conserving ammo
     burstCooldown: 0.5
@@ -116,7 +116,7 @@
     - FullAuto
     - Burst
     selectedMode: FullAuto
-    fireRate: 8
+    fireRate: 7
     projectileSpeed: 40 # 13 inch barrel
     shotsPerBurst: 8 # Fictional, to help with conserving ammo
     burstCooldown: 0.5
@@ -190,7 +190,7 @@
     - FullAuto
     - Burst
     selectedMode: FullAuto
-    fireRate: 8
+    fireRate: 7
     projectileSpeed: 50 # full length barrel
     shotsPerBurst: 8 # Fictional, to help with conserving ammo
     burstCooldown: 0.5
