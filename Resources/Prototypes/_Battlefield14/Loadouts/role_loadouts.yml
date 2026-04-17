@@ -14,6 +14,7 @@
   - BF_GoggleCover
   - BF_BackpacksTan
   - BF_MiscItemsNATO
+  - BF_PistolsUSMCSL
   - ContractorWallet
 
 - type: roleLoadout
@@ -38,6 +39,7 @@
   - BF_GoggleCover
   - BF_BackpacksTan
   - BF_MiscItemsNATO
+  - BF_PistolsUSMCSL
   - ContractorWallet
 
 - type: roleLoadout
@@ -71,6 +73,7 @@
   - BF_NATOIFF
   - BF_BackpacksBlack
   - BF_MiscItemsNATO
+  - BF_PistolsUSMCSL
   - ContractorWallet
 
 - type: roleLoadout
@@ -81,6 +84,7 @@
   - BF_NATOIFF
   - BF_BackpacksBlack
   - BF_MiscItemsNATO
+  - BF_PistolsUSMCSL
   - ContractorWallet
 
 - type: roleLoadout
@@ -109,6 +113,7 @@
   - BF_VDVHead
   - BF_BackpacksBlack
   - BF_MiscItemsPACT
+  - BF_PistolsVDVSL
   - ContractorWallet
 
 - type: roleLoadout
@@ -135,6 +140,7 @@
   - BF_VDVHead
   - BF_BackpacksBlack
   - BF_MiscItemsPACT
+  - BF_PistolsVDVSL
   - ContractorWallet
 
 - type: roleLoadout
@@ -171,6 +177,7 @@
   - BF_PACTIFF
   - BF_BackpacksBlack
   - BF_MiscItemsPACT
+  - BF_PistolsVDVSL
   - ContractorWallet
 
 - type: roleLoadout
@@ -181,6 +188,7 @@
   - BF_PACTIFF
   - BF_BackpacksBlack
   - BF_MiscItemsPACT
+  - BF_PistolsVDVSL
   - ContractorWallet
 
 - type: roleLoadout

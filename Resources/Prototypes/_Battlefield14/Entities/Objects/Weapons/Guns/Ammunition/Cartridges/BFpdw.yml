@@ -15,7 +15,24 @@
     - state: base
       map: ["enum.AmmoVisualLayers.Base"]
   - type: Appearance
-  - type: SpentAmmoVisuals
+
+- type: entity
+  id: BF_CartridgePDW57x28
+  name: cartridge (5.7x28mm)
+  parent: BaseCartridgePistol
+  components:
+  - type: CartridgeAmmo
+    proto: BulletPDWBF57x28
+  - type: Tag
+    tags:
+    - Cartridge
+    - BF_CartridgePDW57x28
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Casings/pistol.rsi
+    layers:
+    - state: base
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
 
 - type: entity
   id: BF_CartridgePDW9x21
@@ -34,4 +51,3 @@
     - state: base
       map: ["enum.AmmoVisualLayers.Base"]
   - type: Appearance
-  - type: SpentAmmoVisuals

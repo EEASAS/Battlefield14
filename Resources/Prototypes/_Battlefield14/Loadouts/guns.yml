@@ -1,0 +1,17 @@
+- type: loadout
+  id: LoadoutGunFiveSevenUSMCSLVET
+  name: Five-seveN gun case
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: BF_USMC_SL_VET
+  inhand:
+  - WeaponCaseShortFiveSeven
+
+- type: loadout
+  id: LoadoutGunSR1MPVDVSLVET
+  name: SR1MP gun case
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: BF_VDV_SL_VET
+  inhand:
+  - WeaponCaseShortSR1MP

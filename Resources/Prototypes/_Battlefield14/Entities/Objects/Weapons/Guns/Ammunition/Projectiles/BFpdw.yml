@@ -10,8 +10,19 @@
         Piercing: 20
         Structural: 5
     armorPenetration: 0.3
-  - type: Ammo
-    muzzleFlash: MuzzleFlashEffectSmall
+
+- type: entity
+  id: BulletPDWBF57x28
+  name: bullet (5.7x28mm)
+  parent: BaseBulletPDW
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 20
+        Structural: 5
+    armorPenetration: 0.3
 
 - type: entity
   id: BulletPDWBF9x21

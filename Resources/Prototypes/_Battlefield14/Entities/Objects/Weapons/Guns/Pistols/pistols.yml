@@ -24,14 +24,29 @@
     availableModes:
     - SemiAuto
     soundGunshot:
-      path: /Audio/_Mono/Weapons/Guns/SmallArms/Gunshots/viper_fire.ogg
+      collection: BF_M9Beretta_Gunshots
+      params:
+        volume: -3
+  - type: ChamberMagazineAmmoProvider
+    soundRack:
+      path: /Audio/_Battlefield14/Weapons/Guns/Beretta/rack.ogg
+      params:
+        volume: -1
+    soundBoltOpened:
+      path: /Audio/_Battlefield14/Weapons/Guns/Beretta/slidepull.ogg
+      params:
+        volume: -1
+    soundBoltClosed:
+      path: /Audio/_Battlefield14/Weapons/Guns/Beretta/sliderel.ogg
+      params:
+        volume: -1
   - type: ItemSlots
     slots:
       gun_magazine:
         name: Magazine
         startingItem: MagazinePistolM9
-        insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
-        ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
+        insertSound: /Audio/_Battlefield14/Weapons/Guns/Beretta/magin.ogg
+        ejectSound: /Audio/_Battlefield14/Weapons/Guns/Beretta/magout.ogg
         priority: 2
         whitelist:
           tags:
@@ -43,6 +58,69 @@
         whitelist:
           tags:
             - BF_CartridgePistol9x19
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: Appearance
+
+- type: entity
+  name: Five-seveN
+  parent: BaseWeaponPistol
+  id: WeaponPistolBEFiveSeven
+  description: Designed alongside the P90 PDW, firing basically miniature rifle rounds.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Pistols/FiveSeven.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Gun
+    minAngle: 0
+    maxAngle: 15
+    angleIncrease: 2
+    angleDecay: 10
+    fireRate: 5
+    projectileSpeed: 30
+    availableModes:
+    - SemiAuto
+    soundGunshot:
+      collection: BF_M9Beretta_Gunshots
+      params:
+        volume: -3
+  - type: ChamberMagazineAmmoProvider
+    soundRack:
+      path: /Audio/_Battlefield14/Weapons/Guns/Beretta/rack.ogg
+      params:
+        volume: -1
+    soundBoltOpened:
+      path: /Audio/_Battlefield14/Weapons/Guns/Beretta/slidepull.ogg
+      params:
+        volume: -1
+    soundBoltClosed:
+      path: /Audio/_Battlefield14/Weapons/Guns/Beretta/sliderel.ogg
+      params:
+        volume: -1
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazinePistolFiveSeven
+        insertSound: /Audio/_Battlefield14/Weapons/Guns/Beretta/magin.ogg
+        ejectSound: /Audio/_Battlefield14/Weapons/Guns/Beretta/magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MagazinePistolFiveSeven
+      gun_chamber:
+        name: Chamber
+        startingItem: BF_CartridgePDW57x28
+        priority: 1
+        whitelist:
+          tags:
+            - BF_CartridgePDW57x28
   - type: MagazineVisuals
     magState: mag
     steps: 1
@@ -75,14 +153,29 @@
     availableModes:
     - SemiAuto
     soundGunshot:
-      path: /Audio/_Mono/Weapons/Guns/SmallArms/Gunshots/viper_fire.ogg
+      collection: BF_M9Beretta_Gunshots
+      params:
+        volume: -3
+  - type: ChamberMagazineAmmoProvider
+    soundRack:
+      path: /Audio/_Battlefield14/Weapons/Guns/Beretta/rack.ogg
+      params:
+        volume: -1
+    soundBoltOpened:
+      path: /Audio/_Battlefield14/Weapons/Guns/Beretta/slidepull.ogg
+      params:
+        volume: -1
+    soundBoltClosed:
+      path: /Audio/_Battlefield14/Weapons/Guns/Beretta/sliderel.ogg
+      params:
+        volume: -1
   - type: ItemSlots
     slots:
       gun_magazine:
         name: Magazine
         startingItem: MagazinePistolMP443
-        insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
-        ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
+        insertSound: /Audio/_Battlefield14/Weapons/Guns/Beretta/magin.ogg
+        ejectSound: /Audio/_Battlefield14/Weapons/Guns/Beretta/magout.ogg
         priority: 2
         whitelist:
           tags:
@@ -123,14 +216,29 @@
     availableModes:
     - SemiAuto
     soundGunshot:
-      path: /Audio/_Mono/Weapons/Guns/SmallArms/Gunshots/viper_fire.ogg
+      collection: BF_M9Beretta_Gunshots
+      params:
+        volume: -3
+  - type: ChamberMagazineAmmoProvider
+    soundRack:
+      path: /Audio/_Battlefield14/Weapons/Guns/Beretta/rack.ogg
+      params:
+        volume: -1
+    soundBoltOpened:
+      path: /Audio/_Battlefield14/Weapons/Guns/Beretta/slidepull.ogg
+      params:
+        volume: -1
+    soundBoltClosed:
+      path: /Audio/_Battlefield14/Weapons/Guns/Beretta/sliderel.ogg
+      params:
+        volume: -1
   - type: ItemSlots
     slots:
       gun_magazine:
         name: Magazine
         startingItem: MagazinePistolSR1MP
-        insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
-        ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
+        insertSound: /Audio/_Battlefield14/Weapons/Guns/Beretta/magin.ogg
+        ejectSound: /Audio/_Battlefield14/Weapons/Guns/Beretta/magout.ogg
         priority: 2
         whitelist:
           tags:
