@@ -1,0 +1,24 @@
+# Handguns
+- type: entity
+  parent: WeaponCaseShort
+  id: WeaponCaseShortSR1MP
+  suffix: SR1MP
+  components:
+  - type: StorageFill
+    contents:
+    - id: WeaponPistolRUSR1MP
+    - id: MagazinePistolSR1MP
+      amount: 2
+    - id: MagazineBox9x21
+
+- type: entity
+  parent: WeaponCaseShort
+  id: WeaponCaseShortFiveSeven
+  suffix: Five-seveN
+  components:
+  - type: StorageFill
+    contents:
+    - id: WeaponPistolBEFiveSeven
+    - id: MagazinePistolFiveSeven
+      amount: 2
+    - id: MagazineBox57x28

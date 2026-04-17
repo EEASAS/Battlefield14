@@ -8,6 +8,9 @@
   id: BF_CartridgePDW46x30
 
 - type: Tag
+  id: BF_CartridgePDW57x28
+
+- type: Tag
   id: BF_CartridgePDW9x21
 
 - type: Tag
@@ -108,6 +111,9 @@
 
 - type: Tag
   id: MagazineSniperSVDS
+
+- type: Tag
+  id: MagazinePistolFiveSeven
 
 - type: Tag
   id: MagazinePistolM9

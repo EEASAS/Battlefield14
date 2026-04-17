@@ -29,6 +29,7 @@
       collection: BF_Cartridge_Drop_9x19
       params:
         volume: -1
+  - type: SpentAmmoVisuals
 
 - type: entity
   parent: [BaseCartridge, RecyclableItemSteelTiny]

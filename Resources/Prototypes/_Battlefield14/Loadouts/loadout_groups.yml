@@ -138,6 +138,7 @@
   id: BF_MiscItemsNATO
   name: loadout-group-BF14-miscitem
   minLimit: 0
+  maxLimit: 1
   loadouts:
   - LoadoutMiscItemsIFFFlashcardNATO
   - LoadoutMiscItemsMREFlask
@@ -153,6 +154,7 @@
   id: BF_MiscItemsPACT
   name: loadout-group-BF14-miscitem
   minLimit: 0
+  maxLimit: 1
   loadouts:
   - LoadoutMiscItemsIFFFlashcardPACT
   - LoadoutMiscItemsMREFlask
@@ -168,6 +170,7 @@
   id: BF_MiscItemsIND
   name: loadout-group-BF14-miscitem
   minLimit: 0
+  maxLimit: 1
   loadouts:
   - LoadoutMiscItemsIFFFlashcardIND
   - LoadoutMiscItemsMREFlask
@@ -177,3 +180,21 @@
   - LoadoutMiscItemsPouchFlaresGlowsticksGreen
   - LoadoutMiscItemsCalculator
   - LoadoutMiscItemsGasMaskPouch
+
+# SIDEARMS
+
+- type: loadoutGroup
+  id: BF_PistolsUSMCSL
+  name: loadout-group-BF14-sidearm
+  minLimit: 0
+  maxLimit: 1
+  loadouts:
+  - LoadoutGunFiveSevenUSMCSLVET
+
+- type: loadoutGroup
+  id: BF_PistolsVDVSL
+  name: loadout-group-BF14-sidearm
+  minLimit: 0
+  maxLimit: 1
+  loadouts:
+  - LoadoutGunSR1MPVDVSLVET

@@ -169,3 +169,13 @@
   - /Audio/Weapons/Guns/Miss/bullet_miss2.ogg
   - /Audio/Weapons/Guns/Miss/bullet_miss3.ogg
   - /Audio/Weapons/Guns/Miss/bullet_miss4.ogg
+
+- type: soundCollection
+  id: BF_M9Beretta_Gunshots
+  files:
+  - "/Audio/_Battlefield14/Weapons/Guns/Beretta/fire-01.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/Beretta/fire-02.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/Beretta/fire-03.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/Beretta/fire-04.ogg"
+#  - "/Audio/_Battlefield14/Weapons/Guns/Beretta/fire-05.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/Beretta/fire-06.ogg"

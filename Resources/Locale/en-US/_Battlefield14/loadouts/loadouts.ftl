@@ -7,3 +7,4 @@ loadout-group-BF14-vdvhead = VDV head
 loadout-group-BF14-gogglecovers = Goggle cover
 loadout-group-BF14-backpack = Backpack
 loadout-group-BF14-miscitem = Misc. Item
+loadout-group-BF14-sidearm = Sidearm

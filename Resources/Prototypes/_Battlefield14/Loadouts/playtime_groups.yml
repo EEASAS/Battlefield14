@@ -1,0 +1,35 @@
+- type: loadoutEffectGroup
+  id: BF_USMC_VET
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:DepartmentTimeRequirement
+      department: USMC
+      time: 36000 # 10 hrs
+
+- type: loadoutEffectGroup
+  id: BF_USMC_SL_VET
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobUSMCSquadLeader
+      time: 36000 # 10 hrs
+
+- type: loadoutEffectGroup
+  id: BF_VDV_VET
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:DepartmentTimeRequirement
+      department: VDV
+      time: 36000 # 10 hrs
+
+- type: loadoutEffectGroup
+  id: BF_VDV_SL_VET
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobVDVSquadLeader
+      time: 36000 # 10 hrs
