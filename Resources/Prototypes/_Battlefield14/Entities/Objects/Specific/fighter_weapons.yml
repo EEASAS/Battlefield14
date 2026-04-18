@@ -81,7 +81,7 @@
   - type: Projectile
     damage:
       types: # For reference, air to air missiles should be mainly direct damage, so they are worse at taking out ships; fighters have 1,000 health
-        Structural: 300
+        Structural: 500
         Blunt: 70
         Heat: 70
   - type: Sprite
@@ -97,7 +97,7 @@
     requireNoGrid: true
     shape: triangle
   - type: TimedDespawn
-    lifetime: 3 # approx 500 meter range
+    lifetime: 5 # approx 750 meter range
   - type: PointLight
     radius: 3.5
     color: orange
@@ -113,11 +113,11 @@
   - type: MiningGatheringHard
   - type: TargetSeeking
     acceleration: 300
-    detectionRange: 275
+    detectionRange: 350
     scanArc: 40
     launchSpeed: 150
     maxSpeed: 180
-    trackDelay: 1
+    trackDelay: 0.5
 
 - type: entity
   id: MediumFighterMaverick
@@ -213,7 +213,7 @@
     minAngle: 0
     maxAngle: 5
     angleIncrease: 1
-    angleDecay: 20
+    angleDecay: 1
     selectedMode: FullAuto
     availableModes:
       - FullAuto
@@ -253,7 +253,7 @@
     maxCharge: 180
   - type: ProjectileBatteryAmmoProvider
     proto: BulletRocketS8
-    fireCost: 50 # ~180 shots
+    fireCost: 180 # ~90 shots
   - type: Appearance
   - type: AmmoCounter
 
@@ -270,8 +270,8 @@
   - type: Projectile
     damage:
       types:
-        Structural: 40
-        Blunt: 40
+        Structural: 10
+        Blunt: 20
   - type: HeFragProjectile
     fillPrototype: Bullet25x40Fragment
     capacity: 16
@@ -293,9 +293,9 @@
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: MicroBomb
-    totalIntensity: 30
+    totalIntensity: 20
     intensitySlope: 1.5
-    maxIntensity: 10
+    maxIntensity: 5
     maxTileBreak: 1
   - type: StaminaDamageOnCollide
     damage: 40 # ~3 hits to stun

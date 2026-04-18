@@ -239,11 +239,11 @@
   - type: MiningGatheringHard
   - type: TargetSeeking
     acceleration: 300
-    detectionRange: 275
-    scanArc: 40
+    detectionRange: 350
+    scanArc: 50
     launchSpeed: 8
     maxSpeed: 180
-    trackDelay: 0.5
+    trackDelay: 0.1
 
 ## RU
 
@@ -550,8 +550,8 @@
   - type: MiningGatheringHard
   - type: TargetSeeking
     acceleration: 300
-    detectionRange: 275
-    scanArc: 40
+    detectionRange: 350
+    scanArc: 50
     launchSpeed: 8
     maxSpeed: 180
-    trackDelay: 0.5
+    trackDelay: 0.1

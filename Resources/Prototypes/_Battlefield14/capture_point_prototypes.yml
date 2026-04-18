@@ -34,7 +34,7 @@
         mask:
         - MachineMask
         layer:
-        - MachineLayer
+        - TableLayer
   - type: PointLight
     enabled: true
     radius: 1.5

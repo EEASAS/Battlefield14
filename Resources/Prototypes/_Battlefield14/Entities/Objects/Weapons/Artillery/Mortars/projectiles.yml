@@ -98,7 +98,7 @@
     ignited: true
     temperature: 1000
   - type: TimedDespawn
-    lifetime: 90
+    lifetime: 300
   - type: EmitSoundOnSpawn
     sound: /Audio/_RMC14/Items/fulton.ogg
   - type: AmbientSound
@@ -237,7 +237,7 @@
     ignited: true
     temperature: 1000
   - type: TimedDespawn
-    lifetime: 90
+    lifetime: 300
   - type: EmitSoundOnSpawn
     sound: /Audio/_RMC14/Items/fulton.ogg
   - type: AmbientSound

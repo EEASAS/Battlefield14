@@ -29,8 +29,9 @@
   - type: DeviceNetwork
     deviceNetId: Wireless
   - type: WirelessNetworkConnection
-    range: 200
+    range: 500
   - type: DeviceLinkSource
+    range: 100
     ports:
     - On
     - Off
@@ -75,8 +76,9 @@
   - type: DeviceNetwork
     deviceNetId: Wireless
   - type: WirelessNetworkConnection
-    range: 200
+    range: 500
   - type: DeviceLinkSource
+    range: 100
     ports:
       - Pressed
   - type: Damageable
@@ -185,7 +187,7 @@
     - type: DeviceNetwork
       deviceNetId: Wireless
     - type: WirelessNetworkConnection
-      range: 200
+      range: 500
     - type: DeviceLinkSource
       ports:
         - Left
