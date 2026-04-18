@@ -118,9 +118,9 @@
       maxRange: 512
       followEntity: true
     - type: RadarBlip
+      visibleFromOtherGrids: true
       radarColor: "#3760b3" #"#3558a6"
       scale: 5
-      requireNoGrid: true
       shape: diamond
     - type: StaticPrice
       price: 15000
@@ -230,9 +230,9 @@
       maxRange: 512
       followEntity: true
     - type: RadarBlip
+      visibleFromOtherGrids: true
       radarColor: "#a63536"
       scale: 5
-      requireNoGrid: true
       shape: diamond
     - type: StaticPrice
       price: 15000
