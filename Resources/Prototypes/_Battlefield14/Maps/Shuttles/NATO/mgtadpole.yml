@@ -1,27 +1,27 @@
 - type: vessel
-  id: Tadpole-20L
+  id: M20L
   parent: BaseVesselAntag
-  name: USMC Tadpole-20L
-  description: Prototype security gunship, equipped with M5 Browning gun systems.
+  name: USMC Bradley M20L Gunner
+  description: Next-Generation Bradley vehicle, equipped with M5 Browning gun systems.
   price: 10000
   purchasable: false # voucher only, money doesn't matter
   category: Small
   shuttlePath: /Maps/_Battlefield14/Shuttles/NATO/mgtadpole.yml
 
 - type: gameMap
-  id: Tadpole-20L
-  mapName: 'USMC Tadpole-20L'
+  id: M20L
+  mapName: 'USMC Bradley M20L Gunner'
   mapPath: /Maps/_Battlefield14/Shuttles/NATO/mgtadpole.yml
   minPlayers: 0
   stations:
-    Tadpole-20L:
+    M20L:
       stationProto: StandardFrontierSecurityVessel
       gridComponents:
       - type: VesselInfo
-        description: "Prototype security gunship, equipped with M5 Browning gun systems."
+        description: "Next-Generation Bradley vehicle, equipped with M5 Browning gun systems."
       components:
       - type: StationNameSetup
-        mapNameTemplate: 'USMC Tadpole-20L {1}'
+        mapNameTemplate: 'USMC Bradley M20L Gunner{1}'
         nameGenerator:
           !type:NanotrasenNameGenerator
           prefixCreator: '14'

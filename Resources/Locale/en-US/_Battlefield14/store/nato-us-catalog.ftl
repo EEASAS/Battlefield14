@@ -101,11 +101,11 @@ uplink-natous-M242-APDS-desc = One 25mm APDS magazine for the M242 Bushmaster.
 
 ## Ships
 
-uplink-natous-tadpole-mg-name = Tadpole-20L ship voucher
-uplink-natous-tadpole-mg-desc = Prototype Tadpole-20 light security gunship fitted with 4 M5 Browning systems.
+uplink-natous-bradley-mg-name = Bradley M20L 'Gunner' ship voucher
+uplink-natous-bradley-mg-desc = Next-Generation Bradley M20L 'Gunner' light security gunship fitted with 4 M5 Browning systems.
 
-uplink-natous-tadpole-tow-name = Tadpole-20T ship voucher
-uplink-natous-tadpole-tow-desc = Prototype Tadpole-20 light security gunship fitted with 1 TOW-3 system and a Bushmaster 25mm autocannon, preloaded with Frag.
+uplink-natous-bradley-tow-name = Bradley M20 IFV ship voucher
+uplink-natous-bradley-tow-desc = Next-Generation Bradley M20 Infantry Fighting Vehicle fitted with 1 TOW-3 system and a Bushmaster 25mm autocannon, preloaded with Frag.
 
-uplink-natous-tadpole-aa-name = Tadpole-20A ship voucher
-uplink-natous-tadpole-aa-desc = Prototype Tadpole-20 light security gunship fitted with 4 CIWS anti-air defense systems.
+uplink-natous-bradley-aa-name = Bradley M20A 'Linebacker' ship voucher
+uplink-natous-bradley-aa-desc = Next-Generation Bradley M20A 'Linebacker' light security gunship fitted with 4 CIWS anti-air defense systems.

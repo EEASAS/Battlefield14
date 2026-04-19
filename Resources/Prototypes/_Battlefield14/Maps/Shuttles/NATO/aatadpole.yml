@@ -1,27 +1,27 @@
 - type: vessel
-  id: Tadpole-20A
+  id: M20A
   parent: BaseVesselAntag
-  name: USMC Tadpole-20A
-  description: Prototype security gunship, equipped with CIWS gun systems.
+  name: USMC Bradley M20A Linebacker
+  description: Next-Generation Bradley vehicle, equipped with CIWS gun systems.
   price: 10000
   purchasable: false # voucher only, money doesn't matter
   category: Small
   shuttlePath: /Maps/_Battlefield14/Shuttles/NATO/aatadpole.yml
 
 - type: gameMap
-  id: Tadpole-20A
-  mapName: 'USMC Tadpole-20A'
+  id: M20A
+  mapName: 'USMC Bradley M20A Linebacker'
   mapPath: /Maps/_Battlefield14/Shuttles/NATO/aatadpole.yml
   minPlayers: 0
   stations:
-    Tadpole-20A:
+    M20A:
       stationProto: StandardFrontierSecurityVessel
       gridComponents:
       - type: VesselInfo
-        description: "Prototype security gunship, equipped with CIWS gun systems."
+        description: "Next-Generation Bradley vehicle, equipped with CIWS gun systems."
       components:
       - type: StationNameSetup
-        mapNameTemplate: 'USMC Tadpole-20A {1}'
+        mapNameTemplate: 'USMC Bradley M20A Linebacker{1}'
         nameGenerator:
           !type:NanotrasenNameGenerator
           prefixCreator: '14'

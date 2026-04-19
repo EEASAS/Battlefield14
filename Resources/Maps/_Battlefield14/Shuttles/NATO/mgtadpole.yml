@@ -917,31 +917,31 @@ entities:
         stampedColor: '#4C653AFF'
         stampedName: stamp-component-stamped-name-hos
       content: >+
-        Congratulations on your new Tadpole-20 security gunship purchase!
+        Congratulations on your new Bradley M20 IFV purchase!
 
 
         There are 3 models available:
 
-        Tadpole-20L, armed with M5 Browning .50 BMG machine guns
+        M20L, armed with M5 Browning .50 BMG machine guns
 
-        Tadpole-20A, armed with CIWS anti-air defense systems.
+        M20A, armed with CIWS anti-air defense systems.
 
-        Tadpole-20T, armed with TOW-3 Anti-Tank Guided Missiles.
+        M20, armed with TOW-3 Anti-Tank Guided Missiles.
 
 
-        Complimentary ammo has been placed in your gunship.
+        Complimentary ammo has been placed in your vehicle.
 
 
         You can toggle the viewing, left and right blast doors with the associated buttons.
 
 
-        The Tadpole-20 does not have a reverse gear. It is recommended to drive it in "Park" mode.
+        The Bradley does not have a reverse gear. It is recommended to drive it in "Park" mode.
 
 
-        The Tadpole-20 does not have IFF. Be careful with your allies and enemies.
+        The Bradley does not have IFF. Be careful with your allies and enemies.
 
 
-        If you will ever have to reload the guns, you must walk outside of the Tadpole and manually reload them.
+        If you will ever have to reload the guns, you must walk outside of the Bradley and manually reload them.
 
     - type: Tag
       tags:

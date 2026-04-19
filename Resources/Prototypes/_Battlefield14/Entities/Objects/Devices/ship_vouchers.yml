@@ -22,9 +22,9 @@
 
 - type: entity
   parent: BaseShipLPC
-  id: ShipVoucherTadpoleAA
-  name: USMC Tadpole-20A AA Gunship
-  description: A small card that contains the data for the procurement of a Tadpole-20A AA Gunship from naval reserves.
+  id: ShipVoucherBradleyAA
+  name: USMC Bradley M20A 'Linebacker' AA Gunship
+  description: A small card that contains the data for the procurement of a Bradley M20A 'Linebacker' AA Gunship from naval reserves.
   components:
   - type: Sprite
     layers:
@@ -36,13 +36,13 @@
     consoleType: Custom
     companyName: USMC
     vessels:
-    - Tadpole-20A
+    - M20A
 
 - type: entity
   parent: BaseShipLPC
-  id: ShipVoucherTadpoleMG
-  name: USMC Tadpole-20L MG Gunship
-  description: A small card that contains the data for the procurement of a Tadpole-20L MG Gunship from naval reserves.
+  id: ShipVoucherBradleyMG
+  name: USMC Bradley M20L 'Gunner' MG Gunship
+  description: A small card that contains the data for the procurement of a Bradley M20L 'Gunner' MG Gunship from naval reserves.
   components:
   - type: Sprite
     layers:
@@ -54,13 +54,13 @@
     consoleType: Custom
     companyName: USMC
     vessels:
-    - Tadpole-20L
+    - M20L
 
 - type: entity
   parent: BaseShipLPC
-  id: ShipVoucherTowpole
-  name: USMC Tadpole-20T 'Towpole'
-  description: A small card that contains the data for the procurement of a Tadpole-20T TOW-3 and autocannon Gunship.
+  id: ShipVoucherBradleyTow
+  name: USMC Bradley M20 IFV
+  description: A small card that contains the data for the procurement of a Bradley M20 TOW-3 and autocannon IFV.
   components:
   - type: Sprite
     layers:
@@ -72,7 +72,7 @@
     consoleType: Custom
     companyName: USMC
     vessels:
-    - Tadpole-20T
+    - M20
 
 ### PACT
 ## RU

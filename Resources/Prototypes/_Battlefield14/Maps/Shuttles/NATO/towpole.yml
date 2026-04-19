@@ -1,27 +1,27 @@
 - type: vessel
-  id: Tadpole-20T
+  id: M20
   parent: BaseVesselAntag
-  name: USMC Tadpole-20T
-  description: Prototype security gunship, equipped with TOW-3 gun system and an autocannon. Known as the 'Towpole'
+  name: USMC Bradley M20 IFV
+  description: Next-Generation Bradley vehicle, equipped with a TOW-3 gun system and an autocannon.
   price: 10000
   purchasable: false # voucher only, money doesn't matter
   category: Small
   shuttlePath: /Maps/_Battlefield14/Shuttles/NATO/towpole.yml
 
 - type: gameMap
-  id: Tadpole-20T
-  mapName: 'USMC Tadpole-20T'
+  id: M20
+  mapName: 'USMC Bradley M20 IFV'
   mapPath: /Maps/_Battlefield14/Shuttles/NATO/towpole.yml
   minPlayers: 0
   stations:
-    Tadpole-20T:
+    M20:
       stationProto: StandardFrontierSecurityVessel
       gridComponents:
       - type: VesselInfo
-        description: "Prototype security gunship, equipped with TOW-3 gun system and an autocannon. Known as the 'Towpole'"
+        description: "Next-Generation Bradley vehicle, equipped with a TOW-3 gun system and an autocannon."
       components:
       - type: StationNameSetup
-        mapNameTemplate: 'USMC Tadpole-20T {1}'
+        mapNameTemplate: 'USMC Bradley M20 IFV{1}'
         nameGenerator:
           !type:NanotrasenNameGenerator
           prefixCreator: '14'

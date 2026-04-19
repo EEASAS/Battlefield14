@@ -313,10 +313,10 @@
 # Ship vouchers
 
 - type: listing
-  id: UplinkNATOUSMGTadpole
-  name: uplink-natous-tadpole-mg-name
-  description: uplink-natous-tadpole-mg-desc
-  productEntity: ShipVoucherTadpoleMG
+  id: UplinkNATOUSMGBradley
+  name: uplink-natous-bradley-mg-name
+  description: uplink-natous-bradley-mg-desc
+  productEntity: ShipVoucherBradleyMG
   icon: { sprite: _Mono/Objects/Weapons/Guns/Ammunition/Boxes/generic_shipgun_box.rsi, state: base }
   cost:
     NATORequisition: 50
@@ -329,10 +329,10 @@
           - AmericanUplink
 
 - type: listing
-  id: UplinkNATOUSAATadpole
-  name: uplink-natous-tadpole-aa-name
-  description: uplink-natous-tadpole-aa-desc
-  productEntity: ShipVoucherTadpoleAA
+  id: UplinkNATOUSAABradley
+  name: uplink-natous-bradley-aa-name
+  description: uplink-natous-bradley-aa-desc
+  productEntity: ShipVoucherBradleyAA
   icon: { sprite: _Mono/Objects/Weapons/Guns/Ammunition/Boxes/generic_shipgun_box.rsi, state: base }
   cost:
     NATORequisition: 75
@@ -345,10 +345,10 @@
           - AmericanUplink
 
 - type: listing
-  id: UplinkNATOUSTowpole
-  name: uplink-natous-tadpole-tow-name
-  description: uplink-natous-tadpole-tow-desc
-  productEntity: ShipVoucherTowpole
+  id: UplinkNATOUSBradley
+  name: uplink-natous-bradley-tow-name
+  description: uplink-natous-bradley-tow-desc
+  productEntity: ShipVoucherBradleyTow
   icon: { sprite: _Mono/Objects/Weapons/Guns/Ammunition/Boxes/generic_shipgun_box.rsi, state: base }
   cost:
     NATORequisition: 150
