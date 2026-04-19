@@ -90,6 +90,16 @@
           Log:
             min: 2
             max: 8
+  - type: BarricadeBlock # BF14
+    bidirectional: false
+    omnidirectional: true
+    blocking: 50
+  - type: ExtendDescription # BF14
+    descriptionList:
+      - description: This object can be used as cover.
+        fontSize: 12
+        color: "#4f94ad"
+        requireDetailRange: true
 
 - type: entity
   parent: BaseTree

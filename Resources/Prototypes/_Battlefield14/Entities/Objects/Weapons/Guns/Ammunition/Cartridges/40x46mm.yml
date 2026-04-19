@@ -41,3 +41,50 @@
   - type: Damageable
     damageContainer: Inorganic
     damageModifierSet: Metallic
+
+- type: entity
+  id: Cartridge40x46mmMPAPERS
+  name: cartridge (40x46mm MP-APERS)
+  parent: BaseCartridge40x46
+  components:
+  - type: Item
+    size: Small
+  - type: Tag
+    tags:
+    - Cartridge
+    - Cartridge40x46mmMPAPERS
+    - Cartridge40x46mmGrenade
+  - type: CartridgeAmmo
+    proto: 40x46mmMPAPERSSpread
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Grenades/40x46mm.rsi
+    layers:
+    - state: apers
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+  - type: StaticPrice
+    price: 100
+
+- type: entity
+  id: Cartridge40x46mmIllumination
+  name: cartridge (40x46mm Illumination)
+  parent: BaseCartridge40x46
+  components:
+  - type: Item
+    size: Small
+  - type: Tag
+    tags:
+    - Cartridge
+    - Cartridge40x46mmGrenade
+  - type: CartridgeAmmo
+    proto: Pellet12_gaugeFlare
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Casings/40x46.rsi
+    layers:
+    - state: base
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+  - type: StaticPrice
+    price: 100

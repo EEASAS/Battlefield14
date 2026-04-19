@@ -184,6 +184,20 @@
         amount: 8
 
 - type: entity
+  name: box of 40x46 illumination rounds
+  parent: BoxMagazine
+  id: BoxMagazine40x46mmIllumination
+  description: A box full of 40x46mm illumination flare shells.
+  components:
+  - type: Storage
+    grid:
+    - 0,0,3,3
+  - type: StorageFill
+    contents:
+      - id: Cartridge40x46mmIllumination
+        amount: 8
+
+- type: entity
   name: box of 40x46 plasma grenades
   parent: BoxMagazine
   id: BoxMagazine40x46PlasmaGas
@@ -196,7 +210,6 @@
     contents:
       - id: Cartridge40x46mmPlasmaGas # TODO infantry version
         amount: 8
-
 
 ## RU
 
@@ -353,6 +366,20 @@
   - type: StorageFill
     contents:
       - id: Cartridge43x30mmChemicalSmoke
+        amount: 8
+
+- type: entity
+  name: box of 43x30mm illumination grenades
+  parent: BoxMagazine
+  id: BoxMagazine43x30Illumination
+  description: A box full of illuminating 43x30mm grenades.
+  components:
+  - type: Storage
+    grid:
+    - 0,0,3,3
+  - type: StorageFill
+    contents:
+      - id: Cartridge43x30mmIllumination
         amount: 8
 
 ## Charges

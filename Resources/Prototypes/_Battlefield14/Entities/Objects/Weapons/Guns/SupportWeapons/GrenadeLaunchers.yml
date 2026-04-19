@@ -38,6 +38,11 @@
       params:
         volume: -2
         variation: 0.125
+  - type: ExtendDescription
+    descriptionList:
+      - description: Has a minimum arming distance of 5 tiles.
+        color: "#4f94ad"
+        requireDetailRange: true
 
 - type: entity
   name: M320
@@ -77,6 +82,20 @@
         startingItem: Cartridge40x46mmFrag
         insertSound: /Audio/_Battlefield14/Weapons/Guns/M320/gl_insert.ogg
         ejectSound: /Audio/_Battlefield14/Weapons/Guns/M320/gl_remove.ogg
+
+- type: entity
+  name: M320
+  parent: WeaponGrenadeLauncherUSM320
+  id: WeaponGrenadeLauncherUSM320Illumination
+  suffix: loaded, Flare
+  components:
+  - type: ItemSlots
+    slots:
+      gun_chamber:
+        startingItem: Cartridge40x46mmIllumination
+        insertSound: /Audio/_Battlefield14/Weapons/Guns/M320/gl_insert.ogg
+        ejectSound: /Audio/_Battlefield14/Weapons/Guns/M320/gl_remove.ogg
+
 
 - type: entity
   name: M79 (Embiggened)
@@ -235,6 +254,11 @@
       params:
         volume: -2
   - type: GunRequiresWield
+  - type: ExtendDescription
+    descriptionList:
+      - description: Has a minimum arming distance of 5 tiles.
+        color: "#4f94ad"
+        requireDetailRange: true
 
 - type: entity
   parent: WeaponGrenadeLauncherRUGM94
@@ -259,3 +283,11 @@
   components:
   - type: BallisticAmmoProvider
     proto: Cartridge43x30mmChemicalSmoke
+
+- type: entity
+  parent: WeaponGrenadeLauncherRUGM94
+  id: WeaponGrenadeLauncherRUGM94Illumination
+  suffix: Flare
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge43x30mmIllumination

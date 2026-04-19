@@ -16,9 +16,9 @@
         - !type:ReagentThreshold
           max: 10.5
         damage:
-          Brute: -6
-          Burn: -6
-          Airloss: -6
+          Brute: -10
+          Burn: -10
+          Airloss: -10
       - !type:HealthChange
         conditions:
         - !type:ReagentThreshold

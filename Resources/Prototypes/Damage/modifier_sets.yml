@@ -139,7 +139,7 @@
   coefficients:
     Blunt: 0.5
     Slash: 2.0
-    Piercing: 1.0
+    Piercing: 0.5 # BF14 1.0 > 0.5
     Heat: 2.0
     Structural: 0.5
   flatReductions:

@@ -162,6 +162,8 @@
           amount: 2
         - id: BoxMagazine40x46ChemicalSmoke
           amount: 2
+        - id: BoxMagazine40x46mmIllumination
+          amount: 2
   - type: AccessReader
     access: [["NATOSoldier"]]
 
@@ -409,6 +411,8 @@
         - id: BoxMagazine43x30Thermobaric
           amount: 2
         - id: BoxMagazine43x30ChemicalSmoke
+          amount: 2
+        - id: BoxMagazine43x30Illumination
           amount: 2
   - type: AccessReader
     access: [["PACTSoldier"]]

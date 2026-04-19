@@ -31,8 +31,81 @@
     radius: 3
     color: gray
     energy: 0.5
-  - type: RadarBlip
-    scale: 1.5
-    requireNoGrid: true
-    shape: triangle
-    radarColor: "#666666"
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: BaseBullet
+  id: Bullet40x46mmHEArmingDistance
+  name: 40x46mm HE grenade
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Projectiles/ballistic.rsi
+    layers:
+    - state: grenade
+  - type: Projectile
+    damage:
+      types:
+        Structural: 50
+        Blunt: 40
+    deleteOnCollide: true
+  - type: SubmunitionProjectile
+    submunitionPrototype: Bullet40x46mmHE
+    distanceDelay: 5
+    submunitionDelay: 0
+    submunitionCount: 1
+    spreadAngle: 0
+    velocityMultiplier: 1
+  - type: StaminaDamageOnCollide
+    damage: 20
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: BaseBullet
+  id: Bullet40x46mmHEDPArmingDistance
+  name: 40x46mm HEDP grenade
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Projectiles/ballistic.rsi
+    layers:
+    - state: grenade
+  - type: Projectile
+    damage:
+      types:
+        Structural: 50
+        Blunt: 40
+    deleteOnCollide: true
+  - type: SubmunitionProjectile
+    submunitionPrototype: Bullet40x46mmHEDP
+    distanceDelay: 5
+    submunitionDelay: 0
+    submunitionCount: 1
+    spreadAngle: 0
+    velocityMultiplier: 1
+  - type: StaminaDamageOnCollide
+    damage: 20
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: BaseBullet
+  id: Bullet40x46mmFragArmingDistance
+  name: 40x46mm fragmentation grenade
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Projectiles/ballistic.rsi
+    layers:
+    - state: grenade
+  - type: Projectile
+    damage:
+      types:
+        Structural: 50
+        Blunt: 40
+    deleteOnCollide: true
+  - type: SubmunitionProjectile
+    submunitionPrototype: Bullet40x46mmFrag
+    distanceDelay: 5
+    submunitionDelay: 0
+    submunitionCount: 1
+    spreadAngle: 0
+    velocityMultiplier: 1
+  - type: StaminaDamageOnCollide
+    damage: 20

@@ -122,3 +122,55 @@
     radius: 3
     color: gray
     energy: 0.5
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: BaseBullet
+  id: Bullet43x30mmHEFragArmingDistance
+  name: 43x30mm HE-Frag grenade
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Projectiles/ballistic.rsi
+    layers:
+    - state: grenade
+  - type: Projectile
+    damage:
+      types:
+        Structural: 50
+        Blunt: 40
+    deleteOnCollide: true
+  - type: SubmunitionProjectile
+    submunitionPrototype: Bullet43x30mmHEFrag
+    distanceDelay: 5
+    submunitionDelay: 0
+    submunitionCount: 1
+    spreadAngle: 0
+    velocityMultiplier: 1
+  - type: StaminaDamageOnCollide
+    damage: 20
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: BaseBullet
+  id: Bullet43x30mmThermobaricArmingDistance
+  name: 43x30mm thermobaric grenade
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Projectiles/ballistic.rsi
+    layers:
+    - state: grenade
+  - type: Projectile
+    damage:
+      types:
+        Structural: 50
+        Blunt: 40
+    deleteOnCollide: true
+  - type: SubmunitionProjectile
+    submunitionPrototype: Bullet43x30mmThermobaric
+    distanceDelay: 5
+    submunitionDelay: 0
+    submunitionCount: 1
+    spreadAngle: 0
+    velocityMultiplier: 1
+  - type: StaminaDamageOnCollide
+    damage: 20
