@@ -187,9 +187,20 @@
   - type: BasicEntityAmmoProvider
     proto: BulletRocketStingerMANPADSMissile
     capacity: 1
-  - type: CursorOffsetRequiresWield
-    maxOffset: 5
-    pvsIncrease: 0.25
+  - type: ActivatableUI
+    key: enum.RadarConsoleUiKey.Key
+    inHandsOnly: true
+    singleUser: true
+  - type: UserInterface
+    interfaces:
+      enum.RadarConsoleUiKey.Key:
+        type: RadarConsoleBoundUserInterface
+  - type: RadarConsole
+    maxRange: 512
+    followEntity: true
+  - type: DetectionRangeMultiplier
+    infraredMultiplier: 0.5
+    visualMultiplier: 0.75
 
 # RU
 
@@ -301,6 +312,17 @@
   - type: BasicEntityAmmoProvider
     proto: BulletRocketIglaMANPADSMissile
     capacity: 1
-  - type: CursorOffsetRequiresWield
-    maxOffset: 5
-    pvsIncrease: 0.25
+  - type: ActivatableUI
+    key: enum.RadarConsoleUiKey.Key
+    inHandsOnly: true
+    singleUser: true
+  - type: UserInterface
+    interfaces:
+      enum.RadarConsoleUiKey.Key:
+        type: RadarConsoleBoundUserInterface
+  - type: RadarConsole
+    maxRange: 512
+    followEntity: true
+  - type: DetectionRangeMultiplier
+    infraredMultiplier: 0.5
+    visualMultiplier: 0.75

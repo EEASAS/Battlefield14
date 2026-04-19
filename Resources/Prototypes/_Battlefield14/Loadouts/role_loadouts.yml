@@ -11,7 +11,7 @@
   - BF_CombatMasks
   - BF_SoldierGloves
   - BF_NATOIFF
-  - BF_GoggleCover
+  - BF_HelmetAttachmentNATO
   - BF_BackpacksTan
   - BF_MiscItemsNATO
   - BF_PistolsUSMCSL
@@ -24,7 +24,7 @@
   - BF_CombatMasks
   - BF_SoldierGloves
   - BF_NATOIFF
-  - BF_GoggleCover
+  - BF_HelmetAttachmentNATO
   - BF_BackpacksTan
   - BF_MiscItemsNATO
   - ContractorWallet
@@ -36,7 +36,7 @@
   - BF_CombatMasks
   - BF_SoldierGloves
   - BF_NATOIFF
-  - BF_GoggleCover
+  - BF_HelmetAttachmentNATO
   - BF_BackpacksTan
   - BF_MiscItemsNATO
   - BF_PistolsUSMCSL
@@ -59,7 +59,7 @@
   - BF_CombatMasks
   - BF_SoldierGloves
   - BF_NATOIFF
-  - BF_GoggleCover
+  - BF_HelmetAttachmentNATO
   - BF_BackpacksTan
   - BF_MiscItemsNATO
   - ContractorWallet
@@ -109,7 +109,7 @@
   - BF_CombatMasks
   - BF_SoldierGloves
   - BF_PACTIFF
-  - BF_GoggleCover
+  - BF_HelmetAttachmentPACT
   - BF_VDVHead
   - BF_BackpacksBlack
   - BF_MiscItemsPACT
@@ -123,7 +123,7 @@
   - BF_CombatMasks
   - BF_SoldierGloves
   - BF_PACTIFF
-  - BF_GoggleCover
+  - BF_HelmetAttachmentPACT
   - BF_VDVHead
   - BF_BackpacksBlack
   - BF_MiscItemsPACT
@@ -136,7 +136,7 @@
   - BF_CombatMasks
   - BF_SoldierGloves
   - BF_PACTIFF
-  - BF_GoggleCover
+  - BF_HelmetAttachmentPACT
   - BF_VDVHead
   - BF_BackpacksBlack
   - BF_MiscItemsPACT
@@ -161,7 +161,7 @@
   - BF_CombatMasks
   - BF_SoldierGloves
   - BF_PACTIFF
-  - BF_GoggleCover
+  - BF_HelmetAttachmentPACT
   - BF_VDVHead
   - BF_BackpacksBlack
   - BF_MiscItemsPACT

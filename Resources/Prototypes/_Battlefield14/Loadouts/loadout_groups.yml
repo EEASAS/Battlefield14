@@ -16,6 +16,25 @@
   - LoadoutHelmetAttachmentGogglesCoverOlive
   - LoadoutHelmetAttachmentGogglesCoverTan
 
+- type: loadoutGroup
+  id: BF_HelmetAttachmentNATO
+  name: loadout-group-BF14-helmetattachment
+  minLimit: 0
+  loadouts:
+  - LoadoutHelmetAttachmentGogglesCoverBlack
+  - LoadoutHelmetAttachmentGogglesCoverTan
+  - LoadoutHelmetAttachmentHelmetCameraNATO
+
+- type: loadoutGroup
+  id: BF_HelmetAttachmentPACT
+  name: loadout-group-BF14-helmetattachment
+  minLimit: 0
+  loadouts:
+  - LoadoutHelmetAttachmentGogglesCoverBlack
+  - LoadoutHelmetAttachmentGogglesCoverOlive
+  - LoadoutHelmetAttachmentHelmetCameraPACT
+
+
 # EYES
 
 - type: loadoutGroup

@@ -5,6 +5,7 @@ loadout-group-BF14-natoiff = NATO IFF
 loadout-group-BF14-pactiff = PACT IFF
 loadout-group-BF14-vdvhead = VDV head
 loadout-group-BF14-gogglecovers = Goggle cover
+loadout-group-BF14-helmetattachment = Helmet attachment
 loadout-group-BF14-backpack = Backpack
 loadout-group-BF14-miscitem = Misc. Item
 loadout-group-BF14-sidearm = Sidearm

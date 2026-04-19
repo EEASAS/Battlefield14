@@ -1,0 +1,64 @@
+- type: entity
+  parent: ClothingHelmetAttachmentBase
+  id: ClothingHelmetAttachmentHelmetCamera
+  name: helmet camera
+  description: Goggles cover to fit your goggle when not in use, worn in the helmet attachment slot.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Clothing/HelmetAttachment/helmetcamera.rsi
+  - type: Clothing
+    sprite: _Battlefield14/Clothing/HelmetAttachment/helmetcamera.rsi
+    clothingVisuals:
+      helmetattachment:
+      - state: equipped-HELMETATTACHMENT
+  - type: DeviceNetwork
+    deviceNetId: Wireless
+    receiveFrequencyId: SurveillanceCamera
+    transmitFrequencyId: SurveillanceCamera
+  - type: Eye
+  - type: SurveillanceCamera
+    setupAvailableNetworks:
+      - SurveillanceCameraEntertainment
+    id: helmetcam
+  - type: SurveillanceCameraMicrophone
+    blacklist:
+      components:
+        - SurveillanceCamera
+        - SurveillanceCameraMonitor
+        - RadioSpeaker
+  - type: ActiveListener
+    range: 6 # Frontier 10>6
+  - type: UserInterface
+    interfaces:
+      enum.SurveillanceCameraSetupUiKey.Camera:
+        type: SurveillanceCameraSetupBoundUi
+  - type: ClothingGrantComponent
+    component:
+    - type: StationAiVision
+      range: 4
+
+- type: entity
+  parent: ClothingHelmetAttachmentHelmetCamera
+  id: ClothingHelmetAttachmentHelmetCameraNATO
+  suffix: NATO
+  components:
+  - type: DeviceNetwork
+    deviceNetId: 6967
+    receiveFrequencyId: SurveillanceCamera
+    transmitFrequencyId: SurveillanceCamera
+  - type: SurveillanceCamera
+    setupAvailableNetworks:
+      - SurveillanceCameraNATO
+
+- type: entity
+  parent: ClothingHelmetAttachmentHelmetCamera
+  id: ClothingHelmetAttachmentHelmetCameraPACT
+  suffix: PACT
+  components:
+  - type: DeviceNetwork
+    deviceNetId: 1945
+    receiveFrequencyId: SurveillanceCamera
+    transmitFrequencyId: SurveillanceCamera
+  - type: SurveillanceCamera
+    setupAvailableNetworks:
+      - SurveillanceCameraPACT

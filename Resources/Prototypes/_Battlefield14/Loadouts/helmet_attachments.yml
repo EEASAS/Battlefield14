@@ -12,3 +12,18 @@
   id: LoadoutHelmetAttachmentGogglesCoverTan
   equipment:
     helmetattachment: ClothingHelmetAttachmentGogglesCoverTan
+
+- type: loadout
+  id: LoadoutHelmetAttachmentHelmetCamera
+  equipment:
+    helmetattachment: ClothingHelmetAttachmentHelmetCamera
+
+- type: loadout
+  id: LoadoutHelmetAttachmentHelmetCameraNATO
+  equipment:
+    helmetattachment: ClothingHelmetAttachmentHelmetCameraNATO
+
+- type: loadout
+  id: LoadoutHelmetAttachmentHelmetCameraPACT
+  equipment:
+    helmetattachment: ClothingHelmetAttachmentHelmetCameraPACT

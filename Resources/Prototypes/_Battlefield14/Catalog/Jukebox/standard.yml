@@ -36,6 +36,12 @@
    path:
      path: /Audio/_Battlefield14/Jukebox/farben.ogg
 
+ - type: jukebox
+   id: devildog
+   name: The Warrior Song - Sean Householder
+   path:
+     path: /Audio/_Battlefield14/Lobby/devildog.ogg
+
 # Eastern / east associated songs
 
  - type: jukebox

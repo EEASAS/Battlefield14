@@ -1,0 +1,47 @@
+- type: entity
+  parent: SurveillanceCameraWirelessRouterBase
+  id: SurveillanceCameraWirelessRouterNATO
+  name: NATO wireless camera router
+  suffix: NATO
+  components:
+    - type: DeviceNetwork
+      deviceNetId: 6967
+    - type: SurveillanceCameraRouter
+      subnetFrequency: SurveillanceCameraNATO
+
+- type: entity
+  parent: SurveillanceCameraWirelessRouterBase
+  id: SurveillanceCameraWirelessRouterPACT
+  name: PACT wireless camera router
+  suffix: PACT
+  components:
+    - type: DeviceNetwork
+      deviceNetId: 1945
+    - type: SurveillanceCameraRouter
+      subnetFrequency: SurveillanceCameraPACT
+
+- type: entity
+  parent: ComputerSurveillanceWirelessCameraMonitor
+  id: ComputerSurveillanceWirelessCameraMonitorNATO
+  name: NATO wireless camera monitor
+  suffix: NATO
+  components:
+  - type: DeviceNetwork
+    deviceNetId: 6967
+    receiveFrequencyId: SurveillanceCamera
+    transmitFrequencyId: SurveillanceCamera
+  - type: WirelessNetworkConnection
+    range: 10000
+
+- type: entity
+  parent: ComputerSurveillanceWirelessCameraMonitor
+  id: ComputerSurveillanceWirelessCameraMonitorPACT
+  name: PACT wireless camera monitor
+  suffix: PACT
+  components:
+  - type: DeviceNetwork
+    deviceNetId: 1945
+    receiveFrequencyId: SurveillanceCamera
+    transmitFrequencyId: SurveillanceCamera
+  - type: WirelessNetworkConnection
+    range: 10000

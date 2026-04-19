@@ -1,0 +1,9 @@
+- type: deviceFrequency
+  id: SurveillanceCameraNATO
+  name: device-frequency-prototype-name-nato
+  frequency: 6967
+
+- type: deviceFrequency
+  id: SurveillanceCameraPACT
+  name: device-frequency-prototype-name-pact
+  frequency: 1945
