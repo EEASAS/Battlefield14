@@ -4,8 +4,8 @@ meta:
   engineVersion: 264.0.0
   forkId: ""
   forkVersion: ""
-  time: 04/18/2026 01:54:26
-  entityCount: 3741
+  time: 04/19/2026 10:07:05
+  entityCount: 3742
 maps: []
 grids:
 - 1
@@ -119,10 +119,10 @@ entities:
     - type: OccluderTree
     - type: SpreaderGrid
       spreadQueues:
-        Smoke: []
-        Kudzu: []
         MetalFoam: []
+        Kudzu: []
         Puddle: []
+        Smoke: []
     - type: Shuttle
       dampingModifier: 0.25
     - type: GridPathfinding
@@ -1424,7 +1424,7 @@ entities:
       pos: 20.5,-21.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -17422.342
+      secondsUntilStateChange: -17552.52
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -10590,12 +10590,6 @@ entities:
       rot: 3.141592653589793 rad
       pos: 12.5,-31.5
       parent: 1
-  - uid: 421
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 13.5,-32.5
-      parent: 1
   - uid: 422
     components:
     - type: Transform
@@ -10839,6 +10833,17 @@ entities:
     - type: Transform
       pos: 12.5,-30.5
       parent: 1
+- proto: ComputerSurveillanceWirelessCameraMonitorNATO
+  entities:
+  - uid: 421
+    components:
+    - type: Transform
+      pos: 13.5,-32.5
+      parent: 1
+    - type: ApcPowerReceiver
+      powerLoad: 5
+    - type: Battery
+      startingCharge: 0
 - proto: ComputerTabletopAlert
   entities:
   - uid: 433
@@ -12440,7 +12445,7 @@ entities:
       pos: 10.5,-42.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -15260.745
+      secondsUntilStateChange: -15390.924
       state: Closing
   - uid: 2294
     components:
@@ -19466,6 +19471,13 @@ entities:
     components:
     - type: Transform
       pos: 24.5,-41.5
+      parent: 1
+- proto: SurveillanceCameraWirelessRouterNATO
+  entities:
+  - uid: 3742
+    components:
+    - type: Transform
+      pos: 25.5,-40.5
       parent: 1
 - proto: Table
   entities:
