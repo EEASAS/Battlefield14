@@ -2,7 +2,7 @@
   parent: ClothingHelmetAttachmentBase
   id: ClothingHelmetAttachmentHelmetCamera
   name: helmet camera
-  description: Goggles cover to fit your goggle when not in use, worn in the helmet attachment slot.
+  description: A helmet mounted camera for recording footage for after action reports, live battlefield updates, and your sick frag compilation.
   components:
   - type: Sprite
     sprite: _Battlefield14/Clothing/HelmetAttachment/helmetcamera.rsi

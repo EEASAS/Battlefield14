@@ -4,8 +4,8 @@ meta:
   engineVersion: 264.0.0
   forkId: ""
   forkVersion: ""
-  time: 04/16/2026 05:55:42
-  entityCount: 3318
+  time: 04/19/2026 10:09:05
+  entityCount: 3320
 maps: []
 grids:
 - 1
@@ -483,10 +483,10 @@ entities:
     - type: GridPathfinding
     - type: SpreaderGrid
       spreadQueues:
-        Kudzu: []
-        Smoke: []
         MetalFoam: []
+        Kudzu: []
         Puddle: []
+        Smoke: []
     - type: GravityShake
       shakeTimes: 10
     - type: GasTileOverlay
@@ -11111,15 +11111,6 @@ entities:
       powerLoad: 5
     - type: Battery
       startingCharge: 0
-  - uid: 959
-    components:
-    - type: Transform
-      pos: 20.5,33.5
-      parent: 1
-    - type: ApcPowerReceiver
-      powerLoad: 5
-    - type: Battery
-      startingCharge: 0
 - proto: ComputerPowerMonitoring
   entities:
   - uid: 1234
@@ -11146,12 +11137,12 @@ entities:
     - type: Transform
       pos: 22.5,33.5
       parent: 1
-- proto: ComputerSurveillanceCameraMonitor
+- proto: ComputerSurveillanceWirelessCameraMonitorPACT
   entities:
-  - uid: 965
+  - uid: 959
     components:
     - type: Transform
-      pos: 26.5,33.5
+      pos: 20.5,33.5
       parent: 1
     - type: ApcPowerReceiver
       powerLoad: 5
@@ -11222,6 +11213,18 @@ entities:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 20.5,29.5
+      parent: 1
+    - type: ApcPowerReceiver
+      powerLoad: 5
+    - type: Battery
+      startingCharge: 0
+- proto: ComputerTabletopSurveillanceCameraMonitor
+  entities:
+  - uid: 3320
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 19.5,33.5
       parent: 1
     - type: ApcPowerReceiver
       powerLoad: 5
@@ -13420,6 +13423,13 @@ entities:
       rot: 3.141592653589793 rad
       pos: 36.5,35.5
       parent: 1
+- proto: PottedPlant2
+  entities:
+  - uid: 965
+    components:
+    - type: Transform
+      pos: 26.5,33.5
+      parent: 1
 - proto: PowerCageRecharger
   entities:
   - uid: 884
@@ -15285,6 +15295,13 @@ entities:
     components:
     - type: Transform
       pos: 32.5,40.5
+      parent: 1
+- proto: SurveillanceCameraWirelessRouterPACT
+  entities:
+  - uid: 3274
+    components:
+    - type: Transform
+      pos: 6.5,9.5
       parent: 1
 - proto: SyringeCaseFilledBF14
   entities:
