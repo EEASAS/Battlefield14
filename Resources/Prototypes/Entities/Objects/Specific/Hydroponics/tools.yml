@@ -125,7 +125,7 @@
   - type: Item
     sprite: Objects/Tools/Hydroponics/spade.rsi
   - type: Shovel
-    speedModifier: 0.75 # slower at digging than a full-sized shovel
+    speedModifier: 0.6 # BF14 0.75 > 0.6 | slower at digging than a full-sized shovel
 
 - type: entity
   name: plant bag
