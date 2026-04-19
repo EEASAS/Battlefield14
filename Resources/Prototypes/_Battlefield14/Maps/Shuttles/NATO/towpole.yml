@@ -2,7 +2,7 @@
   id: Tadpole-20T
   parent: BaseVesselAntag
   name: USMC Tadpole-20T
-  description: Prototype security gunship, equipped with TOW-3 gun systems. Known as the 'Towpole'
+  description: Prototype security gunship, equipped with TOW-3 gun system and an autocannon. Known as the 'Towpole'
   price: 10000
   purchasable: false # voucher only, money doesn't matter
   category: Small
@@ -18,7 +18,7 @@
       stationProto: StandardFrontierSecurityVessel
       gridComponents:
       - type: VesselInfo
-        description: "Prototype security gunship, equipped with TOW-3 gun systems. Known as the 'Towpole'"
+        description: "Prototype security gunship, equipped with TOW-3 gun system and an autocannon. Known as the 'Towpole'"
       components:
       - type: StationNameSetup
         mapNameTemplate: 'USMC Tadpole-20T {1}'

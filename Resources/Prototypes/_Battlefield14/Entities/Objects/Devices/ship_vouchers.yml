@@ -60,7 +60,7 @@
   parent: BaseShipLPC
   id: ShipVoucherTowpole
   name: USMC Tadpole-20T 'Towpole'
-  description: A small card that contains the data for the procurement of a Tadpole-20T TOW-3 Gunship.
+  description: A small card that contains the data for the procurement of a Tadpole-20T TOW-3 and autocannon Gunship.
   components:
   - type: Sprite
     layers:

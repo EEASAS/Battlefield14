@@ -105,7 +105,7 @@ uplink-natous-tadpole-mg-name = Tadpole-20L ship voucher
 uplink-natous-tadpole-mg-desc = Prototype Tadpole-20 light security gunship fitted with 4 M5 Browning systems.
 
 uplink-natous-tadpole-tow-name = Tadpole-20T ship voucher
-uplink-natous-tadpole-tow-desc = Prototype Tadpole-20 light security gunship fitted with 4 TOW-3 systems.
+uplink-natous-tadpole-tow-desc = Prototype Tadpole-20 light security gunship fitted with 1 TOW-3 system and a Bushmaster 25mm autocannon, preloaded with Frag.
 
 uplink-natous-tadpole-aa-name = Tadpole-20A ship voucher
 uplink-natous-tadpole-aa-desc = Prototype Tadpole-20 light security gunship fitted with 4 CIWS anti-air defense systems.
