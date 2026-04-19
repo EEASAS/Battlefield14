@@ -13,8 +13,8 @@
               amount: 1
             - !type:DeleteEntity
           steps:
-            - tool: Anchoring
-              doAfter: 5
+            - tool: Digging
+              doAfter: 4
 
     - node: MortarM252Assembly
       entity: MortarNATOUS81mmM252Assembly
@@ -28,8 +28,8 @@
               amount: 1
             - !type:DeleteEntity
           steps:
-            - tool: Anchoring
-              doAfter: 5
+            - tool: Digging
+              doAfter: 4
 
 
     - node: MortarM252Deployed
@@ -44,8 +44,8 @@
               amount: 1
             - !type:DeleteEntity
           steps:
-            - tool: Anchoring
-              doAfter: 5
+            - tool: Digging
+              doAfter: 4
 
 
 - type: constructionGraph
@@ -63,8 +63,8 @@
               amount: 1
             - !type:DeleteEntity
           steps:
-            - tool: Anchoring
-              doAfter: 5
+            - tool: Digging
+              doAfter: 4
 
     - node: Mortar2B14Assembly
       entity: MortarPACTRU82mm2B14Assembly
@@ -78,8 +78,8 @@
               amount: 1
             - !type:DeleteEntity
           steps:
-            - tool: Anchoring
-              doAfter: 5
+            - tool: Digging
+              doAfter: 4
 
 
     - node: Mortar2B14Deployed
@@ -94,5 +94,5 @@
               amount: 1
             - !type:DeleteEntity
           steps:
-            - tool: Anchoring
-              doAfter: 5
+            - tool: Digging
+              doAfter: 4

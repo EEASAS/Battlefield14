@@ -30,7 +30,7 @@
   - type: Tool
     qualities:
       - Digging
-    speedModifier: 0.6
+    speedModifier: 0.7
     useSound:
       path: /Audio/Items/shovel_dig.ogg
   - type: MultipleTool

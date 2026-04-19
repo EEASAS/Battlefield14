@@ -17,6 +17,7 @@
         - Pen
         - Paper
         - Document
+        - BotanyShovel
       components:
         - EyeCursorOffset
         - BasicCalculator
@@ -24,12 +25,11 @@
   - type: StorageFill
     contents:
       - id: Rangefinder
+      - id: EntrenchingTool
       - id: HandheldGPSBasic
         amount: 2
-      - id: Wrench
       - id: MortarCalculatorGreen
       - id: BoxFolderBlack
-      - id: Pen
   - type: Sprite
     layers:
       - state: box_security
