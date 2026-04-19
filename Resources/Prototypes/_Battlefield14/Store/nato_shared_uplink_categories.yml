@@ -319,7 +319,7 @@
   productEntity: ShipVoucherBradleyMG
   icon: { sprite: _Mono/Objects/Weapons/Guns/Ammunition/Boxes/generic_shipgun_box.rsi, state: base }
   cost:
-    NATORequisition: 50
+    NATORequisition: 30
   categories:
     - UplinkNATOUSShips
   conditions:
@@ -335,7 +335,7 @@
   productEntity: ShipVoucherBradleyAA
   icon: { sprite: _Mono/Objects/Weapons/Guns/Ammunition/Boxes/generic_shipgun_box.rsi, state: base }
   cost:
-    NATORequisition: 75
+    NATORequisition: 50
   categories:
     - UplinkNATOUSShips
   conditions:
@@ -351,7 +351,7 @@
   productEntity: ShipVoucherBradleyTow
   icon: { sprite: _Mono/Objects/Weapons/Guns/Ammunition/Boxes/generic_shipgun_box.rsi, state: base }
   cost:
-    NATORequisition: 150
+    NATORequisition: 100
   categories:
     - UplinkNATOUSShips
   conditions:
