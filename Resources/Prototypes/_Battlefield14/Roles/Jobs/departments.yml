@@ -3,7 +3,7 @@
   name: department-USMC-name
   description: department-USMC-description
   color: "#203564"
-  weight: 75
+  weight: 85
   roles:
   - USMCSquadLeader
   - USMCRifleman
@@ -16,18 +16,33 @@
   name: department-USSF-name
   description: department-USSF-description
   color: "#203564"
-  weight: 74
+  weight: 84
   roles:
   - USSFCaptain
   - USSFCrewman
   - USSFFighterPilot
 
 - type: department
+  id: ARNG
+  name: department-NG-name
+  description: department-NG-description
+  color: "#203564"
+  weight: 83
+  roles:
+#  - NGLieutenant
+  - NGSquadLeader
+  - NGRifleman
+  - NGAutomaticRifleman
+  - NGMedic
+  - NGRecon
+  editorHidden: true
+
+- type: department
   id: VDV
   name: department-VDV-name
   description: department-VDV-description
   color: "#a02829"
-  weight: 70
+  weight: 75
   roles:
   - VDVSquadLeader
   - VDVRifleman
@@ -40,7 +55,7 @@
   name: department-VKS-name
   description: department-VKS-description
   color: "#203564"
-  weight: 69
+  weight: 74
   roles:
   - VKSCaptain
   - VKSCrewman

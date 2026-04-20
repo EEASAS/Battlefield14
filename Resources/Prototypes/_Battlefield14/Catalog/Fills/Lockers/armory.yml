@@ -5,7 +5,7 @@
 - type: entity
   id: LockerArmoryNATOFilledM249Para
   suffix: Filled, M249 Para
-  parent: LockerSyndicatePersonal
+  parent: LockerArmoryNATOSoldier
   name: M249 Para locker
   components:
   - type: StorageFill
@@ -20,7 +20,7 @@
 - type: entity
   id: LockerArmoryNATOFilledM27IAR
   suffix: Filled, M27IAR
-  parent: LockerSyndicatePersonal
+  parent: LockerArmoryNATOSoldier
   name: M27-IAR locker
   components:
   - type: StorageFill
@@ -35,7 +35,7 @@
 - type: entity
   id: LockerArmoryNATOFilledM320
   suffix: Filled, M320
-  parent: LockerSyndicatePersonal
+  parent: LockerArmoryNATOSoldier
   name: M320 locker
   components:
   - type: StorageFill
@@ -53,7 +53,7 @@
 
 - type: entity
   id: LockerArmoryNATOFilledF22
-  parent: LockerSyndicatePersonal
+  parent: LockerArmoryNATOSoldier
   suffix: Filled, F-22 equipment
   name: F-22 "Raptor" equipment locker
   components:
@@ -75,7 +75,7 @@
 
 - type: entity
   id: LockerArmoryPACTFilledSV98
-  parent: LockerSyndicatePersonal
+  parent: LockerArmoryPACTSoldier
   suffix: Filled, SV98
   name: SV-98 locker
   components:
@@ -90,7 +90,7 @@
 
 - type: entity
   id: LockerArmoryPACTFilledSVDS
-  parent: LockerSyndicatePersonal
+  parent: LockerArmoryPACTSoldier
   suffix: Filled, SVDS
   name: SVDS locker
   components:
@@ -105,7 +105,7 @@
 
 - type: entity
   id: LockerArmoryPACTFilledAK203
-  parent: LockerSyndicatePersonal
+  parent: LockerArmoryPACTSoldier
   suffix: Filled, AK203
   name: AK-203 locker
   components:
@@ -124,7 +124,7 @@
 
 - type: entity
   id: LockerArmoryPACTFilledKSK
-  parent: LockerSyndicatePersonal
+  parent: LockerArmoryPACTSoldier
   suffix: Filled, KSK
   name: KSK locker
   components:
@@ -140,7 +140,7 @@
 
 - type: entity
   id: LockerArmoryPACTFilledPKM
-  parent: LockerSyndicatePersonal
+  parent: LockerArmoryPACTSoldier
   suffix: Filled, PKM
   name: PKM locker
   components:
@@ -155,7 +155,7 @@
 
 - type: entity
   id: LockerArmoryPACTFilledSU57
-  parent: LockerSyndicatePersonal
+  parent: LockerArmoryPACTSoldier
   suffix: Filled, SU-57 equipment
   name: SU-57 "Felon" equipment locker
   components:

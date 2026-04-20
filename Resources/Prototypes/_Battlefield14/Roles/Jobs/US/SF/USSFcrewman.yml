@@ -42,6 +42,7 @@
   id: USSFCrewmanGear
   equipment:
     id: USSFCrewmanPDA
+    head: ClothingHeadHatBlacksoft
     ears: ClothingHeadsetAltUS
     jumpsuit: ClothingUniformJumpsuitSpaceForceCrewman
     shoes: ClothingShoesBootsJackFilled

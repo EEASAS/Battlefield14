@@ -55,6 +55,26 @@
 - type: playTimeTracker
   id: JobUSSFFighterPilot
 
+# National Guard
+
+- type: playTimeTracker
+  id: JobNGCaptain
+
+- type: playTimeTracker
+  id: JobNGSquadLeader
+
+- type: playTimeTracker
+  id: JobNGRifleman
+
+- type: playTimeTracker
+  id: JobNGAutomaticRifleman
+
+- type: playTimeTracker
+  id: JobNGMedic
+
+- type: playTimeTracker
+  id: JobNGRecon
+
 ## RU
 
 # VDV

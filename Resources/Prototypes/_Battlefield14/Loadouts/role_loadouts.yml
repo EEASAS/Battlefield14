@@ -96,6 +96,68 @@
   - BF_MiscItemsNATO
   - ContractorWallet
 
+# NG
+
+- type: roleLoadout
+  id: JobNGSquadLeader
+  groups:
+  - BF_SoldierGlassesTan
+  - BF_CombatMasks
+  - BF_SoldierGloves
+  - BF_NATOIFF
+  - BF_HelmetAttachmentNATO
+  - BF_BackpacksTan
+  - BF_MiscItemsNATO
+  - BF_PistolsUSMCSL
+  - ContractorWallet
+
+- type: roleLoadout
+  id: JobNGRifleman
+  groups:
+  - BF_SoldierGlassesTan
+  - BF_CombatMasks
+  - BF_SoldierGloves
+  - BF_NATOIFF
+  - BF_HelmetAttachmentNATO
+  - BF_BackpacksTan
+  - BF_MiscItemsNATO
+  - ContractorWallet
+
+- type: roleLoadout
+  id: JobNGAutomaticRifleman
+  groups:
+  - BF_SoldierGlassesTan
+  - BF_CombatMasks
+  - BF_SoldierGloves
+  - BF_NATOIFF
+  - BF_HelmetAttachmentNATO
+  - BF_BackpacksTan
+  - BF_MiscItemsNATO
+  - BF_PistolsUSMCSL
+  - ContractorWallet
+
+- type: roleLoadout
+  id: JobNGRecon
+  groups:
+  - BF_SoldierGlassesTan
+  - BF_CombatMasks
+  - BF_SoldierGloves
+  - BF_NATOIFF
+  - BF_BackpacksTan
+  - BF_MiscItemsNATO
+  - ContractorWallet
+
+- type: roleLoadout
+  id: JobNGMedic
+  groups:
+  - BF_CombatMasks
+  - BF_SoldierGloves
+  - BF_NATOIFF
+  - BF_HelmetAttachmentNATO
+  - BF_BackpacksTan
+  - BF_MiscItemsNATO
+  - ContractorWallet
+
 ## PACT
 
 ## RU
@@ -203,9 +265,29 @@
 # FSB
 
 - type: roleLoadout
-  id: JobFSBRecon
+  id: JobFSBSquadLeader
   groups:
   - ContractorWallet # required so you spawn with anything
+
+- type: roleLoadout
+  id: JobFSBRifleman
+  groups:
+  - ContractorWallet
+
+- type: roleLoadout
+  id: JobFSBSupport
+  groups:
+  - ContractorWallet
+
+- type: roleLoadout
+  id: JobFSBMedic
+  groups:
+  - ContractorWallet
+
+- type: roleLoadout
+  id: JobFSBRecon
+  groups:
+  - ContractorWallet
 
 ### IND
 

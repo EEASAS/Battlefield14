@@ -35,6 +35,27 @@
       "name": "natospecialforces"
     },
     {
+      "name": "natoallycaptain"
+    },
+    {
+      "name": "natoallysquadleader"
+    },
+    {
+      "name": "natoallyinfantry"
+    },
+    {
+      "name": "natoallysupport"
+    },
+    {
+      "name": "natoallyrecon"
+    },
+    {
+      "name": "natoallymedic"
+    },
+    {
+      "name": "natoallyengineer"
+    },
+    {
       "name": "pactcaptain"
     },
     {
@@ -60,6 +81,9 @@
     },
     {
       "name": "pactspecialforces"
+    },
+    {
+      "name": "pactallysquadleader"
     },
     {
       "name": "indcaptain"

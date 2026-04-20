@@ -547,8 +547,8 @@
       map: ["enum.GunVisualLayers.Mag"]
   - type: Clothing
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AKS74u.rsi
-  - type: Wieldable
-    unwieldOnUse: false
+  - type: Item
+    size: Large
   - type: GunWieldBonus
     minAngle: -14
     maxAngle: -18

@@ -1,0 +1,58 @@
+- type: job
+  id: NGRifleman
+  name: job-name-ng-rifleman
+  description: job-description-ng-rifleman
+  playTimeTracker: JobNGRifleman
+  weight: 77
+  startingGear: NGRiflemanGear
+  alwaysUseSpawner: true
+  icon: "JobIconNATOAllyRifleman"
+  requireAdminNotify: false
+  supervisors: job-supervisors-usgov
+  canBeAntag: false
+  special:
+  - !type:AddLanguageSpecial
+    languagesSpoken:
+    - English
+    languagesUnderstood:
+    - English
+  - !type:AddComponentSpecial
+    components:
+    - type: NpcFactionMember
+      factions:
+      - USMC
+  - !type:AddImplantSpecial
+    implants: [ TrackingImplantNATOUS ]
+  access:
+  - Maintenance
+  - Service
+  - External
+  - Mercenary # Frontier
+  - Captain # Frontier
+  - NATOCommon
+  - NATOMaintenance
+  - NATOSoldier
+  - NATOArmory
+
+- type: startingGear
+  id: NGRiflemanGear
+  equipment:
+    id: NGRiflemanPDA
+    ears: ClothingHeadsetAltUS
+    belt: ClothingBeltMilitaryWebbingUSFilledSTANAG
+    jumpsuit: ClothingUniformJumpsuitCamoUS
+    head: ClothingHeadHatHelmetUS
+#    eyes: ClothingEyesGogglesTan
+    outerClothing: ClothingOuterArmorPlateCarrierTan
+    shoes: ClothingShoesBootsJackFilled
+#    back: ClothingBackpackRucksackTan
+    suitstorage: WeaponRifleUSM16A2
+    pocket1: PouchFirstAidFilled
+    pocket2: PouchGrenadesFilledUSARifleman
+  storage:
+    back:
+    - ArmorPlateMedium
+    - ClothingMaskGasM40
+    - FlashlightMilitaryUS
+    - Tourniquet
+    - Zipties

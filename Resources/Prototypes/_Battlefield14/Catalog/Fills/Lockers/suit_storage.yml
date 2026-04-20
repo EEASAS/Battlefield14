@@ -1,0 +1,27 @@
+- type: entity
+  id: SuitStorageVoidsuitAmericanCombatMarine
+  parent: SuitStorageBase
+  suffix: NATO, US Devil Dog
+  components:
+  - type: StorageFill
+    contents:
+    - id: ClothingOuterVoidsuitAmericanCombatMarine
+    - id: ClothingShoesBootsMagAshenFilled
+    - id: JetpackBlackFilled
+    - id: HandHeldMassScanner
+    - id: HandheldGPSBasic
+    - id: CrowbarRed
+
+- type: entity
+  id: SuitStorageVoidsuitRussianCombat
+  parent: SuitStorageBase
+  suffix: PACT, RU, Goida
+  components:
+  - type: StorageFill
+    contents:
+    - id: ClothingOuterVoidsuitRussianCombat
+    - id: ClothingShoesBootsMagAshenFilled
+    - id: JetpackBlackFilled
+    - id: HandHeldMassScanner
+    - id: HandheldGPSBasic
+    - id: CrowbarRed

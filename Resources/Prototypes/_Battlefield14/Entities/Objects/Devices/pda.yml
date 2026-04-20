@@ -264,6 +264,88 @@
   - type: PdaBorderColor
     borderColor: "#203564"
 
+# ARNG
+
+- type: entity
+  parent: BasePDA
+  id: NGSquadLeaderPDA
+  name: N.G. PDA
+  description: Filled with my little dark age edits.
+  suffix: squad leader
+  components:
+  - type: Icon
+    sprite: _Battlefield14/Objects/Devices/pda.rsi
+    state: pda-us
+  - type: Pda
+    id: NGSquadLeaderIDCard
+    state: pda-us
+  - type: PdaBorderColor
+    borderColor: "#203564"
+
+- type: entity
+  parent: BasePDA
+  id: NGRiflemanPDA
+  name: N.G. PDA
+  description: Filled with my little dark age edits.
+  suffix: rifleman
+  components:
+  - type: Icon
+    sprite: _Battlefield14/Objects/Devices/pda.rsi
+    state: pda-us
+  - type: Pda
+    id: NGRiflemanIDCard
+    state: pda-us
+  - type: PdaBorderColor
+    borderColor: "#203564"
+
+- type: entity
+  parent: NGRiflemanPDA
+  id: NGAutomaticRiflemanPDA
+  name: N.G. PDA
+  description: Filled with my little dark age edits.
+  suffix: automatic rifleman
+  components:
+  - type: Icon
+    sprite: _Battlefield14/Objects/Devices/pda.rsi
+    state: pda-us
+  - type: Pda
+    id: NGAutomaticRiflemanIDCard
+    state: pda-us
+  - type: PdaBorderColor
+    borderColor: "#203564"
+
+- type: entity
+  parent: NGRiflemanPDA
+  id: NGMedicPDA
+  name: N.G. PDA
+  description: Filled with industrial accident and war casualty videos, im sure it's for training.
+  suffix: navy corpsman
+  components:
+  - type: Icon
+    sprite: _Battlefield14/Objects/Devices/pda.rsi
+    state: pda-us
+  - type: Pda
+    id: NGMedicIDCard
+    state: pda-us
+  - type: PdaBorderColor
+    borderColor: "#203564"
+
+- type: entity
+  parent: BasePDA
+  id: NGReconPDA
+  name: N.G. PDA
+  description: Filled with my little dark age edits.
+  suffix: force recon
+  components:
+  - type: Icon
+    sprite: _Battlefield14/Objects/Devices/pda.rsi
+    state: pda-us
+  - type: Pda
+    id: NGReconIDCard
+    state: pda-us
+  - type: PdaBorderColor
+    borderColor: "#203564"
+
 ## RU
 
 # VDV

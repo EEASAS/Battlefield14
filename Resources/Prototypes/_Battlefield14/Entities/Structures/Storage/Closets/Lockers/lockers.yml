@@ -1,0 +1,76 @@
+# NATO
+- type: entity
+  id: LockerArmoryNATO
+  name: armoury closet
+  parent: NFLockerBaseSecure
+  description: It's a personal storage unit for ogovernment issue gear.
+  suffix: NATO Common
+  components:
+  - type: Appearance
+  - type: EntityStorageVisuals
+    stateBaseClosed: nfsd
+    stateDoorOpen: nfsd_open
+    stateDoorClosed: nfsd_door
+  - type: AccessReader
+    access: [["NATOCommon"]]
+  - type: ExtendDescription
+    descriptionList:
+      - description: "This locker requires 'NATO Common' access."
+        fontSize: 12
+        color: "#4f94ad"
+        requireDetailRange: true
+
+- type: entity
+  id: LockerArmoryNATOSoldier
+  name: armoury closet
+  parent: LockerArmoryNATO
+  suffix: NATO Soldier
+  components:
+  - type: Appearance
+  - type: AccessReader
+    access: [["NATOSoldier"]]
+  - type: ExtendDescription
+    descriptionList:
+      - description: "This locker requires 'NATO Soldier' access."
+        fontSize: 12
+        color: "#4f94ad"
+        requireDetailRange: true
+
+# PACT
+
+- type: entity
+  id: LockerArmoryPACT
+  name: armoury closet
+  parent: LockerSyndicatePersonal
+  description: It's a personal storage unit for government issue gear.
+  suffix: PACT Common
+  components:
+  - type: Appearance
+#  - type: EntityStorageVisuals
+#    stateBaseClosed: syndicate
+#    stateDoorOpen: syndicate_open
+#    stateDoorClosed: syndicate_door
+  - type: AccessReader
+    access: [["PACTCommon"]]
+  - type: ExtendDescription
+    descriptionList:
+      - description: "This locker requires 'PACT Common' access."
+        fontSize: 12
+        color: "#4f94ad"
+        requireDetailRange: true
+
+- type: entity
+  id: LockerArmoryPACTSoldier
+  name: armoury closet
+  parent: LockerArmoryPACT
+  suffix: PACT Soldier
+  components:
+  - type: Appearance
+  - type: AccessReader
+    access: [["PACTSoldier"]]
+  - type: ExtendDescription
+    descriptionList:
+      - description: "This locker requires 'PACT Soldier' access."
+        fontSize: 12
+        color: "#4f94ad"
+        requireDetailRange: true

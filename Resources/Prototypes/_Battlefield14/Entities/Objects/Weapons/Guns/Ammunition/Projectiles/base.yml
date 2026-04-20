@@ -3,6 +3,7 @@
   name: bullet
   parent: BaseBullet
   categories: [ HideSpawnMenu ]
+  abstract: true
   components:
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Guns/Projectiles/ballistic.rsi
@@ -22,6 +23,7 @@
   name: bullet
   parent: BaseBullet
   categories: [ HideSpawnMenu ]
+  abstract: true
   components:
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Guns/Projectiles/ballistic.rsi
@@ -43,6 +45,7 @@
   name: bullet
   parent: BaseBullet
   categories: [ HideSpawnMenu ]
+  abstract: true
   components:
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Guns/Projectiles/ballistic.rsi
@@ -62,6 +65,7 @@
   name: bullet
   parent: BaseBullet
   categories: [ HideSpawnMenu ]
+  abstract: true
   components:
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Guns/Projectiles/ballistic.rsi

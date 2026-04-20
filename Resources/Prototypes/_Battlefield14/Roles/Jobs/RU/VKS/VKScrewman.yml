@@ -42,6 +42,7 @@
   id: VKSCrewmanGear
   equipment:
     id: VKSCrewmanPDA
+    head: ClothingHeadHatBlacksoft
     ears: ClothingHeadsetAltRU
     jumpsuit: ClothingUniformJumpsuitVKSCrewman
     shoes: ClothingShoesBootsJackFilled

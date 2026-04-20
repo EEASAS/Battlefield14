@@ -1,0 +1,66 @@
+- type: job
+  id: NGSquadLeader
+  name: job-name-ng-squadleader
+  description: job-description-ng-squadleader
+  playTimeTracker: JobNGSquadLeader
+  weight: 78
+  startingGear: NGSquadLeaderGear
+  alwaysUseSpawner: true
+  icon: "JobIconNATOAllySquadleader"
+  requireAdminNotify: true
+  supervisors: job-supervisors-usgov
+  canBeAntag: false
+  special:
+  - !type:AddLanguageSpecial
+    languagesSpoken:
+    - English
+    - Esperanto
+    languagesUnderstood:
+    - English
+    - Esperanto
+  - !type:AddComponentSpecial
+    components:
+    - type: NpcFactionMember
+      factions:
+      - USMC
+  - !type:AddImplantSpecial
+    implants: [ TrackingImplantNATOUS ]
+  access:
+  - Maintenance
+  - Service
+  - External
+  - Mercenary # Frontier
+  - Captain # Frontier
+  - NATOCommon
+  - NATOCommand
+  - NATOMaintenance
+  - NATOSoldier
+  - NATOArmory
+
+- type: startingGear
+  id: NGSquadLeaderGear
+  equipment:
+    id: NGSquadLeaderPDA
+    ears: ClothingHeadsetAltUS
+    belt: ClothingBeltMilitaryWebbingUSFilledSTANAG
+    jumpsuit: ClothingUniformJumpsuitCamoUS
+    head: ClothingHeadHatHelmetUS
+#    eyes: ClothingEyesGogglesTan
+    outerClothing: ClothingOuterArmorPlateCarrierTan
+    shoes: ClothingShoesBootsJackFilled
+#    back: ClothingBackpackRucksackTan
+    suitstorage: WeaponRifleUSM16A4
+    pocket1: PouchFirstAidFilled
+    pocket2: PouchGrenadesFilledUSARifleman
+    rightarmband: ClothingArmbandThighHolsterFilledUS
+  storage:
+    back:
+    - ArmorPlateMedium
+    - BoxPinpointerUniversalNATO
+    - ClothingMaskGasM40
+    - FlashlightMilitaryUS
+    - MagazinePistolM9
+    - MagazinePistolM9
+    - Whistle
+    - Tourniquet
+    - Zipties

@@ -79,6 +79,57 @@
     sprite: /Textures/_Battlefield14/Interface/Misc/class_icons.rsi
     state: natospecialforces
 
+# NATO allies
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconNATOAllyCaptain
+  icon:
+    sprite: /Textures/_Battlefield14/Interface/Misc/class_icons.rsi
+    state: natoallycaptain
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconNATOAllySquadleader
+  icon:
+    sprite: /Textures/_Battlefield14/Interface/Misc/class_icons.rsi
+    state: natoallysquadleader
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconNATOAllyRifleman
+  icon:
+    sprite: /Textures/_Battlefield14/Interface/Misc/class_icons.rsi
+    state: natoallyinfantry
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconNATOAllySupport
+  icon:
+    sprite: /Textures/_Battlefield14/Interface/Misc/class_icons.rsi
+    state: natoallysupport
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconNATOAllyMedic
+  icon:
+    sprite: /Textures/_Battlefield14/Interface/Misc/class_icons.rsi
+    state: natoallymedic
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconNATOAllyRecon
+  icon:
+    sprite: /Textures/_Battlefield14/Interface/Misc/class_icons.rsi
+    state: natoallyrecon
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconNATOAllyEngineer
+  icon:
+    sprite: /Textures/_Battlefield14/Interface/Misc/class_icons.rsi
+    state: natoallyengineer
+
  # Pact classes
 
 - type: jobIcon

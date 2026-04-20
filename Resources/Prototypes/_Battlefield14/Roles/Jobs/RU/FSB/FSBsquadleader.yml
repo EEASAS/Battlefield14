@@ -4,7 +4,7 @@
   description: job-description-fsb-squadleader
   playTimeTracker: JobFSBSquadLeader
   weight: 78
-  startingGear: FSBSquadLeaderGear
+  startingGear: FSBSquadLeaderGearEVA # EVA for spawning on fland
   alwaysUseSpawner: true
   icon: "JobIconPACTSquadleader"
   requireAdminNotify: false
@@ -47,7 +47,8 @@
     ears: ClothingHeadsetAltRU
     belt: ClothingBeltMilitaryWebbingRUFilledAK74
     jumpsuit: ClothingUniformJumpsuitCamoRUEMR # Gorka
-    head: ClothingHeadHatHelmetRUEMR # blank
+    head: ClothingHeadHatHelmetRUEMR
+    helmetattachment: ClothingHelmetAttachmentNVGsBasic # TODO replace with BF14 version
     balaclava: ClothingBalaclavaMilitary
     eyes: ClothingEyesGogglesGreen
     outerClothing: ClothingOuterArmorPlateCarrierBlack
@@ -60,7 +61,6 @@
     pocket2: PouchGrenadesFilledVDVRifleman
     leftarmband: ClothingArmbandDumpPouchBlack
     rightarmband: ClothingArmbandThighHolsterFilledRUSR1MP
-    wallet: ClothingWalletLeatherBlack
   storage:
     back:
     - ArmorPlateMedium
@@ -82,6 +82,8 @@
     ears: ClothingHeadsetAltRU
     belt: ClothingBeltMilitaryWebbingRUFilledAK74
     jumpsuit: ClothingUniformJumpsuitCamoRUEMR # Gorka
+    head: ClothingHeadHatSkullcrusher
+    helmetattachment: ClothingHelmetAttachmentNVGsBasic # TODO replace with BF14 version
     balaclava: ClothingBalaclavaMilitary
     eyes: ClothingEyesGogglesGreen
     outerClothing: ClothingOuterVoidsuitRussianCombat
@@ -94,7 +96,6 @@
     pocket2: PouchGrenadesFilledVDVRifleman
     leftarmband: ClothingArmbandDumpPouchBlack
     rightarmband: ClothingArmbandThighHolsterFilledRUSR1MP
-    wallet: ClothingWalletLeatherBlack
   storage:
     back:
     - ArmorPlateMedium

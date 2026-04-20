@@ -10,6 +10,13 @@ job-description-ussf-captain = Lead your battlegroup, whether that be from the f
 job-description-ussf-crewman = Maintain whatever capital ship/port you're assigned to.
 job-description-ussf-fighter-pilot = Eviscerate infantry, splash bandits, lust over your F-22 Raptor.
 
+job-description-ng-lieutenant = Take top-down control of your national guard platoon and keep everything running smoothly
+job-description-ng-squadleader = Coordinate optimal Russian shooting.
+job-description-ng-rifleman = Shoot Russians.
+job-description-ng-automatic-rifleman = Lay down suppressing fire and resupply your team-mates.
+job-description-ng-medic = Bring back your buds from the brink, shoot Russians on the side.
+job-description-ng-recon = Go on the flanks and conduct surprise attacks or relay intel.
+
 #Russian Federation#
 
 job-description-vdv-squadleader = Coordinate optimal American shooting.

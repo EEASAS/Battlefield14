@@ -1,10 +1,10 @@
 - type: job
   id: FSBMedic
-  name: job-name-fsb-support
-  description: job-description-fsb-support
+  name: job-name-fsb-medic
+  description: job-description-fsb-medic
   playTimeTracker: JobFSBMedic
   weight: 75
-  startingGear: FSBSupportGear
+  startingGear: FSBMedicGearEVA # EVA for spawning on fland
   alwaysUseSpawner: true
   icon: "JobIconPACTMedic"
   requireAdminNotify: false
@@ -48,7 +48,8 @@
     ears: ClothingHeadsetAltRU
     belt: ClothingBeltMedicalEMTFilledBF14Hyposprays
     jumpsuit: ClothingUniformJumpsuitCamoRUEMR # Gorka
-    head: ClothingHeadHatHelmetRUEMR # blank
+    head: ClothingHeadHatHelmetRUEMR
+    helmetattachment: ClothingHelmetAttachmentNVGsBasic # TODO replace with BF14 version
     balaclava: ClothingBalaclavaMilitary
     eyes: ClothingEyesGogglesGreen
     outerClothing: ClothingOuterArmorPlateCarrierBlack
@@ -61,7 +62,6 @@
     pocket2: PouchGrenadesFilledVDVScout
     leftarmband: ClothingArmbandDumpPouchBlack
     rightarmband: ClothingArmbandThighHolsterFilledRUSR1MP
-    wallet: ClothingWalletLeatherBlack
   storage:
     back:
     - SupplyBoxMedicalFilled
@@ -82,6 +82,8 @@
     ears: ClothingHeadsetAltRU
     belt: ClothingBeltMedicalEMTFilledBF14Hyposprays
     jumpsuit: ClothingUniformJumpsuitCamoRUEMR # Gorka
+    head: ClothingHeadHatSkullcrusher
+    helmetattachment: ClothingHelmetAttachmentNVGsBasic # TODO replace with BF14 version
     balaclava: ClothingBalaclavaMilitary
     eyes: ClothingEyesGogglesGreen
     outerClothing: ClothingOuterVoidsuitRussianCombat
@@ -94,7 +96,6 @@
     pocket2: PouchGrenadesFilledVDVScout
     leftarmband: ClothingArmbandDumpPouchBlack
     rightarmband: ClothingArmbandThighHolsterFilledRUSR1MP
-    wallet: ClothingWalletLeatherBlack
   storage:
     back:
     - SupplyBoxMedicalFilled

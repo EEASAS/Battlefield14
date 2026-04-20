@@ -109,6 +109,72 @@
     - state: natofighterpilot
       scale: 1.5,1.5
 
+# ARNG
+- type: entity
+  id: SpawnPointNGSquadLeader
+  parent: SpawnPointJobBase
+  name: NG Squad Leader
+  components:
+  - type: SpawnPoint
+    job_id: NGSquadLeader
+  - type: Sprite
+    sprite: _Battlefield14/Interface/Misc/class_icons.rsi
+    layers:
+    - state: natoallysquadleader
+      scale: 1.5,1.5
+
+- type: entity
+  id: SpawnPointNGRifleman
+  parent: SpawnPointJobBase
+  name: NG Rifleman
+  components:
+  - type: SpawnPoint
+    job_id: NGRifleman
+  - type: Sprite
+    sprite: _Battlefield14/Interface/Misc/class_icons.rsi
+    layers:
+    - state: natoallyinfantry
+    scale: 1.5,1.5
+
+- type: entity
+  id: SpawnPointNGAutomaticRifleman
+  parent: SpawnPointJobBase
+  name: NG Automatic Rifleman
+  components:
+  - type: SpawnPoint
+    job_id: NGAutomaticRifleman
+  - type: Sprite
+    sprite: _Battlefield14/Interface/Misc/class_icons.rsi
+    layers:
+    - state: natoallysupport
+      scale: 1.5,1.5
+
+- type: entity
+  id: SpawnPointNGMedic
+  parent: SpawnPointJobBase
+  name: NG Medic
+  components:
+  - type: SpawnPoint
+    job_id: NGMedic
+  - type: Sprite
+    sprite: _Battlefield14/Interface/Misc/class_icons.rsi
+    layers:
+    - state: natoallymedic
+      scale: 1.5,1.5
+
+- type: entity
+  id: SpawnPointNGRecon
+  parent: SpawnPointJobBase
+  name: NG Recon
+  components:
+  - type: SpawnPoint
+    job_id: NGRecon
+  - type: Sprite
+    sprite: _Battlefield14/Interface/Misc/class_icons.rsi
+    layers:
+    - state: natoallyrecon
+      scale: 1.5,1.5
+
 ### PACT
 
 ## RU
@@ -183,16 +249,68 @@
 # FSB
 
 - type: entity
+  id: SpawnPointFSBSquadLeaderEVA
+  parent: SpawnPointJobBase
+  name: FSB Team Leader EVA
+  components:
+  - type: SpawnPoint
+    job_id: FSBSquadLeader
+  - type: Sprite
+    sprite: _Battlefield14/Interface/Misc/class_icons.rsi
+    layers:
+    - state: pactsquadleader
+      scale: 1.5,1.5
+
+- type: entity
+  id: SpawnPointFSBRiflemanEVA
+  parent: SpawnPointJobBase
+  name: FSB Rifleman EVA
+  components:
+  - type: SpawnPoint
+    job_id: FSBRifleman
+  - type: Sprite
+    sprite: _Battlefield14/Interface/Misc/class_icons.rsi
+    layers:
+    - state: pactinfantry
+      scale: 1.5,1.5
+
+- type: entity
+  id: SpawnPointFSBSupportEVA
+  parent: SpawnPointJobBase
+  name: FSB Support EVA
+  components:
+  - type: SpawnPoint
+    job_id: FSBSupport
+  - type: Sprite
+    sprite: _Battlefield14/Interface/Misc/class_icons.rsi
+    layers:
+    - state: pactsupport
+      scale: 1.5,1.5
+
+- type: entity
+  id: SpawnPointFSBMedicEVA
+  parent: SpawnPointJobBase
+  name: FSB Combat Medic EVA
+  components:
+  - type: SpawnPoint
+    job_id: FSBMedic
+  - type: Sprite
+    sprite: _Battlefield14/Interface/Misc/class_icons.rsi
+    layers:
+    - state: pactmedic
+      scale: 1.5,1.5
+
+- type: entity
   id: SpawnPointFSBRecon
   parent: SpawnPointJobBase
-  name: FSB Recon
+  name: FSB Recon EVA
   components:
   - type: SpawnPoint
     job_id: FSBRecon
   - type: Sprite
     sprite: _Battlefield14/Interface/Misc/class_icons.rsi
     layers:
-    - state: pactspecialforces
+    - state: pactrecon
       scale: 1.5,1.5
 
 # VKS

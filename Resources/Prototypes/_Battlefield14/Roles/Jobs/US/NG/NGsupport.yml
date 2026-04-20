@@ -1,0 +1,59 @@
+- type: job
+  id: NGAutomaticRifleman
+  name: job-name-ng-automatic-rifleman
+  description: job-description-ng-automatic-rifleman
+  playTimeTracker: JobNGAutomaticRifleman
+  weight: 76
+  startingGear: NGAutomaticRiflemanGear
+  alwaysUseSpawner: true
+  icon: "JobIconNATOAllySupport"
+  requireAdminNotify: false
+  supervisors: job-supervisors-usgov
+  canBeAntag: false
+  special:
+  - !type:AddLanguageSpecial
+    languagesSpoken:
+    - English
+    languagesUnderstood:
+    - English
+  - !type:AddComponentSpecial
+    components:
+    - type: NpcFactionMember
+      factions:
+      - USMC
+  - !type:AddImplantSpecial
+    implants: [ TrackingImplantNATOUS ]
+  access:
+  - Maintenance
+  - Service
+  - External
+  - Mercenary # Frontier
+  - Captain # Frontier
+  - NATOCommon
+  - NATOMaintenance
+  - NATOSoldier
+  - NATOArmory
+
+- type: startingGear
+  id: NGAutomaticRiflemanGear
+  equipment:
+    id: NGAutomaticRiflemanPDA
+    ears: ClothingHeadsetAltUS
+    belt: ClothingBeltMilitaryWebbingUSFilledM249
+    jumpsuit: ClothingUniformJumpsuitCamoUS
+    head: ClothingHeadHatHelmetUSRiot
+#    eyes: ClothingEyesGogglesTan
+    outerClothing: ClothingOuterArmorPlateCarrierTan
+    shoes: ClothingShoesBootsJackFilled
+#    back: ClothingBackpackRucksackTan
+    suitstorage: WeaponMachineGunUSM249Para
+    pocket1: PouchFirstAidFilled
+    pocket2: PouchGrenadesFilledUSASupport
+    rightarmband: ClothingArmbandThighHolsterFilledUS
+  storage:
+    back:
+    - SupplyBoxAmmoUSFilled
+    - FlashlightMilitaryUS
+    - ClothingMaskGasM40
+    - Tourniquet
+    - Zipties

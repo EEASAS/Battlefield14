@@ -45,6 +45,16 @@
         amount: 2
 
 - type: entity
+  parent: PouchMags
+  id: PouchMagsFilledSTANAG
+  suffix: Filled, STANAG
+  components:
+  - type: StorageFill
+    contents:
+    - id: MagazineRifleSTANAG
+      amount: 3
+
+- type: entity
   parent: PouchMagsPistolLarge
   id: PouchMagsPistolLargeFilledMP5
   suffix: Filled, MP5
@@ -83,6 +93,30 @@
     contents:
     - id: MagazineSubmachinegunSR2MP
       amount: 6
+
+- type: entity
+  parent: PouchGrenades
+  id: PouchGrenadesFilledUSARifleman
+  suffix: Filled, US Army Rifleman
+  components:
+  - type: StorageFill
+    contents:
+    - id: M67Handgrenade
+      amount: 3
+    - id: USM18SmokeHandgrenade
+      amount: 3
+
+- type: entity
+  parent: PouchGrenades
+  id: PouchGrenadesFilledUSASupport
+  suffix: Filled, US Army Support
+  components:
+  - type: StorageFill
+    contents:
+    - id: M67Handgrenade
+      amount: 3
+    - id: USM58CSGasHandgrenade
+      amount: 3
 
 - type: entity
   parent: PouchGrenades

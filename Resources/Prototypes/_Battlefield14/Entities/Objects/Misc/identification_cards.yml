@@ -232,6 +232,77 @@
   - type: PresetIdCard
     job: USSFFighterPilot
 
+# ARNG
+
+- type: entity
+  parent: IDCardStandard
+  id: NGSquadLeaderIDCard
+  name: Marine Corps ID card
+  suffix: squad leader
+  components:
+  - type: Sprite
+    layers:
+    - state: silver
+  - type: Item
+    heldPrefix: silver
+  - type: PresetIdCard
+    job: NGSquadLeader
+
+- type: entity
+  parent: IDCardStandard
+  id: NGRiflemanIDCard
+  name: Marine Corps ID card
+  suffix: rifleman
+  components:
+  - type: Sprite
+    layers:
+    - state: silver
+  - type: Item
+    heldPrefix: silver
+  - type: PresetIdCard
+    job: NGRifleman
+
+- type: entity
+  parent: IDCardStandard
+  id: NGAutomaticRiflemanIDCard
+  name: Marine Corps ID card
+  suffix: automatic rifleman
+  components:
+  - type: Sprite
+    layers:
+    - state: silver
+  - type: Item
+    heldPrefix: silver
+  - type: PresetIdCard
+    job: NGAutomaticRifleman
+
+- type: entity
+  parent: IDCardStandard
+  id: NGMedicIDCard
+  name: Marine Corps ID card
+  suffix: navy corpsman
+  components:
+  - type: Sprite
+    layers:
+    - state: silver
+  - type: Item
+    heldPrefix: silver
+  - type: PresetIdCard
+    job: NGMedic
+
+- type: entity
+  parent: IDCardStandard
+  id: NGReconIDCard
+  name: Marine Corps ID card
+  suffix: force recon
+  components:
+  - type: Sprite
+    layers:
+    - state: silver
+  - type: Item
+    heldPrefix: silver
+  - type: PresetIdCard
+    job: NGRecon
 
 ## RU
 

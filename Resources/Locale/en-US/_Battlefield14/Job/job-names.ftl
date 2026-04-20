@@ -10,6 +10,13 @@ job-name-ussf-captain = USSF Colonel
 job-name-ussf-crewman = USSF Crewman
 job-name-ussf-fighter-pilot = USSF Fighter Pilot
 
+job-name-ng-lieutenant = N.G. Lieutenant
+job-name-ng-squadleader = N.G. Squad Leader
+job-name-ng-rifleman = N.G. Rifleman
+job-name-ng-automatic-rifleman = N.G. Automatic Rifleman
+job-name-ng-medic = N.G. Combat Medic
+job-name-ng-recon = N.G. Cavalry Scout
+
 #Russian Federation#
 
 job-name-vdv-squadleader = Senior Rifleman

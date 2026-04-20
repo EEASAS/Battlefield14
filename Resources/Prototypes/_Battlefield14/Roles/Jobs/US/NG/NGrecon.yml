@@ -1,0 +1,59 @@
+- type: job
+  id: NGRecon
+  name: job-name-ng-recon
+  description: job-description-ng-recon
+  playTimeTracker: JobNGRecon
+  weight: 74
+  startingGear: NGReconGear
+  alwaysUseSpawner: true
+  icon: "JobIconNATOAllyRecon"
+  requireAdminNotify: false
+  supervisors: job-supervisors-usgov
+  canBeAntag: false
+  special:
+  - !type:AddLanguageSpecial
+    languagesSpoken:
+    - English
+    languagesUnderstood:
+    - English
+  - !type:AddComponentSpecial
+    components:
+    - type: NpcFactionMember
+      factions:
+      - USMC
+  - !type:AddImplantSpecial
+    implants: [ TrackingImplantNATOUS ]
+  access:
+  - Maintenance
+  - Service
+  - External
+  - Mercenary # Frontier
+  - Captain # Frontier
+  - NATOCommon
+  - NATOMaintenance
+  - NATOSoldier
+  - NATOArmory
+
+- type: startingGear
+  id: NGReconGear
+  equipment:
+    id: NGReconPDA
+    ears: ClothingHeadsetAltUS
+    belt: ClothingBeltMilitaryWebbingUSFilledSTANAG
+    jumpsuit: ClothingUniformJumpsuitCamoUS
+    head: ClothingHeadHatHelmetUS
+    helmetattachment: ClothingHelmetAttachmentNVGsBasic # TODO replace with BF14 version
+#    eyes: ClothingEyesGogglesTan
+    outerClothing: ClothingOuterArmorPlateCarrierTan
+    shoes: ClothingShoesBootsJackFilled
+#    back: ClothingBackpackRucksackTan
+    suitstorage: WeaponRifleUSM4
+    pocket1: PouchFirstAidFilled
+    pocket2: PouchGrenadesFilledUSMCScout
+  storage:
+    back:
+    - ClothingMaskGasM40
+    - FlashlightMilitaryUS
+    - Rangefinder
+    - Tourniquet
+    - Zipties
