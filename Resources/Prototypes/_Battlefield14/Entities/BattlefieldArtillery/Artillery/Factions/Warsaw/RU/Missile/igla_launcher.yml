@@ -1,0 +1,52 @@
+- type: entity
+  id: WeaponTurretPACTRUIglaLauncher
+  name: "9K310 'Ursula' air defense launcher"
+  parent: BallisticArtillery
+  description: A sheet metal box housing a couple igla ground-to-air launchers given a promotion to carrier duty and a slightly new GRAU index.
+  suffix: BF14, PACT, RU
+  components:
+  - type: StaticPrice
+    price: 5000
+  - type: Sprite
+    sprite: _Battlefield14/BattlefieldArtillery/mediumrocket.rsi
+    layers:
+    - state: space_artillery
+  - type: Appearance
+  - type: FireControlRotate
+  - type: AmmoCounter
+  - type: Battery
+    maxCharge: 8000
+    startingCharge: 8000
+  - type: ExaminableBattery
+  - type: WirelessNetworkConnection
+    range: 500
+  - type: Gun
+    fireRate: 0.5
+    recoil: 0
+    projectileSpeed: 8
+    shootThermalSignature: 32000000 # ~5.6km
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/rocket_launcher.ogg
+    soundEmpty:
+      path: /Audio/Weapons/Guns/EmptyAlarm/smg_empty_alarm.ogg
+  - type: SpaceArtillery
+    powerChargeRate: 250
+    powerUsePassive: 200
+  - type: BatterySelfRecharger
+    autoRecharge: true
+    autoRechargeRate: 60
+  - type: Actions
+  - type: ProjectileBatteryAmmoProvider
+    proto: BulletRocketIglaMANPADSMissile
+    fireCost: 350
+  - type: RadarBlip
+    radarColor: "#FCBA03"
+    scale: 2.75
+    visibleFromOtherGrids: true
+  - type: ShipGunType
+    shipType: Missile
+  - type: ShipGunClass
+    shipClass: Light
+  - type: ShipRepairable
+    repairTime: 30
+    repairCost: 120

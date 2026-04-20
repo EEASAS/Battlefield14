@@ -1,0 +1,52 @@
+- type: entity
+  id: WeaponTurretNATOUSStingerLauncher
+  name: "AN/TWQ-8S 'Revenge'"
+  parent: BallisticArtillery
+  description: The space force needed an anti-fighter missile system and decided to rip the avenger turret off its humvee and weld it to their deck.
+  suffix: BF14, NATO, US
+  components:
+  - type: StaticPrice
+    price: 5000
+  - type: Sprite
+    sprite: _Battlefield14/BattlefieldArtillery/mediumrocket.rsi
+    layers:
+    - state: space_artillery
+  - type: Appearance
+  - type: FireControlRotate
+  - type: AmmoCounter
+  - type: Battery
+    maxCharge: 8000
+    startingCharge: 8000
+  - type: ExaminableBattery
+  - type: WirelessNetworkConnection
+    range: 500
+  - type: Gun
+    fireRate: 0.5
+    recoil: 0
+    projectileSpeed: 8
+    shootThermalSignature: 32000000 # ~5.6km
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/rocket_launcher.ogg
+    soundEmpty:
+      path: /Audio/Weapons/Guns/EmptyAlarm/smg_empty_alarm.ogg
+  - type: SpaceArtillery
+    powerChargeRate: 250
+    powerUsePassive: 200
+  - type: BatterySelfRecharger
+    autoRecharge: true
+    autoRechargeRate: 60
+  - type: Actions
+  - type: ProjectileBatteryAmmoProvider
+    proto: BulletRocketStingerMANPADSMissile
+    fireCost: 350
+  - type: RadarBlip
+    radarColor: "#FCBA03"
+    scale: 2.75
+    visibleFromOtherGrids: true
+  - type: ShipGunType
+    shipType: Missile
+  - type: ShipGunClass
+    shipClass: Light
+  - type: ShipRepairable
+    repairTime: 30
+    repairCost: 120

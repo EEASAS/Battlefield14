@@ -9,7 +9,7 @@
   - type: StaticPrice
     price: 6000
   - type: Sprite
-    sprite: _Mono/Objects/ShuttleWeapons/vanyk.rsi
+    sprite: _Battlefield14/BattlefieldArtillery/ASM.rsi
     layers:
     - state: space_artillery
   - type: Appearance

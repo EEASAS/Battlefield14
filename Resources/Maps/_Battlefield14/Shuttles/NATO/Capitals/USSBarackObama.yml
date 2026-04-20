@@ -4,8 +4,8 @@ meta:
   engineVersion: 264.0.0
   forkId: ""
   forkVersion: ""
-  time: 04/19/2026 10:07:05
-  entityCount: 3742
+  time: 04/20/2026 02:56:17
+  entityCount: 3744
 maps: []
 grids:
 - 1
@@ -120,8 +120,8 @@ entities:
     - type: SpreaderGrid
       spreadQueues:
         MetalFoam: []
-        Kudzu: []
         Puddle: []
+        Kudzu: []
         Smoke: []
     - type: Shuttle
       dampingModifier: 0.25
@@ -1424,7 +1424,7 @@ entities:
       pos: 20.5,-21.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -17552.52
+      secondsUntilStateChange: -17680.537
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -2539,12 +2539,6 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 24.5,-56.5
       parent: 1
-  - uid: 3665
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 2.5,-32.5
-      parent: 1
   - uid: 3666
     components:
     - type: Transform
@@ -2562,6 +2556,12 @@ entities:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 10.5,3.5
+      parent: 1
+  - uid: 3743
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 1.5,-32.5
       parent: 1
 - proto: Basketball
   entities:
@@ -12445,7 +12445,7 @@ entities:
       pos: 10.5,-42.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -15390.924
+      secondsUntilStateChange: -15518.942
       state: Closing
   - uid: 2294
     components:
@@ -23531,6 +23531,20 @@ entities:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 14.5,4.5
+      parent: 1
+- proto: WeaponTurretNATOUSStingerLauncher
+  entities:
+  - uid: 3665
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 2.5,-31.5
+      parent: 1
+  - uid: 3744
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 21.5,-14.5
       parent: 1
 - proto: WeaponTurretPhalanx
   entities:
