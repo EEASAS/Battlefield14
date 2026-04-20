@@ -38,4 +38,10 @@
   id: BackgroundZBTRBF14
   background: /Textures/_Battlefield14/LobbyScreens/ZBTRBF14.png
 #  name: ZBTRBF14
-#  artist: Russian Airborne forces and JoeHammad
+#  artist: Russian Airborne Forces and JoeHammad
+
+- type: lobbyBackground
+  id: BackgroundRooftop
+  background: /Textures/_Battlefield14/LobbyScreens/rooftop.png
+#  name: Rooftop
+#  artist: Russian Ground Forces and JoeHammad

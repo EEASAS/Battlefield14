@@ -45,6 +45,29 @@
   - type: Construction
     graph: Dresser
     node: dresser
+  - type: Fixtures # BF14 V
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.45,-0.45,0.45,0.45"
+        density: 60
+        mask:
+        - MachineMask
+        layer:
+        - MidImpassable
+        - LowImpassable
+        - MachineLayer
+  - type: BarricadeBlock
+    bidirectional: false
+    omnidirectional: true
+    blocking: 50
+  - type: ExtendDescription
+    descriptionList:
+      - description: This object can be used as cover.
+        fontSize: 12
+        color: "#4f94ad"
+        requireDetailRange: true # BF14 ^
 
 - type: entity
   id: DresserFilled
