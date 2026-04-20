@@ -14,6 +14,10 @@
     slots:
     - Back
     - suitStorage
+    - SUITSTORAGE2 # BF14 V
+    clothingVisuals:
+      suitstorage2:
+      - state: equipped-BACKPACK # BF14 ^
 #BF14  - type: AmmoCounter
   - type: Gun
     minAngle: 2

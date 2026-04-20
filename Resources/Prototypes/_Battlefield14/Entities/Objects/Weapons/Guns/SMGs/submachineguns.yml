@@ -92,6 +92,14 @@
       offset: 0.2, 0
   - type: Clothing
     sprite: null
+    quickEquip: false
+    slots:
+    - Back
+    - suitStorage
+    - SUITSTORAGE2
+    clothingVisuals:
+      suitstorage2:
+      - state: null
   - type: Gun
     minAngle: 3
     maxAngle: 30

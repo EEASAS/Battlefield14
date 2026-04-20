@@ -273,8 +273,6 @@
     selectedMode: SemiAuto
     availableModes:
       - SemiAuto
-  - type: ChamberMagazineAmmoProvider
-    boltClosed: null
   - type: ItemSlots
     slots:
       gun_magazine:

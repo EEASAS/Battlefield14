@@ -225,7 +225,7 @@
   name: XM177E2
   parent: WeaponRifleUSM16A1
   id: WeaponRifleUSXM177E2
-  description: The classic American slugthrower.
+  description: A favorite of tacticool larpers and MAC V SOG commandos alike.
   components:
   - type: Item # Controls inhand sprites
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/M4.rsi
@@ -271,6 +271,35 @@
         map: ["enum.GunVisualLayers.Mag"]
   - type: Clothing
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/M4A1.rsi
+  - type: GunWieldBonus
+    minAngle: -14
+    maxAngle: -20
+  - type: Gun
+    minAngle: 16
+    maxAngle: 30
+    angleIncrease: 1
+    projectileSpeed: 40 # Shorter barrel
+  - type: CursorOffsetRequiresWield
+  - type: EyeCursorOffset
+    maxOffset: 5
+    pvsIncrease: 0.25
+
+- type: entity
+  name: M4A1 Carbine (ACOG)
+  parent: WeaponRifleUSM4A1
+  id: WeaponRifleUSM4A1ACOG
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/iconstates.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: acog
+      - state: stock-adjustable
+      - state: carbine-length-barrel-quadrail
+      - state: foregrip
+      - state: mag-30-0
+        map: ["enum.GunVisualLayers.Mag"]
   - type: GunWieldBonus
     minAngle: -14
     maxAngle: -20
@@ -326,6 +355,31 @@
         variation: 0.125
     fireRate: 7
   - type: Appearance
+
+- type: entity
+  name: CAR-15
+  parent: WeaponRifleUSM4A1
+  id: WeaponRifleUSCAR15
+  description: A favorite of tacticool larpers and MAC V SOG commandos alike.
+  components:
+  - type: Item # Controls inhand sprites
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/M4.rsi
+    size: Large
+  - type: Icon
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/iconstates.rsi
+    state: icon-full-M4A1
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/iconstates.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: carryhandle
+      - state: stock-adjustable
+      - state: carbine-length-barrel-clamshell
+      - state: mag-30-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/M4.rsi
 
 - type: entity
   name: M4 Carbine
@@ -480,7 +534,7 @@
 
 - type: entity
   name: AKS-74u
-  parent: BaseWeaponSubMachineGun
+  parent: BaseWeaponRifle
   id: WeaponRifleRUAKS74U
   description: You know when they decided to bring this out? Afghanistan. Rough.
   components:
@@ -501,7 +555,7 @@
   - type: Gun
     minAngle: 16
     maxAngle: 32
-    angleIncrease: 2
+    angleIncrease: 1.25
     projectileSpeed: 40 # Shorter barrel
     fireRate: 6
     availableModes:
@@ -883,7 +937,7 @@
 
 - type: entity
   name: SR-3M
-  parent: BaseWeaponSubMachineGun
+  parent: BaseWeaponRifle
   id: WeaponRifleRUSR3M
   description: Essentially a chopped down AS-VAL without a suppressor for special forces and concealed carry.
   components:

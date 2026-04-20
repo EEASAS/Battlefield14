@@ -2,11 +2,21 @@
 - type: entity
   id: ClothingBeltMilitaryWebbingUSFilledSTANAG
   parent: ClothingBeltMilitaryWebbingUS
-  suffix: Filled Stanag
+  suffix: Filled STANAG
   components:
   - type: StorageFill
     contents:
       - id: MagazineRifleSTANAG
+        amount: 8
+
+- type: entity
+  id: ClothingBeltMilitaryWebbingUSFilledSTANAGShort
+  parent: ClothingBeltMilitaryWebbingUS
+  suffix: Filled 20 rnd STANAG
+  components:
+  - type: StorageFill
+    contents:
+      - id: MagazineRifleSTANAGShort
         amount: 8
 
 - type: entity

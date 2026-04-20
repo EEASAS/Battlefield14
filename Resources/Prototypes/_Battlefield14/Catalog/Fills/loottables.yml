@@ -19,3 +19,5 @@
         - id: WeaponRifleUSM4
         - id: WeaponRifleUSM4A1
           weight: 0.5
+        - id: WeaponRifleUSCAR15
+          weight: 0.5

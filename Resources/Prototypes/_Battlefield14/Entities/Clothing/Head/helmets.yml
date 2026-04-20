@@ -12,11 +12,17 @@
     sprite: _Battlefield14/Clothing/Head/Helmets/ushelmet.rsi
   - type: Armor
     modifiers:
-      coefficients:
-        Blunt: 0.9
-        Slash: 0.9
-        Piercing: 0.9
-        Heat: 0.9
+#      coefficients:
+#        Blunt: 0.9
+#        Slash: 0.9
+#        Piercing: 0.9
+#        Heat: 0.9
+      flatReductions:
+        Blunt: 2
+        Slash: 2
+        Piercing: 2
+  - type: ExplosionResistance
+    damageCoefficient: 0.9
 
 - type: entity
   parent: ClothingHeadHatHelmetUS
@@ -37,7 +43,7 @@
         Heat: 0.9
 
 - type: entity
-  parent: ClothingHeadHelmetBasic
+  parent: ClothingHeadHatHelmetUS
   id: ClothingHeadHatHelmetUSUrban
   name: M81 urban camo helmet
   description: This isnt for catching shrap or rounds, its made to keep your grey matter from grossing out your buddies.
@@ -46,13 +52,6 @@
     sprite: _Battlefield14/Clothing/Head/Helmets/ushelmeturban.rsi
   - type: Clothing
     sprite: _Battlefield14/Clothing/Head/Helmets/ushelmeturban.rsi
-  - type: Armor
-    modifiers:
-      coefficients:
-        Blunt: 0.9
-        Slash: 0.9
-        Piercing: 0.9
-        Heat: 0.9
 
 # RU
 
@@ -163,7 +162,7 @@
     coverage: EYES
   - type: ExtendDescription
     descriptionList:
-      - description: Provides welding protection.
+      - description: Provides welding protection and sechud.
         fontSize: 12
         color: "#4f94ad"
         requireDetailRange: false
