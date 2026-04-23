@@ -35,7 +35,6 @@
   - NGAutomaticRifleman
   - NGMedic
   - NGRecon
-  editorHidden: true
 
 - type: department
   id: VDV
