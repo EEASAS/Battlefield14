@@ -32,7 +32,7 @@
           iconPath: /Textures/_Battlefield14/poi_icons.rsi/barackobama.png
           stationSubtext: 'USS Barack Obama'
           stationDescription: 'A Jefferson Davis class spacecraft carrier, pride and joy of the United States Space Force.'
-          lobbySortOrder: 1
+          lobbySortOrder: 2
         - type: StationJobs
           availableJobs:
             USSFCaptain: [ 1, 1 ]
