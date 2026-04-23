@@ -36,7 +36,7 @@
   - type: ActiveTimerTrigger
     timeRemaining: 600
   - type: SpawnOnTrigger
-    proto: ComputerShuttle
+    proto: BaseGracePeriodAnnouncer
   - type: DeleteOnTrigger
 
 - type: entity
@@ -84,6 +84,18 @@
     sound:
       path: /Audio/Announcements/bloblarm.ogg
 #    color: "#BE8700"
+
+- type: entity
+  parent: BaseGracePeriodAnnouncerSpawner
+  id: GracePeriodAnnouncerSpawnerBlitz
+  name: blitz grace period announcer spawner
+  suffix: blitz
+  components:
+  - type: ActiveTimerTrigger
+    timeRemaining: 30
+  - type: SpawnOnTrigger
+    proto: BaseGracePeriodAnnouncer
+  - type: DeleteOnTrigger
 
 - type: entity
   id: CapturePointTaurusHospital

@@ -36,6 +36,7 @@
         - Pill
         - HandLabeler
         - SurgeryTool # Shitmed Change
+        - BreathMask # BF14
   - type: Item
     size: Normal # BF14
     sprite: _NF/Objects/Specific/Medical/firstaidkits.rsi # Frontier: _NF prefix

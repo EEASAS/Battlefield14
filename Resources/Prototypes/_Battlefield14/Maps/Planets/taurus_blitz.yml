@@ -1,0 +1,36 @@
+- type: gameMap
+  id: BF14TaurusBlitz
+  mapName: 'Taurus'
+  mapPath: /Maps/_Battlefield14/Planets/taurus_blitz.yml
+  minPlayers: 20
+  maxPlayers: 40
+  randomRotation: false
+  maxRandomOffset: 0
+  stations:
+    BF14TaurusBlitz:
+      stationProto: StandardFrontierStation
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: "Taurus, Florida"
+        - type: ExtraStationInformation
+          iconPath: /Textures/_NF/Structures/Decoration/banner.rsi/nfsd-banner.png
+          stationSubtext: 'frontier-lobby-frontier-subtext' # TODO
+          stationDescription: 'frontier-lobby-frontier-subtext' # TODO
+          lobbySortOrder: 1
+        - type: StationJobs
+          availableJobs:
+            NGSquadLeader: [ 3, 3 ]
+            NGRifleman: [ -1, -1 ]
+            NGAutomaticRifleman: [ 1, 1 ]
+            NGMedic: [ 3, 3 ]
+            NGRecon: [ 3, 3 ]
+            VDVSquadLeader: [ 3, 3 ]
+            VDVRifleman: [ -1, -1 ]
+            VDVAutomaticRifleman: [ 3, 3 ]
+            VDVMedic: [ 3, 3 ]
+            VDVRecon: [ 3, 3 ]
+            WPSSecurityOfficer: [ 1, 1 ] # Redo with cops
+            WPSWarden: [ 1, 1 ] # Redo with cops
+            WPSMarshal: [ 1, 1 ] # Redo with cops
+        - type: StationBiome
+          biome: Grasslands

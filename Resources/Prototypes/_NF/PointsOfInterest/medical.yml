@@ -14,7 +14,8 @@
   name: 'Medical Dispatch'
   minimumDistance: 1650
   maximumDistance: 5400
-  spawnGroup: Required
+  spawnGroup: Optional # BF14 not Required
+  spawnGamePreset: [ MonoStandard ] #BF14 go away
   gridPath: /Maps/_NF/POI/medical.yml
   addComponents:
   - type: IFF

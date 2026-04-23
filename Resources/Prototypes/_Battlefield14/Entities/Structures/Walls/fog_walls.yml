@@ -1,5 +1,14 @@
 ﻿- type: entity
   parent: RMCFogWallPermanent
+  id: BF14FogWallBlitz
+  description: It looks way too dangerous to traverse. Best wait until it has cleared up.
+  suffix: 30 seconds, blitz
+  components:
+  - type: TimedDespawn
+    lifetime: 30
+
+- type: entity
+  parent: RMCFogWallPermanent
   id: BF14FogWall2
   description: It looks way too dangerous to traverse. Best wait until it has cleared up.
   suffix: 2 minutes
