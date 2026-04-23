@@ -364,7 +364,6 @@
   components:
   - type: Item # Controls inhand sprites
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/M4.rsi
-    size: Large
   - type: Icon
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/iconstates.rsi
     state: icon-full-M4A1

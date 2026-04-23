@@ -20,6 +20,11 @@
       - state: rollerbed_buckled
         map: ["buckledLayer"]
         visible: false
+    - type: Clothing # BF14
+      QuickEquip: false
+      slots:
+      - SUITSTORAGE
+      - SUITSTORAGE2 # BF14
     - type: MovedByPressure
     - type: DamageOnHighSpeedImpact
       soundHit:

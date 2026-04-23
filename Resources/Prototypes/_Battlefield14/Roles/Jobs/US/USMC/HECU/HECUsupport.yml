@@ -108,15 +108,16 @@
     id: HECUSupportPDA
     ears: ClothingHeadsetAltUS
     neck: FlashlightMilitaryUS
-    belt: ClothingBeltMilitaryWebbingUSFilledSMAW
+    belt: ClothingBeltMilitaryWebbingUS
     jumpsuit: ClothingUniformJumpsuitCamoUSM81Urban
     balaclava: ClothingBalaclavaMilitary
     eyes: ClothingEyesGogglesGreen
     gloves: ClothingHandsGlovesCombat
     outerClothing: ClothingOuterArmorPCV
     shoes: ClothingShoesBootsJackFilled
-    back: ClothingBackpackMercenary
+    back: ClothingBackpackSatchelSecurity
     suitstorage: WeaponLauncherUSSMAW
+    suitstorage2: WeaponSubmachinegunUSMP5
     pocket1: PouchMagsPistolLargeFilledMP5
     pocket2: PouchFirstAidFilled
     leftarmband: Tourniquet
@@ -124,8 +125,13 @@
     wallet: ClothingWalletLeatherBrown
   storage:
     back:
-    - WeaponSubmachinegunUSMP5
     - CartridgeSMAWNE
     - CartridgeSMAWNE
+    - CartridgeSMAWHEDM
+    - CartridgeSMAWHEDM
+    belt:
+    - BoxMRE
     - ClothingMaskGasM40
     - CrowbarRed
+    - Tourniquet
+    - Zipties

@@ -90,16 +90,6 @@
       - id: MagazinePistolM9
         amount: 2
 
-- type: entity
-  id: ClothingBeltMilitaryWebbingUSFilledSMAW
-  parent: ClothingBeltMilitaryWebbingUS
-  suffix: Filled, SMAW, HEAA/SMAW-NE
-  components:
-  - type: StorageFill
-    contents:
-      - id: CartridgeSMAWHEAA
-      - id: CartridgeSMAWHEDM
-
 # MARSOC
 
 - type: entity
