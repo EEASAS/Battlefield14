@@ -778,7 +778,7 @@
   - type: Gun
     minAngle: 21
     maxAngle: 30
-    angleIncrease: 2
+    angleIncrease: 1
     angleDecay: 16
     availableModes:
     - SemiAuto
@@ -860,6 +860,68 @@
           tags:
             - BF_CartridgeRifle762x39
   - type: Appearance
+
+- type: entity
+  name: draco
+  parent: WeaponRifleRUAKMS
+  id: WeaponRifleRUAKMUDraco
+  description: A chopped down AK47, unwieldy and impractical, with a reputation for being used by gang members.
+  components:
+  - type: Item
+    size: Large
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/draco.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: GunWieldBonus
+    minAngle: -2
+    maxAngle: -17
+  - type: Gun
+    minAngle: 6
+    maxAngle: 35
+    angleIncrease: 3.5
+    angleDecay: 16
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/draco.rsi
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazineRifleAKM
+        insertSound: /Audio/_Battlefield14/Weapons/Guns/AK_545/uc_ak_magin.ogg
+        ejectSound: /Audio/_Battlefield14/Weapons/Guns/AK_545/uc_ak_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MagazineRifleAKM
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: BF_CartridgeRifle762x39
+        priority: 1
+        whitelist:
+          tags:
+            - BF_CartridgeRifle762x39
+  - type: Appearance
+
+- type: entity
+  name: golden draco
+  parent: WeaponRifleRUAKMUDraco
+  id: WeaponRifleRUAKMUDracoGold
+  description: You feel richer just looking at this.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/draco_gold.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/draco_gold.rsi
 
 - type: entity
   name: AS-VAL

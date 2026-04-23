@@ -32,7 +32,7 @@
           iconPath: /Textures/_Battlefield14/poi_icons.rsi/svogoydin.png
           stationSubtext: 'SVO Goydin'
           stationDescription: "A Katsap class spacecraft carrier, woe to whoever crosses her."
-          lobbySortOrder: 1
+          lobbySortOrder: 3
         - type: StationJobs
           availableJobs:
             VKSCaptain: [ 1, 1 ]

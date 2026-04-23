@@ -1,0 +1,40 @@
+- type: pointOfInterest
+  id: INDMeta
+  parent: [BasePOI, BaseRepairablePOI]
+  name: 'Independant Meta Station'
+#  minimumDistance: 0
+#  maximumDistance: 0
+#  spawnGamePreset: [ Battlefield14 , NFAdventure ]
+#  spawnGroup: Required
+  gridPath: /Maps/_Battlefield14/Stations/IND/metagrid.yml
+  addComponents:
+  - type: IFF
+    color: "#efefef"
+#    flags: [HideLabel]
+#    readOnly: true
+
+- type: gameMap
+  id: BF14Meta
+  mapName: 'Meta Station'
+  mapPath: /Maps/_Battlefield14/Stations/IND/meta.yml
+  minPlayers: 0
+  maxPlayers: 120
+  fallback: false
+  randomRotation: false
+  maxRandomOffset: 0
+  stations:
+    BF14Meta:
+      stationProto: StandardFrontierStation
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Independant "Meta" Station'
+        - type: ExtraStationInformation
+          iconPath: /Textures/_NF/Structures/Decoration/banner.rsi/nfsd-banner.png
+          stationSubtext: 'frontier-lobby-frontier-subtext' # TODO
+          stationDescription: 'frontier-lobby-frontier-subtext' # TODO
+          lobbySortOrder: 1
+        - type: StationJobs
+          availableJobs:
+            WPSSecurityOfficer: [ 1, 1 ]
+            WPSWarden: [ 1, 1 ]
+            WPSMarshal: [ 1, 1 ]

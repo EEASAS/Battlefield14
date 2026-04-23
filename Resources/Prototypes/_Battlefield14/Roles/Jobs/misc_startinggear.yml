@@ -1,0 +1,16 @@
+- type: startingGear
+  id: BF14DeathmatchGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitColorWhite
+    ears: ClothingHeadsetGrey
+    gloves: ClothingHandsGlovesFingerless
+    shoes: ClothingShoesBootsJackFilled
+    back: ClothingBackpackRucksackBlack
+    neck: FlashlightMilitaryUS
+    suitstorage: WeaponPistolM9
+    pocket1: MagazinePistolM9
+    pocket2: PouchFirstAidFilled
+  storage:
+    back:
+    - MagazinePistolM9
+    - MagazinePistolM9
