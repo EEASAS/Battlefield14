@@ -171,6 +171,75 @@
   - type: StaticPrice
     price: 3000
 
+- type: entity
+  name: M200 Intervention
+  parent: [BaseWeaponRifle, BaseGunWieldable]
+  id: WeaponSniperUSIntervention
+  description: A modern classic, with a green wooden stock and bolt-action. Chambered in .408 CT.
+  components:
+  - type: Item # Controls inhand sprites
+    sprite: _Battlefield14/Objects/Weapons/Guns/Snipers/SV98.rsi
+  - type: Icon
+    sprite: _Battlefield14/Objects/Weapons/Guns/Snipers/Intervention.rsi
+    state: icon
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Snipers/Intervention.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/Snipers/SV98.rsi
+  - type: Gun # TODO make this function like goobstation lever action
+    fireRate: 0.5
+    projectileSpeed: 60 # it's a sniper
+    damageModifier: 1.5
+    soundGunshot:
+      path: /Audio/_Mono/Weapons/Guns/Gunshots/uaf_57mm.ogg
+    selectedMode: SemiAuto
+    availableModes:
+      - SemiAuto
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazineSniperIntervention
+        insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MagazineSniperIntervention
+      gun_chamber:
+        name: Chamber
+        startingItem: BF_CartridgeRifle408CT
+        priority: 1
+        whitelist:
+          tags:
+            - BF_CartridgeRifle408CT
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: ChamberMagazineAmmoProvider
+    autoCycle: false
+    canRack: false
+  - type: CursorOffsetRequiresWield
+  - type: EyeCursorOffset
+    maxOffset: 10
+    pvsIncrease: 0.8
+  - type: SpeedModifiedOnWield
+    walkModifier: 0.8
+    sprintModifier: 0.8
+  - type: Appearance
+  - type: StaticPrice
+    price: 3000
+
 # RU
 
 - type: entity
@@ -197,7 +266,7 @@
     projectileSpeed: 55 # it's a sniper
     damageModifier: 2.5
     soundGunshot:
-      path: /Audio/_Battlefield14/Weapons/Guns/misc/lever_fire.ogg
+      path: /Audio/_Mono/Weapons/Guns/SmallArms/Gunshots/heavy_rifle_1.ogg
     selectedMode: SemiAuto
     availableModes:
       - SemiAuto
@@ -227,6 +296,9 @@
     magState: mag
     steps: 1
     zeroVisible: true
+  - type: ChamberMagazineAmmoProvider
+    autoCycle: false
+    canRack: false
   - type: CursorOffsetRequiresWield
   - type: EyeCursorOffset
     maxOffset: 10
