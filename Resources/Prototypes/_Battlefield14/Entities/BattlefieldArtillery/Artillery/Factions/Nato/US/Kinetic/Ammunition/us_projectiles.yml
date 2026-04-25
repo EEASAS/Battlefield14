@@ -51,7 +51,7 @@
   - type: StaminaDamageOnCollide
     damage: 40 # ~3 hits to stun
   - type: ArmorPiercing
-    piercingThickness: 1
+    piercingThickness: 4
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Guns/Projectiles/TGMC.rsi
     layers:

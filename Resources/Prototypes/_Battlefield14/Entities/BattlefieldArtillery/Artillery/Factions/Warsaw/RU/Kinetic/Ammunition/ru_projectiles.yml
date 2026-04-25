@@ -14,7 +14,7 @@
     penetrationThreshold: 300
     deleteOnCollide: true
   - type: ArmorPiercing
-    piercingThickness: 1
+    piercingThickness: 4
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Guns/Projectiles/ballistic.rsi
     layers:

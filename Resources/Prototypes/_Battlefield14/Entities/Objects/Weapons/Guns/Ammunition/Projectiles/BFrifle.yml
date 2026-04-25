@@ -115,3 +115,21 @@
     damage: 7 # ~15 hits to stun, x2 = ~8
   - type: ArmorPiercing
     piercingThickness: 2
+
+- type: entity
+  id: BulletRifleBF408CT
+  name: bullet (.408 CT)
+  parent: BaseBulletRifle
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Structural: 60
+        Piercing: 80
+    armorPenetration: 0.7
+    deleteOnCollide: true
+  - type: StaminaDamageOnCollide
+    damage: 35 # ~3 hits to stun
+  - type: ArmorPiercing
+    piercingThickness: 4

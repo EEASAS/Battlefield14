@@ -149,3 +149,22 @@
       map: ["enum.AmmoVisualLayers.Base"]
   - type: Appearance
   - type: SpentAmmoVisuals
+
+- type: entity
+  id: BF_CartridgeRifle408CT
+  name: cartridge (.408 CT)
+  parent: BaseCartridgeRifle
+  components:
+  - type: Tag
+    tags:
+    - Cartridge
+    - BF_CartridgeRifle408CT
+  - type: CartridgeAmmo
+    proto: BulletRifleBF408CT
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Casings/12.7x108.rsi
+    layers:
+    - state: base
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
