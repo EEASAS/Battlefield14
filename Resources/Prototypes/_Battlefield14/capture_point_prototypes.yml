@@ -62,7 +62,6 @@
     mode: SnapgridCenter
   components:
   - type: POICapture
-    poiName: "Control Point Alpha"
     gracePeriod: 600 # 10 minutes until open
 
 # Specific Control points for map locations

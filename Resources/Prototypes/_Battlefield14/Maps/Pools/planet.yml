@@ -1,0 +1,5 @@
+- type: gameMapPool
+  id: BF14MapPoolEarthFlorida
+  maps:
+  - BF14Taurus
+  - BF14TaurusBlitz

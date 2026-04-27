@@ -7,3 +7,14 @@
   description: Larp and frag.
   rules:
   - NFAdventure
+
+- type: gamePreset
+  id: GroundwarFlorida
+  alias:
+  - Florida
+  name: Ground war, Florida
+  showInVote: false # objectives not working yet, could poison the view of the map into a mindless TDM
+  supportedMaps: BF14MapPoolEarthFlorida
+  description: Larp and frag.
+  rules:
+  - NFAdventure

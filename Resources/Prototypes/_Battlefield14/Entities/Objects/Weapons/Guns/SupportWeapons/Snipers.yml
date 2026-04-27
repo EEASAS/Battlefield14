@@ -196,7 +196,7 @@
     projectileSpeed: 60 # it's a sniper
     damageModifier: 1.5
     soundGunshot:
-      path: /Audio/_Mono/Weapons/Guns/Gunshots/uaf_57mm.ogg
+      path: /Audio/_Harmony/Weapons/Guns/Gunshots/hristov_fire_alt.ogg
     selectedMode: SemiAuto
     availableModes:
       - SemiAuto

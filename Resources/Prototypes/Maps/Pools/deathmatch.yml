@@ -1,5 +1,4 @@
 - type: gameMapPool
   id: DeathMatchMapPool
   maps:
-  - MeteorArena
-  - BF14TaurusBlitz # BF14
+  - BF14DeathAsteroid # BF14

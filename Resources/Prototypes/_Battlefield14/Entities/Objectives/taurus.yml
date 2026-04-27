@@ -101,7 +101,7 @@
   id: CapturePointTaurusHospital
   parent: BaseCapturePoint
   name: hospital control point
-  suffix: 180s / 3m
+  suffix: taurus, 180s / 3m
   components:
   - type: POICapture
     poiName: "Taurus Hospital"
@@ -114,7 +114,7 @@
   id: CapturePointTaurusCityHall
   parent: BaseCapturePoint
   name: city hall control point
-  suffix: 180s / 3m
+  suffix: taurus, 180s / 3m
   components:
   - type: POICapture
     poiName: "Taurus City Hall"
@@ -127,7 +127,7 @@
   id: CapturePointTaurusPoliceDepartment
   parent: BaseCapturePoint
   name: police department control point
-  suffix: 180s / 3m
+  suffix: taurus, 180s / 3m
   components:
   - type: POICapture
     poiName: "Taurus Police Department"
@@ -140,7 +140,7 @@
   id: CapturePointTaurusLibrary
   parent: BaseCapturePoint
   name: library control point
-  suffix: 120s / 2m
+  suffix: taurus, 120s / 2m
   components:
   - type: POICapture
     poiName: "Library"
@@ -153,7 +153,7 @@
   id: CapturePointTaurusBotanicalGardens
   parent: BaseCapturePoint
   name: botanical gardens control point
-  suffix: 120s / 2m
+  suffix: taurus, 120s / 2m
   components:
   - type: POICapture
     poiName: "Botanical Gardens"
@@ -166,7 +166,7 @@
   id: CapturePointTaurusYachtClub
   parent: BaseCapturePoint
   name: yacht club control point
-  suffix: 120s / 2m
+  suffix: taurus, 120s / 2m
   components:
   - type: POICapture
     poiName: "Yacht Club"
@@ -179,7 +179,7 @@
   id: CapturePointTaurusDiner
   parent: BaseCapturePoint
   name: diner control point
-  suffix: 120s / 2m
+  suffix: taurus, 120s / 2m
   components:
   - type: POICapture
     poiName: "Taurus Diner"
@@ -192,7 +192,7 @@
   id: CapturePointTaurusHotel
   parent: BaseCapturePoint
   name: hotel control point
-  suffix: 120s / 2m
+  suffix: taurus, 120s / 2m
   components:
   - type: POICapture
     poiName: "Taurus Hotel"
@@ -205,7 +205,7 @@
   id: CapturePointTaurusLogistics
   parent: BaseCapturePoint
   name: logistics control point
-  suffix: 60s / 1m
+  suffix: taurus, 60s / 1m
   components:
   - type: POICapture
     poiName: "Taurus Logistics"

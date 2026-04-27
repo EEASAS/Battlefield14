@@ -232,10 +232,9 @@
         Piercing: 10
     deleteOnCollide: true
   - type: Sprite
-    sprite: _Mono/Objects/SpaceArtillery/50_armorpiercing_machinegun_casing.rsi
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
     layers:
-    - state: base-projectile
-    scale: 0.35, 0.35
+    - state: shard
   - type: ShipWeaponProjectile
   - type: TimedDespawn
     lifetime: 1.5
@@ -300,10 +299,9 @@
         Piercing: 8
     deleteOnCollide: true
   - type: Sprite
-    sprite: _Mono/Objects/SpaceArtillery/50_armorpiercing_machinegun_casing.rsi
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
     layers:
-    - state: base-projectile
-    scale: 0.35, 0.35
+    - state: shard
   - type: ShipWeaponProjectile
   - type: TimedDespawn
     lifetime: 1.5
@@ -499,10 +497,9 @@
   - type: StaminaDamageOnCollide
     damage: 6 # ~17 hits to stun
   - type: Sprite
-    sprite: _Mono/Objects/SpaceArtillery/50_armorpiercing_machinegun_casing.rsi
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
     layers:
-    - state: base-projectile
-    scale: 0.5, 0.5
+    - state: shard
   - type: ShipWeaponProjectile
   - type: TimedDespawn
     lifetime: 2
@@ -533,10 +530,9 @@
   - type: StaminaDamageOnCollide
     damage: 6 # ~17 hits to stun
   - type: Sprite
-    sprite: _Mono/Objects/SpaceArtillery/50_armorpiercing_machinegun_casing.rsi
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
     layers:
-    - state: base-projectile
-    scale: 0.4, 0.4
+    - state: shard
   - type: ShipWeaponProjectile
   - type: TimedDespawn
     lifetime: 2
