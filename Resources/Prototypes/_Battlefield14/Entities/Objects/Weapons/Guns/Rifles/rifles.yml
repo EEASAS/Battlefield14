@@ -220,6 +220,10 @@
   - type: EyeCursorOffset
     maxOffset: 5
     pvsIncrease: 0.25
+  - type: WieldedCrosshair
+    rsi:
+      sprite: _Battlefield14/Interface/MousePointer/optics.rsi
+      state: acog
 
 - type: entity
   name: XM177E2
@@ -279,6 +283,10 @@
     maxAngle: 30
     angleIncrease: 1
     projectileSpeed: 40 # Shorter barrel
+  - type: WieldedCrosshair
+    rsi:
+      sprite: _Battlefield14/Interface/MousePointer/optics.rsi
+      state: m68
 
 - type: entity
   name: M4A1 Carbine (ACOG)
@@ -308,6 +316,10 @@
   - type: EyeCursorOffset
     maxOffset: 5
     pvsIncrease: 0.25
+  - type: WieldedCrosshair
+    rsi:
+      sprite: _Battlefield14/Interface/MousePointer/optics.rsi
+      state: acog
 
 - type: entity
   name: M4A1 Carbine SUPP.
@@ -355,6 +367,10 @@
         variation: 0.125
     fireRate: 7
   - type: Appearance
+  - type: WieldedCrosshair
+    rsi:
+      sprite: _Battlefield14/Interface/MousePointer/optics.rsi
+      state: eotech
 
 - type: entity
   name: CAR-15
@@ -379,6 +395,10 @@
         map: ["enum.GunVisualLayers.Mag"]
   - type: Clothing
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/M4.rsi
+  - type: WieldedCrosshair
+    rsi:
+      sprite: _RMC14/Interface/MousePointer/rifle_mouse.rsi
+      state: all
 
 - type: entity
   name: M4 Carbine
@@ -419,6 +439,10 @@
     burstFireRate: 16
     burstCooldown: 0.3
     fireRate: 4
+  - type: WieldedCrosshair
+    rsi:
+      sprite: _RMC14/Interface/MousePointer/rifle_mouse.rsi
+      state: all
 
 - type: entity
   name: AR-15 Police Carbine
@@ -696,6 +720,10 @@
     steps: 4
     zeroVisible: true
   - type: Appearance
+  - type: WieldedCrosshair
+    rsi:
+      sprite: _Battlefield14/Interface/MousePointer/optics.rsi
+      state: 1p87
 
 - type: entity
   name: AK-12 (Magnifier)
@@ -756,6 +784,10 @@
   - type: EyeCursorOffset
     maxOffset: 5
     pvsIncrease: 0.25
+  - type: WieldedCrosshair
+    rsi:
+      sprite: _Battlefield14/Interface/MousePointer/optics.rsi
+      state: acog
 
 - type: entity
   name: AKMS

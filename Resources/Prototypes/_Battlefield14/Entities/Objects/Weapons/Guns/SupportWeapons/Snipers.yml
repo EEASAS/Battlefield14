@@ -75,6 +75,10 @@
   - type: Appearance
   - type: StaticPrice
     price: 3000
+  - type: WieldedCrosshair
+    rsi:
+      sprite: _Battlefield14/Interface/MousePointer/optics.rsi
+      state: acog
 
 - type: entity
   name: Mk-14 EBR
@@ -170,6 +174,10 @@
   - type: Appearance
   - type: StaticPrice
     price: 3000
+  - type: WieldedCrosshair
+    rsi:
+      sprite: _Battlefield14/Interface/MousePointer/optics.rsi
+      state: acog
 
 - type: entity
   name: M200 Intervention
@@ -239,6 +247,12 @@
   - type: Appearance
   - type: StaticPrice
     price: 3000
+  - type: WieldedCrosshair
+    rsi:
+      sprite: _Battlefield14/Interface/MousePointer/optics.rsi
+      state: acog
+  - type: UseDelay
+    delay: 0.5
 
 # RU
 
@@ -309,6 +323,12 @@
   - type: Appearance
   - type: StaticPrice
     price: 3000
+  - type: WieldedCrosshair
+    rsi:
+      sprite: _Battlefield14/Interface/MousePointer/optics.rsi
+      state: svd
+  - type: UseDelay
+    delay: 0.2
 
 - type: entity
   name: SVDS
@@ -381,3 +401,7 @@
   - type: Appearance
   - type: StaticPrice
     price: 3000
+  - type: WieldedCrosshair
+    rsi:
+      sprite: _Battlefield14/Interface/MousePointer/optics.rsi
+      state: svd
