@@ -1,0 +1,40 @@
+- type: pointOfInterest
+  id: INDOasis
+  parent: [BasePOI, BaseRepairablePOI]
+  name: 'Independant Oasis Station'
+#  minimumDistance: 0
+#  maximumDistance: 0
+#  spawnGamePreset: [ Battlefield14 , NFAdventure ]
+#  spawnGroup: Required
+  gridPath: /Maps/_Battlefield14/Stations/IND/oasis.yml
+  addComponents:
+  - type: IFF
+    color: "#efefef"
+#    flags: [HideLabel]
+#    readOnly: true
+
+- type: gameMap
+  id: BF14Oasis
+  mapName: 'Oasis Station'
+  mapPath: /Maps/_Battlefield14/Stations/IND/oasis.yml
+  minPlayers: 0
+  maxPlayers: 30
+  fallback: false
+  randomRotation: false
+  maxRandomOffset: 0
+  stations:
+    BF14Oasis:
+      stationProto: StandardFrontierStation
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Independant "Oasis" Station'
+        - type: ExtraStationInformation
+          iconPath: /Textures/_NF/Structures/Decoration/banner.rsi/nfsd-banner.png
+          stationSubtext: 'frontier-lobby-frontier-subtext' # TODO
+          stationDescription: 'frontier-lobby-frontier-subtext' # TODO
+          lobbySortOrder: 1
+        - type: StationJobs
+          availableJobs:
+            WPSSecurityOfficer: [ 1, 1 ]
+            WPSWarden: [ 1, 1 ]
+            WPSMarshal: [ 1, 1 ]

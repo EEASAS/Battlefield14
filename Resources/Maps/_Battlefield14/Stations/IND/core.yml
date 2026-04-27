@@ -4,8 +4,8 @@ meta:
   engineVersion: 264.0.0
   forkId: ""
   forkVersion: ""
-  time: 04/26/2026 10:07:47
-  entityCount: 22469
+  time: 04/27/2026 08:45:44
+  entityCount: 22488
 maps:
 - 17546
 grids:
@@ -375,8 +375,8 @@ entities:
     - type: OccluderTree
     - type: SpreaderGrid
       spreadQueues:
-        Kudzu: []
         MetalFoam: []
+        Kudzu: []
         Smoke: []
         Puddle: []
     - type: Shuttle
@@ -11768,23 +11768,6 @@ entities:
       id: BF14Core
     - type: ShipGridLock
       locked: False
-  - uid: 1964
-    components:
-    - type: MetaData
-      name: solution - food
-    - type: Transform
-      parent: 1963
-    - type: Solution
-      solution:
-        maxVol: 1
-        name: food
-        reagents:
-        - data: []
-          ReagentId: Fiber
-          Quantity: 1
-    - type: ContainedSolution
-      containerName: food
-      container: 1963
   - uid: 17546
     components:
     - type: MetaData
@@ -11834,8 +11817,8 @@ entities:
     - type: OccluderTree
     - type: SpreaderGrid
       spreadQueues:
-        Kudzu: []
         MetalFoam: []
+        Kudzu: []
         Smoke: []
         Puddle: []
     - type: Shuttle
@@ -18438,64 +18421,104 @@ entities:
       parent: 2
 - proto: AmeController
   entities:
-  - uid: 93
+  - uid: 931
     components:
     - type: Transform
-      pos: 11.5,-24.5
+      pos: 14.5,-25.5
       parent: 2
 - proto: AmeJar
-  entities:
-  - uid: 94
-    components:
-    - type: Transform
-      pos: 17.51151,-27.35627
-      parent: 2
-- proto: AmePartFlatpack
   entities:
   - uid: 95
     components:
     - type: Transform
-      pos: 17.4155,-24.258568
+      pos: 16.646687,-24.434767
       parent: 2
   - uid: 96
     components:
     - type: Transform
-      pos: 17.4155,-24.399193
+      pos: 17.521687,-24.424343
       parent: 2
   - uid: 97
     components:
     - type: Transform
-      pos: 17.399876,-24.571068
+      pos: 16.521687,-24.424343
       parent: 2
   - uid: 98
     components:
     - type: Transform
-      pos: 17.728,-24.289818
+      pos: 17.386269,-24.434767
       parent: 2
   - uid: 99
     components:
     - type: Transform
-      pos: 17.728,-24.446068
+      pos: 16.355019,-24.424343
       parent: 2
   - uid: 100
     components:
     - type: Transform
-      pos: 17.75925,-24.617943
+      pos: 17.719603,-24.403494
+      parent: 2
+- proto: AmeShielding
+  entities:
+  - uid: 93
+    components:
+    - type: Transform
+      pos: 14.5,-28.5
+      parent: 2
+  - uid: 94
+    components:
+    - type: Transform
+      pos: 13.5,-26.5
       parent: 2
   - uid: 104
     components:
     - type: Transform
-      pos: 16.681126,-24.258568
+      pos: 13.5,-27.5
       parent: 2
   - uid: 105
     components:
     - type: Transform
-      pos: 16.681126,-24.399193
+      pos: 13.5,-28.5
       parent: 2
   - uid: 106
     components:
     - type: Transform
-      pos: 16.69675,-24.555443
+      pos: 14.5,-26.5
+      parent: 2
+  - uid: 929
+    components:
+    - type: Transform
+      pos: 15.5,-28.5
+      parent: 2
+  - uid: 930
+    components:
+    - type: Transform
+      pos: 15.5,-27.5
+      parent: 2
+  - uid: 932
+    components:
+    - type: Transform
+      pos: 15.5,-26.5
+      parent: 2
+  - uid: 1536
+    components:
+    - type: Transform
+      pos: 14.5,-27.5
+      parent: 2
+  - uid: 1540
+    components:
+    - type: Transform
+      pos: 13.5,-29.5
+      parent: 2
+  - uid: 1541
+    components:
+    - type: Transform
+      pos: 14.5,-29.5
+      parent: 2
+  - uid: 1575
+    components:
+    - type: Transform
+      pos: 15.5,-29.5
       parent: 2
 - proto: AnomalyLocatorEmpty
   entities:
@@ -39459,6 +39482,81 @@ entities:
     components:
     - type: Transform
       pos: 87.5,-22.5
+      parent: 2
+  - uid: 1537
+    components:
+    - type: Transform
+      pos: 4.5,-14.5
+      parent: 2
+  - uid: 1538
+    components:
+    - type: Transform
+      pos: 4.5,-15.5
+      parent: 2
+  - uid: 1539
+    components:
+    - type: Transform
+      pos: 5.5,-15.5
+      parent: 2
+  - uid: 1731
+    components:
+    - type: Transform
+      pos: 2.5,-13.5
+      parent: 2
+  - uid: 1732
+    components:
+    - type: Transform
+      pos: 3.5,-13.5
+      parent: 2
+  - uid: 1733
+    components:
+    - type: Transform
+      pos: 4.5,-13.5
+      parent: 2
+  - uid: 1734
+    components:
+    - type: Transform
+      pos: 5.5,-13.5
+      parent: 2
+  - uid: 1735
+    components:
+    - type: Transform
+      pos: 6.5,-13.5
+      parent: 2
+  - uid: 1736
+    components:
+    - type: Transform
+      pos: 4.5,-12.5
+      parent: 2
+  - uid: 1737
+    components:
+    - type: Transform
+      pos: 4.5,-11.5
+      parent: 2
+  - uid: 1738
+    components:
+    - type: Transform
+      pos: 6.5,-11.5
+      parent: 2
+  - uid: 1739
+    components:
+    - type: Transform
+      pos: 6.5,-12.5
+      parent: 2
+  - uid: 1740
+    components:
+    - type: Transform
+      pos: 5.5,-11.5
+      parent: 2
+  - uid: 1745
+    components:
+    - type: Transform
+      pos: 6.5,-15.5
+      parent: 2
+  - uid: 1746
+    components:
+    - type: Transform
+      pos: 6.5,-14.5
       parent: 2
   - uid: 3280
     components:
@@ -62855,28 +62953,6 @@ entities:
       powerLoad: 5
     - type: Battery
       startingCharge: 0
-- proto: ContainmentFieldGenerator
-  entities:
-  - uid: 929
-    components:
-    - type: Transform
-      pos: 5.5,-11.5
-      parent: 2
-  - uid: 930
-    components:
-    - type: Transform
-      pos: 6.5,-11.5
-      parent: 2
-  - uid: 931
-    components:
-    - type: Transform
-      pos: 5.5,-12.5
-      parent: 2
-  - uid: 932
-    components:
-    - type: Transform
-      pos: 6.5,-12.5
-      parent: 2
 - proto: ConvertAltarSpawner
   entities:
   - uid: 16195
@@ -63116,13 +63192,6 @@ entities:
     components:
     - type: Transform
       pos: 61.5,-30.5
-      parent: 2
-- proto: CrateEngineeringSecure
-  entities:
-  - uid: 17160
-    components:
-    - type: Transform
-      pos: 12.5,-24.5
       parent: 2
 - proto: CrateEngineeringSolar
   entities:
@@ -96955,11 +97024,6 @@ entities:
     - type: InsideEntityStorage
 - proto: GeneratorBasic
   entities:
-  - uid: 5917
-    components:
-    - type: Transform
-      pos: 6.5,-15.5
-      parent: 2
   - uid: 17200
     components:
     - type: Transform
@@ -106633,79 +106697,6 @@ entities:
     - type: Transform
       pos: -19.325176,-19.623896
       parent: 2
-  - uid: 1963
-    components:
-    - type: MetaData
-      name: substation notes
-    - type: Transform
-      pos: -2.4972892,15.49813
-      parent: 2
-    - type: Paper
-      stampState: paper_stamp-ce
-      stampedBy:
-      - reapply: False
-        stampType: RubberStamp
-        stampedColor: '#AF6E26FF'
-        stampedName: CentCom Engi.
-      content: >
-        [color=#009100]█▄ █ ▀█▀    [head=3]NanoTrasen Memo[/head]
-
-        █ ▀█     █        To the Core Engineering Team[/color]
-
-        ──────────────────────────────────────────
-
-        During the production of this station we have overlooked this substation, and as a result does not power any APCs.
-
-        [italic]Please pretend that this was not an oversight, but instead an intended decision.[/italic]
-
-
-        It is now a spare substation for any case where a substation or APC becomes damaged or wears out over time.
-
-
-        [italic]Best wishes, [bold]NanoTrasen Technical Build Team.[/bold][/italic]
-      editingDisabled: True
-    - type: SolutionContainerManager
-      solutions: null
-      containers:
-      - food
-    - type: Fixtures
-      fixtures:
-        fix1:
-          shape: !type:PolygonShape
-            radius: 0.01
-            vertices:
-            - -0.25,-0.25
-            - 0.25,-0.25
-            - 0.25,0.25
-            - -0.25,0.25
-          mask:
-          - Impassable
-          - HighImpassable
-          layer: []
-          density: 20
-          hard: True
-          restitution: 0.3
-          friction: 0.2
-        flammable:
-          shape: !type:PhysShapeCircle
-            radius: 0.35
-            position: 0,0
-          mask:
-          - TableLayer
-          - HighImpassable
-          - LowImpassable
-          - BulletImpassable
-          - InteractImpassable
-          - Opaque
-          layer: []
-          density: 1
-          hard: False
-          restitution: 0
-          friction: 0.4
-    - type: ContainerContainer
-      containers:
-        solution@food: !type:ContainerSlot
-          ent: 1964
   - uid: 5260
     components:
     - type: Transform
@@ -107561,19 +107552,44 @@ entities:
     - type: Transform
       pos: 32.5,-2.5
       parent: 2
-  - uid: 20231
-    components:
-    - type: Transform
-      pos: 5.5,-15.5
-      parent: 2
   - uid: 21240
     components:
     - type: Transform
       pos: 1.5,-8.5
       parent: 21128
-- proto: PortableGeneratorSuperPacman
+- proto: PortableGeneratorSuperPacmanShuttle
   entities:
-  - uid: 1575
+  - uid: 1741
+    components:
+    - type: Transform
+      pos: 4.5,-11.5
+      parent: 2
+  - uid: 1742
+    components:
+    - type: Transform
+      pos: 4.5,-12.5
+      parent: 2
+  - uid: 1743
+    components:
+    - type: Transform
+      pos: 6.5,-11.5
+      parent: 2
+  - uid: 1744
+    components:
+    - type: Transform
+      pos: 6.5,-12.5
+      parent: 2
+  - uid: 1890
+    components:
+    - type: Transform
+      pos: 6.5,-15.5
+      parent: 2
+  - uid: 1956
+    components:
+    - type: Transform
+      pos: 5.5,-15.5
+      parent: 2
+  - uid: 1957
     components:
     - type: Transform
       pos: 4.5,-15.5
@@ -120662,13 +120678,6 @@ entities:
     components:
     - type: Transform
       pos: 56.5,15.5
-      parent: 2
-- proto: SingularityGenerator
-  entities:
-  - uid: 2092
-    components:
-    - type: Transform
-      pos: 4.5,-11.5
       parent: 2
 - proto: Sink
   entities:
