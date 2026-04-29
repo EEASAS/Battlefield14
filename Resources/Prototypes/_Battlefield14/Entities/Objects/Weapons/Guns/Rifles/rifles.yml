@@ -107,7 +107,7 @@
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/M16A2.rsi
   - type: GunWieldBonus
     minAngle: -19
-    maxAngle: -23
+    maxAngle: -22
   - type: Gun
     minAngle: 19
     maxAngle: 32
@@ -310,7 +310,7 @@
   - type: Gun
     minAngle: 16
     maxAngle: 30
-    angleIncrease: 1
+    angleIncrease: 1.5
     projectileSpeed: 40 # Shorter barrel
   - type: CursorOffsetRequiresWield
   - type: EyeCursorOffset
@@ -741,6 +741,8 @@
       - state: foregrip
       - state: mag-0
         map: ["enum.GunVisualLayers.Mag"]
+  - type: Gun
+    angleIncrease: 1
   - type: CursorOffsetRequiresWield
   - type: EyeCursorOffset
     maxOffset: 5

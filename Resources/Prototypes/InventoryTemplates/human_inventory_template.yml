@@ -173,7 +173,7 @@
     #End Mono
     # BF14 Slots
     - name: suitstorage2
-      slotTexture: suit_storage
+      slotTexture: sling
       slotFlags: SUITSTORAGE2
       slotGroup: MainHotbar
       stripTime: 3
