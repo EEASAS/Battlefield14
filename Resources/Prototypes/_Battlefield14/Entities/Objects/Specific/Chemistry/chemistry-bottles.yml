@@ -1,0 +1,50 @@
+- type: entity
+  parent: BaseChemistryBottleFilled
+  id: MeraBicChemistryBottle
+  suffix: MB/MeraBic
+  components:
+  - type: Label
+    currentLabel: "meralyne + bicaridine"
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 30
+        reagents:
+        - ReagentId: Meralyne
+          Quantity: 15
+        - ReagentId: Bicaridine
+          Quantity: 15
+
+- type: entity
+  parent: BaseChemistryBottleFilled
+  id: KeloDermChemistryBottle
+  suffix: KD/KeloDerm
+  components:
+  - type: Label
+    currentLabel: "kelotane + dermaline"
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 30
+        reagents:
+        - ReagentId: Dermaline
+          Quantity: 15
+        - ReagentId: Kelotane
+          Quantity: 15
+
+- type: entity
+  parent: BaseChemistryBottleFilled
+  id: MeraDermChemistryBottle
+  suffix: MD/MeraDerm
+  components:
+  - type: Label
+    currentLabel: "meralyne + dermaline"
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 30
+        reagents:
+        - ReagentId: Dermaline
+          Quantity: 15
+        - ReagentId: Meralyne
+          Quantity: 15

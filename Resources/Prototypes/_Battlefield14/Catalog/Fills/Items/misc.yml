@@ -6,15 +6,13 @@
   - type: StorageFill
     contents:
     - id: Syringe
-#    - id: MorphineChemistryBottle # Tramadol
-    - id: EpinephrineChemistryBottle # these are mostly to show off the sprite
+    - id: MeraBicChemistryBottle
+    - id: KeloDermChemistryBottle
+    - id: EpinephrineChemistryBottle
+    - id: Tourniquet
     - id: EmergencyMedipen
-#    - id: PainMedipen
-#    - id: CartridgeBicaridine
-#      amount: 2
-#    - id: CartridgeSaline
-#      amount: 2
-#    - id: CartridgeAtropine
+    - id: InaprovalineMedipen
+    - id: InaprovalineMedipen
 
 - type: entity
   id: ClothingArmbandThighHolsterFilledUS

@@ -9,9 +9,9 @@
     state: advanced
   - type: Item
     size: Normal
-  - type: Clothing
-    sprite: _VXS14/Objects/binoculars.rsi
-    quickEquip: false
-    slots:
-    - Neck
+#BF14  - type: Clothing
+#BF14    sprite: _VXS14/Objects/binoculars.rsi
+#BF14    quickEquip: false
+#BF14    slots:
+#BF14    - Neck
   - type: Rangefinder
