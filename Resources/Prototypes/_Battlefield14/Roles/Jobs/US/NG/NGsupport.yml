@@ -40,8 +40,8 @@
     id: NGAutomaticRiflemanPDA
     ears: ClothingHeadsetAltUS
     belt: ClothingBeltMilitaryWebbingUSFilledM249
-    jumpsuit: ClothingUniformJumpsuitCamoUS
-    head: ClothingHeadHatHelmetUSRiot
+    jumpsuit: ClothingUniformJumpsuitCamoUSM81Urban
+    head: ClothingHeadHatHelmetUSUrbanRiot
 #    eyes: ClothingEyesGogglesTan
     outerClothing: ClothingOuterArmorPlateCarrierTan
     shoes: ClothingShoesBootsJackFilled

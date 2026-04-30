@@ -11,13 +11,20 @@
       - state: base
         map: ["enum.GunVisualLayers.Base"]
   - type: Item
-    size: Normal
+    size: Huge
     sprite: _Battlefield14/Objects/Weapons/Guns/GrenadeLaunchers/M320.rsi
     storedSprite:
       sprite: _Battlefield14/Objects/Weapons/Guns/GrenadeLaunchers/M320.rsi
       state: storage
   - type: Clothing
     sprite: _Battlefield14/Objects/Weapons/Guns/GrenadeLaunchers/M320.rsi
+    slots:
+    - Belt
+    - suitStorage
+    - SUITSTORAGE2
+    clothingVisuals:
+      suitstorage2:
+      - state: equipped-BELT
   - type: ItemSlots
     slots:
       gun_chamber:

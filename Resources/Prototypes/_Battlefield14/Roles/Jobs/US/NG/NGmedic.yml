@@ -44,8 +44,8 @@
     id: NGMedicPDA
     ears: ClothingHeadsetAltUS
     belt: ClothingBeltMedicalEMTFilledBF14 # ClothingBeltMilitaryWebbingUSFilledMP5
-    jumpsuit: ClothingUniformJumpsuitCamoUS
-    head: ClothingHeadHatHelmetUS
+    jumpsuit: ClothingUniformJumpsuitCamoUSM81Urban
+    head: ClothingHeadHatHelmetUSUrban
     eyes: ClothingEyesHudMedicalBF
     outerClothing: ClothingOuterArmorPlateCarrierTan
     shoes: ClothingShoesBootsJackFilled

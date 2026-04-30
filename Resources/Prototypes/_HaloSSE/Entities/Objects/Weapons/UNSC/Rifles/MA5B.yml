@@ -21,16 +21,15 @@
   - type: Gun
     minAngle: 16
     maxAngle: 32
-    angleIncrease: 0.3
+    angleIncrease: 1
     projectileSpeed: 40
     availableModes:
     - SemiAuto
-    - FullAuto
     - Burst
     selectedMode: Burst
     shotsPerBurst: 5
-    burstCooldown: 0.5
-    burstFireRate: 8
+    burstCooldown: 0.1
+    burstFireRate: 7
     fireRate: 7
     soundGunshot:
       path: /Audio/_HaloSSE/Weapons/UNSC/Assault_Rifle_Fire_New.ogg

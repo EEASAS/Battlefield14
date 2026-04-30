@@ -6,7 +6,8 @@
   - /Audio/_Battlefield14/RoundEnd/enough.ogg # Move this to round start once we get collections working for that
   - /Audio/_Battlefield14/RoundEnd/sneakybeaky.ogg # This too
   - /Audio/_Battlefield14/RoundEnd/bullied.ogg
-#BF14  - /Audio/Announcements/RoundEnd/apc_destroyed.ogg
+  - /Audio/Announcements/RoundEnd/apc_destroyed.ogg
+  - /Audio/_HaloSSE/Misc/bangindonk.ogg
 #BF14  - /Audio/Announcements/RoundEnd/disappointed.ogg
 #BF14  - /Audio/Announcements/RoundEnd/notevenpaidforthis.ogg
 

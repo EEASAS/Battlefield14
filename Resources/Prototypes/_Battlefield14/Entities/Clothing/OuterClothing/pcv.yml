@@ -46,7 +46,7 @@
     passiveBlockModifier:
       coefficients:
         Blunt: 1.2
-        Slash: 0.25
+        Slash: 1.2
         Piercing: 0.3
         Heat: 1.5
     activeBlockModifier: # Doesnt matter, isnt used
