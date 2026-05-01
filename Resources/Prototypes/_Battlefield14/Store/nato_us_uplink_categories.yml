@@ -72,7 +72,7 @@
   productEntity: CrateSecgearNATOFilledStinger
   icon: { sprite: _Battlefield14/Objects/Weapons/Guns/Launchers/stinger.rsi, state: icon }
   cost:
-    NATORequisition: 24 # 4 minutes
+    NATORequisition: 10 # 1 minute 40 seconds
   categories:
     - UplinkNATOUSWeapons
   conditions:
@@ -114,13 +114,29 @@
           - AmericanUplink
 
 - type: listing
+  id: UplinkNATOUSM16A2Crate
+  name: uplink-NATOUS-M16A2crate-name
+  description: uplink-NATOUS-M16A2crate-desc
+  productEntity: CrateSecgearNATOFilledM16A2
+  icon: { sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/iconstates.rsi, state: icon-full-M16A2 }
+  cost:
+    NATORequisition: 10 # 1 minute 40 seconds
+  categories:
+    - UplinkNATOUSWeapons
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - AmericanUplink
+
+- type: listing
   id: UplinkNATOUSM16A4Crate
   name: uplink-natous-m16a4crate-name
   description: uplink-natous-m16a4crate-desc
   productEntity: CrateSecgearNATOFilledM16A4
   icon: { sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/iconstates.rsi, state: icon-full-M16A4 }
   cost:
-    NATORequisition: 6 # 1 minutes
+    NATORequisition: 10 # 1 minute 40 seconds
   categories:
     - UplinkNATOUSWeapons
   conditions:
@@ -193,6 +209,22 @@
         tags:
           - AmericanUplink
 
+- type: listing
+  id: UplinkNATOUSSCARHCrate
+  name: uplink-NATOUS-SCARHcrate-name
+  description: uplink-NATOUS-SCARHcrate-desc
+  productEntity: CrateSecgearNATOFilledSCARH
+  icon: { sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/SCAR.rsi, state: icon }
+  cost:
+    NATORequisition: 30 # 5 minutes
+  categories:
+    - UplinkNATOUSWeapons
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - AmericanUplink
+
 # Ammo
 
 - type: listing
@@ -203,6 +235,38 @@
   icon: { sprite: _Battlefield14/Objects/Misc/ammoboxus.rsi, state: icon }
   cost:
     NATORequisition: 16 # 2 minutes 40 seconds
+  categories:
+    - UplinkNATOUSAmmo
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - AmericanUplink
+
+- type: listing
+  id: UplinkNATOUSAmmoBox
+  name: uplink-natous-ammo-box-name
+  description: uplink-natous-ammo-box-desc
+  productEntity: SupplyBoxAmmoUSFilled
+  icon: { sprite: _Battlefield14/Objects/Misc/ammoboxus.rsi, state: icon }
+  cost:
+    NATORequisition: 16 # 2 minutes 40 seconds
+  categories:
+    - UplinkNATOUSAmmo
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - AmericanUplink
+
+- type: listing
+  id: UplinkNATOMagazineBoxSCARH
+  name: uplink-NATOUS-magazine-box-SCARH-name
+  description: uplink-NATOUS-magazine-box-SCARH-desc
+  productEntity: BoxMagazineSCARH
+  icon: { sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Rifle/SCARH.rsi, state: icon }
+  cost:
+    NATORequisition: 4 # 40 seconds
   categories:
     - UplinkNATOUSAmmo
   conditions:
@@ -336,7 +400,7 @@
   name: uplink-natous-40x46mm-he-name
   description: uplink-natous-40x46mm-he-desc
   productEntity: BoxMagazine40x46HE
-  icon: { sprite: _Mono/Objects/Weapons/Guns/Ammunition/Explosives/explosives.rsi, state: frag }
+  icon: { sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Casings/40x46.rsi, state: icon-nameplate }
   cost:
     NATORequisition: 18 # 3 minutes
   categories:
@@ -352,7 +416,7 @@
   name: uplink-natous-40x46mm-frag-name
   description: uplink-natous-40x46mm-frag-desc
   productEntity: BoxMagazine40x46Frag
-  icon: { sprite: _Mono/Objects/Weapons/Guns/Ammunition/Explosives/explosives.rsi, state: frag }
+  icon: { sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Casings/40x46.rsi, state: icon-nameplate }
   cost:
     NATORequisition: 18 # 3 minutes
   categories:
@@ -368,7 +432,7 @@
   name: uplink-natous-40x46mm-hedp-name
   description: uplink-natous-40x46mm-hedp-desc
   productEntity: BoxMagazine40x46HEDP
-  icon: { sprite: _Mono/Objects/Weapons/Guns/Ammunition/Explosives/explosives.rsi, state: frag }
+  icon: { sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Casings/40x46.rsi, state: icon-nameplate }
   cost:
     NATORequisition: 30 # 5 minutes
   categories:
@@ -416,7 +480,7 @@
   name: uplink-natous-40x46mm-smoke-name
   description: uplink-natous-40x46mm-smoke-desc
   productEntity: BoxMagazine40x46ChemicalSmoke
-  icon: { sprite: _Mono/Objects/Weapons/Guns/Ammunition/Explosives/explosives.rsi, state: blast }
+  icon: { sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Casings/40x46.rsi, state: icon-nameplate }
   cost:
     NATORequisition: 9 # 1 minute 30 seconds
   categories:

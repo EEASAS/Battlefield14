@@ -479,6 +479,133 @@
   - type: RandomMetadata
     nameSegments: [names_AR15_police]
 
+- type: entity
+  name: SCAR-L
+  parent: WeaponRifleUSM16A3
+  id: WeaponRifleBESCARL
+  description: The classic American slugthrower.
+  components:
+  - type: Item # Controls inhand sprites
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/SCAR.rsi
+    size: Large
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/SCAR.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: holosight
+      - state: mag-h-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/SCAR.rsi
+  - type: GunWieldBonus
+    minAngle: -14
+    maxAngle: -20
+  - type: Gun
+    minAngle: 16
+    maxAngle: 30
+    angleIncrease: 1
+    projectileSpeed: 45
+    soundGunshot:
+      collection: BF_SCARL_Gunshots
+      params:
+        volume: -5
+        variation: 0.125
+  - type: ChamberMagazineAmmoProvider
+    soundRack:
+      path: /Audio/_Battlefield14/Weapons/Guns/SCAR/rack.ogg
+      params:
+        volume: -2
+    soundBoltClosed:
+      path: /Audio/_Battlefield14/Weapons/Guns/SCAR/boltcatch.ogg
+      params:
+        volume: -5
+  - type: MagazineVisuals
+    magState: mag-l
+    steps: 1
+    zeroVisible: true
+  - type: Appearance
+#  - type: ExtendDescription
+#    descriptionList:
+#      - description: Takes SCAR-H pattern magazines.
+#        color: "#4f94ad"
+#        requireDetailRange: true
+  - type: WieldedCrosshair
+    rsi:
+      sprite: _Battlefield14/Interface/MousePointer/optics.rsi
+      state: eotech
+
+- type: entity
+  name: SCAR-H
+  parent: BaseWeaponRifle
+  id: WeaponRifleBESCARH
+  description: The classic American slugthrower.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/SCAR.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: holosight
+      - state: mag-h-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/SCAR.rsi
+  - type: GunWieldBonus
+    minAngle: -14
+    maxAngle: -20
+  - type: Gun
+    minAngle: 16
+    maxAngle: 30
+    angleIncrease: 1
+    projectileSpeed: 45
+    fireRate: 5
+    soundGunshot:
+      collection: BF_SCARH_Gunshots
+      params:
+        volume: -5
+        variation: 0.125
+  - type: ChamberMagazineAmmoProvider
+    soundRack:
+      path: /Audio/_Battlefield14/Weapons/Guns/SCAR/rack.ogg
+    soundBoltClosed:
+      path: /Audio/_Battlefield14/Weapons/Guns/SCAR/boltcatch.ogg
+      params:
+        volume: -5
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazineRifleSCARH
+        insertSound: /Audio/_Battlefield14/Weapons/Guns/SCAR/magin-762.ogg
+        ejectSound: /Audio/_Battlefield14/Weapons/Guns/SCAR/magout-762.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MagazineRifleSCARH
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: BF_CartridgeRifle762x51
+        priority: 1
+        whitelist:
+          tags:
+            - BF_CartridgeRifle762x51
+  - type: MagazineVisuals
+    magState: mag-h
+    steps: 1
+    zeroVisible: true
+  - type: Appearance
+  - type: ExtendDescription
+    descriptionList:
+      - description: Takes SCAR-H pattern magazines.
+        color: "#4f94ad"
+        requireDetailRange: true
+  - type: WieldedCrosshair
+    rsi:
+      sprite: _Battlefield14/Interface/MousePointer/optics.rsi
+      state: eotech
+
 # Rifles - RU
 
 - type: entity

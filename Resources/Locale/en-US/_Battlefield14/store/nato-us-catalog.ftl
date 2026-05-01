@@ -6,6 +6,9 @@ uplink-natous-m249para-desc = A crate with two M249 Para's with four spare belt 
 uplink-natous-m320-name = M320 x2
 uplink-natous-m320-desc = Two M320 grenade launchers, fires 40x46mm grenades, two fragmentation, two smoke, and one HE box included.
 
+uplink-NATOUS-M16A2crate-name = M16A2 x10
+uplink-NATOUS-M16A2crate-desc = A crate with ten M16A2 rifles and two boxes of spare ammunition.
+
 uplink-natous-m16a4crate-name = M16A4 x10
 uplink-natous-m16a4crate-desc = A crate with ten M16A4 rifles and two boxes of spare ammunition.
 
@@ -36,6 +39,9 @@ uplink-natous-stingercrate-desc = 5 stinger MANPADS systems for shooting down fi
 uplink-NATOUS-M14EBRcrate-name = Mk-14 EBR x2
 uplink-NATOUS-M14EBRcrate-desc = 2 mk-14 EBR scoped designated marksman rifles and two boxes of spare ammunition.
 
+uplink-NATOUS-SCARHcrate-name = SCAR-H x5
+uplink-NATOUS-SCARHcrate-desc = 5 SCAR-H assault rifles and two boxes of spare ammunition.
+
 uplink-NATOUS-1776railgun-name = 17.76mm Liberator railgun
 uplink-NATOUS-1776railgun-desc = A singlular unit of the experimental Liberator railgun, fires shortened 17.76mm depleted-uranium penetrators.
 
@@ -43,6 +49,9 @@ uplink-NATOUS-1776railgun-desc = A singlular unit of the experimental Liberator 
 
 uplink-natous-ammo-box-name = Ammo Box
 uplink-natous-ammo-box-desc = Contains 200 loose 5.56x45mm rounds, 16 STANAG magazines, and 300 loose rounds of 9x19mm.
+
+uplink-NATOUS-magazine-box-SCARH-name = SCAR-H magazine box (7.62x51mm)
+uplink-NATOUS-magazine-box-SCARH-desc = Contains 8 20 round SCAR-H magazines.
 
 uplink-natous-83mm-HEAA-name = 83mm HEAA round x4 (SMAW)
 uplink-natous-83mm-HEAA-desc = Four 83mm High Explosive Anti Armour rounds for the SMAW.

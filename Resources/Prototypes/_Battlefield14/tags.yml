@@ -68,9 +68,6 @@
   id: MagazineSniperIntervention
 
 - type: Tag
-  id: MagazineSMAW
-
-- type: Tag
   id: CartridgeRPG7
 
 - type: Tag
@@ -89,13 +86,16 @@
   id: MagazineRifleAK74
 
 - type: Tag
-  id: MagazineRifleSTANAG
-
-- type: Tag
   id: MagazineRifleASH12
 
 - type: Tag
   id: MagazineRifleASVAL
+
+- type: Tag
+  id: MagazineRifleSTANAG
+
+- type: Tag
+  id: MagazineRifleSCARH
 
 - type: Tag
   id: MagazineRifleSV98

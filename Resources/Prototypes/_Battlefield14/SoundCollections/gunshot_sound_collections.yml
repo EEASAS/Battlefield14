@@ -171,7 +171,7 @@
   - /Audio/Weapons/Guns/Miss/bullet_miss4.ogg
 
 - type: soundCollection
-  id: BF_M9Beretta_Gunshots
+  id: BF_M9Beretta_Gunshots # M9 Beretta - used for all pistols currently
   files:
   - "/Audio/_Battlefield14/Weapons/Guns/Beretta/fire-01.ogg"
   - "/Audio/_Battlefield14/Weapons/Guns/Beretta/fire-02.ogg"
@@ -179,3 +179,23 @@
   - "/Audio/_Battlefield14/Weapons/Guns/Beretta/fire-04.ogg"
 #  - "/Audio/_Battlefield14/Weapons/Guns/Beretta/fire-05.ogg"
   - "/Audio/_Battlefield14/Weapons/Guns/Beretta/fire-06.ogg"
+
+- type: soundCollection
+  id: BF_SCARL_Gunshots # SCAR-L - used for SCAR-L
+  files:
+  - "/Audio/_Battlefield14/Weapons/Guns/SCAR/fire-556-01.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/SCAR/fire-556-02.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/SCAR/fire-556-03.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/SCAR/fire-556-04.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/SCAR/fire-556-05.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/SCAR/fire-556-06.ogg"
+
+- type: soundCollection
+  id: BF_SCARH_Gunshots # SCAR-H - used for SCAR-H
+  files:
+  - "/Audio/_Battlefield14/Weapons/Guns/SCAR/fire-762-01.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/SCAR/fire-762-02.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/SCAR/fire-762-03.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/SCAR/fire-762-04.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/SCAR/fire-762-05.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/SCAR/fire-762-06.ogg"

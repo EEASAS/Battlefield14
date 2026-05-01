@@ -25,7 +25,7 @@
   productEntity: CrateSecgearPACTFilledAK74
   icon: { sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AK74.rsi, state: icon }
   cost:
-    PACTRequisition: 6 # 1 minutes
+    PACTRequisition: 10 # 1 minute 40 seconds
   categories:
     - UplinkPACTRUWeapons
   conditions:
@@ -41,7 +41,7 @@
   productEntity: CrateSecgearPACTFilledAK12
   icon: { sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AK12.rsi, state: icon }
   cost:
-    PACTRequisition: 8 # 1 minute 30 seconds
+    PACTRequisition: 10 # 1 minute 40 seconds
   categories:
     - UplinkPACTRUWeapons
   conditions:
@@ -201,7 +201,7 @@
   productEntity: CrateSecgearPACTFilledIgla
   icon: { sprite: _Battlefield14/Objects/Weapons/Guns/Launchers/Igla.rsi, state: icon }
   cost:
-    PACTRequisition: 24 # 4 minutes
+    PACTRequisition: 10 # 1 minute 40 seconds
   categories:
     - UplinkPACTRUWeapons
   conditions:

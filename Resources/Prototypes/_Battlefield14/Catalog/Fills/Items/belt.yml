@@ -138,6 +138,28 @@
       - id: MagazinePistolM9
         amount: 2
 
+- type: entity
+  id: ClothingBeltWebbingsNormalTanFilledSCARH
+  parent: ClothingBeltWebbingsNormalTan
+  suffix: Filled, MARSOC leader, SCAR-H
+  components:
+  - type: StorageFill
+    contents:
+      - id: MagazineBox762x51
+      - id: MagazineRifleSCARH
+        amount: 7
+
+- type: entity
+  id: ClothingBeltWebbingsNormalBlackFilledSCARH
+  parent: ClothingBeltWebbingsNormalBlack
+  suffix: Filled, MARSOC leader, SCAR-H
+  components:
+  - type: StorageFill
+    contents:
+      - id: MagazineBox762x51
+      - id: MagazineRifleSCARH
+        amount: 7
+
 # RU
 
 - type: entity

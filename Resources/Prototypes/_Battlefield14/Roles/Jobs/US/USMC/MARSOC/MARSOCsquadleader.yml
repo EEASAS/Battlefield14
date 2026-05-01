@@ -51,7 +51,7 @@
     id: MARSOCSquadLeaderPDA
     ears: ClothingHeadsetAltUS
     neck: FlashlightMilitaryUS
-    belt: ClothingBeltWebbingsNormalTanFilled68x52 # Scar H mags
+    belt: ClothingBeltWebbingsNormalTanFilledSCARH
     jumpsuit: ClothingUniformJumpsuitCamoUS
     head: ClothingHeadHatHelmetUS
     eyes: ClothingEyesGogglesTan
@@ -60,7 +60,8 @@
     shoes: ClothingShoesBootsJackFilled
     gloves: ClothingHandsGlovesCombat
     back: ClothingBackpackRucksackTan
-    suitstorage: WeaponRifleUSM30MRC # Scar H
+    suitstorage: WeaponRifleBESCARH
+    suitstorage2: WeaponShotgunUSM590
     pocket1: PouchMedkitFilledMarsoc
     pocket2: PouchGrenadesFilledUSMCRifleman
     leftarmband: Tourniquet
@@ -69,7 +70,6 @@
   storage:
     back:
     - ArmorPlateMedium
-    - WeaponShotgunUSM590
     - ShellBoxBF12GaugeBreaching
     - BoxMRE
     - ClothingMaskGasM40Green
@@ -85,7 +85,7 @@
     id: MARSOCSquadLeaderPDA
     ears: ClothingHeadsetAltUS
     neck: FlashlightMilitaryUS
-    belt: ClothingBeltWebbingsNormalBlackFilled68x52 # Scar H mags later
+    belt: ClothingBeltWebbingsNormalBlackFilledSCARH
     jumpsuit: ClothingUniformJumpsuitCamoUS
     eyes: ClothingEyesGogglesTan
     balaclava: ClothingBalaclavaMilitary
@@ -93,7 +93,8 @@
     shoes: ClothingShoesBootsMagAshenFilled
     gloves: ClothingHandsGlovesCombat
     back: ClothingBackpackRucksackBlack
-    suitstorage: WeaponRifleUSM30MRC # Scar H later
+    suitstorage: WeaponRifleBESCARH
+    suitstorage2: WeaponShotgunUSM590
     pocket1: PouchMedkitFilledMarsoc
     pocket2: PouchGrenadesFilledUSMCRifleman
     leftarmband: ClothingArmbandMassScanner
@@ -102,7 +103,6 @@
   storage:
     back:
     - ArmorPlateMedium
-    - WeaponShotgunUSM590
     - ShellBoxBF12GaugeBreaching
     - BoxMRE
     - ClothingMaskGasM40Green
