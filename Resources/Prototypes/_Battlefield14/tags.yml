@@ -92,6 +92,9 @@
   id: MagazineRifleASVAL
 
 - type: Tag
+  id: MagazineRifleG3
+
+- type: Tag
   id: MagazineRifleSTANAG
 
 - type: Tag

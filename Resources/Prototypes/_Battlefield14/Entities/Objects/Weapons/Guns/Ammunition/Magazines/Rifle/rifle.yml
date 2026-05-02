@@ -61,6 +61,36 @@
 
 - type: entity
   parent: BaseMagazineRifle
+  id: MagazineRifleG3
+  name: "G3 magazine (7.62x51mm)"
+  description: It's a magazine.
+  components:
+  - type: Tag
+    tags:
+      - MagazineRifleG3
+      - Magazine
+  - type: BallisticAmmoProvider
+    proto: BF_CartridgeRifle762x51
+    mayTransfer: true
+    whitelist:
+      tags:
+        - BF_CartridgeRifle762x51
+    capacity: 20
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Rifle/SCARH.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 3
+    zeroVisible: false
+  - type: Appearance
+
+- type: entity
+  parent: BaseMagazineRifle
   id: MagazineRifleASH12
   name: "ASH-12 magazine (12.7x55)"
   description: Big and chunky mag, holding 20 12.7x55 bullets for eradicating "cag operators" in CQB with Russian brutality.

@@ -45,3 +45,9 @@
   background: /Textures/_Battlefield14/LobbyScreens/rooftop.png
 #  name: Rooftop
 #  artist: Russian Ground Forces and JoeHammad
+
+- type: lobbyBackground
+  id: BackgroundStreetwar
+  background: /Textures/_Battlefield14/LobbyScreens/streetwar.png
+#  name: street war
+#  artist: Belwoods and JoeHammad
