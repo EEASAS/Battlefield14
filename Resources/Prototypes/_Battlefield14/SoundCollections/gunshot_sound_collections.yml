@@ -199,3 +199,13 @@
   - "/Audio/_Battlefield14/Weapons/Guns/SCAR/fire-762-04.ogg"
   - "/Audio/_Battlefield14/Weapons/Guns/SCAR/fire-762-05.ogg"
   - "/Audio/_Battlefield14/Weapons/Guns/SCAR/fire-762-06.ogg"
+
+- type: soundCollection
+  id: BF_G3_Gunshots # G3- used for G3A3
+  files:
+  - "/Audio/_Battlefield14/Weapons/Guns/G3/fire-01.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/G3/fire-02.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/G3/fire-03.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/G3/fire-04.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/G3/fire-05.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/G3/fire-06.ogg"
