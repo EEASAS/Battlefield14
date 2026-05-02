@@ -11,6 +11,7 @@
     tags:
     - Cartridge
     - Cartridge43x30mmGrenade
+    - Grenade
   - type: CartridgeAmmo
     deleteOnSpawn: true
     proto: Bullet43x30mmHEFragArmingDistance
@@ -63,6 +64,7 @@
     - Cartridge
     - Cartridge43x30mmChemicalSmoke
     - Cartridge43x30mmGrenade
+    - Grenade
   - type: CartridgeAmmo
     proto: Bullet43x30mmChemicalSmoke
   - type: Sprite

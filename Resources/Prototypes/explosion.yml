@@ -14,6 +14,14 @@
   lightColor: Orange
   texturePath: /Textures/Effects/fire.rsi
   fireStates: 3
+  sound: # BF14
+    collection: CivExplosion
+  smallSound: 
+     collection: CivExplosionSmall
+  soundFar: 
+     collection: CivExplosionDistant
+  smallSoundFar: 
+     collection: CivExplosionDistantFar
 
 - type: explosion
   id: DemolitionCharge
@@ -29,6 +37,14 @@
   lightColor: Orange
   texturePath: /Textures/Effects/fire.rsi
   fireStates: 3
+  sound: # BF14
+    collection: CivExplosion
+  smallSound: 
+     collection: CivExplosionSmall
+  soundFar: 
+     collection: CivExplosionDistant
+  smallSoundFar: 
+     collection: CivExplosionDistantFar
 
 - type: explosion
   id: MicroBomb
@@ -45,6 +61,14 @@
   lightColor: Orange
   texturePath: /Textures/Effects/fire.rsi
   fireStates: 6
+  sound: # BF14
+    collection: CivExplosion
+  smallSound: 
+     collection: CivExplosionSmall
+  soundFar: 
+     collection: CivExplosionDistant
+  smallSoundFar: 
+     collection: CivExplosionDistantFar
 
 - type: explosion
   id: Radioactive
@@ -87,6 +111,14 @@
   lightColor: Orange
   texturePath: /Textures/Effects/fire.rsi
   fireStates: 3
+  sound: # BF14
+    collection: CivExplosion
+  smallSound: 
+     collection: CivExplosionSmall
+  soundFar: 
+     collection: CivExplosionDistant
+  smallSoundFar: 
+     collection: CivExplosionDistantFar
 
 - type: explosion
   id: PowerSink
@@ -131,6 +163,15 @@
   texturePath: /Textures/Effects/fire.rsi
   fireStates: 6
   fireStacks: 2
+  throwEntitiesOnExplosion: false # BF14, for thermobarics
+  sound:
+    collection: CivExplosionGrenade
+  smallSound: 
+     collection: CivExplosionGrenade
+  soundFar: 
+     collection: CivExplosionDistant
+  smallSoundFar: 
+     collection: CivExplosionDistantFar
 
 # STOP
 # BEFORE YOU ADD MORE EXPLOSION TYPES CONSIDER IF AN EXISTING ONE IS SUITABLE

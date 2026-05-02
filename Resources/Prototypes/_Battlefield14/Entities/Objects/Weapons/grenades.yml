@@ -24,7 +24,7 @@
     capacity: 30
   - type: ExplodeOnTrigger
   - type: Explosive
-    explosionType: Default
+    explosionType: HandGrenade
     totalIntensity: 50
     intensitySlope: 4
     maxIntensity: 6
@@ -89,7 +89,7 @@
     sprite: _Battlefield14/Objects/Weapons/Grenades/MK21.rsi
   - type: ExplodeOnTrigger
   - type: Explosive
-    explosionType: Default
+    explosionType: HandGrenade
     maxIntensity: 10
     intensitySlope: 4
     totalIntensity: 100
@@ -183,7 +183,7 @@
 #    staminaCost: 65
   - type: ExplodeOnTrigger
   - type: Explosive
-    explosionType: Default
+    explosionType: HandGrenade
     maxIntensity: 500
     intensitySlope: 5
     totalIntensity: 1000
@@ -373,7 +373,7 @@
     sprite: _Battlefield14/Objects/Weapons/Grenades/rgd5.rsi
   - type: ExplodeOnTrigger
   - type: Explosive
-    explosionType: Default
+    explosionType: HandGrenade
     maxIntensity: 10
     intensitySlope: 4
     totalIntensity: 100
@@ -418,7 +418,7 @@
     capacity: 30
   - type: ExplodeOnTrigger
   - type: Explosive
-    explosionType: Default
+    explosionType: HandGrenade
     totalIntensity: 50
     intensitySlope: 4
     maxIntensity: 6
@@ -516,7 +516,7 @@
           Blunt: 60
   - type: ExplodeOnTrigger
   - type: Explosive
-    explosionType: Default
+    explosionType: HandGrenade
     maxIntensity: 10
     intensitySlope: 2
     totalIntensity: 30
