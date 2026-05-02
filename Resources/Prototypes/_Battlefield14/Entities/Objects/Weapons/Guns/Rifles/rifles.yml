@@ -622,7 +622,7 @@
   name: G3A3
   parent: BaseWeaponRifle
   id: WeaponRifleDEG3A3
-  description: The big brother of the SCAR-L, not entirely replacing the M4A1 but select units can choose to take a few.
+  description: Derived from the spanish CETME rifle, think of this weapon as the MP5's older brother who does steroids. Was used by west germany post WW2 until it was replaced by the G36 after reunification.
   components:
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/G3.rsi
