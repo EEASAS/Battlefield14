@@ -14,7 +14,7 @@
     whitelist:
       tags:
         - BF_CartridgeShotgun12Gauge
-    capacity: 8
+    capacity: 10
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Shotgun/KSK.rsi
     layers:
@@ -39,7 +39,7 @@
     whitelist:
       tags:
         - BF_CartridgeShotgun12Gauge
-    capacity: 8
+    capacity: 10
 
 - type: entity
   parent: MagazineShotgunKSK
@@ -52,4 +52,4 @@
     whitelist:
       tags:
         - BF_CartridgeShotgun12Gauge
-    capacity: 8
+    capacity: 10
