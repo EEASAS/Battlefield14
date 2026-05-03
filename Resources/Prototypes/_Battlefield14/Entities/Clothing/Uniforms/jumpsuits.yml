@@ -133,3 +133,14 @@
     sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/black_utility_sec.rsi
   - type: Clothing
     sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/black_utility_sec.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitUSPD
+  name: american police uniform
+  description: Used by enforcers of the law across the United States.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/navycombat.rsi
+  - type: Clothing
+    sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/navycombat.rsi

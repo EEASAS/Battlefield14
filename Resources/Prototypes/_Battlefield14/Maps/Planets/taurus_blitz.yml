@@ -29,8 +29,8 @@
             VDVAutomaticRifleman: [ 3, 3 ]
             VDVMedic: [ 3, 3 ]
             VDVRecon: [ 3, 3 ]
-            WPSSecurityOfficer: [ 1, 1 ] # Redo with cops
-            WPSWarden: [ 1, 1 ] # Redo with cops
-            WPSMarshal: [ 1, 1 ] # Redo with cops
+            USPDChief: [ 1, 1 ]
+            USPDWarden: [ 1, 1 ]
+            USPDOfficer: [ 1, 1 ]
         - type: StationBiome
           biome: Grasslands

@@ -1,0 +1,47 @@
+- type: job
+  id: USPDOfficer
+  name: job-name-uspd-officer
+  description: job-description-uspd-officer
+  playTimeTracker: JobUSPDOfficer
+  weight: 70
+  startingGear: USPDOfficerGear
+  alwaysUseSpawner: true
+  icon: "JobIconINDSecurity"
+  requireAdminNotify: false
+  supervisors: job-supervisors-usgov
+  canBeAntag: false
+  special:
+  - !type:AddLanguageSpecial
+    languagesSpoken:
+    - English
+    languagesUnderstood:
+    - English
+  access:
+  - Maintenance
+  - Service
+  - External
+  - Mercenary # Frontier
+  - NATOCommon
+  - Security
+  - Brig
+  - Command
+  - Medical
+  - Cargo
+  - Engineering
+  - Research
+
+- type: startingGear
+  id: USPDOfficerGear
+  equipment:
+    id: USPDOfficerPDA
+    ears: ClothingHeadsetAltWPS
+    belt: ClothingBeltStationSecurityFilled
+    jumpsuit: ClothingUniformJumpsuitUSPD
+    outerClothing: ClothingOuterArmorWebVestSec
+    shoes: ClothingShoesBootsJackFilled
+#    back: ClothingBackpackSecurity
+    pocket2: PouchFirstAidFilled
+  storage:
+    back:
+    - Tourniquet
+    - Zipties

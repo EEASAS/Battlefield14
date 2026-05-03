@@ -18,7 +18,7 @@
     plasmaAmount: 0
   - type: ExplodeOnTrigger
   - type: Explosive
-    explosionType: Default
+    explosionType: HandGrenade
     totalIntensity: 50
     intensitySlope: 3
     maxIntensity: 4.5

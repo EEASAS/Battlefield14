@@ -1,0 +1,59 @@
+- type: job
+  id: USPDChief
+  name: job-name-uspd-chief
+  description: job-description-uspd-chief
+  playTimeTracker: JobUSPDChief
+  weight: 77
+  startingGear: USPDChiefGear
+  alwaysUseSpawner: true
+  icon: "JobIconINDCaptain"
+  requireAdminNotify: false
+  supervisors: job-supervisors-usgov
+  canBeAntag: false
+  special:
+  - !type:AddLanguageSpecial
+    languagesSpoken:
+    - English
+    languagesUnderstood:
+    - English
+#  - !type:AddComponentSpecial
+#    components:
+#    - type: NpcFactionMember
+#      factions:
+#      - USMC
+  # - !type:AddComponentSpecial
+  #   components:
+  #     # COMMENTED OUT: ChatRank and HullrotFaction not supported
+  #     # - type: ChatRank
+  #     #   rank: BF-rank-private
+  access:
+  - Maintenance
+  - Service
+  - External
+  - Mercenary # Frontier
+  - NATOCommon
+  - Security
+  - Brig
+  - Armory
+  - HeadOfSecurity
+  - Command
+  - Medical
+  - Cargo
+  - Engineering
+  - Research
+
+- type: startingGear
+  id: USPDChiefGear
+  equipment:
+    id: USPDChiefPDA
+    ears: ClothingHeadsetAltWPS
+    belt: ClothingBeltStationSecurityFilled
+    jumpsuit: ClothingUniformJumpsuitUSPD
+    outerClothing: ClothingOuterArmorWebVestSec
+    shoes: ClothingShoesBootsJackFilled
+#    back: ClothingBackpackSecurity
+    pocket2: PouchFirstAidFilled
+  storage:
+    back:
+    - Tourniquet
+    - Zipties

@@ -73289,21 +73289,21 @@ entities:
     - type: Transform
       pos: -32.5,63.5
       parent: 1
-- proto: SpawnPointWPSMarshal
+- proto: SpawnPointUSPDChief
   entities:
   - uid: 572
     components:
     - type: Transform
       pos: -31.5,4.5
       parent: 1
-- proto: SpawnPointWPSSecurityOfficer
+- proto: SpawnPointUSPDOfficer
   entities:
   - uid: 573
     components:
     - type: Transform
       pos: -34.5,4.5
       parent: 1
-- proto: SpawnPointWPSWarden
+- proto: SpawnPointUSPDWarden
   entities:
   - uid: 574
     components:

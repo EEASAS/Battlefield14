@@ -17,6 +17,10 @@ job-name-ng-automatic-rifleman = N.G. Automatic Rifleman
 job-name-ng-medic = N.G. Combat Medic
 job-name-ng-recon = N.G. Cavalry Scout
 
+job-name-uspd-chief = Police Chief
+job-name-uspd-warden = Warden
+job-name-uspd-officer = Police Officer
+
 #Russian Federation#
 
 job-name-vdv-squadleader = Senior Rifleman
@@ -31,6 +35,6 @@ job-name-vks-fighter-pilot = VKS Fighter Pilot
 
 #Western Private Security#
 
-job-name-wps-officer = Security Officer
-job-name-wps-warden = Brig Chief
 job-name-wps-marshal = Marshal
+job-name-wps-warden = Brig Chief
+job-name-wps-officer = Security Officer

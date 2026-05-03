@@ -22,7 +22,7 @@
     maxVelocity: 15
   - type: ExplodeOnTrigger
   - type: Explosive
-    explosionType: Default
+    explosionType: HandGrenade
     totalIntensity: 30
     intensitySlope: 1.5
     maxIntensity: 10

@@ -75,6 +75,17 @@
 - type: playTimeTracker
   id: JobNGRecon
 
+# US Police
+
+- type: playTimeTracker
+  id: JobUSPDChief
+
+- type: playTimeTracker
+  id: JobUSPDWarden
+
+- type: playTimeTracker
+  id: JobUSPDOfficer
+
 ## RU
 
 # VDV

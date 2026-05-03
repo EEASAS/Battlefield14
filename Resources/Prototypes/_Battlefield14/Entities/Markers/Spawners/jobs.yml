@@ -175,6 +175,45 @@
     - state: natoallyrecon
       scale: 1.5,1.5
 
+- type: entity
+  id: SpawnPointUSPDOfficer
+  parent: SpawnPointJobBase
+  name: USPD Officer
+  components:
+  - type: SpawnPoint
+    job_id: USPDOfficer
+  - type: Sprite
+    sprite: _Battlefield14/Interface/Misc/class_icons.rsi
+    layers:
+    - state: indsecurity
+      scale: 1.5,1.5
+
+- type: entity
+  id: SpawnPointUSPDWarden
+  parent: SpawnPointJobBase
+  name: USPD Warden
+  components:
+  - type: SpawnPoint
+    job_id: USPDWarden
+  - type: Sprite
+    sprite: _Battlefield14/Interface/Misc/class_icons.rsi
+    layers:
+    - state: indwarden
+      scale: 1.5,1.5
+
+- type: entity
+  id: SpawnPointUSPDChief
+  parent: SpawnPointJobBase
+  name: USPD Police Chief
+  components:
+  - type: SpawnPoint
+    job_id: USPDChief
+  - type: Sprite
+    sprite: _Battlefield14/Interface/Misc/class_icons.rsi
+    layers:
+    - state: indcaptain
+      scale: 1.5,1.5
+
 ### PACT
 
 ## RU
@@ -366,9 +405,10 @@
   - type: SpawnPoint
     job_id: WPSSecurityOfficer
   - type: Sprite
+    sprite: _Battlefield14/Interface/Misc/class_icons.rsi
     layers:
-      - state: green
-      - state: passenger
+    - state: indsecurity
+      scale: 1.5,1.5
 
 - type: entity
   id: SpawnPointWPSWarden
@@ -378,9 +418,10 @@
   - type: SpawnPoint
     job_id: WPSWarden
   - type: Sprite
+    sprite: _Battlefield14/Interface/Misc/class_icons.rsi
     layers:
-      - state: green
-      - state: passenger
+    - state: indwarden
+      scale: 1.5,1.5
 
 - type: entity
   id: SpawnPointWPSMarshal
@@ -390,6 +431,7 @@
   - type: SpawnPoint
     job_id: WPSMarshal
   - type: Sprite
+    sprite: _Battlefield14/Interface/Misc/class_icons.rsi
     layers:
-      - state: green
-      - state: passenger
+    - state: indsquadleader
+      scale: 1.5,1.5

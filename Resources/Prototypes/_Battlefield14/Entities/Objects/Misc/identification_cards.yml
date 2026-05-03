@@ -304,6 +304,50 @@
   - type: PresetIdCard
     job: NGRecon
 
+# USPD
+
+- type: entity
+  parent: IDCardStandard
+  id: USPDChiefIDCard
+  name: police chief ID card
+  suffix: USPD police chief
+  components:
+  - type: Sprite
+    layers:
+    - state: silver
+  - type: Item
+    heldPrefix: silver
+  - type: PresetIdCard
+    job: USPDChief
+
+- type: entity
+  parent: IDCardStandard
+  id: USPDWardenIDCard
+  name: warden ID card
+  suffix: USPD warden
+  components:
+  - type: Sprite
+    layers:
+    - state: silver
+  - type: Item
+    heldPrefix: silver
+  - type: PresetIdCard
+    job: USPDWarden
+
+- type: entity
+  parent: IDCardStandard
+  id: USPDOfficerIDCard
+  name: police officer ID card
+  suffix: USPD police officer
+  components:
+  - type: Sprite
+    layers:
+    - state: silver
+  - type: Item
+    heldPrefix: silver
+  - type: PresetIdCard
+    job: USPDOfficer
+
 ## RU
 
 # VDV

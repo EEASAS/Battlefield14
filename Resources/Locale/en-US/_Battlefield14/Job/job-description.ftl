@@ -17,6 +17,10 @@ job-description-ng-automatic-rifleman = Lay down suppressing fire and resupply y
 job-description-ng-medic = Bring back your buds from the brink, shoot Russians on the side.
 job-description-ng-recon = Go on the flanks and conduct surprise attacks or relay intel.
 
+job-description-uspd-chief = Keep your department running smoothly.
+job-description-uspd-warden = Keep the brig secure and clean.
+job-description-uspd-officer = Keep the peace, bring order to chaos.
+
 #Russian Federation#
 
 job-description-vdv-squadleader = Coordinate optimal American shooting.
@@ -31,6 +35,6 @@ job-description-vks-fighter-pilot = Eviscerate infantry, splash bandits, lust ov
 
 #Western Private Security#
 
-job-description-wps-officer = Keep the peace, keep the area safe.
+job-description-wps-marshal = Co-ordinate your goons, secure your outpost for your contractor.
 job-description-wps-warden = Keep the brig secure and clean.
-job-description-wps-marshal = Co-ordinate your goons.
+job-description-wps-officer = Keep the peace, keep the area safe, make money.
