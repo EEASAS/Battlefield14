@@ -228,6 +228,21 @@
     access: [["NATOSoldier"]]
 
 - type: entity
+  id: CrateSecgearNATOFilledM40A1
+  suffix: Filled, M40A1
+  parent: CrateSecgear
+  name: M40A1 crate
+  components:
+  - type: StorageFill
+    contents:
+        - id: WeaponSniperUSM40A1
+          amount: 2
+        - id: MagazineBox762x51
+          amount: 2
+  - type: AccessReader
+    access: [["NATOSoldier"]]
+
+- type: entity
   id: CrateSecgearNATOFilledSurplusM16
   suffix: Filled, surplus M16
   parent: CrateSecgear

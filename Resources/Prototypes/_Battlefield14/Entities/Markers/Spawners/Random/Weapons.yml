@@ -36,6 +36,23 @@
       - CrateSecgearNATOFilledM590
     chance: 1
 
+- type: entity
+  parent: MarkerBase
+  id: RandomWeaponNATOUSSniper
+  name: random NATO US sniper crate
+  components:
+  - type: Sprite
+    layers:
+      - state: red
+      - sprite: _Battlefield14/Objects/Weapons/Guns/Launchers/SMAW.rsi
+        state: icon
+  - type: RandomSpawner
+    offset: 0
+    prototypes:
+      - CrateSecgearNATOFilledM40A1
+      - CrateSecgearNATOFilledM14EBR
+    chance: 1
+
 ## PACT
 # RU
 
