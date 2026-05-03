@@ -1,3 +1,6 @@
+## NATO
+# US
+
 - type: department
   id: USMC
   name: department-USMC-name
@@ -37,11 +40,25 @@
   - NGRecon
 
 - type: department
+  id: USPD
+  name: department-USPD-name
+  description: department-USPD-description
+  color: "#203564"
+  weight: 45
+  roles:
+  - USPDChief
+  - USPDWarden
+  - USPDOfficer
+
+## PACT
+# RU
+
+- type: department
   id: VDV
   name: department-VDV-name
   description: department-VDV-description
   color: "#a02829"
-  weight: 75
+  weight: 65
   roles:
   - VDVSquadLeader
   - VDVRifleman
@@ -54,18 +71,20 @@
   name: department-VKS-name
   description: department-VKS-description
   color: "#203564"
-  weight: 74
+  weight: 64
   roles:
   - VKSCaptain
   - VKSCrewman
   - VKSFighterPilot
+
+## IND
 
 - type: department
   id: WPS
   name: department-WPS-name
   description: department-WPS-description
   color: "#203564"
-  weight: 60
+  weight: 50
   roles:
   - WPSSecurityOfficer
   - WPSWarden

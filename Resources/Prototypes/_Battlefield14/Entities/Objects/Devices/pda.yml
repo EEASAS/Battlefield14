@@ -346,6 +346,38 @@
   - type: PdaBorderColor
     borderColor: "#203564"
 
+# USPD
+
+- type: entity
+  parent: BasePDA
+  id: USPDChiefPDA
+  name: police chief PDA
+  description: Filled with bodycam footage.
+  suffix: USPD police chief
+  components:
+  - type: Pda
+    id: USPDChiefIDCard
+
+- type: entity
+  parent: BasePDA
+  id: USPDWardenPDA
+  name: police warden PDA
+  description: Filled with bodycam footage.
+  suffix: USPD warden
+  components:
+  - type: Pda
+    id: USPDWardenIDCard
+
+- type: entity
+  parent: BasePDA
+  id: USPDOfficerPDA
+  name: police officer PDA
+  description: Filled with bodycam footage.
+  suffix: USPD officer
+  components:
+  - type: Pda
+    id: USPDOfficerIDCard
+
 ## RU
 
 # VDV

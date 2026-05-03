@@ -14,6 +14,10 @@ department-USSF-description = I can see my house from here!
 department-NG-name = United States Army National Guard (ARNG)
 department-NG-description = Secure the homefront, deal with riots or national disasters.
 
+# USPD
+department-USPD-name = Generic United States Police Department (USPD)
+department-USPD-description = An amalgamation of regional police precincts. Enforce the law and bring order to chaos.
+
 ### PACT
 
 ## RU

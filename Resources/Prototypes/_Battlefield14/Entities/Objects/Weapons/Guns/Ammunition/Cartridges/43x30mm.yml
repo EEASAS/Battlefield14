@@ -34,7 +34,7 @@
         acts: ["Destruction"]
       - !type:ExplodeBehavior
   - type: Explosive
-    explosionType: Default
+    explosionType: HandGrenade
     maxIntensity: 100
     intensitySlope: 3
     totalIntensity: 1.5
@@ -86,7 +86,7 @@
         acts: ["Destruction"]
       - !type:ExplodeBehavior
   - type: Explosive
-    explosionType: Default
+    explosionType: HandGrenade
     maxIntensity: 100
     intensitySlope: 3
     totalIntensity: 1.5

@@ -158,6 +158,34 @@
   - BF_MiscItemsNATO
   - ContractorWallet
 
+- type: roleLoadout
+  id: JobUSPDChief
+  groups:
+  - BF_CrewGlasses
+  - BF_WPSGloves
+  - BF_BackpacksBlack
+  - BF_MiscItemsIND
+  - ContractorWallet
+
+- type: roleLoadout
+  id: JobUSPDWarden
+  groups:
+  - BF_CrewGlasses
+  - BF_WPSGloves
+  - BF_BackpacksBlack
+  - BF_MiscItemsIND
+  - ContractorWallet
+
+- type: roleLoadout
+  id: JobUSPDOfficer
+  groups:
+  - BF_CrewGlasses
+  - BF_WPSGloves
+  - BF_BackpacksBlack
+  - BF_MiscItemsIND
+  - ContractorWallet
+
+
 ## PACT
 
 ## RU

@@ -115,7 +115,7 @@
         - BF_CartridgeRifle762x51
     capacity: 100
   - type: Sprite
-    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/BeltBoxes/M249.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/BeltBoxes/MG3.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -123,7 +123,7 @@
       map: ["enum.GunVisualLayers.Mag"]
   - type: MagazineVisuals
     magState: mag
-    steps: 3
+    steps: 5
     zeroVisible: false
   - type: Appearance
 
