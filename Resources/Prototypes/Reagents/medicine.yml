@@ -186,6 +186,8 @@
         conditions:
         - !type:ReagentThreshold
           min: 30.5
+      - !type:ModifyBleedAmount
+        amount: -0.5
 #BF14      - !type:Drunk
 
 - type: reagent
