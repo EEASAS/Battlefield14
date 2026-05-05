@@ -757,7 +757,7 @@ entities:
       powerLoad: 5
     - type: Battery
       startingCharge: 0
-- proto: ComputerIFF
+- proto: ComputerIFFSyndicate
   entities:
   - uid: 75
     components:
