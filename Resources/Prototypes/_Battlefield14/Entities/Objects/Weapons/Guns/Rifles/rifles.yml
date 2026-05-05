@@ -286,7 +286,7 @@
   - type: WieldedCrosshair
     rsi:
       sprite: _Battlefield14/Interface/MousePointer/optics.rsi
-      state: m68
+      state: M68
 
 - type: entity
   name: M4A1 Carbine (ACOG)
