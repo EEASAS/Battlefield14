@@ -15,7 +15,7 @@
 
 - type: gameMap
   id: BF14Core
-  mapName: 'Meta Station'
+  mapName: 'Core Station'
   mapPath: /Maps/_Battlefield14/Stations/IND/core.yml
   minPlayers: 0
   maxPlayers: 20
