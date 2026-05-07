@@ -40,6 +40,6 @@
             USSFFighterPilot: [ 3, 3 ]
             USMCSquadLeader: [ 3, 3 ]
             USMCRifleman: [ -1, -1 ]
-            USMCAutomaticRifleman: [ 3, 3 ]
+            USMCAutomaticRifleman: [ 1, 1 ]
             USMCMedic: [ 3, 3 ]
             USMCRecon: [ 3, 3 ]

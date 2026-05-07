@@ -28,6 +28,12 @@
   - type: ShipyardListing
     shuttles:
     - KTV1
+  - type: AnnounceOnSpawn
+    message: "Requisition of transport vehicles authorised."
+    sender: "SVO Goydin"
+    sound:
+      path: /Audio/Announcements/bloblarm.ogg
+#    color: "#BE8700"
 
 - type: entity
   id: ComputerShipyardRussianNavalGracePeriod
@@ -67,7 +73,7 @@
         layer:
         - MachineLayer
   - type: ActiveTimerTrigger
-    timeRemaining: 600
+    timeRemaining: 600 # 10 minutes
   - type: SpawnOnTrigger
     proto: ComputerShipyardRussianNaval
   - type: DeleteOnTrigger

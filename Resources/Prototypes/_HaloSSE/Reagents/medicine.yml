@@ -48,3 +48,6 @@
           max: 12
         reagent: Biofoam
         amount: -15
+      - !type:MovespeedModifier
+        walkSpeedModifier: 0.75
+        sprintSpeedModifier: 0.75

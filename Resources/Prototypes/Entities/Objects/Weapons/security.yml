@@ -34,8 +34,8 @@
     wideAnimationRotation: -135
     damage:
       types:
-        Blunt: 7
-    bluntStaminaDamageFactor: 2.0
+        Blunt: 14 # BF14 7 > 15
+    bluntStaminaDamageFactor: 1.5 # BF14 2 > 1.5
     animation: WeaponArcSlash
   - type: StaminaDamageOnHit # goob edited
     damage: 15

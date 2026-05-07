@@ -56,7 +56,7 @@ namespace Content.Client.Voting
 
         public void Initialize()
         {
-            const string sound = "/Audio/Effects/voteding.ogg";
+            const string sound = "/Audio/_HaloSSE/Ambience/alarm4.ogg"; // BF14 "/Audio/Effects/voteding.ogg"
             _voteSource = _audio.CreateAudioSource(_res.GetResource<AudioResource>(sound));
 
             if (_voteSource != null)

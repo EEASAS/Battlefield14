@@ -162,7 +162,7 @@
   lightColor: Orange
   texturePath: /Textures/Effects/fire.rsi
   fireStates: 6
-  fireStacks: 2
+  fireStacks: 3 # BF14 2 > 3
   throwEntitiesOnExplosion: false # BF14, for thermobarics
   sound:
     collection: CivExplosionGrenade

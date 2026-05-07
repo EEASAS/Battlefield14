@@ -122,6 +122,8 @@
       DoorStatus: false
   - type: SoundOnOverload
   - type: SpawnOnOverload
+  - type: ArmorThickness # BF14
+    thickness: 5
   - type: UserInterface
     interfaces:
       enum.AiUi.Key:
