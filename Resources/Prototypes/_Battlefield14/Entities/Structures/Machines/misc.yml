@@ -36,7 +36,7 @@
         layer:
         - MachineLayer
   - type: ActiveTimerTrigger
-    timeRemaining: 600
+    timeRemaining: 900 # 15 minutes
   - type: SpawnOnTrigger
     proto: ComputerShuttle
   - type: DeleteOnTrigger

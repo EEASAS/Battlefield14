@@ -31,6 +31,12 @@
     - M20A
     - M20L
     - M20
+  - type: AnnounceOnSpawn
+    message: "Requisition of transport vehicles authorised."
+    sender: "USS Barack Obama"
+    sound:
+      path: /Audio/Announcements/bloblarm.ogg
+#    color: "#BE8700"
 
 - type: entity
   id: ComputerShipyardUnitedStatesNavalGracePeriod
@@ -70,7 +76,7 @@
         layer:
         - MachineLayer
   - type: ActiveTimerTrigger
-    timeRemaining: 600
+    timeRemaining: 600 # 10 minutes
   - type: SpawnOnTrigger
     proto: ComputerShipyardUnitedStatesNaval
   - type: DeleteOnTrigger

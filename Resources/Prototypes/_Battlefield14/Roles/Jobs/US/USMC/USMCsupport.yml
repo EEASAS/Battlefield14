@@ -45,14 +45,14 @@
   equipment:
     id: USMCAutomaticRiflemanPDA
     ears: ClothingHeadsetAltUS
-    belt: ClothingBeltMilitaryWebbingUSFilledSTANAG
+    belt: ClothingBeltMilitaryWebbingUSFilledM249
     jumpsuit: ClothingUniformJumpsuitCamoUS
     head: ClothingHeadHatHelmetUSRiot
 #    eyes: ClothingEyesGogglesTan
     outerClothing: ClothingOuterArmorPlateCarrierTan
     shoes: ClothingShoesBootsJackFilled
 #    back: ClothingBackpackRucksackTan
-    suitstorage: WeaponRifleUSM27IAR
+    suitstorage: WeaponMachineGunUSM249Para
     pocket1: PouchFirstAidFilled
     pocket2: PouchGrenadesFilledUSMCSupport
     rightarmband: ClothingArmbandThighHolsterFilledUS
@@ -60,8 +60,6 @@
     back:
     - SupplyBoxAmmoUSFilled
     - FlashlightMilitaryUS
-    - MagazinePistolM9
-    - MagazinePistolM9
     - ClothingMaskGasM40
     - Tourniquet
     - Zipties

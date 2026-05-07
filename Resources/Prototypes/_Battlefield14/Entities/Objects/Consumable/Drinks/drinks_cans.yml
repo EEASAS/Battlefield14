@@ -1,7 +1,7 @@
 - type: entity
   parent: DrinkCanBaseFull
   id: DrinkMonsterCanWhite
-  name: White Monster can
+  name: white Monster can
   description: A widely known energy drink guaranteed to make your parents worried. Unfortunately they are right, chugging the entire can is not reccommended.
   components:
   - type: SolutionContainerManager

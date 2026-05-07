@@ -75,7 +75,7 @@
       - Belt
 
 - type: entity
-  name: seclite
+  name: maglite # BF14 seclite > maglite
   parent: FlashlightLantern
   id: FlashlightSeclite
   description: A robust flashlight used by security.
