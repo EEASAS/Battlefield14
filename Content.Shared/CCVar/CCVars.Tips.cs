@@ -1,4 +1,4 @@
-﻿using Robust.Shared.Configuration;
+using Robust.Shared.Configuration;
 
 namespace Content.Shared.CCVar;
 
@@ -14,7 +14,7 @@ public sealed partial class CCVars
     ///     The dataset prototype to use when selecting a random tip.
     /// </summary>
     public static readonly CVarDef<string> TipsDataset =
-        CVarDef.Create("tips.dataset", "NFTips"); // Frontier: Tips<NFTips
+        CVarDef.Create("tips.dataset", "BF14Tips"); // BF14 Tips > NFTips > BF14Tips
 
     /// <summary>
     ///     The number of seconds between each tip being displayed when the round is not actively going
