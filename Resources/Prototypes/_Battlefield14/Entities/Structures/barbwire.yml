@@ -28,7 +28,7 @@
         shape:
           !type:PhysShapeAabb
           bounds: "-0.4,-0.4,0.4,0.4"
-        layer: # Not sure why but it displays under blood and catwalks
+        layer:
         - TableLayer
         mask:
         - TableMask
