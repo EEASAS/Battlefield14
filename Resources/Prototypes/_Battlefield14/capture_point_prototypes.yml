@@ -9,16 +9,18 @@
   - type: Clickable
   - type: InteractionOutline
   - type: Sprite
-    sprite: Structures/Machines/computers.rsi
+    sprite: _Civ14/Objects/obj32x64.rsi
     layers:
-    - map: ["computerLayerBody"]
-      state: computer
-    - map: ["computerLayerKeyboard"]
-      state: generic_keyboard
-    - map: ["computerLayerScreen"]
-      state: generic
-    - map: ["computerLayerKeys"]
-      state: generic_keys
+      - state: fob_flipped
+        offset: 0, 0.5
+        map: [ "enum.DamageStateVisualLayers.Base" ]
+    drawdepth: OverMobs
+    noRot: true
+  - type: RandomSprite
+    available:
+    - enum.DamageStateVisualLayers.Base:
+        fob: ""
+        fob_flipped: ""
   - type: Appearance
   - type: Transform
     anchored: true
@@ -42,6 +44,14 @@
     energy: 2.5
     color: "#43a20d"
     netsync: false
+  - type: SpamEmitSound
+    minInterval: 30
+    maxInterval: 60
+    sound:
+      path: /Audio/_HaloSSE/Ambience/signal.ogg
+      params:
+        volume: -6
+        maxDistance: 5
   - type: NavMapBeacon
     defaultText: objective-beacon-general
     color: "#FFFF00"

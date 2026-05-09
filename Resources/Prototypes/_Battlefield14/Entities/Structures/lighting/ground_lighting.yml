@@ -10,7 +10,6 @@
     layers:
       - state: streetlight_on
         offset: 0, 0.5
-#    snapCardinals: true
     drawdepth: OverMobs
     noRot: true
   - type: Fixtures
