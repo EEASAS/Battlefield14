@@ -15,6 +15,7 @@
   - BF_BackpacksTan
   - BF_MiscItemsNATO
   - BF_PistolsUSMCSL
+  - BF_Map
   - ContractorWallet
 
 - type: roleLoadout
@@ -27,6 +28,7 @@
   - BF_HelmetAttachmentNATO
   - BF_BackpacksTan
   - BF_MiscItemsNATO
+  - BF_Map
   - ContractorWallet
 
 - type: roleLoadout
@@ -40,6 +42,7 @@
   - BF_BackpacksTan
   - BF_MiscItemsNATO
   - BF_PistolsUSMCSL
+  - BF_Map
   - ContractorWallet
 
 - type: roleLoadout
@@ -51,6 +54,7 @@
   - BF_NATOIFF
   - BF_BackpacksTan
   - BF_MiscItemsNATO
+  - BF_Map
   - ContractorWallet
 
 - type: roleLoadout
@@ -62,6 +66,7 @@
   - BF_HelmetAttachmentNATO
   - BF_BackpacksTan
   - BF_MiscItemsNATO
+  - BF_Map
   - ContractorWallet
 
 # USSF
@@ -109,6 +114,7 @@
   - BF_BackpacksTan
   - BF_MiscItemsNATO
   - BF_PistolsUSMCSL
+  - BF_Map
   - ContractorWallet
 
 - type: roleLoadout
@@ -121,6 +127,7 @@
   - BF_HelmetAttachmentNATO
   - BF_BackpacksTan
   - BF_MiscItemsNATO
+  - BF_Map
   - ContractorWallet
 
 - type: roleLoadout
@@ -134,6 +141,7 @@
   - BF_BackpacksTan
   - BF_MiscItemsNATO
   - BF_PistolsUSMCSL
+  - BF_Map
   - ContractorWallet
 
 - type: roleLoadout
@@ -145,6 +153,7 @@
   - BF_NATOIFF
   - BF_BackpacksTan
   - BF_MiscItemsNATO
+  - BF_Map
   - ContractorWallet
 
 - type: roleLoadout
@@ -156,6 +165,7 @@
   - BF_HelmetAttachmentNATO
   - BF_BackpacksTan
   - BF_MiscItemsNATO
+  - BF_Map
   - ContractorWallet
 
 - type: roleLoadout
@@ -165,6 +175,7 @@
   - BF_WPSGloves
   - BF_BackpacksBlack
   - BF_MiscItemsIND
+  - BF_Map
   - ContractorWallet
 
 - type: roleLoadout
@@ -174,6 +185,7 @@
   - BF_WPSGloves
   - BF_BackpacksBlack
   - BF_MiscItemsIND
+  - BF_Map
   - ContractorWallet
 
 - type: roleLoadout
@@ -183,6 +195,7 @@
   - BF_WPSGloves
   - BF_BackpacksBlack
   - BF_MiscItemsIND
+  - BF_Map
   - ContractorWallet
 
 
@@ -204,6 +217,7 @@
   - BF_BackpacksBlack
   - BF_MiscItemsPACT
   - BF_PistolsVDVSL
+  - BF_Map
   - ContractorWallet
 
 - type: roleLoadout
@@ -217,6 +231,7 @@
   - BF_VDVHead
   - BF_BackpacksBlack
   - BF_MiscItemsPACT
+  - BF_Map
   - ContractorWallet
 
 - type: roleLoadout
@@ -231,6 +246,7 @@
   - BF_BackpacksBlack
   - BF_MiscItemsPACT
   - BF_PistolsVDVSL
+  - BF_Map
   - ContractorWallet
 
 - type: roleLoadout
@@ -243,6 +259,7 @@
   - BF_VDVHead
   - BF_BackpacksBlack
   - BF_MiscItemsPACT
+  - BF_Map
   - ContractorWallet
 
 - type: roleLoadout
@@ -255,6 +272,7 @@
   - BF_VDVHead
   - BF_BackpacksBlack
   - BF_MiscItemsPACT
+  - BF_Map
   - ContractorWallet
 
 # VKS

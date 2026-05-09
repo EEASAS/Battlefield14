@@ -1,0 +1,28 @@
+- type: entity
+  parent: BaseBattlemap
+  id: MapTaurus
+  name: 'map (taurus)'
+  description: It's a map of Taurus, Florida. The red squares mark objectives.
+  components:
+    - type: Item
+      size: Tiny
+    - type: Sprite
+      sprite: Objects/Misc/bureaucracy.rsi
+      state: paper_dotmatrix
+    - type: TabletopGame
+      size: 190, 170
+      setup:
+        !type:TabletopEmptySetup
+        boardPrototype: PhotoMapTaurus
+
+# Image protos
+
+- type: entity
+  parent: BaseBoardTabletop
+  id: PhotoMapTaurus
+  name: map of Taurus
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/GroundMaps/Taurus.rsi
+    state: map

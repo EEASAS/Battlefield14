@@ -151,56 +151,6 @@
 
 # FEET
 
-# MISC
-
-- type: loadoutGroup
-  id: BF_MiscItemsNATO
-  name: loadout-group-BF14-miscitem
-  minLimit: 0
-  maxLimit: 2
-  loadouts:
-  - LoadoutMiscItemsIFFFlashcardNATO
-  - LoadoutMiscItemsEntrenchingTool
-  - LoadoutMiscItemsBinoculars
-  - LoadoutMiscItemsMonsterWhite
-  - LoadoutMiscItemsHandheldStationMapUnpowered
-  - LoadoutMiscItemsPouchFlaresGlowsticksBlue
-  - LoadoutMiscItemsGasMaskPouch
-  - LoadoutMiscItemsBible
-  - LoadoutMiscItemsCalculator
-  - LoadoutMiscItemsMREFlask
-
-- type: loadoutGroup
-  id: BF_MiscItemsPACT
-  name: loadout-group-BF14-miscitem
-  minLimit: 0
-  maxLimit: 2
-  loadouts:
-  - LoadoutMiscItemsIFFFlashcardPACT
-  - LoadoutMiscItemsEntrenchingTool
-  - LoadoutMiscItemsBinoculars
-  - LoadoutMiscItemsMonsterWhite
-  - LoadoutMiscItemsHandheldStationMapUnpowered
-  - LoadoutMiscItemsPouchFlaresGlowsticksRed
-  - LoadoutMiscItemsGasMaskPouch
-  - LoadoutMiscItemsBible
-  - LoadoutMiscItemsCalculator
-  - LoadoutMiscItemsMREFlask
-
-- type: loadoutGroup
-  id: BF_MiscItemsIND
-  name: loadout-group-BF14-miscitem
-  minLimit: 0
-  maxLimit: 2
-  loadouts:
-  - LoadoutMiscItemsIFFFlashcardIND
-  - LoadoutMiscItemsMonsterWhite
-  - LoadoutMiscItemsHandheldStationMapUnpowered
-  - LoadoutMiscItemsPouchFlaresGlowsticksGreen
-  - LoadoutMiscItemsBible
-  - LoadoutMiscItemsCalculator
-  - LoadoutMiscItemsMREFlask
-
 # SIDEARMS
 
 - type: loadoutGroup
@@ -218,3 +168,59 @@
   maxLimit: 1
   loadouts:
   - LoadoutGunSR1MPVDVSLVET
+
+# MISC
+
+- type: loadoutGroup
+  id: BF_MiscItemsNATO
+  name: loadout-group-BF14-miscitem
+  minLimit: 0
+  maxLimit: 2
+  loadouts:
+  - LoadoutMiscItemsIFFFlashcardNATO
+  - LoadoutMiscItemsEntrenchingTool
+  - LoadoutMiscItemsBinoculars
+  - LoadoutMiscItemsMonsterWhite
+  - LoadoutMiscItemsPouchFlaresGlowsticksBlue
+  - LoadoutMiscItemsGasMaskPouch
+  - LoadoutMiscItemsBible
+  - LoadoutMiscItemsCalculator
+  - LoadoutMiscItemsMREFlask
+
+- type: loadoutGroup
+  id: BF_MiscItemsPACT
+  name: loadout-group-BF14-miscitem
+  minLimit: 0
+  maxLimit: 2
+  loadouts:
+  - LoadoutMiscItemsIFFFlashcardPACT
+  - LoadoutMiscItemsEntrenchingTool
+  - LoadoutMiscItemsBinoculars
+  - LoadoutMiscItemsMonsterWhite
+  - LoadoutMiscItemsPouchFlaresGlowsticksRed
+  - LoadoutMiscItemsGasMaskPouch
+  - LoadoutMiscItemsBible
+  - LoadoutMiscItemsCalculator
+  - LoadoutMiscItemsMREFlask
+
+- type: loadoutGroup
+  id: BF_MiscItemsIND
+  name: loadout-group-BF14-miscitem
+  minLimit: 0
+  maxLimit: 2
+  loadouts:
+  - LoadoutMiscItemsIFFFlashcardIND
+  - LoadoutMiscItemsMonsterWhite
+  - LoadoutMiscItemsPouchFlaresGlowsticksGreen
+  - LoadoutMiscItemsBible
+  - LoadoutMiscItemsCalculator
+  - LoadoutMiscItemsMREFlask
+
+- type: loadoutGroup
+  id: BF_Map
+  name: loadout-group-BF14-map
+  minLimit: 0
+  maxLimit: 1
+  loadouts:
+  - LoadoutMapTaurus
+  - LoadoutMiscItemsHandheldStationMapUnpowered

@@ -1,0 +1,5 @@
+- type: loadout
+  id: LoadoutMapTaurus
+  storage:
+    back:
+    - MapTaurus
