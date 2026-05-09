@@ -244,22 +244,6 @@
           - AmericanUplink
 
 - type: listing
-  id: UplinkNATOUSAmmoBox
-  name: uplink-natous-ammo-box-name
-  description: uplink-natous-ammo-box-desc
-  productEntity: SupplyBoxAmmoUSFilled
-  icon: { sprite: _Battlefield14/Objects/Misc/ammoboxus.rsi, state: icon }
-  cost:
-    NATORequisition: 16 # 2 minutes 40 seconds
-  categories:
-    - UplinkNATOUSAmmo
-  conditions:
-    - !type:StoreWhitelistCondition
-      whitelist:
-        tags:
-          - AmericanUplink
-
-- type: listing
   id: UplinkNATOMagazineBoxSCARH
   name: uplink-NATOUS-magazine-box-SCARH-name
   description: uplink-NATOUS-magazine-box-SCARH-desc

@@ -3,7 +3,8 @@
   mapName: 'Taurus'
   mapPath: /Maps/_Battlefield14/Planets/taurus.yml
   minPlayers: 20
-  maxPlayers: 40
+  maxPlayers: 50
+  fallback: True
   randomRotation: false
   maxRandomOffset: 0
   stations:
