@@ -9,3 +9,4 @@ loadout-group-BF14-helmetattachment = Helmet attachment
 loadout-group-BF14-backpack = Backpack
 loadout-group-BF14-miscitem = Misc. Item
 loadout-group-BF14-sidearm = Sidearm
+loadout-group-BF14-map = Navigation
