@@ -26,11 +26,11 @@
   - type: Wieldable
     unwieldOnUse: false
   - type: GunWieldBonus
-    minAngle: -14
-    maxAngle: -17
+    minAngle: -24
+    maxAngle: -27
   - type: Gun
-    minAngle: 16
-    maxAngle: 30
+    minAngle: 26
+    maxAngle: 40
     angleIncrease: 1
     projectileSpeed: 55 # twenty inch barrel
     availableModes:
@@ -106,11 +106,11 @@
   - type: Clothing
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/M16A2.rsi
   - type: GunWieldBonus
-    minAngle: -19
-    maxAngle: -22
+    minAngle: -29
+    maxAngle: -32
   - type: Gun
-    minAngle: 19
-    maxAngle: 32
+    minAngle: 29
+    maxAngle: 42
     availableModes:
     - SemiAuto
     - Burst
@@ -276,11 +276,11 @@
   - type: Clothing
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/M4A1.rsi
   - type: GunWieldBonus
-    minAngle: -14
-    maxAngle: -20
+    minAngle: -24
+    maxAngle: -27
   - type: Gun
-    minAngle: 16
-    maxAngle: 30
+    minAngle: 26
+    maxAngle: 40
     angleIncrease: 1
     projectileSpeed: 40 # Shorter barrel
   - type: WieldedCrosshair
@@ -305,11 +305,11 @@
       - state: mag-30-0
         map: ["enum.GunVisualLayers.Mag"]
   - type: GunWieldBonus
-    minAngle: -14
-    maxAngle: -20
+    minAngle: -24
+    maxAngle: -27
   - type: Gun
-    minAngle: 16
-    maxAngle: 30
+    minAngle: 26
+    maxAngle: 40
     angleIncrease: 1.5
     projectileSpeed: 40 # Shorter barrel
   - type: CursorOffsetRequiresWield
@@ -349,11 +349,11 @@
   - type: Wieldable
     unwieldOnUse: false
   - type: GunWieldBonus
-    minAngle: -14
-    maxAngle: -20
+    minAngle: -24
+    maxAngle: -27
   - type: Gun
-    minAngle: 16
-    maxAngle: 30
+    minAngle: 26
+    maxAngle: 40
     angleIncrease: 1
     projectileSpeed: 40 # Shorter barrel
     availableModes:
@@ -425,11 +425,11 @@
   - type: Clothing
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/M4.rsi
   - type: GunWieldBonus
-    minAngle: -14
-    maxAngle: -15
+    minAngle: -29
+    maxAngle: -32
   - type: Gun
-    minAngle: 16
-    maxAngle: 25
+    minAngle: 29
+    maxAngle: 42
     angleIncrease: 1
     projectileSpeed: 40 # Shorter barrel
     availableModes:
@@ -465,11 +465,11 @@
   - type: Wieldable
     unwieldOnUse: false
   - type: GunWieldBonus
-    minAngle: -14
-    maxAngle: -20
+    minAngle: -24
+    maxAngle: -27
   - type: Gun
-    minAngle: 16
-    maxAngle: 30
+    minAngle: 26
+    maxAngle: 40
     angleIncrease: 1
     projectileSpeed: 40 # Shorter barrel
     fireRate: 5
@@ -499,11 +499,11 @@
   - type: Clothing
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/SCAR.rsi
   - type: GunWieldBonus
-    minAngle: -14
-    maxAngle: -20
+    minAngle: -24
+    maxAngle: -27
   - type: Gun
-    minAngle: 16
-    maxAngle: 30
+    minAngle: 26
+    maxAngle: 40
     angleIncrease: 1
     projectileSpeed: 45
     soundGunshot:
@@ -556,11 +556,11 @@
   - type: Clothing
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/SCAR.rsi
   - type: GunWieldBonus
-    minAngle: -14
-    maxAngle: -18
+    minAngle: -24
+    maxAngle: -27
   - type: Gun
-    minAngle: 16
-    maxAngle: 30
+    minAngle: 26
+    maxAngle: 40
     angleIncrease: 1
     projectileSpeed: 45
     fireRate: 5
@@ -634,11 +634,11 @@
   - type: Clothing
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/G3.rsi
   - type: GunWieldBonus
-    minAngle: -14
-    maxAngle: -18
+    minAngle: -24
+    maxAngle: -27
   - type: Gun
-    minAngle: 16
-    maxAngle: 30
+    minAngle: 26
+    maxAngle: 40
     angleIncrease: 1
     projectileSpeed: 50
     fireRate: 5
@@ -714,11 +714,11 @@
   - type: Wieldable
     unwieldOnUse: false
   - type: GunWieldBonus
-    minAngle: -19
-    maxAngle: -20
+    minAngle: -29
+    maxAngle: -30
   - type: Gun
-    minAngle: 21
-    maxAngle: 32
+    minAngle: 31
+    maxAngle: 42
     availableModes:
     - SemiAuto
     - FullAuto
@@ -786,11 +786,11 @@
   - type: Item
     size: Large
   - type: GunWieldBonus
-    minAngle: -14
-    maxAngle: -18
+    minAngle: -24
+    maxAngle: -28
   - type: Gun
-    minAngle: 16
-    maxAngle: 32
+    minAngle: 26
+    maxAngle: 42
     angleIncrease: 1.25
     projectileSpeed: 40 # Shorter barrel
     fireRate: 6
@@ -860,11 +860,11 @@
   - type: Wieldable
     unwieldOnUse: false
   - type: GunWieldBonus
-    minAngle: -14
-    maxAngle: -12
+    minAngle: -24
+    maxAngle: -22
   - type: Gun
-    minAngle: 16
-    maxAngle: 32
+    minAngle: 26
+    maxAngle: 42
     angleIncrease: 2
     projectileSpeed: 35 # Shorter barrel + suppressed
     fireRate: 7
@@ -894,11 +894,11 @@
   - type: Clothing
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AK12.rsi
   - type: GunWieldBonus
-    minAngle: -19
-    maxAngle: -24
+    minAngle: -29
+    maxAngle: -34
   - type: Gun
-    minAngle: 21
-    maxAngle: 32
+    minAngle: 31
+    maxAngle: 42
     availableModes:
     - SemiAuto
     - FullAuto
@@ -979,11 +979,11 @@
   - type: Clothing
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AK74MOD.rsi
   - type: GunWieldBonus
-    minAngle: -19
-    maxAngle: -24
+    minAngle: -29
+    maxAngle: -34
   - type: Gun
-    minAngle: 21
-    maxAngle: 32
+    minAngle: 31
+    maxAngle: 42
     availableModes:
     - SemiAuto
     - FullAuto
@@ -1020,11 +1020,11 @@
   - type: Clothing
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AKMS.rsi
   - type: GunWieldBonus
-    minAngle: -19
-    maxAngle: -17
+    minAngle: -29
+    maxAngle: -27
   - type: Gun
-    minAngle: 21
-    maxAngle: 30
+    minAngle: 31
+    maxAngle: 40
     angleIncrease: 1
     angleDecay: 16
     availableModes:
@@ -1078,12 +1078,12 @@
       - state: mag-0
         map: ["enum.GunVisualLayers.Mag"]
   - type: GunWieldBonus
-    minAngle: -19
-    maxAngle: -24
+    minAngle: -29
+    maxAngle: -34
   - type: Gun # Improved recoil over the AKM
-    minAngle: 21
-    maxAngle: 30
-    angleIncrease: 1
+    minAngle: 31
+    maxAngle: 40
+    angleIncrease: 0.75
     angleDecay: 16
   - type: Clothing
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AK203.rsi
@@ -1188,11 +1188,11 @@
   - type: Wieldable
     unwieldOnUse: false
   - type: GunWieldBonus
-    minAngle: -14
-    maxAngle: -19
+    minAngle: -24
+    maxAngle: -29
   - type: Gun
-    minAngle: 16
-    maxAngle: 32
+    minAngle: 26
+    maxAngle: 42
     angleIncrease: 1
     availableModes:
     - SemiAuto
@@ -1261,11 +1261,11 @@
   - type: Wieldable
     unwieldOnUse: false
   - type: GunWieldBonus
-    minAngle: -14
-    maxAngle: -19
+    minAngle: -24
+    maxAngle: -29
   - type: Gun
-    minAngle: 16
-    maxAngle: 32
+    minAngle: 26
+    maxAngle: 42
     angleIncrease: 1
     availableModes:
     - SemiAuto
@@ -1352,11 +1352,11 @@
   - type: Wieldable
     unwieldOnUse: false
   - type: GunWieldBonus
-    minAngle: -14
-    maxAngle: -19
+    minAngle: -24
+    maxAngle: -29
   - type: Gun
-    minAngle: 16
-    maxAngle: 32
+    minAngle: 26
+    maxAngle: 42
     angleIncrease: 1.5
     angleDecay: 10
     availableModes:

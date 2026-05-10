@@ -10,7 +10,7 @@
       sprite: Objects/Misc/bureaucracy.rsi
       state: paper_dotmatrix
     - type: TabletopGame
-      size: 190, 170
+      size: 190, 200
       setup:
         !type:TabletopEmptySetup
         boardPrototype: PhotoMapTaurus
