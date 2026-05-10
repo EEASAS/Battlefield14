@@ -325,3 +325,53 @@
       whitelist:
         tags:
           - RussianUplink
+
+# ships
+
+- type: listing
+  id: UplinkPACTShipsBMD4
+  name: uplink-PACTRU-bmp-s-name
+  description: uplink-PACTRU-bmp-s-desc
+  productEntity: ShipVoucherBMD4
+  icon: { sprite: _Mono/Objects/Weapons/Guns/Ammunition/Boxes/generic_shipgun_box.rsi, state: base }
+  cost:
+    PACTRequisition: 80
+  categories:
+    - UplinkPACTRUShips
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - RussianUplink
+
+- type: listing
+  id: UplinkPACTShipsBMD4A
+  name: uplink-PACTRU-bmp-aa-name
+  description: uplink-PACTRU-bmp-aa-desc
+  productEntity: ShipVoucherBMD4A
+  icon: { sprite: _Mono/Objects/Weapons/Guns/Ammunition/Boxes/generic_shipgun_box.rsi, state: base }
+  cost:
+    PACTRequisition: 50
+  categories:
+    - UplinkPACTRUShips
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - RussianUplink
+
+- type: listing
+  id: UplinkPACTShipsBMD4N
+  name: uplink-PACTRU-bmp-mg-name
+  description: uplink-PACTRU-bmp-mg-desc
+  productEntity: ShipVoucherBMD4N
+  icon: { sprite: _Mono/Objects/Weapons/Guns/Ammunition/Boxes/generic_shipgun_box.rsi, state: base }
+  cost:
+    PACTRequisition: 30
+  categories:
+    - UplinkPACTRUShips
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - RussianUplink

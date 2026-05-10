@@ -32,6 +32,7 @@
     - UplinkPACTRUMedical
     - UplinkPACTRUExplosives
     - UplinkPACTRUShipAmmo
+    - UplinkPACTRUShips
     currencyWhitelist:
     - PACTRequisition
     balance:

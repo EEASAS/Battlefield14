@@ -62,3 +62,7 @@
 - type: storeCategory
   id: UplinkPACTRUShipAmmo
   name: store-category-bf-shipammo
+
+- type: storeCategory
+  id: UplinkPACTRUShips
+  name: store-category-bf-ships

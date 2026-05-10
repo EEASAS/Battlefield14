@@ -28,6 +28,9 @@
   - type: ShipyardListing
     shuttles:
     - KTV1
+    - BMD4
+    - BMD4N
+    - BMD4A
   - type: AnnounceOnSpawn
     message: "Requisition of transport vehicles authorised."
     sender: "SVO Goydin"

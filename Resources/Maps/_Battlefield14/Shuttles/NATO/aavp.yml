@@ -4,7 +4,7 @@ meta:
   engineVersion: 264.0.0
   forkId: ""
   forkVersion: ""
-  time: 04/17/2026 07:34:14
+  time: 05/10/2026 17:47:50
   entityCount: 144
 maps: []
 grids:
@@ -56,9 +56,9 @@ entities:
     - type: OccluderTree
     - type: SpreaderGrid
       spreadQueues:
-        Kudzu: []
-        Smoke: []
         Puddle: []
+        Smoke: []
+        Kudzu: []
         MetalFoam: []
     - type: Shuttle
       dampingModifier: 0.25
@@ -211,6 +211,8 @@ entities:
     - type: RadiationGridResistance
     - type: ShipGridLock
       locked: False
+    - type: CloakHeat
+      lastUpdateTime: 0
 - proto: AirlockNfsdLockedNATOSoldier
   entities:
   - uid: 9
@@ -830,6 +832,13 @@ entities:
     - type: Transform
       pos: 2.5,0.5
       parent: 1
+- proto: SubstationBasic
+  entities:
+  - uid: 13
+    components:
+    - type: Transform
+      pos: -1.5,0.5
+      parent: 1
 - proto: Thruster
   entities:
   - uid: 4
@@ -865,13 +874,6 @@ entities:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 3.5,-2.5
-      parent: 1
-- proto: SubstationBasic
-  entities:
-  - uid: 13
-    components:
-    - type: Transform
-      pos: -1.5,0.5
       parent: 1
 - proto: WallReinforcedNATO
   entities:
@@ -1114,8 +1116,6 @@ entities:
       rot: 3.141592653589793 rad
       pos: -1.5,5.5
       parent: 1
-- proto: WeaponTurretMK20
-  entities:
   - uid: 80
     components:
     - type: Transform

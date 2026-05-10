@@ -1,0 +1,27 @@
+- type: vessel
+  id: BMD4A
+  parent: BaseVesselAntag
+  name: VDV BMD-4A
+  description: Ground BMD-4, repurposed for space. This one is the AA variant.
+  price: 10000
+  purchasable: false # voucher only, money doesn't matter
+  category: Small
+  shuttlePath: /Maps/_Battlefield14/Shuttles/PACT/aabmp.yml
+
+- type: gameMap
+  id: BMD4A
+  mapName: 'VDV BMD-4A'
+  mapPath: /Maps/_Battlefield14/Shuttles/PACT/aabmp.yml
+  minPlayers: 0
+  stations:
+    BMD4A:
+      stationProto: StandardFrontierSecurityVessel
+      gridComponents:
+      - type: VesselInfo
+        description: "Ground BMD-4, repurposed for space. This one is the AA variant."
+      components:
+      - type: StationNameSetup
+        mapNameTemplate: 'VDV BMD-4A {1}'
+        nameGenerator:
+          !type:NanotrasenNameGenerator
+          prefixCreator: '14'
