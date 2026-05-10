@@ -22,7 +22,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 50
+        damage: 100 # BF14 50 > 100
       behaviors:
       - !type:DoActsBehavior
         acts: ["Destruction"]
