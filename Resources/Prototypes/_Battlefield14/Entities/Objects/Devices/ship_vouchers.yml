@@ -99,8 +99,8 @@
 - type: entity
   parent: BaseShipLPC
   id: ShipVoucherBMD4
-  name: VDV BMD-4 IFV
-  description: A small card that authorizes the acquisition of a BMD-4 IFV.
+  name: VDV BMD-5 IFV
+  description: A small card that authorizes the acquisition of a BMD-5 IFV.
   components:
   - type: Sprite
     layers:
@@ -117,8 +117,8 @@
 - type: entity
   parent: BaseShipLPC
   id: ShipVoucherBMD4A
-  name: VDV BMD-4A LPC
-  description: A small card that authorizes the acquisition of a BMD-4A gunship.
+  name: VDV BMD-5A LPC
+  description: A small card that authorizes the acquisition of a BMD-5A gunship.
   components:
   - type: Sprite
     layers:
@@ -135,8 +135,8 @@
 - type: entity
   parent: BaseShipLPC
   id: ShipVoucherBMD4N
-  name: VDV BMD-4N LPC
-  description: A small card that authorizes the acquisition of a BMD-4N gunship.
+  name: VDV BMD-5N LPC
+  description: A small card that authorizes the acquisition of a BMD-5N gunship.
   components:
   - type: Sprite
     layers:
