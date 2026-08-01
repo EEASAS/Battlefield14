@@ -503,6 +503,60 @@
     - state: pactrecon
       scale: 1.5,1.5
 
+#region RKhB
+
+- type: entity
+  id: SpawnPointRKhBSquadLeader
+  parent: SpawnPointJobBase
+  name: RKhB Squad Leader
+  components:
+  - type: SpawnPoint
+    job_id: RKhBSquadLeader
+  - type: Sprite
+    sprite: _Battlefield14/Interface/Misc/class_icons.rsi
+    layers:
+    - state: pactsquadleader
+      scale: 1.5,1.5
+
+- type: entity
+  id: SpawnPointRKhBRifleman
+  parent: SpawnPointJobBase
+  name: RKhB Rifleman
+  components:
+  - type: SpawnPoint
+    job_id: RKhBRifleman
+  - type: Sprite
+    sprite: _Battlefield14/Interface/Misc/class_icons.rsi
+    layers:
+    - state: pactinfantry
+      scale: 1.5,1.5
+
+- type: entity
+  id: SpawnPointRKhBSupport
+  parent: SpawnPointJobBase
+  name: RKhB Support
+  components:
+  - type: SpawnPoint
+    job_id: RKhBSupport
+  - type: Sprite
+    sprite: _Battlefield14/Interface/Misc/class_icons.rsi
+    layers:
+    - state: pactsupport
+      scale: 1.5,1.5
+
+- type: entity
+  id: SpawnPointRKhBMedic
+  parent: SpawnPointJobBase
+  name: RKhB Medic
+  components:
+  - type: SpawnPoint
+    job_id: RKhBMedic
+  - type: Sprite
+    sprite: _Battlefield14/Interface/Misc/class_icons.rsi
+    layers:
+    - state: pactmedic
+      scale: 1.5,1.5
+
 #region FSB
 
 - type: entity

@@ -36,6 +36,10 @@ department-BW-description = Third time's the charm.
 department-VDV-name = Russian Airborne Forces (VDV)
 department-VDV-description = S NEBA PRIVET.
 
+## RKhB
+department-RKhB-name = Radiological, Chemical and Biological Defence (RKhB)
+department-RKhB-description = Fight and die in areas where they can never recover your body.
+
 # VKS
 department-VKS-name = Russian Aerospace Forces (VKS)
 department-VKS-description = I can see my house from here!

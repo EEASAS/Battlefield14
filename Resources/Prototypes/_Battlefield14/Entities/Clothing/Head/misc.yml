@@ -1,5 +1,33 @@
 - type: entity
   parent: ClothingHeadBase
+  id: ClothingHeadRussianHoodHazmatOZKArmored
+  name: OZK hazmat hood
+  description: A OZK hazmat suit hood with a added on helmet
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Clothing/Head/Misc/ozk.rsi
+  - type: Clothing
+    sprite: _Battlefield14/Clothing/Head/Misc/ozk.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Heat: 0.95
+        Radiation: 0.5
+      flatReductions:
+        Blunt: 2
+        Slash: 2
+        Piercing: 2
+  - type: ExplosionResistance
+    damageCoefficient: 0.9
+  - type: HideLayerClothing
+    slots:
+    - Hair
+    - Snout
+    - HeadTop
+    - HeadSide
+
+- type: entity
+  parent: ClothingHeadBase
   id: ClothingHeadHatHoodHazmat
   name: hazmat hood
   description: A thick rubber hood with lead padding ment to stop radiation from cooking you.

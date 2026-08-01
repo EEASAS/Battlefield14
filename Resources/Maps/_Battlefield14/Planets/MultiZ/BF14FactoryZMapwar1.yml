@@ -4,8 +4,8 @@ meta:
   engineVersion: 264.0.0
   forkId: ""
   forkVersion: ""
-  time: 08/01/2026 12:39:43
-  entityCount: 3155
+  time: 08/01/2026 18:49:59
+  entityCount: 3150
 maps:
 - 2
 grids:
@@ -1362,10 +1362,10 @@ entities:
     - type: OccluderTree
     - type: SpreaderGrid
       spreadQueues:
+        MetalFoam: []
+        Smoke: []
         Kudzu: []
         Puddle: []
-        Smoke: []
-        MetalFoam: []
       updateAccumulator: 0.15049124
     - type: Shuttle
       dampingModifier: 0.25
@@ -2332,10 +2332,10 @@ entities:
       chunks: {}
     - type: SpreaderGrid
       spreadQueues:
+        MetalFoam: []
+        Smoke: []
         Kudzu: []
         Puddle: []
-        Smoke: []
-        MetalFoam: []
     - type: GridPathfinding
     - type: Gravity
       gravityShakeSound: !type:SoundPathSpecifier
@@ -6434,6 +6434,27 @@ entities:
     - type: Transform
       pos: 57.5,26.5
       parent: 1
+    - type: GroupExamine
+      group:
+      - hoverMessage: ""
+        contextText: verb-examine-group-other
+        icon: /Textures/Interface/examine-star.png
+        components:
+        - Armor
+        - ClothingSpeedModifier
+        entries:
+        - message: This decreases your speed by [color=yellow]25%[/color].
+          priority: 0
+          component: ClothingSpeedModifier
+        - message: >-
+            It provides the following protection:
+
+            - [color=yellow]Heat[/color] damage reduced by [color=lightblue]10%[/color].
+
+            - [color=yellow]Radiation[/color] damage reduced by [color=lightblue]90%[/color].
+          priority: 0
+          component: Armor
+        title: null
   - uid: 602
     components:
     - type: Transform
@@ -8117,31 +8138,6 @@ entities:
     - type: Transform
       pos: 29.5,18.5
       parent: 1
-  - uid: 1578
-    components:
-    - type: Transform
-      pos: 77.5,31.5
-      parent: 1
-  - uid: 1579
-    components:
-    - type: Transform
-      pos: 77.5,31.5
-      parent: 1
-  - uid: 1580
-    components:
-    - type: Transform
-      pos: 77.5,31.5
-      parent: 1
-  - uid: 1581
-    components:
-    - type: Transform
-      pos: 77.5,31.5
-      parent: 1
-  - uid: 1582
-    components:
-    - type: Transform
-      pos: 77.5,31.5
-      parent: 1
 - proto: GeneratorBasic15kW
   entities:
   - uid: 4798
@@ -8420,16 +8416,6 @@ entities:
       pos: 79.5,31.5
       parent: 1
   - uid: 1588
-    components:
-    - type: Transform
-      pos: 79.5,31.5
-      parent: 1
-  - uid: 1589
-    components:
-    - type: Transform
-      pos: 79.5,31.5
-      parent: 1
-  - uid: 1590
     components:
     - type: Transform
       pos: 79.5,31.5
@@ -18263,13 +18249,6 @@ entities:
     - type: Transform
       pos: 52.5,58.5
       parent: 1
-- proto: SpawnPointFSBRecon
-  entities:
-  - uid: 1626
-    components:
-    - type: Transform
-      pos: 77.5,29.5
-      parent: 1
 - proto: SpawnPointHECUMedic
   entities:
   - uid: 853
@@ -18328,58 +18307,73 @@ entities:
     - type: Transform
       pos: 6.5,51.5
       parent: 1
-- proto: SpawnPointVDVAutomaticRifleman
+- proto: SpawnPointRKhBMedic
   entities:
-  - uid: 1041
-    components:
-    - type: Transform
-      pos: 75.5,29.5
-      parent: 1
-- proto: SpawnPointVDVMedic
-  entities:
-  - uid: 1043
-    components:
-    - type: Transform
-      pos: 78.5,29.5
-      parent: 1
-  - uid: 1055
+  - uid: 1057
     components:
     - type: Transform
       pos: 79.5,29.5
       parent: 1
-- proto: SpawnPointVDVRifleman
-  entities:
-  - uid: 1042
-    components:
-    - type: Transform
-      pos: 76.5,33.5
-      parent: 1
-  - uid: 1057
-    components:
-    - type: Transform
-      pos: 75.5,33.5
-      parent: 1
-  - uid: 1571
-    components:
-    - type: Transform
-      pos: 77.5,33.5
-      parent: 1
   - uid: 1572
     components:
     - type: Transform
-      pos: 78.5,33.5
+      pos: 80.5,29.5
       parent: 1
-  - uid: 1573
+- proto: SpawnPointRKhBRifleman
+  entities:
+  - uid: 1041
     components:
     - type: Transform
       pos: 79.5,33.5
       parent: 1
-- proto: SpawnPointVDVSquadLeader
-  entities:
+  - uid: 1043
+    components:
+    - type: Transform
+      pos: 78.5,33.5
+      parent: 1
+  - uid: 1055
+    components:
+    - type: Transform
+      pos: 77.5,33.5
+      parent: 1
+  - uid: 1571
+    components:
+    - type: Transform
+      pos: 74.5,33.5
+      parent: 1
+  - uid: 1573
+    components:
+    - type: Transform
+      pos: 75.5,33.5
+      parent: 1
   - uid: 1574
     components:
     - type: Transform
+      pos: 76.5,33.5
+      parent: 1
+  - uid: 1578
+    components:
+    - type: Transform
+      pos: 80.5,33.5
+      parent: 1
+- proto: SpawnPointRKhBSquadLeader
+  entities:
+  - uid: 1042
+    components:
+    - type: Transform
+      pos: 74.5,29.5
+      parent: 1
+- proto: SpawnPointRKhBSupport
+  entities:
+  - uid: 1579
+    components:
+    - type: Transform
       pos: 76.5,29.5
+      parent: 1
+  - uid: 1580
+    components:
+    - type: Transform
+      pos: 77.5,29.5
       parent: 1
 - proto: SSEWindowFramed
   entities:

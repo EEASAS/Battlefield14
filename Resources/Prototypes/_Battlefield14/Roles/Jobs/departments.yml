@@ -100,6 +100,18 @@
   - VDVRecon
 
 - type: department
+  id: RKhB
+  name: department-RKhB-name
+  description: department-RKhB-description
+  color: "#a02829"
+  weight: 64
+  roles:
+  - RKhBSquadLeader
+  - RKhBRifleman
+  - RKhBSupport
+  - RKhBMedic
+
+- type: department
   id: FSB
   name: department-FSB-name
   description: department-FSB-description

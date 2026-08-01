@@ -109,6 +109,17 @@
     sprite: _Battlefield14/Clothing/Mask/russiamask.rsi
 
 - type: entity
+  parent: ClothingBaseGasMask
+  id: ClothingMaskGasRussiaPMK4
+  name: PMK-4 gas mask
+  description: Effective against stuff you reaally dont want in your body.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Clothing/Mask/pmk4.rsi
+  - type: Clothing
+    sprite: _Battlefield14/Clothing/Mask/pmk4.rsi
+
+- type: entity
   parent: ClothingMaskBase
   id: ClothingBaseTrollfaceMask
   name: troll mask

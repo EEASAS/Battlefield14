@@ -18,16 +18,15 @@
           stationDescription: "Building 2-A of the Norskatom nuclear fuel erichment facility owned by Rosatom located in the Norvinsk economic region"
           lobbySortOrder: 1
         - type: StationJobs
-          availableJobs: # HECU has less slots due to better gear
+          availableJobs: # HECU has 2 less slots due to better gear
             HECUSquadLeader: [ 1, 1 ]
             HECURifleman: [ 5, 5 ]
             HECUSupport: [ 1, 1 ]
             HECUMedic: [ 2, 2 ]
-            VDVSquadLeader: [ 1, 1 ]
-            VDVRifleman: [ 5, 5 ]
-            VDVRecon: [ 2, 2 ]
-            VDVAutomaticRifleman: [ 1, 1 ]
-            VDVMedic: [ 2, 2 ]
+            RKhBSquadLeader: [ 1, 1 ]
+            RKhBRifleman: [ 6, 6 ]
+            RKhBSupport: [ 2, 2 ]
+            RKhBMedic: [ 2, 2 ]
         - type: CEStationZLevels
           mapsAbove:
             - /Maps/_Battlefield14/Planets/MultiZ/BF14FactoryZMapWar2.yml 

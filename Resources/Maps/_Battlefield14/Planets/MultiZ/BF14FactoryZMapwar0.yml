@@ -4,7 +4,7 @@ meta:
   engineVersion: 264.0.0
   forkId: ""
   forkVersion: ""
-  time: 08/01/2026 12:39:43
+  time: 08/01/2026 18:49:59
   entityCount: 4255
 maps:
 - 2
@@ -484,10 +484,10 @@ entities:
     - type: OccluderTree
     - type: SpreaderGrid
       spreadQueues:
+        MetalFoam: []
+        Smoke: []
         Kudzu: []
         Puddle: []
-        Smoke: []
-        MetalFoam: []
       updateAccumulator: 0.01571703
     - type: Shuttle
       dampingModifier: 0.25
@@ -1114,10 +1114,10 @@ entities:
       chunks: {}
     - type: SpreaderGrid
       spreadQueues:
+        MetalFoam: []
+        Smoke: []
         Kudzu: []
         Puddle: []
-        Smoke: []
-        MetalFoam: []
     - type: GridPathfinding
     - type: Gravity
       gravityShakeSound: !type:SoundPathSpecifier
