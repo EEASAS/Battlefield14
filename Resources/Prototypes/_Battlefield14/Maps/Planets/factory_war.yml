@@ -24,7 +24,8 @@
             HECUSupport: [ 1, 1 ]
             HECUMedic: [ 2, 2 ]
             VDVSquadLeader: [ 1, 1 ]
-            VDVRifleman: [ 7, 7 ]
+            VDVRifleman: [ 5, 5 ]
+            VDVRecon: [ 2, 2 ]
             VDVAutomaticRifleman: [ 1, 1 ]
             VDVMedic: [ 2, 2 ]
         - type: CEStationZLevels
@@ -37,7 +38,7 @@
             - type: CEAutoGridGravity
 
 - type: zMap
-  id: BF14NuclearFactoryWarZMap
+  id: BF14FactoryWarZMap
   maps:
     - /Maps/_Battlefield14/Planets/MultiZ/BF14FactoryZMapWar0.yml    # Undergound
     - /Maps/_Battlefield14/Planets/MultiZ/BF14FactoryZMapWar1.yml    # Ground floor

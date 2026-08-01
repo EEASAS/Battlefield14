@@ -33,7 +33,7 @@
             - type: CEAutoGridGravity
 
 - type: zMap
-  id: BF14NuclearFactoryUnrestZMap
+  id: BF14FactoryUnrestZMap
   maps:
     - /Maps/_Battlefield14/Planets/MultiZ/BF14FactoryZMapUnrest0.yml    # Undergound
     - /Maps/_Battlefield14/Planets/MultiZ/BF14FactoryZMapUnrest1.yml    # Ground floor
