@@ -10,7 +10,7 @@
     modifiers:
       coefficients:
         Heat: 0.9
-        Radiation: 0.2
+        Radiation: 0.1
   - type: Clothing
     sprite: _Battlefield14/Clothing/OuterClothing/Misc/hazardsuit.rsi
   - type: GroupExamine
@@ -20,8 +20,8 @@
   - type: ProtectedFromStepTriggers
     slots: WITHOUT_POCKET
   - type: ClothingSpeedModifier
-    walkModifier: 0.65
-    sprintModifier: 0.65
+    walkModifier: 0.75
+    sprintModifier: 0.75
   - type: HeldSpeedModifier
 
 - type: entity

@@ -1,9 +1,9 @@
 - type: gameMap
-  id: BF14NuclearFactoryWar
+  id: BF14FactoryWar
   mapName: 'Norskatom facility (LowPop)'
-  mapPath: /Maps/_Battlefield14/Planets/MultiZ/BF14FactoryZMapwar1.yml
+  mapPath: /Maps/_Battlefield14/Planets/MultiZ/BF14FactoryZMapWar1.yml
   minPlayers: 1
-  maxPlayers: 50
+  maxPlayers: 20
   randomRotation: false
   maxRandomOffset: 0
   stations:
@@ -18,30 +18,30 @@
           stationDescription: "Building 2-A of the Norskatom nuclear fuel erichment facility owned by Rosatom located in the Norvinsk economic region"
           lobbySortOrder: 1
         - type: StationJobs
-          availableJobs:
-            HECUSquadLeader: [ 2, 2 ]
-            HECURifleman: [ 7, 7 ]
+          availableJobs: # HECU has less slots due to better gear
+            HECUSquadLeader: [ 1, 1 ]
+            HECURifleman: [ 5, 5 ]
             HECUSupport: [ 1, 1 ]
             HECUMedic: [ 2, 2 ]
-            VDVSquadLeader: [ 2, 2 ]
-            VDVRifleman: [ 6, 6 ]
-            VDVAutomaticRifleman: [ 2, 2 ]
+            VDVSquadLeader: [ 1, 1 ]
+            VDVRifleman: [ 7, 7 ]
+            VDVAutomaticRifleman: [ 1, 1 ]
             VDVMedic: [ 2, 2 ]
         - type: CEStationZLevels
           mapsAbove:
-            - /Maps/_Battlefield14/Planets/MultiZ/BF14FactoryZMapwar2.yml 
-            - /Maps/_Battlefield14/Planets/MultiZ/BF14FactoryZMapwar3.yml
+            - /Maps/_Battlefield14/Planets/MultiZ/BF14FactoryZMapWar2.yml 
+            - /Maps/_Battlefield14/Planets/MultiZ/BF14FactoryZMapWar3.yml
           mapsBelow:
-            - /Maps/_Battlefield14/Planets/MultiZ/BF14FactoryZMapwar0.yml 
+            - /Maps/_Battlefield14/Planets/MultiZ/BF14FactoryZMapWar0.yml 
           zLevelsComponentOverrides:
             - type: CEAutoGridGravity
 
 - type: zMap
   id: BF14NuclearFactoryWarZMap
   maps:
-    - /Maps/_Battlefield14/Planets/MultiZ/BF14FactoryZMapwar0.yml    # Undergound
-    - /Maps/_Battlefield14/Planets/MultiZ/BF14FactoryZMapwar1.yml    # Ground floor
-    - /Maps/_Battlefield14/Planets/MultiZ/BF14FactoryZMapwar2.yml    # 1st floor
-    - /Maps/_Battlefield14/Planets/MultiZ/BF14FactoryZMapwar3.yml    # 2nd floor
+    - /Maps/_Battlefield14/Planets/MultiZ/BF14FactoryZMapWar0.yml    # Undergound
+    - /Maps/_Battlefield14/Planets/MultiZ/BF14FactoryZMapWar1.yml    # Ground floor
+    - /Maps/_Battlefield14/Planets/MultiZ/BF14FactoryZMapWar2.yml    # 1st floor
+    - /Maps/_Battlefield14/Planets/MultiZ/BF14FactoryZMapWar3.yml    # 2nd floor
   components:
     - type: CEAutoGridGravity
