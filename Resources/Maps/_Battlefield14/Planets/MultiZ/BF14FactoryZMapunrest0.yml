@@ -4,8 +4,8 @@ meta:
   engineVersion: 264.0.0
   forkId: ""
   forkVersion: ""
-  time: 08/01/2026 12:11:18
-  entityCount: 4257
+  time: 08/01/2026 12:40:18
+  entityCount: 4255
 maps:
 - 2
 grids:
@@ -484,10 +484,10 @@ entities:
     - type: OccluderTree
     - type: SpreaderGrid
       spreadQueues:
-        MetalFoam: []
-        Smoke: []
         Kudzu: []
         Puddle: []
+        Smoke: []
+        MetalFoam: []
       updateAccumulator: 0.01571703
     - type: Shuttle
       dampingModifier: 0.25
@@ -1114,10 +1114,10 @@ entities:
       chunks: {}
     - type: SpreaderGrid
       spreadQueues:
-        MetalFoam: []
-        Smoke: []
         Kudzu: []
         Puddle: []
+        Smoke: []
+        MetalFoam: []
     - type: GridPathfinding
     - type: Gravity
       gravityShakeSound: !type:SoundPathSpecifier
@@ -1315,24 +1315,13 @@ entities:
   - uid: 4057
     components:
     - type: Transform
-      pos: 58.5,38.5
+      pos: 53.5,38.5
       parent: 1
   - uid: 4058
     components:
     - type: Transform
       rot: 3.141592653589793 rad
-      pos: 58.5,24.5
-      parent: 1
-  - uid: 4237
-    components:
-    - type: Transform
-      pos: 55.5,38.5
-      parent: 1
-  - uid: 4238
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 55.5,24.5
+      pos: 54.5,24.5
       parent: 1
 - proto: BF14AlwaysPoweredAlarmLight3
   entities:
