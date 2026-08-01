@@ -25,6 +25,10 @@
   - type: ClothingSpeedModifier
     walkModifier: 0.9
     sprintModifier: 0.9
+  - type: Armor
+    modifiers:
+      coefficients:
+        Radiation: 0.75
 
 - type: entity
   parent: ClothingBaseGasMask
@@ -71,6 +75,13 @@
 #    flashDurationMultiplier: 1.5
   - type: IngestionBlocker
     blockSmokeIngestion: true
+  - type: ClothingSpeedModifier
+    walkModifier: 0.9
+    sprintModifier: 0.9
+  - type: Armor
+    modifiers:
+      coefficients:
+        Radiation: 0.75
 
 - type: entity
   parent: ClothingMaskGasM40

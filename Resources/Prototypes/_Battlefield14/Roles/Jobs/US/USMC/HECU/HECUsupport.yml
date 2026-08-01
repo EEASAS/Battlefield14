@@ -1,7 +1,7 @@
 - type: job
   id: HECUSupport
-  name: job-name-usmc-automatic-rifleman
-  description: job-description-usmc-automatic-rifleman
+  name: job-name-hecu-support
+  description: job-description-hecu-support
   playTimeTracker: JobHECUSupport
   weight: 76
   startingGear: HECUSupportGear

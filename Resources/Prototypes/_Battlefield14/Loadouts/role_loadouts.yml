@@ -83,6 +83,32 @@
   - BF_Map
   - ContractorWallet
 
+#region HECU
+
+- type: roleLoadout
+  id: JobHECUSquadLeader
+  groups:
+  - BF_MiscItemsNATO
+  - BF_Map
+
+- type: roleLoadout
+  id: JobHECURifleman
+  groups:
+  - BF_MiscItemsNATO
+  - BF_Map
+
+- type: roleLoadout
+  id: JobHECUMedic
+  groups:
+  - BF_MiscItemsNATO
+  - BF_Map
+
+- type: roleLoadout
+  id: JobHECUSupport
+  groups:
+  - BF_MiscItemsNATO
+  - BF_Map
+
 #region USSF
 
 - type: roleLoadout
@@ -503,6 +529,7 @@
 - type: roleLoadout
   id: JobOMONLieutenant
   groups:
+  - BF_LongarmsOMONSergeant
   - BF_SoldierGlassesGreen
   - BF_CombatMasks
   - BF_SoldierGloves
@@ -517,6 +544,7 @@
 - type: roleLoadout
   id: JobOMONSquadLeader
   groups:
+  - BF_LongarmsOMONSergeant
   - BF_SoldierGlassesGreen
   - BF_CombatMasks
   - BF_SoldierGloves
@@ -531,6 +559,7 @@
 - type: roleLoadout
   id: JobOMONRifleman
   groups:
+  - BF_LongarmsOMON
   - BF_SoldierGlassesGreen
   - BF_CombatMasks
   - BF_SoldierGloves

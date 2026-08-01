@@ -6,6 +6,10 @@
 department-USMC-name = United States Marine Corps (USMC)
 department-USMC-description = I am a marine on the beach im a killing machine.
 
+# HECU
+department-HECU-name = Hazardous Enviroment Combat Unit (HECU)
+department-HECU-description = Cover up any resonance cascades.
+
 # USSF
 department-USSF-name = United States Space Force (USSF)
 department-USSF-description = I can see my house from here!

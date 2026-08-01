@@ -1,4 +1,30 @@
 - type: entity
+  parent: [ ClothingOuterBaseLarge, GeigerCounterClothing, AllowSuitStorageClothing, ClothingOuterBaseToggleable ]
+  id: ClothingOuterSuitHazmat
+  name: hazmat suit
+  description: A thick rubber suit with lead padding ment to stop radiation from cooking you. Comes with a built in geiger counter.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Clothing/OuterClothing/Misc/hazardsuit.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Heat: 0.9
+        Radiation: 0.2
+  - type: Clothing
+    sprite: _Battlefield14/Clothing/OuterClothing/Misc/hazardsuit.rsi
+  - type: GroupExamine
+  - type: ToggleableClothing
+    clothingPrototypes:
+      head: ClothingHeadHatHoodHazmat
+  - type: ProtectedFromStepTriggers
+    slots: WITHOUT_POCKET
+  - type: ClothingSpeedModifier
+    walkModifier: 0.65
+    sprintModifier: 0.65
+  - type: HeldSpeedModifier
+
+- type: entity
   parent: ClothingOuterBase
   id: ClothingOuterWorkJacket
   name: work jacket
