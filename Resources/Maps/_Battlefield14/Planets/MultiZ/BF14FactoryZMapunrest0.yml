@@ -4,7 +4,7 @@ meta:
   engineVersion: 264.0.0
   forkId: ""
   forkVersion: ""
-  time: 08/01/2026 12:40:18
+  time: 08/01/2026 12:47:23
   entityCount: 4255
 maps:
 - 2
@@ -486,13 +486,13 @@ entities:
       spreadQueues:
         Kudzu: []
         Puddle: []
-        Smoke: []
         MetalFoam: []
+        Smoke: []
       updateAccumulator: 0.01571703
     - type: Shuttle
       dampingModifier: 0.25
     - type: BecomesStation
-      id: BF14FactoryUnrest
+      id: BF14FactoryWar
     - type: GridPathfinding
     - type: Gravity
       gravityShakeSound: !type:SoundPathSpecifier
@@ -1103,7 +1103,7 @@ entities:
   - uid: 2
     components:
     - type: MetaData
-      name: Mapping BF14FactoryUnrestZMap [0]
+      name: Mapping BF14FactoryWarZMap [0]
     - type: Transform
     - type: Map
       mapPaused: True
@@ -1116,8 +1116,8 @@ entities:
       spreadQueues:
         Kudzu: []
         Puddle: []
-        Smoke: []
         MetalFoam: []
+        Smoke: []
     - type: GridPathfinding
     - type: Gravity
       gravityShakeSound: !type:SoundPathSpecifier
@@ -1292,8 +1292,120 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 12.5,38.5
       parent: 1
+- proto: BarbwireFloor
+  entities:
+  - uid: 4245
+    components:
+    - type: Transform
+      pos: 45.5,63.5
+      parent: 1
+  - uid: 4246
+    components:
+    - type: Transform
+      pos: 46.5,64.5
+      parent: 1
+  - uid: 4247
+    components:
+    - type: Transform
+      pos: 47.5,63.5
+      parent: 1
+  - uid: 4248
+    components:
+    - type: Transform
+      pos: 36.5,72.5
+      parent: 1
+  - uid: 4250
+    components:
+    - type: Transform
+      pos: 35.5,74.5
+      parent: 1
+  - uid: 4251
+    components:
+    - type: Transform
+      pos: 36.5,75.5
+      parent: 1
+  - uid: 4252
+    components:
+    - type: Transform
+      pos: 37.5,74.5
+      parent: 1
+  - uid: 4255
+    components:
+    - type: Transform
+      pos: 58.5,43.5
+      parent: 1
+  - uid: 4256
+    components:
+    - type: Transform
+      pos: 57.5,44.5
+      parent: 1
+  - uid: 4257
+    components:
+    - type: Transform
+      pos: 56.5,43.5
+      parent: 1
+- proto: BarricadeSandbags
+  entities:
+  - uid: 4239
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 37.5,69.5
+      parent: 1
+  - uid: 4240
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 39.5,69.5
+      parent: 1
+  - uid: 4241
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 38.5,69.5
+      parent: 1
+  - uid: 4242
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 41.5,67.5
+      parent: 1
+  - uid: 4243
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 41.5,66.5
+      parent: 1
+  - uid: 4244
+    components:
+    - type: Transform
+      pos: 39.5,64.5
+      parent: 1
+  - uid: 4249
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 60.5,43.5
+      parent: 1
+  - uid: 4253
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 60.5,44.5
+      parent: 1
+  - uid: 4254
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 60.5,44.5
+      parent: 1
 - proto: BF14AlwaysPoweredAlarmLight2
   entities:
+  - uid: 4053
+    components:
+    - type: Transform
+      pos: 53.5,38.5
+      parent: 1
   - uid: 4054
     components:
     - type: Transform
@@ -1313,11 +1425,6 @@ entities:
       pos: 64.5,31.5
       parent: 1
   - uid: 4057
-    components:
-    - type: Transform
-      pos: 53.5,38.5
-      parent: 1
-  - uid: 4058
     components:
     - type: Transform
       rot: 3.141592653589793 rad
@@ -7693,97 +7800,97 @@ entities:
     - type: Transform
       pos: 17.5,46.5
       parent: 1
-- proto: BF14FogSpawner5
+- proto: BF14FogSpawner2
   entities:
   - uid: 1982
     components:
     - type: Transform
-      pos: 74.5,50.5
+      pos: 79.5,50.5
       parent: 1
   - uid: 3942
     components:
     - type: Transform
-      pos: 74.5,51.5
+      pos: 78.5,51.5
       parent: 1
   - uid: 3994
     components:
     - type: Transform
-      pos: 74.5,49.5
+      pos: 79.5,47.5
       parent: 1
   - uid: 4006
     components:
     - type: Transform
-      pos: 73.5,50.5
+      pos: 79.5,49.5
       parent: 1
   - uid: 4007
     components:
     - type: Transform
-      pos: 74.5,47.5
+      pos: 76.5,46.5
       parent: 1
   - uid: 4008
     components:
     - type: Transform
-      pos: 74.5,46.5
+      pos: 73.5,48.5
       parent: 1
   - uid: 4009
     components:
     - type: Transform
-      pos: 75.5,46.5
+      pos: 73.5,46.5
       parent: 1
   - uid: 4010
     components:
     - type: Transform
-      pos: 76.5,46.5
+      pos: 73.5,47.5
       parent: 1
   - uid: 4011
     components:
     - type: Transform
-      pos: 77.5,46.5
+      pos: 74.5,46.5
       parent: 1
   - uid: 4012
     components:
     - type: Transform
-      pos: 78.5,46.5
+      pos: 73.5,49.5
       parent: 1
   - uid: 4013
     components:
     - type: Transform
-      pos: 79.5,46.5
+      pos: 73.5,50.5
       parent: 1
   - uid: 4014
     components:
     - type: Transform
-      pos: 79.5,47.5
+      pos: 73.5,51.5
       parent: 1
   - uid: 4015
     components:
     - type: Transform
-      pos: 79.5,48.5
+      pos: 74.5,50.5
       parent: 1
   - uid: 4016
     components:
     - type: Transform
-      pos: 79.5,49.5
+      pos: 74.5,47.5
       parent: 1
   - uid: 4017
     components:
     - type: Transform
-      pos: 79.5,50.5
+      pos: 74.5,48.5
       parent: 1
   - uid: 4018
     components:
     - type: Transform
-      pos: 79.5,51.5
+      pos: 74.5,49.5
       parent: 1
   - uid: 4019
     components:
     - type: Transform
-      pos: 78.5,51.5
+      pos: 74.5,51.5
       parent: 1
   - uid: 4020
     components:
     - type: Transform
-      pos: 77.5,51.5
+      pos: 75.5,51.5
       parent: 1
   - uid: 4021
     components:
@@ -7793,32 +7900,37 @@ entities:
   - uid: 4022
     components:
     - type: Transform
-      pos: 75.5,51.5
+      pos: 77.5,51.5
       parent: 1
   - uid: 4023
     components:
     - type: Transform
-      pos: 73.5,49.5
+      pos: 79.5,46.5
       parent: 1
   - uid: 4024
     components:
     - type: Transform
-      pos: 73.5,48.5
+      pos: 78.5,46.5
       parent: 1
   - uid: 4025
     components:
     - type: Transform
-      pos: 73.5,47.5
+      pos: 77.5,46.5
       parent: 1
   - uid: 4026
     components:
     - type: Transform
-      pos: 73.5,46.5
+      pos: 75.5,46.5
       parent: 1
   - uid: 4027
     components:
     - type: Transform
-      pos: 73.5,51.5
+      pos: 79.5,51.5
+      parent: 1
+  - uid: 4237
+    components:
+    - type: Transform
+      pos: 79.5,48.5
       parent: 1
 - proto: BF14NuclearFuelRodsDamagedHazard
   entities:
@@ -8769,6 +8881,20 @@ entities:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 65.5,41.5
+      parent: 1
+- proto: CapturePointFactoryControlRoom
+  entities:
+  - uid: 4238
+    components:
+    - type: Transform
+      pos: 62.5,39.5
+      parent: 1
+- proto: CapturePointFactoryStorage
+  entities:
+  - uid: 3201
+    components:
+    - type: Transform
+      pos: 38.5,67.5
       parent: 1
 - proto: Catwalk
   entities:
@@ -21101,16 +21227,6 @@ entities:
     - type: Transform
       pos: 64.5,24.5
       parent: 1
-  - uid: 4239
-    components:
-    - type: Transform
-      pos: 63.5,30.5
-      parent: 1
-  - uid: 4240
-    components:
-    - type: Transform
-      pos: 63.5,32.5
-      parent: 1
 - proto: RandomAmmoMapHighTierRU
   entities:
   - uid: 2833
@@ -21122,61 +21238,6 @@ entities:
     components:
     - type: Transform
       pos: 61.5,29.5
-      parent: 1
-  - uid: 4241
-    components:
-    - type: Transform
-      pos: 61.5,29.5
-      parent: 1
-  - uid: 4242
-    components:
-    - type: Transform
-      pos: 61.5,29.5
-      parent: 1
-  - uid: 4243
-    components:
-    - type: Transform
-      pos: 61.5,29.5
-      parent: 1
-  - uid: 4244
-    components:
-    - type: Transform
-      pos: 64.5,25.5
-      parent: 1
-  - uid: 4245
-    components:
-    - type: Transform
-      pos: 59.5,30.5
-      parent: 1
-  - uid: 4246
-    components:
-    - type: Transform
-      pos: 53.5,37.5
-      parent: 1
-  - uid: 4247
-    components:
-    - type: Transform
-      pos: 53.5,37.5
-      parent: 1
-  - uid: 4248
-    components:
-    - type: Transform
-      pos: 45.5,34.5
-      parent: 1
-  - uid: 4249
-    components:
-    - type: Transform
-      pos: 46.5,26.5
-      parent: 1
-  - uid: 4252
-    components:
-    - type: Transform
-      pos: 28.5,39.5
-      parent: 1
-  - uid: 4253
-    components:
-    - type: Transform
-      pos: 29.5,40.5
       parent: 1
 - proto: RandomAmmoMapMidTierRU
   entities:
@@ -21269,16 +21330,6 @@ entities:
     components:
     - type: Transform
       pos: 64.5,37.5
-      parent: 1
-  - uid: 4250
-    components:
-    - type: Transform
-      pos: 30.5,39.5
-      parent: 1
-  - uid: 4251
-    components:
-    - type: Transform
-      pos: 29.5,38.5
       parent: 1
 - proto: RandomGearMapHighTierUNI
   entities:
@@ -21474,33 +21525,6 @@ entities:
     components:
     - type: Transform
       pos: 29.5,33.5
-      parent: 1
-- proto: RandomWeaponMapLowTierRU
-  entities:
-  - uid: 4059
-    components:
-    - type: Transform
-      pos: 70.5,54.5
-      parent: 1
-  - uid: 4254
-    components:
-    - type: Transform
-      pos: 68.5,54.5
-      parent: 1
-  - uid: 4255
-    components:
-    - type: Transform
-      pos: 71.5,51.5
-      parent: 1
-  - uid: 4256
-    components:
-    - type: Transform
-      pos: 40.5,64.5
-      parent: 1
-  - uid: 4257
-    components:
-    - type: Transform
-      pos: 34.5,69.5
       parent: 1
 - proto: RandomWeaponMapMidTierRU
   entities:
@@ -23224,18 +23248,6 @@ entities:
       parent: 1
 - proto: SmallLightDim
   entities:
-  - uid: 3201
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 60.5,43.5
-      parent: 1
-  - uid: 4053
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 62.5,43.5
-      parent: 1
   - uid: 4106
     components:
     - type: Transform

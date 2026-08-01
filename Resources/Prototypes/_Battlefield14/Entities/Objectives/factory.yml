@@ -29,6 +29,21 @@
     location: "3rd floor office capture point"
 
 - type: entity
+  id: CapturePointFactoryDestroyedOffice
+  parent: BaseCapturePoint
+  name: Destroyed office control point
+  suffix: Factory, 120s / 2m
+  components:
+  - type: POICapture
+    poiName: "Factory destroyed office"
+    timeToCapture: 120
+  - type: NavMapBeacon
+    defaultText: "3rd floor office"
+    color: "#FFFF00"
+  - type: WarpPoint
+    location: "Destroyed office capture point"
+
+- type: entity
   id: CapturePointFactoryStorage
   parent: BaseCapturePoint
   name: Storage control point

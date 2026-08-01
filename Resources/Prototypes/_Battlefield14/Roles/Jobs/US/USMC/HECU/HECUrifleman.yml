@@ -38,6 +38,7 @@
   - NATOMaintenance
   - NATOSoldier
   - NATOArmory
+  - PillHyronalin
 
 - type: startingGear
   id: HECURiflemanGear

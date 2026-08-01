@@ -4,8 +4,8 @@ meta:
   engineVersion: 264.0.0
   forkId: ""
   forkVersion: ""
-  time: 08/01/2026 12:40:18
-  entityCount: 985
+  time: 08/01/2026 12:47:24
+  entityCount: 1003
 maps:
 - 2
 grids:
@@ -178,13 +178,13 @@ entities:
       spreadQueues:
         Kudzu: []
         Puddle: []
-        Smoke: []
         MetalFoam: []
+        Smoke: []
       updateAccumulator: 0.11819935
     - type: Shuttle
       dampingModifier: 0.25
     - type: BecomesStation
-      id: BF14FactoryUnrest
+      id: BF14FactoryWar
     - type: GridPathfinding
     - type: Gravity
       gravityShakeSound: !type:SoundPathSpecifier
@@ -754,7 +754,7 @@ entities:
   - uid: 2
     components:
     - type: MetaData
-      name: Mapping BF14FactoryUnrestZMap [3]
+      name: Mapping BF14FactoryWarZMap [3]
     - type: Transform
     - type: Map
       mapPaused: True
@@ -767,8 +767,8 @@ entities:
       spreadQueues:
         Kudzu: []
         Puddle: []
-        Smoke: []
         MetalFoam: []
+        Smoke: []
     - type: GridPathfinding
     - type: Gravity
       gravityShakeSound: !type:SoundPathSpecifier
@@ -814,6 +814,114 @@ entities:
       data:
         chunkSize: 4
     - type: GasTileOverlay
+- proto: BarbwireFloor
+  entities:
+  - uid: 644
+    components:
+    - type: Transform
+      pos: 17.5,36.5
+      parent: 1
+  - uid: 645
+    components:
+    - type: Transform
+      pos: 30.5,53.5
+      parent: 1
+  - uid: 646
+    components:
+    - type: Transform
+      pos: 29.5,52.5
+      parent: 1
+  - uid: 647
+    components:
+    - type: Transform
+      pos: 28.5,53.5
+      parent: 1
+  - uid: 648
+    components:
+    - type: Transform
+      pos: 29.5,50.5
+      parent: 1
+  - uid: 649
+    components:
+    - type: Transform
+      pos: 45.5,53.5
+      parent: 1
+  - uid: 650
+    components:
+    - type: Transform
+      pos: 46.5,54.5
+      parent: 1
+  - uid: 651
+    components:
+    - type: Transform
+      pos: 47.5,53.5
+      parent: 1
+  - uid: 652
+    components:
+    - type: Transform
+      pos: 29.5,54.5
+      parent: 1
+  - uid: 654
+    components:
+    - type: Transform
+      pos: 18.5,37.5
+      parent: 1
+  - uid: 655
+    components:
+    - type: Transform
+      pos: 17.5,38.5
+      parent: 1
+  - uid: 656
+    components:
+    - type: Transform
+      pos: 17.5,49.5
+      parent: 1
+  - uid: 657
+    components:
+    - type: Transform
+      pos: 18.5,48.5
+      parent: 1
+  - uid: 658
+    components:
+    - type: Transform
+      pos: 17.5,47.5
+      parent: 1
+- proto: BarricadeSandbags
+  entities:
+  - uid: 640
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 33.5,54.5
+      parent: 1
+  - uid: 643
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 43.5,53.5
+      parent: 1
+  - uid: 653
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 17.5,45.5
+      parent: 1
+  - uid: 659
+    components:
+    - type: Transform
+      pos: 17.5,40.5
+      parent: 1
+  - uid: 660
+    components:
+    - type: Transform
+      pos: 18.5,40.5
+      parent: 1
+  - uid: 661
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 18.5,45.5
+      parent: 1
 - proto: BF14RoadBarrier
   entities:
   - uid: 310
@@ -893,6 +1001,27 @@ entities:
     components:
     - type: Transform
       pos: 15.5,51.5
+      parent: 1
+- proto: CapturePointFactoryBridge
+  entities:
+  - uid: 642
+    components:
+    - type: Transform
+      pos: 37.5,54.5
+      parent: 1
+- proto: CapturePointFactoryDestroyedOffice
+  entities:
+  - uid: 662
+    components:
+    - type: Transform
+      pos: 65.5,54.5
+      parent: 1
+- proto: CapturePointFactoryOffice
+  entities:
+  - uid: 641
+    components:
+    - type: Transform
+      pos: 13.5,40.5
       parent: 1
 - proto: Catwalk
   entities:
@@ -1879,31 +2008,6 @@ entities:
     components:
     - type: Transform
       pos: 44.5,21.5
-      parent: 1
-  - uid: 640
-    components:
-    - type: Transform
-      pos: 43.5,44.5
-      parent: 1
-  - uid: 641
-    components:
-    - type: Transform
-      pos: 43.5,47.5
-      parent: 1
-  - uid: 642
-    components:
-    - type: Transform
-      pos: 43.5,44.5
-      parent: 1
-  - uid: 643
-    components:
-    - type: Transform
-      pos: 43.5,45.5
-      parent: 1
-  - uid: 644
-    components:
-    - type: Transform
-      pos: 43.5,42.5
       parent: 1
 - proto: DecalSpawnerDirtWide
   entities:
