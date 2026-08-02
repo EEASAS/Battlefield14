@@ -24,6 +24,8 @@
       - VDV
     - type: ChatRank
       rank: BF-rank-corporal
+    - type: SurgerySpeedModifier
+      SpeedModifier: 1.65
   - !type:AddImplantSpecial
     implants: [ TrackingImplantPACTRU ]
   access:
@@ -32,8 +34,10 @@
   - External
   - Mercenary # Frontier
   - Captain # Frontier
+  - Medical
   - PACTCommon
   - PACTMaintenance
+  - PACTMedical
   - PACTSoldier
   - PACTArmory
 
