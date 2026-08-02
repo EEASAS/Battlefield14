@@ -19,8 +19,8 @@
           lobbySortOrder: 1
         - type: StationJobs
           availableJobs: # HECU has 2 less slots due to better gear
-            HECUSquadLeader: [ 1, 1 ]
-            HECURifleman: [ 5, 5 ]
+            HECUSquadLeader: [ 3, 3 ]
+            HECURifleman: [ 3, 3 ]
             HECUSupport: [ 1, 1 ]
             HECUMedic: [ 2, 2 ]
             RKhBSquadLeader: [ 3, 3 ]
