@@ -23,8 +23,8 @@
             HECURifleman: [ 5, 5 ]
             HECUSupport: [ 1, 1 ]
             HECUMedic: [ 2, 2 ]
-            RKhBSquadLeader: [ 1, 1 ]
-            RKhBRifleman: [ 6, 6 ]
+            RKhBSquadLeader: [ 3, 3 ]
+            RKhBRifleman: [ 4, 4 ]
             RKhBSupport: [ 2, 2 ]
             RKhBMedic: [ 2, 2 ]
         - type: CEStationZLevels
