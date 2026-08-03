@@ -7707,7 +7707,7 @@ entities:
     - type: Transform
       pos: 17.5,46.5
       parent: 1
-- proto: BF14FogSpawner2
+- proto: BF14FogSpawner5
   entities:
   - uid: 1982
     components:
