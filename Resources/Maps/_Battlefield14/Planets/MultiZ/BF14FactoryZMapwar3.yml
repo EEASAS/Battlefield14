@@ -4,8 +4,8 @@ meta:
   engineVersion: 264.0.0
   forkId: ""
   forkVersion: ""
-  time: 08/01/2026 18:50:00
-  entityCount: 1002
+  time: 08/03/2026 03:30:18
+  entityCount: 1003
 maps:
 - 2
 grids:
@@ -176,9 +176,9 @@ entities:
     - type: OccluderTree
     - type: SpreaderGrid
       spreadQueues:
-        MetalFoam: []
-        Smoke: []
         Kudzu: []
+        Smoke: []
+        MetalFoam: []
         Puddle: []
       updateAccumulator: 0.11819935
     - type: Shuttle
@@ -765,9 +765,9 @@ entities:
       chunks: {}
     - type: SpreaderGrid
       spreadQueues:
-        MetalFoam: []
-        Smoke: []
         Kudzu: []
+        Smoke: []
+        MetalFoam: []
         Puddle: []
     - type: GridPathfinding
     - type: Gravity
@@ -1008,6 +1008,13 @@ entities:
     components:
     - type: Transform
       pos: 37.5,54.5
+      parent: 1
+- proto: CapturePointFactoryDestroyedOffice
+  entities:
+  - uid: 662
+    components:
+    - type: Transform
+      pos: 63.5,52.5
       parent: 1
 - proto: CapturePointFactoryOffice
   entities:
