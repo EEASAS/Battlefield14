@@ -4,8 +4,8 @@ meta:
   engineVersion: 264.0.0
   forkId: ""
   forkVersion: ""
-  time: 08/01/2026 12:47:23
-  entityCount: 4255
+  time: 08/03/2026 03:28:59
+  entityCount: 4236
 maps:
 - 2
 grids:
@@ -485,14 +485,14 @@ entities:
     - type: SpreaderGrid
       spreadQueues:
         Kudzu: []
-        Puddle: []
-        MetalFoam: []
         Smoke: []
+        MetalFoam: []
+        Puddle: []
       updateAccumulator: 0.01571703
     - type: Shuttle
       dampingModifier: 0.25
     - type: BecomesStation
-      id: BF14FactoryWar
+      id: BF14FactoryUnrest
     - type: GridPathfinding
     - type: Gravity
       gravityShakeSound: !type:SoundPathSpecifier
@@ -1115,9 +1115,9 @@ entities:
     - type: SpreaderGrid
       spreadQueues:
         Kudzu: []
-        Puddle: []
-        MetalFoam: []
         Smoke: []
+        MetalFoam: []
+        Puddle: []
     - type: GridPathfinding
     - type: Gravity
       gravityShakeSound: !type:SoundPathSpecifier
@@ -1292,78 +1292,8 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 12.5,38.5
       parent: 1
-- proto: BarbwireFloor
-  entities:
-  - uid: 4245
-    components:
-    - type: Transform
-      pos: 45.5,63.5
-      parent: 1
-  - uid: 4246
-    components:
-    - type: Transform
-      pos: 46.5,64.5
-      parent: 1
-  - uid: 4247
-    components:
-    - type: Transform
-      pos: 47.5,63.5
-      parent: 1
-  - uid: 4248
-    components:
-    - type: Transform
-      pos: 36.5,72.5
-      parent: 1
-  - uid: 4250
-    components:
-    - type: Transform
-      pos: 35.5,74.5
-      parent: 1
-  - uid: 4251
-    components:
-    - type: Transform
-      pos: 36.5,75.5
-      parent: 1
-  - uid: 4252
-    components:
-    - type: Transform
-      pos: 37.5,74.5
-      parent: 1
-  - uid: 4255
-    components:
-    - type: Transform
-      pos: 58.5,43.5
-      parent: 1
-  - uid: 4256
-    components:
-    - type: Transform
-      pos: 57.5,44.5
-      parent: 1
-  - uid: 4257
-    components:
-    - type: Transform
-      pos: 56.5,43.5
-      parent: 1
 - proto: BarricadeSandbags
   entities:
-  - uid: 4239
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 37.5,69.5
-      parent: 1
-  - uid: 4240
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 39.5,69.5
-      parent: 1
-  - uid: 4241
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 38.5,69.5
-      parent: 1
   - uid: 4242
     components:
     - type: Transform
@@ -1375,29 +1305,6 @@ entities:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 41.5,66.5
-      parent: 1
-  - uid: 4244
-    components:
-    - type: Transform
-      pos: 39.5,64.5
-      parent: 1
-  - uid: 4249
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 60.5,43.5
-      parent: 1
-  - uid: 4253
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 60.5,44.5
-      parent: 1
-  - uid: 4254
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 60.5,44.5
       parent: 1
 - proto: BF14AlwaysPoweredAlarmLight2
   entities:
@@ -8881,20 +8788,6 @@ entities:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 65.5,41.5
-      parent: 1
-- proto: CapturePointFactoryControlRoom
-  entities:
-  - uid: 4238
-    components:
-    - type: Transform
-      pos: 62.5,39.5
-      parent: 1
-- proto: CapturePointFactoryStorage
-  entities:
-  - uid: 3201
-    components:
-    - type: Transform
-      pos: 38.5,67.5
       parent: 1
 - proto: Catwalk
   entities:
